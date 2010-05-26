@@ -16,7 +16,6 @@
 #include "vtkCommand.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkSliderRepresentation, "$Revision: 1.4 $");
 
 //----------------------------------------------------------------------
 vtkSliderRepresentation::vtkSliderRepresentation()

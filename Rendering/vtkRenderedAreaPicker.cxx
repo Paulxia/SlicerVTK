@@ -35,7 +35,6 @@
 #include "vtkPlane.h"
 #include "vtkPoints.h"
 
-vtkCxxRevisionMacro(vtkRenderedAreaPicker, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkRenderedAreaPicker);
 
 //--------------------------------------------------------------------------

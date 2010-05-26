@@ -38,7 +38,6 @@
 #include <math.h>
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
-vtkCxxRevisionMacro(vtkOpenGLPolyDataMapper2D, "$Revision: 1.61 $");
 vtkStandardNewMacro(vtkOpenGLPolyDataMapper2D);
 #endif
 

@@ -15,5 +15,4 @@
 #include "vtkIdListCollection.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkIdListCollection, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkIdListCollection);

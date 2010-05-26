@@ -33,7 +33,6 @@
 
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkGeoAlignedImageSource, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkGeoAlignedImageSource);
 vtkCxxSetObjectMacro(vtkGeoAlignedImageSource, Image, vtkImageData);
 

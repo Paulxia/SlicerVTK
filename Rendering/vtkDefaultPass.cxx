@@ -20,7 +20,6 @@
 #include "vtkProp.h"
 #include "vtkRenderer.h"
 
-vtkCxxRevisionMacro(vtkDefaultPass, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkDefaultPass);
 
 // ----------------------------------------------------------------------------

@@ -18,7 +18,6 @@
 #include "vtkObjectFactory.h"
 
 vtkInstantiatorNewMacro(vtkRepresentationPainter);
-vtkCxxRevisionMacro(vtkRepresentationPainter, "$Revision: 1.3 $");
 //-----------------------------------------------------------------------------
 vtkRepresentationPainter::vtkRepresentationPainter()
 {

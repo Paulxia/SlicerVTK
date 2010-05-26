@@ -21,7 +21,6 @@
 #include "vtkInformationKey.h"
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkProp, "$Revision: 1.29 $");
 vtkCxxSetObjectMacro(vtkProp,PropertyKeys,vtkInformation);
 
 //----------------------------------------------------------------------------

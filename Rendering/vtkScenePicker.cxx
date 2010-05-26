@@ -59,7 +59,6 @@ protected:
   bool InteractiveRender;
 };
 
-vtkCxxRevisionMacro(vtkScenePicker, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkScenePicker);
 
 //----------------------------------------------------------------------------

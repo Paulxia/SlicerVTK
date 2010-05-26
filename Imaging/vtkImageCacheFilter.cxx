@@ -19,7 +19,6 @@
 #include "vtkPointData.h"
 #include "vtkCachedStreamingDemandDrivenPipeline.h"
 
-vtkCxxRevisionMacro(vtkImageCacheFilter, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkImageCacheFilter);
 
 //----------------------------------------------------------------------------

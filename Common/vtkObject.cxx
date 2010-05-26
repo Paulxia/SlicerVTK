@@ -21,7 +21,6 @@
 
 #include <vtkstd/map>
 
-vtkCxxRevisionMacro(vtkObject, "$Revision: 1.102 $");
 
 // Initialize static member that controls warning display
 static int vtkObjectGlobalWarningDisplay = 1;

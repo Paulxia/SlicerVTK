@@ -72,7 +72,6 @@ public:
   vtksys_stl::vector<int> ThreadIds;
 };
 
-vtkCxxRevisionMacro(vtkGeoSource, "$Revision: 1.8 $");
 vtkGeoSource::vtkGeoSource()
 {
   this->InputSet = vtkCollection::New();

@@ -16,7 +16,6 @@
 #include <QPixmap>
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkQtView, "$Revision: 1.5 $");
 
 //----------------------------------------------------------------------------
 vtkQtView::vtkQtView()

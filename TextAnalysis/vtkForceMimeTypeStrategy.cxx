@@ -24,7 +24,6 @@
 
 #include <boost/algorithm/string.hpp>
 
-vtkCxxRevisionMacro(vtkForceMimeTypeStrategy, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkForceMimeTypeStrategy);
 
 vtkForceMimeTypeStrategy::vtkForceMimeTypeStrategy() :

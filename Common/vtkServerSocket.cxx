@@ -18,7 +18,6 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkServerSocket);
-vtkCxxRevisionMacro(vtkServerSocket, "$Revision: 1.2 $");
 //-----------------------------------------------------------------------------
 vtkServerSocket::vtkServerSocket()
 {

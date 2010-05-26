@@ -25,7 +25,6 @@
 #include "vtkGraphEdge.h"
 
 vtkCxxSetObjectMacro(vtkOutEdgeIterator, Graph, vtkGraph);
-vtkCxxRevisionMacro(vtkOutEdgeIterator, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkOutEdgeIterator);
 //----------------------------------------------------------------------------
 vtkOutEdgeIterator::vtkOutEdgeIterator()

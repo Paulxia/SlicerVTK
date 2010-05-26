@@ -26,7 +26,6 @@
 #include "vtkTree.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
-vtkCxxRevisionMacro(vtkTreeAlgorithm, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTreeAlgorithm);
 
 //----------------------------------------------------------------------------

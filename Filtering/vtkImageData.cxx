@@ -31,7 +31,6 @@
 #include "vtkVertex.h"
 #include "vtkVoxel.h"
 
-vtkCxxRevisionMacro(vtkImageData, "$Revision: 1.42 $");
 vtkStandardNewMacro(vtkImageData);
 
 //----------------------------------------------------------------------------

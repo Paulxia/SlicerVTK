@@ -24,7 +24,6 @@
 #include "vtksys/ios/sstream"
 #include "math.h"
 
-vtkCxxRevisionMacro(vtkSplitColumnComponents, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkSplitColumnComponents);
 //---------------------------------------------------------------------------
 vtkSplitColumnComponents::vtkSplitColumnComponents()

@@ -27,7 +27,6 @@
 #include "vtkXMLUtilities.h"
 
 
-vtkCxxRevisionMacro(vtkXMLDataParser, "$Revision: 1.39 $");
 vtkStandardNewMacro(vtkXMLDataParser);
 vtkCxxSetObjectMacro(vtkXMLDataParser, Compressor, vtkDataCompressor);
 

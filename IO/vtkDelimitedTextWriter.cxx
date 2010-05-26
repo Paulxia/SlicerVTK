@@ -34,7 +34,6 @@
 #include <vtksys/ios/sstream>
 
 vtkStandardNewMacro(vtkDelimitedTextWriter);
-vtkCxxRevisionMacro(vtkDelimitedTextWriter, "$Revision: 1.1 $");
 //-----------------------------------------------------------------------------
 vtkDelimitedTextWriter::vtkDelimitedTextWriter()
 {

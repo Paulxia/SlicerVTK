@@ -24,7 +24,6 @@
 #include "vtkGraph.h"
 
 vtkCxxSetObjectMacro(vtkAdjacentVertexIterator, Graph, vtkGraph);
-vtkCxxRevisionMacro(vtkAdjacentVertexIterator, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkAdjacentVertexIterator);
 //----------------------------------------------------------------------------
 vtkAdjacentVertexIterator::vtkAdjacentVertexIterator()

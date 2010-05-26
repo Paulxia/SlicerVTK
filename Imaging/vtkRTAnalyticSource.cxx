@@ -24,7 +24,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkRTAnalyticSource, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkRTAnalyticSource);
 
 // ----------------------------------------------------------------------------

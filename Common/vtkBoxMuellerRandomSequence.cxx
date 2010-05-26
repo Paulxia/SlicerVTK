@@ -18,7 +18,6 @@
 #include "vtkMath.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkBoxMuellerRandomSequence, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkBoxMuellerRandomSequence);
 
 

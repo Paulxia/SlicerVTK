@@ -28,7 +28,6 @@ public:
 };
 
 vtkStandardNewMacro(vtkCgShaderDeviceAdapter);
-vtkCxxRevisionMacro(vtkCgShaderDeviceAdapter, "$Revision: 1.1 $");
 //----------------------------------------------------------------------------
 vtkCgShaderDeviceAdapter::vtkCgShaderDeviceAdapter()
 {

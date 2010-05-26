@@ -21,7 +21,6 @@
 
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkTessellatedBoxSource, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkTessellatedBoxSource);
 
 // ----------------------------------------------------------------------------

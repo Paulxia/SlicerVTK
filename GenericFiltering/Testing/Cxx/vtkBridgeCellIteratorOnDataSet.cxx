@@ -26,7 +26,6 @@
 #include "vtkDataSet.h"
 #include "vtkCell.h"
 
-vtkCxxRevisionMacro(vtkBridgeCellIteratorOnDataSet, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkBridgeCellIteratorOnDataSet);
 
 //-----------------------------------------------------------------------------

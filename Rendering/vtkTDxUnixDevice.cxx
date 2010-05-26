@@ -34,7 +34,6 @@ extern "C" {
 #include "vtkRenderWindowInteractor.h"
 #include "vtkMath.h"
 
-vtkCxxRevisionMacro(vtkTDxUnixDevice,"$Revision: 1.5 $");
 vtkStandardNewMacro(vtkTDxUnixDevice);
 
 // ----------------------------------------------------------------------------

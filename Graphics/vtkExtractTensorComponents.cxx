@@ -22,7 +22,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
-vtkCxxRevisionMacro(vtkExtractTensorComponents, "$Revision: 1.32 $");
 vtkStandardNewMacro(vtkExtractTensorComponents);
 
 //---------------------------------------------------------------------------

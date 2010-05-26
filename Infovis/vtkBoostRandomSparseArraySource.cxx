@@ -30,7 +30,6 @@
 
 // ----------------------------------------------------------------------
 
-vtkCxxRevisionMacro(vtkBoostRandomSparseArraySource, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkBoostRandomSparseArraySource);
 
 // ----------------------------------------------------------------------

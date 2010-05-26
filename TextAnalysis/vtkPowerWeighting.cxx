@@ -34,7 +34,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkPowerWeighting
 
-vtkCxxRevisionMacro(vtkPowerWeighting, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkPowerWeighting);
 
 vtkPowerWeighting::vtkPowerWeighting() :

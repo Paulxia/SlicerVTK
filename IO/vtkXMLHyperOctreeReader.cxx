@@ -30,7 +30,6 @@
 #include "vtkIntArray.h"
 #include "vtkFieldData.h"
 
-vtkCxxRevisionMacro(vtkXMLHyperOctreeReader, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkXMLHyperOctreeReader);
 
 //----------------------------------------------------------------------------

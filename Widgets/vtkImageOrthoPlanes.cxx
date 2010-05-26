@@ -26,7 +26,6 @@
 
 //---------------------------------------------------------------------------
 
-vtkCxxRevisionMacro(vtkImageOrthoPlanes, "$Revision: 1.6 $"); 
 vtkStandardNewMacro(vtkImageOrthoPlanes);
 
 //---------------------------------------------------------------------------

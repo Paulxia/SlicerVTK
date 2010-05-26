@@ -17,7 +17,6 @@
 #include "vtkInformation.h"
 #include "vtkStructuredGrid.h"
 
-vtkCxxRevisionMacro(vtkStructuredGridToPolyDataFilter, "$Revision: 1.18 $");
 
 //----------------------------------------------------------------------------
 vtkStructuredGridToPolyDataFilter::vtkStructuredGridToPolyDataFilter()

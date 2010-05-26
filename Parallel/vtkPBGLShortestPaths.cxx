@@ -58,7 +58,6 @@
 
 using namespace boost;
 
-vtkCxxRevisionMacro(vtkPBGLShortestPaths, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkPBGLShortestPaths);
 
 // Function object used to reduce (vertex, distance) pairs to find

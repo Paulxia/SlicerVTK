@@ -31,7 +31,6 @@
 #include "vtkExecutiveCollection.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkExecutiveCollection, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkExecutiveCollection);
 
 //----------------------------------------------------------------------------

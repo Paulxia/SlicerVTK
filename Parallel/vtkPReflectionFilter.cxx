@@ -19,7 +19,6 @@
 #include "vtkMultiProcessController.h"
 
 vtkStandardNewMacro(vtkPReflectionFilter);
-vtkCxxRevisionMacro(vtkPReflectionFilter, "$Revision: 1.2 $");
 vtkCxxSetObjectMacro(vtkPReflectionFilter, Controller, vtkMultiProcessController);
 //----------------------------------------------------------------------------
 vtkPReflectionFilter::vtkPReflectionFilter()

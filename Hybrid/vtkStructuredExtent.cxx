@@ -17,7 +17,6 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkStructuredExtent);
-vtkCxxRevisionMacro(vtkStructuredExtent, "$Revision: 1.1 $");
 //----------------------------------------------------------------------------
 vtkStructuredExtent::vtkStructuredExtent()
 {

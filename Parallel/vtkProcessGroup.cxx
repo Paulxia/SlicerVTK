@@ -28,7 +28,6 @@
 #include <vtkstd/algorithm>
 
 //-----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkProcessGroup, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkProcessGroup);
 
 //-----------------------------------------------------------------------------

@@ -38,5 +38,4 @@
 #include "vtkOpenGLCamera.cxx"
 #undef vtkOpenGLCamera
 
-vtkCxxRevisionMacro(vtkMesaCamera, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkMesaCamera);

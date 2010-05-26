@@ -19,7 +19,6 @@
 #include "vtkInformation.h"
 #include "vtkMath.h"
 
-vtkCxxRevisionMacro(vtkAbstractVolumeMapper, "$Revision: 1.12 $");
 
 // Construct a vtkAbstractVolumeMapper 
 vtkAbstractVolumeMapper::vtkAbstractVolumeMapper()

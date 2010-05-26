@@ -37,7 +37,6 @@
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkQtLineChartView, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkQtLineChartView);
 
 //----------------------------------------------------------------------------

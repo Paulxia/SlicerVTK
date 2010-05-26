@@ -32,7 +32,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkMatricizeArray
 
-vtkCxxRevisionMacro(vtkMatricizeArray, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkMatricizeArray);
 
 vtkMatricizeArray::vtkMatricizeArray() :

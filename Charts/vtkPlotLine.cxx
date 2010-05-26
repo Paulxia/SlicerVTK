@@ -38,7 +38,6 @@
 #include "vtkstd/vector"
 #include "vtkstd/algorithm"
 
-vtkCxxRevisionMacro(vtkPlotLine, "$Revision: 1.29 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkPlotLine);

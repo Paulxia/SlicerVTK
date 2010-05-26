@@ -16,7 +16,6 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkHierarchicalDataExtractLevel, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkHierarchicalDataExtractLevel);
 
 //----------------------------------------------------------------------------

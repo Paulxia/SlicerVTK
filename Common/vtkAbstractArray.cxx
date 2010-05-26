@@ -45,7 +45,6 @@
 # endif
 #endif
 
-vtkCxxRevisionMacro(vtkAbstractArray, "$Revision: 1.17 $");
 
 //----------------------------------------------------------------------------
 // Construct object with sane defaults.

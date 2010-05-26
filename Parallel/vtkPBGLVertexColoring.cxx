@@ -55,7 +55,6 @@
 
 using namespace boost;
 
-vtkCxxRevisionMacro(vtkPBGLVertexColoring, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkPBGLVertexColoring);
 
 // Constructor/Destructor

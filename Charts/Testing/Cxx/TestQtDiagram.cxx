@@ -89,7 +89,6 @@ int TestQtDiagram( int argc, char * argv [] )
 
 // Make our new derived class to draw a diagram
 vtkStandardNewMacro(APIDiagram2);
-vtkCxxRevisionMacro(APIDiagram2, "$Revision: 1.5 $");
 // This function draws our API diagram
 bool APIDiagram2::Paint(vtkContext2D *painter)
 {

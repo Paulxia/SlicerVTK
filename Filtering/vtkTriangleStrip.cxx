@@ -22,7 +22,6 @@
 #include "vtkPoints.h"
 #include "vtkIncrementalPointLocator.h"
 
-vtkCxxRevisionMacro(vtkTriangleStrip, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTriangleStrip);
 
 //----------------------------------------------------------------------------

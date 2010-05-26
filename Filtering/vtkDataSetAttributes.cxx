@@ -33,7 +33,6 @@
 
 #include <vtkstd/vector>
 
-vtkCxxRevisionMacro(vtkDataSetAttributes, "$Revision: 1.34 $");
 vtkStandardNewMacro(vtkDataSetAttributes);
 
 //--------------------------------------------------------------------------

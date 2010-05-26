@@ -53,7 +53,6 @@
 #include <vtkstd/vector>
 
 //----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkXMLCompositeDataWriter, "$Revision: 1.9 $");
 
 class vtkXMLCompositeDataWriterInternals
 {

@@ -40,7 +40,6 @@ private:
   void operator=(const vtkTestPoints&);
 };
 
-vtkCxxRevisionMacro(vtkTestPoints, "$Revision: 1.24 $");
 
 class vtkTestPoints2 : public vtkPoints
 {
@@ -58,7 +57,6 @@ private:
   void operator=(const vtkTestPoints2&);
 };
 
-vtkCxxRevisionMacro(vtkTestPoints2, "$Revision: 1.24 $");
 
 VTK_CREATE_CREATE_FUNCTION(vtkTestPoints);
 VTK_CREATE_CREATE_FUNCTION(vtkTestPoints2);

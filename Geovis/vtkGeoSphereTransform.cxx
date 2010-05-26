@@ -28,7 +28,6 @@
 #include "vtkPoints.h"
 
 vtkStandardNewMacro(vtkGeoSphereTransform);
-vtkCxxRevisionMacro(vtkGeoSphereTransform,"$Revision: 1.3 $");
 
 vtkGeoSphereTransform::vtkGeoSphereTransform()
 {

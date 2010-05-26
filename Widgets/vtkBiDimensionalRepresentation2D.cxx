@@ -34,7 +34,6 @@
 
 #include <vtksys/ios/sstream>
 
-vtkCxxRevisionMacro(vtkBiDimensionalRepresentation2D, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkBiDimensionalRepresentation2D);
 
 

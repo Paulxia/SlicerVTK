@@ -16,7 +16,6 @@
 #include <memory.h>
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkByteSwap, "$Revision: 1.57 $");
 vtkStandardNewMacro(vtkByteSwap);
 
 //----------------------------------------------------------------------------

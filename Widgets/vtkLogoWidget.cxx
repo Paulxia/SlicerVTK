@@ -17,7 +17,6 @@
 #include "vtkCallbackCommand.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkLogoWidget, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkLogoWidget);
 
 //-------------------------------------------------------------------------

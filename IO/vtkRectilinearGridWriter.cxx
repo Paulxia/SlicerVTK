@@ -24,7 +24,6 @@
 # include <io.h> /* unlink */
 #endif
 
-vtkCxxRevisionMacro(vtkRectilinearGridWriter, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkRectilinearGridWriter);
 
 void vtkRectilinearGridWriter::WriteData()

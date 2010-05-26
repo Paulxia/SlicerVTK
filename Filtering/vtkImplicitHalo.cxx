@@ -18,7 +18,6 @@
 #include "vtkObjectFactory.h"
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkImplicitHalo, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkImplicitHalo);
 
 // ----------------------------------------------------------------------------

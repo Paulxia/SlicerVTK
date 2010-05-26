@@ -26,7 +26,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkCubeSource, "$Revision: 1.53 $");
 vtkStandardNewMacro(vtkCubeSource);
 
 vtkCubeSource::vtkCubeSource(double xL, double yL, double zL)

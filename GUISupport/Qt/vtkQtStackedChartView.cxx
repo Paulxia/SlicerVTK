@@ -32,7 +32,6 @@
 
 
 //-----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkQtStackedChartView, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkQtStackedChartView);
 
 //-----------------------------------------------------------------------------

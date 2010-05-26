@@ -22,7 +22,6 @@
 #include "vtkMath.h"
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkSmoothErrorMetric,"$Revision: 1.2 $");
 vtkStandardNewMacro(vtkSmoothErrorMetric);
 
 //-----------------------------------------------------------------------------

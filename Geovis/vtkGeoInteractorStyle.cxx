@@ -45,7 +45,6 @@
 
 #include <float.h>
 
-vtkCxxRevisionMacro(vtkGeoInteractorStyle, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkGeoInteractorStyle);
 
 namespace

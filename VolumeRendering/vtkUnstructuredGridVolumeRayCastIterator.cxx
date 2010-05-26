@@ -16,7 +16,6 @@
 =========================================================================*/
 #include "vtkUnstructuredGridVolumeRayCastIterator.h"
 
-vtkCxxRevisionMacro(vtkUnstructuredGridVolumeRayCastIterator, "$Revision: 1.1 $");
 
 //----------------------------------------------------------------------------
 

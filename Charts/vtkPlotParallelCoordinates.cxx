@@ -49,7 +49,6 @@ public:
   bool SelectionInitialized;
 };
 
-vtkCxxRevisionMacro(vtkPlotParallelCoordinates, "$Revision: 1.3 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkPlotParallelCoordinates);

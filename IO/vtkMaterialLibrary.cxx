@@ -24,7 +24,6 @@
 #endif
 
 vtkStandardNewMacro(vtkMaterialLibrary);
-vtkCxxRevisionMacro(vtkMaterialLibrary, "$Revision: 1.4 $");
 //-----------------------------------------------------------------------------
 vtkMaterialLibrary::vtkMaterialLibrary()
 {

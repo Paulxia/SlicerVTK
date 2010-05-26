@@ -29,7 +29,6 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkIdTypeArray.h"
 
-vtkCxxRevisionMacro(vtkConnectivityFilter, "$Revision: 1.75 $");
 vtkStandardNewMacro(vtkConnectivityFilter);
 
 // Construct with default extraction mode to extract largest regions.

@@ -19,7 +19,6 @@
 #include "vtkPiecewiseFunction.h"
 #include "vtkMath.h"
 
-vtkCxxRevisionMacro(vtkTupleInterpolator, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkTupleInterpolator);
 
 //----------------------------------------------------------------------------

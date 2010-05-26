@@ -31,7 +31,6 @@
 #include "vtkTextProperty.h"
 #include "vtkTreeMapToPolyData.h"
 
-vtkCxxRevisionMacro(vtkTreeMapView, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkTreeMapView);
 //----------------------------------------------------------------------------
 vtkTreeMapView::vtkTreeMapView()

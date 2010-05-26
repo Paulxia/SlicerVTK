@@ -50,5 +50,4 @@
 // now include the source for vtkXOpenGLRenderWindow
 #include "vtkXOpenGLRenderWindow.cxx"
 
-vtkCxxRevisionMacro(vtkXMesaRenderWindow, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkXMesaRenderWindow);

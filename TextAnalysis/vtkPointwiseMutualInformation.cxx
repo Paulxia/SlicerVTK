@@ -35,7 +35,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkPointwiseMutualInformation
 
-vtkCxxRevisionMacro(vtkPointwiseMutualInformation, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPointwiseMutualInformation);
 
 vtkPointwiseMutualInformation::vtkPointwiseMutualInformation()

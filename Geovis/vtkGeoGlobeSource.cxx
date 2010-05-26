@@ -25,7 +25,6 @@
 #include "vtkSmartPointer.h"
 
 vtkStandardNewMacro(vtkGeoGlobeSource);
-vtkCxxRevisionMacro(vtkGeoGlobeSource, "$Revision: 1.2 $");
 //----------------------------------------------------------------------------
 vtkGeoGlobeSource::vtkGeoGlobeSource()
 {

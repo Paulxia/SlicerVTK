@@ -25,7 +25,6 @@
 #include "vtkIdListCollection.h"
 //
 //----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkModifiedBSPTree, "$Revision: 1.10.4.1 $");
 vtkStandardNewMacro(vtkModifiedBSPTree);
 //----------------------------------------------------------------------------
 //

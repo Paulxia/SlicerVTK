@@ -24,7 +24,6 @@
 #include "vtkFloatArray.h"
 #include "vtkTree.h"
 
-vtkCxxRevisionMacro(vtkTreeMapLayoutStrategy, "$Revision: 1.5 $");
 
 vtkTreeMapLayoutStrategy::vtkTreeMapLayoutStrategy()
 {

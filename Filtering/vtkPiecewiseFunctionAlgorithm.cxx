@@ -22,7 +22,6 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
-vtkCxxRevisionMacro(vtkPiecewiseFunctionAlgorithm, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkPiecewiseFunctionAlgorithm);
 
 //----------------------------------------------------------------------------

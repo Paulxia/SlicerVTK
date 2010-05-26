@@ -24,7 +24,6 @@
 #include "vtkVolume.h"
 #include "vtkVolumeProperty.h"
 
-vtkCxxRevisionMacro(vtkVolumeTextureMapper, "$Revision: 1.4 $");
 
 vtkVolumeTextureMapper::vtkVolumeTextureMapper()
 {

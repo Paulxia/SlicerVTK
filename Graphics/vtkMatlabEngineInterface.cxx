@@ -32,7 +32,6 @@
 #include <sys/stat.h>
 #include <vtkstd/string>
 
-vtkCxxRevisionMacro(vtkMatlabEngineInterface, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMatlabEngineInterface);
 
 class vtkMatlabEngineSingletonDestroyer;

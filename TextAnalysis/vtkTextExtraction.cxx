@@ -44,7 +44,6 @@ public:
 ////////////////////////////////////////////////////////////////
 // vtkTextExtraction
 
-vtkCxxRevisionMacro(vtkTextExtraction, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkTextExtraction);
 
 vtkTextExtraction::vtkTextExtraction() :

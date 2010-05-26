@@ -25,7 +25,6 @@
 #include "vtkPolyData.h"
 #include "vtkTransform.h"
 
-vtkCxxRevisionMacro(vtkRectangularButtonSource, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkRectangularButtonSource);
 
 //----------------------------------------------------------------------------

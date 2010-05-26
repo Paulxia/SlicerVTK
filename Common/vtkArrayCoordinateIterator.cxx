@@ -25,7 +25,6 @@
 
 #include <vtksys/stl/iterator>
 
-vtkCxxRevisionMacro(vtkArrayCoordinateIterator, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkArrayCoordinateIterator);
 
 vtkArrayCoordinateIterator::vtkArrayCoordinateIterator() :

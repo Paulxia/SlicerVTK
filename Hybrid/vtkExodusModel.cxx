@@ -33,7 +33,6 @@
 #include <ctype.h>
 
 
-vtkCxxRevisionMacro(vtkExodusModel, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkExodusModel);
 
 vtkExodusModel::vtkExodusModel()

@@ -26,7 +26,6 @@
 #include "vtkRenderedHierarchyRepresentation.h"
 #include "vtkTree.h"
 
-vtkCxxRevisionMacro(vtkHierarchicalGraphView, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkHierarchicalGraphView);
 //----------------------------------------------------------------------------
 vtkHierarchicalGraphView::vtkHierarchicalGraphView()

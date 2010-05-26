@@ -44,7 +44,6 @@
 #include <assert.h>
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
-vtkCxxRevisionMacro(vtkOpenGLProperty, "$Revision: 1.60 $");
 vtkStandardNewMacro(vtkOpenGLProperty);
 #endif
 

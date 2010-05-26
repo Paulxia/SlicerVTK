@@ -31,7 +31,6 @@
 #include <vtkstd/string>
 #include <vtkstd/vector>
 
-vtkCxxRevisionMacro(vtkEnSightGoldReader, "$Revision: 1.67 $");
 vtkStandardNewMacro(vtkEnSightGoldReader);
 
 //BTX

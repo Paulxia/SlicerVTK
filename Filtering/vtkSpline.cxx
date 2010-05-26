@@ -16,7 +16,6 @@
 
 #include "vtkPiecewiseFunction.h"
 
-vtkCxxRevisionMacro(vtkSpline, "$Revision: 1.28 $");
 
 //----------------------------------------------------------------------------
 // Construct a spline wth the folloing defaults:

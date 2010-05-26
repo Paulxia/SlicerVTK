@@ -75,7 +75,6 @@ private:
 
 //-----------------------------------------------------------------------------
 
-vtkCxxRevisionMacro(vtkClassifyVolume, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkClassifyVolume);
 
 vtkClassifyVolume::vtkClassifyVolume()

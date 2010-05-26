@@ -50,7 +50,6 @@ static const char * Slash = "\\";
 static const char * Slash = "/";
 #endif
 
-vtkCxxRevisionMacro(vtkWindBladeReader, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkWindBladeReader);
 
 //----------------------------------------------------------------------------

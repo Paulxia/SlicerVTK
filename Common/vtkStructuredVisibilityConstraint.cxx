@@ -17,7 +17,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkUnsignedCharArray.h"
 
-vtkCxxRevisionMacro(vtkStructuredVisibilityConstraint,
                     "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkStructuredVisibilityConstraint);
 

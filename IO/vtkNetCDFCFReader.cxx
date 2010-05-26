@@ -526,7 +526,6 @@ public:
 };
 
 //=============================================================================
-vtkCxxRevisionMacro(vtkNetCDFCFReader, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkNetCDFCFReader);
 
 //-----------------------------------------------------------------------------

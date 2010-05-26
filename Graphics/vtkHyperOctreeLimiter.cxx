@@ -29,7 +29,6 @@
 #include "vtkCellType.h"
 #include "vtkDoubleArray.h"
 
-vtkCxxRevisionMacro(vtkHyperOctreeLimiter, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkHyperOctreeLimiter);
 
 //----------------------------------------------------------------------------

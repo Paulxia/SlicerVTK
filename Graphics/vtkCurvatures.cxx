@@ -29,7 +29,6 @@
 #include "vtkTensor.h"
 #include "vtkTriangle.h"
 
-vtkCxxRevisionMacro(vtkCurvatures, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkCurvatures);
 
 //------------------------------------------------------------------------------

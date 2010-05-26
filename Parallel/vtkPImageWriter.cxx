@@ -27,7 +27,6 @@
       file = NULL; \
       } \
 
-vtkCxxRevisionMacro(vtkPImageWriter, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkPImageWriter);
 
 #ifdef write

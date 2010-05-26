@@ -27,7 +27,6 @@
 #include "vtkFloatArray.h"
 #include "vtkGarbageCollector.h"
 
-vtkCxxRevisionMacro(vtkHyperOctreeFractalSource, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkHyperOctreeFractalSource);
 
 //----------------------------------------------------------------------------

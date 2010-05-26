@@ -76,7 +76,6 @@ int TestDiagram( int argc, char * argv [] )
 
 // Make our new derived class to draw a diagram
 vtkStandardNewMacro(APIDiagram);
-vtkCxxRevisionMacro(APIDiagram, "$Revision: 1.5 $");
 // This function draws our API diagram
 bool APIDiagram::Paint(vtkContext2D *painter)
 {

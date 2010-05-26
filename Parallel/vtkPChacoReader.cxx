@@ -38,7 +38,6 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkProcessGroup.h"
 
-vtkCxxRevisionMacro(vtkPChacoReader, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkPChacoReader);
 
 //----------------------------------------------------------------------------

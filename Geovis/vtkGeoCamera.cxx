@@ -27,7 +27,6 @@
 #include "vtkTransform.h"
 #include <float.h>
 
-vtkCxxRevisionMacro(vtkGeoCamera, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkGeoCamera);
 
 

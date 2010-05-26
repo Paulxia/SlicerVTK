@@ -27,7 +27,6 @@
 #include "vtkUnsignedCharArray.h"
 
 vtkStandardNewMacro(vtkPointsPainter);
-vtkCxxRevisionMacro(vtkPointsPainter, "$Revision: 1.4 $");
 //-----------------------------------------------------------------------------
 vtkPointsPainter::vtkPointsPainter()
 {

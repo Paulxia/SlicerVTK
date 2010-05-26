@@ -24,7 +24,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkTriangularTCoords, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkTriangularTCoords);
 
 int vtkTriangularTCoords::RequestData(

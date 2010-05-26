@@ -20,7 +20,6 @@
 #include "vtkInformationVector.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkPassThrough, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPassThrough);
 
 //----------------------------------------------------------------------------

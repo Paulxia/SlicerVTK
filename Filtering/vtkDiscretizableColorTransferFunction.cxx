@@ -20,7 +20,6 @@
 #include <vtkstd/vector>
 
 vtkStandardNewMacro(vtkDiscretizableColorTransferFunction);
-vtkCxxRevisionMacro(vtkDiscretizableColorTransferFunction, "$Revision: 1.2 $");
 //-----------------------------------------------------------------------------
 vtkDiscretizableColorTransferFunction::vtkDiscretizableColorTransferFunction()
 {

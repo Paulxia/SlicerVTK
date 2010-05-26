@@ -56,7 +56,6 @@
 
 using namespace boost;
 
-vtkCxxRevisionMacro(vtkPBGLCollectGraph, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkPBGLCollectGraph);
 
 

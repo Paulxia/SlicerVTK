@@ -26,7 +26,6 @@
 #include "vtkGeoMath.h"
 #include "vtkGeoTerrainNode.h"
 
-vtkCxxRevisionMacro(vtkGeoTerrainNode, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkGeoTerrainNode);
 
 

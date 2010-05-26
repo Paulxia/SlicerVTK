@@ -45,7 +45,6 @@ public:
   bool Rebuild;
 };
 
-vtkCxxRevisionMacro(vtkBitArray, "$Revision: 1.66 $");
 vtkStandardNewMacro(vtkBitArray);
 
 //----------------------------------------------------------------------------

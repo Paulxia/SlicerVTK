@@ -49,7 +49,6 @@ public:
 };
 
 //----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkQtChartRepresentation, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkQtChartRepresentation);
 
 //----------------------------------------------------------------------------

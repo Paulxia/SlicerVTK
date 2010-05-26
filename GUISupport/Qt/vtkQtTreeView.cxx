@@ -47,7 +47,6 @@
 #include "vtkTree.h"
 #include "vtkViewTheme.h"
 
-vtkCxxRevisionMacro(vtkQtTreeView, "$Revision: 1.32 $");
 vtkStandardNewMacro(vtkQtTreeView);
 
 //----------------------------------------------------------------------------

@@ -26,7 +26,6 @@
 #include "vtkProp.h"
 #include "vtkSmartPointer.h"
 
-vtkCxxRevisionMacro(vtkSelectionNode, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkSelectionNode);
 vtkCxxSetObjectMacro(vtkSelectionNode, SelectionData, vtkDataSetAttributes);
 

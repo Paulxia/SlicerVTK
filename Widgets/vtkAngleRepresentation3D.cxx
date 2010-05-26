@@ -30,7 +30,6 @@
 #include "vtkWindow.h"
 #include "vtkCamera.h"
 
-vtkCxxRevisionMacro(vtkAngleRepresentation3D, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkAngleRepresentation3D);
 
 

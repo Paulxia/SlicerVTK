@@ -16,7 +16,6 @@
 #include "vtkRendererCollection.h"
 #include "vtkRenderWindow.h"
 
-vtkCxxRevisionMacro(vtkImporter, "$Revision: 1.23 $");
 
 vtkCxxSetObjectMacro(vtkImporter,RenderWindow,vtkRenderWindow);
 

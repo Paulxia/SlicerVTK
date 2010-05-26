@@ -33,7 +33,6 @@
 // ****************************************************************
 
 vtkStandardNewMacro(vtkAxisActor);
-vtkCxxRevisionMacro(vtkAxisActor, "$Revision: 1.7 $");
 vtkCxxSetObjectMacro(vtkAxisActor, Camera, vtkCamera); 
 
 // ****************************************************************

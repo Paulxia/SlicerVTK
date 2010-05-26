@@ -16,7 +16,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkMath.h"
 
-vtkCxxRevisionMacro(vtkParametricMobius, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkParametricMobius);
 
 //----------------------------------------------------------------------------

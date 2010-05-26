@@ -32,5 +32,4 @@
 #include "vtkOpenGLScalarsToColorsPainter.cxx"
 #undef vtkOpenGLScalarsToColorsPainter
 
-vtkCxxRevisionMacro(vtkMesaScalarsToColorsPainter, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMesaScalarsToColorsPainter);

@@ -27,7 +27,6 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
-vtkCxxRevisionMacro(vtkUndirectedGraphAlgorithm, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkUndirectedGraphAlgorithm);
 
 //----------------------------------------------------------------------------

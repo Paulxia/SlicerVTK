@@ -49,7 +49,6 @@
 
 #include <ctype.h> // for isspace(), isalnum()
 
-vtkCxxRevisionMacro( vtkTecplotReader, "$Revision: 1.16 $" );
 vtkStandardNewMacro( vtkTecplotReader );
 
 // ============================================================================

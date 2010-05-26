@@ -28,7 +28,6 @@
 #include <vtkstd/set>
 #include <vtkstd/vector>
 
-vtkCxxRevisionMacro(vtkAppendPoints, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkAppendPoints);
 
 //----------------------------------------------------------------------------

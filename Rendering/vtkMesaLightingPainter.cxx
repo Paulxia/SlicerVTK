@@ -32,5 +32,4 @@
 #include "vtkOpenGLLightingPainter.cxx"
 #undef vtkOpenGLLightingPainter
 
-vtkCxxRevisionMacro(vtkMesaLightingPainter, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMesaLightingPainter);

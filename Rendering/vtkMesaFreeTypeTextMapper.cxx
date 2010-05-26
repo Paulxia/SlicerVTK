@@ -40,5 +40,4 @@
 #include "vtkOpenGLFreeTypeTextMapper.cxx"
 #undef vtkOpenGLFreeTypeTextMapper
 
-vtkCxxRevisionMacro(vtkMesaFreeTypeTextMapper, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMesaFreeTypeTextMapper);

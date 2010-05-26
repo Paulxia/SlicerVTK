@@ -42,7 +42,6 @@
 
 //-----------------------------------------------------------------------------
 
-vtkCxxRevisionMacro(vtkGradientFilter, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkGradientFilter);
 
 namespace 

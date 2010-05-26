@@ -19,7 +19,6 @@
 #include <cassert>
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkContextBufferId, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkContextBufferId);
 
 // ----------------------------------------------------------------------------

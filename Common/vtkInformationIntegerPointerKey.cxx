@@ -19,7 +19,6 @@
 #include <vtkstd/algorithm>
 #include <vtkstd/vector>
 
-vtkCxxRevisionMacro(vtkInformationIntegerPointerKey, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------------
 vtkInformationIntegerPointerKey

@@ -30,7 +30,6 @@
 
 #include <stdexcept>
 
-vtkCxxRevisionMacro(vtkAssignMimeType, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkAssignMimeType);
 vtkCxxSetObjectMacro(vtkAssignMimeType,MimeTypes,vtkMimeTypes);
 

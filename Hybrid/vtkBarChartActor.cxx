@@ -33,7 +33,6 @@
 #include <vtkstd/vector>
 
 
-vtkCxxRevisionMacro(vtkBarChartActor, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkBarChartActor);
 
 vtkCxxSetObjectMacro(vtkBarChartActor,Input,vtkDataObject);

@@ -15,7 +15,6 @@
 
 #include "vtkRendererDelegate.h"
 
-vtkCxxRevisionMacro(vtkRendererDelegate, "$Revision: 1.1 $");
 
 vtkRendererDelegate::vtkRendererDelegate()
 {

@@ -22,7 +22,6 @@
 #include "vtkPlaneCollection.h"
 #include "vtkRenderer.h"
 
-vtkCxxRevisionMacro(vtkFocalPlanePointPlacer, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkFocalPlanePointPlacer);
 
 

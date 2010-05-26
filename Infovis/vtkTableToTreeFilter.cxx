@@ -36,7 +36,6 @@
 #include <vtkstd/vector>
 #include <vtkstd/string>
 
-vtkCxxRevisionMacro(vtkTableToTreeFilter, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkTableToTreeFilter);
 
 

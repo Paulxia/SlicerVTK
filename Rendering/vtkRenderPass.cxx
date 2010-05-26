@@ -18,7 +18,6 @@
 #include "vtkRenderer.h"
 #include "vtkOpenGLRenderer.h"
 
-vtkCxxRevisionMacro(vtkRenderPass, "$Revision: 1.2 $");
 
 // ----------------------------------------------------------------------------
 // Description:

@@ -21,7 +21,6 @@
 #include "vtkPointData.h"
 #include "vtkMedicalImageProperties.h"
 
-vtkCxxRevisionMacro(vtkGESignaReader, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkGESignaReader);
 
 

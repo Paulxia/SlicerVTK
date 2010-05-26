@@ -52,7 +52,6 @@
 
 #include "vtkTimerLog.h"
 
-vtkCxxRevisionMacro(vtkCompressCompositer, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkCompressCompositer);
 
 

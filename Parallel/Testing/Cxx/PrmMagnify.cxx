@@ -69,7 +69,6 @@ private:
   void operator=(const vtkTestMagnifyRenderManager &);  // Not implemented.
 };
 
-vtkCxxRevisionMacro(vtkTestMagnifyRenderManager, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTestMagnifyRenderManager);
 
 vtkTestMagnifyRenderManager::vtkTestMagnifyRenderManager()

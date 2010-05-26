@@ -17,7 +17,6 @@
 #include <assert.h>
 
 //----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkBase64Utilities, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkBase64Utilities);
 
 //----------------------------------------------------------------------------

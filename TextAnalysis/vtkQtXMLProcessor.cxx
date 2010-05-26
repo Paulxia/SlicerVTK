@@ -302,7 +302,6 @@ public:
 ////////////////////////////////////////////////////////////////////////////////////////
 // vtkQtXMLProcessor
 
-vtkCxxRevisionMacro(vtkQtXMLProcessor, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkQtXMLProcessor);
 
 vtkQtXMLProcessor::vtkQtXMLProcessor() :

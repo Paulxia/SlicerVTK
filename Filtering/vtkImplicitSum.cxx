@@ -20,7 +20,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkImplicitSum, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkImplicitSum);
 
 //----------------------------------------------------------------------------

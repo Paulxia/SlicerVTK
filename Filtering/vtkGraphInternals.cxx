@@ -22,7 +22,6 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkGraphInternals);
-vtkCxxRevisionMacro(vtkGraphInternals, "$Revision: 1.6 $");
 
 //----------------------------------------------------------------------------
 vtkGraphInternals::vtkGraphInternals()

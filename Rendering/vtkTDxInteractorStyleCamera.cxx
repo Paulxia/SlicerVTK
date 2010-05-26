@@ -25,7 +25,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkTDxInteractorStyleSettings.h"
 
-vtkCxxRevisionMacro(vtkTDxInteractorStyleCamera, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkTDxInteractorStyleCamera);
 
 // ----------------------------------------------------------------------------

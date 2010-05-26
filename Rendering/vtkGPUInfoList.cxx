@@ -22,7 +22,6 @@
 #include <vtkstd/vector>
 #include "vtkGPUInfoListArray.h"
 
-vtkCxxRevisionMacro(vtkGPUInfoList, "$Revision: 1.2 $");
 
 // ----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

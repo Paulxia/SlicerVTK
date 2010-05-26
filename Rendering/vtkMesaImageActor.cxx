@@ -40,5 +40,4 @@
 #undef vtkOpenGLImageActor
 #undef vtkOpenGLRenderWindow
 
-vtkCxxRevisionMacro(vtkMesaImageActor, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkMesaImageActor);

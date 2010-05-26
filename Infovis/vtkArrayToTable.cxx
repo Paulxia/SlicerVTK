@@ -114,7 +114,6 @@ static bool ConvertMatrix(vtkArray* Array, vtkTable* Output)
 
 // ----------------------------------------------------------------------
 
-vtkCxxRevisionMacro(vtkArrayToTable, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkArrayToTable);
 
 // ----------------------------------------------------------------------

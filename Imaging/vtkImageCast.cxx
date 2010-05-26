@@ -21,7 +21,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
-vtkCxxRevisionMacro(vtkImageCast, "$Revision: 1.52 $");
 vtkStandardNewMacro(vtkImageCast);
 
 //----------------------------------------------------------------------------

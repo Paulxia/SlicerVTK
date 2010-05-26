@@ -40,5 +40,4 @@
 #undef vtkOpenGLTexture
 #undef vtkOpenGLRenderWindow
 
-vtkCxxRevisionMacro(vtkMesaTexture, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkMesaTexture);

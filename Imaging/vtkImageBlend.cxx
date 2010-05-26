@@ -23,7 +23,6 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkPointData.h"
 
-vtkCxxRevisionMacro(vtkImageBlend, "$Revision: 1.49 $");
 vtkStandardNewMacro(vtkImageBlend);
 
 //----------------------------------------------------------------------------

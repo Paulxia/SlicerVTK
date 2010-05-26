@@ -28,7 +28,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkPoints.h"
 
-vtkCxxRevisionMacro(vtkGeoRandomGraphSource, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkGeoRandomGraphSource);
 
 // ----------------------------------------------------------------------

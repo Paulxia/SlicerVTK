@@ -47,7 +47,6 @@ public:
 };
 
 
-vtkCxxRevisionMacro(vtkQtSQLQuery, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkQtSQLQuery);
 
 vtkQtSQLQuery::vtkQtSQLQuery()

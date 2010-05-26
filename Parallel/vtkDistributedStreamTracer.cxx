@@ -31,7 +31,6 @@
 #include "vtkRungeKutta2.h"
 #include "vtkSmartPointer.h"
 
-vtkCxxRevisionMacro(vtkDistributedStreamTracer, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkDistributedStreamTracer);
 
 vtkDistributedStreamTracer::vtkDistributedStreamTracer()

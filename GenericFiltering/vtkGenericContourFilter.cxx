@@ -36,7 +36,6 @@
 #include "vtkGenericCellTessellator.h"
 #include "vtkIncrementalPointLocator.h"
 
-vtkCxxRevisionMacro(vtkGenericContourFilter, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkGenericContourFilter);
 
 vtkCxxSetObjectMacro(vtkGenericContourFilter,Locator,vtkIncrementalPointLocator);

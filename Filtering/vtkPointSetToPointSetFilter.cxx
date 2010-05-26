@@ -17,7 +17,6 @@
 #include "vtkStructuredGrid.h"
 #include "vtkUnstructuredGrid.h"
 
-vtkCxxRevisionMacro(vtkPointSetToPointSetFilter, "$Revision: 1.62 $");
 
 //----------------------------------------------------------------------------
 // Construct object.

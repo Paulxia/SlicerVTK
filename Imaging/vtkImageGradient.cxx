@@ -25,7 +25,6 @@
 #include <math.h>
 #include <vtksys/ios/sstream>
 
-vtkCxxRevisionMacro(vtkImageGradient, "$Revision: 1.57 $");
 vtkStandardNewMacro(vtkImageGradient);
 
 //----------------------------------------------------------------------------

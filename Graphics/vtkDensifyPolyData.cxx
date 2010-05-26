@@ -348,7 +348,6 @@ private:
 
 
 //----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkDensifyPolyData, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkDensifyPolyData);
 
 //----------------------------------------------------------------------------

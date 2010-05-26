@@ -42,7 +42,6 @@
 #include "vtkOpenGL.h"
 #include "vtkSphereSource.h"
 
-vtkCxxRevisionMacro(vtkOrientedGlyphContourRepresentation, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkOrientedGlyphContourRepresentation);
 
 //----------------------------------------------------------------------

@@ -31,7 +31,6 @@
 #include <vtksys/ios/sstream>
 #include <vtksys/stl/stdexcept>
 
-vtkCxxRevisionMacro(vtkNGramExtraction, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkNGramExtraction);
 
 vtkNGramExtraction::vtkNGramExtraction() :

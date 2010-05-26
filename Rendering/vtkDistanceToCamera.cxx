@@ -31,7 +31,6 @@
 #include "vtkRenderer.h"
 #include "vtkSmartPointer.h"
 
-vtkCxxRevisionMacro(vtkDistanceToCamera, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkDistanceToCamera);
 
 vtkDistanceToCamera::vtkDistanceToCamera()

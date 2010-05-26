@@ -14,7 +14,6 @@
 =========================================================================*/
 #include "vtkButtonSource.h"
 
-vtkCxxRevisionMacro(vtkButtonSource, "$Revision: 1.12 $");
 
 // Construct 
 vtkButtonSource::vtkButtonSource()

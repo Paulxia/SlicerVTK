@@ -29,7 +29,6 @@
 
 // ----------------------------------------------------------------------
 
-vtkCxxRevisionMacro(vtkDiagonalMatrixSource, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkDiagonalMatrixSource);
 
 // ----------------------------------------------------------------------

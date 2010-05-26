@@ -16,7 +16,6 @@
 #include "vtkDummyController.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkDummyController, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkDummyController);
 
 vtkCxxSetObjectMacro(vtkDummyController, Communicator, vtkCommunicator);

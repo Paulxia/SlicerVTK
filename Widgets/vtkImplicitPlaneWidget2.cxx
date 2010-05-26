@@ -25,7 +25,6 @@
 #include "vtkRenderWindow.h"
 
 
-vtkCxxRevisionMacro(vtkImplicitPlaneWidget2, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkImplicitPlaneWidget2);
 
 //----------------------------------------------------------------------------

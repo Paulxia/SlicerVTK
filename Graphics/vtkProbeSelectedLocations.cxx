@@ -26,7 +26,6 @@
 #include "vtkUnstructuredGrid.h"
 
 vtkStandardNewMacro(vtkProbeSelectedLocations);
-vtkCxxRevisionMacro(vtkProbeSelectedLocations, "$Revision: 1.2 $");
 //----------------------------------------------------------------------------
 vtkProbeSelectedLocations::vtkProbeSelectedLocations()
 {

@@ -22,7 +22,6 @@
 
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkPassThroughLayoutStrategy, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkPassThroughLayoutStrategy);
 
 // ----------------------------------------------------------------------

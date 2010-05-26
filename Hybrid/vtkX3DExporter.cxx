@@ -76,7 +76,6 @@ static bool vtkX3DExporterWriterRenderPoints(
   vtkX3DExporterWriter* writer);
 
 //----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkX3DExporter, "$Revision: 1.20 $");
 vtkStandardNewMacro(vtkX3DExporter);
 
 //----------------------------------------------------------------------------

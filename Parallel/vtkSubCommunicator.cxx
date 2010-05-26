@@ -25,7 +25,6 @@
 #include "vtkProcessGroup.h"
 
 //-----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkSubCommunicator, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkSubCommunicator);
 
 //-----------------------------------------------------------------------------

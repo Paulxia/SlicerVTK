@@ -17,7 +17,6 @@
 #include "vtkDebugLeaks.h"
 #include "vtkInformation.h"
 
-vtkCxxRevisionMacro(vtkInformationKey, "$Revision: 1.6 $");
 
 class vtkInformationKeyToInformationFriendship
 {

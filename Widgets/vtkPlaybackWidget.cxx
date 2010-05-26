@@ -17,7 +17,6 @@
 #include "vtkCallbackCommand.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkPlaybackWidget, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkPlaybackWidget);
 
 //-------------------------------------------------------------------------

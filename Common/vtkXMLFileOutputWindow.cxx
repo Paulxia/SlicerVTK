@@ -15,7 +15,6 @@
 #include "vtkXMLFileOutputWindow.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkXMLFileOutputWindow, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkXMLFileOutputWindow);
 
 void vtkXMLFileOutputWindow::Initialize() 

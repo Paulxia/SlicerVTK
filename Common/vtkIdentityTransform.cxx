@@ -19,7 +19,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkPoints.h"
 
-vtkCxxRevisionMacro(vtkIdentityTransform, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkIdentityTransform);
 
 //----------------------------------------------------------------------------

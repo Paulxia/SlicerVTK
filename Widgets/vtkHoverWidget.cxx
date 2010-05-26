@@ -21,7 +21,6 @@
 #include "vtkCallbackCommand.h"
 #include "vtkEvent.h"
 
-vtkCxxRevisionMacro(vtkHoverWidget, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkHoverWidget);
 
 //-------------------------------------------------------------------------

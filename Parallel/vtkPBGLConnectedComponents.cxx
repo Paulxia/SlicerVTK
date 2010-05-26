@@ -56,7 +56,6 @@
 
 using namespace boost;
 
-vtkCxxRevisionMacro(vtkPBGLConnectedComponents, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPBGLConnectedComponents);
 
 // Constructor/Destructor

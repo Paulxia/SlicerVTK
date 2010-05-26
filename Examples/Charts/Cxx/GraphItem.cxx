@@ -43,7 +43,6 @@ public:
   vtkGraphItem* GraphItem;
   vtkContextView* View;
 };
-vtkCxxRevisionMacro(GraphAnimate, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------------
 int main(int, char *[])

@@ -26,7 +26,6 @@
 
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkBridgeCellIteratorStrategy, "$Revision: 1.1 $");
 
 //-----------------------------------------------------------------------------
 void vtkBridgeCellIteratorStrategy::PrintSelf(ostream& os, vtkIndent indent)

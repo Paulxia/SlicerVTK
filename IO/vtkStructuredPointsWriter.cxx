@@ -25,7 +25,6 @@
 #endif
 
 
-vtkCxxRevisionMacro(vtkStructuredPointsWriter, "$Revision: 1.42 $");
 vtkStandardNewMacro(vtkStructuredPointsWriter);
 
 void vtkStructuredPointsWriter::WriteData()

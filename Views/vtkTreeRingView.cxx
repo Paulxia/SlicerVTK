@@ -26,7 +26,6 @@
 #include "vtkStackedTreeLayoutStrategy.h"
 #include "vtkTreeRingToPolyData.h"
 
-vtkCxxRevisionMacro(vtkTreeRingView, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkTreeRingView);
 //----------------------------------------------------------------------------
 vtkTreeRingView::vtkTreeRingView()

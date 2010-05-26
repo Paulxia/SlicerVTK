@@ -22,7 +22,6 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
-vtkCxxRevisionMacro(vtkGenericDataSetAlgorithm, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------------
 vtkGenericDataSetAlgorithm::vtkGenericDataSetAlgorithm()

@@ -39,5 +39,4 @@
 #include "vtkOpenGLProperty.cxx"
 #undef vtkOpenGLProperty
 
-vtkCxxRevisionMacro(vtkMesaProperty, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkMesaProperty);

@@ -27,7 +27,6 @@
 #include "vtkPolyData.h"
 #include "vtkPolyLine.h"
 
-vtkCxxRevisionMacro(vtkUncertaintyTubeFilter, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkUncertaintyTubeFilter);
 
 //

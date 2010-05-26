@@ -25,7 +25,6 @@
 #include "vtkInformationVector.h"
 #include "vtkPointData.h"
 
-vtkCxxRevisionMacro(vtkCachedStreamingDemandDrivenPipeline, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkCachedStreamingDemandDrivenPipeline);
 
 

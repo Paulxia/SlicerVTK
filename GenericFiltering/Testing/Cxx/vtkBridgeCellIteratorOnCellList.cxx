@@ -28,7 +28,6 @@
 #include "vtkVertex.h"
 #include "vtkPoints.h"
 
-vtkCxxRevisionMacro(vtkBridgeCellIteratorOnCellList, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkBridgeCellIteratorOnCellList);
 
 //-----------------------------------------------------------------------------

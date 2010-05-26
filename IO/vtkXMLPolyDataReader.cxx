@@ -24,7 +24,6 @@
 
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkXMLPolyDataReader, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkXMLPolyDataReader);
 
 //----------------------------------------------------------------------------

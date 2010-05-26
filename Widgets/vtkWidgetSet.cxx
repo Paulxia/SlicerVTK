@@ -17,7 +17,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkParallelopipedWidget.h" // REMOVE
 
-vtkCxxRevisionMacro(vtkWidgetSet, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkWidgetSet);
 
 //----------------------------------------------------------------------

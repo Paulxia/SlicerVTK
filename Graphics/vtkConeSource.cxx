@@ -26,7 +26,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkConeSource, "$Revision: 1.77 $");
 vtkStandardNewMacro(vtkConeSource);
 
 //----------------------------------------------------------------------------

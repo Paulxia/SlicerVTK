@@ -99,7 +99,6 @@ public:
 // vtkCoincidentPoints
 
 vtkStandardNewMacro(vtkCoincidentPoints);
-vtkCxxRevisionMacro(vtkCoincidentPoints,"$Revision: 1.1 $");
 
 vtkCoincidentPoints::vtkCoincidentPoints()
 {

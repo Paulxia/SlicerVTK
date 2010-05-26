@@ -30,7 +30,6 @@
 // Standard functions
 //
 
-vtkCxxRevisionMacro(vtkArray, "$Revision: 1.6 $");
 
 //----------------------------------------------------------------------------
 

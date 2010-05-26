@@ -36,7 +36,6 @@
 #include <assert.h>
 #include <locale> // C++ locale
 
-vtkCxxRevisionMacro(vtkXMLReader, "$Revision: 1.56 $");
 //-----------------------------------------------------------------------------
 static void ReadStringVersion(const char* version, int& major, int& minor)
 {

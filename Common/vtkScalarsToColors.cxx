@@ -18,7 +18,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkScalarsToColors, "$Revision: 1.27 $");
 
 //----------------------------------------------------------------------------
 vtkScalarsToColors::vtkScalarsToColors()

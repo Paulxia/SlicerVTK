@@ -17,7 +17,6 @@
 
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkHierarchicalPolyDataMapper, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkHierarchicalPolyDataMapper);
 
 vtkHierarchicalPolyDataMapper::vtkHierarchicalPolyDataMapper()

@@ -39,7 +39,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkTreeFieldAggregator, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkTreeFieldAggregator);
 
 vtkTreeFieldAggregator::vtkTreeFieldAggregator()

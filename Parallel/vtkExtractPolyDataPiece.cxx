@@ -27,7 +27,6 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkUnsignedCharArray.h"
 
-vtkCxxRevisionMacro(vtkExtractPolyDataPiece, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkExtractPolyDataPiece);
 
 //=============================================================================

@@ -23,7 +23,6 @@
 #include "vtkPolyData.h"
 #include "vtkPolyDataMapper.h"
 
-vtkCxxRevisionMacro(vtkDataSetMapper, "$Revision: 1.70 $");
 vtkStandardNewMacro(vtkDataSetMapper);
 
 //----------------------------------------------------------------------------

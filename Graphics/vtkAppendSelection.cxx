@@ -27,7 +27,6 @@
 #include "vtkSmartPointer.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
-vtkCxxRevisionMacro(vtkAppendSelection, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkAppendSelection);
 
 //----------------------------------------------------------------------------

@@ -25,7 +25,6 @@
  #include <mpi.h>
 #endif
 
-vtkCxxRevisionMacro(vtkCompositer, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkCompositer);
 
 //-------------------------------------------------------------------------

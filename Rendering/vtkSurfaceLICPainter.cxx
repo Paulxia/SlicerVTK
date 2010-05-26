@@ -130,7 +130,6 @@ public:
 };
 
 vtkStandardNewMacro(vtkSurfaceLICPainter);
-vtkCxxRevisionMacro(vtkSurfaceLICPainter, "$Revision: 1.6 $");
 //----------------------------------------------------------------------------
 vtkSurfaceLICPainter::vtkSurfaceLICPainter()
 {

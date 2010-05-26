@@ -17,7 +17,6 @@
 #include "vtkSmartPointer.h"
 #include "vtkRenderWindow.h"
 
-vtkCxxRevisionMacro(vtkTestingInteractor, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkTestingInteractor);
 
 int         vtkTestingInteractor::TestReturnStatus = -1;

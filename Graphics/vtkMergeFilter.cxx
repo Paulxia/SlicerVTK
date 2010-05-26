@@ -26,7 +26,6 @@
 #include "vtkStructuredPoints.h"
 #include "vtkUnstructuredGrid.h"
 
-vtkCxxRevisionMacro(vtkMergeFilter, "$Revision: 1.70 $");
 vtkStandardNewMacro(vtkMergeFilter);
 
 class vtkFieldNode

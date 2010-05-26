@@ -20,7 +20,6 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkMultiBlockDataSet);
-vtkCxxRevisionMacro(vtkMultiBlockDataSet, "$Revision: 1.10 $");
 //----------------------------------------------------------------------------
 vtkMultiBlockDataSet::vtkMultiBlockDataSet()
 {

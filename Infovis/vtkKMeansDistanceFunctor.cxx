@@ -8,7 +8,6 @@
 #include "vtkIdTypeArray.h"
 
 vtkStandardNewMacro(vtkKMeansDistanceFunctor);
-vtkCxxRevisionMacro(vtkKMeansDistanceFunctor,"$Revision: 1.8 $");
 
 // ----------------------------------------------------------------------
 vtkKMeansDistanceFunctor::vtkKMeansDistanceFunctor()

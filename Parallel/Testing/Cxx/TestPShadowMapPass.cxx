@@ -104,7 +104,6 @@ protected:
   char **Argv;
 };
 
-vtkCxxRevisionMacro(MyProcess, "$Revision: 1.5 $");
 vtkStandardNewMacro(MyProcess);
 
 MyProcess::MyProcess()

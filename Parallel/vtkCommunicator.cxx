@@ -47,7 +47,6 @@
 
 #include <vtkstd/algorithm>
 
-vtkCxxRevisionMacro(vtkCommunicator, "$Revision: 1.61 $");
 
 #define EXTENT_HEADER_SIZE      128
 

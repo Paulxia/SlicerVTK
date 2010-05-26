@@ -33,7 +33,6 @@
 #include <vtkstd/string>
 #include <vtksys/ios/sstream>
 
-vtkCxxRevisionMacro(vtkParticleReader, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkParticleReader);
 
 namespace {

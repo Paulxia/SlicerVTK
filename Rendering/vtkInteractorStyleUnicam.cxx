@@ -36,7 +36,6 @@
 #include "vtkWorldPointPicker.h"
 #include "vtkCallbackCommand.h"
 
-vtkCxxRevisionMacro(vtkInteractorStyleUnicam, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkInteractorStyleUnicam);
 
 // define 'TheTime()' function-- returns time in elapsed seconds

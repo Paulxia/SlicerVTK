@@ -50,7 +50,6 @@
 #include <vtkstd/vector>
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkUnstructuredGridGeometryFilter, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkUnstructuredGridGeometryFilter);
 
 #if 0

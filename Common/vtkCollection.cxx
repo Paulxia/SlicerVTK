@@ -21,7 +21,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkCollection, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkCollection);
 
 // Construct with empty list.

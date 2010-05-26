@@ -15,7 +15,6 @@
 #include "vtkProcess.h"
 #include "vtkMultiProcessController.h"
 
-vtkCxxRevisionMacro(vtkProcess, "$Revision: 1.1 $");
 
 // ----------------------------------------------------------------------------
 vtkProcess::vtkProcess()

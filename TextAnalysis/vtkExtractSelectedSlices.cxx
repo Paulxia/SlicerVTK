@@ -37,7 +37,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkExtractSelectedSlices
 
-vtkCxxRevisionMacro(vtkExtractSelectedSlices, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkExtractSelectedSlices);
 
 vtkExtractSelectedSlices::vtkExtractSelectedSlices() :

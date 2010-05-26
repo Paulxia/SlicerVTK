@@ -22,7 +22,6 @@
 #include "vtkRenderer.h"
 #include "vtkSliderWidget.h"
 
-vtkCxxRevisionMacro(vtkCheckerboardWidget, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCheckerboardWidget);
 
 

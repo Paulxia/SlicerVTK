@@ -22,7 +22,6 @@
 #include "vtkXMLDataElement.h"
 
 vtkStandardNewMacro(vtkXMLMultiBlockDataWriter);
-vtkCxxRevisionMacro(vtkXMLMultiBlockDataWriter, "$Revision: 1.5 $");
 //----------------------------------------------------------------------------
 vtkXMLMultiBlockDataWriter::vtkXMLMultiBlockDataWriter()
 {

@@ -17,7 +17,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkProperty.h"
 
-vtkCxxRevisionMacro(vtkActorCollection, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkActorCollection);
 
 void vtkActorCollection::ApplyProperties(vtkProperty *p)

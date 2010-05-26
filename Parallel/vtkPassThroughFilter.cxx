@@ -21,7 +21,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
-vtkCxxRevisionMacro(vtkPassThroughFilter, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkPassThroughFilter);
 
 int vtkPassThroughFilter::RequestData(

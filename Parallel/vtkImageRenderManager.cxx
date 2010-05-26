@@ -22,7 +22,6 @@
 #include "vtkTimerLog.h"
 #include "vtkUnsignedCharArray.h"
 
-vtkCxxRevisionMacro(vtkImageRenderManager, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkImageRenderManager);
 
 //----------------------------------------------------------------------------

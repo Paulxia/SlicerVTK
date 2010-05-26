@@ -70,9 +70,7 @@ void vtkMPIController::CreateOutputWindow()
   vtkOutputWindow::SetInstance(this->OutputWindow);
 }
 
-vtkCxxRevisionMacro(vtkMPIOutputWindow, "$Revision: 1.29 $");
 
-vtkCxxRevisionMacro(vtkMPIController, "$Revision: 1.29 $");
 vtkStandardNewMacro(vtkMPIController);
 
 //----------------------------------------------------------------------------

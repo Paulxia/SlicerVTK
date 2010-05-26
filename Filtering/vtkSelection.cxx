@@ -38,7 +38,6 @@ struct vtkSelectionInternals
 };
 
 //----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkSelection, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkSelection);
 
 //----------------------------------------------------------------------------

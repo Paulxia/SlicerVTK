@@ -67,7 +67,6 @@ int TestContext( int argc, char * argv [] )
 
 // Make our new derived class to draw a diagram
 vtkStandardNewMacro(ContextTest);
-vtkCxxRevisionMacro(ContextTest, "$Revision: 1.2 $");
 // This function aims to test the primitives provided by the 2D API.
 bool ContextTest::Paint(vtkContext2D *painter)
 {

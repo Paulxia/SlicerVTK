@@ -25,7 +25,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkPoints.h"
 
-vtkCxxRevisionMacro(vtkCircularLayoutStrategy, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCircularLayoutStrategy);
 
 vtkCircularLayoutStrategy::vtkCircularLayoutStrategy()

@@ -21,7 +21,6 @@
 #include <vtksys/stl/map>
 
 //-----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkUniformVariables, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkUniformVariables);
 
 class ltstr

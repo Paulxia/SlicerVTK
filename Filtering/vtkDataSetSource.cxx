@@ -18,7 +18,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkDataSet.h"
 
-vtkCxxRevisionMacro(vtkDataSetSource, "$Revision: 1.18 $");
 
 vtkDataSetSource::vtkDataSetSource()
 {

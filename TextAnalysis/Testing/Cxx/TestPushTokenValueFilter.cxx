@@ -85,7 +85,6 @@ private:
   void operator=(const vtkStreamAwareFeatureDictionary&);   // Not implemented
 };
 
-vtkCxxRevisionMacro(vtkStreamAwareFeatureDictionary, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkStreamAwareFeatureDictionary);
 
 int TestPushTokenValueFilter(int vtkNotUsed(argc), char *vtkNotUsed(argv)[])

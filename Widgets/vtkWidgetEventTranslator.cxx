@@ -24,7 +24,6 @@
 #include <vtkstd/map>
 #include <vtkstd/list>
 
-vtkCxxRevisionMacro(vtkWidgetEventTranslator, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkWidgetEventTranslator);
 
 

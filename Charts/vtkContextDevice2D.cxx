@@ -19,7 +19,6 @@
 #include "vtkObjectFactory.h"
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkContextDevice2D, "$Revision: 1.2 $");
 //-----------------------------------------------------------------------------
 //vtkStandardNewMacro(vtkContextDevice2D);
 

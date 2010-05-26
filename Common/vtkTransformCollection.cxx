@@ -15,5 +15,4 @@
 #include "vtkTransformCollection.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkTransformCollection, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkTransformCollection);

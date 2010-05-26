@@ -19,7 +19,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
-vtkCxxRevisionMacro(vtkPNMWriter, "$Revision: 1.23 $");
 vtkStandardNewMacro(vtkPNMWriter);
 
 #ifdef write

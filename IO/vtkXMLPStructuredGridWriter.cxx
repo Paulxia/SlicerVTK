@@ -20,7 +20,6 @@
 #include "vtkStructuredGrid.h"
 #include "vtkXMLStructuredGridWriter.h"
 
-vtkCxxRevisionMacro(vtkXMLPStructuredGridWriter, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkXMLPStructuredGridWriter);
 
 //----------------------------------------------------------------------------

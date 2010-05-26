@@ -30,7 +30,6 @@
 #include "vtkBridgeCell.h"
 #include "vtkCell.h"
 
-vtkCxxRevisionMacro(vtkBridgePointIteratorOnCell, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkBridgePointIteratorOnCell);
 
 //-----------------------------------------------------------------------------

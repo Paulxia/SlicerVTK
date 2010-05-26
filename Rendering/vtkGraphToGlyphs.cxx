@@ -36,7 +36,6 @@
 #include "vtkTable.h"
 #include "vtkUndirectedGraph.h"
 
-vtkCxxRevisionMacro(vtkGraphToGlyphs, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkGraphToGlyphs);
 
 vtkGraphToGlyphs::vtkGraphToGlyphs()

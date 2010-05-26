@@ -27,7 +27,6 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
-vtkCxxRevisionMacro(vtkGraphToPoints, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkGraphToPoints);
 
 vtkGraphToPoints::vtkGraphToPoints()

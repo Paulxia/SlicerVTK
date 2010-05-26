@@ -27,7 +27,6 @@
 #include "vtkWidgetEvent.h"
 
 
-vtkCxxRevisionMacro(vtkRectilinearWipeWidget, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkRectilinearWipeWidget);
 
 

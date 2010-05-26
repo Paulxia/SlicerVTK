@@ -17,7 +17,6 @@
 #include "vtkObjectFactory.h"
 
 
-vtkCxxRevisionMacro(vtkAffineRepresentation, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------
 vtkAffineRepresentation::vtkAffineRepresentation()

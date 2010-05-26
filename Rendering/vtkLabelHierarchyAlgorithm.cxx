@@ -22,7 +22,6 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
-vtkCxxRevisionMacro(vtkLabelHierarchyAlgorithm, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkLabelHierarchyAlgorithm);
 
 //----------------------------------------------------------------------------

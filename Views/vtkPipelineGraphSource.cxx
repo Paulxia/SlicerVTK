@@ -47,7 +47,6 @@ using vtksys_ios::ostringstream;
 #define VTK_CREATE(type, name) \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
-vtkCxxRevisionMacro(vtkPipelineGraphSource, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPipelineGraphSource);
 
 // ----------------------------------------------------------------------

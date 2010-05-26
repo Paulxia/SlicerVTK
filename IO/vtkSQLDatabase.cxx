@@ -82,7 +82,6 @@ public:
 // Used to clean up the Callbacks 
 static vtkSQLDatabaseCleanup vtkCleanupSQLDatabaseGlobal;
 
-vtkCxxRevisionMacro(vtkSQLDatabase, "$Revision: 1.50 $");
 vtkInformationKeyMacro(vtkSQLDatabase, DATABASE, ObjectBase);
 
 // ----------------------------------------------------------------------

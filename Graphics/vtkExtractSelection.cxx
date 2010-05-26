@@ -34,7 +34,6 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTable.h"
 
-vtkCxxRevisionMacro(vtkExtractSelection, "$Revision: 1.29 $");
 vtkStandardNewMacro(vtkExtractSelection);
 
 //----------------------------------------------------------------------------

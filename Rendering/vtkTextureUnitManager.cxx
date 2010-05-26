@@ -22,7 +22,6 @@
 #include <assert.h>
 
 vtkStandardNewMacro(vtkTextureUnitManager);
-vtkCxxRevisionMacro(vtkTextureUnitManager, "$Revision: 1.4 $");
 
 // ----------------------------------------------------------------------------
 vtkTextureUnitManager::vtkTextureUnitManager()

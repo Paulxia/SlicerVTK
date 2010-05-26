@@ -29,7 +29,6 @@
 #include "vtkDataSetAttributes.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
-vtkCxxRevisionMacro(vtkPipelineSize, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkPipelineSize);
 
 unsigned long 

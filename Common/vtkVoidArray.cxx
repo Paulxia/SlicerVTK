@@ -15,7 +15,6 @@
 #include "vtkVoidArray.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkVoidArray, "$Revision: 1.44 $");
 vtkStandardNewMacro(vtkVoidArray);
 
 typedef void *voidPtr;

@@ -154,7 +154,6 @@ private:
   void operator=(const vtkHyperOctreeContourPointsGrabber&);    // Not implemented.
 };
   
-vtkCxxRevisionMacro(vtkHyperOctreeContourFilter, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkHyperOctreeContourFilter);
 
 //----------------------------------------------------------------------------
@@ -1288,7 +1287,6 @@ int vtkHyperOctreeContourFilter::FillInputPortInformation(int,
 }
 
 
-vtkCxxRevisionMacro(vtkHyperOctreeContourPointsGrabber, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkHyperOctreeContourPointsGrabber);
 
 //-----------------------------------------------------------------------------

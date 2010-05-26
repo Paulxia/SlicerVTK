@@ -23,7 +23,6 @@
 #include <vtkstd/algorithm>
 #include <vtkstd/iterator>
 
-vtkCxxRevisionMacro(vtkPiecewiseFunction, "$Revision: 1.53 $");
 vtkStandardNewMacro(vtkPiecewiseFunction);
 
 // The Node structure

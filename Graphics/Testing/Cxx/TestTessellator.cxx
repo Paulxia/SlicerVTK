@@ -2562,7 +2562,6 @@ class vtkTestTessellatorSubdivision
 
 };
 
-vtkCxxRevisionMacro(vtkTestTessellatorSubdivision,"$Revision: 1.7 $");
 vtkStandardNewMacro(vtkTestTessellatorSubdivision);
 
 static int test_list[] =

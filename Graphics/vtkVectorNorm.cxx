@@ -24,7 +24,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkVectorNorm, "$Revision: 1.45 $");
 vtkStandardNewMacro(vtkVectorNorm);
 
 // Construct with normalize flag off.

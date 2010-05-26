@@ -20,7 +20,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkPolyData.h"
 
-vtkCxxRevisionMacro(vtkCellLinks, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkCellLinks);
 
 //----------------------------------------------------------------------------

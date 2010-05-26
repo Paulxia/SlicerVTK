@@ -17,7 +17,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkCommand.h"
 
-vtkCxxRevisionMacro(vtkEvent, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkEvent);
 
 

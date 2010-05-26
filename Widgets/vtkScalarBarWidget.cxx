@@ -25,7 +25,6 @@
 #include "vtkWidgetCallbackMapper.h"
 #include "vtkWidgetEvent.h"
 
-vtkCxxRevisionMacro(vtkScalarBarWidget, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkScalarBarWidget);
 
 //-------------------------------------------------------------------------

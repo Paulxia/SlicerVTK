@@ -27,7 +27,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkSphereSource, "$Revision: 1.70 $");
 vtkStandardNewMacro(vtkSphereSource);
 
 //----------------------------------------------------------------------------

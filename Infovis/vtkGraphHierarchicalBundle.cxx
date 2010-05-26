@@ -58,7 +58,6 @@ static vtkVariant vtkGetVariantValue(vtkAbstractArray* arr, vtkIdType i)
 }
 
 
-vtkCxxRevisionMacro(vtkGraphHierarchicalBundle, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkGraphHierarchicalBundle);
 
 vtkGraphHierarchicalBundle::vtkGraphHierarchicalBundle()

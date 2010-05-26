@@ -33,5 +33,4 @@
 #include "vtkOpenGLPainterDeviceAdapter.cxx"
 #undef vtkOpenGLPainterDeviceAdapter
 
-vtkCxxRevisionMacro(vtkMesaPainterDeviceAdapter, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkMesaPainterDeviceAdapter);

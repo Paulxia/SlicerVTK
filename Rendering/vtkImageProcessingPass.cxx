@@ -38,7 +38,6 @@
 #include "vtkCamera.h"
 #include "vtkMath.h"
 
-vtkCxxRevisionMacro(vtkImageProcessingPass, "$Revision: 1.2 $");
 vtkCxxSetObjectMacro(vtkImageProcessingPass,DelegatePass,vtkRenderPass);
 
 

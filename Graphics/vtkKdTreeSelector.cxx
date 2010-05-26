@@ -31,7 +31,6 @@
 #include "vtkSelectionNode.h"
 #include "vtkSmartPointer.h"
 
-vtkCxxRevisionMacro(vtkKdTreeSelector, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkKdTreeSelector);
 
 vtkKdTreeSelector::vtkKdTreeSelector()

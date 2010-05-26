@@ -33,7 +33,6 @@
 #include "vtkTriangleStrip.h"
 #include "vtkVertex.h"
 
-vtkCxxRevisionMacro(vtkPolyData, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkPolyData);
 
 //----------------------------------------------------------------------------

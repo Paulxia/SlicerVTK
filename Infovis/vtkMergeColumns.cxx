@@ -27,7 +27,6 @@
 #include "vtkUnicodeStringArray.h"
 #include "vtkTable.h"
 
-vtkCxxRevisionMacro(vtkMergeColumns, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkMergeColumns);
 
 vtkMergeColumns::vtkMergeColumns()

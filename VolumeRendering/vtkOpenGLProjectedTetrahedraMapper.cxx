@@ -57,7 +57,6 @@ const int SqrtTableSize = 2048;
 
 //-----------------------------------------------------------------------------
 
-vtkCxxRevisionMacro(vtkOpenGLProjectedTetrahedraMapper, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkOpenGLProjectedTetrahedraMapper);
 
 vtkOpenGLProjectedTetrahedraMapper::vtkOpenGLProjectedTetrahedraMapper()

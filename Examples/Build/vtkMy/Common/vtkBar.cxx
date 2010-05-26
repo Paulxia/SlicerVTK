@@ -17,5 +17,4 @@
 
 //----------------------------------------------------------------------------
 
-vtkCxxRevisionMacro(vtkBar, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkBar);

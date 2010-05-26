@@ -20,7 +20,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
-vtkCxxRevisionMacro(vtkImageResample, "$Revision: 1.43 $");
 vtkStandardNewMacro(vtkImageResample);
 
 //----------------------------------------------------------------------------

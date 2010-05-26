@@ -34,7 +34,6 @@
 #include <vtkstd/vector>
 
 vtkStandardNewMacro(vtkGeoGraticule);
-vtkCxxRevisionMacro(vtkGeoGraticule,"$Revision: 1.3 $");
 
 double vtkGeoGraticule::LatitudeLevelTics[12] =
 {

@@ -32,7 +32,6 @@
 #include "vtkStructuredGrid.h"
 #include "vtkUnstructuredGrid.h"
 
-vtkCxxRevisionMacro(vtkExtractPiece, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkExtractPiece);
 
 //=============================================================================

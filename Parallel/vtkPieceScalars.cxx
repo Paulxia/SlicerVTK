@@ -25,7 +25,6 @@
 #include "vtkPointData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
-vtkCxxRevisionMacro(vtkPieceScalars, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkPieceScalars);
 
 //----------------------------------------------------------------------------

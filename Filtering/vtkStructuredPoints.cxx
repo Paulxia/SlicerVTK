@@ -17,7 +17,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkStructuredPoints, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkStructuredPoints);
 
 vtkStructuredPoints::vtkStructuredPoints()

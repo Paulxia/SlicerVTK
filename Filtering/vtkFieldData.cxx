@@ -19,7 +19,6 @@
 #include "vtkIdList.h"
 #include "vtkInformation.h"
 
-vtkCxxRevisionMacro(vtkFieldData, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkFieldData);
 
 //----------------------------------------------------------------------------

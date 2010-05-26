@@ -32,7 +32,6 @@
 // *************************************************************************
 
 vtkStandardNewMacro(vtkCubeAxesActor);
-vtkCxxRevisionMacro(vtkCubeAxesActor, "$Revision: 1.5 $");
 vtkCxxSetObjectMacro(vtkCubeAxesActor, Camera,vtkCamera);
 
 // *************************************************************************

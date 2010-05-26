@@ -14,7 +14,6 @@
 =========================================================================*/
 #include "vtkHyperOctreeCursor.h"
 
-vtkCxxRevisionMacro(vtkHyperOctreeCursor, "$Revision: 1.1 $");
 
 //-----------------------------------------------------------------------------
 // Constructor.

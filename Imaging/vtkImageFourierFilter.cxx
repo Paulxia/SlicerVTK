@@ -16,7 +16,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkImageFourierFilter, "$Revision: 1.19 $");
 
 
 /*=========================================================================

@@ -20,7 +20,6 @@
 #include "vtkRectilinearGrid.h"
 #include "vtkXMLRectilinearGridWriter.h"
 
-vtkCxxRevisionMacro(vtkXMLPRectilinearGridWriter, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkXMLPRectilinearGridWriter);
 
 //----------------------------------------------------------------------------

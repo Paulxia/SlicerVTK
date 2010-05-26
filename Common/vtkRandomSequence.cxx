@@ -15,7 +15,6 @@
 
 #include <cassert>
 
-vtkCxxRevisionMacro(vtkRandomSequence, "$Revision: 1.2 $");
 
 // ----------------------------------------------------------------------------
 vtkRandomSequence::vtkRandomSequence()

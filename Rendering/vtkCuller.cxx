@@ -14,7 +14,6 @@
 =========================================================================*/
 #include "vtkCuller.h"
 
-vtkCxxRevisionMacro(vtkCuller, "$Revision: 1.4 $");
 
 vtkCuller::vtkCuller()
 {

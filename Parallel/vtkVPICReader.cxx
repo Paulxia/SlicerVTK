@@ -34,7 +34,6 @@
 #include "VPICDataSet.h"
 #include "VPICView.h"
 
-vtkCxxRevisionMacro(vtkVPICReader, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkVPICReader);
 
 //----------------------------------------------------------------------------

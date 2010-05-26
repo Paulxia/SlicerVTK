@@ -44,7 +44,6 @@
 
 #include "vtkgl.h"
 
-vtkCxxRevisionMacro(vtkGeoView, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkGeoView);
 vtkCxxSetObjectMacro(vtkGeoView, Terrain, vtkGeoTerrain);
 //----------------------------------------------------------------------------

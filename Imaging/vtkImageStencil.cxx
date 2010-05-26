@@ -23,7 +23,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkImageStencil, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkImageStencil);
 
 //----------------------------------------------------------------------------

@@ -18,7 +18,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkPolyData.h"
 
-vtkCxxRevisionMacro(vtkPolyDataSource, "$Revision: 1.13 $");
 
 //----------------------------------------------------------------------------
 vtkPolyDataSource::vtkPolyDataSource()

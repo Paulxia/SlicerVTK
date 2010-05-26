@@ -17,7 +17,6 @@
 #include "vtkImageData.h"
 #include "vtkErrorCode.h"
 
-vtkCxxRevisionMacro(vtkGenericMovieWriter, "$Revision: 1.3 $");
 
 //---------------------------------------------------------------------------
 vtkGenericMovieWriter::vtkGenericMovieWriter()

@@ -19,7 +19,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkLightCollection, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkLightCollection);
 
 // Add a light to the list.

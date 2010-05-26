@@ -20,7 +20,6 @@
 
 #include <vtkTextExtractionStrategy.h>
 
-vtkCxxRevisionMacro(vtkTextExtractionStrategy, "$Revision: 1.1 $");
 
 vtkTextExtractionStrategy::vtkTextExtractionStrategy()
 {

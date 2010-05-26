@@ -44,7 +44,6 @@
 
 #include <sstream>
 
-vtkCxxRevisionMacro(vtkCompassRepresentation, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCompassRepresentation);
 
 //----------------------------------------------------------------------

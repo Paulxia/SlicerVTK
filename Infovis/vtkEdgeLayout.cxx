@@ -32,7 +32,6 @@
 #include "vtkPointData.h"
 #include "vtkPoints.h"
 
-vtkCxxRevisionMacro(vtkEdgeLayout, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkEdgeLayout);
 
 // ----------------------------------------------------------------------

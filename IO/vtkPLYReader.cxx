@@ -27,7 +27,6 @@
 #include <ctype.h>
 #include <stddef.h>
 
-vtkCxxRevisionMacro(vtkPLYReader, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkPLYReader);
 
 

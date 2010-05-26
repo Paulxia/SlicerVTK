@@ -35,7 +35,6 @@
 // Standard functions
 //
 
-vtkCxxRevisionMacro(vtkTable, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkTable);
 vtkCxxSetObjectMacro(vtkTable, RowData, vtkDataSetAttributes);
 

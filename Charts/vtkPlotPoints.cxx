@@ -30,7 +30,6 @@
 
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkPlotPoints, "$Revision: 1.4 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkPlotPoints);

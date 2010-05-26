@@ -27,7 +27,6 @@
 #pragma warning ( disable : 4100 )
 #endif
 
-vtkCxxRevisionMacro(vtkBSPCuts, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkBSPCuts);
 
 //----------------------------------------------------------------------------

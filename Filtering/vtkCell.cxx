@@ -18,7 +18,6 @@
 #include "vtkMarchingSquaresCases.h"
 #include "vtkPoints.h"
 
-vtkCxxRevisionMacro(vtkCell, "$Revision: 1.2 $");
 
 // Construct cell.
 vtkCell::vtkCell()

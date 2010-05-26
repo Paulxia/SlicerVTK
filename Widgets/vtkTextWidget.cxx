@@ -17,7 +17,6 @@
 #include "vtkObjectFactory.h"
 #include "vtkCommand.h"
 
-vtkCxxRevisionMacro(vtkTextWidget, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkTextWidget);
 
 //-------------------------------------------------------------------------

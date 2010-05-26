@@ -38,7 +38,6 @@ public:
 
 // ----------------------------------------------------------------------
 
-vtkCxxRevisionMacro(vtkTableToArray, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkTableToArray);
 
 // ----------------------------------------------------------------------

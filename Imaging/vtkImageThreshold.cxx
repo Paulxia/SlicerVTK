@@ -22,7 +22,6 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkDataSetAttributes.h"
 
-vtkCxxRevisionMacro(vtkImageThreshold, "$Revision: 1.52 $");
 vtkStandardNewMacro(vtkImageThreshold);
 
 //----------------------------------------------------------------------------

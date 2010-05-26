@@ -25,7 +25,6 @@
 #include <vtkstd/map>
 #include <cstring> // for strlen()
 
-vtkCxxRevisionMacro(vtkTDxMacDevice,"$Revision: 1.1 $");
 vtkStandardNewMacro(vtkTDxMacDevice);
 
 void vtkTDxMacDeviceMessageHandler(io_connect_t connection,

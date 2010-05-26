@@ -50,7 +50,6 @@ protected:
     
 };
 
-vtkCxxRevisionMacro(vtkTextRepresentation, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkTextRepresentation);
 
 //-------------------------------------------------------------------------

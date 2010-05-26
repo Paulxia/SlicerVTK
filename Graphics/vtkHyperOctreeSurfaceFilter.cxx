@@ -26,7 +26,6 @@
 #include "vtkPointData.h"
 #include "vtkIncrementalPointLocator.h"
 
-vtkCxxRevisionMacro(vtkHyperOctreeSurfaceFilter, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkHyperOctreeSurfaceFilter);
 
 // merging: locator

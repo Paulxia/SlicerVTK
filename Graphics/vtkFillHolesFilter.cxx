@@ -27,7 +27,6 @@
 #include "vtkSphere.h"
 #include "vtkMath.h"
 
-vtkCxxRevisionMacro(vtkFillHolesFilter, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkFillHolesFilter);
 
 //------------------------------------------------------------------------

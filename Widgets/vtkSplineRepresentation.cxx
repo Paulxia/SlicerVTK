@@ -37,7 +37,6 @@
 #include "vtkDoubleArray.h"
 
 vtkStandardNewMacro(vtkSplineRepresentation);
-vtkCxxRevisionMacro(vtkSplineRepresentation, "$Revision: 1.4 $");
 //----------------------------------------------------------------------------
 vtkSplineRepresentation::vtkSplineRepresentation()
 {

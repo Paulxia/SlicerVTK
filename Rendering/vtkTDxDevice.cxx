@@ -16,7 +16,6 @@
 
 #include <assert.h>
 
-vtkCxxRevisionMacro(vtkTDxDevice,"$Revision: 1.1 $");
 
 // ----------------------------------------------------------------------------
 vtkTDxDevice::vtkTDxDevice()

@@ -27,7 +27,6 @@
 #include "vtkWidgetEvent.h"
 #include "vtkPolyData.h"
 
-vtkCxxRevisionMacro(vtkContourWidget, "$Revision: 1.37 $");
 vtkStandardNewMacro(vtkContourWidget);
 
 //----------------------------------------------------------------------

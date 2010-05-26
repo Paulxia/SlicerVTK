@@ -18,7 +18,6 @@
 #include "vtkAbstractTransform.h"
 #include "vtkTransform.h"
 
-vtkCxxRevisionMacro(vtkImplicitFunction, "$Revision: 1.38 $");
 vtkCxxSetObjectMacro(vtkImplicitFunction,Transform,vtkAbstractTransform);
 
 vtkImplicitFunction::vtkImplicitFunction()

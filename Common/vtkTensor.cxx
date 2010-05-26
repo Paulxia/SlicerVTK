@@ -15,7 +15,6 @@
 #include "vtkTensor.h"
 #include "vtkObjectFactory.h"
 
-vtkCxxRevisionMacro(vtkTensor, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkTensor);
 
 // Construct tensor initially pointing to internal storage.

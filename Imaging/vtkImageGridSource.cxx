@@ -22,7 +22,6 @@
 
 #include <math.h>
 
-vtkCxxRevisionMacro(vtkImageGridSource, "$Revision: 1.18 $");
 vtkStandardNewMacro(vtkImageGridSource);
 
 //----------------------------------------------------------------------------

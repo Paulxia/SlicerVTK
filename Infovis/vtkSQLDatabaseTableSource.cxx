@@ -63,7 +63,6 @@ public:
   vtkRowQueryToTable* Table;
 };
 
-vtkCxxRevisionMacro(vtkSQLDatabaseTableSource, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkSQLDatabaseTableSource);
 
 //---------------------------------------------------------------------------

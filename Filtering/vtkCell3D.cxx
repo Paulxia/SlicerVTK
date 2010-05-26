@@ -24,7 +24,6 @@
 #include "vtkCellArray.h"
 #include "vtkDoubleArray.h"
 
-vtkCxxRevisionMacro(vtkCell3D, "$Revision: 1.3 $");
 
 vtkCell3D::vtkCell3D()
 {

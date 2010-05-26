@@ -61,7 +61,6 @@ static vtkVariant vtkGetVariantValue(vtkAbstractArray* arr, vtkIdType i)
   return val;
 }
 
-vtkCxxRevisionMacro(vtkTransferAttributes, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkTransferAttributes);
 
 vtkTransferAttributes::vtkTransferAttributes()

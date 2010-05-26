@@ -51,7 +51,6 @@
 #include <vtkstd/queue>
 #include <vtkstd/set>
 
-vtkCxxRevisionMacro(vtkKdTree, "$Revision: 1.6 $");
 
 // Timing data ---------------------------------------------
 

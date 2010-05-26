@@ -23,7 +23,6 @@
 
 #include <QApplication>
 
-vtkCxxRevisionMacro(vtkQtInitialization, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkQtInitialization);
 
 vtkQtInitialization::vtkQtInitialization()
