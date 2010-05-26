@@ -1,4 +1,4 @@
-/* $Id: tif_dir.c,v 1.6 2008-06-10 15:23:27 fbertel Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    $RCSfile: vtkOpenGLHAVSVolumeMapper.h,v $
+Module:    vtkOpenGLHAVSVolumeMapper.h
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.

@@ -1,4 +1,4 @@
-/* $Id: tif_unix.c,v 1.3 2008-03-12 20:55:29 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

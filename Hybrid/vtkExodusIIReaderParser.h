@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkExodusIIReaderParser.h,v $
+  Module:    vtkExodusIIReaderParser.h
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

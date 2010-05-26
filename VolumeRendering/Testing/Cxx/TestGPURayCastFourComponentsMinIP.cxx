@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestGPURayCastFourComponentsMinIP.cxx,v $
+  Module:    TestGPURayCastFourComponentsMinIP.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

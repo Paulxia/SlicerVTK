@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkPowerWeighting.cxx,v $
+  Module:    vtkPowerWeighting.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

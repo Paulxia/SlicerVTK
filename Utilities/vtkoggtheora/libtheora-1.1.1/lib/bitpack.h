@@ -11,7 +11,7 @@
  ********************************************************************
 
   function: packing variable sized words into an octet stream
-  last mod: $Id: bitpack.h,v 1.1 2009-12-01 13:29:59 dave.demarle Exp $
+  last mod: Id
 
  ********************************************************************/
 #if !defined(_bitpack_H)

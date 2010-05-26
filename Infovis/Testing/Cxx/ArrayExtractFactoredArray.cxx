@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: ArrayExtractFactoredArray.cxx,v $
+  Module:    ArrayExtractFactoredArray.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

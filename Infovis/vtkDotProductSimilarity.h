@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkDotProductSimilarity.h,v $
+  Module:    vtkDotProductSimilarity.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkTypeTemplate.h,v $
+  Module:    vtkTypeTemplate.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

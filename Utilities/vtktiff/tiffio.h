@@ -1,4 +1,4 @@
-/* $Id: tiffio.h,v 1.9 2008-03-11 20:46:37 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

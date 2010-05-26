@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkQtXMLProcessor.h,v $
+  Module:    vtkQtXMLProcessor.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

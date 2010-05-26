@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkObjectBase.cxx,v $
+  Module:    vtkObjectBase.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -174,7 +174,7 @@ void vtkObjectBase::UnRegister(vtkObjectBase* o)
 
 void vtkObjectBase::CollectRevisions(ostream& os)
 {
-  os << "vtkObjectBase $Revision: 1.18 $\n";
+  os << "vtkObjectBase 1.18\n";
 }
 
 void vtkObjectBase::PrintRevisions(ostream& os)

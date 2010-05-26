@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkBoostLogWeighting.h,v $
+  Module:    vtkBoostLogWeighting.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

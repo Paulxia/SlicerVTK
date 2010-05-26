@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_NoShadeFS.glsl,v $
+  Module:    vtkGPUVolumeRayCastMapper_NoShadeFS.glsl
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

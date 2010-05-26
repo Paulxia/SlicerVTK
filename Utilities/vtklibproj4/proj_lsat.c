@@ -4,7 +4,7 @@
 ** Copyright (c) 2003, 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "$Id: proj_lsat.c,v 1.2 2008-11-14 16:56:33 jeff Exp $";
+LIBPROJ_ID[] = "Id";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -197,10 +197,7 @@ ENTRY0(lsat)
   P->inv = e_inverse; P->fwd = e_forward;
 ENDENTRY(P)
 /*
-** $Log: proj_lsat.c,v $
-** Revision 1.2  2008-11-14 16:56:33  jeff
-** COMP: Fixing more libproj warnings.
-**
+** Log: proj_lsat.c
 ** Revision 1.1  2008-11-07 16:41:14  jeff
 ** ENH: Adding a 2D geoview. Adding the geographic projection library libproj4
 ** to Utilities. Updating the architecture of the geospatial views. All

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkUnityMatrixWeighting.h,v $
+  Module:    vtkUnityMatrixWeighting.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

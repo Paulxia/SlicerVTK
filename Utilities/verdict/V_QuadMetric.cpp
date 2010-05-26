@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    $RCSfile: V_QuadMetric.cpp,v $
+  Module:    V_QuadMetric.cpp
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.

@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: CustomLinkView.h,v $
+  Module:    CustomLinkView.h
   Language:  C++
-  Date:      $Date: 2009-12-14 19:35:25 $
-  Version:   $Revision: 1.2 $
+  Date:      $Date$
+  Version:   $Revision$
 
   Copyright 2007 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

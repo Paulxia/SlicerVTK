@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkCocoaGLView.mm,v $
+  Module:    vtkCocoaGLView.mm
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

@@ -1,4 +1,4 @@
-/* $Id: tif_predict.c,v 1.2 2008-03-11 13:39:56 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

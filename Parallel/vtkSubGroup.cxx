@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkSubGroup.cxx,v $
+  Module:    vtkSubGroup.cxx
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

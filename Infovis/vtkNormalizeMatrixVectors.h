@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkNormalizeMatrixVectors.h,v $
+  Module:    vtkNormalizeMatrixVectors.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

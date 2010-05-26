@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    $RCSfile: vtkHierarchicalDataExtractDataSets.cxx,v $
+Module:    vtkHierarchicalDataExtractDataSets.cxx
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.

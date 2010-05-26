@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: ArrayTransposeMatrix.cxx,v $
+  Module:    ArrayTransposeMatrix.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

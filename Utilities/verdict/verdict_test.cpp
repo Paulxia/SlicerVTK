@@ -1,6 +1,6 @@
 /*=========================================================================
 
-Module:    $RCSfile: verdict_test.cpp,v $
+Module:    verdict_test.cpp
 
 Copyright (c) 2006 Sandia Corporation.
 All rights reserved.

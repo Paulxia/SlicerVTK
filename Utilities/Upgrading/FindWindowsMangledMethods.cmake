@@ -1,7 +1,7 @@
 #===========================================================================
 #
 #  Program:   Visualization Toolkit
-#  Module:    $RCSfile: FindWindowsMangledMethods.cmake,v $
+#  Module:    FindWindowsMangledMethods.cmake
 #
 #  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 #  All rights reserved.

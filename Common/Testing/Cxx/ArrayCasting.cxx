@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: ArrayCasting.cxx,v $
+  Module:    ArrayCasting.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

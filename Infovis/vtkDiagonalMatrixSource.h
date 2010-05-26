@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkDiagonalMatrixSource.h,v $
+  Module:    vtkDiagonalMatrixSource.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

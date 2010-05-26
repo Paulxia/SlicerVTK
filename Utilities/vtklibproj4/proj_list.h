@@ -1,6 +1,6 @@
 /*
 ** libproj -- library of cartographic projections
-** $Id: proj_list.h,v 1.3 2009-04-07 18:26:42 fbertel Exp $
+** Id
 **
 ** Copyright (c) 2003, 2005 2008   Gerald I. Evenden
 **
@@ -218,10 +218,7 @@ PROJ_HEAD(wink2, "Winkel II")
 PROJ_HEAD(wintri, "Winkel Tripel")
 /* PROJ_HEAD(dummy, "Dummy projection") */
 /*
-** $Log: proj_list.h,v $
-** Revision 1.3  2009-04-07 18:26:42  fbertel
-** COMP:Fixed C++-style to C-style for strict compilers.
-**
+** Log: proj_list.h
 ** Revision 1.2  2008-11-25 19:30:04  david.cole
 ** COMP: Suppress warnings in vtklibproj4.
 **

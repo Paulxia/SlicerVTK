@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_MinIPFS.glsl,v $
+  Module:    vtkGPUVolumeRayCastMapper_MinIPFS.glsl
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

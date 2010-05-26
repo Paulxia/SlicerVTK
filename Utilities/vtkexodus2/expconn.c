@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-/*  $Id: expconn.c,v 1.6 2010-03-02 16:51:02 ndfabia Exp $ */
+/*  Id */
 
 #include "exodusII.h"
 #include "exodusII_int.h"

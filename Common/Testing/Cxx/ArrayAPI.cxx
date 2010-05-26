@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: ArrayAPI.cxx,v $
+  Module:    ArrayAPI.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

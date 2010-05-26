@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkAxisActor.h,v $
+  Module:    vtkAxisActor.h
   Language:  C++
-  Date:      $Date: 2008-07-18 00:11:04 $
-  Version:   $Revision: 1.3 $
+  Date:      $Date$
+  Version:   $Revision$
   Thanks:    Kathleen Bonnell, B Division, Lawrence Livermore Nat'l Laboratory
 
 Copyright (c) 1993-2000 Ken Martin, Will Schroeder, Bill Lorensen 

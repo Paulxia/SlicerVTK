@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkMatricizeArray.h,v $
+  Module:    vtkMatricizeArray.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

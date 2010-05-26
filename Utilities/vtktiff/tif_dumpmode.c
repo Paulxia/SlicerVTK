@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/VTK/VTK/Utilities/vtktiff/tif_dumpmode.c,v 1.2 2008-03-11 13:38:26 andinet Exp $ */
+/* Header */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

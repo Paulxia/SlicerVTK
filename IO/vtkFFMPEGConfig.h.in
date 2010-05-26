@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkFFMPEGConfig.h.in,v $
+  Module:    vtkFFMPEGConfig.h.in
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

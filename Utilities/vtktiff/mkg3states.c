@@ -1,4 +1,4 @@
-/* "$Id: mkg3states.c,v 1.2 2008-03-11 13:37:49 andinet Exp $ */
+/* "Id */
 
 /*
  * Copyright (c) 1991-1997 Sam Leffler

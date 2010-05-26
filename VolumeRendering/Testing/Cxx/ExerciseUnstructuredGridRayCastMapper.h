@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: ExerciseUnstructuredGridRayCastMapper.h,v $
+  Module:    ExerciseUnstructuredGridRayCastMapper.h
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

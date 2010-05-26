@@ -1,4 +1,4 @@
-/* $Id: tif_close.c,v 1.3 2008-03-11 19:37:20 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

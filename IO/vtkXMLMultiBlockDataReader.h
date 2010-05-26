@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkXMLMultiBlockDataReader.h,v $
+  Module:    vtkXMLMultiBlockDataReader.h
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

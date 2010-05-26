@@ -130,4 +130,4 @@ and #include "ogg/ogg.h" wherever you need to acces Ogg functionality.
 (Build instructions for Ogg codecs such as vorbis are similar and may
 be found in those source modules' README files)
 
-$Id: README,v 1.1 2009-12-01 13:29:29 dave.demarle Exp $
+Id

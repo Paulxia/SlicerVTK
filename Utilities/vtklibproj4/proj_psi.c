@@ -4,7 +4,7 @@
 ** Copyright (c) 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "$Id: proj_psi.c,v 1.3 2009-04-07 18:26:42 fbertel Exp $";
+LIBPROJ_ID[] = "Id";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -51,10 +51,7 @@ proj_apsi(double psi, double e) {
   return phi;
 }
 /*
-** $Log: proj_psi.c,v $
-** Revision 1.3  2009-04-07 18:26:42  fbertel
-** COMP:Fixed C++-style to C-style for strict compilers.
-**
+** Log: proj_psi.c
 ** Revision 1.2  2008-11-14 16:56:33  jeff
 ** COMP: Fixing more libproj warnings.
 **

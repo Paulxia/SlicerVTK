@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    $RCSfile: V_TetMetric.cpp,v $
+  Module:    V_TetMetric.cpp
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.

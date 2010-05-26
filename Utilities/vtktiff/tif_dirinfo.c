@@ -1,4 +1,4 @@
-/* $Id: tif_dirinfo.c,v 1.2 2008-03-11 13:38:18 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

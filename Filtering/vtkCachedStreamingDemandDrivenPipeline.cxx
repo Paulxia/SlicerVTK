@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkCachedStreamingDemandDrivenPipeline.cxx,v $
+  Module:    vtkCachedStreamingDemandDrivenPipeline.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

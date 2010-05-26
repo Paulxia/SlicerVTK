@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    $RCSfile: vtkParallelCoordinatesInteractorStyle.cxx,v $
+Module:    vtkParallelCoordinatesInteractorStyle.cxx
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.

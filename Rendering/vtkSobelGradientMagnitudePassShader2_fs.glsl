@@ -1,7 +1,7 @@
 // ============================================================================
 //
 //  Program:   Visualization Toolkit
-//  Module:    $RCSfile: vtkSobelGradientMagnitudePassShader2_fs.glsl,v $
+//  Module:    vtkSobelGradientMagnitudePassShader2_fs.glsl
 //
 //  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 //  All rights reserved.

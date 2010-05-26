@@ -1,4 +1,4 @@
-/* $Id: tif_swab.c,v 1.2 2008-03-11 13:40:12 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

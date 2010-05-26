@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestDocumentReader.cxx,v $
+  Module:    TestDocumentReader.cxx
   Language:  C++
-  Date:      $Date: 2009-08-28 14:43:56 $
-  Version:   $Revision: 1.2 $
+  Date:      $Date$
+  Version:   $Revision$
 
   Copyright 2008 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

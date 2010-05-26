@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:  $RCSfile: vtkDijkstraGraphGeodesicPath.cxx,v $
+  Module:  vtkDijkstraGraphGeodesicPath.cxx
   Language:  C++
-  Date:    $Date: 2009-04-26 09:39:21 $
-  Version:   $Revision: 1.14 $
+  Date:    $Date$
+  Version:   $Revision$
   
   Made by Rasmus Paulsen
   email:  rrp(at)imm.dtu.dk

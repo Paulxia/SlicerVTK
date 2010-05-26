@@ -1,4 +1,4 @@
-/* $Id: tif_print.c,v 1.4 2008-06-10 15:23:28 fbertel Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

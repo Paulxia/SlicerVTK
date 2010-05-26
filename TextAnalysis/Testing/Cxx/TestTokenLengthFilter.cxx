@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestTokenLengthFilter.cxx,v $
+  Module:    TestTokenLengthFilter.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

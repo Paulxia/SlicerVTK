@@ -10,7 +10,7 @@
  * See the file "license.terms" for information on usage and redistribution
  * of this file, and for a DISCLAIMER OF ALL WARRANTIES.
  *
- * RCS: @(#) $Id: default.h,v 1.1 2007-01-11 00:52:51 barre Exp $
+ * RCS: @(#) Id
  */
 
 #ifndef _DEFAULT

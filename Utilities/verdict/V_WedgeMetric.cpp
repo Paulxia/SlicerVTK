@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    $RCSfile: V_WedgeMetric.cpp,v $
+  Module:    V_WedgeMetric.cpp
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.

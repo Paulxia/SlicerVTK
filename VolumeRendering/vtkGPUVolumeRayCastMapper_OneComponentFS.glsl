@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_OneComponentFS.glsl,v $
+  Module:    vtkGPUVolumeRayCastMapper_OneComponentFS.glsl
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

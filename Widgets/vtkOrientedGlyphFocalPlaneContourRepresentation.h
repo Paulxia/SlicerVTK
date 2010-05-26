@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkOrientedGlyphFocalPlaneContourRepresentation.h,v $
+  Module:    vtkOrientedGlyphFocalPlaneContourRepresentation.h
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

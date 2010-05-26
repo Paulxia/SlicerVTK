@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkArrayToTable.h,v $
+  Module:    vtkArrayToTable.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   MetaIO
-  Module:    $RCSfile: metaImage.cxx,v $
+  Module:    metaImage.cxx
   Language:  C++
-  Date:      $Date: 2009-12-07 20:56:02 $
-  Version:   $Revision: 1.55 $
+  Date:      $Date$
+  Version:   $Revision$
 
   Copyright (c) Insight Software Consortium. All rights reserved.
   See ITKCopyright.txt or http://www.itk.org/HTML/Copyright.htm for details.

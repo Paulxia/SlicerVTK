@@ -1,6 +1,6 @@
 /*************************************************************************
  *
- * $Id: triostr.c,v 1.2 2007-04-24 17:23:33 king Exp $
+ * Id
  *
  * Copyright (C) 2001 Bjorn Reese and Daniel Stenberg.
  *
@@ -97,7 +97,7 @@ struct _trio_string_t
  */
 
 #if !defined(TRIO_MINIMAL)
-static TRIO_CONST char rcsid[] = "@(#)$Id: triostr.c,v 1.2 2007-04-24 17:23:33 king Exp $";
+static TRIO_CONST char rcsid[] = "@(#)Id";
 #endif
 
 /*************************************************************************

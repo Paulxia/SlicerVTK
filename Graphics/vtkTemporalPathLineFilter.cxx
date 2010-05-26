@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Project:   vtkCSCS
-  Module:    $RCSfile: vtkTemporalPathLineFilter.cxx,v $
+  Module:    vtkTemporalPathLineFilter.cxx
 
   Copyright (c) CSCS - Swiss National Supercomputing Centre.
   You may use modify and and distribute this code freely providing this

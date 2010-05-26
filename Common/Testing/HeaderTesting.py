@@ -3,7 +3,7 @@
 ## /*=========================================================================
 
 ##   Program:   Visualization Toolkit
-##   Module:    $RCSfile: HeaderTesting.py,v $
+##   Module:    HeaderTesting.py
 
 ##   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 ##   All rights reserved.

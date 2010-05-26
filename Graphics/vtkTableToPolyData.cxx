@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkTableToPolyData.cxx,v $
+  Module:    vtkTableToPolyData.cxx
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

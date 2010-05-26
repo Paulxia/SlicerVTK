@@ -3,7 +3,7 @@
 ## /*=========================================================================
 
 ##   Program:   Visualization Toolkit
-##   Module:    $RCSfile: WindowsMangleList.py,v $
+##   Module:    WindowsMangleList.py
 
 ##   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 ##   All rights reserved.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkEntropyMatrixWeighting.cxx,v $
+  Module:    vtkEntropyMatrixWeighting.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

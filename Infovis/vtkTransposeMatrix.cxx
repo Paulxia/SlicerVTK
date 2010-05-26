@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkTransposeMatrix.cxx,v $
+  Module:    vtkTransposeMatrix.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

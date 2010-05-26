@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/VTK/VTK/Utilities/vtktiff/tif_version.c,v 1.2 2008-03-11 13:40:33 andinet Exp $ */
+/* Header */
 /*
  * Copyright (c) 1992-1997 Sam Leffler
  * Copyright (c) 1992-1997 Silicon Graphics, Inc.

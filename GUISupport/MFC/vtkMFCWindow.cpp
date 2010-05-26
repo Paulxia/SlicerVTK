@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkMFCWindow.cpp,v $
+  Module:    vtkMFCWindow.cpp
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

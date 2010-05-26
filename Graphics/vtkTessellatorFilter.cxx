@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkTessellatorFilter.cxx,v $
+  Module:    vtkTessellatorFilter.cxx
   Language:  C++
-  Date:      $Date: 2010-03-05 13:44:13 $
-  Version:   $Revision: 1.4 $
+  Date:      $Date$
+  Version:   $Revision$
 
   Copyright 2003 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

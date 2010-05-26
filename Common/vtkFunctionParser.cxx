@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkFunctionParser.cxx,v $
+  Module:    vtkFunctionParser.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -533,8 +533,7 @@ bool vtkFunctionParser::Evaluate()
   
   this->StackPointer = -1;
 
-  if (this->FunctionMTime.GetMTime() > this->ParseMTime.GetMTime() ||
-    this->VariableMTime.GetMTime() > this->ParseMTime.GetMTime())
+  if (this->FunctionMTime.GetMTime() > this->ParseMTime.GetMTime())
     {
     if (this->Parse() == 0)
       {

@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-/*  $Id: expelc.c,v 1.4 2009-01-16 14:32:01 utkarsh Exp $ */
+/*  Id */
 
 #include "exodusII.h"
 #include "exodusII_int.h"

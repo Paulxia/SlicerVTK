@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkDelimitedTextWriter.h,v $
+  Module:    vtkDelimitedTextWriter.h
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: ArrayMatricizeArray.cxx,v $
+  Module:    ArrayMatricizeArray.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

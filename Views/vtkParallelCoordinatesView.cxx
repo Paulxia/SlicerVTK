@@ -1,6 +1,6 @@
 /*=========================================================================
 Program:   Visualization Toolkit
-Module:    $RCSfile: vtkParallelCoordinatesView.cxx,v $
+Module:    vtkParallelCoordinatesView.cxx
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.

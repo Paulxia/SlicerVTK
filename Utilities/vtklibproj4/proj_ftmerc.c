@@ -4,7 +4,7 @@
 ** Copyright (c) 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "$Id: proj_ftmerc.c,v 1.1 2008-11-07 16:41:14 jeff Exp $";
+LIBPROJ_ID[] = "Id";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -152,17 +152,7 @@ ENTRY0(ftmerc)
   P->inv = e_inverse;
 ENDENTRY(P)
 /*
-** $Log: proj_ftmerc.c,v $
-** Revision 1.1  2008-11-07 16:41:14  jeff
-** ENH: Adding a 2D geoview. Adding the geographic projection library libproj4
-** to Utilities. Updating the architecture of the geospatial views. All
-** multi-resolution sources are now subclasses of vtkGeoSource. Each source
-** has its own worker thread for fetching refined images or geometry.
-** On the 3D side, vtkGeoGlobeSource is an appropriate source for vtkGeoTerrain,
-** and vtkGeoAlignedImageSource is an appropriate source for
-** vtkGeoAlignedImageRepresentation. On the 2D side, vtkGeoProjectionSource is an
-** appropriate source for vtkGeoTerrain2D, and the image source is the same.
-**
+** Log: proj_ftmerc.c
 ** Revision 3.4  2008/06/26 15:18:06  gie
 ** some minor repairs, still non-C90
 **
@@ -170,7 +160,7 @@ ENDENTRY(P)
 ** removed 'dummy' from entry
 **
 ** Revision 3.2  2006/06/19 00:58:58  gie
-** fix $Id to $Id: proj_ftmerc.c,v 1.1 2008-11-07 16:41:14 jeff Exp $
+** fix IdId: proj_ftmerc.c,v 1.1 2008-11-07 16:41:14 jeff Exp $
 **
 ** Revision 3.1  2006/06/19 00:54:57  gie
 ** initial

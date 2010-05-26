@@ -53,7 +53,7 @@
 * revision history - 
 *   20061002 - David Thompson - Adapted from ex_get_var_time
 *
-* $Id: exgvart.c,v 1.4 2010-03-01 19:26:43 ndfabia Exp $
+* Id
 *
 *****************************************************************************/
 

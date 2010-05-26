@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestAssignMimeType.cxx,v $
+  Module:    TestAssignMimeType.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

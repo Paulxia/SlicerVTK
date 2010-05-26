@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkAdjacencyMatrixToEdgeTable.h,v $
+  Module:    vtkAdjacencyMatrixToEdgeTable.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

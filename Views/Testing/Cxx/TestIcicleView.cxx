@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestIcicleView.cxx,v $
+  Module:    TestIcicleView.cxx
 
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

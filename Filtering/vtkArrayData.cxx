@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkArrayData.cxx,v $
+  Module:    vtkArrayData.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkPointwiseMutualInformation.h,v $
+  Module:    vtkPointwiseMutualInformation.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

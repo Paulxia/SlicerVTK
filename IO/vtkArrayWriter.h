@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkArrayWriter.h,v $
+  Module:    vtkArrayWriter.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

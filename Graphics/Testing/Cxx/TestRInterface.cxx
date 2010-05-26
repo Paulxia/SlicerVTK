@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestRInterface.cxx,v $
+  Module:    TestRInterface.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

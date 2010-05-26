@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkArrayPrint.h,v $
+  Module:    vtkArrayPrint.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

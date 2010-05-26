@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: ArraySparseArrayToTable.cxx,v $
+  Module:    ArraySparseArrayToTable.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

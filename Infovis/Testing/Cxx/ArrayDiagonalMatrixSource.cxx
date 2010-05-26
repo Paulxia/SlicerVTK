@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: ArrayDiagonalMatrixSource.cxx,v $
+  Module:    ArrayDiagonalMatrixSource.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

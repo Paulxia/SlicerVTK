@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkModelMetadata.h,v $
+  Module:    vtkModelMetadata.h
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

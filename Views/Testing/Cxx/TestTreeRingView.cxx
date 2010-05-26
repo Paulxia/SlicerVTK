@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestTreeRingView.cxx,v $
+  Module:    TestTreeRingView.cxx
 
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

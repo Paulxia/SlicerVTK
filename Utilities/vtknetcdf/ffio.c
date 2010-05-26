@@ -2,7 +2,7 @@
  *  Copyright 1996, University Corporation for Atmospheric Research
  *  See netcdf/COPYRIGHT file for copying and redistribution conditions.
  */
-/* $Id: ffio.c,v 1.5 2007-08-28 11:11:13 dcthomp Exp $ */
+/* Id */
 /* addition by O. Heudecker, AWI-Bremerhaven, 12.3.1998 */
 /* added correction by John Sheldon and Hans Vahlenkamp 15.4.1998*/
 

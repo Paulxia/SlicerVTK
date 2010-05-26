@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/VTK/VTK/Utilities/vtktiff/tif_vms.c,v 1.1 2004-04-28 15:49:22 king Exp $ */
+/* Header */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

@@ -1,4 +1,4 @@
-/* $Id: tif_pixarlog.c,v 1.2 2008-03-11 13:39:53 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1996-1997 Sam Leffler

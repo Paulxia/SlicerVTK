@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkStringArray.h,v $
+  Module:    vtkStringArray.h
   Language:  C++
-  Date:      $Date: 2009-03-12 16:21:41 $
-  Version:   $Revision: 1.10 $
+  Date:      $Date$
+  Version:   $Revision$
 
   Copyright 2004 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

@@ -1,4 +1,4 @@
-/* $Id: tif_jpeg.c,v 1.4 2009-03-17 17:44:27 fbertel Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1994-1997 Sam Leffler

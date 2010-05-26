@@ -1,10 +1,10 @@
 /*=========================================================================
 
 Program:   MetaIO
-Module:    $RCSfile: metaScene.cxx,v $
+Module:    metaScene.cxx
 Language:  C++
-Date:      $Date: 2008-04-25 13:31:38 $
-Version:   $Revision: 1.12 $
+Date:      $Date$
+Version:   $Revision$
 
 Copyright (c) Insight Software Consortium. All rights reserved.
 See ITKCopyright.txt or http://www.itk.org/HTML/Copyright.htm for details.

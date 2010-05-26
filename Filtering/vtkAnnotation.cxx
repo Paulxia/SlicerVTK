@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkAnnotation.cxx,v $
+  Module:    vtkAnnotation.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    $RCSfile: vtkParallelCoordinatesHistogramRepresentation.cxx,v $
+Module:    vtkParallelCoordinatesHistogramRepresentation.cxx
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.

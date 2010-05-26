@@ -1,4 +1,4 @@
-/* $Id: tif_ojpeg.c,v 1.3 2008-03-11 13:39:40 andinet Exp $ */
+/* Id */
 
 #include "tiffiop.h"
 #ifdef OJPEG_SUPPORT

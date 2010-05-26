@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkFixedPointVolumeRayCastCompositeHelper.cxx,v $
+  Module:    vtkFixedPointVolumeRayCastCompositeHelper.cxx
   Language:  C++
-  Date:      $Date: 2007-11-08 16:51:06 $
-  Version:   $Revision: 1.9 $
+  Date:      $Date$
+  Version:   $Revision$
 
   Copyright (c) 1993-2002 Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.

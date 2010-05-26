@@ -4,7 +4,7 @@ See the file COPYING for copying permission.
 */
 
 static char RCSId[]
-  = "$Header: /cvsroot/VTK/VTK/Utilities/vtkexpat/xmlrole.c,v 1.1 2004-04-28 15:49:22 king Exp $";
+  = "Header";
 const char* vtk_expat_GetXMLRole_RCSId()
 {
   /* Avoid warning about unused static without removing RCSId from original. */

@@ -161,7 +161,7 @@ For example:
     D:\src\kitware\vtk\VTK\Utilities\Doxygen> perl doc_version.pl --logo "vtk-logo.gif" --to ../../../VTK-doxygen
     doc_version.pl 0.22, by Sebastien Barre
      => 4.0.0
-     => $Revision: 1.4 $ $Date: 2001-10-25 02:48:20 $
+     => $Revision$ $Date$
     Building version documentation to ../../../VTK-doxygen/doc_version.dox
     Finished in 0 s.
 

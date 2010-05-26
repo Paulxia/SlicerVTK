@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: SparseArrayValidation.cxx,v $
+  Module:    SparseArrayValidation.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

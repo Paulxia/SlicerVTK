@@ -1,4 +1,4 @@
-/* $Id: tif_zip.c,v 1.2 2008-03-11 13:40:48 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1995-1997 Sam Leffler

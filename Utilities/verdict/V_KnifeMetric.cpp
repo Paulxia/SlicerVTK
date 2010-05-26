@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    $RCSfile: V_KnifeMetric.cpp,v $
+  Module:    V_KnifeMetric.cpp
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.

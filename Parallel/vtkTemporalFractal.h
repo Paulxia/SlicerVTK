@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkTemporalFractal.h,v $
+  Module:    vtkTemporalFractal.h
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

@@ -1,5 +1,5 @@
 #include "vtk_tiff_mangle.h"
-/* $Id: tiff.h,v 1.3 2008-03-17 19:41:48 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

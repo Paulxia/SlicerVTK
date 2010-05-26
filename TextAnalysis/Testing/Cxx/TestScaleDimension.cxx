@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestScaleDimension.cxx,v $
+  Module:    TestScaleDimension.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

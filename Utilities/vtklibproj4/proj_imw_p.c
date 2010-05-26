@@ -4,7 +4,7 @@
 ** Copyright (c) 2003, 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "$Id: proj_imw_p.c,v 1.2 2008-11-07 21:40:43 jeff Exp $";
+LIBPROJ_ID[] = "Id";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -180,10 +180,7 @@ ENTRY1(imw_p, en)
   P->inv = e_inverse;
 ENDENTRY(P)
 /*
-** $Log: proj_imw_p.c,v $
-** Revision 1.2  2008-11-07 21:40:43  jeff
-** ENH: Fixing some proj.4 warnings.
-**
+** Log: proj_imw_p.c
 ** Revision 1.1  2008-11-07 16:41:14  jeff
 ** ENH: Adding a 2D geoview. Adding the geographic projection library libproj4
 ** to Utilities. Updating the architecture of the geospatial views. All

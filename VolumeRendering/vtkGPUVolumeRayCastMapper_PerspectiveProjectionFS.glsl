@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_PerspectiveProjectionFS.glsl,v $
+  Module:    vtkGPUVolumeRayCastMapper_PerspectiveProjectionFS.glsl
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

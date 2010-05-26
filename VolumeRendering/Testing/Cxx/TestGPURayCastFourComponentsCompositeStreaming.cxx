@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestGPURayCastFourComponentsCompositeStreaming.cxx,v $
+  Module:    TestGPURayCastFourComponentsCompositeStreaming.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

@@ -4,7 +4,7 @@
 ** Copyright (c) 2003, 2005, 2006   Gerald I. Evenden
 */
 static const char
-RCS_ID[] = "$Id: lproj.c,v 1.3 2008-11-14 16:56:33 jeff Exp $";
+RCS_ID[] = "Id";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -495,10 +495,7 @@ badscale:
   return 0; /* normal completion */
 }
 /*
-** $Log: lproj.c,v $
-** Revision 1.3  2008-11-14 16:56:33  jeff
-** COMP: Fixing more libproj warnings.
-**
+** Log: lproj.c
 ** Revision 1.2  2008-11-07 21:40:43  jeff
 ** ENH: Fixing some proj.4 warnings.
 **

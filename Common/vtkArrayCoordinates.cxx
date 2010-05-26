@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkArrayCoordinates.cxx,v $
+  Module:    vtkArrayCoordinates.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

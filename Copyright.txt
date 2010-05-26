@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: Copyright.txt,v $
+  Module:    Copyright.txt
 
 Copyright (c) 1993-2008 Ken Martin, Will Schroeder, Bill Lorensen 
 All rights reserved.

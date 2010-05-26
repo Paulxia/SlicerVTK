@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestTranslucentImageActorDepthPeeling.cxx,v $
+  Module:    TestTranslucentImageActorDepthPeeling.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

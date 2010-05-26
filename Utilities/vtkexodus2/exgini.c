@@ -52,7 +52,7 @@
 * revision history - 
 *          David Thompson  - Moved to exginix.c (exgini.c now a special case)
 *
-*  $Id: exgini.c,v 1.3 2009-01-16 14:32:01 utkarsh Exp $
+*  Id
 *
 *****************************************************************************/
 

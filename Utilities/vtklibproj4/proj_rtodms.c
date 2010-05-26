@@ -22,7 +22,7 @@
 ** TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 ** SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-static const char RCS_ID[] = "$Id: proj_rtodms.c,v 1.1 2008-11-07 16:41:16 jeff Exp $";
+static const char RCS_ID[] = "Id";
 #include <lib_proj.h>
 #include <stdio.h>
 #include <string.h>
@@ -96,17 +96,7 @@ proj_rtodms(char *s, double r, const char * csign) {
   return s;
 }
 /*
-** $Log: proj_rtodms.c,v $
-** Revision 1.1  2008-11-07 16:41:16  jeff
-** ENH: Adding a 2D geoview. Adding the geographic projection library libproj4
-** to Utilities. Updating the architecture of the geospatial views. All
-** multi-resolution sources are now subclasses of vtkGeoSource. Each source
-** has its own worker thread for fetching refined images or geometry.
-** On the 3D side, vtkGeoGlobeSource is an appropriate source for vtkGeoTerrain,
-** and vtkGeoAlignedImageSource is an appropriate source for
-** vtkGeoAlignedImageRepresentation. On the 2D side, vtkGeoProjectionSource is an
-** appropriate source for vtkGeoTerrain2D, and the image source is the same.
-**
+** Log: proj_rtodms.c
 ** Revision 3.1  2006/01/11 01:38:18  gie
 ** Initial
 **

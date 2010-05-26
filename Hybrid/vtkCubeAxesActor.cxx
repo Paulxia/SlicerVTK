@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkCubeAxesActor.cxx,v $
+  Module:    vtkCubeAxesActor.cxx
   Thanks:    Kathleen Bonnell, B Division, Lawrence Livermore National Lab
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen

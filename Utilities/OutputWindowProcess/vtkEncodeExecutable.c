@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkEncodeExecutable.c,v $
+  Module:    vtkEncodeExecutable.c
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
   fprintf(ofp, "/*=========================================================================\n");
   fprintf(ofp, "\n");
   fprintf(ofp, "  Program:   Visualization Toolkit\n");
-  fprintf(ofp, "  Module:    $RCSfile: vtkEncodeExecutable.c,v $\n");
+  fprintf(ofp, "  Module:    vtkEncodeExecutable.c\n");
   fprintf(ofp, "\n");
   fprintf(ofp, "  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen\n");
   fprintf(ofp, "  All rights reserved.\n");

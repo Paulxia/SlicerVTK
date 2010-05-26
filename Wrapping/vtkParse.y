@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkParse.y,v $
+  Module:    vtkParse.y
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

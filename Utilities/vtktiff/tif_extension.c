@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/VTK/VTK/Utilities/vtktiff/tif_extension.c,v 1.1 2008-03-11 13:38:41 andinet Exp $ */
+/* Header */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

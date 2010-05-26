@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkXMLMultiGroupDataReader.h,v $
+  Module:    vtkXMLMultiGroupDataReader.h
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

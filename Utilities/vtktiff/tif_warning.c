@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/VTK/VTK/Utilities/vtktiff/tif_warning.c,v 1.3 2008-03-11 19:37:30 andinet Exp $ */
+/* Header */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

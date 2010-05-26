@@ -10,7 +10,7 @@
  *                                                                  *
  ********************************************************************/
 /*MMX fDCT implementation for x86_32*/
-/*$Id: mmxfdct.c,v 1.1 2009-12-01 13:30:12 dave.demarle Exp $*/
+/*Id*/
 #include "x86enc.h"
 
 #if defined(OC_X86_ASM)

@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkMeshQuality.h,v $
+  Module:    vtkMeshQuality.h
   Language:  C++
-  Date:      $Date: 2008-03-05 18:15:17 $ 
-  Version:   $Revision: 1.33 $
+  Date:      $Date$ 
+  Version:   $Revision$
 
   Copyright 2003-2006 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

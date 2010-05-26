@@ -2,7 +2,7 @@
  *  Copyright 1996, University Corporation for Atmospheric Research
  *      See netcdf/COPYRIGHT file for copying and redistribution conditions.
  */
-/* $Id: libvers.c,v 1.5 2007-08-28 11:11:13 dcthomp Exp $ */
+/* Id */
 
 #include "ncconfig.h"
 #include "netcdf.h"

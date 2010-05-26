@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestRCalculatorFilter.cxx,v $
+  Module:    TestRCalculatorFilter.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

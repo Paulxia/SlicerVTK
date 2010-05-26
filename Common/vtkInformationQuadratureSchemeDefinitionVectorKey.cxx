@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkInformationQuadratureSchemeDefinitionVectorKey.cxx,v $
+  Module:    vtkInformationQuadratureSchemeDefinitionVectorKey.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

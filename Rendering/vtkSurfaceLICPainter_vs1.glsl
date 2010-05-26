@@ -1,7 +1,7 @@
 //=========================================================================
 //
 //  Program:   Visualization Toolkit
-//  Module:    $RCSfile: vtkSurfaceLICPainter_vs1.glsl,v $
+//  Module:    vtkSurfaceLICPainter_vs1.glsl
 //
 //  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 //  All rights reserved.

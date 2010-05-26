@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkDataSetEdgeSubdivisionCriterion.h,v $
+  Module:    vtkDataSetEdgeSubdivisionCriterion.h
   Language:  C++
-  Date:      $Date: 2007-06-01 16:13:52 $
-  Version:   $Revision: 1.2 $
+  Date:      $Date$
+  Version:   $Revision$
 
   Copyright 2003 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

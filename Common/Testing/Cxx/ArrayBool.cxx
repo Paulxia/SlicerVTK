@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: ArrayBool.cxx,v $
+  Module:    ArrayBool.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

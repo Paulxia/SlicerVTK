@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestUnicodeStringArrayAPI.cxx,v $
+  Module:    TestUnicodeStringArrayAPI.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

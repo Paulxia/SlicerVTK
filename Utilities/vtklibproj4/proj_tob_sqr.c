@@ -4,7 +4,7 @@
 ** Copyright (c) 2003, 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "$Id: proj_tob_sqr.c,v 1.1 2008-11-07 16:41:16 jeff Exp $";
+LIBPROJ_ID[] = "Id";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -47,17 +47,7 @@ INVERSE(s_inverse); /* spheroid */
 FREEUP; if (P) free(P); }
 ENTRY0(tob_sqr) P->es = 0.; P->inv = s_inverse; P->fwd = s_forward; ENDENTRY(P)
 /*
-** $Log: proj_tob_sqr.c,v $
-** Revision 1.1  2008-11-07 16:41:16  jeff
-** ENH: Adding a 2D geoview. Adding the geographic projection library libproj4
-** to Utilities. Updating the architecture of the geospatial views. All
-** multi-resolution sources are now subclasses of vtkGeoSource. Each source
-** has its own worker thread for fetching refined images or geometry.
-** On the 3D side, vtkGeoGlobeSource is an appropriate source for vtkGeoTerrain,
-** and vtkGeoAlignedImageSource is an appropriate source for
-** vtkGeoAlignedImageRepresentation. On the 2D side, vtkGeoProjectionSource is an
-** appropriate source for vtkGeoTerrain2D, and the image source is the same.
-**
+** Log: proj_tob_sqr.c
 ** Revision 3.1  2006/01/11 01:38:18  gie
 ** Initial
 **

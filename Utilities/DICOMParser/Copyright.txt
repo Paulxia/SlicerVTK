@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   DICOMParser
-  Module:    $RCSfile: Copyright.txt,v $
+  Module:    Copyright.txt
   Language:  C++
-  Date:      $Date: 2003-10-22 14:30:34 $
-  Version:   $Revision: 1.2 $
+  Date:      $Date$
+  Version:   $Revision$
 
 
 Copyright (c) 2003 Matt Turek

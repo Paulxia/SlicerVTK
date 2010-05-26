@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkJavaScriptDataWriter.h,v $
+  Module:    vtkJavaScriptDataWriter.h
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

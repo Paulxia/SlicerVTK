@@ -1,7 +1,7 @@
 //=========================================================================
 //
 //  Program:   Visualization Toolkit
-//  Module:    $RCSfile: vtkColorMaterialHelper_vs.glsl,v $
+//  Module:    vtkColorMaterialHelper_vs.glsl
 //
 //  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 //  All rights reserved.
@@ -12,7 +12,7 @@
 //     PURPOSE.  See the above copyright notice for more information.
 //
 //=========================================================================
-// Id: $Id: vtkColorMaterialHelper_vs.glsl,v 1.1 2010-02-04 17:03:14 zhanping.liu Exp $
+// Id: Id
 
 #version 110
 

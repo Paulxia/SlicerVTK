@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkSelectionNode.cxx,v $
+  Module:    vtkSelectionNode.cxx
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

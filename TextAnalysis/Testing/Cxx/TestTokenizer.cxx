@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestTokenizer.cxx,v $
+  Module:    TestTokenizer.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

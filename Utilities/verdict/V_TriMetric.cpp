@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    $RCSfile: V_TriMetric.cpp,v $
+  Module:    V_TriMetric.cpp
 
   Copyright (c) 2007 Sandia Corporation.
   All rights reserved.

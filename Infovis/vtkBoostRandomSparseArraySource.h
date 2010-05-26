@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkBoostRandomSparseArraySource.h,v $
+  Module:    vtkBoostRandomSparseArraySource.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

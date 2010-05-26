@@ -12,7 +12,7 @@
  * See the file "license.terms" for information on usage and redistribution
  * of this file, and for a DISCLAIMER OF ALL WARRANTIES.
  *
- * RCS: @(#) $Id: tkMacOSXPort.h,v 1.1 2008-01-24 18:16:04 barre Exp $
+ * RCS: @(#) Id
  */
 
 #ifndef _TKMACPORT

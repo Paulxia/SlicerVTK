@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestConcatenateArray.cxx,v $
+  Module:    TestConcatenateArray.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

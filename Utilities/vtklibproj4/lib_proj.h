@@ -2,7 +2,7 @@
 /*
 ** libproj4 -- library of cartographic projections
 **
-** $Id: lib_proj.h,v 1.3 2008-11-25 19:30:04 david.cole Exp $
+** Id
 **
 ** Copyright (c) 2003, 2005, 2006   Gerald I. Evenden
 **
@@ -263,10 +263,7 @@ END_C_DECLS
 
 #endif /* end of basic projections header */
 /*
-** $Log: lib_proj.h,v $
-** Revision 1.3  2008-11-25 19:30:04  david.cole
-** COMP: Suppress warnings in vtklibproj4.
-**
+** Log: lib_proj.h
 ** Revision 1.2  2008-11-10 20:40:20  jeff
 ** COMP: Ignoring assignment in conditional expression warning.
 **

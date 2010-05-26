@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    $RCSfile: V_EdgeMetric.cpp,v $
+  Module:    V_EdgeMetric.cpp
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.

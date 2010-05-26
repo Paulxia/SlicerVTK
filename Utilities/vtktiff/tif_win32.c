@@ -1,4 +1,4 @@
-/* $Id: tif_win32.c,v 1.5 2009-03-17 17:44:27 fbertel Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

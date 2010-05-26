@@ -2,7 +2,7 @@
  *  Copyright 1996, University Corporation for Atmospheric Research
  *  See netcdf/COPYRIGHT file for copying and redistribution conditions.
  */
-/* $Id: posixio.c,v 1.23 2008-04-25 21:21:19 david.cole Exp $ */
+/* Id */
 
 #include "ncconfig.h"
 #include <assert.h>

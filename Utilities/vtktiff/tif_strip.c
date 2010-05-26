@@ -1,4 +1,4 @@
-/* $Id: tif_strip.c,v 1.3 2008-03-11 19:37:30 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1991-1997 Sam Leffler

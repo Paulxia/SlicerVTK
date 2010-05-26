@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestMatlabEngineInterface.cxx,v $
+  Module:    TestMatlabEngineInterface.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestArraySerialization.cxx,v $
+  Module:    TestArraySerialization.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

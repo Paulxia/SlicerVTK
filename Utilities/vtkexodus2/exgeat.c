@@ -44,7 +44,7 @@
 * exit conditions - 
 *       float*  attrib                  array of attributes
 *
-*  $Id: exgeat.c,v 1.3 2009-01-16 14:32:01 utkarsh Exp $
+*  Id
 *
 *****************************************************************************/
 

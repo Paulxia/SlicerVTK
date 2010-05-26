@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkPCosmoHaloFinder.cxx,v $
+  Module:    vtkPCosmoHaloFinder.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,7 +15,7 @@
 /*=========================================================================
 
   Program:   VTK/ParaView Los Alamos National Laboratory Modules (PVLANL)
-  Module:    $RCSfile: vtkPCosmoHaloFinder.cxx,v $
+  Module:    vtkPCosmoHaloFinder.cxx
 
 Copyright (c) 2007, 2009, Los Alamos National Security, LLC
 

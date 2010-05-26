@@ -1,7 +1,7 @@
 /*=============================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkGeoInteractorStyle.cxx,v $
+  Module:    vtkGeoInteractorStyle.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

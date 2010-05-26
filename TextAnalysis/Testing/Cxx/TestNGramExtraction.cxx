@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestNGramExtraction.cxx,v $
+  Module:    TestNGramExtraction.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

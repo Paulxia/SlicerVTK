@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestTermDictionary.cxx,v $
+  Module:    TestTermDictionary.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

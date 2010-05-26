@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkXMLCompositeDataReader.h,v $
+  Module:    vtkXMLCompositeDataReader.h
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

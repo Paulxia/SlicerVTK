@@ -45,7 +45,7 @@
 * exit conditions - 
 *       int*    sset_var_tab            sideset variable truth table array
 *
-*  $Id: exgsstt.c,v 1.2 2009-01-16 14:32:01 utkarsh Exp $
+*  Id
 *
 *****************************************************************************/
 

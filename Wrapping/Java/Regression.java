@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: Regression.java,v $
+  Module:    Regression.java
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

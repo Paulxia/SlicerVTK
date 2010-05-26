@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   MetaIO
-  Module:    $RCSfile: metaCommand.h,v $
+  Module:    metaCommand.h
   Language:  C++
-  Date:      $Date: 2008-11-10 14:13:06 $
-  Version:   $Revision: 1.11 $
+  Date:      $Date$
+  Version:   $Revision$
 
   Copyright (c) Insight Software Consortium. All rights reserved.
   See ITKCopyright.txt or http://www.itk.org/HTML/Copyright.htm for details.

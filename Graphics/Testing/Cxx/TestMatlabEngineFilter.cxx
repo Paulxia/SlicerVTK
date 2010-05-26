@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestMatlabEngineFilter.cxx,v $
+  Module:    TestMatlabEngineFilter.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

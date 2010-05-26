@@ -4,7 +4,7 @@
 ** Copyright (c) 2003, 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "$Id: proj_list.c,v 1.2 2008-11-25 20:17:25 david.cole Exp $";
+LIBPROJ_ID[] = "Id";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -33,10 +33,7 @@ LIBPROJ_ID[] = "$Id: proj_list.c,v 1.2 2008-11-25 20:17:25 david.cole Exp $";
 #include "lib_proj.h"
 
 /*
-** $Log: proj_list.c,v $
-** Revision 1.2  2008-11-25 20:17:25  david.cole
-** COMP: Trigger continuous rebuild of proj_list.o to get rid of "incremental build does not work when just a non-vtk header file changes" problem.
-**
+** Log: proj_list.c
 ** Revision 1.1  2008-11-07 16:41:14  jeff
 ** ENH: Adding a 2D geoview. Adding the geographic projection library libproj4
 ** to Utilities. Updating the architecture of the geospatial views. All

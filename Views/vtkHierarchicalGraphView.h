@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkHierarchicalGraphView.h,v $
+  Module:    vtkHierarchicalGraphView.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

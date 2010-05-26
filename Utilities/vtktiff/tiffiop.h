@@ -1,5 +1,5 @@
 #include "vtk_tiff_mangle.h"
-/* $Id: tiffiop.h,v 1.2 2008-03-11 13:41:01 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestQtXMLProcessor.cxx,v $
+  Module:    TestQtXMLProcessor.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

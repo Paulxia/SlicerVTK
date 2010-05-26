@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    $RCSfile: vtkXMLHierarchicalBoxDataReader.h,v $
+  Module:    vtkXMLHierarchicalBoxDataReader.h
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

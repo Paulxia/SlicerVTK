@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkAnnotationLayers.h,v $
+  Module:    vtkAnnotationLayers.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

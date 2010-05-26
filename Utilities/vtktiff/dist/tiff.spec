@@ -1,4 +1,4 @@
-#	$Header: /cvsroot/VTK/VTK/Utilities/vtktiff/dist/tiff.spec,v 1.1 2004-04-28 15:49:22 king Exp $
+#	Header
 #
 # TIFF Software
 #

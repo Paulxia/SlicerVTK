@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkSparseArray.txx,v $
+  Module:    vtkSparseArray.txx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

@@ -1,4 +1,4 @@
-/* $Id: tif_fax3.c,v 1.2 2008-03-11 13:38:45 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1990-1997 Sam Leffler

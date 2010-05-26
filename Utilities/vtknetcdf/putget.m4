@@ -12,7 +12,7 @@ dnl
  *  Copyright 1996, University Corporation for Atmospheric Research
  *      See netcdf/COPYRIGHT file for copying and redistribution conditions.
  */
-/* $Id: putget.m4,v 1.7 2007-08-31 06:16:20 dcthomp Exp $ */
+/* Id */
 
 #include "nc.h"
 #include <string.h>

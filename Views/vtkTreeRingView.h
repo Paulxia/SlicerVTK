@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkTreeRingView.h,v $
+  Module:    vtkTreeRingView.h
 
   -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

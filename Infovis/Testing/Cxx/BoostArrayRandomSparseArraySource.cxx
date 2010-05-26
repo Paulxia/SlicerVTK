@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: BoostArrayRandomSparseArraySource.cxx,v $
+  Module:    BoostArrayRandomSparseArraySource.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

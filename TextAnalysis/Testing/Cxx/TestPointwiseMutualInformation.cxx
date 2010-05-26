@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: TestPointwiseMutualInformation.cxx,v $
+  Module:    TestPointwiseMutualInformation.cxx
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

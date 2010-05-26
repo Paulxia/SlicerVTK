@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkScaleDimension.h,v $
+  Module:    vtkScaleDimension.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

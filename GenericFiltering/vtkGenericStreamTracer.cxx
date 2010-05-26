@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkits
-  Module:    $RCSfile: vtkGenericStreamTracer.cxx,v $
+  Module:    vtkGenericStreamTracer.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

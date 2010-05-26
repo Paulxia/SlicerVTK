@@ -4,7 +4,7 @@
 ** Copyright (c) 2003, 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "$Id: proj_goode.c,v 1.2 2008-11-25 19:30:04 david.cole Exp $";
+LIBPROJ_ID[] = "Id";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -123,10 +123,7 @@ ENDENTRY(setup(P, 2))
 ENTRY0(mb_P3)
 ENDENTRY(setup(P, 3))
 /*
-** $Log: proj_goode.c,v $
-** Revision 1.2  2008-11-25 19:30:04  david.cole
-** COMP: Suppress warnings in vtklibproj4.
-**
+** Log: proj_goode.c
 ** Revision 1.1  2008-11-07 16:41:14  jeff
 ** ENH: Adding a 2D geoview. Adding the geographic projection library libproj4
 ** to Utilities. Updating the architecture of the geospatial views. All

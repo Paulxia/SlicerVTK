@@ -45,7 +45,7 @@
 * exit conditions - 
 *       int*    var_tab            element variable truth table array
 *
-*  $Id: exgvartab.c,v 1.4 2010-03-01 19:26:43 ndfabia Exp $
+*  Id
 *
 *****************************************************************************/
 

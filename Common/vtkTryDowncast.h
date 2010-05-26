@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkTryDowncast.h,v $
+  Module:    vtkTryDowncast.h
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

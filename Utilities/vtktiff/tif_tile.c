@@ -1,4 +1,4 @@
-/* $Id: tif_tile.c,v 1.6 2008-03-11 20:46:37 andinet Exp $ */
+/* Id */
 
 /*
  * Copyright (c) 1991-1997 Sam Leffler
