@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipHyperOctree.h
+  Module:    $RCSfile: vtkClipHyperOctree.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -78,7 +78,7 @@ class vtkHyperOctreeClipCutPointsGrabber;
 class VTK_GRAPHICS_EXPORT vtkClipHyperOctree : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkClipHyperOctree,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkClipHyperOctree,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

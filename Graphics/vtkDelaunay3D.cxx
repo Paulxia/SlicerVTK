@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDelaunay3D.cxx
+  Module:    $RCSfile: vtkDelaunay3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkDelaunay3D, "$Revision: 1.76 $");
 vtkStandardNewMacro(vtkDelaunay3D);
 
 // Structure used to represent sphere around tetrahedron

@@ -50,7 +50,7 @@
 *
 * revision history -
 *
-*  Id
+*  $Id: exgblk.c,v 1.6 2010-03-02 16:51:01 ndfabia Exp $
 *
 */
 

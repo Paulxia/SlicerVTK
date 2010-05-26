@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPCAAnalysisFilter.cxx
+  Module:    $RCSfile: vtkPCAAnalysisFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkMath.h"
 #include "vtkFloatArray.h"
 
+vtkCxxRevisionMacro(vtkPCAAnalysisFilter, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkPCAAnalysisFilter);
 
 //------------------------------------------------------------------------

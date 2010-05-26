@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAngleRepresentation.cxx
+  Module:    $RCSfile: vtkAngleRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkTextProperty.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkAngleRepresentation, "$Revision: 1.7 $");
 
 vtkCxxSetObjectMacro(vtkAngleRepresentation,HandleRepresentation,vtkHandleRepresentation);
 

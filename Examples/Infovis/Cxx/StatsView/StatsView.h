@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    StatsView.h
+  Module:    $RCSfile: StatsView.h,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2008-10-17 21:32:04 $
+  Version:   $Revision: 1.2 $
 
   Copyright 2007 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

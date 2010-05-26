@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtListView.cxx
+  Module:    $RCSfile: vtkQtListView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,6 +48,7 @@
 #include "vtkTable.h"
 #include "vtkViewTheme.h"
 
+vtkCxxRevisionMacro(vtkQtListView, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkQtListView);
 
 

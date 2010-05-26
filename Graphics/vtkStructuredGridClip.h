@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridClip.h
+  Module:    $RCSfile: vtkStructuredGridClip.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_GRAPHICS_EXPORT vtkStructuredGridClip : public vtkStructuredGridAlgori
 {
 public:
   static vtkStructuredGridClip *New();
-  vtkTypeMacro(vtkStructuredGridClip,vtkStructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkStructuredGridClip,vtkStructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

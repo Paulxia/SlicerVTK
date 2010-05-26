@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ArrayNullValues.cxx
+  Module:    $RCSfile: ArrayNullValues.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

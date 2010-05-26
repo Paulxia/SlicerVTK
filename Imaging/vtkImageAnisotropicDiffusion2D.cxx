@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageAnisotropicDiffusion2D.cxx
+  Module:    $RCSfile: vtkImageAnisotropicDiffusion2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageAnisotropicDiffusion2D, "$Revision: 1.49 $");
 vtkStandardNewMacro(vtkImageAnisotropicDiffusion2D);
 
 //----------------------------------------------------------------------------

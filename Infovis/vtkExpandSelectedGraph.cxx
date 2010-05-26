@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExpandSelectedGraph.cxx
+  Module:    $RCSfile: vtkExpandSelectedGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@
 #define VTK_CREATE(type, name) \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkExpandSelectedGraph, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkExpandSelectedGraph);
 
 vtkExpandSelectedGraph::vtkExpandSelectedGraph()

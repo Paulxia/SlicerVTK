@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLegendScaleActor.cxx
+  Module:    $RCSfile: vtkLegendScaleActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkCellData.h"
 #include "vtkCoordinate.h"
 
+vtkCxxRevisionMacro(vtkLegendScaleActor, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkLegendScaleActor);
 
 

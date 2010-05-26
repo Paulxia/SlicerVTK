@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBridgePointIterator.h
+  Module:    $RCSfile: vtkBridgePointIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_BRIDGE_EXPORT vtkBridgePointIterator : public vtkGenericPointIterator
 {
 public:
   static vtkBridgePointIterator *New();
-  vtkTypeMacro(vtkBridgePointIterator,vtkGenericPointIterator);
+  vtkTypeRevisionMacro(vtkBridgePointIterator,vtkGenericPointIterator);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

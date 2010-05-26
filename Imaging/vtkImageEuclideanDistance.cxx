@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageEuclideanDistance.cxx
+  Module:    $RCSfile: vtkImageEuclideanDistance.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageEuclideanDistance, "$Revision: 1.25 $");
 vtkStandardNewMacro(vtkImageEuclideanDistance);
 
 //----------------------------------------------------------------------------

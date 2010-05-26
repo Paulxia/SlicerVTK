@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoTreeNodeCache.cxx
+  Module:    $RCSfile: vtkGeoTreeNodeCache.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkSmartPointer.h"
 
 vtkStandardNewMacro(vtkGeoTreeNodeCache);
+vtkCxxRevisionMacro(vtkGeoTreeNodeCache, "$Revision: 1.4 $");
 //----------------------------------------------------------------------------
 vtkGeoTreeNodeCache::vtkGeoTreeNodeCache()
 {

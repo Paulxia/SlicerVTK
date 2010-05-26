@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoxLayoutStrategy.cxx
+  Module:    $RCSfile: vtkBoxLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkTree.h"
 #include "vtkTreeDFSIterator.h"
 
+vtkCxxRevisionMacro(vtkBoxLayoutStrategy, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkBoxLayoutStrategy);
 
 vtkBoxLayoutStrategy::vtkBoxLayoutStrategy()

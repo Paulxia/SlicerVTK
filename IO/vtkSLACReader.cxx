@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSLACReader.cxx
+  Module:    $RCSfile: vtkSLACReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -421,6 +421,7 @@ bool vtkSLACReader::MidpointIdMap::GetNextMidpoint(EdgeEndpoints &edge,
 }
 
 //=============================================================================
+vtkCxxRevisionMacro(vtkSLACReader, "$Revision: 1.18 $");
 vtkStandardNewMacro(vtkSLACReader);
 
 vtkInformationKeyMacro(vtkSLACReader, IS_INTERNAL_VOLUME, Integer);
@@ -1314,6 +1315,13 @@ int vtkSLACReader::ReadMidpointCoordinates(
 int vtkSLACReader::ReadMidpointData(int meshFD, vtkMultiBlockDataSet *output,
                                     MidpointIdMap &midpointIds)
 {
+  static bool GaveMidpointWarning = false;
+  if (!GaveMidpointWarning)
+    {
+    vtkWarningMacro(<< "Quadratic elements not displayed entirely correctly yet.  Quadratic triangles are drawn as 4 linear triangles.");
+    GaveMidpointWarning = true;
+    }
+
   // Get the point information from the data.
   vtkPoints *points = vtkPoints::SafeDownCast(
                         output->GetInformation()->Get(vtkSLACReader::POINTS()));

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericDataSetAlgorithm.cxx
+  Module:    $RCSfile: vtkGenericDataSetAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
+vtkCxxRevisionMacro(vtkGenericDataSetAlgorithm, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------------
 vtkGenericDataSetAlgorithm::vtkGenericDataSetAlgorithm()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTokenValueFilter.cxx
+  Module:    $RCSfile: vtkTokenValueFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include <sstream>
 #include <stdexcept>
 
+vtkCxxRevisionMacro(vtkTokenValueFilter, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkTokenValueFilter);
 
 class vtkTokenValueFilter::Internals

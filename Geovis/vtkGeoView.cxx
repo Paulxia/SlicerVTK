@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoView.cxx
+  Module:    $RCSfile: vtkGeoView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@
 
 #include "vtkgl.h"
 
+vtkCxxRevisionMacro(vtkGeoView, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkGeoView);
 vtkCxxSetObjectMacro(vtkGeoView, Terrain, vtkGeoTerrain);
 //----------------------------------------------------------------------------

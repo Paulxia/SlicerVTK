@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkParallelCoordinatesHistogramRepresentation.cxx
+Module:    $RCSfile: vtkParallelCoordinatesHistogramRepresentation.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -55,6 +55,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkUnsignedIntArray.h"
 #include "vtkViewTheme.h"
 //------------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkParallelCoordinatesHistogramRepresentation, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkParallelCoordinatesHistogramRepresentation);
 //------------------------------------------------------------------------------
 vtkParallelCoordinatesHistogramRepresentation::vtkParallelCoordinatesHistogramRepresentation()
@@ -546,11 +547,6 @@ void vtkParallelCoordinatesHistogramRepresentation::SetNumberOfHistogramBins(int
 
     this->Modified();
     }
-}
-//------------------------------------------------------------------------------
-void vtkParallelCoordinatesHistogramRepresentation::SetNumberOfHistogramBins(int* n)
-{
-  this->SetNumberOfHistogramBins(n[0],n[1]);
 }
 //------------------------------------------------------------------------------
 vtkImageData* vtkParallelCoordinatesHistogramRepresentation::GetHistogramImage(int idx)

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ArrayNormalizeMatrixVectors.cxx
+  Module:    $RCSfile: ArrayNormalizeMatrixVectors.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAssignCoordinatesLayoutStrategy.h
+  Module:    $RCSfile: vtkAssignCoordinatesLayoutStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkAssignCoordinatesLayoutStrategy : public vtkGraphLay
 {
 public:
   static vtkAssignCoordinatesLayoutStrategy *New();
-  vtkTypeMacro(vtkAssignCoordinatesLayoutStrategy, vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkAssignCoordinatesLayoutStrategy, vtkGraphLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

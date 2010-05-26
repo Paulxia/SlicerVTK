@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabelPlacementMapper.cxx
+  Module:    $RCSfile: vtkLabelPlacementMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -441,6 +441,7 @@ public:
     }
 };
 
+vtkCxxRevisionMacro(vtkLabelPlacementMapper, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkLabelPlacementMapper);
 vtkCxxSetObjectMacro(vtkLabelPlacementMapper, AnchorTransform, vtkCoordinate);
 vtkCxxSetObjectMacro(vtkLabelPlacementMapper, RenderStrategy, vtkLabelRenderStrategy);

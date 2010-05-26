@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeDataProbeFilter.cxx
+  Module:    $RCSfile: vtkCompositeDataProbeFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkSmartPointer.h"
 
 vtkStandardNewMacro(vtkCompositeDataProbeFilter);
+vtkCxxRevisionMacro(vtkCompositeDataProbeFilter, "$Revision: 1.5 $");
 //----------------------------------------------------------------------------
 vtkCompositeDataProbeFilter::vtkCompositeDataProbeFilter()
 {

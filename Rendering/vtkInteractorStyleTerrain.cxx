@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleTerrain.cxx
+  Module:    $RCSfile: vtkInteractorStyleTerrain.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkRenderer.h"
 #include "vtkSphereSource.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleTerrain, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkInteractorStyleTerrain);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatlabEngineInterface.h
+  Module:    $RCSfile: vtkMatlabEngineInterface.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -57,7 +57,7 @@ public:
 
   static vtkMatlabEngineInterface *New();
 
-  vtkTypeMacro(vtkMatlabEngineInterface, vtkObject );
+  vtkTypeRevisionMacro(vtkMatlabEngineInterface, vtkObject );
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

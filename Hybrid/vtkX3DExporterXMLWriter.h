@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkX3DExporterXMLWriter.h
+  Module:    $RCSfile: vtkX3DExporterXMLWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_HYBRID_EXPORT vtkX3DExporterXMLWriter : public vtkX3DExporterWriter
 
 public:
   static vtkX3DExporterXMLWriter *New();
-  vtkTypeMacro(vtkX3DExporterXMLWriter, vtkX3DExporterWriter);
+  vtkTypeRevisionMacro(vtkX3DExporterXMLWriter, vtkX3DExporterWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   virtual void CloseFile();

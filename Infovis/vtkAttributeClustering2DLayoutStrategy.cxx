@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAttributeClustering2DLayoutStrategy.cxx
+  Module:    $RCSfile: vtkAttributeClustering2DLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,6 +62,7 @@ public:
 };
 
 
+vtkCxxRevisionMacro(vtkAttributeClustering2DLayoutStrategy, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkAttributeClustering2DLayoutStrategy);
 
 // This is just a convenient macro for smart pointers

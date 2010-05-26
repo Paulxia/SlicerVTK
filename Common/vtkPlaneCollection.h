@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlaneCollection.h
+  Module:    $RCSfile: vtkPlaneCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@
 class VTK_COMMON_EXPORT vtkPlaneCollection : public vtkCollection
 {
 public:
-  vtkTypeMacro(vtkPlaneCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkPlaneCollection,vtkCollection);
   static vtkPlaneCollection *New();
 
   // Description:

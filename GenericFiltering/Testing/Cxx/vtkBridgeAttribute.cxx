@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBridgeAttribute.cxx
+  Module:    $RCSfile: vtkBridgeAttribute.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkBridgeAttribute, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkBridgeAttribute);
 
 void vtkBridgeAttribute::PrintSelf(ostream& os, vtkIndent indent)

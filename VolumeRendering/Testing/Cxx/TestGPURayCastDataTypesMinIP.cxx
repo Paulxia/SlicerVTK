@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestGPURayCastDataTypesMinIP.cxx
+  Module:    $RCSfile: TestGPURayCastDataTypesMinIP.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

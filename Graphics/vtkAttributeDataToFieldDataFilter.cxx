@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAttributeDataToFieldDataFilter.cxx
+  Module:    $RCSfile: vtkAttributeDataToFieldDataFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkAttributeDataToFieldDataFilter, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkAttributeDataToFieldDataFilter);
 
 // Instantiate object.

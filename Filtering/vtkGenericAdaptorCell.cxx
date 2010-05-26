@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericAdaptorCell.cxx
+  Module:    $RCSfile: vtkGenericAdaptorCell.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include "vtkWedge.h"
 #include "vtkPyramid.h"
 
+vtkCxxRevisionMacro(vtkGenericAdaptorCell, "$Revision: 1.26 $");
 
 vtkGenericAdaptorCell::vtkGenericAdaptorCell()
 {

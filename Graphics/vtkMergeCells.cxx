@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeCells.cxx
+  Module:    $RCSfile: vtkMergeCells.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 #include <vtkstd/map>
 #include <vtkstd/algorithm>
 
+vtkCxxRevisionMacro(vtkMergeCells, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkMergeCells);
 
 vtkCxxSetObjectMacro(vtkMergeCells, UnstructuredGrid, vtkUnstructuredGrid);

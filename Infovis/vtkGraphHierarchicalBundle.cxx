@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphHierarchicalBundle.cxx
+  Module:    $RCSfile: vtkGraphHierarchicalBundle.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,6 +58,7 @@ static vtkVariant vtkGetVariantValue(vtkAbstractArray* arr, vtkIdType i)
 }
 
 
+vtkCxxRevisionMacro(vtkGraphHierarchicalBundle, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkGraphHierarchicalBundle);
 
 vtkGraphHierarchicalBundle::vtkGraphHierarchicalBundle()

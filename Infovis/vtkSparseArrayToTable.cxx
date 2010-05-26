@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSparseArrayToTable.cxx
+  Module:    $RCSfile: vtkSparseArrayToTable.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -73,6 +73,7 @@ static bool Convert(vtkArray* Array, const char* ValueColumn, vtkTable* Table)
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkSparseArrayToTable, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkSparseArrayToTable);
 
 // ----------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoSampleArcs.cxx
+  Module:    $RCSfile: vtkGeoSampleArcs.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #include <vtksys/stl/map>
 using vtksys_stl::map;
 
+vtkCxxRevisionMacro(vtkGeoSampleArcs, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkGeoSampleArcs);
 
 vtkGeoSampleArcs::vtkGeoSampleArcs()

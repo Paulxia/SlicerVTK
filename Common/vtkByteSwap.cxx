@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkByteSwap.cxx
+  Module:    $RCSfile: vtkByteSwap.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include <memory.h>
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkByteSwap, "$Revision: 1.57 $");
 vtkStandardNewMacro(vtkByteSwap);
 
 //----------------------------------------------------------------------------

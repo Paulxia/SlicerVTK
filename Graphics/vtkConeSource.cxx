@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConeSource.cxx
+  Module:    $RCSfile: vtkConeSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkConeSource, "$Revision: 1.77 $");
 vtkStandardNewMacro(vtkConeSource);
 
 //----------------------------------------------------------------------------

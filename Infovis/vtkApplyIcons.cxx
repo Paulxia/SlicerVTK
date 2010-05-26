@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkApplyIcons.cxx
+  Module:    $RCSfile: vtkApplyIcons.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 
 #include <vtksys/stl/map>
 
+vtkCxxRevisionMacro(vtkApplyIcons, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkApplyIcons);
 
 class vtkApplyIcons::Internals {

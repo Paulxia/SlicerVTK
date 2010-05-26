@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSuperquadricSource.cxx
+  Module:    $RCSfile: vtkSuperquadricSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkSuperquadricSource, "$Revision: 1.25 $");
 vtkStandardNewMacro(vtkSuperquadricSource);
 
 static void evalSuperquadric(double u, double v,

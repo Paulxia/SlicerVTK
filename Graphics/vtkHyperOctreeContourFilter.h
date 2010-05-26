@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeContourFilter.h
+  Module:    $RCSfile: vtkHyperOctreeContourFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -65,7 +65,7 @@ class vtkBitArray;
 class VTK_GRAPHICS_EXPORT vtkHyperOctreeContourFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkHyperOctreeContourFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkHyperOctreeContourFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

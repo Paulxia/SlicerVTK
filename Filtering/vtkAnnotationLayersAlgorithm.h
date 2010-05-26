@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnnotationLayersAlgorithm.h
+  Module:    $RCSfile: vtkAnnotationLayersAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_FILTERING_EXPORT vtkAnnotationLayersAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkAnnotationLayersAlgorithm *New();
-  vtkTypeMacro(vtkAnnotationLayersAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkAnnotationLayersAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

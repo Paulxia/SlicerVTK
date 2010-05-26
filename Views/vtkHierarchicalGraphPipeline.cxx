@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHierarchicalGraphPipeline.cxx
+  Module:    $RCSfile: vtkHierarchicalGraphPipeline.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,6 +43,7 @@
 #include "vtkTextProperty.h"
 #include "vtkViewTheme.h"
 
+vtkCxxRevisionMacro(vtkHierarchicalGraphPipeline, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkHierarchicalGraphPipeline);
 
 vtkHierarchicalGraphPipeline::vtkHierarchicalGraphPipeline()

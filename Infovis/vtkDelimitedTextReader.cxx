@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDelimitedTextReader.cxx
+  Module:    $RCSfile: vtkDelimitedTextReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -417,6 +417,7 @@ void utf16_to_unicode(const bool big_endian, OctetIteratorT begin, OctetIterator
 /////////////////////////////////////////////////////////////////////////////////////////
 // vtkDelimitedTextReader
 
+vtkCxxRevisionMacro(vtkDelimitedTextReader, "$Revision: 1.38 $");
 vtkStandardNewMacro(vtkDelimitedTextReader);
 
 vtkDelimitedTextReader::vtkDelimitedTextReader() :

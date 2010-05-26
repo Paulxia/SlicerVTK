@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostSplitTableField.cxx
+  Module:    $RCSfile: vtkBoostSplitTableField.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include <boost/algorithm/string/trim.hpp>
 #include <boost/tokenizer.hpp>
 
+vtkCxxRevisionMacro(vtkBoostSplitTableField, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkBoostSplitTableField);
 
 /// Ecapsulates private implementation details of vtkBoostSplitTableField

@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPSLACReader.cxx
+  Module:    $RCSfile: vtkPSLACReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -322,6 +322,7 @@ struct vtkPSLACReaderIdTypeHash {
 };
 
 //=============================================================================
+vtkCxxRevisionMacro(vtkPSLACReader, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkPSLACReader);
 
 vtkCxxSetObjectMacro(vtkPSLACReader, Controller, vtkMultiProcessController);

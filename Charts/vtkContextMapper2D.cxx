@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextMapper2D.cxx
+  Module:    $RCSfile: vtkContextMapper2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkContextMapper2D, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkContextMapper2D);
 //-----------------------------------------------------------------------------
 vtkContextMapper2D::vtkContextMapper2D()

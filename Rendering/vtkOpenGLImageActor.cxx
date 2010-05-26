@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLImageActor.cxx
+  Module:    $RCSfile: vtkOpenGLImageActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkgl.h" // vtkgl namespace
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLImageActor, "$Revision: 1.39 $");
 vtkStandardNewMacro(vtkOpenGLImageActor);
 #endif
 

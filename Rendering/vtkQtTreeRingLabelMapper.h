@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtTreeRingLabelMapper.h
+  Module:    $RCSfile: vtkQtTreeRingLabelMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -63,7 +63,7 @@ class VTK_RENDERING_EXPORT vtkQtTreeRingLabelMapper : public vtkLabeledDataMappe
 {
 public:
   static vtkQtTreeRingLabelMapper *New();
-  vtkTypeMacro(vtkQtTreeRingLabelMapper,vtkLabeledDataMapper);
+  vtkTypeRevisionMacro(vtkQtTreeRingLabelMapper,vtkLabeledDataMapper);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

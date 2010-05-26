@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatrixToHomogeneousTransform.cxx
+  Module:    $RCSfile: vtkMatrixToHomogeneousTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkMatrix4x4.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkMatrixToHomogeneousTransform, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkMatrixToHomogeneousTransform);
 vtkCxxSetObjectMacro(vtkMatrixToHomogeneousTransform,Input,vtkMatrix4x4);
 

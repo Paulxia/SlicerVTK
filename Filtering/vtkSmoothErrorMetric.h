@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSmoothErrorMetric.h
+  Module:    $RCSfile: vtkSmoothErrorMetric.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ public:
   
   // Description:
   // Standard VTK type and error macros.
-  vtkTypeMacro(vtkSmoothErrorMetric,vtkGenericSubdivisionErrorMetric);
+  vtkTypeRevisionMacro(vtkSmoothErrorMetric,vtkGenericSubdivisionErrorMetric);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

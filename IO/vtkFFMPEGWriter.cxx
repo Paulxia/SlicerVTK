@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFFMPEGWriter.cxx
+  Module:    $RCSfile: vtkFFMPEGWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -175,8 +175,6 @@ int vtkFFMPEGWriterInternal::Start()
       c->bit_rate = 12*1024*1024;
       break;
     }
-
-  c->bit_rate_tolerance = c->bit_rate/this->FrameRate;
 
   //apply the chosen parameters
   if (av_set_parameters(this->avFormatContext, NULL) < 0) 
@@ -406,6 +404,7 @@ void vtkFFMPEGWriterInternal::End()
 
 //---------------------------------------------------------------------------
 vtkStandardNewMacro(vtkFFMPEGWriter);
+vtkCxxRevisionMacro(vtkFFMPEGWriter, "$Revision: 1.11 $");
 
 //---------------------------------------------------------------------------
 vtkFFMPEGWriter::vtkFFMPEGWriter()

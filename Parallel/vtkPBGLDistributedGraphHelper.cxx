@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLDistributedGraphHelper.cxx
+  Module:    $RCSfile: vtkPBGLDistributedGraphHelper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -154,7 +154,7 @@ class vtkPBGLDistributedGraphHelperInternals : public vtkObject
 {
 public:
   static vtkPBGLDistributedGraphHelperInternals *New();
-  vtkTypeMacro(vtkPBGLDistributedGraphHelperInternals, vtkObject);
+  vtkTypeRevisionMacro(vtkPBGLDistributedGraphHelperInternals, vtkObject);
 
   // Description:
   // Handle a FIND_VERTEX_TAG message.
@@ -238,10 +238,12 @@ boost::graph::distributed::mpi_process_group *
 vtkPBGLDistributedGraphHelperInternals::root_process_group;
 
 vtkStandardNewMacro(vtkPBGLDistributedGraphHelperInternals);
+vtkCxxRevisionMacro(vtkPBGLDistributedGraphHelperInternals, "$Revision: 1.15 $");
 
 //----------------------------------------------------------------------------
 // class vtkPBGLDistributedGraphHelper
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkPBGLDistributedGraphHelper, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkPBGLDistributedGraphHelper);
 
 //----------------------------------------------------------------------------

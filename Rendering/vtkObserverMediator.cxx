@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkObserverMediator.cxx
+  Module:    $RCSfile: vtkObserverMediator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkInteractorObserver.h"
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkObserverMediator, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkObserverMediator);
 
 // PIMPL the map representing the observer (key) to cursor request

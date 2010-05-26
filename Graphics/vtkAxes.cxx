@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAxes.cxx
+  Module:    $RCSfile: vtkAxes.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkAxes, "$Revision: 1.45 $");
 vtkStandardNewMacro(vtkAxes);
 
 

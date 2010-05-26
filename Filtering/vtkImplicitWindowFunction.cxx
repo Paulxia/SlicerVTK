@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitWindowFunction.cxx
+  Module:    $RCSfile: vtkImplicitWindowFunction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkGarbageCollector.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImplicitWindowFunction, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkImplicitWindowFunction);
 vtkCxxSetObjectMacro(vtkImplicitWindowFunction,ImplicitFunction,vtkImplicitFunction);
 

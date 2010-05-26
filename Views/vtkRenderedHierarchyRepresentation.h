@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderedHierarchyRepresentation.h
+  Module:    $RCSfile: vtkRenderedHierarchyRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_VIEWS_EXPORT vtkRenderedHierarchyRepresentation : public vtkRenderedGr
 {
 public:
   static vtkRenderedHierarchyRepresentation* New();
-  vtkTypeMacro(vtkRenderedHierarchyRepresentation, vtkRenderedGraphRepresentation);
+  vtkTypeRevisionMacro(vtkRenderedHierarchyRepresentation, vtkRenderedGraphRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

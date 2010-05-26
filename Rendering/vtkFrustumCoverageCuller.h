@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFrustumCoverageCuller.h
+  Module:    $RCSfile: vtkFrustumCoverageCuller.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_RENDERING_EXPORT vtkFrustumCoverageCuller : public vtkCuller
 {
 public:
   static vtkFrustumCoverageCuller *New();
-  vtkTypeMacro(vtkFrustumCoverageCuller,vtkCuller);
+  vtkTypeRevisionMacro(vtkFrustumCoverageCuller,vtkCuller);
   void PrintSelf(ostream& os,vtkIndent indent);
 
   // Description:

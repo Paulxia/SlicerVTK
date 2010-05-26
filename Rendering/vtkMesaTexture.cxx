@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaTexture.cxx
+  Module:    $RCSfile: vtkMesaTexture.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,4 +40,5 @@
 #undef vtkOpenGLTexture
 #undef vtkOpenGLRenderWindow
 
+vtkCxxRevisionMacro(vtkMesaTexture, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkMesaTexture);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatrix3x3.h
+  Module:    $RCSfile: vtkMatrix3x3.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ public:
   // Construct a 3x3 identity matrix.
   static vtkMatrix3x3 *New();
 
-  vtkTypeMacro(vtkMatrix3x3,vtkObject);
+  vtkTypeRevisionMacro(vtkMatrix3x3,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

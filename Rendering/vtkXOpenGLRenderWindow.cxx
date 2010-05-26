@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXOpenGLRenderWindow.cxx
+  Module:    $RCSfile: vtkXOpenGLRenderWindow.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -117,6 +117,7 @@ vtkXOpenGLRenderWindowInternal::vtkXOpenGLRenderWindowInternal(
 
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkXOpenGLRenderWindow, "$Revision: 1.104 $");
 vtkStandardNewMacro(vtkXOpenGLRenderWindow);
 #endif
 

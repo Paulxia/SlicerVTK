@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAlgorithm.h
+  Module:    $RCSfile: vtkAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_FILTERING_EXPORT vtkAlgorithm : public vtkObject
 {
 public:
   static vtkAlgorithm *New();
-  vtkTypeMacro(vtkAlgorithm,vtkObject);
+  vtkTypeRevisionMacro(vtkAlgorithm,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

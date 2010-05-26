@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTecplotReader.cxx
+  Module:    $RCSfile: vtkTecplotReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,6 +49,7 @@
 
 #include <ctype.h> // for isspace(), isalnum()
 
+vtkCxxRevisionMacro( vtkTecplotReader, "$Revision: 1.16 $" );
 vtkStandardNewMacro( vtkTecplotReader );
 
 // ============================================================================

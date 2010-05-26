@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolynomialSolversUnivariate.h
+  Module:    $RCSfile: vtkPolynomialSolversUnivariate.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,7 +52,7 @@ class VTK_COMMON_EXPORT vtkPolynomialSolversUnivariate : public vtkObject
 {
 public:
   static vtkPolynomialSolversUnivariate *New();
-  vtkTypeMacro(vtkPolynomialSolversUnivariate,vtkObject);
+  vtkTypeRevisionMacro(vtkPolynomialSolversUnivariate,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static ostream& PrintPolynomial( ostream& os, double* P, int degP );
 

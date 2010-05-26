@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMarchingCubes.h
+  Module:    $RCSfile: vtkImageMarchingCubes.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_GRAPHICS_EXPORT vtkImageMarchingCubes : public vtkPolyDataAlgorithm
 {
 public:
   static vtkImageMarchingCubes *New();
-  vtkTypeMacro(vtkImageMarchingCubes,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkImageMarchingCubes,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

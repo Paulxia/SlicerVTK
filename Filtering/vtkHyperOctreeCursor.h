@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeCursor.h
+  Module:    $RCSfile: vtkHyperOctreeCursor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ const int VTK_BINARY_TREE_CHILD_RIGHT=VTK_QUADTREE_CHILD_SE;
 class VTK_FILTERING_EXPORT vtkHyperOctreeCursor : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkHyperOctreeCursor,vtkObject);
+  vtkTypeRevisionMacro(vtkHyperOctreeCursor,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

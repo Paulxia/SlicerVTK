@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkColorTransferFunction.h
+  Module:    $RCSfile: vtkColorTransferFunction.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_FILTERING_EXPORT vtkColorTransferFunction : public vtkScalarsToColors
 {
 public:
   static vtkColorTransferFunction *New();
-  vtkTypeMacro(vtkColorTransferFunction,vtkScalarsToColors);
+  vtkTypeRevisionMacro(vtkColorTransferFunction,vtkScalarsToColors);
   void DeepCopy( vtkColorTransferFunction *f );
   void ShallowCopy( vtkColorTransferFunction *f );
 

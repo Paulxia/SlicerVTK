@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSurfaceReconstructionFilter.h
+  Module:    $RCSfile: vtkSurfaceReconstructionFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@
 class VTK_IMAGING_EXPORT vtkSurfaceReconstructionFilter : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkSurfaceReconstructionFilter,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkSurfaceReconstructionFilter,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

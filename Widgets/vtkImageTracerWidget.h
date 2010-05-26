@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageTracerWidget.h
+  Module:    $RCSfile: vtkImageTracerWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -80,7 +80,7 @@ public:
   // Instantiate the object.
   static vtkImageTracerWidget *New();
 
-  vtkTypeMacro(vtkImageTracerWidget,vtk3DWidget);
+  vtkTypeRevisionMacro(vtkImageTracerWidget,vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

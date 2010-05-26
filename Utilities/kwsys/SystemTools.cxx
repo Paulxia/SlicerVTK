@@ -9,13 +9,6 @@
   implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
   See the License for more information.
 ============================================================================*/
-
-#ifdef __osf__
-#  define _OSF_SOURCE
-#  define _POSIX_C_SOURCE 199506L
-#  define _XOPEN_SOURCE_EXTENDED
-#endif
-
 #include "kwsysPrivate.h"
 #include KWSYS_HEADER(RegularExpression.hxx)
 #include KWSYS_HEADER(SystemTools.hxx)
@@ -3072,35 +3065,38 @@ kwsys_stl::string SystemTools::RelativePath(const char* local, const char* remot
   return relativePath;
 }
 
+// OK, some fun stuff to get the actual case of a given path.
+// Basically, you just need to call ShortPath, then GetLongPathName,
+// However, GetLongPathName is not implemented on windows NT and 95,
+// so we have to simulate it on those versions
 #ifdef _WIN32
-static int GetCasePathName(const kwsys_stl::string & pathIn,
-                            kwsys_stl::string & casePath)
+int OldWindowsGetLongPath(kwsys_stl::string const& shortPath,
+                          kwsys_stl::string& longPath  )
 {
-  kwsys_stl::string::size_type iFound = pathIn.rfind('/');
-  if (iFound > 1  && iFound != pathIn.npos)
+  kwsys_stl::string::size_type iFound = shortPath.rfind('/');
+  if (iFound > 1  && iFound != shortPath.npos)
     {
     // recurse to peel off components
     //
-    if (GetCasePathName(pathIn.substr(0, iFound), casePath) > 0)
+    if (OldWindowsGetLongPath(shortPath.substr(0, iFound), longPath) > 0)
       {
-      casePath += '/';
-      if (pathIn[1] != '/')
+      longPath += '/';
+      if (shortPath[1] != '/')
         {
         WIN32_FIND_DATA findData;
 
         // append the long component name to the path
         //
-        HANDLE hFind = ::FindFirstFile(pathIn.c_str(), &findData);
-        if (INVALID_HANDLE_VALUE != hFind)
+        if (INVALID_HANDLE_VALUE != ::FindFirstFile
+            (shortPath.c_str(), &findData))
           {
-          casePath += findData.cFileName;
-          ::FindClose(hFind);
+          longPath += findData.cFileName;
           }
         else
           {
           // if FindFirstFile fails, return the error code
           //
-          casePath = "";
+          longPath = "";
           return 0;
           }
         }
@@ -3108,9 +3104,37 @@ static int GetCasePathName(const kwsys_stl::string & pathIn,
     }
   else
     {
-    casePath = pathIn;
+    longPath = shortPath;
     }
-  return (int)casePath.size();
+  return (int)longPath.size();
+}
+
+
+int PortableGetLongPathName(const char* pathIn,
+                            kwsys_stl::string & longPath)
+{ 
+  HMODULE lh = LoadLibrary("Kernel32.dll");
+  if(lh)
+    {
+    FARPROC proc =  GetProcAddress(lh, "GetLongPathNameA");
+    if(proc)
+      {
+      typedef  DWORD (WINAPI * GetLongFunctionPtr) (LPCSTR,LPSTR,DWORD); 
+      GetLongFunctionPtr func = (GetLongFunctionPtr)proc;
+      char buffer[MAX_PATH+1];
+      int len = (*func)(pathIn, buffer, MAX_PATH+1);
+      if(len == 0 || len > MAX_PATH+1)
+        {
+        FreeLibrary(lh);
+        return 0;
+        }
+      longPath = buffer;
+      FreeLibrary(lh);
+      return len;
+      }
+    FreeLibrary(lh);
+    }
+  return OldWindowsGetLongPath(pathIn, longPath);
 }
 #endif
 
@@ -3129,19 +3153,29 @@ kwsys_stl::string SystemTools::GetActualCaseForPath(const char* p)
     {
     return i->second;
     }
-  kwsys_stl::string casePath;
-  int len = GetCasePathName(p, casePath);
+  kwsys_stl::string shortPath;
+  if(!SystemTools::GetShortPath(p, shortPath))
+    {
+    return p;
+    }
+  kwsys_stl::string longPath;
+  int len = PortableGetLongPathName(shortPath.c_str(), longPath);
   if(len == 0 || len > MAX_PATH+1)
     {
     return p;
     }
-  // make sure drive letter is always upper case
-  if(casePath.size() > 1 && casePath[1] == ':')
+  // Use original path if conversion back to a long path failed.
+  if(longPath == shortPath)
     {
-    casePath[0] = toupper(casePath[0]);
+    longPath = p;
     }
-  (*SystemTools::LongPathMap)[p] = casePath;
-  return casePath;
+  // make sure drive letter is always upper case
+  if(longPath.size() > 1 && longPath[1] == ':')
+    {
+    longPath[0] = toupper(longPath[0]);
+    }
+  (*SystemTools::LongPathMap)[p] = longPath;
+  return longPath;
 #endif  
 }
 

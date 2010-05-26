@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphItem.h
+  Module:    $RCSfile: vtkGraphItem.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class vtkGraph;
 class vtkGraphItem : public vtkContextItem
 {
 public:
-  vtkTypeMacro(vtkGraphItem, vtkContextItem);
+  vtkTypeRevisionMacro(vtkGraphItem, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   static vtkGraphItem *New();

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractCellLocator.h
+  Module:    $RCSfile: vtkAbstractCellLocator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class vtkPoints;
 class VTK_FILTERING_EXPORT vtkAbstractCellLocator : public vtkLocator
 {
 public:
-  vtkTypeMacro(vtkAbstractCellLocator,vtkLocator);
+  vtkTypeRevisionMacro(vtkAbstractCellLocator,vtkLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

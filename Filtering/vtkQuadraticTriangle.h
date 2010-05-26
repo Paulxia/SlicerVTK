@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticTriangle.h
+  Module:    $RCSfile: vtkQuadraticTriangle.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_FILTERING_EXPORT vtkQuadraticTriangle : public vtkNonLinearCell
 {
 public:
   static vtkQuadraticTriangle *New();
-  vtkTypeMacro(vtkQuadraticTriangle,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkQuadraticTriangle,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

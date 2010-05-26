@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChartLegend.h
+  Module:    $RCSfile: vtkChartLegend.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class vtkChart;
 class VTK_CHARTS_EXPORT vtkChartLegend : public vtkContextItem
 {
 public:
-  vtkTypeMacro(vtkChartLegend, vtkContextItem);
+  vtkTypeRevisionMacro(vtkChartLegend, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageCorrelation.cxx
+  Module:    $RCSfile: vtkImageCorrelation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageCorrelation, "$Revision: 1.35 $");
 vtkStandardNewMacro(vtkImageCorrelation);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostRandomSparseArraySource.h
+  Module:    $RCSfile: vtkBoostRandomSparseArraySource.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkBoostRandomSparseArraySource : public vtkArrayDataAl
 {
 public:
   static vtkBoostRandomSparseArraySource* New();
-  vtkTypeMacro(vtkBoostRandomSparseArraySource, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostRandomSparseArraySource, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBlockItem.cxx
+  Module:    $RCSfile: vtkBlockItem.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkObjectFactory.h"
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkBlockItem, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkBlockItem);
 
 //-----------------------------------------------------------------------------

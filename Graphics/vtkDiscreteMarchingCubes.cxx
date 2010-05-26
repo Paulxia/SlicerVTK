@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDiscreteMarchingCubes.cxx
+  Module:    $RCSfile: vtkDiscreteMarchingCubes.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@
 #define vtkFloatingPointType float
 #endif
 
+vtkCxxRevisionMacro(vtkDiscreteMarchingCubes, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkDiscreteMarchingCubes);
 
 // Description:

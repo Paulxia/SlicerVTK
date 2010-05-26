@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalSnapToTimeStep.cxx
+  Module:    $RCSfile: vtkTemporalSnapToTimeStep.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkTemporalSnapToTimeStep, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTemporalSnapToTimeStep);
 
 //----------------------------------------------------------------------------

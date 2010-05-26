@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStreamer.cxx
+  Module:    $RCSfile: vtkStreamer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkPointData.h"
 #include "vtkRungeKutta2.h"
 
+vtkCxxRevisionMacro(vtkStreamer, "$Revision: 1.94 $");
 vtkCxxSetObjectMacro(vtkStreamer,Integrator,vtkInitialValueProblemSolver);
 
 #define VTK_START_FROM_POSITION 0

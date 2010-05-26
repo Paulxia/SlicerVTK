@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataToImageStencil.h
+  Module:    $RCSfile: vtkPolyDataToImageStencil.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -73,7 +73,7 @@ class VTK_HYBRID_EXPORT vtkPolyDataToImageStencil :
 {
 public:
   static vtkPolyDataToImageStencil* New();
-  vtkTypeMacro(vtkPolyDataToImageStencil, vtkImageStencilSource);
+  vtkTypeRevisionMacro(vtkPolyDataToImageStencil, vtkImageStencilSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

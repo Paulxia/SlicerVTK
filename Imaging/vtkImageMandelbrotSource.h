@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMandelbrotSource.h
+  Module:    $RCSfile: vtkImageMandelbrotSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_IMAGING_EXPORT vtkImageMandelbrotSource : public vtkImageAlgorithm
 {
 public:
   static vtkImageMandelbrotSource *New();
-  vtkTypeMacro(vtkImageMandelbrotSource,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageMandelbrotSource,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);   
   
   // Description:

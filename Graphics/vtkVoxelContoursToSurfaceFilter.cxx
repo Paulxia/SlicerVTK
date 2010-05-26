@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVoxelContoursToSurfaceFilter.cxx
+  Module:    $RCSfile: vtkVoxelContoursToSurfaceFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPolyData.h"
 #include "vtkStructuredPoints.h"
 
+vtkCxxRevisionMacro(vtkVoxelContoursToSurfaceFilter, "$Revision: 1.28 $");
 vtkStandardNewMacro(vtkVoxelContoursToSurfaceFilter);
 
 vtkVoxelContoursToSurfaceFilter::vtkVoxelContoursToSurfaceFilter()

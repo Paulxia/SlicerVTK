@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositePainter.h
+  Module:    $RCSfile: vtkCompositePainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkCompositePainter : public vtkPainter
 {
 public:
   static vtkCompositePainter* New();
-  vtkTypeMacro(vtkCompositePainter, vtkPainter);
+  vtkTypeRevisionMacro(vtkCompositePainter, vtkPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostConnectedComponents.h
+  Module:    $RCSfile: vtkBoostConnectedComponents.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_INFOVIS_EXPORT vtkBoostConnectedComponents : public vtkGraphAlgorithm
 {
 public:
   static vtkBoostConnectedComponents *New();
-  vtkTypeMacro(vtkBoostConnectedComponents, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostConnectedComponents, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

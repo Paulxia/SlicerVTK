@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleSwitch.h
+  Module:    $RCSfile: vtkInteractorStyleSwitch.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleSwitch : public vtkInteractorStyle
 {
 public:
   static vtkInteractorStyleSwitch *New();
-  vtkTypeMacro(vtkInteractorStyleSwitch, vtkInteractorStyle);
+  vtkTypeRevisionMacro(vtkInteractorStyleSwitch, vtkInteractorStyle);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSTLReader.h
+  Module:    $RCSfile: vtkSTLReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class vtkPoints;
 class VTK_IO_EXPORT vtkSTLReader : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkSTLReader,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSTLReader,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

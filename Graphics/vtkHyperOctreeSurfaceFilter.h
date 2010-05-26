@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeSurfaceFilter.h
+  Module:    $RCSfile: vtkHyperOctreeSurfaceFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_GRAPHICS_EXPORT vtkHyperOctreeSurfaceFilter : public vtkPolyDataAlgori
 {
 public:
   static vtkHyperOctreeSurfaceFilter *New();
-  vtkTypeMacro(vtkHyperOctreeSurfaceFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkHyperOctreeSurfaceFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

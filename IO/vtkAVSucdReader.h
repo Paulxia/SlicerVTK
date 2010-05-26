@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAVSucdReader.h
+  Module:    $RCSfile: vtkAVSucdReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_IO_EXPORT vtkAVSucdReader : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkAVSucdReader *New();
-  vtkTypeMacro(vtkAVSucdReader,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkAVSucdReader,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

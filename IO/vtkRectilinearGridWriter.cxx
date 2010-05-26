@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridWriter.cxx
+  Module:    $RCSfile: vtkRectilinearGridWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 # include <io.h> /* unlink */
 #endif
 
+vtkCxxRevisionMacro(vtkRectilinearGridWriter, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkRectilinearGridWriter);
 
 void vtkRectilinearGridWriter::WriteData()

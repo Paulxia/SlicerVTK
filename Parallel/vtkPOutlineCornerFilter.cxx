@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPOutlineCornerFilter.cxx
+  Module:    $RCSfile: vtkPOutlineCornerFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPolyData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkPOutlineCornerFilter, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkPOutlineCornerFilter);
 vtkCxxSetObjectMacro(vtkPOutlineCornerFilter, Controller, vtkMultiProcessController);
 

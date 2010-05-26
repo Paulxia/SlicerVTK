@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageGridSource.h
+  Module:    $RCSfile: vtkImageGridSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_IMAGING_EXPORT vtkImageGridSource : public vtkImageAlgorithm
 {
 public:
   static vtkImageGridSource *New();
-  vtkTypeMacro(vtkImageGridSource,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageGridSource,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

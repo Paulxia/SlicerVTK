@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAffineRepresentation.cxx
+  Module:    $RCSfile: vtkAffineRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 
 
+vtkCxxRevisionMacro(vtkAffineRepresentation, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------
 vtkAffineRepresentation::vtkAffineRepresentation()

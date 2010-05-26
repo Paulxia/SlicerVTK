@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMedian3D.h
+  Module:    $RCSfile: vtkImageMedian3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_IMAGING_EXPORT vtkImageMedian3D : public vtkImageSpatialAlgorithm
 {
 public:
   static vtkImageMedian3D *New();
-  vtkTypeMacro(vtkImageMedian3D,vtkImageSpatialAlgorithm);
+  vtkTypeRevisionMacro(vtkImageMedian3D,vtkImageSpatialAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

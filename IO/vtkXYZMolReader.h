@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXYZMolReader.h
+  Module:    $RCSfile: vtkXYZMolReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@
 class VTK_IO_EXPORT vtkXYZMolReader : public vtkMoleculeReaderBase
 {
 public:
-  vtkTypeMacro(vtkXYZMolReader,vtkMoleculeReaderBase);
+  vtkTypeRevisionMacro(vtkXYZMolReader,vtkMoleculeReaderBase);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkXYZMolReader *New();

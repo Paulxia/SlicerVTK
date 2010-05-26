@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInitialValueProblemSolver.h
+  Module:    $RCSfile: vtkInitialValueProblemSolver.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class vtkFunctionSet;
 class VTK_COMMON_EXPORT vtkInitialValueProblemSolver : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkInitialValueProblemSolver,vtkObject);
+  vtkTypeRevisionMacro(vtkInitialValueProblemSolver,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

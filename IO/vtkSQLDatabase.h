@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkSQLDatabase.h
+Module:    $RCSfile: vtkSQLDatabase.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -80,7 +80,7 @@ class vtkStringArray;
 class VTK_IO_EXPORT vtkSQLDatabase : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkSQLDatabase, vtkObject);
+  vtkTypeRevisionMacro(vtkSQLDatabase, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

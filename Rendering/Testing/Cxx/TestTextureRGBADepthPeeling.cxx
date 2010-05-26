@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestTextureRGBADepthPeeling.cxx
+  Module:    $RCSfile: TestTextureRGBADepthPeeling.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

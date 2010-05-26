@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericContourFilter.cxx
+  Module:    $RCSfile: vtkGenericContourFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkGenericCellTessellator.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkGenericContourFilter, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkGenericContourFilter);
 
 vtkCxxSetObjectMacro(vtkGenericContourFilter,Locator,vtkIncrementalPointLocator);

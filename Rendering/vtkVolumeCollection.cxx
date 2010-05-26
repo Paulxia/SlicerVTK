@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeCollection.cxx
+  Module:    $RCSfile: vtkVolumeCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkVolumeCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkVolumeCollection, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkVolumeCollection);
 
 //----------------------------------------------------------------------------

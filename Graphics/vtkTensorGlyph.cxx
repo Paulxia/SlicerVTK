@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTensorGlyph.cxx
+  Module:    $RCSfile: vtkTensorGlyph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkPolyData.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkTensorGlyph, "$Revision: 1.61 $");
 vtkStandardNewMacro(vtkTensorGlyph);
 
 // Construct object with scaling on and scale factor 1.0. Eigenvalues are 

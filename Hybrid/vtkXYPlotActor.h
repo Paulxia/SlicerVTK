@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXYPlotActor.h
+  Module:    $RCSfile: vtkXYPlotActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -108,7 +108,7 @@ class vtkTextProperty;
 class VTK_HYBRID_EXPORT vtkXYPlotActor : public vtkActor2D
 {
 public:
-  vtkTypeMacro(vtkXYPlotActor,vtkActor2D);
+  vtkTypeRevisionMacro(vtkXYPlotActor,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

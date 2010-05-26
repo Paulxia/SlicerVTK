@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnicodeStringArray.h
+  Module:    $RCSfile: vtkUnicodeStringArray.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -37,7 +37,7 @@ class VTK_COMMON_EXPORT vtkUnicodeStringArray :
 {
 public:
   static vtkUnicodeStringArray* New();
-  vtkTypeMacro(vtkUnicodeStringArray,vtkAbstractArray);
+  vtkTypeRevisionMacro(vtkUnicodeStringArray,vtkAbstractArray);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual int Allocate(vtkIdType sz, vtkIdType ext=1000);

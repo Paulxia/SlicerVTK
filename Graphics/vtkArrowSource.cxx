@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrowSource.cxx
+  Module:    $RCSfile: vtkArrowSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkTransform.h"
 #include "vtkTransformFilter.h"
 
+vtkCxxRevisionMacro(vtkArrowSource, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkArrowSource);
 
 vtkArrowSource::vtkArrowSource()

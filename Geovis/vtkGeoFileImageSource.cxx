@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoFileImageSource.cxx
+  Module:    $RCSfile: vtkGeoFileImageSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include <vtksys/stl/utility>
 
 vtkStandardNewMacro(vtkGeoFileImageSource);
+vtkCxxRevisionMacro(vtkGeoFileImageSource, "$Revision: 1.3 $");
 //----------------------------------------------------------------------------
 vtkGeoFileImageSource::vtkGeoFileImageSource()
 {

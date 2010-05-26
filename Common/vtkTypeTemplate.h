@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTypeTemplate.h
+  Module:    $RCSfile: vtkTypeTemplate.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -19,7 +19,7 @@
 
 =========================================================================*/
 
-// .NAME vtkTypeTemplate - Provides the equivalent of vtkTypeMacro
+// .NAME vtkTypeTemplate - Provides the equivalent of vtkTypeRevisionMacro
 // for use with template classes
 //
 // .SECTION Thanks

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkObject.h
+  Module:    $RCSfile: vtkObject.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class vtkCommand;
 class VTK_COMMON_EXPORT vtkObject : public vtkObjectBase
 {
 public:
-  vtkTypeMacro(vtkObject,vtkObjectBase);
+  vtkTypeRevisionMacro(vtkObject,vtkObjectBase);
 
   // Description:
   // Create an object with Debug turned off, modified time initialized 

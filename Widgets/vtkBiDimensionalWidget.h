@@ -106,7 +106,7 @@ public:
 
   // Description:
   // Standard methods for a VTK class.
-  vtkTypeMacro(vtkBiDimensionalWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkBiDimensionalWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

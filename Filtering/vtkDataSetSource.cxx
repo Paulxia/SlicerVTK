@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetSource.cxx
+  Module:    $RCSfile: vtkDataSetSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkDataSet.h"
 
+vtkCxxRevisionMacro(vtkDataSetSource, "$Revision: 1.18 $");
 
 vtkDataSetSource::vtkDataSetSource()
 {

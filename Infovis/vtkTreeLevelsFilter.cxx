@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeLevelsFilter.cxx
+  Module:    $RCSfile: vtkTreeLevelsFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkTree.h"
 #include "vtkGraph.h"
 
+vtkCxxRevisionMacro(vtkTreeLevelsFilter, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTreeLevelsFilter);
 
 vtkTreeLevelsFilter::vtkTreeLevelsFilter()

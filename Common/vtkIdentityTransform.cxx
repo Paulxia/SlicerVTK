@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIdentityTransform.cxx
+  Module:    $RCSfile: vtkIdentityTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkIdentityTransform, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkIdentityTransform);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageRFFT.h
+  Module:    $RCSfile: vtkImageRFFT.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class VTK_IMAGING_EXPORT vtkImageRFFT : public vtkImageFourierFilter
 {
 public:
   static vtkImageRFFT *New();
-  vtkTypeMacro(vtkImageRFFT,vtkImageFourierFilter);
+  vtkTypeRevisionMacro(vtkImageRFFT,vtkImageFourierFilter);
 
   
   // Description:

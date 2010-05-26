@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageChangeInformation.h
+  Module:    $RCSfile: vtkImageChangeInformation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageChangeInformation : public vtkImageAlgorithm
 {
 public:
   static vtkImageChangeInformation *New();
-  vtkTypeMacro(vtkImageChangeInformation, vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageChangeInformation, vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

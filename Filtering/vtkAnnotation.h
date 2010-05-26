@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnnotation.h
+  Module:    $RCSfile: vtkAnnotation.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -44,7 +44,7 @@ class vtkSelection;
 class VTK_FILTERING_EXPORT vtkAnnotation : public vtkDataObject
 {
 public:
-  vtkTypeMacro(vtkAnnotation, vtkDataObject);
+  vtkTypeRevisionMacro(vtkAnnotation, vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkAnnotation* New();
 

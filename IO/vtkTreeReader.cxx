@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeReader.cxx
+  Module:    $RCSfile: vtkTreeReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkTreeReader, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkTreeReader);
 
 #ifdef read

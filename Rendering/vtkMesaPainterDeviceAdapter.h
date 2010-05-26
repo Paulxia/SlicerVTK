@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaPainterDeviceAdapter.h
+  Module:    $RCSfile: vtkMesaPainterDeviceAdapter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_RENDERING_EXPORT vtkMesaPainterDeviceAdapter :
   public vtkPainterDeviceAdapter
 {
 public:
-  vtkTypeMacro(vtkMesaPainterDeviceAdapter, vtkPainterDeviceAdapter);
+  vtkTypeRevisionMacro(vtkMesaPainterDeviceAdapter, vtkPainterDeviceAdapter);
   static vtkMesaPainterDeviceAdapter *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

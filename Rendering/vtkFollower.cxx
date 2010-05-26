@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFollower.cxx
+  Module:    $RCSfile: vtkFollower.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkFollower, "$Revision: 1.46 $");
 vtkStandardNewMacro(vtkFollower);
 
 vtkCxxSetObjectMacro(vtkFollower,Camera,vtkCamera);

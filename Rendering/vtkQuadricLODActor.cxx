@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadricLODActor.cxx
+  Module:    $RCSfile: vtkQuadricLODActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkRenderWindowInteractor.h"
 #include "vtkFollower.h"
 
+vtkCxxRevisionMacro(vtkQuadricLODActor, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkQuadricLODActor);
 
 //---------------------------------------------------------------------------

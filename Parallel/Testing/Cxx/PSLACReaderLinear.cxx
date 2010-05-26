@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    PSLACReaderLinear.cxx
+  Module:    $RCSfile: PSLACReaderLinear.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

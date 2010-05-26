@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointSource.cxx
+  Module:    $RCSfile: vtkPointSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include <float.h>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkPointSource, "$Revision: 1.45 $");
 vtkStandardNewMacro(vtkPointSource);
 
 //----------------------------------------------------------------------------

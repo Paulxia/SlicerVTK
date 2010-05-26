@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericCellIterator.h
+  Module:    $RCSfile: vtkGenericCellIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_FILTERING_EXPORT vtkGenericCellIterator : public vtkObject
 public:
   // Description:
   // Standard VTK construction and type macros.
-  vtkTypeMacro(vtkGenericCellIterator,vtkObject);
+  vtkTypeRevisionMacro(vtkGenericCellIterator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

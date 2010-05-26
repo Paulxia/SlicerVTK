@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCylindricalTransform.h
+  Module:    $RCSfile: vtkCylindricalTransform.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_COMMON_EXPORT vtkCylindricalTransform : public vtkWarpTransform
 {
 public:
   static vtkCylindricalTransform *New();
-  vtkTypeMacro(vtkCylindricalTransform,vtkWarpTransform);
+  vtkTypeRevisionMacro(vtkCylindricalTransform,vtkWarpTransform);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

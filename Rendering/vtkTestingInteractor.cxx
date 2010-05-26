@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTestingInteractor.cxx
+  Module:    $RCSfile: vtkTestingInteractor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -12,12 +12,12 @@
      PURPOSE.  See the above copyright notice for more information.
 
 =========================================================================*/
-#include "vtkTestingInteractor.h"
 #include "vtkObjectFactory.h"
+#include "vtkTestingInteractor.h"
 #include "vtkSmartPointer.h"
 #include "vtkRenderWindow.h"
-#include "vtkTesting.h"
 
+vtkCxxRevisionMacro(vtkTestingInteractor, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkTestingInteractor);
 
 int         vtkTestingInteractor::TestReturnStatus = -1;

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkJPEGWriter.h
+  Module:    $RCSfile: vtkJPEGWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_IO_EXPORT vtkJPEGWriter : public vtkImageWriter
 {
 public:
   static vtkJPEGWriter *New();
-  vtkTypeMacro(vtkJPEGWriter,vtkImageWriter);
+  vtkTypeRevisionMacro(vtkJPEGWriter,vtkImageWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

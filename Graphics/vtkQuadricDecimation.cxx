@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadricDecimation.cxx
+  Module:    $RCSfile: vtkQuadricDecimation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -55,6 +55,7 @@
 #include "vtkPriorityQueue.h"
 #include "vtkTriangle.h"
 
+vtkCxxRevisionMacro(vtkQuadricDecimation, "$Revision: 1.41 $");
 vtkStandardNewMacro(vtkQuadricDecimation);
 
 

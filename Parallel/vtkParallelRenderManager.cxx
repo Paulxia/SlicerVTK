@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParallelRenderManager.cxx
+  Module:    $RCSfile: vtkParallelRenderManager.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,6 +58,7 @@ static void RenderRMI(void *arg, void *, int, int);
 static void ComputeVisiblePropBoundsRMI(void *arg, void *, int, int);
 bool vtkParallelRenderManager::DefaultRenderEventPropagation = true;
 
+vtkCxxRevisionMacro(vtkParallelRenderManager, "$Revision: 1.83 $");
 
 //----------------------------------------------------------------------------
 vtkParallelRenderManager::vtkParallelRenderManager()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDelaunay3D.h
+  Module:    $RCSfile: vtkDelaunay3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -97,7 +97,7 @@ class vtkIncrementalPointLocator;
 class VTK_GRAPHICS_EXPORT vtkDelaunay3D : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkDelaunay3D,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkDelaunay3D,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

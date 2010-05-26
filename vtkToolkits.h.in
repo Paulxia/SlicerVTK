@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkToolkits.h.in
+  Module:    $RCSfile: vtkToolkits.h.in,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -145,9 +145,7 @@
 /* Setup VTK based on platform features and configuration.                  */
 
 /* OGLR */
-/* OGLR is for GLX. It can be on Unix, Mac or Windows */
-#if ((defined(VTK_USE_OPENGL_LIBRARY) && defined(VTK_USE_X) && \
-      !defined(_WIN32)) ||                                     \
+#if ((defined(VTK_USE_OPENGL_LIBRARY) && !defined(_WIN32)) || \
      (defined(VTK_USE_X) && defined(_WIN32)) || \
      (defined(VTK_USE_MANGLED_MESA) && !defined(_WIN32))) && \
      !(defined (VTK_USE_CARBON) || defined(VTK_USE_COCOA))

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalDataSetCache.h
+  Module:    $RCSfile: vtkTemporalDataSetCache.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_HYBRID_EXPORT vtkTemporalDataSetCache : public vtkTemporalDataSetAlgor
 {
 public:
   static vtkTemporalDataSetCache *New();
-  vtkTypeMacro(vtkTemporalDataSetCache, vtkTemporalDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTemporalDataSetCache, vtkTemporalDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

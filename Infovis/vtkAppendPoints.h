@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAppendPoints.h
+  Module:    $RCSfile: vtkAppendPoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_INFOVIS_EXPORT vtkAppendPoints : public vtkPolyDataAlgorithm
 {
 public:
   static vtkAppendPoints *New();
-  vtkTypeMacro(vtkAppendPoints,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkAppendPoints,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

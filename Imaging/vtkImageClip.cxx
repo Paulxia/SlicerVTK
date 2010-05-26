@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageClip.cxx
+  Module:    $RCSfile: vtkImageClip.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkImageClip, "$Revision: 1.56 $");
 vtkStandardNewMacro(vtkImageClip);
 
 //----------------------------------------------------------------------------

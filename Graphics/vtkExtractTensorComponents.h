@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractTensorComponents.h
+  Module:    $RCSfile: vtkExtractTensorComponents.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@
 class VTK_GRAPHICS_EXPORT vtkExtractTensorComponents : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkExtractTensorComponents,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractTensorComponents,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

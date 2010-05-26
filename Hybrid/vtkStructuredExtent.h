@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredExtent.h
+  Module:    $RCSfile: vtkStructuredExtent.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_HYBRID_EXPORT vtkStructuredExtent : public vtkObject
 {
 public:
   static vtkStructuredExtent* New();
-  vtkTypeMacro(vtkStructuredExtent, vtkObject);
+  vtkTypeRevisionMacro(vtkStructuredExtent, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

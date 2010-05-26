@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPSphereSource.cxx
+  Module:    $RCSfile: vtkPSphereSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkPSphereSource, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkPSphereSource);
 
 //----------------------------------------------------------------------------

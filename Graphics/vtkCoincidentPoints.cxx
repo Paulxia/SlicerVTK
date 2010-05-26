@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCoincidentPoints.cxx
+  Module:    $RCSfile: vtkCoincidentPoints.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -99,6 +99,7 @@ public:
 // vtkCoincidentPoints
 
 vtkStandardNewMacro(vtkCoincidentPoints);
+vtkCxxRevisionMacro(vtkCoincidentPoints,"$Revision: 1.1 $");
 
 vtkCoincidentPoints::vtkCoincidentPoints()
 {

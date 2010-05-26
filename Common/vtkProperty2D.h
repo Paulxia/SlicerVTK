@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProperty2D.h
+  Module:    $RCSfile: vtkProperty2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkViewport;
 class VTK_COMMON_EXPORT vtkProperty2D : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkProperty2D,vtkObject);
+  vtkTypeRevisionMacro(vtkProperty2D,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

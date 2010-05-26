@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParallelFactory.h
+  Module:    $RCSfile: vtkParallelFactory.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,7 +24,7 @@ class VTK_PARALLEL_EXPORT vtkParallelFactory : public vtkObjectFactory
 {
 public: 
 // Methods from vtkObject
-  vtkTypeMacro(vtkParallelFactory,vtkObjectFactory);
+  vtkTypeRevisionMacro(vtkParallelFactory,vtkObjectFactory);
   static vtkParallelFactory *New();
   void PrintSelf(ostream& os, vtkIndent indent);
   virtual const char* GetVTKSourceVersion();

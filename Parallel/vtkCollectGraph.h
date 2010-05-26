@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCollectGraph.h
+  Module:    $RCSfile: vtkCollectGraph.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_PARALLEL_EXPORT vtkCollectGraph : public vtkGraphAlgorithm
 {
 public:
   static vtkCollectGraph *New();
-  vtkTypeMacro(vtkCollectGraph, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkCollectGraph, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

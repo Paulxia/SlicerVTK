@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextView.h
+  Module:    $RCSfile: vtkContextView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_CHARTS_EXPORT vtkContextView : public vtkRenderView
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkContextView,vtkRenderView);
+  vtkTypeRevisionMacro(vtkContextView,vtkRenderView);
 
   static vtkContextView* New();
 

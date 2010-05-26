@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationDataObjectKey.cxx
+  Module:    $RCSfile: vtkInformationDataObjectKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 
 #include "vtkDataObject.h"
 
+vtkCxxRevisionMacro(vtkInformationDataObjectKey, "$Revision: 1.7 $");
 
 //----------------------------------------------------------------------------
 vtkInformationDataObjectKey::vtkInformationDataObjectKey(const char* name, const char* location):

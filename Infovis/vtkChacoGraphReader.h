@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChacoGraphReader.h
+  Module:    $RCSfile: vtkChacoGraphReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class VTK_INFOVIS_EXPORT vtkChacoGraphReader : public vtkUndirectedGraphAlgorith
 {
 public:
   static vtkChacoGraphReader *New();
-  vtkTypeMacro(vtkChacoGraphReader, vtkUndirectedGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkChacoGraphReader, vtkUndirectedGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

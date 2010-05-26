@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContourFilter.h
+  Module:    $RCSfile: vtkContourFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ class vtkRectilinearSynchronizedTemplates;
 class VTK_GRAPHICS_EXPORT vtkContourFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkContourFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkContourFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

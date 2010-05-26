@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRepresentationPainter.cxx
+  Module:    $RCSfile: vtkRepresentationPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 
 vtkInstantiatorNewMacro(vtkRepresentationPainter);
+vtkCxxRevisionMacro(vtkRepresentationPainter, "$Revision: 1.3 $");
 //-----------------------------------------------------------------------------
 vtkRepresentationPainter::vtkRepresentationPainter()
 {

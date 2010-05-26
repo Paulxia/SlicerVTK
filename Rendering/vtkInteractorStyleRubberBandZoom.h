@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleRubberBandZoom.h
+  Module:    $RCSfile: vtkInteractorStyleRubberBandZoom.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleRubberBandZoom : public vtkInteract
 {
 public:
   static vtkInteractorStyleRubberBandZoom *New();
-  vtkTypeMacro(vtkInteractorStyleRubberBandZoom, vtkInteractorStyle);
+  vtkTypeRevisionMacro(vtkInteractorStyleRubberBandZoom, vtkInteractorStyle);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

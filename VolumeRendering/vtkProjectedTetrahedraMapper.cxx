@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProjectedTetrahedraMapper.cxx
+  Module:    $RCSfile: vtkProjectedTetrahedraMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,6 +48,7 @@
 
 //-----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkProjectedTetrahedraMapper, "$Revision: 1.11 $");
 
 vtkCxxSetObjectMacro(vtkProjectedTetrahedraMapper,
                      VisibilitySort, vtkVisibilitySort);

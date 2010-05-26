@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPPolyDataNormals.h
+  Module:    $RCSfile: vtkPPolyDataNormals.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,7 +23,7 @@
 class VTK_PARALLEL_EXPORT vtkPPolyDataNormals : public vtkPolyDataNormals
 {
 public:
-  vtkTypeMacro(vtkPPolyDataNormals,vtkPolyDataNormals);
+  vtkTypeRevisionMacro(vtkPPolyDataNormals,vtkPolyDataNormals);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkPPolyDataNormals *New();

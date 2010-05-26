@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLMultiGroupDataReader.cxx
+  Module:    $RCSfile: vtkXMLMultiGroupDataReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkXMLMultiGroupDataReader);
+vtkCxxRevisionMacro(vtkXMLMultiGroupDataReader, "$Revision: 1.5 $");
 //----------------------------------------------------------------------------
 vtkXMLMultiGroupDataReader::vtkXMLMultiGroupDataReader()
 {

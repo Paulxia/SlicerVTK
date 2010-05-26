@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlanesIntersection.cxx
+  Module:    $RCSfile: vtkPlanesIntersection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkCell.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPlanesIntersection, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkPlanesIntersection);
 
 // Experiment shows that we get plane equation values on the

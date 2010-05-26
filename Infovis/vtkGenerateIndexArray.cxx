@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenerateIndexArray.cxx
+  Module:    $RCSfile: vtkGenerateIndexArray.cxx,v $
 
   Copyright 2007 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive
@@ -27,6 +27,7 @@
 
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkGenerateIndexArray, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkGenerateIndexArray);
 
 vtkGenerateIndexArray::vtkGenerateIndexArray() :

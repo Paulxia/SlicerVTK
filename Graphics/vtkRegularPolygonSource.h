@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRegularPolygonSource.h
+  Module:    $RCSfile: vtkRegularPolygonSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ public:
   // Description:
   // Standard methods for instantiation, obtaining type and printing instance values.
   static vtkRegularPolygonSource *New();
-  vtkTypeMacro(vtkRegularPolygonSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkRegularPolygonSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLUnstructuredDataReader.cxx
+  Module:    $RCSfile: vtkXMLUnstructuredDataReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkXMLUnstructuredDataReader, "$Revision: 1.31 $");
 
 //----------------------------------------------------------------------------
 vtkXMLUnstructuredDataReader::vtkXMLUnstructuredDataReader()

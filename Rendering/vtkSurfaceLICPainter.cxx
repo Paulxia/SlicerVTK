@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSurfaceLICPainter.cxx
+  Module:    $RCSfile: vtkSurfaceLICPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -130,6 +130,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkSurfaceLICPainter);
+vtkCxxRevisionMacro(vtkSurfaceLICPainter, "$Revision: 1.6 $");
 //----------------------------------------------------------------------------
 vtkSurfaceLICPainter::vtkSurfaceLICPainter()
 {

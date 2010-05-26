@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageInPlaceFilter.cxx
+  Module:    $RCSfile: vtkImageInPlaceFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPointData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageInPlaceFilter, "$Revision: 1.46 $");
 
 //----------------------------------------------------------------------------
 vtkImageInPlaceFilter::vtkImageInPlaceFilter()

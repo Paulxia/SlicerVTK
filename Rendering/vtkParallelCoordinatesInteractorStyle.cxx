@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkParallelCoordinatesInteractorStyle.cxx
+Module:    $RCSfile: vtkParallelCoordinatesInteractorStyle.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -29,6 +29,7 @@ PURPOSE.  See the above copyright notice for more information.
 
 //#include <wx/wx.h>
 
+vtkCxxRevisionMacro(vtkParallelCoordinatesInteractorStyle, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkParallelCoordinatesInteractorStyle);
 
 //----------------------------------------------------------------------------

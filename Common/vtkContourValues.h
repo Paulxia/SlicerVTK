@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContourValues.h
+  Module:    $RCSfile: vtkContourValues.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ public:
   // Construct object with a single contour value at 0.0.
   static vtkContourValues *New();
 
-  vtkTypeMacro(vtkContourValues,vtkObject);
+  vtkTypeRevisionMacro(vtkContourValues,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

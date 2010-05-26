@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitSum.cxx
+  Module:    $RCSfile: vtkImplicitSum.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImplicitSum, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkImplicitSum);
 
 //----------------------------------------------------------------------------

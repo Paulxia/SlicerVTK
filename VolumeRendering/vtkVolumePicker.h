@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumePicker.h
+  Module:    $RCSfile: vtkVolumePicker.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkVolumePicker : public vtkCellPicker
 {
 public:
   static vtkVolumePicker *New();
-  vtkTypeMacro(vtkVolumePicker, vtkCellPicker);
+  vtkTypeRevisionMacro(vtkVolumePicker, vtkCellPicker);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

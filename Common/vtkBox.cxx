@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBox.cxx
+  Module:    $RCSfile: vtkBox.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkBoundingBox.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkBox, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkBox);
 
 // Construct the box centered at the origin and each side length 1.0.

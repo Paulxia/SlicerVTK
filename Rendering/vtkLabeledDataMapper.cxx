@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabeledDataMapper.cxx
+  Module:    $RCSfile: vtkLabeledDataMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@ public:
   vtkstd::map<int, vtkSmartPointer<vtkTextProperty> > TextProperties;
 };
 
+vtkCxxRevisionMacro(vtkLabeledDataMapper, "$Revision: 1.62 $");
 vtkStandardNewMacro(vtkLabeledDataMapper);
 
 vtkCxxSetObjectMacro(vtkLabeledDataMapper,Transform,vtkTransform);

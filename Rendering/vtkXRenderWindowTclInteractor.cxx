@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXRenderWindowTclInteractor.cxx
+  Module:    $RCSfile: vtkXRenderWindowTclInteractor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include <vtkTk.h>
 
 //-------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkXRenderWindowTclInteractor, "$Revision: 1.59 $");
 vtkStandardNewMacro(vtkXRenderWindowTclInteractor);
 
 

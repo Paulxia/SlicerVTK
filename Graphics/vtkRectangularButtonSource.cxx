@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectangularButtonSource.cxx
+  Module:    $RCSfile: vtkRectangularButtonSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkRectangularButtonSource, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkRectangularButtonSource);
 
 //----------------------------------------------------------------------------

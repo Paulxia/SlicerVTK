@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayIteratorTemplate.h
+  Module:    $RCSfile: vtkArrayIteratorTemplate.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,8 @@ private:
   virtual const char* GetClassNameInternal() const 
     { return "vtkArrayIteratorTemplate"; }
 
+protected:
+  void CollectRevisions(ostream& os);
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
   

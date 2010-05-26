@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTensorProbeWidget.h
+  Module:    $RCSfile: vtkTensorProbeWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ public:
 
   // Description:
   // Standard VTK class macros.
-  vtkTypeMacro(vtkTensorProbeWidget, vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkTensorProbeWidget, vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

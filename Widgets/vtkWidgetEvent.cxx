@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWidgetEvent.cxx
+  Module:    $RCSfile: vtkWidgetEvent.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@ static const char *vtkWidgetEventStrings[] = {
   NULL
 };
 
+vtkCxxRevisionMacro(vtkWidgetEvent, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkWidgetEvent);
 
 //----------------------------------------------------------------------

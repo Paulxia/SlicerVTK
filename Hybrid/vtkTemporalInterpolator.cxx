@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalInterpolator.cxx
+  Module:    $RCSfile: vtkTemporalInterpolator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkstd/algorithm"
 #include "vtkstd/vector"
 
+vtkCxxRevisionMacro(vtkTemporalInterpolator, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkTemporalInterpolator);
 
 //----------------------------------------------------------------------------

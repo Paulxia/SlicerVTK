@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtChartRepresentation.cxx
+  Module:    $RCSfile: vtkQtChartRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,6 +49,7 @@ public:
 };
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtChartRepresentation, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkQtChartRepresentation);
 
 //----------------------------------------------------------------------------

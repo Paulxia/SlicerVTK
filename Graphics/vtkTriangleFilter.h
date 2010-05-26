@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangleFilter.h
+  Module:    $RCSfile: vtkTriangleFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_GRAPHICS_EXPORT vtkTriangleFilter : public vtkPolyDataAlgorithm
 {
 public:
   static vtkTriangleFilter *New();
-  vtkTypeMacro(vtkTriangleFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTriangleFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

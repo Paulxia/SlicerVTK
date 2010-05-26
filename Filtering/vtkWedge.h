@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWedge.h
+  Module:    $RCSfile: vtkWedge.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_FILTERING_EXPORT vtkWedge : public vtkCell3D
 {
 public:
   static vtkWedge *New();
-  vtkTypeMacro(vtkWedge,vtkCell3D);
+  vtkTypeRevisionMacro(vtkWedge,vtkCell3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

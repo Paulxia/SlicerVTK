@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSobel3D.h
+  Module:    $RCSfile: vtkImageSobel3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_IMAGING_EXPORT vtkImageSobel3D : public vtkImageSpatialAlgorithm
 {
 public:
   static vtkImageSobel3D *New();
-  vtkTypeMacro(vtkImageSobel3D,vtkImageSpatialAlgorithm);
+  vtkTypeRevisionMacro(vtkImageSobel3D,vtkImageSpatialAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

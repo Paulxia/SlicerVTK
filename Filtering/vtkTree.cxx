@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTree.cxx
+  Module:    $RCSfile: vtkTree.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 
 using vtksys_stl::vector;
 
+vtkCxxRevisionMacro(vtkTree, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkTree);
 //----------------------------------------------------------------------------
 vtkTree::vtkTree()

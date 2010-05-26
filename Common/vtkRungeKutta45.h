@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRungeKutta45.h
+  Module:    $RCSfile: vtkRungeKutta45.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@
 class VTK_COMMON_EXPORT vtkRungeKutta45 : public vtkInitialValueProblemSolver
 {
 public:
-  vtkTypeMacro(vtkRungeKutta45,vtkInitialValueProblemSolver);
+  vtkTypeRevisionMacro(vtkRungeKutta45,vtkInitialValueProblemSolver);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

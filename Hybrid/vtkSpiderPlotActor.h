@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSpiderPlotActor.h
+  Module:    $RCSfile: vtkSpiderPlotActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -67,7 +67,7 @@ class VTK_HYBRID_EXPORT vtkSpiderPlotActor : public vtkActor2D
 public:
   // Description:
   // Standard methods for type information and printing.
-  vtkTypeMacro(vtkSpiderPlotActor,vtkActor2D);
+  vtkTypeRevisionMacro(vtkSpiderPlotActor,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

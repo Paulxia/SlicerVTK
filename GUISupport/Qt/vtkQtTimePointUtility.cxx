@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtTimePointUtility.cxx
+  Module:    $RCSfile: vtkQtTimePointUtility.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkQtTimePointUtility, "$Revision: 1.2 $");
 
 QDateTime vtkQtTimePointUtility::TimePointToQDateTime(vtkTypeUInt64 time)
 {

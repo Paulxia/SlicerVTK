@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestTranslucentLUTAlphaBlending.cxx
+  Module:    $RCSfile: TestTranslucentLUTAlphaBlending.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

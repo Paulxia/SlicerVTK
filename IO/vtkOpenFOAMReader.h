@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenFOAMReader.h
+  Module:    $RCSfile: vtkOpenFOAMReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -53,7 +53,7 @@ class VTK_IO_EXPORT vtkOpenFOAMReader : public vtkMultiBlockDataSetAlgorithm
 {
 public:
   static vtkOpenFOAMReader *New();
-  vtkTypeMacro(vtkOpenFOAMReader, vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkOpenFOAMReader, vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream &, vtkIndent);
 
   // Description:

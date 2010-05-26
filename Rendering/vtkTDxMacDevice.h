@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxMacDevice.h
+  Module:    $RCSfile: vtkTDxMacDevice.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkTDxMacDevice : public vtkTDxDevice
 {
 public:
   static vtkTDxMacDevice *New();
-  vtkTypeMacro(vtkTDxMacDevice,vtkTDxDevice);
+  vtkTypeRevisionMacro(vtkTDxMacDevice,vtkTDxDevice);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

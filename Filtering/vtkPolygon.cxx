@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolygon.cxx
+  Module:    $RCSfile: vtkPolygon.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkIncrementalPointLocator.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkPolygon, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkPolygon);
 
 //----------------------------------------------------------------------------

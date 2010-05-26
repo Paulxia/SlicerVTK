@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMCubesWriter.cxx
+  Module:    $RCSfile: vtkMCubesWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkMCubesWriter, "$Revision: 1.36 $");
 vtkStandardNewMacro(vtkMCubesWriter);
 
 // Create object.

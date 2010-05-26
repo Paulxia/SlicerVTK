@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayToTable.cxx
+  Module:    $RCSfile: vtkArrayToTable.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -114,6 +114,7 @@ static bool ConvertMatrix(vtkArray* Array, vtkTable* Output)
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkArrayToTable, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkArrayToTable);
 
 // ----------------------------------------------------------------------

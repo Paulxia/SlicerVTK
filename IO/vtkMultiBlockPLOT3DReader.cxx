@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiBlockPLOT3DReader.cxx
+  Module:    $RCSfile: vtkMultiBlockPLOT3DReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkSmartPointer.h"
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkMultiBlockPLOT3DReader, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkMultiBlockPLOT3DReader);
 
 #define VTK_RHOINF 1.0

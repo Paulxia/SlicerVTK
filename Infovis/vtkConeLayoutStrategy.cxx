@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkConeLayoutStrategy.cxx
+Module:    $RCSfile: vtkConeLayoutStrategy.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -33,6 +33,7 @@ the U.S. Government retains certain rights in this software.
 #define VTK_CREATE(type, name)                                  \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkConeLayoutStrategy, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkConeLayoutStrategy);
 
 vtkConeLayoutStrategy::vtkConeLayoutStrategy()

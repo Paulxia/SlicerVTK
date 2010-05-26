@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClustering2DLayoutStrategy.cxx
+  Module:    $RCSfile: vtkClustering2DLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkClustering2DLayoutStrategy, "$Revision: 1.18 $");
 vtkStandardNewMacro(vtkClustering2DLayoutStrategy);
 
 // This is just a convenient macro for smart pointers

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStripper.h
+  Module:    $RCSfile: vtkStripper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,7 +56,7 @@
 class VTK_GRAPHICS_EXPORT vtkStripper : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkStripper,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkStripper,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

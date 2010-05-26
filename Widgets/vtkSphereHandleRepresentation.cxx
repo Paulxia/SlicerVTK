@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSphereHandleRepresentation.cxx
+  Module:    $RCSfile: vtkSphereHandleRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkCoordinate.h"
 #include "vtkRenderWindow.h"
 
+vtkCxxRevisionMacro(vtkSphereHandleRepresentation, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkSphereHandleRepresentation);
 vtkCxxSetObjectMacro(vtkSphereHandleRepresentation,SelectedProperty,vtkProperty);
 

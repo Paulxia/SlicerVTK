@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStreamPoints.cxx
+  Module:    $RCSfile: vtkStreamPoints.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkStreamPoints, "$Revision: 1.42 $");
 vtkStandardNewMacro(vtkStreamPoints);
 
 // Construct object with time increment set to 1.0.

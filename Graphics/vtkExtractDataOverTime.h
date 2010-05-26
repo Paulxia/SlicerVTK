@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractDataOverTime.h
+  Module:    $RCSfile: vtkExtractDataOverTime.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkExtractDataOverTime : public vtkPointSetAlgorithm
 {
 public:
   static vtkExtractDataOverTime *New();
-  vtkTypeMacro(vtkExtractDataOverTime,vtkPointSetAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractDataOverTime,vtkPointSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

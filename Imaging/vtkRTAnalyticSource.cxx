@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRTAnalyticSource.cxx
+  Module:    $RCSfile: vtkRTAnalyticSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkRTAnalyticSource, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkRTAnalyticSource);
 
 // ----------------------------------------------------------------------------

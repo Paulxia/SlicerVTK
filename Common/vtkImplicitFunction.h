@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitFunction.h
+  Module:    $RCSfile: vtkImplicitFunction.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class vtkAbstractTransform;
 class VTK_COMMON_EXPORT vtkImplicitFunction : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkImplicitFunction,vtkObject);
+  vtkTypeRevisionMacro(vtkImplicitFunction,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

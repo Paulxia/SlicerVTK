@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSimple3DCirclesStrategy.cxx
+  Module:    $RCSfile: vtkSimple3DCirclesStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -82,6 +82,7 @@ private:
   };
 
 vtkStandardNewMacro(vtkSimple3DCirclesStrategy);
+vtkCxxRevisionMacro(vtkSimple3DCirclesStrategy, "$Revision: 1.6 $" );
 
 void vtkSimple3DCirclesStrategy::PrintSelf( ostream &os, vtkIndent indent )
   {

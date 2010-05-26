@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCgShaderDeviceAdapter.cxx
+  Module:    $RCSfile: vtkCgShaderDeviceAdapter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkCgShaderDeviceAdapter);
+vtkCxxRevisionMacro(vtkCgShaderDeviceAdapter, "$Revision: 1.1 $");
 //----------------------------------------------------------------------------
 vtkCgShaderDeviceAdapter::vtkCgShaderDeviceAdapter()
 {

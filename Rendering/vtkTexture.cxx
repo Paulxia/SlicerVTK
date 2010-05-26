@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTexture.cxx
+  Module:    $RCSfile: vtkTexture.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,9 +22,8 @@
 #include "vtkRenderer.h"
 #include "vtkRenderWindow.h"
 #include "vtkTransform.h"
-#include "vtkPointData.h"
 
-
+vtkCxxRevisionMacro(vtkTexture, "$Revision: 1.62 $");
 vtkCxxSetObjectMacro(vtkTexture, LookupTable, vtkScalarsToColors);
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.
@@ -263,73 +262,6 @@ void vtkTexture::Render(vtkRenderer *ren)
     this->Load(ren);
     }
 }
-
-//----------------------------------------------------------------------------
-int vtkTexture::IsTranslucent()
-{
-  if(this->GetMTime() <= this->TranslucentComputationTime
-      && (this->GetInput() == NULL ||
-          (this->GetInput()->GetMTime() <= this->TranslucentComputationTime)))
-    return this->TranslucentCachedResult;
-
-  if(this->GetInput())
-    {
-    this->GetInput()->UpdateInformation();
-    this->GetInput()->SetUpdateExtent(
-        this->GetInput()->GetWholeExtent());
-    this->GetInput()->PropagateUpdateExtent();
-    this->GetInput()->TriggerAsynchronousUpdate();
-    this->GetInput()->UpdateData();
-    }
-
-  if(this->GetInput() == NULL ||
-      this->GetInput()->GetPointData()->GetScalars() == NULL ||
-      this->GetInput()->GetPointData()->GetScalars()
-              ->GetNumberOfComponents()%2)
-    {
-    this->TranslucentCachedResult = 0;
-    }
-  else
-    {
-    vtkDataArray* scal = this->GetInput()->GetPointData()->GetScalars();
-    // the alpha component is the last one
-    int alphaid = scal->GetNumberOfComponents() - 1;
-    bool hasTransparentPixel = false;
-    bool hasOpaquePixel = false;
-    bool hasTranslucentPixel = false;
-    for(vtkIdType i = 0; i < scal->GetNumberOfTuples(); i++)
-      {
-      double alpha = scal->GetTuple(i)[alphaid];
-      if(alpha <= 0)
-        {
-        hasTransparentPixel = true;
-        }
-      else if(((scal->GetDataType() == VTK_FLOAT || scal->GetDataType() == VTK_DOUBLE) && alpha >= 1.0) || alpha == scal->GetDataTypeMax())
-        {
-        hasOpaquePixel = true;
-        }
-      else
-        {
-        hasTranslucentPixel = true;
-        }
-      // stop the computation if there are translucent pixels
-      if(hasTranslucentPixel || (this->Interpolate && hasTransparentPixel && hasOpaquePixel))
-        break;
-      }
-    if(hasTranslucentPixel || (this->Interpolate && hasTransparentPixel && hasOpaquePixel))
-      {
-      this->TranslucentCachedResult = 1;
-      }
-    else
-      {
-      this->TranslucentCachedResult = 0;
-      }
-    }
-
-  this->TranslucentComputationTime.Modified();
-  return this->TranslucentCachedResult;
-}
-
 
 
 

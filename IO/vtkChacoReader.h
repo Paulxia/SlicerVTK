@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChacoReader.h
+  Module:    $RCSfile: vtkChacoReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_IO_EXPORT vtkChacoReader : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkChacoReader *New();
-  vtkTypeMacro(vtkChacoReader,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkChacoReader,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

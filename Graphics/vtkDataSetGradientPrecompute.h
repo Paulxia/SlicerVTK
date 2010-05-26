@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetGradientPrecompute.h
+  Module:    $RCSfile: vtkDataSetGradientPrecompute.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_GRAPHICS_EXPORT vtkDataSetGradientPrecompute : public vtkDataSetAlgori
 {
  public:
   static vtkDataSetGradientPrecompute* New();
-  vtkTypeMacro(vtkDataSetGradientPrecompute,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkDataSetGradientPrecompute,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static int GradientPrecompute(vtkDataSet* ds);

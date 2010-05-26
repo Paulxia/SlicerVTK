@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTree.h
+  Module:    $RCSfile: vtkTree.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class VTK_FILTERING_EXPORT vtkTree : public vtkDirectedAcyclicGraph
 {
 public:
   static vtkTree *New();
-  vtkTypeMacro(vtkTree, vtkDirectedAcyclicGraph);
+  vtkTypeRevisionMacro(vtkTree, vtkDirectedAcyclicGraph);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

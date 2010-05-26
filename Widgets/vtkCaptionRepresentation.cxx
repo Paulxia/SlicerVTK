@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCaptionRepresentation.cxx
+  Module:    $RCSfile: vtkCaptionRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkTextMapper.h"
 #include "vtkFreeTypeUtilities.h"
 
+vtkCxxRevisionMacro(vtkCaptionRepresentation, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkCaptionRepresentation);
 
 //-------------------------------------------------------------------------

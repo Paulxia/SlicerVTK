@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContext2D.cxx
+  Module:    $RCSfile: vtkContext2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 
 #include <cassert>
 
+vtkCxxRevisionMacro(vtkContext2D, "$Revision: 1.24 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkContext2D);
@@ -72,7 +73,7 @@ bool vtkContext2D::GetBufferIdMode() const
 }
 
 // ----------------------------------------------------------------------------
-void vtkContext2D::BufferIdModeBegin(vtkAbstractContextBufferId *bufferId)
+void vtkContext2D::BufferIdModeBegin(vtkContextBufferId *bufferId)
 {
   assert("pre: not_yet" && !this->GetBufferIdMode());
   assert("pre: bufferId_exists" && bufferId!=0);

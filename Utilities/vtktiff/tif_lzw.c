@@ -1,4 +1,4 @@
-/* Id */
+/* $Id: tif_lzw.c,v 1.2 2008-03-11 13:39:29 andinet Exp $ */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

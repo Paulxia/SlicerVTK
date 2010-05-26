@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkJavaScriptDataWriter.cxx
+  Module:    $RCSfile: vtkJavaScriptDataWriter.cxx,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -35,6 +35,7 @@
 #include <vtksys/ios/sstream>
 
 vtkStandardNewMacro(vtkJavaScriptDataWriter);
+vtkCxxRevisionMacro(vtkJavaScriptDataWriter, "$Revision: 1.5 $");
 //-----------------------------------------------------------------------------
 vtkJavaScriptDataWriter::vtkJavaScriptDataWriter()
 {

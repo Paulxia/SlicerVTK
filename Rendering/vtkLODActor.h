@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLODActor.h
+  Module:    $RCSfile: vtkLODActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -65,7 +65,7 @@ class vtkWindow;
 class VTK_RENDERING_EXPORT vtkLODActor : public vtkActor
 {
 public:
-  vtkTypeMacro(vtkLODActor,vtkActor);
+  vtkTypeRevisionMacro(vtkLODActor,vtkActor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

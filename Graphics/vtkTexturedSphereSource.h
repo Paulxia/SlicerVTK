@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTexturedSphereSource.h
+  Module:    $RCSfile: vtkTexturedSphereSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@
 class VTK_GRAPHICS_EXPORT vtkTexturedSphereSource : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTexturedSphereSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTexturedSphereSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

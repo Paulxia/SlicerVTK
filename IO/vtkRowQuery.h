@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRowQuery.h
+  Module:    $RCSfile: vtkRowQuery.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ class vtkVariantArray;
 class VTK_IO_EXPORT vtkRowQuery : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkRowQuery, vtkObject);
+  vtkTypeRevisionMacro(vtkRowQuery, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

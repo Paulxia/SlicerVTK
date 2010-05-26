@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeCursor.cxx
+  Module:    $RCSfile: vtkHyperOctreeCursor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkHyperOctreeCursor.h"
 
+vtkCxxRevisionMacro(vtkHyperOctreeCursor, "$Revision: 1.1 $");
 
 //-----------------------------------------------------------------------------
 // Constructor.

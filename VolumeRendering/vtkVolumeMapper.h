@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeMapper.h
+  Module:    $RCSfile: vtkVolumeMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class vtkWindow;
 class VTK_VOLUMERENDERING_EXPORT vtkVolumeMapper : public vtkAbstractVolumeMapper
 {
 public:
-  vtkTypeMacro(vtkVolumeMapper,vtkAbstractVolumeMapper);
+  vtkTypeRevisionMacro(vtkVolumeMapper,vtkAbstractVolumeMapper);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:
@@ -56,9 +56,7 @@ public:
   // by the vtkFixedPointVolumeRayCastMapper - other mappers
   // have different ways to set this (supplying a function
   // to a vtkVolumeRayCastMapper) or don't have any options
-  // (vtkVolumeTextureMapper2D supports only compositing).
-  // Additive blend mode adds scalars along the ray and multiply them by
-  // their opacity mapping value.
+  // (vtkVolumeTextureMapper2D supports only compositing)
   vtkSetMacro( BlendMode, int );
   void SetBlendModeToComposite()
     { this->SetBlendMode( vtkVolumeMapper::COMPOSITE_BLEND ); }
@@ -66,8 +64,6 @@ public:
     { this->SetBlendMode( vtkVolumeMapper::MAXIMUM_INTENSITY_BLEND ); }
   void SetBlendModeToMinimumIntensity()
     { this->SetBlendMode( vtkVolumeMapper::MINIMUM_INTENSITY_BLEND ); }
-  void SetBlendModeToAdditive()
-    { this->SetBlendMode( vtkVolumeMapper::ADDITIVE_BLEND ); }
   vtkGetMacro( BlendMode, int );
   
   // Description:
@@ -131,8 +127,7 @@ public:
   {
     COMPOSITE_BLEND,
     MAXIMUM_INTENSITY_BLEND,
-    MINIMUM_INTENSITY_BLEND,
-    ADDITIVE_BLEND
+    MINIMUM_INTENSITY_BLEND
   };
 //ETX
 

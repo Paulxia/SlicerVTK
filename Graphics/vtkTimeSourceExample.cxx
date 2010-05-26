@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTimeSourceExample.cxx
+  Module:    $RCSfile: vtkTimeSourceExample.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkIdTypeArray.h"
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkTimeSourceExample, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkTimeSourceExample);
 
 #ifndef M_PI

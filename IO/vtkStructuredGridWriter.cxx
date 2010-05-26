@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridWriter.cxx
+  Module:    $RCSfile: vtkStructuredGridWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 # include <io.h> /* unlink */
 #endif
 
+vtkCxxRevisionMacro(vtkStructuredGridWriter, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkStructuredGridWriter);
 
 void vtkStructuredGridWriter::WriteData()

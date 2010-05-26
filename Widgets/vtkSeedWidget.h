@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSeedWidget.h
+  Module:    $RCSfile: vtkSeedWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -81,7 +81,7 @@ public:
 
   // Description:
   // Standard methods for a VTK class.
-  vtkTypeMacro(vtkSeedWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkSeedWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

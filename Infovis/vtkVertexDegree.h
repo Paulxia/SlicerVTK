@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVertexDegree.h
+  Module:    $RCSfile: vtkVertexDegree.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkVertexDegree : public vtkGraphAlgorithm
 public:
   static vtkVertexDegree *New();
 
-  vtkTypeMacro(vtkVertexDegree, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkVertexDegree, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

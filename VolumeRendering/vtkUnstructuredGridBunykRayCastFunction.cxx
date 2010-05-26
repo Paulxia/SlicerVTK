@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridBunykRayCastFunction.cxx
+  Module:    $RCSfile: vtkUnstructuredGridBunykRayCastFunction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkVolumeProperty.h"
 #include "vtkUnstructuredGridVolumeRayCastIterator.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridBunykRayCastFunction, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkUnstructuredGridBunykRayCastFunction);
 
 #define VTK_BUNYKRCF_NUMLISTS 100000
@@ -63,7 +64,7 @@ class vtkUnstructuredGridBunykRayCastIterator
   : public vtkUnstructuredGridVolumeRayCastIterator
 {
 public:
-  vtkTypeMacro(vtkUnstructuredGridBunykRayCastIterator,
+  vtkTypeRevisionMacro(vtkUnstructuredGridBunykRayCastIterator,
                        vtkUnstructuredGridVolumeRayCastIterator);
   static vtkUnstructuredGridBunykRayCastIterator *New();
 
@@ -95,6 +96,7 @@ private:
   void operator=(const vtkUnstructuredGridBunykRayCastIterator&);  // Not implemented
 };
 
+vtkCxxRevisionMacro(vtkUnstructuredGridBunykRayCastIterator, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkUnstructuredGridBunykRayCastIterator);
 
 vtkUnstructuredGridBunykRayCastIterator::vtkUnstructuredGridBunykRayCastIterator()

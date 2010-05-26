@@ -1,4 +1,4 @@
-/* Id */
+/* $Id: tif_read.c,v 1.4 2008-03-11 19:37:29 andinet Exp $ */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

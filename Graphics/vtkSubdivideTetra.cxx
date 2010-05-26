@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSubdivideTetra.cxx
+  Module:    $RCSfile: vtkSubdivideTetra.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkSubdivideTetra, "$Revision: 1.29 $");
 vtkStandardNewMacro(vtkSubdivideTetra);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkDataObjectTypes.cxx
+Module:    $RCSfile: vtkDataObjectTypes.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -49,6 +49,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include  "vtkArrayData.h"
 #endif
 
+vtkCxxRevisionMacro(vtkDataObjectTypes, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkDataObjectTypes);
 
 // This list should contain the data object class names in

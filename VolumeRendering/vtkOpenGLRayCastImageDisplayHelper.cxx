@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLRayCastImageDisplayHelper.cxx
+  Module:    $RCSfile: vtkOpenGLRayCastImageDisplayHelper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include <math.h>
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLRayCastImageDisplayHelper, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkOpenGLRayCastImageDisplayHelper);
 #endif
 

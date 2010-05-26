@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellLocatorInterpolatedVelocityField.h
+  Module:    $RCSfile: vtkCellLocatorInterpolatedVelocityField.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class vtkCellLocatorInterpolatedVelocityFieldCellLocatorsType;
 class VTK_FILTERING_EXPORT vtkCellLocatorInterpolatedVelocityField : public vtkAbstractInterpolatedVelocityField
 {
 public:
-  vtkTypeMacro( vtkCellLocatorInterpolatedVelocityField,
+  vtkTypeRevisionMacro( vtkCellLocatorInterpolatedVelocityField, 
                         vtkAbstractInterpolatedVelocityField );
   void PrintSelf( ostream & os, vtkIndent indent );
 

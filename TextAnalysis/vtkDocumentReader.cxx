@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDocumentReader.cxx
+  Module:    $RCSfile: vtkDocumentReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -69,6 +69,7 @@ public:
   vtkstd::vector<vtkIdType> ID;
 };
 
+vtkCxxRevisionMacro(vtkDocumentReader, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkDocumentReader);
 
 vtkDocumentReader::vtkDocumentReader() :

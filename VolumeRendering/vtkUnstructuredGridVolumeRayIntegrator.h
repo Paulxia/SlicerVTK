@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridVolumeRayIntegrator.h
+  Module:    $RCSfile: vtkUnstructuredGridVolumeRayIntegrator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class vtkDataArray;
 class VTK_VOLUMERENDERING_EXPORT vtkUnstructuredGridVolumeRayIntegrator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkUnstructuredGridVolumeRayIntegrator,vtkObject);
+  vtkTypeRevisionMacro(vtkUnstructuredGridVolumeRayIntegrator,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

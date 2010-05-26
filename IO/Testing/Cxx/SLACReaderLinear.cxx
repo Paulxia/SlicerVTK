@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    SLACReaderLinear.cxx
+  Module:    $RCSfile: SLACReaderLinear.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

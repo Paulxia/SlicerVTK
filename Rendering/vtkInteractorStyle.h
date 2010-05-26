@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyle.h
+  Module:    $RCSfile: vtkInteractorStyle.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -129,7 +129,7 @@ public:
   // programmers.
   static vtkInteractorStyle *New();
 
-  vtkTypeMacro(vtkInteractorStyle,vtkInteractorObserver);
+  vtkTypeRevisionMacro(vtkInteractorStyle,vtkInteractorObserver);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

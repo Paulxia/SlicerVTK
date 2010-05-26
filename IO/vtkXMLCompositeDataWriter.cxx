@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkXMLCompositeDataWriter.cxx
+  Module:    $RCSfile: vtkXMLCompositeDataWriter.cxx,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -53,6 +53,7 @@
 #include <vtkstd/vector>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkXMLCompositeDataWriter, "$Revision: 1.9 $");
 
 class vtkXMLCompositeDataWriterInternals
 {

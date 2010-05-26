@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticHexahedron.h
+  Module:    $RCSfile: vtkQuadraticHexahedron.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_FILTERING_EXPORT vtkQuadraticHexahedron : public vtkNonLinearCell
 {
 public:
   static vtkQuadraticHexahedron *New();
-  vtkTypeMacro(vtkQuadraticHexahedron,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkQuadraticHexahedron,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

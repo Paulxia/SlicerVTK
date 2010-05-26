@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkX3DExporter.cxx
+  Module:    $RCSfile: vtkX3DExporter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen, Kristian Sons
   All rights reserved.
@@ -76,6 +76,7 @@ static bool vtkX3DExporterWriterRenderPoints(
   vtkX3DExporterWriter* writer);
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkX3DExporter, "$Revision: 1.20 $");
 vtkStandardNewMacro(vtkX3DExporter);
 
 //----------------------------------------------------------------------------

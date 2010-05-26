@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGridTransform.cxx
+  Module:    $RCSfile: vtkGridTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 
 #include "math.h"
 
+vtkCxxRevisionMacro(vtkGridTransform, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkGridTransform);
 
 vtkCxxSetObjectMacro(vtkGridTransform,DisplacementGrid,vtkImageData);

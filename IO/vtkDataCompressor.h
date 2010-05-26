@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataCompressor.h
+  Module:    $RCSfile: vtkDataCompressor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class vtkUnsignedCharArray;
 class VTK_IO_EXPORT vtkDataCompressor : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkDataCompressor,vtkObject);
+  vtkTypeRevisionMacro(vtkDataCompressor,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:  

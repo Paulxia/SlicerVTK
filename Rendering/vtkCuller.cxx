@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCuller.cxx
+  Module:    $RCSfile: vtkCuller.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkCuller.h"
 
+vtkCxxRevisionMacro(vtkCuller, "$Revision: 1.4 $");
 
 vtkCuller::vtkCuller()
 {

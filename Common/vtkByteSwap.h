@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkByteSwap.h
+  Module:    $RCSfile: vtkByteSwap.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_COMMON_EXPORT vtkByteSwap : public vtkObject
 {
 public:
   static vtkByteSwap *New();
-  vtkTypeMacro(vtkByteSwap,vtkObject);
+  vtkTypeRevisionMacro(vtkByteSwap,vtkObject);
 
   //BTX
   // Description:

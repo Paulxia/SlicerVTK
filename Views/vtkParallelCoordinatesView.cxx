@@ -1,6 +1,6 @@
 /*=========================================================================
 Program:   Visualization Toolkit
-Module:    vtkParallelCoordinatesView.cxx
+Module:    $RCSfile: vtkParallelCoordinatesView.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -47,6 +47,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include <vtksys/ios/sstream>
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkParallelCoordinatesView, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkParallelCoordinatesView);
 
 // ----------------------------------------------------------------------

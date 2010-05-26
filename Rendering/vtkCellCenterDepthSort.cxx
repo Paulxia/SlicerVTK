@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellCenterDepthSort.cxx
+  Module:    $RCSfile: vtkCellCenterDepthSort.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,6 +49,7 @@ public:
 
 //-----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkCellCenterDepthSort, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkCellCenterDepthSort);
 
 vtkCellCenterDepthSort::vtkCellCenterDepthSort()

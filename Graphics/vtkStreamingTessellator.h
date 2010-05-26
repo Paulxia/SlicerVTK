@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStreamingTessellator.h
+  Module:    $RCSfile: vtkStreamingTessellator.h,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2007-06-04 08:35:13 $
+  Version:   $Revision: 1.3 $
 
   Copyright 2003 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive
@@ -83,7 +83,7 @@ class vtkEdgeSubdivisionCriterion;
 class VTK_GRAPHICS_EXPORT vtkStreamingTessellator : public vtkObject
 {
   public:
-    vtkTypeMacro(vtkStreamingTessellator,vtkObject);
+    vtkTypeRevisionMacro(vtkStreamingTessellator,vtkObject);
     static vtkStreamingTessellator* New();
     virtual void PrintSelf( ostream& os, vtkIndent indent );
 

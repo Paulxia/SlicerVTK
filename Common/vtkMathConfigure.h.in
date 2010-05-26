@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMathConfigure.h.in
+  Module:    $RCSfile: vtkMathConfigure.h.in,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

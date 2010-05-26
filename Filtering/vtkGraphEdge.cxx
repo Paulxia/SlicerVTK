@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphEdge.cxx
+  Module:    $RCSfile: vtkGraphEdge.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkGraphEdge, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkGraphEdge);
 //----------------------------------------------------------------------------
 vtkGraphEdge::vtkGraphEdge()

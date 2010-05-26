@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageOrthoPlanes.cxx
+  Module:    $RCSfile: vtkImageOrthoPlanes.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 
 //---------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkImageOrthoPlanes, "$Revision: 1.6 $"); 
 vtkStandardNewMacro(vtkImageOrthoPlanes);
 
 //---------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGLSLShader.h
+  Module:    $RCSfile: vtkGLSLShader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -82,7 +82,7 @@ class VTK_RENDERING_EXPORT vtkGLSLShader : public vtkShader
 {
 public:
   static vtkGLSLShader *New();
-  vtkTypeMacro(vtkGLSLShader, vtkShader);
+  vtkTypeRevisionMacro(vtkGLSLShader, vtkShader);
   void PrintSelf(ostream &os, vtkIndent indent);
   
   // Description:

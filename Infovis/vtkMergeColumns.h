@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeColumns.h
+  Module:    $RCSfile: vtkMergeColumns.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class VTK_INFOVIS_EXPORT vtkMergeColumns : public vtkTableAlgorithm
 {
 public:
   static vtkMergeColumns* New();
-  vtkTypeMacro(vtkMergeColumns,vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkMergeColumns,vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

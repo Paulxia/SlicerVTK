@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCubicLine.h
+  Module:    $RCSfile: vtkCubicLine.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_FILTERING_EXPORT vtkCubicLine : public vtkNonLinearCell
 {
 public:
   static vtkCubicLine *New();
-  vtkTypeMacro(vtkCubicLine,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkCubicLine,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

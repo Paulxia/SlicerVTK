@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArray.cxx
+  Module:    $RCSfile: vtkArray.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -30,6 +30,7 @@
 // Standard functions
 //
 
+vtkCxxRevisionMacro(vtkArray, "$Revision: 1.6 $");
 
 //----------------------------------------------------------------------------
 

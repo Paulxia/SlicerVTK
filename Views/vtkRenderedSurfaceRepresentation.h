@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderedSurfaceRepresentation.h
+  Module:    $RCSfile: vtkRenderedSurfaceRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_VIEWS_EXPORT vtkRenderedSurfaceRepresentation : public vtkRenderedRepr
 {
 public:
   static vtkRenderedSurfaceRepresentation *New();
-  vtkTypeMacro(vtkRenderedSurfaceRepresentation, vtkRenderedRepresentation);
+  vtkTypeRevisionMacro(vtkRenderedSurfaceRepresentation, vtkRenderedRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   //Description:

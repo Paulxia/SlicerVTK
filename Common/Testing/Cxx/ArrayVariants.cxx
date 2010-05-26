@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ArrayVariants.cxx
+  Module:    $RCSfile: ArrayVariants.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

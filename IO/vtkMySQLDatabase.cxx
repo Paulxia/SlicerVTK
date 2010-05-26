@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMySQLDatabase.cxx
+  Module:    $RCSfile: vtkMySQLDatabase.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 
 #define VTK_MYSQL_DEFAULT_PORT 3306
  
+vtkCxxRevisionMacro(vtkMySQLDatabase, "$Revision: 1.37 $");
 vtkStandardNewMacro(vtkMySQLDatabase);
 
 

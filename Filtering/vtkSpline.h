@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSpline.h
+  Module:    $RCSfile: vtkSpline.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class vtkPiecewiseFunction;
 class VTK_FILTERING_EXPORT vtkSpline : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkSpline,vtkObject);
+  vtkTypeRevisionMacro(vtkSpline,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

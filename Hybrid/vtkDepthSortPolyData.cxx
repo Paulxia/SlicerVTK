@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDepthSortPolyData.cxx
+  Module:    $RCSfile: vtkDepthSortPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkTransform.h"
 #include "vtkUnsignedIntArray.h"
 
+vtkCxxRevisionMacro(vtkDepthSortPolyData, "$Revision: 1.33 $");
 vtkStandardNewMacro(vtkDepthSortPolyData);
 
 vtkCxxSetObjectMacro(vtkDepthSortPolyData,Camera,vtkCamera);

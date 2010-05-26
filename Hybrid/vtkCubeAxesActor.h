@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCubeAxesActor.h
+  Module:    $RCSfile: vtkCubeAxesActor.h,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2007-11-21 18:05:05 $
+  Version:   $Revision: 1.2 $
   Thanks:    Kathleen Bonnell, B Division, Lawrence Livermore Nat'l Laboratory 
 
 Copyright (c) 1993-2001 Ken Martin, Will Schroeder, Bill Lorensen 
@@ -65,7 +65,7 @@ class vtkCamera;
 class VTK_HYBRID_EXPORT vtkCubeAxesActor : public vtkActor
 {
 public:
-  vtkTypeMacro(vtkCubeAxesActor,vtkActor);
+  vtkTypeRevisionMacro(vtkCubeAxesActor,vtkActor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

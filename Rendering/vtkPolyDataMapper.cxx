@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataMapper.cxx
+  Module:    $RCSfile: vtkPolyDataMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkPolyData.h"
 #include "vtkRenderWindow.h"
 
+vtkCxxRevisionMacro(vtkPolyDataMapper, "$Revision: 1.50 $");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

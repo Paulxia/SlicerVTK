@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkBivariateStatisticsAlgorithm.h
+Module:    $RCSfile: vtkBivariateStatisticsAlgorithm.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -43,13 +43,12 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include "vtkStatisticsAlgorithm.h"
 
-class vtkMultiBlockDataSet;
 class vtkTable;
 
 class VTK_INFOVIS_EXPORT vtkBivariateStatisticsAlgorithm : public vtkStatisticsAlgorithm
 {
 public:
-  vtkTypeMacro(vtkBivariateStatisticsAlgorithm, vtkStatisticsAlgorithm);
+  vtkTypeRevisionMacro(vtkBivariateStatisticsAlgorithm, vtkStatisticsAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -78,7 +77,7 @@ protected:
   // Description:
   // Execute the calculations required by the Assess option.
   virtual void Assess( vtkTable* inData,
-                       vtkMultiBlockDataSet* inMeta,
+                       vtkDataObject* inMeta,
                        vtkTable* outData ); 
 
 private:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistanceToCamera.h
+  Module:    $RCSfile: vtkDistanceToCamera.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_RENDERING_EXPORT vtkDistanceToCamera : public vtkPolyDataAlgorithm
 {
 public:
   static vtkDistanceToCamera *New();
-  vtkTypeMacro(vtkDistanceToCamera,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDistanceToCamera,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

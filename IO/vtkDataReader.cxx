@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataReader.cxx
+  Module:    $RCSfile: vtkDataReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,6 +62,7 @@
 // so it would be nice to put this in a common file.
 static int my_getline(istream& stream, vtkStdString &output, char delim='\n');
 
+vtkCxxRevisionMacro(vtkDataReader, "$Revision: 1.160 $");
 vtkStandardNewMacro(vtkDataReader);
 
 vtkCxxSetObjectMacro(vtkDataReader, InputArray, vtkCharArray);

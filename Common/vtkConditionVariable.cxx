@@ -5,6 +5,7 @@
 #include <errno.h>
 
 vtkStandardNewMacro(vtkConditionVariable);
+vtkCxxRevisionMacro(vtkConditionVariable,"$Revision: 1.17 $");
 
 #ifndef EPERM
 #  define EPERM 1

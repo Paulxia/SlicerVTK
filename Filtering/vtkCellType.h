@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellType.h
+  Module:    $RCSfile: vtkCellType.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,8 +29,7 @@
 // GetCell() and vtkGenericCell::SetCellType(). Also, to do the job right,
 // you'll also have to modify some filters (vtkGeometryFilter...) and
 // regression tests (example scripts) to reflect the new cell addition.
-// Also, make sure to update vtkCellTypesStrings in vtkCellTypes.cxx
-// and the vtkCellTypes::IsLinear method in vtkCellTypes.h.
+// Also, make sure to update vtkCellTypesStrings in vtkCellTypes.cxx.
 
 // .SECTION Caveats
 // An unstructured grid stores the types of its cells as a
@@ -78,9 +77,6 @@ typedef enum {
 
   // Special class of cells formed by convex group of points
   VTK_CONVEX_POINT_SET = 41,
-
-  // Polyhedron cell (consisting of polygonal faces)
-  VTK_POLYHEDRON = 42,
 
   // Higher order cells in parametric form
   VTK_PARAMETRIC_CURVE        = 51,

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationIntegerVectorKey.h
+  Module:    $RCSfile: vtkInformationIntegerVectorKey.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class VTK_COMMON_EXPORT vtkInformationIntegerVectorKey : public vtkInformationKey
 {
 public:
-  vtkTypeMacro(vtkInformationIntegerVectorKey,vtkInformationKey);
+  vtkTypeRevisionMacro(vtkInformationIntegerVectorKey,vtkInformationKey);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkInformationIntegerVectorKey(const char* name, const char* location,

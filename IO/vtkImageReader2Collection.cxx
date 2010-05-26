@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageReader2Collection.cxx
+  Module:    $RCSfile: vtkImageReader2Collection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkImageReader2.h"
 
+vtkCxxRevisionMacro(vtkImageReader2Collection, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkImageReader2Collection);
 
 void vtkImageReader2Collection::AddItem(vtkImageReader2 *f) 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkScaleDimension.cxx
+  Module:    $RCSfile: vtkScaleDimension.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -32,6 +32,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkScaleDimension
 
+vtkCxxRevisionMacro(vtkScaleDimension, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkScaleDimension);
 
 vtkScaleDimension::vtkScaleDimension() :

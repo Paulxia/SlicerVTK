@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderPass.h
+  Module:    $RCSfile: vtkRenderPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class vtkRenderer;
 class VTK_RENDERING_EXPORT vtkRenderPass : public vtkObject
 {
  public:
-  vtkTypeMacro(vtkRenderPass,vtkObject);
+  vtkTypeRevisionMacro(vtkRenderPass,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadricLODActor.h
+  Module:    $RCSfile: vtkQuadricLODActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,7 +62,7 @@ public:
 
   // Description:
   // Standard class methods.
-  vtkTypeMacro(vtkQuadricLODActor,vtkActor);
+  vtkTypeRevisionMacro(vtkQuadricLODActor,vtkActor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

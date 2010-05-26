@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkViewTheme.h
+  Module:    $RCSfile: vtkViewTheme.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_RENDERING_EXPORT vtkViewTheme : public vtkObject
 {
 public:
   static vtkViewTheme* New();
-  vtkTypeMacro(vtkViewTheme, vtkObject);
+  vtkTypeRevisionMacro(vtkViewTheme, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

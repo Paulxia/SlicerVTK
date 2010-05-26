@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageConvolve.h
+  Module:    $RCSfile: vtkImageConvolve.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ public:
   // Description:
   // Construct an instance of vtkImageConvolve filter.
   static vtkImageConvolve *New();
-  vtkTypeMacro(vtkImageConvolve,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageConvolve,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

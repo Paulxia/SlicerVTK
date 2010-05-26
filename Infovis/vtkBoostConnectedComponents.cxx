@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostConnectedComponents.cxx
+  Module:    $RCSfile: vtkBoostConnectedComponents.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkBoostConnectedComponents, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkBoostConnectedComponents);
 
 vtkBoostConnectedComponents::vtkBoostConnectedComponents()

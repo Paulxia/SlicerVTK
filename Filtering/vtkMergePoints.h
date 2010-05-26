@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergePoints.h
+  Module:    $RCSfile: vtkMergePoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_FILTERING_EXPORT vtkMergePoints : public vtkPointLocator
 {
 public:
   static vtkMergePoints *New();
-  vtkTypeMacro(vtkMergePoints,vtkPointLocator);
+  vtkTypeRevisionMacro(vtkMergePoints,vtkPointLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

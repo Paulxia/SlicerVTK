@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConcatenateArray.cxx
+  Module:    $RCSfile: vtkConcatenateArray.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -50,6 +50,7 @@ static void CopyValues(vtkArray* const source, vtkArray* const target, const vtk
 ///////////////////////////////////////////////////////////////////////////////
 // vtkConcatenateArray
 
+vtkCxxRevisionMacro(vtkConcatenateArray, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkConcatenateArray);
 
 vtkConcatenateArray::vtkConcatenateArray() :

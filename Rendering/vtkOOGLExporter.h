@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOOGLExporter.h
+  Module:    $RCSfile: vtkOOGLExporter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkOOGLExporter : public vtkExporter
 {
 public:
   static vtkOOGLExporter *New();
-  vtkTypeMacro(vtkOOGLExporter,vtkExporter);
+  vtkTypeRevisionMacro(vtkOOGLExporter,vtkExporter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

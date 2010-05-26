@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCell.cxx
+  Module:    $RCSfile: vtkCell.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkMarchingSquaresCases.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkCell, "$Revision: 1.2 $");
 
 // Construct cell.
 vtkCell::vtkCell()

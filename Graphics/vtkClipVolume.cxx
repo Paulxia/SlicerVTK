@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipVolume.cxx
+  Module:    $RCSfile: vtkClipVolume.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkUnsignedCharArray.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkClipVolume, "$Revision: 1.75 $");
 vtkStandardNewMacro(vtkClipVolume);
 vtkCxxSetObjectMacro(vtkClipVolume,ClipFunction,vtkImplicitFunction);
 

@@ -1,4 +1,4 @@
-/* Id */
+/* $Id: tif_aux.c,v 1.2 2008-03-11 13:37:58 andinet Exp $ */
 
 /*
  * Copyright (c) 1991-1997 Sam Leffler

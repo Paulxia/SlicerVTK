@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPainterPolyDataMapper.cxx
+  Module:    $RCSfile: vtkPainterPolyDataMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #include "vtkgl.h"
 
 vtkStandardNewMacro(vtkPainterPolyDataMapper);
+vtkCxxRevisionMacro(vtkPainterPolyDataMapper, "$Revision: 1.23 $")
 //-----------------------------------------------------------------------------
 class vtkPainterPolyDataMapperObserver : public vtkCommand
 {

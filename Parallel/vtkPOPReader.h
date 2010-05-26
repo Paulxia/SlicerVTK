@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPOPReader.h
+  Module:    $RCSfile: vtkPOPReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_PARALLEL_EXPORT vtkPOPReader : public vtkStructuredGridAlgorithm
 {
 public:
   static vtkPOPReader *New();
-  vtkTypeMacro(vtkPOPReader,vtkStructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkPOPReader,vtkStructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSinusoidSource.cxx
+  Module:    $RCSfile: vtkImageSinusoidSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageSinusoidSource, "$Revision: 1.43 $");
 vtkStandardNewMacro(vtkImageSinusoidSource);
 
 //----------------------------------------------------------------------------

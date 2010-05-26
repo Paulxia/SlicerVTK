@@ -1,7 +1,7 @@
 /*=========================================================================
   
   Program:   Visualization Toolkit
-  Module:    vtkStackedTreeLayoutStrategy.cxx
+  Module:    $RCSfile: vtkStackedTreeLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 #define VTK_CREATE(type, name)                                  \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkStackedTreeLayoutStrategy, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkStackedTreeLayoutStrategy);
 
 vtkStackedTreeLayoutStrategy::vtkStackedTreeLayoutStrategy()

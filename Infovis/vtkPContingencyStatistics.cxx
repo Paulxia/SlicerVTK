@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPContingencyStatistics.cxx
+  Module:    $RCSfile: vtkPContingencyStatistics.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,6 +43,7 @@
 #endif // DEBUG_PARALLEL_CONTINGENCY_STATISTICS
 
 vtkStandardNewMacro(vtkPContingencyStatistics);
+vtkCxxRevisionMacro(vtkPContingencyStatistics, "$Revision: 1.36 $");
 vtkCxxSetObjectMacro(vtkPContingencyStatistics, Controller, vtkMultiProcessController);
 //-----------------------------------------------------------------------------
 vtkPContingencyStatistics::vtkPContingencyStatistics()
@@ -115,13 +116,14 @@ void UnpackValues( const vtkStdString& buffer,
 // ----------------------------------------------------------------------
 void vtkPContingencyStatistics::Learn( vtkTable* inData,
                                        vtkTable* inParameters,
-                                       vtkMultiBlockDataSet* outMeta )
+                                       vtkDataObject* outMetaDO )
 {
 #if DEBUG_PARALLEL_CONTINGENCY_STATISTICS
   vtkTimerLog *timer=vtkTimerLog::New();
   timer->StartTimer();
 #endif //DEBUG_PARALLEL_CONTINGENCY_STATISTICS
 
+  vtkMultiBlockDataSet* outMeta = vtkMultiBlockDataSet::SafeDownCast( outMetaDO );
   if ( ! outMeta )
     {
 #if DEBUG_PARALLEL_CONTINGENCY_STATISTICS

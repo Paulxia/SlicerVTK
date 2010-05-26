@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextureMapToPlane.h
+  Module:    $RCSfile: vtkTextureMapToPlane.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@
 class VTK_GRAPHICS_EXPORT vtkTextureMapToPlane : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTextureMapToPlane,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTextureMapToPlane,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

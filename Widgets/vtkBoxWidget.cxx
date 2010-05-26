@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoxWidget.cxx
+  Module:    $RCSfile: vtkBoxWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkSphereSource.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkBoxWidget, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkBoxWidget);
 
 vtkBoxWidget::vtkBoxWidget()

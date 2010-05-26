@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMCubesWriter.h
+  Module:    $RCSfile: vtkMCubesWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_IO_EXPORT vtkMCubesWriter : public vtkPolyDataWriter
 {
 public:
   static vtkMCubesWriter *New();
-  vtkTypeMacro(vtkMCubesWriter,vtkPolyDataWriter);
+  vtkTypeRevisionMacro(vtkMCubesWriter,vtkPolyDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

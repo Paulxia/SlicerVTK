@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoRandomGraphSource.h
+  Module:    $RCSfile: vtkGeoRandomGraphSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_GEOVIS_EXPORT vtkGeoRandomGraphSource : public vtkRandomGraphSource
 {
 public:
   static vtkGeoRandomGraphSource* New();
-  vtkTypeMacro(vtkGeoRandomGraphSource,vtkRandomGraphSource);
+  vtkTypeRevisionMacro(vtkGeoRandomGraphSource,vtkRandomGraphSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaRenderer.h
+  Module:    $RCSfile: vtkMesaRenderer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ protected:
 
 public:
   static vtkMesaRenderer *New();
-  vtkTypeMacro(vtkMesaRenderer,vtkRenderer);
+  vtkTypeRevisionMacro(vtkMesaRenderer,vtkRenderer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

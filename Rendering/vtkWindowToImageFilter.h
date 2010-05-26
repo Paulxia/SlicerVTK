@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWindowToImageFilter.h
+  Module:    $RCSfile: vtkWindowToImageFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -65,7 +65,7 @@ class VTK_RENDERING_EXPORT vtkWindowToImageFilter : public vtkAlgorithm
 public:
   static vtkWindowToImageFilter *New();
 
-  vtkTypeMacro(vtkWindowToImageFilter,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkWindowToImageFilter,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);   
 
   // Description:

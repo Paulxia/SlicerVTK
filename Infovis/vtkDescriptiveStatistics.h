@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkDescriptiveStatistics.h
+Module:    $RCSfile: vtkDescriptiveStatistics.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -44,7 +44,6 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include "vtkUnivariateStatisticsAlgorithm.h"
 
-class vtkMultiBlockDataSet;
 class vtkStringArray;
 class vtkTable;
 class vtkVariant;
@@ -52,7 +51,7 @@ class vtkVariant;
 class VTK_INFOVIS_EXPORT vtkDescriptiveStatistics : public vtkUnivariateStatisticsAlgorithm
 {
 public:
-  vtkTypeMacro(vtkDescriptiveStatistics, vtkUnivariateStatisticsAlgorithm);
+  vtkTypeRevisionMacro(vtkDescriptiveStatistics, vtkUnivariateStatisticsAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkDescriptiveStatistics* New();
 
@@ -85,7 +84,7 @@ public:
   // Description:
   // Given a collection of models, calculate aggregate model
   virtual void Aggregate( vtkDataObjectCollection*,
-                          vtkMultiBlockDataSet* );
+                          vtkDataObject* );
 
 protected:
   vtkDescriptiveStatistics();
@@ -96,17 +95,17 @@ protected:
   // NB: input parameters are unused.
   virtual void Learn( vtkTable* inData,
                       vtkTable* inParameters,
-                      vtkMultiBlockDataSet* outMeta );
+                      vtkDataObject* outMeta );
 
   // Description:
   // Execute the calculations required by the Derive option.
-  virtual void Derive( vtkMultiBlockDataSet* );
+  virtual void Derive( vtkDataObject* );
 
   // Description:
   // Execute the calculations required by the Test option.
   virtual void Test( vtkTable* inData,
-                     vtkMultiBlockDataSet* inMeta,
-                     vtkTable* outMeta ); 
+                     vtkDataObject* inMeta,
+                     vtkDataObject* outMeta ); 
 
   int UnbiasedVariance;
   int SignedDeviations;

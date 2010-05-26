@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExodusModel.cxx
+  Module:    $RCSfile: vtkExodusModel.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include <ctype.h>
 
 
+vtkCxxRevisionMacro(vtkExodusModel, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkExodusModel);
 
 vtkExodusModel::vtkExodusModel()

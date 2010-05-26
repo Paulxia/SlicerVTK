@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOctreePointLocator.cxx
+  Module:    $RCSfile: vtkOctreePointLocator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #include <vtkstd/stack>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkOctreePointLocator, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkOctreePointLocator);
 
 // helper class for ordering the points in 

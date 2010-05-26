@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLParser.h
+  Module:    $RCSfile: vtkXMLParser.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ extern "C"
 class VTK_IO_EXPORT vtkXMLParser : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkXMLParser,vtkObject);
+  vtkTypeRevisionMacro(vtkXMLParser,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkXMLParser* New();

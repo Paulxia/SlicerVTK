@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLVertexColoring.cxx
+  Module:    $RCSfile: vtkPBGLVertexColoring.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -55,6 +55,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkPBGLVertexColoring, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkPBGLVertexColoring);
 
 // Constructor/Destructor

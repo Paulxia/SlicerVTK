@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAssemblyPaths.cxx
+  Module:    $RCSfile: vtkAssemblyPaths.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkAssemblyPaths.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkAssemblyPaths, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkAssemblyPaths);
 
 unsigned long vtkAssemblyPaths::GetMTime()

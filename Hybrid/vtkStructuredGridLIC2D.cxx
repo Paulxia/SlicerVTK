@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridLIC2D.cxx
+  Module:    $RCSfile: vtkStructuredGridLIC2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,6 +43,7 @@ extern const char *vtkStructuredGridLIC2D_fs;
   ext[0] << ", " << ext[1] << ", " << ext[2] << ", " << ext[3] << ", " << ext[4] << ", " << ext[5] 
 
 vtkStandardNewMacro(vtkStructuredGridLIC2D);
+vtkCxxRevisionMacro(vtkStructuredGridLIC2D, "$Revision: 1.7 $");
 //----------------------------------------------------------------------------
 vtkStructuredGridLIC2D::vtkStructuredGridLIC2D()
 {

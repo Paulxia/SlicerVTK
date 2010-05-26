@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticPyramid.cxx
+  Module:    $RCSfile: vtkQuadraticPyramid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkQuadraticTriangle.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkQuadraticPyramid, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkQuadraticPyramid);
 
 //----------------------------------------------------------------------------

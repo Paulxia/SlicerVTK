@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRRandomTableSource.h
+  Module:    $RCSfile: vtkRRandomTableSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class VTK_GRAPHICS_EXPORT vtkRRandomTableSource : public vtkTableAlgorithm
 public:
 
   static vtkRRandomTableSource* New();
-  vtkTypeMacro(vtkRRandomTableSource,vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkRRandomTableSource,vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

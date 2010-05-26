@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRRandomTableSource.cxx
+  Module:    $RCSfile: vtkRRandomTableSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include "R.h"
 #include "Rmath.h"
 
+vtkCxxRevisionMacro(vtkRRandomTableSource, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkRRandomTableSource);
 
 class ColumnStatsInfo

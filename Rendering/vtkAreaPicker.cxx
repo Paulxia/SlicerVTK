@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAreaPicker.cxx
+  Module:    $RCSfile: vtkAreaPicker.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkPoints.h"
 #include "vtkExtractSelectedFrustum.h"
 
+vtkCxxRevisionMacro(vtkAreaPicker, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkAreaPicker);
 
 //--------------------------------------------------------------------------

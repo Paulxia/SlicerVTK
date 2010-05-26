@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSphereWidget2.cxx
+  Module:    $RCSfile: vtkSphereWidget2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkRenderer.h"
 
 
+vtkCxxRevisionMacro(vtkSphereWidget2, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkSphereWidget2);
 
 //----------------------------------------------------------------------------

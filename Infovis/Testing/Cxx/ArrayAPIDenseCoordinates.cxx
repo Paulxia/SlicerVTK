@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ArrayAPIDenseCoordinates.cxx
+  Module:    $RCSfile: ArrayAPIDenseCoordinates.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

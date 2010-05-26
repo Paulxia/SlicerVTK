@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPixel.cxx
+  Module:    $RCSfile: vtkPixel.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkCellData.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkPixel, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkPixel);
 
 //----------------------------------------------------------------------------

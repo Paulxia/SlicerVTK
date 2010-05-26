@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatlabEngineFilter.cxx
+  Module:    $RCSfile: vtkMatlabEngineFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,6 +46,7 @@
 
 #define BUFFER_SIZE 32768 
 
+vtkCxxRevisionMacro(vtkMatlabEngineFilter, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMatlabEngineFilter);
 
 class ArrNames

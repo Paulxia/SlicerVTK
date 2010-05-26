@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCell3D.h
+  Module:    $RCSfile: vtkCell3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class vtkDoubleArray;
 class VTK_FILTERING_EXPORT vtkCell3D : public vtkCell
 {
 public:
-  vtkTypeMacro(vtkCell3D,vtkCell);
+  vtkTypeRevisionMacro(vtkCell3D,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFiniteDifferenceGradientEstimator.cxx
+  Module:    $RCSfile: vtkFiniteDifferenceGradientEstimator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkFiniteDifferenceGradientEstimator, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkFiniteDifferenceGradientEstimator);
 
 // This is the templated function that actually computes the EncodedNormal

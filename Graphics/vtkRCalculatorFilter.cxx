@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRCalculatorFilter.cxx
+  Module:    $RCSfile: vtkRCalculatorFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,6 +47,7 @@
 
 #define BUFFER_SIZE 32768 
 
+vtkCxxRevisionMacro(vtkRCalculatorFilter, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkRCalculatorFilter);
 
 class ArrNames

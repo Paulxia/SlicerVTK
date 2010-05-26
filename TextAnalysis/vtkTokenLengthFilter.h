@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTokenLengthFilter.h
+  Module:    $RCSfile: vtkTokenLengthFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkTokenLengthFilter :
 {
 public:
   static vtkTokenLengthFilter* New();
-  vtkTypeMacro(vtkTokenLengthFilter, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkTokenLengthFilter, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

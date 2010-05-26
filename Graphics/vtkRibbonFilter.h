@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRibbonFilter.h
+  Module:    $RCSfile: vtkRibbonFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkPoints;
 class VTK_GRAPHICS_EXPORT vtkRibbonFilter : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkRibbonFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkRibbonFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

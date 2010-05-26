@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShader2.cxx
+  Module:    $RCSfile: vtkShader2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@ const char *TypeAsStringArray[5]={
 };
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkShader2, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkShader2);
 vtkCxxSetObjectMacro(vtkShader2,UniformVariables,vtkUniformVariables);
 
@@ -297,6 +298,16 @@ void vtkShader2::PrintSelf(ostream& os, vtkIndent indent)
       assert("check: impossible_case" && 0); // impossible case
     }
   
+  os << indent << "SourceCode: ";
+  if(this->SourceCode==0)
+    {
+    os << "(none)" << endl;
+    }
+  else
+    {
+    os << this->SourceCode << endl;
+    }
+  
   os << indent << "OpenGL Id: " << this->Id << endl;
   os << indent << "Last Compile Status: ";
   if(this->LastCompileStatus)
@@ -319,7 +330,7 @@ void vtkShader2::PrintSelf(ostream& os, vtkIndent indent)
     {
     os << this->LastCompileLog << endl;
     }
-
+  
   os << indent << "Context: ";
   if(this->Context!=0)
     {
@@ -329,7 +340,7 @@ void vtkShader2::PrintSelf(ostream& os, vtkIndent indent)
     {
     os << "none" << endl;
     }
-
+  
   os << indent << "UniformVariables: ";
   if(this->UniformVariables!=0)
     {
@@ -338,15 +349,5 @@ void vtkShader2::PrintSelf(ostream& os, vtkIndent indent)
   else
     {
     os << "none" << endl;
-    }
-
-  os << indent << "SourceCode: ";
-  if(this->SourceCode==0)
-    {
-    os << "(none)" << endl;
-    }
-  else
-    {
-    os << endl << this->SourceCode << endl;
     }
 }

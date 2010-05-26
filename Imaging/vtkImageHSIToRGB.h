@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageHSIToRGB.h
+  Module:    $RCSfile: vtkImageHSIToRGB.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_IMAGING_EXPORT vtkImageHSIToRGB : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageHSIToRGB *New();
-  vtkTypeMacro(vtkImageHSIToRGB,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageHSIToRGB,vtkThreadedImageAlgorithm);
 
   void PrintSelf(ostream& os, vtkIndent indent);
 

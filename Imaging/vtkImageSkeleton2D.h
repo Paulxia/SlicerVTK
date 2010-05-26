@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSkeleton2D.h
+  Module:    $RCSfile: vtkImageSkeleton2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_IMAGING_EXPORT vtkImageSkeleton2D : public vtkImageIterateFilter
 {
 public:
   static vtkImageSkeleton2D *New();
-  vtkTypeMacro(vtkImageSkeleton2D,vtkImageIterateFilter);
+  vtkTypeRevisionMacro(vtkImageSkeleton2D,vtkImageIterateFilter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

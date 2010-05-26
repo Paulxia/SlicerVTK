@@ -1,7 +1,7 @@
 //=========================================================================
 //
 //  Program:   Visualization Toolkit
-//  Module:    vtkStructuredGridLIC2D_fs.glsl
+//  Module:    $RCSfile: vtkStructuredGridLIC2D_fs.glsl,v $
 //
 //  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 //  All rights reserved.

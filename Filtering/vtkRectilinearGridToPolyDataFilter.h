@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridToPolyDataFilter.h
+  Module:    $RCSfile: vtkRectilinearGridToPolyDataFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class vtkRectilinearGrid;
 class VTK_FILTERING_EXPORT vtkRectilinearGridToPolyDataFilter : public vtkPolyDataSource
 {
 public:
-  vtkTypeMacro(vtkRectilinearGridToPolyDataFilter,vtkPolyDataSource);
+  vtkTypeRevisionMacro(vtkRectilinearGridToPolyDataFilter,vtkPolyDataSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

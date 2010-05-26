@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderLargeImage.h
+  Module:    $RCSfile: vtkRenderLargeImage.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_HYBRID_EXPORT vtkRenderLargeImage : public vtkAlgorithm
 {
 public:
   static vtkRenderLargeImage *New();
-  vtkTypeMacro(vtkRenderLargeImage,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkRenderLargeImage,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);   
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConeSource.h
+  Module:    $RCSfile: vtkConeSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@
 class VTK_GRAPHICS_EXPORT vtkConeSource : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkConeSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkConeSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

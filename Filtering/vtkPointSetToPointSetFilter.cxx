@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointSetToPointSetFilter.cxx
+  Module:    $RCSfile: vtkPointSetToPointSetFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkStructuredGrid.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkPointSetToPointSetFilter, "$Revision: 1.62 $");
 
 //----------------------------------------------------------------------------
 // Construct object.

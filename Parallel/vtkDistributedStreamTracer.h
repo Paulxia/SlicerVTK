@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistributedStreamTracer.h
+  Module:    $RCSfile: vtkDistributedStreamTracer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@
 class VTK_PARALLEL_EXPORT vtkDistributedStreamTracer : public vtkPStreamTracer
 {
 public:
-  vtkTypeMacro(vtkDistributedStreamTracer,vtkPStreamTracer);
+  vtkTypeRevisionMacro(vtkDistributedStreamTracer,vtkPStreamTracer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkDistributedStreamTracer *New();

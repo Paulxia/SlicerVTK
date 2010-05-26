@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSLACParticleReader.cxx
+  Module:    $RCSfile: vtkSLACParticleReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -160,6 +160,7 @@ private:
 };
 
 //=============================================================================
+vtkCxxRevisionMacro(vtkSLACParticleReader, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkSLACParticleReader);
 
 //-----------------------------------------------------------------------------

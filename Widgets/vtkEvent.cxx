@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEvent.cxx
+  Module:    $RCSfile: vtkEvent.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkCommand.h"
 
+vtkCxxRevisionMacro(vtkEvent, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkEvent);
 
 

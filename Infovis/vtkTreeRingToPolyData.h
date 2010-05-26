@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeRingToPolyData.h
+  Module:    $RCSfile: vtkTreeRingToPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkTreeRingToPolyData : public vtkPolyDataAlgorithm
 public:
   static vtkTreeRingToPolyData *New();
   
-  vtkTypeMacro(vtkTreeRingToPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTreeRingToPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

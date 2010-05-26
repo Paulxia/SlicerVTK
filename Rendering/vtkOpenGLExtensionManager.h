@@ -3,7 +3,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLExtensionManager.h
+  Module:    $RCSfile: vtkOpenGLExtensionManager.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -140,7 +140,7 @@ extern "C" {
 class VTK_RENDERING_EXPORT vtkOpenGLExtensionManager : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkOpenGLExtensionManager, vtkObject);
+  vtkTypeRevisionMacro(vtkOpenGLExtensionManager, vtkObject);
   static vtkOpenGLExtensionManager *New();
   void PrintSelf(ostream &os, vtkIndent indent);
 

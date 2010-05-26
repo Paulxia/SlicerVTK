@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIncrementalOctreeNode.h
+  Module:    $RCSfile: vtkIncrementalOctreeNode.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -64,7 +64,7 @@ class vtkIdList;
 class VTK_FILTERING_EXPORT vtkIncrementalOctreeNode : public vtkObject
 {
 public:
-  vtkTypeMacro( vtkIncrementalOctreeNode, vtkObject );
+  vtkTypeRevisionMacro( vtkIncrementalOctreeNode, vtkObject );
   void PrintSelf( ostream & os, vtkIndent indent );
 
   static vtkIncrementalOctreeNode * New();

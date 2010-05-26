@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    GraphItem.cxx
+  Module:    $RCSfile: GraphItem.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class GraphAnimate : public vtkCommand
 {
 public:
   static GraphAnimate *New() { return new GraphAnimate(); }
-  vtkTypeMacro(GraphAnimate, vtkCommand);
+  vtkTypeRevisionMacro(GraphAnimate, vtkCommand);
   virtual void Execute(vtkObject *, unsigned long, void *)
     {
     this->GraphItem->UpdatePositions();
@@ -43,6 +43,7 @@ public:
   vtkGraphItem* GraphItem;
   vtkContextView* View;
 };
+vtkCxxRevisionMacro(GraphAnimate, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------------
 int main(int, char *[])

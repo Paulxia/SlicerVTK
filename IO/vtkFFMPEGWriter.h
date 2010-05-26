@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFFMPEGWriter.h
+  Module:    $RCSfile: vtkFFMPEGWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_IO_EXPORT vtkFFMPEGWriter : public vtkGenericMovieWriter
 {
 public:
   static vtkFFMPEGWriter *New();
-  vtkTypeMacro(vtkFFMPEGWriter,vtkGenericMovieWriter);
+  vtkTypeRevisionMacro(vtkFFMPEGWriter,vtkGenericMovieWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

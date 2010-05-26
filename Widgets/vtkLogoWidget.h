@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLogoWidget.h
+  Module:    $RCSfile: vtkLogoWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ public:
 
   // Description:
   // Standar VTK class methods.
-  vtkTypeMacro(vtkLogoWidget,vtkBorderWidget);
+  vtkTypeRevisionMacro(vtkLogoWidget,vtkBorderWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

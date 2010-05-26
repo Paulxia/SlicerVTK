@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProjectedTetrahedraMapper.h
+  Module:    $RCSfile: vtkProjectedTetrahedraMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkVolumeProperty;
 class VTK_VOLUMERENDERING_EXPORT vtkProjectedTetrahedraMapper : public vtkUnstructuredGridVolumeMapper
 {
 public:
-  vtkTypeMacro(vtkProjectedTetrahedraMapper,
+  vtkTypeRevisionMacro(vtkProjectedTetrahedraMapper,
                        vtkUnstructuredGridVolumeMapper);
   static vtkProjectedTetrahedraMapper *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);

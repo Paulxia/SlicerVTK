@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractTransform.cxx
+  Module:    $RCSfile: vtkAbstractTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkMatrix4x4.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkAbstractTransform, "$Revision: 1.29 $");
 
 //----------------------------------------------------------------------------
 vtkAbstractTransform::vtkAbstractTransform()
@@ -365,7 +366,7 @@ void vtkAbstractTransform::UnRegister(vtkObjectBase *o)
 class vtkSimpleTransform : public vtkHomogeneousTransform
 {
 public:
-  vtkTypeMacro(vtkSimpleTransform,vtkHomogeneousTransform);
+  vtkTypeRevisionMacro(vtkSimpleTransform,vtkHomogeneousTransform);
   static vtkSimpleTransform *New() {
 #ifdef VTK_DEBUG_LEAKS
     vtkDebugLeaks::ConstructClass("vtkSimpleTransform");
@@ -379,6 +380,7 @@ protected:
   void operator=(const vtkSimpleTransform&);
 };
 
+vtkCxxRevisionMacro(vtkSimpleTransform, "$Revision: 1.29 $");
 
 //----------------------------------------------------------------------------
 vtkTransformConcatenation::vtkTransformConcatenation()

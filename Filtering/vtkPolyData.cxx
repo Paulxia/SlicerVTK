@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyData.cxx
+  Module:    $RCSfile: vtkPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkTriangleStrip.h"
 #include "vtkVertex.h"
 
+vtkCxxRevisionMacro(vtkPolyData, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkPolyData);
 
 //----------------------------------------------------------------------------

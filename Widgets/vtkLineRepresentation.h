@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLineRepresentation.h
+  Module:    $RCSfile: vtkLineRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -61,7 +61,7 @@ public:
 
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkLineRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkLineRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

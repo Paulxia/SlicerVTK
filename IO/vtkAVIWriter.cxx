@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAVIWriter.cxx
+  Module:    $RCSfile: vtkAVIWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@ public:
 
 //---------------------------------------------------------------------------
 vtkStandardNewMacro(vtkAVIWriter);
+vtkCxxRevisionMacro(vtkAVIWriter, "$Revision: 1.10 $");
 
 //---------------------------------------------------------------------------
 vtkAVIWriter::vtkAVIWriter()

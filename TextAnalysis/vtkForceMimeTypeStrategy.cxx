@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkForceMimeTypeStrategy.cxx
+  Module:    $RCSfile: vtkForceMimeTypeStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <boost/algorithm/string.hpp>
 
+vtkCxxRevisionMacro(vtkForceMimeTypeStrategy, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkForceMimeTypeStrategy);
 
 vtkForceMimeTypeStrategy::vtkForceMimeTypeStrategy() :

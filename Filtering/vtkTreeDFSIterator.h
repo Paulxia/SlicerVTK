@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeDFSIterator.h
+  Module:    $RCSfile: vtkTreeDFSIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_FILTERING_EXPORT vtkTreeDFSIterator : public vtkObject
 {
 public:
   static vtkTreeDFSIterator* New();
-  vtkTypeMacro(vtkTreeDFSIterator, vtkObject);
+  vtkTypeRevisionMacro(vtkTreeDFSIterator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

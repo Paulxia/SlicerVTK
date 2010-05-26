@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationQuadratureSchemeDefinitionVectorKey.cxx
+  Module:    $RCSfile: vtkInformationQuadratureSchemeDefinitionVectorKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@ private:
 };
 
 //============================================================================
+vtkCxxRevisionMacro(vtkInformationQuadratureSchemeDefinitionVectorKey, "$Revision: 1.5 $");
 
 //----------------------------------------------------------------------------
 vtkInformationQuadratureSchemeDefinitionVectorKey::vtkInformationQuadratureSchemeDefinitionVectorKey(

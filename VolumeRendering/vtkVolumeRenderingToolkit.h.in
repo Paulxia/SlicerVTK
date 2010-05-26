@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeRenderingToolkit.h.in
+  Module:    $RCSfile: vtkVolumeRenderingToolkit.h.in,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

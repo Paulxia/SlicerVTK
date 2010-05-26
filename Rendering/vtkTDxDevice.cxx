@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxDevice.cxx
+  Module:    $RCSfile: vtkTDxDevice.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkTDxDevice,"$Revision: 1.1 $");
 
 // ----------------------------------------------------------------------------
 vtkTDxDevice::vtkTDxDevice()

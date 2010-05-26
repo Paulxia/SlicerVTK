@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataTransferHelper.h
+  Module:    $RCSfile: vtkDataTransferHelper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_RENDERING_EXPORT vtkDataTransferHelper : public vtkObject
 {
 public:
   static vtkDataTransferHelper* New();
-  vtkTypeMacro(vtkDataTransferHelper, vtkObject);
+  vtkTypeRevisionMacro(vtkDataTransferHelper, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

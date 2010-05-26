@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWriter.cxx
+  Module:    $RCSfile: vtkWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 
 #include <vtksys/ios/sstream>
 
+vtkCxxRevisionMacro(vtkWriter, "$Revision: 1.46 $");
 
 namespace 
 {

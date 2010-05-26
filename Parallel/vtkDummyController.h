@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDummyController.h
+  Module:    $RCSfile: vtkDummyController.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_PARALLEL_EXPORT vtkDummyController : public vtkMultiProcessController
 {
 public:
   static vtkDummyController *New();
-  vtkTypeMacro(vtkDummyController,vtkMultiProcessController);
+  vtkTypeRevisionMacro(vtkDummyController,vtkMultiProcessController);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

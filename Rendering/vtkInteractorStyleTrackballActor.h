@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleTrackballActor.h
+  Module:    $RCSfile: vtkInteractorStyleTrackballActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleTrackballActor : public vtkInteract
 {
 public:
   static vtkInteractorStyleTrackballActor *New();
-  vtkTypeMacro(vtkInteractorStyleTrackballActor,vtkInteractorStyle);
+  vtkTypeRevisionMacro(vtkInteractorStyleTrackballActor,vtkInteractorStyle);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

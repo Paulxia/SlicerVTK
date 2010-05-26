@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeDataIterator.h
+  Module:    $RCSfile: vtkCompositeDataIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_FILTERING_EXPORT vtkCompositeDataIterator : public vtkObject
 {
 public:
   static vtkCompositeDataIterator* New();
-  vtkTypeMacro(vtkCompositeDataIterator, vtkObject);
+  vtkTypeRevisionMacro(vtkCompositeDataIterator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

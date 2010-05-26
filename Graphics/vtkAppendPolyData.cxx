@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAppendPolyData.cxx
+  Module:    $RCSfile: vtkAppendPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkAppendPolyData, "$Revision: 1.108 $");
 vtkStandardNewMacro(vtkAppendPolyData);
 
 //----------------------------------------------------------------------------
@@ -286,7 +287,6 @@ int vtkAppendPolyData::ExecuteAppend(vtkPolyData* output,
     outputPD->CopyScalarsOff();
     newPtScalars = inDA->NewInstance();
     newPtScalars->SetNumberOfComponents(inDA->GetNumberOfComponents());
-    newPtScalars->CopyComponentNames( inDA );
     newPtScalars->SetName(inDA->GetName());
     newPtScalars->SetNumberOfTuples(numPts);
     if (inDA->HasInformation())
@@ -300,7 +300,6 @@ int vtkAppendPolyData::ExecuteAppend(vtkPolyData* output,
     outputPD->CopyVectorsOff();
     newPtVectors = inDA->NewInstance();
     newPtVectors->SetNumberOfComponents(inDA->GetNumberOfComponents());
-    newPtVectors->CopyComponentNames( inDA );
     newPtVectors->SetName(inDA->GetName());
     newPtVectors->SetNumberOfTuples(numPts);
     if (inDA->HasInformation())
@@ -314,7 +313,6 @@ int vtkAppendPolyData::ExecuteAppend(vtkPolyData* output,
     outputPD->CopyTensorsOff();
     newPtTensors = inDA->NewInstance();
     newPtTensors->SetNumberOfComponents(inDA->GetNumberOfComponents());
-    newPtTensors->CopyComponentNames( inDA );
     newPtTensors->SetName(inDA->GetName());
     newPtTensors->SetNumberOfTuples(numPts);
     if (inDA->HasInformation())
@@ -328,7 +326,6 @@ int vtkAppendPolyData::ExecuteAppend(vtkPolyData* output,
     outputPD->CopyNormalsOff();
     newPtNormals = inDA->NewInstance();
     newPtNormals->SetNumberOfComponents(inDA->GetNumberOfComponents());
-    newPtNormals->CopyComponentNames( inDA );
     newPtNormals->SetName(inDA->GetName());
     newPtNormals->SetNumberOfTuples(numPts);
     if (inDA->HasInformation())
@@ -342,7 +339,6 @@ int vtkAppendPolyData::ExecuteAppend(vtkPolyData* output,
     outputPD->CopyTCoordsOff();
     newPtTCoords = inDA->NewInstance();
     newPtTCoords->SetNumberOfComponents(inDA->GetNumberOfComponents());
-    newPtTCoords->CopyComponentNames( inDA );
     newPtTCoords->SetName(inDA->GetName());
     newPtTCoords->SetNumberOfTuples(numPts);
     if (inDA->HasInformation())

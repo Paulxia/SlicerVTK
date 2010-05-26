@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVertexGlyphFilter.cxx
+  Module:    $RCSfile: vtkVertexGlyphFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #define VTK_CREATE(type, name) \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkVertexGlyphFilter, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkVertexGlyphFilter);
 
 //-----------------------------------------------------------------------------

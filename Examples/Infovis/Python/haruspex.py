@@ -38,7 +38,6 @@ def Usage( outModelPrefix, outDataName ):
     print "\t [-u]             update input model (if data are provided as well). NB: update happens before assessment"
     print "\t [-s <prefix>]    prefix of CSV output model (statistics) file(s)"
     print "\t [-a <filename>]  name of CSV output data (annotated) file"
-    print "\t [-t <filename>]  name of CSV statistical test results file"
     print "\t [-c <filename>]  name of CSV file specifying columns of interest. Default: all columns are of interest"
     print "\t [-v]             Increase verbosity (0 = silent). Default:",verbosity
     sys.exit( 1 )
@@ -63,7 +62,7 @@ def ParseCommandLine():
     
     # Try to hash command line with respect to allowable flags
     try:
-        opts,args = getopt.getopt(sys.argv[1:], 'hd:e:o:m:us:a:t:c:v')
+        opts,args = getopt.getopt(sys.argv[1:], 'hd:e:o:m:us:a:c:v')
     except getopt.GetoptError:
         Usage( outModelPrefix, outDataName )
         sys.exit( 1 )
@@ -90,8 +89,6 @@ def ParseCommandLine():
             outModelPrefix = a
         elif o == "-a":
             outDataName = a
-        elif o == "-t":
-            outTestName = a
         elif o == "-c":
             columnsListName = a
         elif o == "-v":
@@ -198,7 +195,7 @@ def ReadInModel( inModelPrefix ):
         print
         if verbosity > 1:
             print "# Input Model:"
-            inModelReader.GetOutput().Dump( 16 )
+            inModelReader.GetOutput().Dump( 10 )
             print
     
     return inModelReader
@@ -228,7 +225,7 @@ def ReadInData( inDataName ):
         print
         if verbosity > 2:
             print "# Input data:"
-            inDataReader.GetOutput().Dump( 16 )
+            inDataReader.GetOutput().Dump( 10 )
             print
     
     return inDataReader
@@ -272,7 +269,7 @@ def ReadColumnsList( columnsListName ):
 
 ############################################################
 # Write table from haruspex output port (i.e., for data or tests)
-def WriteOutTable( haruspex, outPort, outFileName, outPortName, threshold ):
+def WriteOutTable( haruspex, outPort, outFileName, outPortName ):
     # Declare use of global variable
     global verbosity
 
@@ -294,8 +291,8 @@ def WriteOutTable( haruspex, outPort, outFileName, outPortName, threshold ):
 
     if verbosity > 0:
         print "  Wrote", outPortName
-        if verbosity > threshold:
-            haruspex.GetOutput( outPort ).Dump( 16 )
+        if verbosity > 2:
+            haruspex.GetOutput( outPort ).Dump( 10 )
         print
 ############################################################
 
@@ -318,28 +315,43 @@ def WriteOutModel( haruspex, outModelPrefix ):
     outModelWriter = vtkDelimitedTextWriter()
     outModelWriter.SetFieldDelimiter(",")
 
-    # Verify that model is a vtkMultiBlockDataSet, error out otherwise
+    # Get output model type to select appropriate write scheme
     outModelType = haruspex.GetOutputDataObject( 1 ).GetClassName()
-    if outModelType != "vtkMultiBlockDataSet":
-        print "ERROR: unsupported type of output model!"
-        sys.exit( 1 )
+    if verbosity > 0:
+        print "  Output model is a", outModelType
 
-    # Must iterate over all blocks of the vtkMultiBlockDataSet
-    outModel = haruspex.GetOutputDataObject( 1 )
-    n = outModel.GetNumberOfBlocks()
-    for i in range( 0, n ):
+    # Select write scheme depending on output model type
+    if outModelType == "vtkTable":
         # Straightforward CSV file dump of a vtkTable
-        outModelName = outModelPrefix + "-" + str( i )+ ".csv"
+        outModelName = outModelPrefix + "-0.csv"
         outModelWriter.SetFileName( outModelName )
-        table = outModel.GetBlock( i )
-        outModelWriter.SetInput( table )
+        outModelWriter.SetInputConnection( haruspex.GetOutputPort( 1 ) )
         outModelWriter.Update()
-            
+
         if verbosity > 0:
             print "  Wrote", outModelName
             if verbosity > 1:
-                table.Dump( 16 )
-                print
+                haruspex.GetOutput( 1 ).Dump( 10 )
+
+    elif outModelType == "vtkMultiBlockDataSet":
+        # Must iterate over all blocks of the vtkMultiBlockDataSet
+        outModel = haruspex.GetOutputDataObject( 1 )
+        n = outModel.GetNumberOfBlocks()
+        for i in range( 0, n ):
+            # Straightforward CSV file dump of a vtkTable
+            outModelName = outModelPrefix + "-" + str( i )+ ".csv"
+            outModelWriter.SetFileName( outModelName )
+            table = outModel.GetBlock( i )
+            outModelWriter.SetInput( table )
+            outModelWriter.Update()
+            
+            if verbosity > 0:
+                print "  Wrote", outModelName
+                if verbosity > 1:
+                    table.Dump( 10 )
+
+    if verbosity > 0:
+        print
 ############################################################
 
 ############################################################
@@ -374,7 +386,7 @@ def CalculateStatistics( inDataReader, inModelReader, updateModel, columnsList, 
         for i in range( 0, n ):
             colName = inData.GetColumnName( columnsList[i] )
             if verbosity > 0:
-                print "  Requesting column", colName
+                print "  Requesting column",colName
             haruspex.AddColumn( colName )
 
     elif haruspex.IsA( "vtkBivariateStatisticsAlgorithm" ):
@@ -384,7 +396,7 @@ def CalculateStatistics( inDataReader, inModelReader, updateModel, columnsList, 
             for j in range( i+1, n ):
                 colNameY = inData.GetColumnName( columnsList[j] )
                 if verbosity > 0:
-                    print "  Requesting column pair (", colNameX, ",", colNameY, ")"
+                    print "  Requesting column pair",colNameX,colNameY
                 haruspex.AddColumnPair( colNameX, colNameY )
 
     else:
@@ -411,14 +423,11 @@ def CalculateStatistics( inDataReader, inModelReader, updateModel, columnsList, 
     if int( options ) % 2:
         haruspex.SetTestOption( True )
         if verbosity > 0:
-            print "  Test option is on"
+            print "  Test option is on (make sure you exported the R_HOME environment variable)"
     else:
         haruspex.SetTestOption( False )
         if verbosity > 0:
             print "  Test option is off"
-
-    if verbosity > 0:
-        print
 
     # If an input model was provided, then update it first, otherwise run in a single pass
     if inModel == None:
@@ -428,17 +437,19 @@ def CalculateStatistics( inDataReader, inModelReader, updateModel, columnsList, 
         haruspex.SetAssessOption( assessOption )
         haruspex.Update()
     else:
-        # There is an initial model: must be a vtkMultiBlockDataSet
+        # There is an initial model: decide if vtkTable of vtkMultiBlockDataSet is needed
         inModelType = haruspex.GetOutputDataObject( 1 ).GetClassName()
-        if inModelType != "vtkMultiBlockDataSet":
+        if verbosity > 0:
+            print "  Input model must be a", inModelType
+        if inModelType == "vtkMultiBlockDataSet":
+            # The model table inModel must become the first block of a vtkMultiBlockDataSet
+            inModelMB = vtkMultiBlockDataSet()
+            inModelMB.SetNumberOfBlocks( 1 )
+            inModelMB.SetBlock( 0, inModel )
+            inModel = inModelMB
+        elif inModelType != "vtkTable":
             print "ERROR: unsupported type of input model!"
             sys.exit( 1 )
-
-        # The model table inModel must become the first block of a vtkMultiBlockDataSet
-        inModelMB = vtkMultiBlockDataSet()
-        inModelMB.SetNumberOfBlocks( 1 )
-        inModelMB.SetBlock( 0, inModel )
-        inModel = inModelMB
             
         # If model update is required, then learn new model and aggregate, otherwise assess directly
         if updateModel == True:
@@ -454,7 +465,10 @@ def CalculateStatistics( inDataReader, inModelReader, updateModel, columnsList, 
             
             # Aggregate old and new models
             collection.AddItem( haruspex.GetOutputDataObject( 1 ) )
-            aggregated = vtkMultiBlockDataSet()
+            if inModelType == "vtkTable":
+                aggregated = vtkTable()
+            elif inModelType == "vtkMultiBlockDataSet":
+                aggregated = vtkMultiBlockDataSet()
             haruspex.Aggregate( collection, aggregated )
 
             # Finally, derive and possibly assess using the aggregated model (do not learn)
@@ -471,6 +485,7 @@ def CalculateStatistics( inDataReader, inModelReader, updateModel, columnsList, 
             haruspex.SetAssessOption( assessOption )
             haruspex.Update()
             
+    if verbosity > 0:
         print
 ############################################################
 
@@ -510,10 +525,10 @@ def main():
     CalculateStatistics( inDataReader, inModelReader, updateModel, columnsList, haruspex, options )
 
     # Save output (annotated) data
-    WriteOutTable( haruspex, 0, outDataName, "annotated data", 2 )
+    WriteOutTable( haruspex, 0, outDataName, "annotated data" )
 
     # Save output of statistical tests
-    WriteOutTable( haruspex, 2, outTestName, "statistical test results", 1 )
+    WriteOutTable( haruspex, 2, outTestName, "statistical test results" )
 
     # Save output model (statistics)
     WriteOutModel( haruspex, outModelPrefix )

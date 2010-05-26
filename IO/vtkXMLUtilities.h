@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLUtilities.h
+  Module:    $RCSfile: vtkXMLUtilities.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_IO_EXPORT vtkXMLUtilities : public vtkObject
 {
 public:
   static vtkXMLUtilities* New();
-  vtkTypeMacro(vtkXMLUtilities, vtkObject);
+  vtkTypeRevisionMacro(vtkXMLUtilities, vtkObject);
 
   // Description:
   // Encode a string from one format to another 

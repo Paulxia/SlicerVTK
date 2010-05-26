@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSQLiteDatabase.h
+  Module:    $RCSfile: vtkSQLiteDatabase.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -57,7 +57,7 @@ class VTK_IO_EXPORT vtkSQLiteDatabase : public vtkSQLDatabase
   //ETX
 
 public:
-  vtkTypeMacro(vtkSQLiteDatabase, vtkSQLDatabase);
+  vtkTypeRevisionMacro(vtkSQLiteDatabase, vtkSQLDatabase);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkSQLiteDatabase *New();
 

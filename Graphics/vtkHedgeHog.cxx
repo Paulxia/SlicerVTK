@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHedgeHog.cxx
+  Module:    $RCSfile: vtkHedgeHog.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkHedgeHog, "$Revision: 1.47 $");
 vtkStandardNewMacro(vtkHedgeHog);
 
 vtkHedgeHog::vtkHedgeHog()

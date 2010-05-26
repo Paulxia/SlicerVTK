@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestImplicitPlaneWidget2b.cxx
+  Module:    $RCSfile: TestImplicitPlaneWidget2b.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

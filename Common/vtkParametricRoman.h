@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricRoman.h
+  Module:    $RCSfile: vtkParametricRoman.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_COMMON_EXPORT vtkParametricRoman : public vtkParametricFunction
 {
 
 public:
-  vtkTypeMacro(vtkParametricRoman,vtkParametricFunction);
+  vtkTypeRevisionMacro(vtkParametricRoman,vtkParametricFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description

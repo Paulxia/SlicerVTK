@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderPass.cxx
+  Module:    $RCSfile: vtkRenderPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkRenderer.h"
 #include "vtkOpenGLRenderer.h"
 
+vtkCxxRevisionMacro(vtkRenderPass, "$Revision: 1.2 $");
 
 // ----------------------------------------------------------------------------
 // Description:

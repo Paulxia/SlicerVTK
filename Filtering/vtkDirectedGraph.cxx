@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDirectedGraph.cxx
+  Module:    $RCSfile: vtkDirectedGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 //----------------------------------------------------------------------------
 // class vtkDirectedGraph
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkDirectedGraph, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkDirectedGraph);
 //----------------------------------------------------------------------------
 vtkDirectedGraph::vtkDirectedGraph()

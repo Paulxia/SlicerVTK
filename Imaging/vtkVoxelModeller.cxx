@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVoxelModeller.cxx
+  Module:    $RCSfile: vtkVoxelModeller.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkVoxelModeller, "$Revision: 1.60 $");
 vtkStandardNewMacro(vtkVoxelModeller);
 
 // Construct an instance of vtkVoxelModeller with its sample dimensions

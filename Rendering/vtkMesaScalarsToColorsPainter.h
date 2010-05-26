@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaScalarsToColorsPainter.h
+  Module:    $RCSfile: vtkMesaScalarsToColorsPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,7 +25,7 @@ class VTK_RENDERING_EXPORT vtkMesaScalarsToColorsPainter :
 {
 public:
   static vtkMesaScalarsToColorsPainter* New();
-  vtkTypeMacro(vtkMesaScalarsToColorsPainter,
+  vtkTypeRevisionMacro(vtkMesaScalarsToColorsPainter, 
     vtkScalarsToColorsPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
   

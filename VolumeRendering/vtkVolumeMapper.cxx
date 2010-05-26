@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeMapper.cxx
+  Module:    $RCSfile: vtkVolumeMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkImageData.h"
 #include "vtkInformation.h"
 
+vtkCxxRevisionMacro(vtkVolumeMapper, "$Revision: 1.2 $");
 
 // Construct a vtkVolumeMapper with empty scalar input and clipping off.
 vtkVolumeMapper::vtkVolumeMapper()

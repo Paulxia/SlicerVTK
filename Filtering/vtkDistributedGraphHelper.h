@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistributedGraphHelper.h
+  Module:    $RCSfile: vtkDistributedGraphHelper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -72,7 +72,7 @@ typedef vtkIdType (*vtkVertexPedigreeIdDistribution)
 class VTK_FILTERING_EXPORT vtkDistributedGraphHelper : public vtkObject
 {
  public:
-  vtkTypeMacro(vtkDistributedGraphHelper,vtkObject);
+  vtkTypeRevisionMacro (vtkDistributedGraphHelper, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

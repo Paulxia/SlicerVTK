@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeLayoutStrategy.cxx
+  Module:    $RCSfile: vtkTreeLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,10 +33,10 @@
 #include "vtkPointData.h"
 #include "vtkPoints.h"
 #include "vtkSmartPointer.h"
-#include "vtkTransform.h"
 #include "vtkTree.h"
 #include "vtkTreeDFSIterator.h"
 
+vtkCxxRevisionMacro(vtkTreeLayoutStrategy, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkTreeLayoutStrategy);
 
 vtkTreeLayoutStrategy::vtkTreeLayoutStrategy()
@@ -46,8 +46,6 @@ vtkTreeLayoutStrategy::vtkTreeLayoutStrategy()
   this->LogSpacingValue = 1.0;
   this->LeafSpacing = 0.9;
   this->DistanceArrayName = NULL;
-  this->Rotation = 0.0;
-  this->ReverseEdges = false;
 }
 
 vtkTreeLayoutStrategy::~vtkTreeLayoutStrategy()
@@ -71,7 +69,6 @@ void vtkTreeLayoutStrategy::Layout()
     // Use the BFS search tree to perform the layout
     vtkBoostBreadthFirstSearchTree* bfs = vtkBoostBreadthFirstSearchTree::New();
     bfs->CreateGraphVertexIdArrayOn();
-    bfs->SetReverseEdges(this->ReverseEdges);
     bfs->SetInput(this->Graph);
     bfs->Update();
     tree = vtkTree::New();
@@ -339,21 +336,6 @@ void vtkTreeLayoutStrategy::Layout()
       }
     newPoints->SetPoint(vertex, x, y, 0.0);
     }
-
-  // Rotate coordinates
-  if (this->Rotation != 0.0)
-    {
-    vtkSmartPointer<vtkTransform> t = vtkSmartPointer<vtkTransform>::New();
-    t->RotateZ(this->Rotation);
-    double x[3];
-    double y[3];
-    for (vtkIdType p = 0; p < newPoints->GetNumberOfPoints(); ++p)
-      {
-      newPoints->GetPoint(p, x);
-      t->MultiplyPoint(x, y);
-      newPoints->SetPoint(p, y);
-      }
-    }
   
   // Copy coordinates back into the original graph
   if (vtkTree::SafeDownCast(this->Graph))
@@ -395,10 +377,61 @@ void vtkTreeLayoutStrategy::PrintSelf(ostream& os, vtkIndent indent)
   os << indent << "Radial: " << (this->Radial ? "true" : "false") << endl;
   os << indent << "LogSpacingValue: " << this->LogSpacingValue << endl;
   os << indent << "LeafSpacing: " << this->LeafSpacing << endl;
-  os << indent << "Rotation: " << this->Rotation << endl;
-  os << indent << "DistanceArrayName: "
+  os << indent << "DistanceArrayName: " 
      << (this->DistanceArrayName ? this->DistanceArrayName : "(null)") << endl;
-  os << indent << "ReverseEdges: " << this->ReverseEdges << endl;
 }
+
+#if 0
+// Code storage
+
+#include "vtkGraphToBoostAdapter.h"
+#include "vtkTreeToBoostAdapter.h"
+#include <boost/graph/visitors.hpp>
+#include <boost/graph/depth_first_search.hpp>
+#include <boost/property_map.hpp>
+#include <boost/pending/queue.hpp>
+
+using namespace boost;
+
+// Redefine the bfs visitor, the only visitor we
+// are using is the tree_edge visitor.
+template <typename PlacementMap>
+  class placement_visitor : public default_dfs_visitor
+  {
+  public:
+    placement_visitor() { }
+    placement_visitor(PlacementMap dist, typename property_traits<PlacementMap>::value_type ii = 1) 
+      : d(dist), cur_place(0), internal_inc(ii) { }
+
+    template <typename Vertex, typename Graph>
+    void finish_vertex(Vertex v, const Graph& g)
+    {
+      put(d, v, cur_place);
+      if (g->IsLeaf(v))
+        {
+        cur_place += 1;
+        }
+      else
+        {
+        cur_place += internal_inc;
+        }
+    }
+
+    typename property_traits<PlacementMap>::value_type max_place() { return cur_place; }
+
+  private:
+    PlacementMap d;
+    typename property_traits<PlacementMap>::value_type cur_place;
+    typename property_traits<PlacementMap>::value_type internal_inc;
+  };
+
+    // Create a color map (used for marking visited nodes)
+    //vector_property_map<default_color_type> color;
+    //vtkDoubleArray* placement = vtkDoubleArray::New();
+    //depth_first_search(tree, 
+    //  placement_visitor<vtkDoubleArray*>(placement, 1.0), 
+    //  color, tree->GetRoot());
+#endif
+
 
 

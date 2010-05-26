@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkJavaProgrammableFilter.cxx
+  Module:    $RCSfile: vtkJavaProgrammableFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@ public:
   vtksys_stl::map<vtkStdString, vtkVariant> Parameters;
 };
 
+vtkCxxRevisionMacro(vtkJavaProgrammableFilter, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkJavaProgrammableFilter);
 //---------------------------------------------------------------------------
 vtkJavaProgrammableFilter::vtkJavaProgrammableFilter()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInterpolatingSubdivisionFilter.cxx
+  Module:    $RCSfile: vtkInterpolatingSubdivisionFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkInterpolatingSubdivisionFilter, "$Revision: 1.28 $");
 
 // Construct object with number of subdivisions set to 1.
 vtkInterpolatingSubdivisionFilter::vtkInterpolatingSubdivisionFilter()

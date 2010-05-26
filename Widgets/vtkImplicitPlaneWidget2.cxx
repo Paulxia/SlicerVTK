@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitPlaneWidget2.cxx
+  Module:    $RCSfile: vtkImplicitPlaneWidget2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkRenderWindow.h"
 
 
+vtkCxxRevisionMacro(vtkImplicitPlaneWidget2, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkImplicitPlaneWidget2);
 
 //----------------------------------------------------------------------------

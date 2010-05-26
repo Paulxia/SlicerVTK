@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedPolyDataIds.cxx
+  Module:    $RCSfile: vtkExtractSelectedPolyDataIds.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkSelection.h"
 #include "vtkSelectionNode.h"
 
+vtkCxxRevisionMacro(vtkExtractSelectedPolyDataIds, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkExtractSelectedPolyDataIds);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParallelCoordinatesInteractorStyle.h
+  Module:    $RCSfile: vtkParallelCoordinatesInteractorStyle.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class VTK_RENDERING_EXPORT vtkParallelCoordinatesInteractorStyle : public vtkInt
 {
 public:
   static vtkParallelCoordinatesInteractorStyle *New();
-  vtkTypeMacro(vtkParallelCoordinatesInteractorStyle, vtkInteractorStyleTrackballCamera);
+  vtkTypeRevisionMacro(vtkParallelCoordinatesInteractorStyle, vtkInteractorStyleTrackballCamera);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

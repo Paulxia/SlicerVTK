@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOBBTree.h
+  Module:    $RCSfile: vtkOBBTree.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -76,7 +76,7 @@ public:
 class VTK_GRAPHICS_EXPORT vtkOBBTree : public vtkAbstractCellLocator
 {
 public:
-  vtkTypeMacro(vtkOBBTree,vtkAbstractCellLocator);
+  vtkTypeRevisionMacro(vtkOBBTree,vtkAbstractCellLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

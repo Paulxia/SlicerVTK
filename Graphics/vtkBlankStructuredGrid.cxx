@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBlankStructuredGrid.cxx
+  Module:    $RCSfile: vtkBlankStructuredGrid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStructuredGrid.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkBlankStructuredGrid, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkBlankStructuredGrid);
 
 // Construct object to extract all of the input data.

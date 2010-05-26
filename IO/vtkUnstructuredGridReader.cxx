@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridReader.cxx
+  Module:    $RCSfile: vtkUnstructuredGridReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridReader, "$Revision: 1.71 $");
 vtkStandardNewMacro(vtkUnstructuredGridReader);
 
 #ifdef read

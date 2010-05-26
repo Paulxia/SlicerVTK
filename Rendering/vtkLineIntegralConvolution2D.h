@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLineIntegralConvolution2D.h
+  Module:    $RCSfile: vtkLineIntegralConvolution2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -86,7 +86,7 @@ class VTK_RENDERING_EXPORT vtkLineIntegralConvolution2D : public vtkObject
 public:
 
   static vtkLineIntegralConvolution2D * New();
-  vtkTypeMacro( vtkLineIntegralConvolution2D, vtkObject );
+  vtkTypeRevisionMacro( vtkLineIntegralConvolution2D, vtkObject );
   void PrintSelf( ostream & os, vtkIndent indent );
   
   // Description:

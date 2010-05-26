@@ -121,7 +121,7 @@ class VTK_HYBRID_EXPORT vtkExodusIICache : public vtkObject
 {
 public:
   static vtkExodusIICache* New();
-  vtkTypeMacro(vtkExodusIICache,vtkObject);
+  vtkTypeRevisionMacro(vtkExodusIICache,vtkObject);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   /// Empty the cache

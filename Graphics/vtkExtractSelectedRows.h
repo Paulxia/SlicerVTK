@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedRows.h
+  Module:    $RCSfile: vtkExtractSelectedRows.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkExtractSelectedRows : public vtkTableAlgorithm
 {
 public:
   static vtkExtractSelectedRows* New();
-  vtkTypeMacro(vtkExtractSelectedRows,vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractSelectedRows,vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

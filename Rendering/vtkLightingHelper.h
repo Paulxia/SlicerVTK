@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLightingHelper.h
+  Module:    $RCSfile: vtkLightingHelper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_RENDERING_EXPORT vtkLightingHelper : public vtkObject
 {
 public:
   static vtkLightingHelper* New();
-  vtkTypeMacro(vtkLightingHelper, vtkObject);
+  vtkTypeRevisionMacro(vtkLightingHelper, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

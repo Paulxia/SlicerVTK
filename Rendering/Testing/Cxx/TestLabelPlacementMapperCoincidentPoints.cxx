@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestLabelPlacementMapperCoincidentPoints.cxx
+  Module:    $RCSfile: TestLabelPlacementMapperCoincidentPoints.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

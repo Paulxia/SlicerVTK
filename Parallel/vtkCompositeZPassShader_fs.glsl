@@ -1,7 +1,7 @@
 // ============================================================================
 //
 //  Program:   Visualization Toolkit
-//  Module:    vtkCompositeZPassShader_fs.glsl
+//  Module:    $RCSfile: vtkCompositeZPassShader_fs.glsl,v $
 //
 //  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 //  All rights reserved.

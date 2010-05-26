@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPropCollection.h
+  Module:    $RCSfile: vtkPropCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_COMMON_EXPORT vtkPropCollection : public vtkCollection
 {
  public:
   static vtkPropCollection *New();
-  vtkTypeMacro(vtkPropCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkPropCollection,vtkCollection);
 
   // Description:
   // Add an Prop to the list.

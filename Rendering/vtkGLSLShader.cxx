@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGLSLShader.cxx
+  Module:    $RCSfile: vtkGLSLShader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -170,6 +170,7 @@ static void printAttributeInfo(GLuint program,
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkGLSLShader);
+vtkCxxRevisionMacro(vtkGLSLShader, "$Revision: 1.13 $");
 
 //-----------------------------------------------------------------------------
 vtkGLSLShader::vtkGLSLShader()

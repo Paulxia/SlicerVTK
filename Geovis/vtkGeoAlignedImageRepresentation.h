@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoAlignedImageRepresentation.h
+  Module:    $RCSfile: vtkGeoAlignedImageRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_GEOVIS_EXPORT vtkGeoAlignedImageRepresentation : public vtkDataReprese
 {
 public:
   static vtkGeoAlignedImageRepresentation *New();
-  vtkTypeMacro(vtkGeoAlignedImageRepresentation,vtkDataRepresentation);
+  vtkTypeRevisionMacro(vtkGeoAlignedImageRepresentation,vtkDataRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

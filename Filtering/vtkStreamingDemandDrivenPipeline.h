@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStreamingDemandDrivenPipeline.h
+  Module:    $RCSfile: vtkStreamingDemandDrivenPipeline.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_FILTERING_EXPORT vtkStreamingDemandDrivenPipeline : public vtkDemandDr
 {
 public:
   static vtkStreamingDemandDrivenPipeline* New();
-  vtkTypeMacro(vtkStreamingDemandDrivenPipeline,vtkDemandDrivenPipeline);
+  vtkTypeRevisionMacro(vtkStreamingDemandDrivenPipeline,vtkDemandDrivenPipeline);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

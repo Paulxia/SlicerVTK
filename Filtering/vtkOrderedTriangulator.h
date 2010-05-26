@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOrderedTriangulator.h
+  Module:    $RCSfile: vtkOrderedTriangulator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -106,7 +106,7 @@ typedef unsigned long   TemplateIDType;
 class VTK_FILTERING_EXPORT vtkOrderedTriangulator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkOrderedTriangulator,vtkObject);
+  vtkTypeRevisionMacro(vtkOrderedTriangulator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

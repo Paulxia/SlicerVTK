@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellPicker.h
+  Module:    $RCSfile: vtkCellPicker.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class VTK_RENDERING_EXPORT vtkCellPicker : public vtkPicker
 {
 public:
   static vtkCellPicker *New();
-  vtkTypeMacro(vtkCellPicker, vtkPicker);
+  vtkTypeRevisionMacro(vtkCellPicker, vtkPicker);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkYoungsMaterialInterface.h
+  Module:    $RCSfile: vtkYoungsMaterialInterface.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_GRAPHICS_EXPORT vtkYoungsMaterialInterface : public vtkMultiBlockDataS
 {
 public:
   static vtkYoungsMaterialInterface* New();
-  vtkTypeMacro(vtkYoungsMaterialInterface,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkYoungsMaterialInterface,vtkMultiBlockDataSetAlgorithm);          
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

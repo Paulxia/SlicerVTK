@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextItem.cxx
+  Module:    $RCSfile: vtkContextItem.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkObjectFactory.h"
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkContextItem, "$Revision: 1.8 $");
 vtkCxxSetObjectMacro(vtkContextItem, Transform, vtkTransform2D);
 
 //-----------------------------------------------------------------------------
@@ -118,11 +119,6 @@ void vtkContextItem::Translate(float dx, float dy)
     this->Transform = vtkTransform2D::New();
     }
   this->Transform->Translate(dx, dy);
-}
-
-// ----------------------------------------------------------------------------
-void vtkContextItem::ReleaseGraphicsResources()
-{
 }
 
 //-----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlot.h
+  Module:    $RCSfile: vtkPlot.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class vtkVector2f;
 class VTK_CHARTS_EXPORT vtkPlot : public vtkContextItem
 {
 public:
-  vtkTypeMacro(vtkPlot, vtkContextItem);
+  vtkTypeRevisionMacro(vtkPlot, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:
@@ -51,8 +51,6 @@ public:
   virtual bool GetNearestPoint(const vtkVector2f& point,
                                const vtkVector2f& tolerance,
                                vtkVector2f* location);
-
-  virtual bool SelectPoints(const vtkVector2f& min, const vtkVector2f& max);
 //ETX
 
   // Description:
@@ -111,17 +109,12 @@ public:
   void SetInput(vtkTable *table, vtkIdType xColumn, vtkIdType yColumn);
 
   // Description:
-  // Get the input table used by the plot.
-  virtual vtkTable* GetInput();
-
-  // Description:
   // Convenience function to set the input arrays. For most mappers index 0
   // is the x axis, and index 1 is the y axis. The name is the name of the
   // column in the vtkTable.
   virtual void SetInputArray(int index, const char *name);
 
   virtual void SetSelection(vtkIdTypeArray *id);
-  vtkGetObjectMacro(Selection, vtkIdTypeArray);
 
   // Description:
   // Get/set the X axis associated with this plot.

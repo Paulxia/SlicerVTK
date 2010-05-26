@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestPolygonalRepresentationHandleWidget.cxx
+  Module:    $RCSfile: TestPolygonalRepresentationHandleWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

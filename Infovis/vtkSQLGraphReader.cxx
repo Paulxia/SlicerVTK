@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSQLGraphReader.cxx
+  Module:    $RCSfile: vtkSQLGraphReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkTableToGraph.h"
 #include "vtkUndirectedGraph.h"
 
+vtkCxxRevisionMacro(vtkSQLGraphReader, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkSQLGraphReader);
 
 vtkSQLGraphReader::vtkSQLGraphReader()

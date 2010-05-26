@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBalloonRepresentation.cxx
+  Module:    $RCSfile: vtkBalloonRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkInteractorObserver.h"
 
+vtkCxxRevisionMacro(vtkBalloonRepresentation, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkBalloonRepresentation);
 
 vtkCxxSetObjectMacro(vtkBalloonRepresentation, TextProperty, vtkTextProperty);
@@ -215,7 +216,7 @@ void vtkBalloonRepresentation::BuildRepresentation()
     int size[2];
     size[0] = (this->Renderer->GetSize())[0];
     size[1] = (this->Renderer->GetSize())[1];
-    int stringSize[2]; stringSize[0] = stringSize[1] = 0;
+    int stringSize[2]; stringSize[0] = stringSize[0] = 0;
     double imageSize[2]; imageSize[0] = imageSize[1] = 0.0;
     double frameSize[2]; frameSize[0] = frameSize[1] = 0.0;
     double io[2], so[2], fo[2];

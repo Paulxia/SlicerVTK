@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    SimpleView.h
+  Module:    $RCSfile: SimpleView.h,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2009-03-25 13:56:11 $
+  Version:   $Revision: 1.3 $
 
   Copyright 2009 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

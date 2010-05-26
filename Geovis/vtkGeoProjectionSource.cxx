@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoProjectionSource.cxx
+  Module:    $RCSfile: vtkGeoProjectionSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -86,6 +86,7 @@
 
 
 vtkStandardNewMacro(vtkGeoProjectionSource);
+vtkCxxRevisionMacro(vtkGeoProjectionSource, "$Revision: 1.12 $");
 vtkCxxSetObjectMacro(vtkGeoProjectionSource, Transform, vtkAbstractTransform);
 //----------------------------------------------------------------------------
 vtkGeoProjectionSource::vtkGeoProjectionSource()

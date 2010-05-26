@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShadowMapPass.cxx
+  Module:    $RCSfile: vtkShadowMapPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -66,6 +66,7 @@
 #include "vtkOpenGLState.h"
 #include "vtkTimerLog.h"
 
+vtkCxxRevisionMacro(vtkShadowMapPass, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkShadowMapPass);
 vtkCxxSetObjectMacro(vtkShadowMapPass,OpaquePass,vtkRenderPass);
 vtkCxxSetObjectMacro(vtkShadowMapPass,CompositeZPass,vtkRenderPass);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLongLongArray.cxx
+  Module:    $RCSfile: vtkLongLongArray.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@ VTK_ARRAY_ITERATOR_TEMPLATE_INSTANTIATE(long long);
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkLongLongArray, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkLongLongArray);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericProbeFilter.cxx
+  Module:    $RCSfile: vtkGenericProbeFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkGenericAttributeCollection.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkGenericProbeFilter, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkGenericProbeFilter);
 
 //----------------------------------------------------------------------------

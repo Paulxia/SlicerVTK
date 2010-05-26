@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyLine.h
+  Module:    $RCSfile: vtkPolyLine.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_FILTERING_EXPORT vtkPolyLine : public vtkCell
 {
 public:
   static vtkPolyLine *New();
-  vtkTypeMacro(vtkPolyLine,vtkCell);
+  vtkTypeRevisionMacro(vtkPolyLine,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

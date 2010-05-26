@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUniformGrid.h
+  Module:    $RCSfile: vtkUniformGrid.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ public:
   // Description:
   // Construct an empty uniform grid.
   static vtkUniformGrid *New();
-  vtkTypeMacro(vtkUniformGrid,vtkImageData);
+  vtkTypeRevisionMacro(vtkUniformGrid,vtkImageData);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayCalculator.cxx
+  Module:    $RCSfile: vtkArrayCalculator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkPolyData.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkArrayCalculator, "$Revision: 1.49.4.1 $");
 vtkStandardNewMacro(vtkArrayCalculator);
 
 vtkArrayCalculator::vtkArrayCalculator()

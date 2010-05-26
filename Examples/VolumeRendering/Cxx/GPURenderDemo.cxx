@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    GPURenderDemo.cxx
+  Module:    $RCSfile: GPURenderDemo.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,10 +30,12 @@
 #include "vtkVolume.h"
 #include "vtkVolumeProperty.h"
 #include "vtkXMLImageDataReader.h"
-#include "vtkSmartVolumeMapper.h"
+#include "vtkGPUVolumeRayCastMapper.h"
 
 #define VTI_FILETYPE 1
 #define MHA_FILETYPE 2
+
+// FB: comment for testing svn
 
 // Callback for moving the planes from the box widget to the mapper
 class vtkBoxWidgetCallback : public vtkCommand
@@ -52,14 +54,14 @@ public:
         planes->Delete();
         }
     }
-  void SetMapper(vtkSmartVolumeMapper* m) 
+  void SetMapper(vtkGPUVolumeRayCastMapper* m) 
     { this->Mapper = m; }
 
 protected:
   vtkBoxWidgetCallback() 
     { this->Mapper = 0; }
 
-  vtkSmartVolumeMapper *Mapper;
+  vtkGPUVolumeRayCastMapper *Mapper;
 };
 
 void PrintUsage()
@@ -314,7 +316,7 @@ int main(int argc, char *argv[])
   
   // Create our volume and mapper
   vtkVolume *volume = vtkVolume::New();
-  vtkSmartVolumeMapper *mapper = vtkSmartVolumeMapper::New();
+  vtkGPUVolumeRayCastMapper *mapper = vtkGPUVolumeRayCastMapper::New();
   
   // Add a box widget if the clip option was selected
   vtkBoxWidget *box = vtkBoxWidget::New();
@@ -519,6 +521,13 @@ int main(int argc, char *argv[])
   // Set the default window size
   renWin->SetSize(600,600);
   renWin->Render();
+
+  if ( !mapper->IsRenderSupported(renWin, property) )
+    {
+      cout << "This mapper is unsupported on this platform" << endl;
+      exit(EXIT_FAILURE);
+    }
+  
 
   // Add the volume to the scene
   renderer->AddVolume( volume );

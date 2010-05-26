@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPolyDataReader.h
+  Module:    $RCSfile: vtkXMLPolyDataReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkPolyData;
 class VTK_IO_EXPORT vtkXMLPolyDataReader : public vtkXMLUnstructuredDataReader
 {
 public:
-  vtkTypeMacro(vtkXMLPolyDataReader,vtkXMLUnstructuredDataReader);
+  vtkTypeRevisionMacro(vtkXMLPolyDataReader,vtkXMLUnstructuredDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);  
   static vtkXMLPolyDataReader *New();
   

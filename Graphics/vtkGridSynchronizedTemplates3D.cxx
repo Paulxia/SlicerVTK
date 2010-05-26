@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGridSynchronizedTemplates3D.cxx
+  Module:    $RCSfile: vtkGridSynchronizedTemplates3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkGridSynchronizedTemplates3D, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkGridSynchronizedTemplates3D);
 
 //----------------------------------------------------------------------------

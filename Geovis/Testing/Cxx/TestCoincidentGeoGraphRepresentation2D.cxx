@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestCoincidentGeoGraphRepresentation2D.cxx
+  Module:    $RCSfile: TestCoincidentGeoGraphRepresentation2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

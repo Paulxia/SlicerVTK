@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShrinkPolyData.cxx
+  Module:    $RCSfile: vtkShrinkPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkShrinkPolyData, "$Revision: 1.69 $");
 vtkStandardNewMacro(vtkShrinkPolyData);
 
 vtkShrinkPolyData::vtkShrinkPolyData(double sf)

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLinearTransform.cxx
+  Module:    $RCSfile: vtkLinearTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkMatrix4x4.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkLinearTransform, "$Revision: 1.35 $");
 
 //------------------------------------------------------------------------
 void vtkLinearTransform::PrintSelf(ostream& os, vtkIndent indent)

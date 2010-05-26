@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericClip.cxx
+  Module:    $RCSfile: vtkGenericClip.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkGenericClip, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkGenericClip);
 vtkCxxSetObjectMacro(vtkGenericClip,ClipFunction,vtkImplicitFunction);
 vtkCxxSetObjectMacro(vtkGenericClip,Locator,vtkIncrementalPointLocator);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSQLDatabaseGraphSource.cxx
+  Module:    $RCSfile: vtkSQLDatabaseGraphSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -78,6 +78,7 @@ public:
   vtkTableToGraph* TableToGraph;
 };
 
+vtkCxxRevisionMacro(vtkSQLDatabaseGraphSource, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkSQLDatabaseGraphSource);
 
 //---------------------------------------------------------------------------

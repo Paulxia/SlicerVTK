@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBrownianPoints.cxx
+  Module:    $RCSfile: vtkBrownianPoints.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkBrownianPoints, "$Revision: 1.43 $");
 vtkStandardNewMacro(vtkBrownianPoints);
 
 vtkBrownianPoints::vtkBrownianPoints()

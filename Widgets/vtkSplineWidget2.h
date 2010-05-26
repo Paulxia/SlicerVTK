@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineWidget2.h
+  Module:    $RCSfile: vtkSplineWidget2.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_WIDGETS_EXPORT vtkSplineWidget2 : public vtkAbstractWidget
 {
 public:
   static vtkSplineWidget2* New();
-  vtkTypeMacro(vtkSplineWidget2, vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkSplineWidget2, vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

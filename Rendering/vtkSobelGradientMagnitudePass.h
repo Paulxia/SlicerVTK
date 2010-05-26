@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSobelGradientMagnitudePass.h
+  Module:    $RCSfile: vtkSobelGradientMagnitudePass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -69,7 +69,7 @@ class VTK_RENDERING_EXPORT vtkSobelGradientMagnitudePass : public vtkImageProces
 {
 public:
   static vtkSobelGradientMagnitudePass *New();
-  vtkTypeMacro(vtkSobelGradientMagnitudePass,vtkImageProcessingPass);
+  vtkTypeRevisionMacro(vtkSobelGradientMagnitudePass,vtkImageProcessingPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

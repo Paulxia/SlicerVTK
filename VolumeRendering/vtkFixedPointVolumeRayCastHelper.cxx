@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFixedPointVolumeRayCastHelper.cxx
+  Module:    $RCSfile: vtkFixedPointVolumeRayCastHelper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkFixedPointVolumeRayCastHelper, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkFixedPointVolumeRayCastHelper);
 
 vtkFixedPointVolumeRayCastHelper::vtkFixedPointVolumeRayCastHelper()

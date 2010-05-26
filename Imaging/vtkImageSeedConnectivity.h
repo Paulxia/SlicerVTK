@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSeedConnectivity.h
+  Module:    $RCSfile: vtkImageSeedConnectivity.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_IMAGING_EXPORT vtkImageSeedConnectivity : public vtkImageAlgorithm
 {
 public:
   static vtkImageSeedConnectivity *New();
-  vtkTypeMacro(vtkImageSeedConnectivity,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageSeedConnectivity,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitFunction.cxx
+  Module:    $RCSfile: vtkImplicitFunction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkAbstractTransform.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkImplicitFunction, "$Revision: 1.38 $");
 vtkCxxSetObjectMacro(vtkImplicitFunction,Transform,vtkAbstractTransform);
 
 vtkImplicitFunction::vtkImplicitFunction()

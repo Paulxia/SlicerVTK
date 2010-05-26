@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPNrrdReader.cxx
+  Module:    $RCSfile: vtkPNrrdReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -195,6 +195,7 @@ static int NrrdType2VTKType(vtkstd::string nrrdType)
 }
 
 //=============================================================================
+vtkCxxRevisionMacro(vtkPNrrdReader, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPNrrdReader);
 
 //-----------------------------------------------------------------------------

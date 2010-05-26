@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProcessGroup.h
+  Module:    $RCSfile: vtkProcessGroup.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkCommunicator;
 class VTK_PARALLEL_EXPORT vtkProcessGroup : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkProcessGroup, vtkObject);
+  vtkTypeRevisionMacro(vtkProcessGroup, vtkObject);
   static vtkProcessGroup *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

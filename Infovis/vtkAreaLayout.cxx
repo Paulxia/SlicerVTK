@@ -1,7 +1,7 @@
 /*=========================================================================
   
   Program:   Visualization Toolkit
-  Module:    vtkAreaLayout.cxx
+  Module:    $RCSfile: vtkAreaLayout.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkTreeFieldAggregator.h"
 #include "vtkTreeDFSIterator.h"
 
+vtkCxxRevisionMacro(vtkAreaLayout, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkAreaLayout);
 vtkCxxSetObjectMacro(vtkAreaLayout, LayoutStrategy, vtkAreaLayoutStrategy);
 

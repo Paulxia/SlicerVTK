@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLCamera.cxx
+  Module:    $RCSfile: vtkOpenGLCamera.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include <math.h>
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLCamera, "$Revision: 1.70 $");
 vtkStandardNewMacro(vtkOpenGLCamera);
 #endif
 

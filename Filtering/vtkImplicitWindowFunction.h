@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitWindowFunction.h
+  Module:    $RCSfile: vtkImplicitWindowFunction.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@
 class VTK_FILTERING_EXPORT vtkImplicitWindowFunction : public vtkImplicitFunction
 {
 public:
-  vtkTypeMacro(vtkImplicitWindowFunction,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkImplicitWindowFunction,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

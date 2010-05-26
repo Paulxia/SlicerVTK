@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCgShaderProgram.cxx
+  Module:    $RCSfile: vtkCgShaderProgram.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkXMLMaterialReader.h"
 
 
+vtkCxxRevisionMacro(vtkCgShaderProgram, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkCgShaderProgram);
 
 //----------------------------------------------------------------------------

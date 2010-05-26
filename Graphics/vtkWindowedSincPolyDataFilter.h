@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWindowedSincPolyDataFilter.h
+  Module:    $RCSfile: vtkWindowedSincPolyDataFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -142,7 +142,7 @@
 class VTK_GRAPHICS_EXPORT vtkWindowedSincPolyDataFilter : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkWindowedSincPolyDataFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkWindowedSincPolyDataFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

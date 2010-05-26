@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMedicalImageReader2.cxx
+  Module:    $RCSfile: vtkMedicalImageReader2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkMedicalImageProperties.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkMedicalImageReader2, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkMedicalImageReader2);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParallelCoordinatesActor.h
+  Module:    $RCSfile: vtkParallelCoordinatesActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -70,7 +70,7 @@ class vtkTextProperty;
 class VTK_RENDERING_EXPORT vtkParallelCoordinatesActor : public vtkActor2D
 {
 public:
-  vtkTypeMacro(vtkParallelCoordinatesActor,vtkActor2D);
+  vtkTypeRevisionMacro(vtkParallelCoordinatesActor,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

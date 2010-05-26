@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPOPReader.cxx
+  Module:    $RCSfile: vtkPOPReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include <ctype.h>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkPOPReader, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkPOPReader);
 
 //----------------------------------------------------------------------------

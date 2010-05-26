@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderedSurfaceRepresentation.cxx
+  Module:    $RCSfile: vtkRenderedSurfaceRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,6 +43,7 @@
 #include "vtkTransformFilter.h"
 #include "vtkViewTheme.h"
 
+vtkCxxRevisionMacro(vtkRenderedSurfaceRepresentation, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkRenderedSurfaceRepresentation);
 //----------------------------------------------------------------------------
 vtkRenderedSurfaceRepresentation::vtkRenderedSurfaceRepresentation()

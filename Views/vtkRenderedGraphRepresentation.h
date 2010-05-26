@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderedGraphRepresentation.h
+  Module:    $RCSfile: vtkRenderedGraphRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,7 +62,7 @@ class VTK_VIEWS_EXPORT vtkRenderedGraphRepresentation : public vtkRenderedRepres
 {
 public:
   static vtkRenderedGraphRepresentation* New();
-  vtkTypeMacro(vtkRenderedGraphRepresentation, vtkRenderedRepresentation);
+  vtkTypeRevisionMacro(vtkRenderedGraphRepresentation, vtkRenderedRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // ------------------------------------------------------------------------

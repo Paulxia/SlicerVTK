@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExpandSelectedGraph.h
+  Module:    $RCSfile: vtkExpandSelectedGraph.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_INFOVIS_EXPORT vtkExpandSelectedGraph : public vtkSelectionAlgorithm
 {
 public:
   static vtkExpandSelectedGraph* New();
-  vtkTypeMacro(vtkExpandSelectedGraph,vtkSelectionAlgorithm);
+  vtkTypeRevisionMacro(vtkExpandSelectedGraph,vtkSelectionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

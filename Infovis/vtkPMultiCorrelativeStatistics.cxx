@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPMultiCorrelativeStatistics.cxx
+  Module:    $RCSfile: vtkPMultiCorrelativeStatistics.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include <vtkstd/map>
 
 vtkStandardNewMacro(vtkPMultiCorrelativeStatistics);
+vtkCxxRevisionMacro(vtkPMultiCorrelativeStatistics, "$Revision: 1.13 $");
 vtkCxxSetObjectMacro(vtkPMultiCorrelativeStatistics, Controller, vtkMultiProcessController);
 //-----------------------------------------------------------------------------
 vtkPMultiCorrelativeStatistics::vtkPMultiCorrelativeStatistics()
@@ -52,8 +53,9 @@ void vtkPMultiCorrelativeStatistics::PrintSelf(ostream& os, vtkIndent indent)
 // ----------------------------------------------------------------------
 void vtkPMultiCorrelativeStatistics::Learn( vtkTable* inData,
                                             vtkTable* inParameters,
-                                            vtkMultiBlockDataSet* outMeta )
+                                            vtkDataObject* outMetaDO )
 {
+  vtkMultiBlockDataSet* outMeta = vtkMultiBlockDataSet::SafeDownCast( outMetaDO );
   if ( ! outMeta )
     {
     return;

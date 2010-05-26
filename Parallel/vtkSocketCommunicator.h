@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSocketCommunicator.h
+  Module:    $RCSfile: vtkSocketCommunicator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class VTK_PARALLEL_EXPORT vtkSocketCommunicator : public vtkCommunicator
 {
 public:
   static vtkSocketCommunicator *New();
-  vtkTypeMacro(vtkSocketCommunicator,vtkCommunicator);
+  vtkTypeRevisionMacro(vtkSocketCommunicator,vtkCommunicator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

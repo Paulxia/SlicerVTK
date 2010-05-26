@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVectorNorm.h
+  Module:    $RCSfile: vtkVectorNorm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@
 class VTK_GRAPHICS_EXPORT vtkVectorNorm : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkVectorNorm,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkVectorNorm,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

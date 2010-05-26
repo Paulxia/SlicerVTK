@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumePicker.cxx
+  Module:    $RCSfile: vtkVolumePicker.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkVolume.h"
 #include "vtkVolumeMapper.h"
 
+vtkCxxRevisionMacro(vtkVolumePicker, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkVolumePicker);
 
 //----------------------------------------------------------------------------

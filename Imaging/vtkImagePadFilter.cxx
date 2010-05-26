@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImagePadFilter.cxx
+  Module:    $RCSfile: vtkImagePadFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkDataSetAttributes.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImagePadFilter, "$Revision: 1.34 $");
 vtkStandardNewMacro(vtkImagePadFilter);
 
 //----------------------------------------------------------------------------

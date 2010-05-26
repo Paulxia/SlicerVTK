@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPCosmoReader.cxx
+  Module:    $RCSfile: vtkPCosmoReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,7 +15,7 @@
 /*=========================================================================
 
   Program:   VTK/ParaView Los Alamos National Laboratory Modules (PVLANL)
-  Module:    vtkPCosmoReader.cxx
+  Module:    $RCSfile: vtkPCosmoReader.cxx,v $
 
 Copyright (c) 2009 Los Alamos National Security, LLC
 
@@ -86,6 +86,7 @@ using namespace vtkstd;
 #include "ParticleExchange.h"
 #include "ParticleDistribute.h"
 
+vtkCxxRevisionMacro(vtkPCosmoReader, "$Revision: 1.7.4.3 $");
 vtkStandardNewMacro(vtkPCosmoReader);
 
 //----------------------------------------------------------------------------

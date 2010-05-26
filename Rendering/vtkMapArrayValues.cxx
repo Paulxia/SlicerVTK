@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMapArrayValues.cxx
+  Module:    $RCSfile: vtkMapArrayValues.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include <vtkstd/map>
 #include <vtkstd/utility>
 
+vtkCxxRevisionMacro(vtkMapArrayValues, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMapArrayValues);
 
 typedef vtkstd::map< vtkVariant, vtkVariant, vtkVariantLessThan > MapBase;

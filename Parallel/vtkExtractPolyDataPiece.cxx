@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractPolyDataPiece.cxx
+  Module:    $RCSfile: vtkExtractPolyDataPiece.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkExtractPolyDataPiece, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkExtractPolyDataPiece);
 
 //=============================================================================

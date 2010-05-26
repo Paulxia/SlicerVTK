@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkContingencyStatistics.cxx
+Module:    $RCSfile: vtkContingencyStatistics.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -47,6 +47,7 @@ PURPOSE.  See the above copyright notice for more information.
 typedef vtksys_stl::map<vtkStdString,vtkIdType> Counts;
 typedef vtksys_stl::map<vtkStdString,double> PDF;
 
+vtkCxxRevisionMacro(vtkContingencyStatistics, "$Revision: 1.79 $");
 vtkStandardNewMacro(vtkContingencyStatistics);
 
 // ----------------------------------------------------------------------
@@ -78,15 +79,46 @@ void vtkContingencyStatistics::PrintSelf( ostream &os, vtkIndent indent )
 }
 
 // ----------------------------------------------------------------------
-void vtkContingencyStatistics::Learn( vtkTable* inData,
-                                      vtkTable* vtkNotUsed( inParameters ),
-                                      vtkMultiBlockDataSet* outMeta )
+int vtkContingencyStatistics::FillInputPortInformation( int port, vtkInformation* info )
 {
-  if ( ! inData )
+  int res; 
+  if ( port == INPUT_MODEL )
     {
-    return;
+    info->Set( vtkAlgorithm::INPUT_IS_OPTIONAL(), 1 );
+    info->Set( vtkAlgorithm::INPUT_REQUIRED_DATA_TYPE(), "vtkMultiBlockDataSet" );
+
+    res = 1;
+    }
+  else
+    {
+    res = this->Superclass::FillInputPortInformation( port, info );
     }
 
+  return res;
+}
+
+// ----------------------------------------------------------------------
+int vtkContingencyStatistics::FillOutputPortInformation( int port, vtkInformation* info )
+{
+  int res = this->Superclass::FillOutputPortInformation( port, info );
+  if ( port == OUTPUT_MODEL )
+    {
+    info->Set( vtkDataObject::DATA_TYPE_NAME(), "vtkMultiBlockDataSet" );
+    }
+  else if ( port == OUTPUT_TEST )
+    {
+    info->Set( vtkDataObject::DATA_TYPE_NAME(), "vtkTable" );
+    }
+  
+  return res;
+}
+
+// ----------------------------------------------------------------------
+void vtkContingencyStatistics::Learn( vtkTable* inData,
+                                      vtkTable* vtkNotUsed( inParameters ),
+                                      vtkDataObject* outMetaDO )
+{
+  vtkMultiBlockDataSet* outMeta = vtkMultiBlockDataSet::SafeDownCast( outMetaDO );
   if ( ! outMeta )
     {
     return;
@@ -128,6 +160,17 @@ void vtkContingencyStatistics::Learn( vtkTable* inData,
   contingencyTab->AddColumn( idTypeCol );
   idTypeCol->Delete();
 
+  vtkIdType n = inData->GetNumberOfRows();
+  if ( n <= 0 )
+    {
+    return;
+    }
+
+  if ( inData->GetNumberOfColumns() <= 0 )
+    {
+    return;
+    }
+
   // Row to be used to insert into summary and table
   vtkVariantArray* row2 = vtkVariantArray::New();
   row2->SetNumberOfValues( 2 );
@@ -152,7 +195,6 @@ void vtkContingencyStatistics::Learn( vtkTable* inData,
   typedef vtksys_stl::map<vtkStdString,vtkIdType> Distribution;
 
   // Loop over requests
-  vtkIdType nRow = inData->GetNumberOfRows();
   for ( vtksys_stl::set<vtksys_stl::set<vtkStdString> >::const_iterator rit = this->Internals->Requests.begin(); 
         rit != this->Internals->Requests.end(); ++ rit )
     {
@@ -190,7 +232,7 @@ void vtkContingencyStatistics::Learn( vtkTable* inData,
     vtkAbstractArray* valsY = inData->GetColumnByName( colY );
 
     vtksys_stl::map<vtkStdString,Distribution> contingencyTable;
-    for ( vtkIdType r = 0; r < nRow; ++ r )
+    for ( vtkIdType r = 0; r < n; ++ r )
       {
       ++ contingencyTable
         [valsX->GetVariantValue( r ).ToString()]
@@ -223,35 +265,38 @@ void vtkContingencyStatistics::Learn( vtkTable* inData,
   row2->Delete();
   contingencyTab->Delete();
   row4->Delete();
+
+  return;
 }
 
 // ----------------------------------------------------------------------
-void vtkContingencyStatistics::Derive( vtkMultiBlockDataSet* inMeta )
+void vtkContingencyStatistics::Derive( vtkDataObject* inMetaDO )
 {
+  vtkMultiBlockDataSet* inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO );
   if ( ! inMeta || inMeta->GetNumberOfBlocks() < 2 )
     {
     return;
     }
 
-  vtkTable* summaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) );
-  if ( ! summaryTab  )
+  vtkTable* summaryTab;
+  if ( ! ( summaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) ) ) 
+       || summaryTab->GetNumberOfColumns() < 2 )
     {
     return;
     }
 
-  vtkTable* contingencyTab = vtkTable::SafeDownCast( inMeta->GetBlock( 1 ) );
-  if ( ! contingencyTab )
+  vtkIdType nRowSumm = summaryTab->GetNumberOfRows();
+  if ( nRowSumm <= 0 )
     {
     return;
     }
 
+  // Add columns for joint and conditional probabilities
   int nEntropy = 3;
   vtkStdString entropyNames[] = { "H(X,Y)",
                                   "H(Y|X)",
                                   "H(X|Y)" };
   
-  // Create table for derived meta statistics
-  vtkIdType nRowSumm = summaryTab->GetNumberOfRows();
   vtkDoubleArray* doubleCol;
   for ( int j = 0; j < nEntropy; ++ j )
     {
@@ -265,14 +310,26 @@ void vtkContingencyStatistics::Derive( vtkMultiBlockDataSet* inMeta )
       }
     }
 
-  // Create table for derived statistics
+  vtkTable* contingencyTab;
+  if ( ! ( contingencyTab = vtkTable::SafeDownCast( inMeta->GetBlock( 1 ) ) )
+       || contingencyTab->GetNumberOfColumns() < 4 )
+    {
+    return;
+    }
+
+  vtkIdType nRowCont = contingencyTab->GetNumberOfRows();
+  if ( nRowCont <= 0 )
+    {
+    return;
+    }
+
+  // Add columns for joint and conditional probabilities
   int nDerivedVals = 4;
   vtkStdString derivedNames[] = { "P",
                                   "Py|x",
                                   "Px|y",
                                   "PMI" };
   
-  vtkIdType nRowCont = contingencyTab->GetNumberOfRows();
   for ( int j = 0; j < nDerivedVals; ++ j )
     {
     if ( ! contingencyTab->GetColumnByName( derivedNames[j] ) )
@@ -558,21 +615,35 @@ public:
 
 // ----------------------------------------------------------------------
 void vtkContingencyStatistics::Assess( vtkTable* inData,
-                                       vtkMultiBlockDataSet* inMeta,
+                                       vtkDataObject* inMetaDO,
                                        vtkTable* outData )
 {
-  if ( ! inData )
+  if ( ! inData || inData->GetNumberOfColumns() <= 0 )
     {
     return;
     }
 
-  if ( ! inMeta )
+  vtkIdType nRowData = inData->GetNumberOfRows();
+  if ( nRowData <= 0 )
     {
     return;
     }
 
-  vtkTable* summaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) );
-  if ( ! summaryTab )
+  vtkMultiBlockDataSet* inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO );
+  if ( ! inMeta || inMeta->GetNumberOfBlocks() < 2 )
+    {
+    return;
+    }
+
+  vtkTable* summaryTab;
+  if ( ! ( summaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) ) ) 
+       || summaryTab->GetNumberOfColumns() < 2 )
+    {
+    return;
+    }
+
+  vtkIdType nRowSumm = summaryTab->GetNumberOfRows();
+  if ( nRowSumm <= 0 )
     {
     return;
     }
@@ -582,8 +653,6 @@ void vtkContingencyStatistics::Assess( vtkTable* inData,
   vtkStringArray* varY = vtkStringArray::SafeDownCast( summaryTab->GetColumnByName( "Variable Y" ) );
 
   // Loop over requests
-  vtkIdType nRowSumm = summaryTab->GetNumberOfRows();
-  vtkIdType nRowData = inData->GetNumberOfRows();
   for ( vtksys_stl::set<vtksys_stl::set<vtkStdString> >::const_iterator rit = this->Internals->Requests.begin(); 
         rit != this->Internals->Requests.end(); ++ rit )
     {
@@ -698,32 +767,54 @@ void vtkContingencyStatistics::Assess( vtkTable* inData,
 
 // ----------------------------------------------------------------------
 void vtkContingencyStatistics::Test( vtkTable* inData,
-                                     vtkMultiBlockDataSet* inMeta,
-                                     vtkTable* outMeta )
+                                     vtkDataObject* inMetaDO,
+                                     vtkDataObject* outMetaDO )
 {
-  if ( ! inMeta )
-    {
-    return;
-    }
-
-  vtkTable* summaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) );
-  if ( ! summaryTab )
-    {
-    return;
-    }
-
-  vtkTable* contingencyTab = vtkTable::SafeDownCast( inMeta->GetBlock( 1 ) );
-  if ( ! contingencyTab  )
-    {
-    return;
-    }
-
+  vtkTable* outMeta = vtkTable::SafeDownCast( outMetaDO );
   if ( ! outMeta )
     {
     return;
     }
 
-  if ( ! inData )
+  if ( ! inData || inData->GetNumberOfColumns() <= 0 )
+    {
+    return;
+    }
+
+  vtkIdType nRowData = inData->GetNumberOfRows();
+  if ( nRowData <= 0 )
+    {
+    return;
+    }
+
+  vtkMultiBlockDataSet* inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO );
+  if ( ! inMeta || inMeta->GetNumberOfBlocks() < 4 ) // We need at least 2 marginal PDFs in addition to the contingency table
+    {
+    return;
+    }
+
+  vtkTable* summaryTab;
+  if ( ! ( summaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) ) ) 
+       || summaryTab->GetNumberOfColumns() < 2 )
+    {
+    return;
+    }
+
+  vtkIdType nRowSumm = summaryTab->GetNumberOfRows();
+  if ( nRowSumm <= 0 )
+    {
+    return;
+    }
+
+  vtkTable* contingencyTab;
+  if ( ! ( contingencyTab = vtkTable::SafeDownCast( inMeta->GetBlock( 1 ) ) )
+       || contingencyTab->GetNumberOfColumns() < 7 )
+    {
+    return;
+    }
+
+  vtkIdType nRowCont = contingencyTab->GetNumberOfRows();
+  if ( nRowCont <= 0 )
     {
     return;
     }
@@ -757,8 +848,6 @@ void vtkContingencyStatistics::Test( vtkTable* inData,
   vtkIdTypeArray* card = vtkIdTypeArray::SafeDownCast( contingencyTab->GetColumnByName( "Cardinality" ) );
 
   // Loop over requests
-  vtkIdType nRowSumm = summaryTab->GetNumberOfRows();
-  vtkIdType nRowCont = contingencyTab->GetNumberOfRows();
   for ( vtksys_stl::set<vtksys_stl::set<vtkStdString> >::const_iterator rit = this->Internals->Requests.begin(); 
         rit != this->Internals->Requests.end(); ++ rit )
     {
@@ -1049,8 +1138,15 @@ void vtkContingencyStatistics::SelectAssessFunctor( vtkTable* outData,
                                                     vtkStringArray* rowNames,
                                                     AssessFunctor*& dfunc )
 {
-  vtkTable* contingencyTab = vtkTable::SafeDownCast( inMeta->GetBlock( 1 ) );
-  if ( ! contingencyTab  )
+  vtkTable* contingencyTab;
+  if ( ! ( contingencyTab = vtkTable::SafeDownCast( inMeta->GetBlock( 1 ) ) )
+       || contingencyTab->GetNumberOfColumns() < 7 )
+    {
+    return;
+    }
+
+  vtkIdType nRowCont = contingencyTab->GetNumberOfRows();
+  if ( nRowCont <= 0 )
     {
     return;
     }
@@ -1095,7 +1191,6 @@ void vtkContingencyStatistics::SelectAssessFunctor( vtkTable* outData,
   double cdf = 0.;
 
   // Loop over parameters table until the requested variables are found 
-  vtkIdType nRowCont = contingencyTab->GetNumberOfRows();
   vtkStdString x, y;
   vtkIdType key;
   double v;

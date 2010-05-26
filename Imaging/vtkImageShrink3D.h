@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageShrink3D.h
+  Module:    $RCSfile: vtkImageShrink3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_IMAGING_EXPORT vtkImageShrink3D : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageShrink3D *New();
-  vtkTypeMacro(vtkImageShrink3D,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageShrink3D,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

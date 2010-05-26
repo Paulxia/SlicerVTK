@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkReverseSense.h
+  Module:    $RCSfile: vtkReverseSense.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@
 class VTK_GRAPHICS_EXPORT vtkReverseSense : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkReverseSense,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkReverseSense,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

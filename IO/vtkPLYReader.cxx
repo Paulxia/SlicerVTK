@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPLYReader.cxx
+  Module:    $RCSfile: vtkPLYReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include <ctype.h>
 #include <stddef.h>
 
+vtkCxxRevisionMacro(vtkPLYReader, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkPLYReader);
 
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericCutter.h
+  Module:    $RCSfile: vtkGenericCutter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,7 +56,7 @@ class vtkCellData;
 class VTK_GENERIC_FILTERING_EXPORT vtkGenericCutter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkGenericCutter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGenericCutter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

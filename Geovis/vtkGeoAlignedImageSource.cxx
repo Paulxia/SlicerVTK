@@ -1,7 +1,7 @@
 /*=============================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoAlignedImageSource.cxx
+  Module:    $RCSfile: vtkGeoAlignedImageSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkGeoAlignedImageSource, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkGeoAlignedImageSource);
 vtkCxxSetObjectMacro(vtkGeoAlignedImageSource, Image, vtkImageData);
 

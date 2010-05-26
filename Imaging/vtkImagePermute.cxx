@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImagePermute.cxx
+  Module:    $RCSfile: vtkImagePermute.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkImagePermute.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImagePermute, "$Revision: 1.32 $");
 vtkStandardNewMacro(vtkImagePermute);
 
 vtkImagePermute::vtkImagePermute()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtLineChartView.cxx
+  Module:    $RCSfile: vtkQtLineChartView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtLineChartView, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkQtLineChartView);
 
 //----------------------------------------------------------------------------

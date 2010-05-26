@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridSource.h
+  Module:    $RCSfile: vtkRectilinearGridSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class vtkRectilinearGrid;
 class VTK_FILTERING_EXPORT vtkRectilinearGridSource : public vtkSource
 {
 public:
-  vtkTypeMacro(vtkRectilinearGridSource,vtkSource);
+  vtkTypeRevisionMacro(vtkRectilinearGridSource,vtkSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageQuantizeRGBToIndex.cxx
+  Module:    $RCSfile: vtkImageQuantizeRGBToIndex.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageQuantizeRGBToIndex, "$Revision: 1.45 $");
 vtkStandardNewMacro(vtkImageQuantizeRGBToIndex);
 
 class vtkColorQuantizeNode

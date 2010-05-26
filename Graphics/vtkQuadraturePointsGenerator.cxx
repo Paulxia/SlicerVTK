@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraturePointsGenerator.cxx
+  Module:    $RCSfile: vtkQuadraturePointsGenerator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@ using vtksys_ios::ostringstream;
 
 
 
+vtkCxxRevisionMacro(vtkQuadraturePointsGenerator, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkQuadraturePointsGenerator);
 
 //-----------------------------------------------------------------------------
@@ -115,7 +116,7 @@ int vtkQuadraturePointsGenerator::GenerateField(vtkUnstructuredGrid *usgIn,
   vtkIdType cellId;
   vtkIdType ncell = usgIn->GetNumberOfCells();
   int cellType;
-  // first loop through all cells to check if a shallow copy is possible
+  // first lopp through all cells to check if a shallow copyy is possible
   bool shallowok = true;
   vtkIdType previous = -1;
 
@@ -129,14 +130,7 @@ int vtkQuadraturePointsGenerator::GenerateField(vtkUnstructuredGrid *usgIn,
       }
     cellType = usgIn->GetCellType(cellId);
 
-    if (dict[cellType] == NULL)
-      {
-      previous = offset;
-      }
-    else
-      {
-      previous = offset + dict[cellType]->GetNumberOfQuadraturePoints();
-      }
+    previous = offset + dict[cellType]->GetNumberOfQuadraturePoints();
     }
   if (previous + 1 != nVerts)
     shallowok = false;
@@ -153,7 +147,6 @@ int vtkQuadraturePointsGenerator::GenerateField(vtkUnstructuredGrid *usgIn,
     vtkDataArray *V_out = data->NewInstance();
     V_out->SetName(data->GetName());
     V_out->SetNumberOfComponents(data->GetNumberOfComponents());
-    V_out->CopyComponentNames( data );
     for (cellId = 0; cellId < ncell; cellId++)
       {
       vtkIdType offset = offsets->GetValue(cellId);

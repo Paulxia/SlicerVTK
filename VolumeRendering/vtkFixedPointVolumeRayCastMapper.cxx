@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFixedPointVolumeRayCastMapper.cxx
+  Module:    $RCSfile: vtkFixedPointVolumeRayCastMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,9 +43,9 @@
 #include "vtkRayCastImageDisplayHelper.h"
 #include "vtkFixedPointRayCastImage.h"
 
-#include <vtkstd/exception>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkFixedPointVolumeRayCastMapper, "$Revision: 1.49 $");
 vtkStandardNewMacro(vtkFixedPointVolumeRayCastMapper); 
 vtkCxxSetObjectMacro(vtkFixedPointVolumeRayCastMapper, RayCastImage, vtkFixedPointRayCastImage);
 
@@ -3079,22 +3079,8 @@ void vtkFixedPointVolumeRayCastMapper::ComputeGradients( vtkVolume *vol )
   
   // first, attempt contiguous memory. If this fails, then go
   // for non-contiguous
-  try
-    {
-    this->ContiguousGradientNormal = new unsigned short [numSlices * sliceSize];
-    }
-  catch(vtkstd::bad_alloc &)
-    {
-    this->ContiguousGradientNormal = NULL;
-    }
-  try
-    {
-    this->ContiguousGradientMagnitude = new unsigned char [numSlices * sliceSize];
-    }
-  catch(vtkstd::bad_alloc &)
-    {
-    this->ContiguousGradientMagnitude = NULL;
-    }
+  this->ContiguousGradientNormal = new unsigned short [numSlices * sliceSize];
+  this->ContiguousGradientMagnitude = new unsigned char [numSlices * sliceSize];
   
   if ( this->ContiguousGradientNormal )
     {

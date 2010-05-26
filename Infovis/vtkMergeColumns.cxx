@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeColumns.cxx
+  Module:    $RCSfile: vtkMergeColumns.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkUnicodeStringArray.h"
 #include "vtkTable.h"
 
+vtkCxxRevisionMacro(vtkMergeColumns, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkMergeColumns);
 
 vtkMergeColumns::vtkMergeColumns()

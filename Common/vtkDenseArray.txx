@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDenseArray.txx
+  Module:    $RCSfile: vtkDenseArray.txx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

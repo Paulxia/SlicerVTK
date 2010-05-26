@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractPiece.h
+  Module:    $RCSfile: vtkExtractPiece.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_PARALLEL_EXPORT vtkExtractPiece : public vtkCompositeDataSetAlgorithm
 {
 public:
   static vtkExtractPiece* New();
-  vtkTypeMacro(vtkExtractPiece, vtkCompositeDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractPiece, vtkCompositeDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
 protected:

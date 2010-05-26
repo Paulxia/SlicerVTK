@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericAdaptorCell.h
+  Module:    $RCSfile: vtkGenericAdaptorCell.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -88,7 +88,7 @@ class vtkPyramid;
 class VTK_FILTERING_EXPORT vtkGenericAdaptorCell : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkGenericAdaptorCell,vtkObject);
+  vtkTypeRevisionMacro(vtkGenericAdaptorCell,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

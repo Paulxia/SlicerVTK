@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPUnstructuredDataReader.cxx
+  Module:    $RCSfile: vtkXMLPUnstructuredDataReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkInformation.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkXMLPUnstructuredDataReader, "$Revision: 1.22 $");
 
 //----------------------------------------------------------------------------
 vtkXMLPUnstructuredDataReader::vtkXMLPUnstructuredDataReader()

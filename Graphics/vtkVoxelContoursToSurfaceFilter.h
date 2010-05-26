@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVoxelContoursToSurfaceFilter.h
+  Module:    $RCSfile: vtkVoxelContoursToSurfaceFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_GRAPHICS_EXPORT vtkVoxelContoursToSurfaceFilter : public vtkPolyDataAl
 {
 public:
   static vtkVoxelContoursToSurfaceFilter *New();
-  vtkTypeMacro(vtkVoxelContoursToSurfaceFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkVoxelContoursToSurfaceFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

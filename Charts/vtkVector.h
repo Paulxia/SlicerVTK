@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVector.h
+  Module:    $RCSfile: vtkVector.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,14 +34,6 @@ public:
     for (int i = 0; i < Size; ++i)
       {
       Data[i] = 0;
-      }
-  }
-
-  vtkVector(const T* init)
-  {
-    for (int i = 0; i < Size; ++i)
-      {
-      Data[i] = init[i];
       }
   }
 
@@ -81,10 +73,6 @@ public:
   {
     this->Data[0] = x;
     this->Data[1] = y;
-  }
-
-  vtkVector2(const T* init) : vtkVector<T, 2>(init)
-  {
   }
 
   // Description:
@@ -240,7 +228,6 @@ class vtkVector2f : public vtkVector2<float>
 {
 public:
   vtkVector2f(float x = 0.0, float y = 0.0) : vtkVector2<float>(x, y) {}
-  vtkVector2f(const float* i) : vtkVector2<float>(i) {}
 };
 
 class vtkVector2d : public vtkVector2<double>

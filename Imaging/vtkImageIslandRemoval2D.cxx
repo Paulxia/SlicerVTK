@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageIslandRemoval2D.cxx
+  Module:    $RCSfile: vtkImageIslandRemoval2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageIslandRemoval2D, "$Revision: 1.50 $");
 vtkStandardNewMacro(vtkImageIslandRemoval2D);
 
 //----------------------------------------------------------------------------

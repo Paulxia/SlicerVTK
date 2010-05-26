@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestTextActor3DDepthPeeling.cxx
+  Module:    $RCSfile: TestTextActor3DDepthPeeling.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

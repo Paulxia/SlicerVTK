@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositer.cxx
+  Module:    $RCSfile: vtkCompositer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
  #include <mpi.h>
 #endif
 
+vtkCxxRevisionMacro(vtkCompositer, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkCompositer);
 
 //-------------------------------------------------------------------------

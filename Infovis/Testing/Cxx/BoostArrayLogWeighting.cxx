@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    BoostArrayLogWeighting.cxx
+  Module:    $RCSfile: BoostArrayLogWeighting.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

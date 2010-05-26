@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXGMLReader.h
+  Module:    $RCSfile: vtkXGMLReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_INFOVIS_EXPORT vtkXGMLReader : public vtkUndirectedGraphAlgorithm
 {
 public:
   static vtkXGMLReader *New();
-  vtkTypeMacro(vtkXGMLReader, vtkUndirectedGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkXGMLReader, vtkUndirectedGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMutableGraphHelper.h
+  Module:    $RCSfile: vtkMutableGraphHelper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_INFOVIS_EXPORT vtkMutableGraphHelper : public vtkObject
 {
 public:
   static vtkMutableGraphHelper *New();
-  vtkTypeMacro(vtkMutableGraphHelper, vtkObject);
+  vtkTypeRevisionMacro(vtkMutableGraphHelper, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

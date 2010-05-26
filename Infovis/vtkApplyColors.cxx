@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkApplyColors.cxx
+  Module:    $RCSfile: vtkApplyColors.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkTable.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkApplyColors, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkApplyColors);
 vtkCxxSetObjectMacro(vtkApplyColors, PointLookupTable, vtkScalarsToColors);
 vtkCxxSetObjectMacro(vtkApplyColors, CellLookupTable, vtkScalarsToColors);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextView.cxx
+  Module:    $RCSfile: vtkContextView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkContextView, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkContextView);
 
 vtkCxxSetObjectMacro(vtkContextView, Context, vtkContext2D);

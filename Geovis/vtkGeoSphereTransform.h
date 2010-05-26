@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoSphereTransform.h
+  Module:    $RCSfile: vtkGeoSphereTransform.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_GEOVIS_EXPORT vtkGeoSphereTransform : public vtkAbstractTransform
 public:
   static vtkGeoSphereTransform* New();
   virtual void PrintSelf( ostream& os, vtkIndent indent );
-  vtkTypeMacro(vtkGeoSphereTransform,vtkAbstractTransform);
+  vtkTypeRevisionMacro(vtkGeoSphereTransform,vtkAbstractTransform);
 
   // Description:
   // Invert the transformation.

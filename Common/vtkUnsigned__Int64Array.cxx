@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnsigned__Int64Array.cxx
+  Module:    $RCSfile: vtkUnsigned__Int64Array.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@ VTK_ARRAY_ITERATOR_TEMPLATE_INSTANTIATE(unsigned __int64);
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkUnsigned__Int64Array, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkUnsigned__Int64Array);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInterpolatedVelocityField.cxx
+  Module:    $RCSfile: vtkInterpolatedVelocityField.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro( vtkInterpolatedVelocityField, "$Revision: 1.13 $" );
 vtkStandardNewMacro( vtkInterpolatedVelocityField ); 
 
 //----------------------------------------------------------------------------

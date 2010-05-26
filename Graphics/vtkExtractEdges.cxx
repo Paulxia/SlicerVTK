@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractEdges.cxx
+  Module:    $RCSfile: vtkExtractEdges.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkPolyData.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkExtractEdges, "$Revision: 1.56 $");
 vtkStandardNewMacro(vtkExtractEdges);
 
 // Construct object.

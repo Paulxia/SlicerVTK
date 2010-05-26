@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxMacDevice.cxx
+  Module:    $RCSfile: vtkTDxMacDevice.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include <vtkstd/map>
 #include <cstring> // for strlen()
 
+vtkCxxRevisionMacro(vtkTDxMacDevice,"$Revision: 1.1 $");
 vtkStandardNewMacro(vtkTDxMacDevice);
 
 void vtkTDxMacDeviceMessageHandler(io_connect_t connection,

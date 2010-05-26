@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMPEG2Writer.cxx
+  Module:    $RCSfile: vtkMPEG2Writer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -178,6 +178,7 @@ int vtkMPEG2WriterInternal::RemoveImage(const char* fname)
 
 //---------------------------------------------------------------------------
 vtkStandardNewMacro(vtkMPEG2Writer);
+vtkCxxRevisionMacro(vtkMPEG2Writer, "$Revision: 1.7 $");
 
 //---------------------------------------------------------------------------
 vtkMPEG2Writer::vtkMPEG2Writer()

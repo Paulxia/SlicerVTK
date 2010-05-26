@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkTransferAttributes.cxx
+Module:    $RCSfile: vtkTransferAttributes.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -61,6 +61,7 @@ static vtkVariant vtkGetVariantValue(vtkAbstractArray* arr, vtkIdType i)
   return val;
 }
 
+vtkCxxRevisionMacro(vtkTransferAttributes, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkTransferAttributes);
 
 vtkTransferAttributes::vtkTransferAttributes()

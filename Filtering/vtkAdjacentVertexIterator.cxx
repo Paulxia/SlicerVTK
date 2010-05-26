@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAdjacentVertexIterator.cxx
+  Module:    $RCSfile: vtkAdjacentVertexIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkGraph.h"
 
 vtkCxxSetObjectMacro(vtkAdjacentVertexIterator, Graph, vtkGraph);
+vtkCxxRevisionMacro(vtkAdjacentVertexIterator, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkAdjacentVertexIterator);
 //----------------------------------------------------------------------------
 vtkAdjacentVertexIterator::vtkAdjacentVertexIterator()

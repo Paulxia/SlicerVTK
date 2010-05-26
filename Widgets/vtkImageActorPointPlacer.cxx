@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageActorPointPlacer.cxx
+  Module:    $RCSfile: vtkImageActorPointPlacer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkImageActor.h"
 #include "vtkImageData.h"
 
+vtkCxxRevisionMacro(vtkImageActorPointPlacer, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkImageActorPointPlacer);
 
 vtkCxxSetObjectMacro(vtkImageActorPointPlacer, ImageActor, vtkImageActor);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTkImageViewerWidgetPython.cxx
+  Module:    $RCSfile: vtkTkImageViewerWidgetPython.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

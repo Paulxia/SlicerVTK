@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLScalarsToColorsPainter.cxx
+  Module:    $RCSfile: vtkOpenGLScalarsToColorsPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
 vtkStandardNewMacro(vtkOpenGLScalarsToColorsPainter);
+vtkCxxRevisionMacro(vtkOpenGLScalarsToColorsPainter, "$Revision: 1.8 $");
 #endif
 //-----------------------------------------------------------------------------
 vtkOpenGLScalarsToColorsPainter::vtkOpenGLScalarsToColorsPainter()

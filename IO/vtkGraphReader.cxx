@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphReader.cxx
+  Module:    $RCSfile: vtkGraphReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkGraphReader, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkGraphReader);
 
 #ifdef read

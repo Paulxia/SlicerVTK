@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDijkstraGraphGeodesicPath.h
+  Module:    $RCSfile: vtkDijkstraGraphGeodesicPath.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ public:
 
   // Description:
   // Standard methids for printing and determining type information.
-  vtkTypeMacro(vtkDijkstraGraphGeodesicPath,vtkGraphGeodesicPath);
+  vtkTypeRevisionMacro(vtkDijkstraGraphGeodesicPath,vtkGraphGeodesicPath);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

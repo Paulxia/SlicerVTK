@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAreaLayoutStrategy.h
+  Module:    $RCSfile: vtkAreaLayoutStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class vtkDataArray;
 class VTK_INFOVIS_EXPORT vtkAreaLayoutStrategy : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkAreaLayoutStrategy,vtkObject);
+  vtkTypeRevisionMacro(vtkAreaLayoutStrategy,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

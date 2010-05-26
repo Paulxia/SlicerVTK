@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCarbonRenderWindowInteractor.cxx
+  Module:    $RCSfile: vtkCarbonRenderWindowInteractor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkTDxMacDevice.h"
 #endif
 
+vtkCxxRevisionMacro(vtkCarbonRenderWindowInteractor, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkCarbonRenderWindowInteractor);
 
 void (*vtkCarbonRenderWindowInteractor::ClassExitMethod)(void *) 

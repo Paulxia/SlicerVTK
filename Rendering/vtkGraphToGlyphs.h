@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphToGlyphs.h
+  Module:    $RCSfile: vtkGraphToGlyphs.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_RENDERING_EXPORT vtkGraphToGlyphs : public vtkPolyDataAlgorithm
 {
 public:
   static vtkGraphToGlyphs *New();
-  vtkTypeMacro(vtkGraphToGlyphs,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGraphToGlyphs,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCenteredSliderRepresentation.h
+  Module:    $RCSfile: vtkCenteredSliderRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -63,7 +63,7 @@ public:
 
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkCenteredSliderRepresentation,
+  vtkTypeRevisionMacro(vtkCenteredSliderRepresentation,
                        vtkSliderRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 

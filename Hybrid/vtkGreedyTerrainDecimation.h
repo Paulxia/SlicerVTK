@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGreedyTerrainDecimation.h
+  Module:    $RCSfile: vtkGreedyTerrainDecimation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -84,7 +84,7 @@ class vtkGreedyTerrainDecimationPointInfoType;
 class VTK_HYBRID_EXPORT vtkGreedyTerrainDecimation : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkGreedyTerrainDecimation,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGreedyTerrainDecimation,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

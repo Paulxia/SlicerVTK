@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeDepth.cxx
+  Module:    $RCSfile: vtkHyperOctreeDepth.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkCellData.h"
 #include "vtkIntArray.h"
 
+vtkCxxRevisionMacro(vtkHyperOctreeDepth, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkHyperOctreeDepth);
 
 //----------------------------------------------------------------------------

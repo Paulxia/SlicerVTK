@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClearZPass.h
+  Module:    $RCSfile: vtkClearZPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkClearZPass : public vtkRenderPass
 {
 public:
   static vtkClearZPass *New();
-  vtkTypeMacro(vtkClearZPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkClearZPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

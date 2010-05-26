@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageShiftScale.cxx
+  Module:    $RCSfile: vtkImageShiftScale.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageShiftScale, "$Revision: 1.54 $");
 vtkStandardNewMacro(vtkImageShiftScale);
 
 //----------------------------------------------------------------------------

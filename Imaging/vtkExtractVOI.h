@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractVOI.h
+  Module:    $RCSfile: vtkExtractVOI.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@
 class VTK_IMAGING_EXPORT vtkExtractVOI : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkExtractVOI,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractVOI,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

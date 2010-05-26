@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDataLIC2D.h
+  Module:    $RCSfile: vtkImageDataLIC2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -53,7 +53,7 @@ class VTK_HYBRID_EXPORT vtkImageDataLIC2D : public vtkImageAlgorithm
 {
 public:
   static vtkImageDataLIC2D* New();
-  vtkTypeMacro(vtkImageDataLIC2D, vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageDataLIC2D, vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

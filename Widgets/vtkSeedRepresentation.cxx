@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSeedRepresentation.cxx
+  Module:    $RCSfile: vtkSeedRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include <vtkstd/iterator>
 #include <vtkstd/list>
 
+vtkCxxRevisionMacro(vtkSeedRepresentation, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkSeedRepresentation);
 
 vtkCxxSetObjectMacro(vtkSeedRepresentation,HandleRepresentation,vtkHandleRepresentation);

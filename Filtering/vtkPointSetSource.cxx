@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointSetSource.cxx
+  Module:    $RCSfile: vtkPointSetSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointSet.h"
 
+vtkCxxRevisionMacro(vtkPointSetSource, "$Revision: 1.14 $");
 
 //----------------------------------------------------------------------------
 vtkPointSetSource::vtkPointSetSource()

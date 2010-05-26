@@ -28,9 +28,7 @@ ENDIF(NOT WIN32)
 
 ENDIF(VTK_USE_DISPLAY AND VTK_USE_RENDERING)
 IF(VTK_USE_INFOVIS)
-  SET(ConditionalTests ${ConditionalTests}
-       TestDataObjectIO.cxx
-       TestDataObjectXMLIO.cxx)
+  SET(ConditionalTests ${ConditionalTests} TestDataObjectIO.cxx)
 ENDIF(VTK_USE_INFOVIS)
 IF(VTK_USE_METAIO)
   SET(ConditionalTests ${ConditionalTests} TestMetaIO.cxx)
@@ -155,7 +153,6 @@ ENDIF(VTK_USE_OGGTHEORA_ENCODER)
 
 IF(VTK_USE_INFOVIS)
   ADD_TEST(TestDataObjectIO ${CXX_TEST_PATH}/${KIT}CxxTests TestDataObjectIO)
-  ADD_TEST(TestDataObjectXMLIO ${CXX_TEST_PATH}/${KIT}CxxTests TestDataObjectXMLIO)
 ENDIF(VTK_USE_INFOVIS)
 
 IF(VTK_USE_N_WAY_ARRAYS)

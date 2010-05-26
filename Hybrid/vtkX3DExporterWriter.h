@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkX3DExporterWriter.h
+  Module:    $RCSfile: vtkX3DExporterWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class vtkCellArray;
 class VTK_HYBRID_EXPORT vtkX3DExporterWriter : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkX3DExporterWriter, vtkObject);
+  vtkTypeRevisionMacro(vtkX3DExporterWriter, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

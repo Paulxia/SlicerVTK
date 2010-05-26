@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPiecewiseFunctionShiftScale.h
+  Module:    $RCSfile: vtkPiecewiseFunctionShiftScale.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_FILTERING_EXPORT vtkPiecewiseFunctionShiftScale : public vtkPiecewiseF
 {
 public:
   static vtkPiecewiseFunctionShiftScale *New();
-  vtkTypeMacro(vtkPiecewiseFunctionShiftScale, vtkPiecewiseFunctionAlgorithm);
+  vtkTypeRevisionMacro(vtkPiecewiseFunctionShiftScale, vtkPiecewiseFunctionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   vtkSetMacro(PositionShift, double);

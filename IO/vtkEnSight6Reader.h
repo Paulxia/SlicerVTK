@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEnSight6Reader.h
+  Module:    $RCSfile: vtkEnSight6Reader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class VTK_IO_EXPORT vtkEnSight6Reader : public vtkEnSightReader
 {
 public:
   static vtkEnSight6Reader *New();
-  vtkTypeMacro(vtkEnSight6Reader, vtkEnSightReader);
+  vtkTypeRevisionMacro(vtkEnSight6Reader, vtkEnSightReader);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
   
 protected:

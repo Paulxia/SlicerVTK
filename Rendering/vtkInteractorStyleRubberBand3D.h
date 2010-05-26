@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleRubberBand3D.h
+  Module:    $RCSfile: vtkInteractorStyleRubberBand3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleRubberBand3D : public vtkInteractor
 {
 public:
   static vtkInteractorStyleRubberBand3D *New();
-  vtkTypeMacro(vtkInteractorStyleRubberBand3D, vtkInteractorStyleTrackballCamera);
+  vtkTypeRevisionMacro(vtkInteractorStyleRubberBand3D, vtkInteractorStyleTrackballCamera);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual void OnLeftButtonDown();
@@ -87,13 +87,6 @@ public:
     };
   //ETX
     
-  // Description:
-  // Access to the start and end positions (display coordinates) of the rubber
-  // band pick area. This is a convenience method for the wrapped languages
-  // since the event callData is lost when using those wrappings.
-  vtkGetVector2Macro(StartPosition,int);
-  vtkGetVector2Macro(EndPosition,int);
-
 protected:
   vtkInteractorStyleRubberBand3D();
   ~vtkInteractorStyleRubberBand3D();

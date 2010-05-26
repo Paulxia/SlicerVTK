@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractMapper.h
+  Module:    $RCSfile: vtkAbstractMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class vtkWindow;
 class VTK_FILTERING_EXPORT vtkAbstractMapper : public vtkAlgorithm
 {
 public:
-  vtkTypeMacro(vtkAbstractMapper,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkAbstractMapper,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxInteractorStyleCamera.h
+  Module:    $RCSfile: vtkTDxInteractorStyleCamera.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_RENDERING_EXPORT vtkTDxInteractorStyleCamera : public vtkTDxInteractor
 {
 public:
   static vtkTDxInteractorStyleCamera *New();
-  vtkTypeMacro(vtkTDxInteractorStyleCamera,vtkTDxInteractorStyle);
+  vtkTypeRevisionMacro(vtkTDxInteractorStyleCamera,vtkTDxInteractorStyle);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

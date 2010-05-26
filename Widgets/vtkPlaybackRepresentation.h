@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlaybackRepresentation.h
+  Module:    $RCSfile: vtkPlaybackRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ public:
 
   // Description:
   // Standard VTK class methods.
-  vtkTypeMacro(vtkPlaybackRepresentation,vtkBorderRepresentation);
+  vtkTypeRevisionMacro(vtkPlaybackRepresentation,vtkBorderRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

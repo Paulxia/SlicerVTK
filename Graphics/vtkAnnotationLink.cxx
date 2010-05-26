@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnnotationLink.cxx
+  Module:    $RCSfile: vtkAnnotationLink.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkTable.h"
 
+vtkCxxRevisionMacro(vtkAnnotationLink, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkAnnotationLink);
 //vtkCxxSetObjectMacro(vtkAnnotationLink, AnnotationLayers, vtkAnnotationLayers);
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCylindricalTransform.cxx
+  Module:    $RCSfile: vtkCylindricalTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include <math.h>
 #include <stdlib.h>
 
+vtkCxxRevisionMacro(vtkCylindricalTransform, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkCylindricalTransform);
 
 //----------------------------------------------------------------------------

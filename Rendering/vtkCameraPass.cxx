@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCameraPass.cxx
+  Module:    $RCSfile: vtkCameraPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkCamera.h"
 #include "vtkFrameBufferObject.h"
 
+vtkCxxRevisionMacro(vtkCameraPass, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkCameraPass);
 vtkCxxSetObjectMacro(vtkCameraPass,DelegatePass,vtkRenderPass);
 

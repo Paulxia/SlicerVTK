@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedGraph.h
+  Module:    $RCSfile: vtkExtractSelectedGraph.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_INFOVIS_EXPORT vtkExtractSelectedGraph : public vtkGraphAlgorithm
 {
 public:
   static vtkExtractSelectedGraph* New();
-  vtkTypeMacro(vtkExtractSelectedGraph,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractSelectedGraph,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

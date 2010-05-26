@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWorldPointPicker.cxx
+  Module:    $RCSfile: vtkWorldPointPicker.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkRenderer.h"
 
+vtkCxxRevisionMacro(vtkWorldPointPicker, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkWorldPointPicker);
 
 vtkWorldPointPicker::vtkWorldPointPicker()

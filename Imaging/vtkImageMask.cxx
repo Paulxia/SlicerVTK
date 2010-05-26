@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMask.cxx
+  Module:    $RCSfile: vtkImageMask.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkInformationVector.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageMask, "$Revision: 1.42 $");
 vtkStandardNewMacro(vtkImageMask);
 
 //----------------------------------------------------------------------------

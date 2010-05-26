@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkComputeHistogram2DOutliers.h
+  Module:    $RCSfile: vtkComputeHistogram2DOutliers.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ class VTK_INFOVIS_EXPORT vtkComputeHistogram2DOutliers : public vtkSelectionAlgo
 {
 public:
   static vtkComputeHistogram2DOutliers* New();
-  vtkTypeMacro(vtkComputeHistogram2DOutliers, vtkSelectionAlgorithm);
+  vtkTypeRevisionMacro(vtkComputeHistogram2DOutliers, vtkSelectionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkSetMacro(PreferredNumberOfOutliers,int);

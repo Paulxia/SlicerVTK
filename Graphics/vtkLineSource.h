@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLineSource.h
+  Module:    $RCSfile: vtkLineSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_GRAPHICS_EXPORT vtkLineSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkLineSource *New();
-  vtkTypeMacro(vtkLineSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkLineSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

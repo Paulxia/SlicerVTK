@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricFigure8Klein.cxx
+  Module:    $RCSfile: vtkParametricFigure8Klein.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkParametricFigure8Klein, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkParametricFigure8Klein);
 
 //----------------------------------------------------------------------------

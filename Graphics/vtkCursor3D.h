@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCursor3D.h
+  Module:    $RCSfile: vtkCursor3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@
 class VTK_GRAPHICS_EXPORT vtkCursor3D : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkCursor3D,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCursor3D,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

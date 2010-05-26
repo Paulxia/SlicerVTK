@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFileExtensionMimeTypeStrategy.h
+  Module:    $RCSfile: vtkFileExtensionMimeTypeStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkFileExtensionMimeTypeStrategy :
 {
 public:
   static vtkFileExtensionMimeTypeStrategy* New();
-  vtkTypeMacro(vtkFileExtensionMimeTypeStrategy, vtkMimeTypeStrategy);
+  vtkTypeRevisionMacro(vtkFileExtensionMimeTypeStrategy, vtkMimeTypeStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkStdString Lookup(const vtkStdString& uri, const vtkTypeUInt8* begin, const vtkTypeUInt8* end);

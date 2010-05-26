@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderedGraphRepresentation.cxx
+  Module:    $RCSfile: vtkRenderedGraphRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -95,6 +95,7 @@
 
 
 
+vtkCxxRevisionMacro(vtkRenderedGraphRepresentation, "$Revision: 1.33 $");
 vtkStandardNewMacro(vtkRenderedGraphRepresentation);
 
 vtkRenderedGraphRepresentation::vtkRenderedGraphRepresentation()

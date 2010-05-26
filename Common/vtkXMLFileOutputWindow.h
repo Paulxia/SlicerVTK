@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLFileOutputWindow.h
+  Module:    $RCSfile: vtkXMLFileOutputWindow.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@
 class VTK_COMMON_EXPORT vtkXMLFileOutputWindow : public vtkFileOutputWindow
 {
 public:
-  vtkTypeMacro(vtkXMLFileOutputWindow, vtkFileOutputWindow);
+  vtkTypeRevisionMacro(vtkXMLFileOutputWindow, vtkFileOutputWindow);
 
   static vtkXMLFileOutputWindow* New();
 

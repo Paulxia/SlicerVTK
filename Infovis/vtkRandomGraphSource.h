@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRandomGraphSource.h
+  Module:    $RCSfile: vtkRandomGraphSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_INFOVIS_EXPORT vtkRandomGraphSource : public vtkGraphAlgorithm
 {
 public:
   static vtkRandomGraphSource* New();
-  vtkTypeMacro(vtkRandomGraphSource,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkRandomGraphSource,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

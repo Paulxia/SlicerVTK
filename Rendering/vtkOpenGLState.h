@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLState.h
+  Module:    $RCSfile: vtkOpenGLState.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -353,7 +353,7 @@ public:
   bool HasFragmentShader;
 };
 
-class VTK_RENDERING_EXPORT vtkOpenGLState
+class vtkOpenGLState
 {
 public:
   vtkOpenGLState(vtkOpenGLRenderWindow *context);

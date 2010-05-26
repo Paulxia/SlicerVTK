@@ -30,7 +30,7 @@ class vtkExodusIIReaderPrivate : public vtkObject
 public:
   static vtkExodusIIReaderPrivate* New();
   void PrintData( ostream& os, vtkIndent indent );
-  vtkTypeMacro(vtkExodusIIReaderPrivate,vtkObject);
+  vtkTypeRevisionMacro(vtkExodusIIReaderPrivate,vtkObject);
   //virtual void Modified();
 
   /// Open an ExodusII file for reading. Returns 0 on success.

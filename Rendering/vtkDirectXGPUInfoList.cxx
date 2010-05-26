@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDirectXGPUInfoList.cxx
+  Module:    $RCSfile: vtkDirectXGPUInfoList.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 
 #include <ddraw.h> // for LPDIRECTDRAWENUMERATEEXA
 
+vtkCxxRevisionMacro(vtkDirectXGPUInfoList, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkDirectXGPUInfoList);
 
 // Used by ProbeInfoWithDXGI.

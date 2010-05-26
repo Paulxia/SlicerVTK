@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphInternals.h
+  Module:    $RCSfile: vtkGraphInternals.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class VTK_FILTERING_EXPORT vtkGraphInternals : public vtkObject
 public:
   static vtkGraphInternals *New();
   //BTX
-  vtkTypeMacro(vtkGraphInternals, vtkObject);
+  vtkTypeRevisionMacro(vtkGraphInternals, vtkObject);
   vtksys_stl::vector<vtkVertexAdjacencyList> Adjacency;
   //ETX
   vtkIdType NumberOfEdges;

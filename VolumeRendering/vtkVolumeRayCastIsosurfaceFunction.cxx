@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeRayCastIsosurfaceFunction.cxx
+  Module:    $RCSfile: vtkVolumeRayCastIsosurfaceFunction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkVolumeRayCastIsosurfaceFunction, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkVolumeRayCastIsosurfaceFunction);
 
 /*    Is x between y and z?                                     */

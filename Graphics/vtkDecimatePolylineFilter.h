@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDecimatePolylineFilter.h
+  Module:    $RCSfile: vtkDecimatePolylineFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_GRAPHICS_EXPORT vtkDecimatePolylineFilter : public vtkPolyDataAlgorith
 public:
   // Description:
   // Standard methods for type information and printing.
-  vtkTypeMacro(vtkDecimatePolylineFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDecimatePolylineFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

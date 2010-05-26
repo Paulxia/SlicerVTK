@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProcrustesAlignmentFilter.cxx
+  Module:    $RCSfile: vtkProcrustesAlignmentFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPolyData.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkProcrustesAlignmentFilter, "$Revision: 1.24 $");
 vtkStandardNewMacro(vtkProcrustesAlignmentFilter);
 
 //----------------------------------------------------------------------------

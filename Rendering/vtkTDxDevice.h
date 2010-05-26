@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxDevice.h
+  Module:    $RCSfile: vtkTDxDevice.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkRenderWindowInteractor;
 class VTK_RENDERING_EXPORT vtkTDxDevice : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkTDxDevice,vtkObject);
+  vtkTypeRevisionMacro(vtkTDxDevice,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

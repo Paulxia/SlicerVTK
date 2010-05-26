@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStringToCategory.cxx
+  Module:    $RCSfile: vtkStringToCategory.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,19 +33,17 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 #include "vtkStringArray.h"
-#include "vtkTable.h"
 
 #include <vtksys/stl/set>
 
+vtkCxxRevisionMacro(vtkStringToCategory, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkStringToCategory);
 
 vtkStringToCategory::vtkStringToCategory()
 {
-  this->SetInputArrayToProcess(0, 0, 0, vtkDataObject::FIELD_ASSOCIATION_POINTS,
-                               "label");
+  this->SetInputArrayToProcess(0, 0, 0, vtkDataObject::FIELD_ASSOCIATION_POINTS, "label");
   this->CategoryArrayName = 0;
   this->SetCategoryArrayName("category");
-  this->SetNumberOfOutputPorts(2);
 }
 
 vtkStringToCategory::~vtkStringToCategory()
@@ -54,38 +52,19 @@ vtkStringToCategory::~vtkStringToCategory()
 }
 
 int vtkStringToCategory::RequestData(
-  vtkInformation*,
-  vtkInformationVector** inputVector,
+  vtkInformation*, 
+  vtkInformationVector** inputVector, 
   vtkInformationVector* outputVector)
 {
   // Get the info objects
   vtkInformation *inInfo = inputVector[0]->GetInformationObject(0);
   vtkInformation *outInfo = outputVector->GetInformationObject(0);
-  vtkInformation *outKeyInfo = outputVector->GetInformationObject(1);
-
+  
   // Get the input and output objects
   vtkDataObject* input = inInfo->Get(vtkDataObject::DATA_OBJECT());
   vtkDataObject* output = outInfo->Get(vtkDataObject::DATA_OBJECT());
   output->ShallowCopy(input);
-
-  // This second output stores a list of the unique strings, in the same order
-  // as used in the first output.
-  vtkTable* stringTable =
-      vtkTable::SafeDownCast(outKeyInfo->Get(vtkDataObject::DATA_OBJECT()));
-  vtkStringArray* strings =
-      vtkStringArray::SafeDownCast(stringTable->GetColumnByName("Strings"));
-  if (strings)
-    {
-    strings->SetNumberOfTuples(0);
-    }
-  else
-    {
-    strings = vtkStringArray::New();
-    strings->SetName("Strings");
-    stringTable->AddColumn(strings);
-    strings->Delete();
-    }
-
+  
   vtkAbstractArray* arr = this->GetInputAbstractArrayToProcess(0, 0, inputVector);
   vtkStringArray* stringArr = vtkStringArray::SafeDownCast(arr);
   if (!stringArr)
@@ -93,17 +72,39 @@ int vtkStringToCategory::RequestData(
     vtkErrorMacro("String array input could not be found");
     return 0;
     }
-
-  vtkInformation* arrayInfo = this->GetInputArrayInformation(0);
+  
   // Find where the input array came from
-  vtkFieldData* fd = output->GetAttributesAsFieldData(
-      arrayInfo->Get(vtkDataObject::FIELD_ASSOCIATION()));
+  vtkFieldData* fd = 0;
+  if (output->GetFieldData()->GetAbstractArray(stringArr->GetName()))
+    {
+    fd = output->GetFieldData();
+    }
+  else if (vtkDataSet::SafeDownCast(output) && 
+      vtkDataSet::SafeDownCast(output)->GetPointData()->GetAbstractArray(stringArr->GetName()))
+    {
+    fd = vtkDataSet::SafeDownCast(output)->GetPointData();
+    }
+  else if (vtkDataSet::SafeDownCast(output) && 
+      vtkDataSet::SafeDownCast(output)->GetCellData()->GetAbstractArray(stringArr->GetName()))
+    {
+    fd = vtkDataSet::SafeDownCast(output)->GetCellData();
+    }
+  else if (vtkGraph::SafeDownCast(output) && 
+      vtkGraph::SafeDownCast(output)->GetVertexData()->GetAbstractArray(stringArr->GetName()))
+    {
+    fd = vtkGraph::SafeDownCast(output)->GetVertexData();
+    }
+  else if (vtkGraph::SafeDownCast(output) && 
+      vtkGraph::SafeDownCast(output)->GetEdgeData()->GetAbstractArray(stringArr->GetName()))
+    {
+    fd = vtkGraph::SafeDownCast(output)->GetEdgeData();
+    }
   if (!fd)
     {
     vtkErrorMacro("Could not find where the input array came from");
     return 0;
     }
-
+  
   // Perform the conversion
   vtkIdType numTuples = stringArr->GetNumberOfTuples();
   int numComp = stringArr->GetNumberOfComponents();
@@ -128,7 +129,6 @@ int vtkStringToCategory::RequestData(
     if (s.find(stringArr->GetValue(i)) == s.end())
       {
       s.insert(stringArr->GetValue(i));
-      strings->InsertNextValue(stringArr->GetValue(i));
       stringArr->LookupValue(stringArr->GetValue(i), list);
       for (vtkIdType j = 0; j < list->GetNumberOfIds(); j++)
         {
@@ -138,14 +138,14 @@ int vtkStringToCategory::RequestData(
       }
     }
   list->Delete();
-
+  
   return 1;
 }
 
 //----------------------------------------------------------------------------
 int vtkStringToCategory::ProcessRequest(
-  vtkInformation* request,
-  vtkInformationVector** inputVector,
+  vtkInformation* request, 
+  vtkInformationVector** inputVector, 
   vtkInformationVector* outputVector)
 {
   // create the output
@@ -158,8 +158,8 @@ int vtkStringToCategory::ProcessRequest(
 
 //----------------------------------------------------------------------------
 int vtkStringToCategory::RequestDataObject(
-  vtkInformation*,
-  vtkInformationVector** inputVector ,
+  vtkInformation*, 
+  vtkInformationVector** inputVector , 
   vtkInformationVector* outputVector)
 {
   vtkInformation* inInfo = inputVector[0]->GetInformationObject(0);
@@ -168,7 +168,7 @@ int vtkStringToCategory::RequestDataObject(
     return 0;
     }
   vtkDataObject *input = inInfo->Get(vtkDataObject::DATA_OBJECT());
-
+  
   if (input)
     {
     // for each output
@@ -176,8 +176,8 @@ int vtkStringToCategory::RequestDataObject(
       {
       vtkInformation* info = outputVector->GetInformationObject(i);
       vtkDataObject *output = info->Get(vtkDataObject::DATA_OBJECT());
-
-      if (!output || !output->IsA(input->GetClassName()))
+    
+      if (!output || !output->IsA(input->GetClassName())) 
         {
         vtkDataObject* newOutput = input->NewInstance();
         newOutput->SetPipelineInformation(info);
@@ -187,22 +187,6 @@ int vtkStringToCategory::RequestDataObject(
     return 1;
     }
   return 0;
-}
-
-//----------------------------------------------------------------------------
-int vtkStringToCategory::FillOutputPortInformation(int port,
-                                                   vtkInformation* info)
-{
-  // now add our info
-  if (port == 0)
-    {
-    info->Set(vtkDataObject::DATA_TYPE_NAME(), "vtkDataObject");
-    }
-  else
-    {
-    info->Set(vtkDataObject::DATA_TYPE_NAME(), "vtkTable");
-    }
-  return 1;
 }
 
 void vtkStringToCategory::PrintSelf(ostream& os, vtkIndent indent)

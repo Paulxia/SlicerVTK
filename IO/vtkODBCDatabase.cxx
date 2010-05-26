@@ -1,7 +1,7 @@
 /*=========================================================================
   
   Program Toolkit
-  Module:    vtkODBCDatabase.cxx
+  Module:    $RCSfile: vtkODBCDatabase.cxx,v $
   
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,6 +49,7 @@
 
 
 // ----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkODBCDatabase, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkODBCDatabase);
 // ----------------------------------------------------------------------------
 

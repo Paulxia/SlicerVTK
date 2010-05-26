@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtAnnotationView.h
+  Module:    $RCSfile: vtkQtAnnotationView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ Q_OBJECT
 
 public:
   static vtkQtAnnotationView *New();
-  vtkTypeMacro(vtkQtAnnotationView, vtkQtView);
+  vtkTypeRevisionMacro(vtkQtAnnotationView, vtkQtView);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

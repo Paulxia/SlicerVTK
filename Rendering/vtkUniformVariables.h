@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUniformVariables.h
+  Module:    $RCSfile: vtkUniformVariables.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkUniformVariables : public vtkObject
 {
 public:
   static vtkUniformVariables *New();
-  vtkTypeMacro(vtkUniformVariables,vtkObject);
+  vtkTypeRevisionMacro(vtkUniformVariables,vtkObject);
   void PrintSelf(ostream &os, vtkIndent indent);
   
   // Description:

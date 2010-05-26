@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPassThrough.h
+  Module:    $RCSfile: vtkPassThrough.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_INFOVIS_EXPORT vtkPassThrough : public vtkPassInputTypeAlgorithm
 {
 public:
   static vtkPassThrough* New();
-  vtkTypeMacro(vtkPassThrough, vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkPassThrough, vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGarbageCollector.cxx
+  Module:    $RCSfile: vtkGarbageCollector.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkGarbageCollector, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkGarbageCollector);
 
 #if VTK_GARBAGE_COLLECTOR_HASH

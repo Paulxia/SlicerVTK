@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeRayCastIsosurfaceFunction.h
+  Module:    $RCSfile: vtkVolumeRayCastIsosurfaceFunction.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@
 class VTK_VOLUMERENDERING_EXPORT vtkVolumeRayCastIsosurfaceFunction : public vtkVolumeRayCastFunction
 {
 public:
-  vtkTypeMacro(vtkVolumeRayCastIsosurfaceFunction,vtkVolumeRayCastFunction);
+  vtkTypeRevisionMacro(vtkVolumeRayCastIsosurfaceFunction,vtkVolumeRayCastFunction);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

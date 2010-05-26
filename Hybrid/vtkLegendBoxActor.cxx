@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLegendBoxActor.cxx
+  Module:    $RCSfile: vtkLegendBoxActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkTransformPolyDataFilter.h"
 #include "vtkViewport.h"
 
+vtkCxxRevisionMacro(vtkLegendBoxActor, "$Revision: 1.32 $");
 vtkStandardNewMacro(vtkLegendBoxActor);
 
 vtkCxxSetObjectMacro(vtkLegendBoxActor,EntryTextProperty,vtkTextProperty);

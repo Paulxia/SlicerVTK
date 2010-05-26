@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TransmitImageData.cxx
+  Module:    $RCSfile: TransmitImageData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ class MyProcess : public vtkProcess
 {
 public:
   static MyProcess *New();
-  vtkTypeMacro(MyProcess, vtkProcess);
+  vtkTypeRevisionMacro(MyProcess, vtkProcess);
   
   virtual void Execute();
 
@@ -63,6 +63,7 @@ protected:
   char **Argv;
 };
 
+vtkCxxRevisionMacro(MyProcess, "$Revision: 1.8 $");
 vtkStandardNewMacro(MyProcess);
 
 MyProcess::MyProcess()

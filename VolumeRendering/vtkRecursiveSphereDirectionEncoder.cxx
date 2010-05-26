@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRecursiveSphereDirectionEncoder.cxx
+  Module:    $RCSfile: vtkRecursiveSphereDirectionEncoder.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkRecursiveSphereDirectionEncoder, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkRecursiveSphereDirectionEncoder);
 
 // Construct the object. Initialize the index table which will be

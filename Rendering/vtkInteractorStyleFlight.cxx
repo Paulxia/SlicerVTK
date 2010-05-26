@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleFlight.cxx
+  Module:    $RCSfile: vtkInteractorStyleFlight.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkCallbackCommand.h"
 #include "vtkWindows.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleFlight, "$Revision: 1.34 $");
 vtkStandardNewMacro(vtkInteractorStyleFlight);
 
 class CPIDControl

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestContext.cxx
+  Module:    $RCSfile: TestContext.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,12 +31,15 @@
 
 #include "vtkRegressionTestImage.h"
 
+#define VTK_CREATE(type, name) \
+  vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
+
 //----------------------------------------------------------------------------
 class ContextTest : public vtkContextItem
 {
 public:
   static ContextTest *New();
-  vtkTypeMacro(ContextTest, vtkContextItem);
+  vtkTypeRevisionMacro(ContextTest, vtkContextItem);
   // Paint event for the chart, called whenever the chart needs to be drawn
   virtual bool Paint(vtkContext2D *painter);
 };
@@ -45,10 +48,10 @@ public:
 int TestContext( int argc, char * argv [] )
 {
   // Set up a 2D context view, context test object and add it to the scene
-  vtkSmartPointer<vtkContextView> view = vtkSmartPointer<vtkContextView>::New();
+  VTK_CREATE(vtkContextView, view);
   view->GetRenderer()->SetBackground(1.0, 1.0, 1.0);
   view->GetRenderWindow()->SetSize(800, 600);
-  vtkSmartPointer<ContextTest> test = vtkSmartPointer<ContextTest>::New();
+  VTK_CREATE(ContextTest, test);
   view->GetScene()->AddItem(test);
 
   // Force the use of the freetype based rendering strategy
@@ -59,16 +62,12 @@ int TestContext( int argc, char * argv [] )
   view->GetRenderWindow()->Render();
 
   int retVal = vtkRegressionTestImage(view->GetRenderWindow());
-  if(retVal == vtkRegressionTester::DO_INTERACTOR)
-    {
-    view->GetInteractor()->Initialize();
-    view->GetInteractor()->Start();
-    }
   return !retVal;
 }
 
 // Make our new derived class to draw a diagram
 vtkStandardNewMacro(ContextTest);
+vtkCxxRevisionMacro(ContextTest, "$Revision: 1.2 $");
 // This function aims to test the primitives provided by the 2D API.
 bool ContextTest::Paint(vtkContext2D *painter)
 {
@@ -93,7 +92,7 @@ bool ContextTest::Paint(vtkContext2D *painter)
     }
 
   // Use the draw lines function now to draw a shape.
-  vtkSmartPointer<vtkPoints2D> points = vtkSmartPointer<vtkPoints2D>::New();
+  VTK_CREATE(vtkPoints2D, points);
   points->SetNumberOfPoints(30);
   for (int i = 0; i < 30; ++i)
     {
@@ -141,7 +140,7 @@ bool ContextTest::Paint(vtkContext2D *painter)
                     525, 199, 666, 45);
 
   // Now to test out the transform...
-  vtkSmartPointer<vtkTransform2D> transform = vtkSmartPointer<vtkTransform2D>::New();
+  VTK_CREATE(vtkTransform2D, transform);
   transform->Translate(20, 200);
   painter->GetDevice()->SetMatrix(transform->GetMatrix());
   painter->GetPen()->SetColor(255, 0, 0);

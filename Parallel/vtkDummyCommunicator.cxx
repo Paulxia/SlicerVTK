@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDummyCommunicator.cxx
+  Module:    $RCSfile: vtkDummyCommunicator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkDummyCommunicator.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkDummyCommunicator, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkDummyCommunicator);
 
 //-----------------------------------------------------------------------------

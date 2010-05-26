@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolynomialSolversUnivariate.cxx
+  Module:    $RCSfile: vtkPolynomialSolversUnivariate.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 
 #define VTK_SIGN(x)              (( (x) < 0 )?( -1 ):( 1 ))
 
+vtkCxxRevisionMacro(vtkPolynomialSolversUnivariate, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkPolynomialSolversUnivariate);
 
 static const double sqrt3 = sqrt( static_cast<double>( 3. ) );

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleRubberBand2D.h
+  Module:    $RCSfile: vtkInteractorStyleRubberBand2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,8 +22,6 @@
 // .SECTION Description
 // vtkInteractorStyleRubberBand2D manages interaction in a 2D view.
 // Camera rotation is not allowed with this interactor style.
-// Zooming affects the camera's parallel scale only, and assumes
-// that the camera is in parallel projection mode.
 // The style also allows draws a rubber band using the left button.
 // All camera changes invoke InteractionBeginEvent when the button
 // is pressed, InteractionEvent when the mouse (or wheel) is moved,
@@ -45,7 +43,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleRubberBand2D : public vtkInteractor
 {
 public:
   static vtkInteractorStyleRubberBand2D *New();
-  vtkTypeMacro(vtkInteractorStyleRubberBand2D, vtkInteractorStyle);
+  vtkTypeRevisionMacro(vtkInteractorStyleRubberBand2D, vtkInteractorStyle);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual void OnLeftButtonDown();
@@ -87,14 +85,7 @@ public:
     SELECTING
     };
   //ETX
-
-  // Description:
-  // Access to the start and end positions (display coordinates) of the rubber
-  // band pick area. This is a convenience method for the wrapped languages
-  // since the event callData is lost when using those wrappings.
-  vtkGetVector2Macro(StartPosition,int);
-  vtkGetVector2Macro(EndPosition,int);
-
+    
 protected:
   vtkInteractorStyleRubberBand2D();
   ~vtkInteractorStyleRubberBand2D();

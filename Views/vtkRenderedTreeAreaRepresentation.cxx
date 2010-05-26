@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderedTreeAreaRepresentation.cxx
+  Module:    $RCSfile: vtkRenderedTreeAreaRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -83,6 +83,7 @@ public:
   vtkstd::vector<vtkSmartPointer<vtkHierarchicalGraphPipeline> > Graphs;
 };
 
+vtkCxxRevisionMacro(vtkRenderedTreeAreaRepresentation, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkRenderedTreeAreaRepresentation);
 
 vtkRenderedTreeAreaRepresentation::vtkRenderedTreeAreaRepresentation()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphLayoutFilter.h
+  Module:    $RCSfile: vtkGraphLayoutFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_GRAPHICS_EXPORT vtkGraphLayoutFilter : public vtkPolyDataAlgorithm
 public:
   static vtkGraphLayoutFilter *New();
 
-  vtkTypeMacro(vtkGraphLayoutFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGraphLayoutFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

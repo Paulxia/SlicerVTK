@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLightingHelper.cxx
+  Module:    $RCSfile: vtkLightingHelper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 extern const char * vtkLightingHelper_s;
 
 vtkStandardNewMacro(vtkLightingHelper);
+vtkCxxRevisionMacro(vtkLightingHelper, "$Revision: 1.1 $");
 vtkCxxSetObjectMacro(vtkLightingHelper, Shader, vtkShaderProgram2);
 //----------------------------------------------------------------------------
 vtkLightingHelper::vtkLightingHelper()

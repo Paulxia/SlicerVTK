@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLegendScaleActor.h
+  Module:    $RCSfile: vtkLegendScaleActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -55,7 +55,7 @@ public:
 
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkLegendScaleActor,vtkProp);
+  vtkTypeRevisionMacro(vtkLegendScaleActor,vtkProp);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

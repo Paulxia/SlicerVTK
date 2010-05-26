@@ -1,7 +1,7 @@
 // ============================================================================
 //
 //  Program:   Visualization Toolkit
-//  Module:    vtkGaussianBlurPassShader_fs.glsl
+//  Module:    $RCSfile: vtkGaussianBlurPassShader_fs.glsl,v $
 //
 //  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 //  All rights reserved.

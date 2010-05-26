@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCell.h
+  Module:    $RCSfile: vtkCell.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,7 +52,7 @@ class vtkPoints;
 class VTK_FILTERING_EXPORT vtkCell : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkCell,vtkObject);
+  vtkTypeRevisionMacro(vtkCell,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

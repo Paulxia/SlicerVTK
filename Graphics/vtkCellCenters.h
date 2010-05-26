@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellCenters.h
+  Module:    $RCSfile: vtkCellCenters.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@
 class VTK_GRAPHICS_EXPORT vtkCellCenters : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkCellCenters,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCellCenters,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPCellDataToPointData.cxx
+  Module:    $RCSfile: vtkPCellDataToPointData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPCellDataToPointData, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkPCellDataToPointData);
 
 //----------------------------------------------------------------------------

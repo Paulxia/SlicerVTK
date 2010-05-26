@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTensorProbeRepresentation.cxx
+  Module:    $RCSfile: vtkTensorProbeRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #define min(x,y) ((x<y) ? (x) : (y))
 #define max(x,y) ((x>y) ? (x) : (y))
 
+vtkCxxRevisionMacro(vtkTensorProbeRepresentation, "$Revision: 1.4 $");
 
 //----------------------------------------------------------------------
 vtkTensorProbeRepresentation::vtkTensorProbeRepresentation()

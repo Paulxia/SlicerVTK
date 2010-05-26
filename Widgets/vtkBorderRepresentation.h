@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBorderRepresentation.h
+  Module:    $RCSfile: vtkBorderRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ public:
 
   // Description:
   // Define standard methods.
-  vtkTypeMacro(vtkBorderRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkBorderRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

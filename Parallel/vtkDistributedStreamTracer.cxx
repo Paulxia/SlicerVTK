@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistributedStreamTracer.cxx
+  Module:    $RCSfile: vtkDistributedStreamTracer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkRungeKutta2.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkDistributedStreamTracer, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkDistributedStreamTracer);
 
 vtkDistributedStreamTracer::vtkDistributedStreamTracer()

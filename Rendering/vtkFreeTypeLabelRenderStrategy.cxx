@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFreeTypeLabelRenderStrategy.cxx
+  Module:    $RCSfile: vtkFreeTypeLabelRenderStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkTextProperty.h"
 #include "vtkTimerLog.h"
 
+vtkCxxRevisionMacro(vtkFreeTypeLabelRenderStrategy, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkFreeTypeLabelRenderStrategy);
 
 //----------------------------------------------------------------------------

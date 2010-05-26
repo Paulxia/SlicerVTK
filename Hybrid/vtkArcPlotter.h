@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArcPlotter.h
+  Module:    $RCSfile: vtkArcPlotter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -60,7 +60,7 @@ public:
   // VTK_SCALARS.
   static vtkArcPlotter *New();
 
-  vtkTypeMacro(vtkArcPlotter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkArcPlotter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImagePermute.h
+  Module:    $RCSfile: vtkImagePermute.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_IMAGING_EXPORT vtkImagePermute : public vtkImageReslice
 {
 public:
   static vtkImagePermute *New();
-  vtkTypeMacro(vtkImagePermute,vtkImageReslice);
+  vtkTypeRevisionMacro(vtkImagePermute,vtkImageReslice);
 
   void PrintSelf(ostream& os, vtkIndent indent);
 

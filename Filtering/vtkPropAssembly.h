@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPropAssembly.h
+  Module:    $RCSfile: vtkPropAssembly.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@
 class VTK_FILTERING_EXPORT vtkPropAssembly : public vtkProp
 {
 public:
-  vtkTypeMacro(vtkPropAssembly,vtkProp);
+  vtkTypeRevisionMacro(vtkPropAssembly,vtkProp);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellTypes.h
+  Module:    $RCSfile: vtkCellTypes.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_FILTERING_EXPORT vtkCellTypes : public vtkObject
 {
 public:
   static vtkCellTypes *New();
-  vtkTypeMacro(vtkCellTypes,vtkObject);
+  vtkTypeRevisionMacro(vtkCellTypes,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -118,13 +118,6 @@ public:
   // defined in vtkCellType.h)
   static int GetTypeIdFromClassName(const char* classname);
 
-  // Description:
-  // This convenience method is a fast check to determine if a cell type
-  // represents a linear or nonlinear cell.  This is generally much more
-  // efficient than getting the appropriate vtkCell and checking its IsLinear
-  // method.
-  static int IsLinear(unsigned char type);
-
 protected:
   vtkCellTypes();
   ~vtkCellTypes();
@@ -153,14 +146,6 @@ inline int vtkCellTypes::IsType(unsigned char type)
       }
     }
   return 0;
-}
-
-//-----------------------------------------------------------------------------
-inline int vtkCellTypes::IsLinear(unsigned char type)
-{
-  return (   (type <= 20)
-          || (type == VTK_CONVEX_POINT_SET)
-          || (type == VTK_POLYHEDRON) );
 }
 
 

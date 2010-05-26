@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBrush.cxx
+  Module:    $RCSfile: vtkBrush.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkBrush, "$Revision: 1.3 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkBrush);

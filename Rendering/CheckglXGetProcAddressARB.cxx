@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    CheckglXGetProcAddressARB.cxx
+  Module:    $RCSfile: CheckglXGetProcAddressARB.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

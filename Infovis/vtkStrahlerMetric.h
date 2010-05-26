@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStrahlerMetric.h
+  Module:    $RCSfile: vtkStrahlerMetric.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ class VTK_INFOVIS_EXPORT vtkStrahlerMetric : public vtkTreeAlgorithm
 {
 public:
   static vtkStrahlerMetric *New();
-  vtkTypeMacro(vtkStrahlerMetric,vtkTreeAlgorithm);
+  vtkTypeRevisionMacro(vtkStrahlerMetric,vtkTreeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

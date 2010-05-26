@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationExecutivePortVectorKey.h
+  Module:    $RCSfile: vtkInformationExecutivePortVectorKey.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class vtkExecutive;
 class VTK_FILTERING_EXPORT vtkInformationExecutivePortVectorKey : public vtkInformationKey
 {
 public:
-  vtkTypeMacro(vtkInformationExecutivePortVectorKey,vtkInformationKey);
+  vtkTypeRevisionMacro(vtkInformationExecutivePortVectorKey,vtkInformationKey);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkInformationExecutivePortVectorKey(const char* name, const char* location);

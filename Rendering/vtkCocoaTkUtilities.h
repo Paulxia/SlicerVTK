@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkCocoaTkUtilities.h
+Module:    $RCSfile: vtkCocoaTkUtilities.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -39,7 +39,7 @@ class VTK_RENDERING_EXPORT vtkCocoaTkUtilities : public vtkObject
 {
 public:
   static vtkCocoaTkUtilities *New();
-  vtkTypeMacro(vtkCocoaTkUtilities,vtkObject);
+  vtkTypeRevisionMacro(vtkCocoaTkUtilities,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

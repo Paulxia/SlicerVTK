@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataObjectReader.cxx
+  Module:    $RCSfile: vtkDataObjectReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkFieldData.h"
 #include "vtkDataObject.h"
 
+vtkCxxRevisionMacro(vtkDataObjectReader, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkDataObjectReader);
 
 vtkDataObjectReader::vtkDataObjectReader()

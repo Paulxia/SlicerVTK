@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLWriter.cxx
+  Module:    $RCSfile: vtkXMLWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -214,6 +214,7 @@ int vtkXMLWriterWriteBinaryDataBlocks(vtkXMLWriter* writer,
 }
 //*****************************************************************************
 
+vtkCxxRevisionMacro(vtkXMLWriter, "$Revision: 1.78 $");
 vtkCxxSetObjectMacro(vtkXMLWriter, Compressor, vtkDataCompressor);
 //----------------------------------------------------------------------------
 vtkXMLWriter::vtkXMLWriter()
@@ -1739,7 +1740,6 @@ void vtkXMLWriter::WriteArrayAppended(
     offs.GetRangeMinPosition(timestep) = -1;
     offs.GetRangeMaxPosition(timestep) = -1;
     }
-
   //
   offs.GetPosition(timestep) = this->ReserveAttributeSpace("offset");
   // Write information in the recognized keys associated with this array.
@@ -1802,26 +1802,8 @@ void vtkXMLWriter::WriteArrayHeader(vtkAbstractArray* a,  vtkIndent indent,
   if(a->GetNumberOfComponents() > 1)
     {
     this->WriteScalarAttribute("NumberOfComponents",
-      a->GetNumberOfComponents()); 
+      a->GetNumberOfComponents());
     }
-  
-  //always write out component names, even if only 1 component
-  vtksys_ios::ostringstream buff;    
-  const char* compName = NULL;
-  for ( int i=0; i < a->GetNumberOfComponents(); ++i )
-    {
-    //get the component names    
-    buff << "ComponentName" << i;      
-    compName = a->GetComponentName( i );
-    if ( compName )
-      {
-      this->WriteStringAttribute( buff.str().c_str(), compName );
-      compName = NULL;
-      }
-    buff.str("");
-    buff.clear();
-    }
-    
   if(this->NumberOfTimeSteps > 1)
     {
     this->WriteScalarAttribute("TimeStep", timestep);
@@ -1916,7 +1898,7 @@ void vtkXMLWriter::WriteArrayInline(
     key->SaveState(info,eKey);
     eKey->PrintXML(os,indent);
     eKey->Delete();
-    }  
+    }
   // Write the inline data.
   this->WriteInlineData(a, indent.GetNextIndent());
   // Close tag.

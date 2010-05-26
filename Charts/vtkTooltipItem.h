@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTooltipItem.h
+  Module:    $RCSfile: vtkTooltipItem.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class vtkTextProperty;
 class VTK_CHARTS_EXPORT vtkTooltipItem : public vtkContextItem
 {
 public:
-  vtkTypeMacro(vtkTooltipItem, vtkContextItem);
+  vtkTypeRevisionMacro(vtkTooltipItem, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

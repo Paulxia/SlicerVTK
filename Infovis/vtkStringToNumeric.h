@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStringToNumeric.h
+  Module:    $RCSfile: vtkStringToNumeric.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_INFOVIS_EXPORT vtkStringToNumeric : public vtkDataObjectAlgorithm
 {
 public:
   static vtkStringToNumeric* New();
-  vtkTypeMacro(vtkStringToNumeric,vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkStringToNumeric,vtkDataObjectAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

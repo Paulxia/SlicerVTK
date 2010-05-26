@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableToGraph.h
+  Module:    $RCSfile: vtkTableToGraph.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -74,7 +74,7 @@ class VTK_INFOVIS_EXPORT vtkTableToGraph : public vtkGraphAlgorithm
 {
 public:
   static vtkTableToGraph* New();
-  vtkTypeMacro(vtkTableToGraph,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkTableToGraph,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

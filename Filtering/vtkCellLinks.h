@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellLinks.h
+  Module:    $RCSfile: vtkCellLinks.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ public:
   //ETX
 
   static vtkCellLinks *New();
-  vtkTypeMacro(vtkCellLinks,vtkObject);
+  vtkTypeRevisionMacro(vtkCellLinks,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

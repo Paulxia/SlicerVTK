@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDefaultPass.cxx
+  Module:    $RCSfile: vtkDefaultPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkProp.h"
 #include "vtkRenderer.h"
 
+vtkCxxRevisionMacro(vtkDefaultPass, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkDefaultPass);
 
 // ----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPKdTree.cxx
+  Module:    $RCSfile: vtkPKdTree.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -79,6 +79,7 @@ static char * makeEntry(const char *s)
 
 // Timing data ---------------------------------------------
 
+vtkCxxRevisionMacro(vtkPKdTree, "$Revision: 1.43 $");
 vtkStandardNewMacro(vtkPKdTree);
 
 const int vtkPKdTree::NoRegionAssignment = 0;   // default

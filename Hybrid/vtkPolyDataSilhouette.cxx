@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataSilhouette.cxx
+  Module:    $RCSfile: vtkPolyDataSilhouette.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkPolyDataSilhouette, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkPolyDataSilhouette);
 
 vtkCxxSetObjectMacro(vtkPolyDataSilhouette,Camera,vtkCamera);

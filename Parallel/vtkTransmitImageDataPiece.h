@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransmitImageDataPiece.h
+  Module:    $RCSfile: vtkTransmitImageDataPiece.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_PARALLEL_EXPORT vtkTransmitImageDataPiece : public vtkImageAlgorithm
 {
 public:
   static vtkTransmitImageDataPiece *New();
-  vtkTypeMacro(vtkTransmitImageDataPiece, vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkTransmitImageDataPiece, vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSliderWidget.h
+  Module:    $RCSfile: vtkSliderWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -75,7 +75,7 @@ public:
 
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkSliderWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkSliderWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

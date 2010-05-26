@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellLinks.cxx
+  Module:    $RCSfile: vtkCellLinks.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkCellLinks, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkCellLinks);
 
 //----------------------------------------------------------------------------

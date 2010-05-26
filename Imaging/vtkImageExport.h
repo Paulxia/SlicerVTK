@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageExport.h
+  Module:    $RCSfile: vtkImageExport.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_IMAGING_EXPORT vtkImageExport : public vtkImageAlgorithm
 {
 public:
   static vtkImageExport *New();
-  vtkTypeMacro(vtkImageExport,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageExport,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

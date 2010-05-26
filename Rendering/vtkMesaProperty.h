@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaProperty.h
+  Module:    $RCSfile: vtkMesaProperty.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_RENDERING_EXPORT vtkMesaProperty : public vtkProperty
 {
 public:
   static vtkMesaProperty *New();
-  vtkTypeMacro(vtkMesaProperty,vtkProperty);
+  vtkTypeRevisionMacro(vtkMesaProperty,vtkProperty);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -23,6 +23,7 @@
 #define VTK_PCA_COMPCOLUMN "PCA"
 
 
+vtkCxxRevisionMacro(vtkPCAStatistics,"$Revision: 1.12 $");
 vtkStandardNewMacro(vtkPCAStatistics);
 
 const char* vtkPCAStatistics::NormalizationSchemeEnumNames[NUM_NORMALIZATION_SCHEMES + 1] =
@@ -477,10 +478,15 @@ static void vtkPCAStatisticsNormalizeVariance( vtkVariantArray* normData,
 }
 
 // ----------------------------------------------------------------------
-void vtkPCAStatistics::Derive( vtkMultiBlockDataSet* inMeta )
+void vtkPCAStatistics::Derive( vtkDataObject* inMetaDO )
 {
+  vtkMultiBlockDataSet* inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO );
   if ( ! inMeta )
     {
+    vtkWarningMacro(
+                    "Expected a vtkMultiBlockDataSet but was given "
+                    << ( inMetaDO ? inMetaDO->GetClassName() : "null pointer" )
+                    << "instead" );
     return;
     }
 
@@ -612,15 +618,22 @@ void vtkPCAStatistics::Derive( vtkMultiBlockDataSet* inMeta )
 
 // ----------------------------------------------------------------------
 void vtkPCAStatistics::Assess( vtkTable* inData, 
-                               vtkMultiBlockDataSet* inMeta, 
+                               vtkDataObject* inMetaDO, 
                                vtkTable* outData )
 {
-  if ( ! inData )
+  vtkMultiBlockDataSet* inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO );
+  if ( ! inMeta || ! outData )
     {
     return;
     }
 
-  if ( ! inMeta )
+  if ( inData->GetNumberOfColumns() <= 0 )
+    {
+    return;
+    }
+
+  vtkIdType nsamples = inData->GetNumberOfRows();
+  if ( nsamples <= 0 )
     {
     return;
     }
@@ -629,7 +642,6 @@ void vtkPCAStatistics::Assess( vtkTable* inData,
   // Column names of the metadata and input data are assumed to match (no mapping using AssessNames or AssessParameters is done).
   // The output columns will be named "RelDevSq(A,B,C)" where "A", "B", and "C" are the column names specified in the
   // per-request metadata tables.
-  vtkIdType nRow = inData->GetNumberOfRows();
   int nb = static_cast<int>( inMeta->GetNumberOfBlocks() );
   AssessFunctor* dfunc = 0;
   for ( int req = 1; req < nb; ++ req )
@@ -674,7 +686,7 @@ void vtkPCAStatistics::Assess( vtkTable* inData,
       reqNameStr << "}(" << comp << ")";
       vtkDoubleArray* arr = vtkDoubleArray::New();
       arr->SetName( reqNameStr.str().c_str() );
-      arr->SetNumberOfTuples( nRow );
+      arr->SetNumberOfTuples( nsamples );
       outData->AddColumn( arr );
       arr->Delete();
       assessValues.push_back( arr->GetPointer( 0 ) );
@@ -683,7 +695,7 @@ void vtkPCAStatistics::Assess( vtkTable* inData,
     // Something to hold assessed values for a single input datum
     vtkVariantArray* singleResult = vtkVariantArray::New();
     // Loop over all the input data and assess each datum:
-    for ( vtkIdType row = 0; row < nRow; ++ row )
+    for ( vtkIdType row = 0; row < nsamples; ++ row )
       {
       (*dfunc)( singleResult, row );
       for ( comp = 0; comp < pcafunc->BasisSize; ++ comp )

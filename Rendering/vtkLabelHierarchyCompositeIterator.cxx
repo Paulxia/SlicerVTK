@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabelHierarchyCompositeIterator.cxx
+  Module:    $RCSfile: vtkLabelHierarchyCompositeIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include <vtksys/stl/utility>
 #include <vtksys/stl/vector>
 
+vtkCxxRevisionMacro(vtkLabelHierarchyCompositeIterator, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkLabelHierarchyCompositeIterator);
 
 class vtkLabelHierarchyCompositeIterator::Internal

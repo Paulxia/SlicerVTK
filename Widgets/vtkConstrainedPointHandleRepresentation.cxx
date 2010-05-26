@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConstrainedPointHandleRepresentation.cxx
+  Module:    $RCSfile: vtkConstrainedPointHandleRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 #include "vtkTransform.h"
 #include "vtkCamera.h"
 
+vtkCxxRevisionMacro(vtkConstrainedPointHandleRepresentation, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkConstrainedPointHandleRepresentation);
 
 vtkCxxSetObjectMacro(vtkConstrainedPointHandleRepresentation, ObliquePlane, vtkPlane);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearWipeWidget.cxx
+  Module:    $RCSfile: vtkRectilinearWipeWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkWidgetEvent.h"
 
 
+vtkCxxRevisionMacro(vtkRectilinearWipeWidget, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkRectilinearWipeWidget);
 
 

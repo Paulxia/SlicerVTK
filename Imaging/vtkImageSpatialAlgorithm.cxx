@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSpatialAlgorithm.cxx
+  Module:    $RCSfile: vtkImageSpatialAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageSpatialAlgorithm, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkImageSpatialAlgorithm);
 
 //----------------------------------------------------------------------------

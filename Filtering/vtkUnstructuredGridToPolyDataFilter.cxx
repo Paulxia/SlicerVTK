@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridToPolyDataFilter.cxx
+  Module:    $RCSfile: vtkUnstructuredGridToPolyDataFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkInformation.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridToPolyDataFilter, "$Revision: 1.11 $");
 
 //----------------------------------------------------------------------------
 vtkUnstructuredGridToPolyDataFilter::vtkUnstructuredGridToPolyDataFilter()

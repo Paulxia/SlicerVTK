@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLineWidget2.h
+  Module:    $RCSfile: vtkLineWidget2.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -94,7 +94,7 @@ public:
 
   // Description:
   // Standard vtkObject methods
-  vtkTypeMacro(vtkLineWidget2,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkLineWidget2,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

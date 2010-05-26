@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGaussianRandomSequence.cxx
+  Module:    $RCSfile: vtkGaussianRandomSequence.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -13,6 +13,7 @@
 =========================================================================*/
 #include "vtkGaussianRandomSequence.h"
 
+vtkCxxRevisionMacro(vtkGaussianRandomSequence, "$Revision: 1.1 $");
 
 // ----------------------------------------------------------------------------
 vtkGaussianRandomSequence::vtkGaussianRandomSequence()

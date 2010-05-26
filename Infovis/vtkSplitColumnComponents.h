@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplitColumnComponents.h
+  Module:    $RCSfile: vtkSplitColumnComponents.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkSplitColumnComponents : public vtkTableAlgorithm
 {
 public:
   static vtkSplitColumnComponents* New();
-  vtkTypeMacro(vtkSplitColumnComponents,vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkSplitColumnComponents,vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageItem.cxx
+  Module:    $RCSfile: vtkImageItem.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkObjectFactory.h"
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkImageItem, "$Revision: 1.8.4.1 $");
 vtkStandardNewMacro(vtkImageItem);
 
 //-----------------------------------------------------------------------------

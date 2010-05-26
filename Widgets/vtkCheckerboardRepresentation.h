@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCheckerboardRepresentation.h
+  Module:    $RCSfile: vtkCheckerboardRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ public:
 
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkCheckerboardRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkCheckerboardRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

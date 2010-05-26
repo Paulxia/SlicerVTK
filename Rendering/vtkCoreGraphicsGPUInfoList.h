@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCoreGraphicsGPUInfoList.h
+  Module:    $RCSfile: vtkCoreGraphicsGPUInfoList.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkCoreGraphicsGPUInfoList : public vtkGPUInfoList
 {
 public:
   static vtkCoreGraphicsGPUInfoList* New();
-  vtkTypeMacro(vtkCoreGraphicsGPUInfoList, vtkGPUInfoList);
+  vtkTypeRevisionMacro(vtkCoreGraphicsGPUInfoList, vtkGPUInfoList);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

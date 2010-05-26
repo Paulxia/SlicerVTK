@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageImportExecutive.cxx
+  Module:    $RCSfile: vtkImageImportExecutive.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkInformationVector.h"
 #include "vtkImageImport.h"
 
+vtkCxxRevisionMacro(vtkImageImportExecutive, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkImageImportExecutive);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGPUVolumeRayCastMapper_MIPFS.glsl
+  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_MIPFS.glsl,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

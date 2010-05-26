@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDiagonalMatrixSource.h
+  Module:    $RCSfile: vtkDiagonalMatrixSource.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkDiagonalMatrixSource : public vtkArrayDataAlgorithm
 {
 public:
   static vtkDiagonalMatrixSource* New();
-  vtkTypeMacro(vtkDiagonalMatrixSource, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDiagonalMatrixSource, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

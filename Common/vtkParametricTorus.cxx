@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricTorus.cxx
+  Module:    $RCSfile: vtkParametricTorus.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkParametricTorus, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkParametricTorus);
 
 //----------------------------------------------------------------------------

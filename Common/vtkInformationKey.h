@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationKey.h
+  Module:    $RCSfile: vtkInformationKey.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,14 +27,14 @@
 #define __vtkInformationKey_h
 
 #include "vtkObjectBase.h"
-#include "vtkObject.h" // Need vtkTypeMacro
+#include "vtkObject.h" // Need vtkTypeRevisionMacro
 
 class vtkInformation;
 
 class VTK_COMMON_EXPORT vtkInformationKey : public vtkObjectBase
 {
 public:
-  vtkTypeMacro(vtkInformationKey,vtkObjectBase);
+  vtkTypeRevisionMacro(vtkInformationKey,vtkObjectBase);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

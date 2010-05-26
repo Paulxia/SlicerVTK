@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeodesicPath.cxx
+  Module:    $RCSfile: vtkGeodesicPath.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkPolyData.h"
 #include "vtkExecutive.h"
 
+vtkCxxRevisionMacro(vtkGeodesicPath, "$Revision: 1.1 $");
 
 //-----------------------------------------------------------------------------
 vtkGeodesicPath::vtkGeodesicPath()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLoopSubdivisionFilter.h
+  Module:    $RCSfile: vtkLoopSubdivisionFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,7 +56,7 @@ public:
   // Description:
   // Construct object with NumberOfSubdivisions set to 1.
   static vtkLoopSubdivisionFilter *New();
-  vtkTypeMacro(vtkLoopSubdivisionFilter,vtkApproximatingSubdivisionFilter);
+  vtkTypeRevisionMacro(vtkLoopSubdivisionFilter,vtkApproximatingSubdivisionFilter);
 
 protected:
   vtkLoopSubdivisionFilter () {};

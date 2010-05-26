@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDummyGPUInfoList.cxx
+  Module:    $RCSfile: vtkDummyGPUInfoList.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkDummyGPUInfoList, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkDummyGPUInfoList);
 
 // ----------------------------------------------------------------------------

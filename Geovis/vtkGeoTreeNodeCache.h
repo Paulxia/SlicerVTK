@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoTreeNodeCache.h
+  Module:    $RCSfile: vtkGeoTreeNodeCache.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_GEOVIS_EXPORT vtkGeoTreeNodeCache : public vtkObject
 {
 public:
   static vtkGeoTreeNodeCache *New();
-  vtkTypeMacro(vtkGeoTreeNodeCache,vtkObject);
+  vtkTypeRevisionMacro(vtkGeoTreeNodeCache,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFreeTypeUtilities.cxx
+  Module:    $RCSfile: vtkFreeTypeUtilities.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #define VTK_FTFC_DEBUG_CD 0
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkFreeTypeUtilities, "$Revision: 1.31 $");
 vtkInstantiatorNewMacro(vtkFreeTypeUtilities);
 
 //----------------------------------------------------------------------------

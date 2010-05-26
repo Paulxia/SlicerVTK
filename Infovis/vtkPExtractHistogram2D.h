@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPExtractHistogram2D.h
+  Module:    $RCSfile: vtkPExtractHistogram2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,21 +30,20 @@
 //  vtkExtractHistogram2D
 // 
 // .SECTION Thanks
-//  Developed by David Feng and Philippe Pebay at Sandia National Laboratories
+//  Developed by David Feng at Sandia National Laboratories
 //------------------------------------------------------------------------------
 #ifndef __vtkPExtractHistogram2D_h
 #define __vtkPExtractHistogram2D_h
-
+//------------------------------------------------------------------------------
 #include "vtkExtractHistogram2D.h"
-
-class vtkMultiBlockDataSet;
+//------------------------------------------------------------------------------
 class vtkMultiProcessController;
-
+//------------------------------------------------------------------------------
 class VTK_INFOVIS_EXPORT vtkPExtractHistogram2D : public vtkExtractHistogram2D
 {
 public:
   static vtkPExtractHistogram2D* New();
-  vtkTypeMacro(vtkPExtractHistogram2D, vtkExtractHistogram2D);
+  vtkTypeRevisionMacro(vtkPExtractHistogram2D, vtkExtractHistogram2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual void SetController(vtkMultiProcessController*);
@@ -61,7 +60,7 @@ protected:
   // Execute the calculations required by the Learn option.
   virtual void Learn( vtkTable* inData,
                       vtkTable* inParameters,
-                      vtkMultiBlockDataSet* outMeta );
+                      vtkDataObject* outMeta );
 
 private:
   vtkPExtractHistogram2D(const vtkPExtractHistogram2D&); // Not implemented

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCornerAnnotation.h
+  Module:    $RCSfile: vtkCornerAnnotation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkTextProperty;
 class VTK_HYBRID_EXPORT vtkCornerAnnotation : public vtkActor2D
 {
 public:
-  vtkTypeMacro(vtkCornerAnnotation,vtkActor2D);
+  vtkTypeRevisionMacro(vtkCornerAnnotation,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

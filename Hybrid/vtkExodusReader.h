@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExodusReader.h
+  Module:    $RCSfile: vtkExodusReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,7 +56,7 @@ class VTK_HYBRID_EXPORT vtkExodusReader : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkExodusReader *New();
-  vtkTypeMacro(vtkExodusReader,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkExodusReader,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

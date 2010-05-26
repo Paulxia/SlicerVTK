@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFocalPlaneContourRepresentation.h
+  Module:    $RCSfile: vtkFocalPlaneContourRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_WIDGETS_EXPORT vtkFocalPlaneContourRepresentation : public vtkContourR
 public:
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkFocalPlaneContourRepresentation,vtkContourRepresentation);
+  vtkTypeRevisionMacro(vtkFocalPlaneContourRepresentation,vtkContourRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

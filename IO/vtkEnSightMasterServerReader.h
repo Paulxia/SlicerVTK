@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEnSightMasterServerReader.h
+  Module:    $RCSfile: vtkEnSightMasterServerReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,7 +24,7 @@ class vtkCollection;
 class VTK_IO_EXPORT vtkEnSightMasterServerReader : public vtkGenericEnSightReader
 {
 public:
-  vtkTypeMacro(vtkEnSightMasterServerReader, vtkGenericEnSightReader);
+  vtkTypeRevisionMacro(vtkEnSightMasterServerReader, vtkGenericEnSightReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkEnSightMasterServerReader* New();

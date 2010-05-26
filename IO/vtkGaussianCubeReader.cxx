@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGaussianCubeReader.cxx
+  Module:    $RCSfile: vtkGaussianCubeReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkGaussianCubeReader, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkGaussianCubeReader);
 
 //----------------------------------------------------------------------------

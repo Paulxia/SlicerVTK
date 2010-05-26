@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkModifiedBSPTree.cxx
+  Module:    $RCSfile: vtkModifiedBSPTree.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkIdListCollection.h"
 //
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkModifiedBSPTree, "$Revision: 1.10.4.1 $");
 vtkStandardNewMacro(vtkModifiedBSPTree);
 //----------------------------------------------------------------------------
 //
@@ -706,7 +707,7 @@ int vtkModifiedBSPTree::IntersectWithLine(
   }
   if (HIT) {
     vtksys_stl::sort(t_list.begin(), t_list.end(), Isort());
-    int N = static_cast<int>(t_list.size());
+    int N = t_list.size();
     if (points)  points->SetNumberOfPoints(N);
     if (cellIds) cellIds->SetNumberOfIds(N);
     for (int n=0; n<N; n++) {

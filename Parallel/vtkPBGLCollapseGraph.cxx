@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLCollapseGraph.cxx
+  Module:    $RCSfile: vtkPBGLCollapseGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 
 #include <boost/graph/use_mpi.hpp>   // must precede all pbgl includes
 
+vtkCxxRevisionMacro(vtkPBGLCollapseGraph, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkPBGLCollapseGraph);
 
 vtkPBGLCollapseGraph::vtkPBGLCollapseGraph()

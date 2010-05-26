@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGroupLeafVertices.cxx
+  Module:    $RCSfile: vtkGroupLeafVertices.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 #include <vtksys/stl/utility>
 #include <vtksys/stl/vector>
 
+vtkCxxRevisionMacro(vtkGroupLeafVertices, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkGroupLeafVertices);
 
 // Forward function reference (definition at bottom :)

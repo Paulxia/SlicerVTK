@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkViewport.cxx
+  Module:    $RCSfile: vtkViewport.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkPropCollection.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkViewport, "$Revision: 1.14 $");
 
 //----------------------------------------------------------------------------
 // Create a vtkViewport with a black background, a white ambient light,

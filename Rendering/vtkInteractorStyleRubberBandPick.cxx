@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleRubberBandPick.cxx
+  Module:    $RCSfile: vtkInteractorStyleRubberBandPick.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkAssemblyPath.h"
 #include "vtkAreaPicker.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleRubberBandPick, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkInteractorStyleRubberBandPick);
 
 #define VTKISRBP_ORIENT 0

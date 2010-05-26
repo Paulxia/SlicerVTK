@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlane.h
+  Module:    $RCSfile: vtkPlane.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ public:
   // Construct plane passing through origin and normal to z-axis.
   static vtkPlane *New();
 
-  vtkTypeMacro(vtkPlane,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkPlane,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

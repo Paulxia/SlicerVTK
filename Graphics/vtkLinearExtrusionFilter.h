@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLinearExtrusionFilter.h
+  Module:    $RCSfile: vtkLinearExtrusionFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class vtkDataArray;
 class VTK_GRAPHICS_EXPORT vtkLinearExtrusionFilter : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkLinearExtrusionFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkLinearExtrusionFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageLaplacian.cxx
+  Module:    $RCSfile: vtkImageLaplacian.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageLaplacian, "$Revision: 1.35 $");
 vtkStandardNewMacro(vtkImageLaplacian);
 
 //----------------------------------------------------------------------------

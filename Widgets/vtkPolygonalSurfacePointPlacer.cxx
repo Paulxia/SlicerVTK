@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolygonalSurfacePointPlacer.cxx
+  Module:    $RCSfile: vtkPolygonalSurfacePointPlacer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -141,6 +141,7 @@ public:
     }
 };
 
+vtkCxxRevisionMacro(vtkPolygonalSurfacePointPlacer, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkPolygonalSurfacePointPlacer);
 
 //----------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineWidget.cxx
+  Module:    $RCSfile: vtkSplineWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkSphereSource.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkSplineWidget, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkSplineWidget);
 
 vtkCxxSetObjectMacro(vtkSplineWidget, HandleProperty, vtkProperty);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParallelFactory.cxx
+  Module:    $RCSfile: vtkParallelFactory.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #  include "vtkPImageWriter.h"
 #endif // VTK_USE_RENDERING
 
+vtkCxxRevisionMacro(vtkParallelFactory, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkParallelFactory);
 
 void vtkParallelFactory::PrintSelf(ostream& os, vtkIndent indent)

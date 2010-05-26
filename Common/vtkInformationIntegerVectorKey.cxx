@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationIntegerVectorKey.cxx
+  Module:    $RCSfile: vtkInformationIntegerVectorKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include <vtkstd/algorithm>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkInformationIntegerVectorKey, "$Revision: 1.9 $");
 
 //----------------------------------------------------------------------------
 vtkInformationIntegerVectorKey

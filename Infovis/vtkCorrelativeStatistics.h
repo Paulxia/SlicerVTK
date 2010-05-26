@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkCorrelativeStatistics.h
+Module:    $RCSfile: vtkCorrelativeStatistics.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -44,7 +44,6 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include "vtkBivariateStatisticsAlgorithm.h"
 
-class vtkMultiBlockDataSet;
 class vtkStringArray;
 class vtkTable;
 class vtkVariant;
@@ -52,14 +51,14 @@ class vtkVariant;
 class VTK_INFOVIS_EXPORT vtkCorrelativeStatistics : public vtkBivariateStatisticsAlgorithm
 {
 public:
-  vtkTypeMacro(vtkCorrelativeStatistics, vtkBivariateStatisticsAlgorithm);
+  vtkTypeRevisionMacro(vtkCorrelativeStatistics, vtkBivariateStatisticsAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkCorrelativeStatistics* New();
 
   // Description:
   // Given a collection of models, calculate aggregate model
   virtual void Aggregate( vtkDataObjectCollection*,
-                          vtkMultiBlockDataSet* );
+                          vtkDataObject* );
 
 protected:
   vtkCorrelativeStatistics();
@@ -69,17 +68,17 @@ protected:
   // Execute the calculations required by the Learn option.
   virtual void Learn( vtkTable* inData,
                       vtkTable* inParameters,
-                      vtkMultiBlockDataSet* outMeta );
+                      vtkDataObject* outMeta );
 
   // Description:
   // Execute the calculations required by the Derive option.
-  virtual void Derive( vtkMultiBlockDataSet* );
+  virtual void Derive( vtkDataObject* );
 
   // Description:
   // Execute the calculations required by the Test option.
   virtual void Test( vtkTable*,
-                     vtkMultiBlockDataSet*,
-                     vtkTable* ) { return; };
+                     vtkDataObject*,
+                     vtkDataObject* ) { return; };
 
 //BTX  
   // Description:

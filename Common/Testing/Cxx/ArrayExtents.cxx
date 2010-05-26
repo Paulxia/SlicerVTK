@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ArrayExtents.cxx
+  Module:    $RCSfile: ArrayExtents.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

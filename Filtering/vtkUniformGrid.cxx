@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUniformGrid.cxx
+  Module:    $RCSfile: vtkUniformGrid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkVertex.h"
 #include "vtkVoxel.h"
 
+vtkCxxRevisionMacro(vtkUniformGrid, "$Revision: 1.20 $");
 vtkStandardNewMacro(vtkUniformGrid);
 
 vtkCxxSetObjectMacro(vtkUniformGrid, PointVisibility,

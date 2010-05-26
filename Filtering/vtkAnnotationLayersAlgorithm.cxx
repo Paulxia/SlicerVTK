@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnnotationLayersAlgorithm.cxx
+  Module:    $RCSfile: vtkAnnotationLayersAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
+vtkCxxRevisionMacro(vtkAnnotationLayersAlgorithm, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkAnnotationLayersAlgorithm);
 
 //----------------------------------------------------------------------------

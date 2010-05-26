@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArraySort.cxx
+  Module:    $RCSfile: vtkArraySort.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

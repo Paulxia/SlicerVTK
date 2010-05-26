@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAssignCoordinatesLayoutStrategy.cxx
+  Module:    $RCSfile: vtkAssignCoordinatesLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkPoints.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkAssignCoordinatesLayoutStrategy, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkAssignCoordinatesLayoutStrategy);
 
 vtkAssignCoordinatesLayoutStrategy::vtkAssignCoordinatesLayoutStrategy()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlane.cxx
+  Module:    $RCSfile: vtkPlane.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkMath.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPlane, "$Revision: 1.47 $");
 vtkStandardNewMacro(vtkPlane);
 
 // Construct plane passing through origin and normal to z-axis.

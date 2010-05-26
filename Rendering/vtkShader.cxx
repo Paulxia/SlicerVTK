@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShader.cxx
+  Module:    $RCSfile: vtkShader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -339,6 +339,7 @@ public:
 };
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkShader, "$Revision: 1.25 $")
 vtkCxxSetObjectMacro(vtkShader, XMLShader, vtkXMLShader);
 //-----------------------------------------------------------------------------
 vtkShader::vtkShader()

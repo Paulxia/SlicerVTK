@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderer.cxx
+  Module:    $RCSfile: vtkRenderer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 #include "vtkRenderState.h"
 #include "vtkTexture.h"
 
+vtkCxxRevisionMacro(vtkRenderer, "$Revision: 1.256 $");
 vtkCxxSetObjectMacro(vtkRenderer, Delegate, vtkRendererDelegate);
 vtkCxxSetObjectMacro(vtkRenderer, Pass, vtkRenderPass);
 vtkCxxSetObjectMacro(vtkRenderer, BackgroundTexture, vtkTexture);

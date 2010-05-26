@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPStructuredDataReader.cxx
+  Module:    $RCSfile: vtkXMLPStructuredDataReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 
 #include <vtksys/ios/sstream>
 
+vtkCxxRevisionMacro(vtkXMLPStructuredDataReader, "$Revision: 1.28 $");
 
 //----------------------------------------------------------------------------
 vtkXMLPStructuredDataReader::vtkXMLPStructuredDataReader()

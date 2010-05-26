@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPOutlineCornerFilter.h
+  Module:    $RCSfile: vtkPOutlineCornerFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class vtkMultiProcessController;
 class VTK_PARALLEL_EXPORT vtkPOutlineCornerFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkPOutlineCornerFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPOutlineCornerFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

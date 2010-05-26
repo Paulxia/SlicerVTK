@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:  vtkDijkstraGraphGeodesicPath.cxx
+  Module:  $RCSfile: vtkDijkstraGraphGeodesicPath.cxx,v $
   Language:  C++
-  Date:    $Date$
-  Version:   $Revision$
+  Date:    $Date: 2009-04-26 09:39:21 $
+  Version:   $Revision: 1.14 $
   
   Made by Rasmus Paulsen
   email:  rrp(at)imm.dtu.dk
@@ -28,6 +28,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkDijkstraGraphGeodesicPath, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkDijkstraGraphGeodesicPath);
 vtkCxxSetObjectMacro(vtkDijkstraGraphGeodesicPath,RepelVertices,vtkPoints);
 

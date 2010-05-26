@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPDataSetReader.h
+  Module:    $RCSfile: vtkPDataSetReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_PARALLEL_EXPORT vtkPDataSetReader : public vtkDataSetAlgorithm
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkPDataSetReader,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkPDataSetReader,vtkDataSetAlgorithm);
   static vtkPDataSetReader *New();
 
   // Description:

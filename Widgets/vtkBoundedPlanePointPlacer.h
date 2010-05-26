@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoundedPlanePointPlacer.h
+  Module:    $RCSfile: vtkBoundedPlanePointPlacer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkBoundedPlanePointPlacer,vtkPointPlacer);
+  vtkTypeRevisionMacro(vtkBoundedPlanePointPlacer,vtkPointPlacer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

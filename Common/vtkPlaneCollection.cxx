@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlaneCollection.cxx
+  Module:    $RCSfile: vtkPlaneCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkPlaneCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPlaneCollection, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkPlaneCollection);
 
 vtkPlane *vtkPlaneCollection::GetNextPlane(

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStandardPolyDataPainter.cxx
+  Module:    $RCSfile: vtkStandardPolyDataPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -65,6 +65,7 @@ public:
 };
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkStandardPolyDataPainter, "$Revision: 1.18 $");
 vtkStandardNewMacro(vtkStandardPolyDataPainter);
 //-----------------------------------------------------------------------------
 static inline int vtkStandardPolyDataPainterGetTotalCells(vtkPolyData* pd,

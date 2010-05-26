@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderWindowCollection.cxx
+  Module:    $RCSfile: vtkRenderWindowCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkRenderWindowCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkRenderWindowCollection, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkRenderWindowCollection);
 
 void vtkRenderWindowCollection::PrintSelf(ostream& os, vtkIndent indent)

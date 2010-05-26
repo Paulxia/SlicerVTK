@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOutlineCornerFilter.cxx
+  Module:    $RCSfile: vtkOutlineCornerFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkOutlineCornerSource.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkOutlineCornerFilter, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkOutlineCornerFilter);
 
 vtkOutlineCornerFilter::vtkOutlineCornerFilter ()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLCollapseParallelEdges.cxx
+  Module:    $RCSfile: vtkPBGLCollapseParallelEdges.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #include <vtksys/stl/map>
 #include <vtksys/stl/utility> // for pair
 
+vtkCxxRevisionMacro(vtkPBGLCollapseParallelEdges, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkPBGLCollapseParallelEdges);
 
 vtkPBGLCollapseParallelEdges::vtkPBGLCollapseParallelEdges()

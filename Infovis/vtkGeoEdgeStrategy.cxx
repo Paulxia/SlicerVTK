@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoEdgeStrategy.cxx
+  Module:    $RCSfile: vtkGeoEdgeStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include <vtksys/stl/vector>
 #include <vtksys/stl/map>
 
+vtkCxxRevisionMacro(vtkGeoEdgeStrategy, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkGeoEdgeStrategy);
 
 vtkGeoEdgeStrategy::vtkGeoEdgeStrategy()

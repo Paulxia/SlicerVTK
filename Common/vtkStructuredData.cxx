@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredData.cxx
+  Module:    $RCSfile: vtkStructuredData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkStructuredData, "$Revision: 1.65 $");
 
 // Return the topological dimension of the data (e.g., 0, 1, 2, or 3D).
 int vtkStructuredData::GetDataDimension(int dataDescription)

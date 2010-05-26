@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitFunctionCollection.h
+  Module:    $RCSfile: vtkImplicitFunctionCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@
 class VTK_COMMON_EXPORT vtkImplicitFunctionCollection : public vtkCollection
 {
 public:
-  vtkTypeMacro(vtkImplicitFunctionCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkImplicitFunctionCollection,vtkCollection);
   static vtkImplicitFunctionCollection *New();
 
   // Description:

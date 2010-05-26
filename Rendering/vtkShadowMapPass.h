@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShadowMapPass.h
+  Module:    $RCSfile: vtkShadowMapPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ class VTK_RENDERING_EXPORT vtkShadowMapPass : public vtkRenderPass
 {
 public:
   static vtkShadowMapPass *New();
-  vtkTypeMacro(vtkShadowMapPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkShadowMapPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSpiderPlotActor.cxx
+  Module:    $RCSfile: vtkSpiderPlotActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include <vtkstd/vector>
 
 
+vtkCxxRevisionMacro(vtkSpiderPlotActor, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkSpiderPlotActor);
 
 vtkCxxSetObjectMacro(vtkSpiderPlotActor,Input,vtkDataObject);

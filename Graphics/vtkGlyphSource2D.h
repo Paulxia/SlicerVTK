@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGlyphSource2D.h
+  Module:    $RCSfile: vtkGlyphSource2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkCellArray;
 class VTK_GRAPHICS_EXPORT vtkGlyphSource2D : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkGlyphSource2D,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGlyphSource2D,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

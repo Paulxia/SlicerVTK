@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestMinimalStandardRandomSequence.cxx
+  Module:    $RCSfile: TestMinimalStandardRandomSequence.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

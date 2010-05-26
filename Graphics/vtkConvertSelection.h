@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConvertSelection.h
+  Module:    $RCSfile: vtkConvertSelection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_GRAPHICS_EXPORT vtkConvertSelection : public vtkSelectionAlgorithm
 {
 public:
   static vtkConvertSelection *New();
-  vtkTypeMacro(vtkConvertSelection, vtkSelectionAlgorithm);
+  vtkTypeRevisionMacro(vtkConvertSelection, vtkSelectionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

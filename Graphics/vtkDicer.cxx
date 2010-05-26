@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDicer.cxx
+  Module:    $RCSfile: vtkDicer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkDataSet.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkDicer, "$Revision: 1.34 $");
 
 // Instantiate object.
 vtkDicer::vtkDicer()

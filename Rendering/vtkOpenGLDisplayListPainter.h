@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLDisplayListPainter.h
+  Module:    $RCSfile: vtkOpenGLDisplayListPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLDisplayListPainter : public vtkDisplayListPa
 {
 public:
   static vtkOpenGLDisplayListPainter* New();
-  vtkTypeMacro(vtkOpenGLDisplayListPainter, vtkDisplayListPainter);
+  vtkTypeRevisionMacro(vtkOpenGLDisplayListPainter, vtkDisplayListPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 

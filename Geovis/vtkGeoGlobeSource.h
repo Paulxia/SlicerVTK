@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoGlobeSource.h
+  Module:    $RCSfile: vtkGeoGlobeSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_GEOVIS_EXPORT vtkGeoGlobeSource : public vtkGeoSource
 {
 public:
   static vtkGeoGlobeSource *New();
-  vtkTypeMacro(vtkGeoGlobeSource,vtkGeoSource);
+  vtkTypeRevisionMacro(vtkGeoGlobeSource,vtkGeoSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

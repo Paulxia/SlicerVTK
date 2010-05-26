@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNormalizeMatrixVectors.h
+  Module:    $RCSfile: vtkNormalizeMatrixVectors.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkNormalizeMatrixVectors : public vtkArrayDataAlgorith
 {
 public:
   static vtkNormalizeMatrixVectors* New();
-  vtkTypeMacro(vtkNormalizeMatrixVectors, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkNormalizeMatrixVectors, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

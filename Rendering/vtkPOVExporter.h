@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPOVExporter.h
+  Module:    $RCSfile: vtkPOVExporter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,7 +15,7 @@
 /*=========================================================================
 
   Program:   VTK/ParaView Los Alamos National Laboratory Modules (PVLANL)
-  Module:    vtkPOVExporter.h
+  Module:    $RCSfile: vtkPOVExporter.h,v $
 
 Copyright (c) 2007, Los Alamos National Security, LLC
 
@@ -88,7 +88,7 @@ class VTK_RENDERING_EXPORT vtkPOVExporter : public vtkExporter
 {
 public:
     static vtkPOVExporter *New();
-    vtkTypeMacro(vtkPOVExporter, vtkExporter);
+    vtkTypeRevisionMacro(vtkPOVExporter, vtkExporter);
     void PrintSelf(ostream& os, vtkIndent indent);
 
     //Description:

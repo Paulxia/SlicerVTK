@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSequencePass.h
+  Module:    $RCSfile: vtkSequencePass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_RENDERING_EXPORT vtkSequencePass : public vtkRenderPass
 {
 public:
   static vtkSequencePass *New();
-  vtkTypeMacro(vtkSequencePass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkSequencePass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOBBDicer.cxx
+  Module:    $RCSfile: vtkOBBDicer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPoints.h"
 #include "vtkShortArray.h"
 
+vtkCxxRevisionMacro(vtkOBBDicer, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkOBBDicer);
 
 void vtkOBBDicer::BuildTree(vtkIdList *ptIds, vtkOBBNode *OBBptr,

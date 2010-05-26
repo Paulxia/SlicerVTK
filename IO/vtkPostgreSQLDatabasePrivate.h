@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPostgreSQLDatabasePrivate.h
+  Module:    $RCSfile: vtkPostgreSQLDatabasePrivate.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

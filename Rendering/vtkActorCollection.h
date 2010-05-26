@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkActorCollection.h
+  Module:    $RCSfile: vtkActorCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_RENDERING_EXPORT vtkActorCollection : public vtkPropCollection
 {
 public:
   static vtkActorCollection *New();
-  vtkTypeMacro(vtkActorCollection,vtkPropCollection);
+  vtkTypeRevisionMacro(vtkActorCollection,vtkPropCollection);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

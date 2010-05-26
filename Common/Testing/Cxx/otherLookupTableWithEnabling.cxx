@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    otherLookupTableWithEnabling.cxx
+  Module:    $RCSfile: otherLookupTableWithEnabling.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

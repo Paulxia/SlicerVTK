@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestMatrixWeighting.cxx
+  Module:    $RCSfile: TestMatrixWeighting.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

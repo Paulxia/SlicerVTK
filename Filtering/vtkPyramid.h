@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPyramid.h
+  Module:    $RCSfile: vtkPyramid.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_FILTERING_EXPORT vtkPyramid : public vtkCell3D
 {
 public:
   static vtkPyramid *New();
-  vtkTypeMacro(vtkPyramid,vtkCell3D);
+  vtkTypeRevisionMacro(vtkPyramid,vtkCell3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

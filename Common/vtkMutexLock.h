@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMutexLock.h
+  Module:    $RCSfile: vtkMutexLock.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -80,7 +80,7 @@ class VTK_COMMON_EXPORT vtkMutexLock : public vtkObject
 public:
   static vtkMutexLock *New();
 
-  vtkTypeMacro(vtkMutexLock,vtkObject);
+  vtkTypeRevisionMacro(vtkMutexLock,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGaussianBlurPass.h
+  Module:    $RCSfile: vtkGaussianBlurPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class VTK_RENDERING_EXPORT vtkGaussianBlurPass : public vtkImageProcessingPass
 {
 public:
   static vtkGaussianBlurPass *New();
-  vtkTypeMacro(vtkGaussianBlurPass,vtkImageProcessingPass);
+  vtkTypeRevisionMacro(vtkGaussianBlurPass,vtkImageProcessingPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

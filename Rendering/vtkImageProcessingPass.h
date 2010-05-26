@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageProcessingPass.h
+  Module:    $RCSfile: vtkImageProcessingPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class vtkTextureObject;
 class VTK_RENDERING_EXPORT vtkImageProcessingPass : public vtkRenderPass
 {
 public:
-  vtkTypeMacro(vtkImageProcessingPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkImageProcessingPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

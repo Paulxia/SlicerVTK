@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatrix4x4.h
+  Module:    $RCSfile: vtkMatrix4x4.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ public:
   // Construct a 4x4 identity matrix.
   static vtkMatrix4x4 *New();
 
-  vtkTypeMacro(vtkMatrix4x4,vtkObject);
+  vtkTypeRevisionMacro(vtkMatrix4x4,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

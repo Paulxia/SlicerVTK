@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRayCastImageDisplayHelper.cxx
+  Module:    $RCSfile: vtkRayCastImageDisplayHelper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkRayCastImageDisplayHelper.h"
 #include "vtkVolumeRenderingFactory.h"
 
+vtkCxxRevisionMacro(vtkRayCastImageDisplayHelper, "$Revision: 1.5 $");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

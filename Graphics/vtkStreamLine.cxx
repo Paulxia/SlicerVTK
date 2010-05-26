@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStreamLine.cxx
+  Module:    $RCSfile: vtkStreamLine.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPolyData.h"
 #include "vtkPolyLine.h"
 
+vtkCxxRevisionMacro(vtkStreamLine, "$Revision: 1.59 $");
 vtkStandardNewMacro(vtkStreamLine);
 
 // Construct object with step size set to 1.0.

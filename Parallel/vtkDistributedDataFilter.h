@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistributedDataFilter.h
+  Module:    $RCSfile: vtkDistributedDataFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -102,7 +102,7 @@ class vtkUnstructuredGrid;
 
 class VTK_PARALLEL_EXPORT vtkDistributedDataFilter: public vtkDataObjectAlgorithm
 {
-  vtkTypeMacro(vtkDistributedDataFilter,
+  vtkTypeRevisionMacro(vtkDistributedDataFilter, 
     vtkDataObjectAlgorithm);
 
 public:

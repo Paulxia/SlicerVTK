@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoTerrain.cxx
+  Module:    $RCSfile: vtkGeoTerrain.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,6 +62,7 @@
 #include <vtksys/stl/utility>
 
 vtkStandardNewMacro(vtkGeoTerrain);
+vtkCxxRevisionMacro(vtkGeoTerrain, "$Revision: 1.23 $");
 vtkCxxSetObjectMacro(vtkGeoTerrain, GeoSource, vtkGeoSource);
 vtkCxxSetObjectMacro(vtkGeoTerrain, GeoCamera, vtkGeoCamera);
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDirectXGPUInfoList.h
+  Module:    $RCSfile: vtkDirectXGPUInfoList.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,7 +19,7 @@
 // through the DirectX API. As recommended by Microsoft, the WMI interface is
 // used for Windows XP and the DXGI interface is used for Windows Vista and
 // later. (see documentation of VideoMemory sample of the DirectX SDK)
-// ref: http://msdn.microsoft.com/en-us/library/ee419018(v=VS.85)
+// ref: http://msdn.microsoft.com/en-us/library/cc308070(VS.85).aspx
 // .SECTION See Also
 // vtkGPUInfo vtkGPUInfoList
 
@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkDirectXGPUInfoList : public vtkGPUInfoList
 {
 public:
   static vtkDirectXGPUInfoList* New();
-  vtkTypeMacro(vtkDirectXGPUInfoList, vtkGPUInfoList);
+  vtkTypeRevisionMacro(vtkDirectXGPUInfoList, vtkGPUInfoList);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

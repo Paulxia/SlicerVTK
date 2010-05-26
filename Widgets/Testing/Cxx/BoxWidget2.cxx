@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    BoxWidget2.cxx
+  Module:    $RCSfile: BoxWidget2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -542,14 +542,8 @@ int BoxWidget2( int , char *[] )
   // testing option fails.
   recorder->Off();
 
-  boxRep->SetPlaceFactor( 1.0 );
-  boxRep->HandlesOff();
-
-  boxRep->SetPlaceFactor( 1.25 );
-  boxRep->HandlesOn();
-  
   iren->Start();
-  
+
   // Clean up
   recorder->Off();
 

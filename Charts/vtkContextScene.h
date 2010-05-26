@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextScene.h
+  Module:    $RCSfile: vtkContextScene.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,12 +36,12 @@ class vtkInteractorStyle;
 class vtkAnnotationLink;
 
 class vtkRenderer;
-class vtkAbstractContextBufferId;
+class vtkContextBufferId;
 
 class VTK_CHARTS_EXPORT vtkContextScene : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkContextScene, vtkObject);
+  vtkTypeRevisionMacro(vtkContextScene, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:
@@ -120,10 +120,6 @@ public:
 
 //BTX
   // Description:
-  // Release graphics resources hold by the scene.
-  void ReleaseGraphicsResources();
-  
-  // Description:
   // Last painter used.
   // Not part of the end-user API. Can be used by context items to
   // create their own colorbuffer id (when a context item is a container).
@@ -133,7 +129,7 @@ public:
   // Return buffer id.
   // Not part of the end-user API. Can be used by context items to
   // initialize their own colorbuffer id (when a context item is a container).
-  vtkAbstractContextBufferId *GetBufferId();
+  vtkContextBufferId *GetBufferId();
 
   // Description:
   // Set the transform for the scene.
@@ -188,9 +184,6 @@ protected:
   virtual void PaintIds();
 
   // Description:
-  // Test if BufferId is supported by the OpenGL context.
-  void TestBufferIdSupport();
-  // Description:
   // Return the item id under mouse cursor at position (x,y).
   // Return -1 if there is no item under the mouse cursor.
   // \post valid_result: result>=-1 && result<this->GetNumberOfItems()
@@ -220,13 +213,10 @@ protected:
 
   vtkWeakPointer<vtkRenderer> Renderer;
 
-  vtkAbstractContextBufferId *BufferId;
+  vtkContextBufferId *BufferId;
   bool BufferIdDirty;
 
   bool UseBufferId;
-
-  bool BufferIdSupportTested;
-  bool BufferIdSupported;
 
   // Description:
   // The scene level transform.

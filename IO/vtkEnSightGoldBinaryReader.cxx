@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEnSightGoldBinaryReader.cxx
+  Module:    $RCSfile: vtkEnSightGoldBinaryReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include <ctype.h>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkEnSightGoldBinaryReader, "$Revision: 1.83 $");
 vtkStandardNewMacro(vtkEnSightGoldBinaryReader);
 
 // This is half the precision of an int.

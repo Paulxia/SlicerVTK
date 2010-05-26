@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiThreshold.cxx
+  Module:    $RCSfile: vtkMultiThreshold.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkMultiThreshold,"$Revision: 1.7 $");
 vtkStandardNewMacro(vtkMultiThreshold);
 
 // Prevent lots of error messages on the inner loop of the filter by keeping track of how many we have:

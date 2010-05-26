@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataObjectToTable.cxx
+  Module:    $RCSfile: vtkDataObjectToTable.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkPointData.h"
 #include "vtkTable.h"
 
+vtkCxxRevisionMacro(vtkDataObjectToTable, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkDataObjectToTable);
 //---------------------------------------------------------------------------
 vtkDataObjectToTable::vtkDataObjectToTable()

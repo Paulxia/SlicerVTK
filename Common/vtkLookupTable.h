@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLookupTable.h
+  Module:    $RCSfile: vtkLookupTable.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ public:
   // (from red to blue).
   static vtkLookupTable *New();
   
-  vtkTypeMacro(vtkLookupTable,vtkScalarsToColors);
+  vtkTypeRevisionMacro(vtkLookupTable,vtkScalarsToColors);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

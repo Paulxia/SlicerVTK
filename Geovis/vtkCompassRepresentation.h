@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompassRepresentation.h
+  Module:    $RCSfile: vtkCompassRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ public:
 
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkCompassRepresentation,
+  vtkTypeRevisionMacro(vtkCompassRepresentation,
                        vtkContinuousValueWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
   

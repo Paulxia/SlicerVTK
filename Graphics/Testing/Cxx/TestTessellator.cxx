@@ -2508,7 +2508,7 @@ class vtkTestTessellatorSubdivision
   : public vtkEdgeSubdivisionCriterion
 {
   public:
-    vtkTypeMacro(vtkTestTessellatorSubdivision,vtkEdgeSubdivisionCriterion);
+    vtkTypeRevisionMacro(vtkTestTessellatorSubdivision,vtkEdgeSubdivisionCriterion);
     static vtkTestTessellatorSubdivision* New();
     virtual void PrintSelf( ostream& os, vtkIndent indent );
 
@@ -2562,6 +2562,7 @@ class vtkTestTessellatorSubdivision
 
 };
 
+vtkCxxRevisionMacro(vtkTestTessellatorSubdivision,"$Revision: 1.7 $");
 vtkStandardNewMacro(vtkTestTessellatorSubdivision);
 
 static int test_list[] =

@@ -12,7 +12,7 @@
 
   function: example encoder application; makes an Ogg Theora/Vorbis
             file from YUV4MPEG2 and WAV input
-  last mod: Id
+  last mod: $Id: encoder_example.c,v 1.1 2009-12-01 13:29:53 dave.demarle Exp $
 
  ********************************************************************/
 

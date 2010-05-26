@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkSelectionNode.cxx
+  Module:    $RCSfile: vtkSelectionNode.cxx,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkProp.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkSelectionNode, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkSelectionNode);
 vtkCxxSetObjectMacro(vtkSelectionNode, SelectionData, vtkDataSetAttributes);
 

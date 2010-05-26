@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMarchingContourFilter.h
+  Module:    $RCSfile: vtkMarchingContourFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -61,7 +61,7 @@ class vtkScalarTree;
 class VTK_GRAPHICS_EXPORT vtkMarchingContourFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkMarchingContourFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkMarchingContourFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

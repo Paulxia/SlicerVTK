@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkOpenGLHAVSVolumeMapper.cxx
+Module:    $RCSfile: vtkOpenGLHAVSVolumeMapper.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -32,7 +32,6 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkUnstructuredGrid.h"
 #include "vtkUnstructuredGridPartialPreIntegration.h"
 #include "vtkVolumeProperty.h"
-#include "vtkOpenGLRenderWindow.h"
 
 #include "vtkHAVSVolumeMapper_kbufferVP.h"
 #include "vtkHAVSVolumeMapper_k2BeginFP.h"
@@ -42,6 +41,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkHAVSVolumeMapper_k6FP.h"
 #include "vtkHAVSVolumeMapper_k6EndFP.h"
 
+vtkCxxRevisionMacro(vtkOpenGLHAVSVolumeMapper, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkOpenGLHAVSVolumeMapper);
 
 //----------------------------------------------------------------------------
@@ -54,7 +54,6 @@ vtkOpenGLHAVSVolumeMapper::vtkOpenGLHAVSVolumeMapper()
   this->PsiTableTexture            = 0;
   this->FramebufferObjectSize      = 0;
   this->OrderedTriangles           = 0;
-  this->RenderWindow=0;
 }
 
 //----------------------------------------------------------------------------
@@ -118,16 +117,17 @@ void vtkOpenGLHAVSVolumeMapper::Initialize(vtkRenderer *ren,
                                            vtkVolume *vol)
 {
   // Check for the required extensions only.
-  if (!this->SupportedByHardware(ren))
+  if (!this->SupportedByHardware())
     {
     this->InitializationError = vtkHAVSVolumeMapper::UNSUPPORTED_EXTENSIONS;
     return;
     }
 
-  vtkOpenGLExtensionManager *extensions=
-    static_cast<vtkOpenGLRenderWindow *>(ren->GetRenderWindow())
-    ->GetExtensionManager();
-
+  vtkOpenGLExtensionManager * extensions = vtkOpenGLExtensionManager::New();
+  
+  // Set render window to current render window
+  extensions->SetRenderWindow(ren->GetRenderWindow());
+  
   // Load required extensions
   
   // supports_GL_1_3=1 as checked by this->SupportedByHardware()
@@ -186,6 +186,8 @@ void vtkOpenGLHAVSVolumeMapper::Initialize(vtkRenderer *ren,
       extensions->LoadCorePromotedExtension( "GL_ARB_vertex_buffer_object" );
       }
     }
+  
+  extensions->Delete();
   
   if (!supports_vertex_buffer_object)
     {
@@ -522,12 +524,10 @@ void vtkOpenGLHAVSVolumeMapper::InitializeFramebufferObject()
 
 //----------------------------------------------------------------------------
 void vtkOpenGLHAVSVolumeMapper::Render(vtkRenderer *ren, 
-                                       vtkVolume *vol)
+                                                       vtkVolume *vol)
 {
   ren->GetRenderWindow()->MakeCurrent();
   
-  this->RenderWindow=ren->GetRenderWindow();
-
   if (!this->Initialized)
     {
     this->InitializationError = 
@@ -1090,45 +1090,45 @@ void vtkOpenGLHAVSVolumeMapper::DrawBlend(int screenWidth, int screenHeight,
 //----------------------------------------------------------------------------
 void vtkOpenGLHAVSVolumeMapper::PrintSelf(ostream& os, vtkIndent indent)
 {
-  if(this->RenderWindow!=0)
+  vtkOpenGLExtensionManager * extensions = vtkOpenGLExtensionManager::New();
+  // set render window to current render window
+  extensions->SetRenderWindow(NULL);
+  if ( this->Initialized )
     {
-    vtkOpenGLExtensionManager *extensions=
-      static_cast<vtkOpenGLRenderWindow *>(this->RenderWindow.GetPointer())
-      ->GetExtensionManager();
-    if ( this->Initialized )
-      {
-      os << indent << "Supports GL_VERSION_1_3 (edge_clamp (1.2) and"
-         << " multitexture (1.3) minimal version required by"
-         << " GL_ARB_draw_buffers): "
-         << extensions->ExtensionSupported( "GL_VERSION_1_3" );
-
-      os << indent << "Supports GL_VERSION_2_0 (GL_ARB_draw_buffers is a core"
-         << "feature): "
-         << extensions->ExtensionSupported( "GL_VERSION_2_0" );
-
-      os << indent << "Supports GL_ARB_draw_buffers: "
-         << extensions->ExtensionSupported( "GL_ARB_draw_buffers" );
-
-      os << indent << "Supports GL_EXT_framebuffer_object: " 
-         << extensions->ExtensionSupported( "GL_EXT_framebuffer_object" )
-         << endl;
-      os << indent << "Supports GL_ARB_vertex_program: "
-         << extensions->ExtensionSupported( "GL_ARB_vertex_program" ) << endl;
-      os << indent << "Supports GL_ARB_fragment_program: "
-         << extensions->ExtensionSupported( "GL_ARB_fragment_program" ) << endl;
-      os << indent << "Supports GL_ARB_texture_float"
-         << extensions->ExtensionSupported( "GL_ARB_texture_float" ) << endl;
-      os << indent << "Supports GL_ATI_texture_float: "
-         << extensions->ExtensionSupported( "GL_ATI_texture_float" ) << endl;
-
-      os << indent << "Supports GL_VERSION_1_5 (for optional core feature VBO): "
-         << extensions->ExtensionSupported( "GL_VERSION_1_5" ) <<endl;
-
-      os << indent << "Supports (optional) GL_ARB_vertex_buffer_object: "
-         << extensions->ExtensionSupported( "GL_ARB_vertex_buffer_object" )
-         <<endl;
-      }
+    os << indent << "Supports GL_VERSION_1_3 (edge_clamp (1.2) and"
+       << " multitexture (1.3) minimal version required by"
+       << " GL_ARB_draw_buffers): "
+       << extensions->ExtensionSupported( "GL_VERSION_1_3" );
+    
+    os << indent << "Supports GL_VERSION_2_0 (GL_ARB_draw_buffers is a core"
+       << "feature): "
+       << extensions->ExtensionSupported( "GL_VERSION_2_0" );
+    
+    os << indent << "Supports GL_ARB_draw_buffers: "
+       << extensions->ExtensionSupported( "GL_ARB_draw_buffers" );
+    
+    os << indent << "Supports GL_EXT_framebuffer_object: " 
+       << extensions->ExtensionSupported( "GL_EXT_framebuffer_object" )
+       << endl;
+    os << indent << "Supports GL_ARB_vertex_program: "
+       << extensions->ExtensionSupported( "GL_ARB_vertex_program" ) << endl;
+    os << indent << "Supports GL_ARB_fragment_program: "
+       << extensions->ExtensionSupported( "GL_ARB_fragment_program" ) << endl;
+    os << indent << "Supports GL_ARB_texture_float" 
+       << extensions->ExtensionSupported( "GL_ARB_texture_float" ) << endl;
+    os << indent << "Supports GL_ATI_texture_float: " 
+       << extensions->ExtensionSupported( "GL_ATI_texture_float" ) << endl;
+    
+    
+    os << indent << "Supports GL_VERSION_1_5 (for optional core feature VBO): "
+       << extensions->ExtensionSupported( "GL_VERSION_1_5" ) <<endl;
+    
+    os << indent << "Supports (optional) GL_ARB_vertex_buffer_object: "
+       << extensions->ExtensionSupported( "GL_ARB_vertex_buffer_object" )
+       <<endl;
+    
     }
+  extensions->Delete();
   
   os << indent << "Framebuffer Object Size: " 
      << this->FramebufferObjectSize << endl;
@@ -1139,12 +1139,10 @@ void vtkOpenGLHAVSVolumeMapper::PrintSelf(ostream& os, vtkIndent indent)
 //----------------------------------------------------------------------------
 // Check the OpenGL extension manager for GPU features necessary for the
 // HAVS algorithm. 
-bool vtkOpenGLHAVSVolumeMapper::SupportedByHardware(vtkRenderer *r)
+bool vtkOpenGLHAVSVolumeMapper::SupportedByHardware()
 {
-  vtkOpenGLExtensionManager *extensions=
-    static_cast<vtkOpenGLRenderWindow *>(r->GetRenderWindow())
-    ->GetExtensionManager();
-
+  vtkOpenGLExtensionManager * extensions = vtkOpenGLExtensionManager::New();
+  
   // Temporarily filter out the Macs, as this mapper makes the ATI driver crash
   // (RogueResearch2 on VTK, ATI Radeon X1600 OpenGL Engine 2.0 ATI-1.4.56) and
   // makes the Nvidia driver render some corrupted image (kamino on ParaView3
@@ -1188,6 +1186,8 @@ bool vtkOpenGLHAVSVolumeMapper::SupportedByHardware(vtkRenderer *r)
     extensions->ExtensionSupported( "GL_ARB_texture_float" );
   int supports_GL_ATI_texture_float = 
     extensions->ExtensionSupported( "GL_ATI_texture_float" );
+
+  extensions->Delete();
   
   return !iAmAMac && supports_GL_1_3 && supports_draw_buffers &&
     supports_GL_ARB_fragment_program && supports_GL_ARB_vertex_program &&

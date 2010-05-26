@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiBlockDataSet.cxx
+  Module:    $RCSfile: vtkMultiBlockDataSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkMultiBlockDataSet);
+vtkCxxRevisionMacro(vtkMultiBlockDataSet, "$Revision: 1.10 $");
 //----------------------------------------------------------------------------
 vtkMultiBlockDataSet::vtkMultiBlockDataSet()
 {

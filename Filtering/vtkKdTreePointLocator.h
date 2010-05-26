@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkKdTreePointLocator.h
+  Module:    $RCSfile: vtkKdTreePointLocator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class vtkKdTree;
 class VTK_FILTERING_EXPORT vtkKdTreePointLocator : public vtkAbstractPointLocator
 {
 public:
-  vtkTypeMacro(vtkKdTreePointLocator,vtkAbstractPointLocator);
+  vtkTypeRevisionMacro(vtkKdTreePointLocator,vtkAbstractPointLocator);
   static vtkKdTreePointLocator* New();
   void PrintSelf(ostream& os, vtkIndent indent);
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMapToColors.cxx
+  Module:    $RCSfile: vtkImageMapToColors.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkScalarsToColors.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkImageMapToColors, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkImageMapToColors);
 vtkCxxSetObjectMacro(vtkImageMapToColors,LookupTable,vtkScalarsToColors);
 

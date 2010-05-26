@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTimerLog.cxx
+  Module:    $RCSfile: vtkTimerLog.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 #endif
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkTimerLog, "$Revision: 1.45 $");
 vtkStandardNewMacro(vtkTimerLog);
 
 // Create a singleton to cleanup the table.  No other singletons

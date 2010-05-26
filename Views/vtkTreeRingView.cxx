@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeRingView.cxx
+  Module:    $RCSfile: vtkTreeRingView.cxx,v $
 
   -------------------------------------------------------------------------
     Copyright 2008 Sandia Corporation.
@@ -26,6 +26,7 @@
 #include "vtkStackedTreeLayoutStrategy.h"
 #include "vtkTreeRingToPolyData.h"
 
+vtkCxxRevisionMacro(vtkTreeRingView, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkTreeRingView);
 //----------------------------------------------------------------------------
 vtkTreeRingView::vtkTreeRingView()

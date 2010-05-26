@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationIterator.cxx
+  Module:    $RCSfile: vtkInformationIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkInformationKey.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkInformationIterator, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkInformationIterator);
 
 vtkCxxSetObjectMacro(vtkInformationIterator, Information, vtkInformation);

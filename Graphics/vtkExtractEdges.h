@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractEdges.h
+  Module:    $RCSfile: vtkExtractEdges.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkExtractEdges : public vtkPolyDataAlgorithm
 {
 public:
   static vtkExtractEdges *New();
-  vtkTypeMacro(vtkExtractEdges,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractEdges,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVPICReader.cxx
+  Module:    $RCSfile: vtkVPICReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "VPICDataSet.h"
 #include "VPICView.h"
 
+vtkCxxRevisionMacro(vtkVPICReader, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkVPICReader);
 
 //----------------------------------------------------------------------------

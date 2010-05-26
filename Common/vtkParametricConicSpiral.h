@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricConicSpiral.h
+  Module:    $RCSfile: vtkParametricConicSpiral.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -33,7 +33,7 @@
 class VTK_COMMON_EXPORT vtkParametricConicSpiral : public vtkParametricFunction
 {
 public:
-  vtkTypeMacro(vtkParametricConicSpiral,vtkParametricFunction);
+  vtkTypeRevisionMacro(vtkParametricConicSpiral,vtkParametricFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

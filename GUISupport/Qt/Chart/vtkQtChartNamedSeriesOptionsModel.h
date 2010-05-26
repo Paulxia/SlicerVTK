@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtChartNamedSeriesOptionsModel.h
+  Module:    $RCSfile: vtkQtChartNamedSeriesOptionsModel.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

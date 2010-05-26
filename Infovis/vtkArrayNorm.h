@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayNorm.h
+  Module:    $RCSfile: vtkArrayNorm.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -41,7 +41,7 @@ class VTK_INFOVIS_EXPORT vtkArrayNorm : public vtkArrayDataAlgorithm
 {
 public:
   static vtkArrayNorm* New();
-  vtkTypeMacro(vtkArrayNorm, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkArrayNorm, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

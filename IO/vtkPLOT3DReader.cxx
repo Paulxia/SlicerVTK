@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPLOT3DReader.cxx
+  Module:    $RCSfile: vtkPLOT3DReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkUnsignedCharArray.h"
 #include "vtkDataArrayCollection.h"
 
+vtkCxxRevisionMacro(vtkPLOT3DReader, "$Revision: 1.89 $");
 vtkStandardNewMacro(vtkPLOT3DReader);
 
 #define VTK_RHOINF 1.0

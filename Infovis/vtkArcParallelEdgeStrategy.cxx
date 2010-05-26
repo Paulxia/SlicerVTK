@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArcParallelEdgeStrategy.cxx
+  Module:    $RCSfile: vtkArcParallelEdgeStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include <vtksys/stl/map>
 
 vtkStandardNewMacro(vtkArcParallelEdgeStrategy);
+vtkCxxRevisionMacro(vtkArcParallelEdgeStrategy, "$Revision: 1.5 $");
 
 vtkArcParallelEdgeStrategy::vtkArcParallelEdgeStrategy()
 {

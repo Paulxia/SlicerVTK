@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtentTranslator.cxx
+  Module:    $RCSfile: vtkExtentTranslator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkLargeInteger.h"
 
+vtkCxxRevisionMacro(vtkExtentTranslator, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkExtentTranslator);
 
 //----------------------------------------------------------------------------

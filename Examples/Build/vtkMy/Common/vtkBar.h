@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBar.h
+  Module:    $RCSfile: vtkBar.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_MY_COMMON_EXPORT vtkBar : public vtkObject
 {
 public:
   static vtkBar *New();
-  vtkTypeMacro(vtkBar,vtkObject);
+  vtkTypeRevisionMacro(vtkBar,vtkObject);
 
 protected:
   vtkBar() {};

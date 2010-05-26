@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplitColumnComponents.cxx
+  Module:    $RCSfile: vtkSplitColumnComponents.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtksys/ios/sstream"
 #include "math.h"
 
+vtkCxxRevisionMacro(vtkSplitColumnComponents, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkSplitColumnComponents);
 //---------------------------------------------------------------------------
 vtkSplitColumnComponents::vtkSplitColumnComponents()

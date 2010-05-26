@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuad.h
+  Module:    $RCSfile: vtkQuad.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_FILTERING_EXPORT vtkQuad : public vtkCell
 {
 public:
   static vtkQuad *New();
-  vtkTypeMacro(vtkQuad,vtkCell);
+  vtkTypeRevisionMacro(vtkQuad,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

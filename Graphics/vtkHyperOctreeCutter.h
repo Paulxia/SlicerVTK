@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeCutter.h
+  Module:    $RCSfile: vtkHyperOctreeCutter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -67,7 +67,7 @@ class vtkHyperOctreeClipCutPointsGrabber;
 class VTK_GRAPHICS_EXPORT vtkHyperOctreeCutter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkHyperOctreeCutter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkHyperOctreeCutter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

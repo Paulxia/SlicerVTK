@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedRows.cxx
+  Module:    $RCSfile: vtkExtractSelectedRows.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,6 +48,7 @@
 #include <vtksys/stl/map>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkExtractSelectedRows, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkExtractSelectedRows);
 //----------------------------------------------------------------------------
 vtkExtractSelectedRows::vtkExtractSelectedRows()

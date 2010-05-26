@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDuplicatePolyData.h
+  Module:    $RCSfile: vtkDuplicatePolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_PARALLEL_EXPORT vtkDuplicatePolyData : public vtkPolyDataAlgorithm
 {
 public:
   static vtkDuplicatePolyData *New();
-  vtkTypeMacro(vtkDuplicatePolyData, vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDuplicatePolyData, vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

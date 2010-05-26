@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridReader.cxx
+  Module:    $RCSfile: vtkStructuredGridReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStructuredGrid.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkStructuredGridReader, "$Revision: 1.60 $");
 vtkStandardNewMacro(vtkStructuredGridReader);
 
 vtkStructuredGridReader::vtkStructuredGridReader()

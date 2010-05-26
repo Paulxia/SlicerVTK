@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPowerWeighting.h
+  Module:    $RCSfile: vtkPowerWeighting.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -34,7 +34,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkPowerWeighting : public vtkArrayDataAlgorithm
 {
 public:
   static vtkPowerWeighting* New();
-  vtkTypeMacro(vtkPowerWeighting, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPowerWeighting, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

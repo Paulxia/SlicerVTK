@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkCarbonRenderWindow.cxx
+Module:    $RCSfile: vtkCarbonRenderWindow.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -29,6 +29,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include <math.h>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkCarbonRenderWindow, "$Revision: 1.79 $");
 vtkStandardNewMacro(vtkCarbonRenderWindow);
 
 //----------------------------------------------------------------------------
@@ -427,12 +428,6 @@ bool vtkCarbonRenderWindow::IsCurrent()
 void vtkCarbonRenderWindow::SetForceMakeCurrent()
 {
   this->ForceMakeCurrent = 1;
-}
-
-// --------------------------------------------------------------------------
-int vtkCarbonRenderWindow::IsDirect()
-{
-  return 1;
 }
 
 // --------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageAppendComponents.cxx
+  Module:    $RCSfile: vtkImageAppendComponents.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkDataSetAttributes.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageAppendComponents, "$Revision: 1.33 $");
 vtkStandardNewMacro(vtkImageAppendComponents);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestPShadowMapPass.cxx
+  Module:    $RCSfile: TestPShadowMapPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -86,7 +86,7 @@ class MyProcess : public vtkProcess
 {
 public:
   static MyProcess *New();
-  vtkTypeMacro(MyProcess, vtkProcess);
+  vtkTypeRevisionMacro(MyProcess, vtkProcess);
   
   virtual void Execute();
 
@@ -104,6 +104,7 @@ protected:
   char **Argv;
 };
 
+vtkCxxRevisionMacro(MyProcess, "$Revision: 1.5 $");
 vtkStandardNewMacro(MyProcess);
 
 MyProcess::MyProcess()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEllipsoidTensorProbeRepresentation.cxx
+  Module:    $RCSfile: vtkEllipsoidTensorProbeRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkCellPicker.h"
 #include "vtkAssemblyPath.h"
 
+vtkCxxRevisionMacro(vtkEllipsoidTensorProbeRepresentation, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkEllipsoidTensorProbeRepresentation);
 
 //----------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCollectGraph.cxx
+  Module:    $RCSfile: vtkCollectGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,6 +45,7 @@ using vtksys_stl::map;
 using vtksys_stl::pair;
 using vtksys_stl::vector;
 
+vtkCxxRevisionMacro(vtkCollectGraph, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkCollectGraph);
 
 vtkCxxSetObjectMacro(vtkCollectGraph,Controller, vtkMultiProcessController);

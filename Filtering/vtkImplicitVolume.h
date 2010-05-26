@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitVolume.h
+  Module:    $RCSfile: vtkImplicitVolume.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class vtkImageData;
 class VTK_FILTERING_EXPORT vtkImplicitVolume : public vtkImplicitFunction
 {
 public:
-  vtkTypeMacro(vtkImplicitVolume,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkImplicitVolume,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDensifyPolyData.h
+  Module:    $RCSfile: vtkDensifyPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@
 class VTK_GRAPHICS_EXPORT vtkDensifyPolyData : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkDensifyPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDensifyPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkDensifyPolyData *New();
 

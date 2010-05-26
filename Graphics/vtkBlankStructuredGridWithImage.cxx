@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBlankStructuredGridWithImage.cxx
+  Module:    $RCSfile: vtkBlankStructuredGridWithImage.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkStructuredGrid.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkBlankStructuredGridWithImage, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkBlankStructuredGridWithImage);
 
 //----------------------------------------------------------------------------

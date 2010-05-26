@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPExtractArraysOverTime.h
+  Module:    $RCSfile: vtkPExtractArraysOverTime.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class VTK_PARALLEL_EXPORT vtkPExtractArraysOverTime : public vtkExtractArraysOve
 {
 public:
   static vtkPExtractArraysOverTime *New();
-  vtkTypeMacro(vtkPExtractArraysOverTime,vtkExtractArraysOverTime);
+  vtkTypeRevisionMacro(vtkPExtractArraysOverTime,vtkExtractArraysOverTime);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

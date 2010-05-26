@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtStatisticalBoxChartView.h
+  Module:    $RCSfile: vtkQtStatisticalBoxChartView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ Q_OBJECT
 
 public:
   static vtkQtStatisticalBoxChartView *New();
-  vtkTypeMacro(vtkQtStatisticalBoxChartView, vtkQtChartView);
+  vtkTypeRevisionMacro(vtkQtStatisticalBoxChartView, vtkQtChartView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

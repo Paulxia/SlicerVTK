@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBMPWriter.cxx
+  Module:    $RCSfile: vtkBMPWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkBMPWriter, "$Revision: 1.23 $");
 vtkStandardNewMacro(vtkBMPWriter);
 
 vtkBMPWriter::vtkBMPWriter()

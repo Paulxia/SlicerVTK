@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConvexPointSet.cxx
+  Module:    $RCSfile: vtkConvexPointSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkTetra.h"
 #include "vtkTriangle.h"
 
+vtkCxxRevisionMacro(vtkConvexPointSet, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkConvexPointSet);
 
 //----------------------------------------------------------------------------

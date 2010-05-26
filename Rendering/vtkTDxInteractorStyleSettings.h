@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxInteractorStyleSettings.h
+  Module:    $RCSfile: vtkTDxInteractorStyleSettings.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkTDxInteractorStyleSettings : public vtkObject
 {
 public:
   static vtkTDxInteractorStyleSettings *New();
-  vtkTypeMacro(vtkTDxInteractorStyleSettings,vtkObject);
+  vtkTypeRevisionMacro(vtkTDxInteractorStyleSettings,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

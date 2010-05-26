@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractArray.h
+  Module:    $RCSfile: vtkAbstractArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,12 +49,11 @@ class vtkDataArray;
 class vtkIdList;
 class vtkIdTypeArray;
 class vtkInformation;
-class vtkInformationIntegerKey;
 
 class VTK_COMMON_EXPORT vtkAbstractArray : public vtkObject 
 {
 public:
-  vtkTypeMacro(vtkAbstractArray,vtkObject);
+  vtkTypeRevisionMacro(vtkAbstractArray,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -92,24 +91,6 @@ public:
   vtkSetClampMacro(NumberOfComponents, int, 1, VTK_LARGE_INTEGER);
   int GetNumberOfComponents() { return this->NumberOfComponents; }
 
-  // Description:
-  // Set the name for a component. Must be >= 1. 
-  void SetComponentName( vtkIdType component, const char *name );
-  
-  //Description:
-  // Get the component name for a given component.
-  // Note: will return the actual string that is stored
-  const char* GetComponentName( vtkIdType component );
-
-  // Description:
-  // Returns if any component has had a name assigned
-  bool HasAComponentName();
-
-  // Description:
-  // Copies the component names from the inputed array to the current array
-  // make sure that the current array has the same number of components as the input array
-  int CopyComponentNames( vtkAbstractArray *da );
-  
   // Description:
   // Set the number of tuples (a component group) in the array. Note that 
   // this may allocate space depending on the number of components.
@@ -337,11 +318,6 @@ public:
   virtual int CopyInformation(vtkInformation *infoFrom, int deep=1);
   //ETX
 
-  // Description:
-  // This key is a hint to end user interface that this array
-  // is internal and should not be shown to the end user.
-  static vtkInformationIntegerKey* GUI_HIDE();
-
 protected:
   // Description:
   // Set an information object that can be used to annotate the array.
@@ -362,11 +338,6 @@ protected:
   bool RebuildArray;      // whether to rebuild the fast lookup data structure.
 
   vtkInformation* Information;
-
-  //BTX
-  class vtkInternalComponentNames;
-  vtkInternalComponentNames* ComponentNames; //names for each component
-  //ETX
 
 private:
   vtkAbstractArray(const vtkAbstractArray&);  // Not implemented.

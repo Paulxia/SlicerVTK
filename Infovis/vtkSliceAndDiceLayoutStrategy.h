@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSliceAndDiceLayoutStrategy.h
+  Module:    $RCSfile: vtkSliceAndDiceLayoutStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_INFOVIS_EXPORT vtkSliceAndDiceLayoutStrategy : public vtkTreeMapLayout
 public:
   static vtkSliceAndDiceLayoutStrategy *New();
 
-  vtkTypeMacro(vtkSliceAndDiceLayoutStrategy,vtkTreeMapLayoutStrategy);
+  vtkTypeRevisionMacro(vtkSliceAndDiceLayoutStrategy,vtkTreeMapLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

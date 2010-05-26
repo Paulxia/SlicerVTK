@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlotGrid.cxx
+  Module:    $RCSfile: vtkPlotGrid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkObjectFactory.h"
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkPlotGrid, "$Revision: 1.5 $");
 vtkCxxSetObjectMacro(vtkPlotGrid, XAxis, vtkAxis);
 vtkCxxSetObjectMacro(vtkPlotGrid, YAxis, vtkAxis);
 //-----------------------------------------------------------------------------
@@ -64,7 +65,7 @@ bool vtkPlotGrid::Paint(vtkContext2D *painter)
   // in x
   if (this->XAxis->GetGridVisible())
     {
-    vtkFloatArray *xLines = this->XAxis->GetTickScenePositions();
+    vtkFloatArray *xLines = this->XAxis->GetTickPositions();
     painter->ApplyPen(this->XAxis->GetGridPen());
     float *xPositions = xLines->GetPointer(0);
     for (int i = 0; i < xLines->GetNumberOfTuples(); ++i)
@@ -77,7 +78,7 @@ bool vtkPlotGrid::Paint(vtkContext2D *painter)
   // in y
   if (this->YAxis->GetGridVisible())
     {
-    vtkFloatArray *yLines = this->YAxis->GetTickScenePositions();
+    vtkFloatArray *yLines = this->YAxis->GetTickPositions();
     painter->ApplyPen(this->YAxis->GetGridPen());
     float *yPositions = yLines->GetPointer(0);
     for (int i = 0; i < yLines->GetNumberOfTuples(); ++i)

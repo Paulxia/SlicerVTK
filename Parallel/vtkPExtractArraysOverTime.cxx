@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPExtractArraysOverTime.cxx
+  Module:    $RCSfile: vtkPExtractArraysOverTime.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include <assert.h>
 
 vtkStandardNewMacro(vtkPExtractArraysOverTime);
+vtkCxxRevisionMacro(vtkPExtractArraysOverTime, "$Revision: 1.12 $");
 vtkCxxSetObjectMacro(vtkPExtractArraysOverTime, Controller, vtkMultiProcessController);
 //----------------------------------------------------------------------------
 vtkPExtractArraysOverTime::vtkPExtractArraysOverTime()

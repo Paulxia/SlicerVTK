@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNonLinearCell.h
+  Module:    $RCSfile: vtkNonLinearCell.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@
 class VTK_FILTERING_EXPORT vtkNonLinearCell : public vtkCell
 {
 public:
-  vtkTypeMacro(vtkNonLinearCell,vtkCell);
+  vtkTypeRevisionMacro(vtkNonLinearCell,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

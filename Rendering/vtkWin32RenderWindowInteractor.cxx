@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWin32RenderWindowInteractor.cxx
+  Module:    $RCSfile: vtkWin32RenderWindowInteractor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,6 +51,7 @@ VTK_RENDERING_EXPORT LRESULT CALLBACK vtkHandleMessage2(HWND,UINT,WPARAM,LPARAM,
 #endif
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkWin32RenderWindowInteractor, "$Revision: 1.108 $");
 vtkStandardNewMacro(vtkWin32RenderWindowInteractor);
 #endif
 

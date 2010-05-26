@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDirectory.cxx
+  Module:    $RCSfile: vtkDirectory.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include <sys/stat.h>
 #include <vtksys/SystemTools.hxx>
 
+vtkCxxRevisionMacro(vtkDirectory, "$Revision: 1.35 $");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

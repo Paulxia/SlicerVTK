@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistanceRepresentation.cxx
+  Module:    $RCSfile: vtkDistanceRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkMath.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkDistanceRepresentation, "$Revision: 1.5 $");
 vtkCxxSetObjectMacro(vtkDistanceRepresentation,HandleRepresentation,vtkHandleRepresentation);
 
 

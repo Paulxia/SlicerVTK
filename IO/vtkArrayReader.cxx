@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayReader.cxx
+  Module:    $RCSfile: vtkArrayReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include <vtkstd/stdexcept>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkArrayReader, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkArrayReader);
 
 namespace {

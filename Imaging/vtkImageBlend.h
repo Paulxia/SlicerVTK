@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageBlend.h
+  Module:    $RCSfile: vtkImageBlend.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -83,7 +83,7 @@ class VTK_IMAGING_EXPORT vtkImageBlend : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageBlend *New();
-  vtkTypeMacro(vtkImageBlend,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageBlend,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

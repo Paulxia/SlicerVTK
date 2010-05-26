@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWarpTo.cxx
+  Module:    $RCSfile: vtkWarpTo.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPointSet.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkWarpTo, "$Revision: 1.43 $");
 vtkStandardNewMacro(vtkWarpTo);
 
 vtkWarpTo::vtkWarpTo() 

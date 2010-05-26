@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCollectTable.cxx
+  Module:    $RCSfile: vtkCollectTable.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkVariant.h"
 
+vtkCxxRevisionMacro(vtkCollectTable, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCollectTable);
 
 vtkCxxSetObjectMacro(vtkCollectTable,Controller, vtkMultiProcessController);

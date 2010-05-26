@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaLight.h
+  Module:    $RCSfile: vtkMesaLight.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_RENDERING_EXPORT vtkMesaLight : public vtkLight
 {
 public:
   static vtkMesaLight *New();
-  vtkTypeMacro(vtkMesaLight,vtkLight);
+  vtkTypeRevisionMacro(vtkMesaLight,vtkLight);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNetCDFReader.cxx
+  Module:    $RCSfile: vtkNetCDFReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -78,6 +78,7 @@ static int NetCDFTypeToVTKType(nc_type type)
 }
 
 //=============================================================================
+vtkCxxRevisionMacro(vtkNetCDFReader, "$Revision: 1.7.4.1 $");
 vtkStandardNewMacro(vtkNetCDFReader);
 
 //-----------------------------------------------------------------------------

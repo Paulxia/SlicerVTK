@@ -1,7 +1,7 @@
 /*=============================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoInteractorStyle.cxx
+  Module:    $RCSfile: vtkGeoInteractorStyle.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,6 +45,7 @@
 
 #include <float.h>
 
+vtkCxxRevisionMacro(vtkGeoInteractorStyle, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkGeoInteractorStyle);
 
 namespace

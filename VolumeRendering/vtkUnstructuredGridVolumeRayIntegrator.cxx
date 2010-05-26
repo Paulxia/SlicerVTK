@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridVolumeRayIntegrator.cxx
+  Module:    $RCSfile: vtkUnstructuredGridVolumeRayIntegrator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkUnstructuredGridVolumeRayIntegrator.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridVolumeRayIntegrator, "$Revision: 1.1 $");
 
 //----------------------------------------------------------------------------
 vtkUnstructuredGridVolumeRayIntegrator::vtkUnstructuredGridVolumeRayIntegrator()

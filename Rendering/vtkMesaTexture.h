@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaTexture.h
+  Module:    $RCSfile: vtkMesaTexture.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkMesaTexture : public vtkTexture
 {
 public:
   static vtkMesaTexture *New();
-  vtkTypeMacro(vtkMesaTexture,vtkTexture);
+  vtkTypeRevisionMacro(vtkMesaTexture,vtkTexture);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

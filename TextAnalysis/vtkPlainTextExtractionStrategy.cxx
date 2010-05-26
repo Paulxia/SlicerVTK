@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlainTextExtractionStrategy.cxx
+  Module:    $RCSfile: vtkPlainTextExtractionStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include <vtkStringArray.h>
 #include <vtkUnicodeStringArray.h>
 
+vtkCxxRevisionMacro(vtkPlainTextExtractionStrategy, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkPlainTextExtractionStrategy);
 
 vtkPlainTextExtractionStrategy::vtkPlainTextExtractionStrategy()

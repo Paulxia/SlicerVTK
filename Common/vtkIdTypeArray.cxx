@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIdTypeArray.cxx
+  Module:    $RCSfile: vtkIdTypeArray.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkIdTypeArray, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkIdTypeArray);
 
 //----------------------------------------------------------------------------

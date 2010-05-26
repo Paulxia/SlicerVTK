@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWidgetEventTranslator.cxx
+  Module:    $RCSfile: vtkWidgetEventTranslator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include <vtkstd/map>
 #include <vtkstd/list>
 
+vtkCxxRevisionMacro(vtkWidgetEventTranslator, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkWidgetEventTranslator);
 
 

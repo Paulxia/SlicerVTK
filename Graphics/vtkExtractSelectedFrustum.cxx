@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedFrustum.cxx
+  Module:    $RCSfile: vtkExtractSelectedFrustum.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkSelection.h"
 #include "vtkSelectionNode.h"
 
+vtkCxxRevisionMacro(vtkExtractSelectedFrustum, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkExtractSelectedFrustum);
 vtkCxxSetObjectMacro(vtkExtractSelectedFrustum,Frustum,vtkPlanes);
 

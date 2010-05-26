@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetToUnstructuredGridFilter.cxx
+  Module:    $RCSfile: vtkDataSetToUnstructuredGridFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkInformation.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkDataSetToUnstructuredGridFilter, "$Revision: 1.29 $");
 
 //----------------------------------------------------------------------------
 vtkDataSetToUnstructuredGridFilter::vtkDataSetToUnstructuredGridFilter()

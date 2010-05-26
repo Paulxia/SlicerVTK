@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericAttribute.cxx
+  Module:    $RCSfile: vtkGenericAttribute.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkGenericAttribute.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkGenericAttribute, "$Revision: 1.1 $");
 
 //---------------------------------------------------------------------------
 vtkGenericAttribute::vtkGenericAttribute()

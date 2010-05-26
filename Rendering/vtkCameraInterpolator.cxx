@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCameraInterpolator.cxx
+  Module:    $RCSfile: vtkCameraInterpolator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkTupleInterpolator.h"
 #include <vtkstd/list>
 
+vtkCxxRevisionMacro(vtkCameraInterpolator, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkCameraInterpolator);
 
 // PIMPL STL encapsulation for list of cameras. This just keeps track of all

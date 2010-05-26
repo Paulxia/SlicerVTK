@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtTableRepresentation.cxx
+  Module:    $RCSfile: vtkQtTableRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include <assert.h>
 
 // ----------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtTableRepresentation, "$Revision: 1.10 $");
 
 // ----------------------------------------------------------------------
 vtkCxxSetObjectMacro(vtkQtTableRepresentation, ColorTable, vtkLookupTable);

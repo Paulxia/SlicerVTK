@@ -1,7 +1,7 @@
 /*=========================================================================
   
   Program:   Visualization Toolkit
-  Module:    vtkTreeRingToPolyData.cxx
+  Module:    $RCSfile: vtkTreeRingToPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #define VTK_CREATE(type, name)                                  \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkTreeRingToPolyData, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkTreeRingToPolyData);
 
 vtkTreeRingToPolyData::vtkTreeRingToPolyData()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    TestSQLDatabaseSchema.cxx
+Module:    $RCSfile: TestSQLDatabaseSchema.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeSampleFunction.cxx
+  Module:    $RCSfile: vtkHyperOctreeSampleFunction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkImplicitFunction.h"
 #include "vtkGarbageCollector.h"
 
+vtkCxxRevisionMacro(vtkHyperOctreeSampleFunction, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkHyperOctreeSampleFunction);
 vtkCxxSetObjectMacro(vtkHyperOctreeSampleFunction,ImplicitFunction,
                      vtkImplicitFunction);

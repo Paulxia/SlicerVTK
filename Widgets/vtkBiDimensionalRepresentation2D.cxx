@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBiDimensionalRepresentation2D.cxx
+  Module:    $RCSfile: vtkBiDimensionalRepresentation2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 
 #include <vtksys/ios/sstream>
 
+vtkCxxRevisionMacro(vtkBiDimensionalRepresentation2D, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkBiDimensionalRepresentation2D);
 
 

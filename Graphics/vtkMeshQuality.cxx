@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMeshQuality.cxx
+  Module:    $RCSfile: vtkMeshQuality.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 
 #include "verdict.h"
 
+vtkCxxRevisionMacro(vtkMeshQuality,"$Revision: 1.57 $");
 vtkStandardNewMacro(vtkMeshQuality);
 
 typedef double (*CellQualityType)( vtkCell*  );

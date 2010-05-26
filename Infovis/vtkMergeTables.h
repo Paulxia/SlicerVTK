@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeTables.h
+  Module:    $RCSfile: vtkMergeTables.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_INFOVIS_EXPORT vtkMergeTables : public vtkTableAlgorithm
 {
 public:
   static vtkMergeTables* New();
-  vtkTypeMacro(vtkMergeTables,vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkMergeTables,vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

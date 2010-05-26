@@ -85,7 +85,7 @@ volumeMapper_1_3 SetCroppingRegionFlags 67117057
 set culler [[ren1 GetCullers] GetNextItem]
 $culler SetSortingStyleToBackToFront
 
-set valid [volumeMapper_0_0 IsRenderSupported volumeProperty ren1]
+set valid [volumeMapper_0_0 IsRenderSupported volumeProperty]
 
 if {!$valid} {
    ren1 RemoveAllViewProps

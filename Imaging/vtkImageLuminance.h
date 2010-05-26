@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageLuminance.h
+  Module:    $RCSfile: vtkImageLuminance.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_IMAGING_EXPORT vtkImageLuminance : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageLuminance *New();
-  vtkTypeMacro(vtkImageLuminance,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageLuminance,vtkThreadedImageAlgorithm);
 
 protected:
   vtkImageLuminance();

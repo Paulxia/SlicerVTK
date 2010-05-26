@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMaskPolyData.h
+  Module:    $RCSfile: vtkMaskPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_GRAPHICS_EXPORT vtkMaskPolyData : public vtkPolyDataAlgorithm
 {
 public:
   static vtkMaskPolyData *New();
-  vtkTypeMacro(vtkMaskPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkMaskPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

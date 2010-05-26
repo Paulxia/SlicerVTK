@@ -1,7 +1,7 @@
 // ============================================================================
 //
 //  Program:   Visualization Toolkit
-//  Module:    vtkOpenGLRenderer_PeelingFS.glsl
+//  Module:    $RCSfile: vtkOpenGLRenderer_PeelingFS.glsl,v $
 //
 //  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 //  All rights reserved.

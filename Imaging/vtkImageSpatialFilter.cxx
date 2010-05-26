@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSpatialFilter.cxx
+  Module:    $RCSfile: vtkImageSpatialFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageSpatialFilter, "$Revision: 1.52 $");
 vtkStandardNewMacro(vtkImageSpatialFilter);
 
 //----------------------------------------------------------------------------

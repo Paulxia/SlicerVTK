@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuantizePolyDataPoints.h
+  Module:    $RCSfile: vtkQuantizePolyDataPoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_GRAPHICS_EXPORT vtkQuantizePolyDataPoints : public vtkCleanPolyData
 {
 public:
   static vtkQuantizePolyDataPoints *New();
-  vtkTypeMacro(vtkQuantizePolyDataPoints,vtkCleanPolyData);
+  vtkTypeRevisionMacro(vtkQuantizePolyDataPoints,vtkCleanPolyData);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

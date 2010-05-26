@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAdjacencyMatrixToEdgeTable.h
+  Module:    $RCSfile: vtkAdjacencyMatrixToEdgeTable.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -37,7 +37,7 @@ class VTK_INFOVIS_EXPORT vtkAdjacencyMatrixToEdgeTable : public vtkTableAlgorith
 {
 public:
   static vtkAdjacencyMatrixToEdgeTable* New();
-  vtkTypeMacro(vtkAdjacencyMatrixToEdgeTable, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkAdjacencyMatrixToEdgeTable, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOnePieceExtentTranslator.h
+  Module:    $RCSfile: vtkOnePieceExtentTranslator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,7 +24,7 @@ class VTK_COMMON_EXPORT vtkOnePieceExtentTranslator : public vtkExtentTranslator
 {
 public:
   static vtkOnePieceExtentTranslator* New();
-  vtkTypeMacro(vtkOnePieceExtentTranslator, vtkExtentTranslator);
+  vtkTypeRevisionMacro(vtkOnePieceExtentTranslator, vtkExtentTranslator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

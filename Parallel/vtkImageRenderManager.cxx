@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageRenderManager.cxx
+  Module:    $RCSfile: vtkImageRenderManager.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkTimerLog.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkImageRenderManager, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkImageRenderManager);
 
 //----------------------------------------------------------------------------

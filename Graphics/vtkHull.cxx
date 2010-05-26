@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHull.cxx
+  Module:    $RCSfile: vtkHull.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPlanes.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkHull, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkHull);
 
 // Construct an the hull object with no planes

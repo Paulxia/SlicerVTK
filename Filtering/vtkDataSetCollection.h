@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetCollection.h
+  Module:    $RCSfile: vtkDataSetCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_FILTERING_EXPORT vtkDataSetCollection : public vtkCollection
 {
 public:
   static vtkDataSetCollection *New();
-  vtkTypeMacro(vtkDataSetCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkDataSetCollection,vtkCollection);
 
   // Description:
   // Add a dataset to the list.

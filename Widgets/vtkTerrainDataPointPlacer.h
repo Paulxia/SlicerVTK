@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTerrainDataPointPlacer.h
+  Module:    $RCSfile: vtkTerrainDataPointPlacer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkTerrainDataPointPlacer,vtkPointPlacer);
+  vtkTypeRevisionMacro(vtkTerrainDataPointPlacer,vtkPointPlacer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Descuription:

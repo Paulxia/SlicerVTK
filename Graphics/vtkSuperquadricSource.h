@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSuperquadricSource.h
+  Module:    $RCSfile: vtkSuperquadricSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -60,7 +60,7 @@ public:
   // direction, a theta resolution and a phi resolutions of 16.
   static vtkSuperquadricSource *New();
 
-  vtkTypeMacro(vtkSuperquadricSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSuperquadricSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBorderWidget.cxx
+  Module:    $RCSfile: vtkBorderWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkWidgetEvent.h"
 
 
+vtkCxxRevisionMacro(vtkBorderWidget, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkBorderWidget);
 
 

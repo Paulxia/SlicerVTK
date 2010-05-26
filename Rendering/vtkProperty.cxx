@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProperty.cxx
+  Module:    $RCSfile: vtkProperty.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,6 +52,7 @@ public:
   MapOfTextureNames TextureNames;
 };
 
+vtkCxxRevisionMacro(vtkProperty, "$Revision: 1.78 $");
 vtkCxxSetObjectMacro(vtkProperty, ShaderProgram, vtkShaderProgram);
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

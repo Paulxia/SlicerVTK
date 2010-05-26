@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSimpleElevationFilter.cxx
+  Module:    $RCSfile: vtkSimpleElevationFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkSimpleElevationFilter, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkSimpleElevationFilter);
 
 // Construct object with LowPoint=(0,0,0) and HighPoint=(0,0,1). Scalar

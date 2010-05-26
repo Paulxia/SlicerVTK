@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMultipleInputFilter.cxx
+  Module:    $RCSfile: vtkImageMultipleInputFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkMultiThreader.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImageMultipleInputFilter, "$Revision: 1.67 $");
 
 //----------------------------------------------------------------------------
 vtkImageMultipleInputFilter::vtkImageMultipleInputFilter()

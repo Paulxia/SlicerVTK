@@ -1,4 +1,4 @@
-/* Id */
+/* $Id: tif_codec.c,v 1.2 2008-03-11 13:37:59 andinet Exp $ */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

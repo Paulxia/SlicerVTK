@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFunctionSet.cxx
+  Module:    $RCSfile: vtkFunctionSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkFunctionSet.h"
 
+vtkCxxRevisionMacro(vtkFunctionSet, "$Revision: 1.5 $");
 
 vtkFunctionSet::vtkFunctionSet() 
 {

@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkComputeHistogram2DOutliers.cxx
+Module:    $RCSfile: vtkComputeHistogram2DOutliers.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -37,6 +37,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkSortDataArray.h"
 #include "vtkTable.h"
 //------------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkComputeHistogram2DOutliers, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkComputeHistogram2DOutliers);
 //------------------------------------------------------------------------------
 vtkComputeHistogram2DOutliers::vtkComputeHistogram2DOutliers()

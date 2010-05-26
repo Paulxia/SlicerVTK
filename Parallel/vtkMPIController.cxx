@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkMPIController.cxx
+Module:    $RCSfile: vtkMPIController.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -32,7 +32,7 @@ int vtkMPIController::UseSsendForRMI = 0;
 class VTK_PARALLEL_EXPORT vtkMPIOutputWindow : public vtkOutputWindow
 {
 public:
-  vtkTypeMacro(vtkMPIOutputWindow,vtkOutputWindow);
+  vtkTypeRevisionMacro(vtkMPIOutputWindow,vtkOutputWindow);
 
   void DisplayText(const char* t)
     {
@@ -70,7 +70,9 @@ void vtkMPIController::CreateOutputWindow()
   vtkOutputWindow::SetInstance(this->OutputWindow);
 }
 
+vtkCxxRevisionMacro(vtkMPIOutputWindow, "$Revision: 1.29 $");
 
+vtkCxxRevisionMacro(vtkMPIController, "$Revision: 1.29 $");
 vtkStandardNewMacro(vtkMPIController);
 
 //----------------------------------------------------------------------------

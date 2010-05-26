@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGlyph2D.h
+  Module:    $RCSfile: vtkGlyph2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@
 class VTK_GRAPHICS_EXPORT vtkGlyph2D : public vtkGlyph3D
 {
 public:
-  vtkTypeMacro(vtkGlyph2D,vtkGlyph3D);
+  vtkTypeRevisionMacro(vtkGlyph2D,vtkGlyph3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

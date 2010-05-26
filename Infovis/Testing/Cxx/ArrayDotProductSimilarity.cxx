@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ArrayDotProductSimilarity.cxx
+  Module:    $RCSfile: ArrayDotProductSimilarity.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

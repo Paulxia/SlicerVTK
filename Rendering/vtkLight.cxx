@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLight.cxx
+  Module:    $RCSfile: vtkLight.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkMatrix4x4.h"
 #include "vtkGraphicsFactory.h"
 
+vtkCxxRevisionMacro(vtkLight, "$Revision: 1.55 $");
 
 vtkCxxSetObjectMacro(vtkLight,TransformMatrix,vtkMatrix4x4);
 

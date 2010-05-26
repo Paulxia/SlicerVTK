@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalDataSet.cxx
+  Module:    $RCSfile: vtkTemporalDataSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkTemporalDataSet, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkTemporalDataSet);
 
 //----------------------------------------------------------------------------

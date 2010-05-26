@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContourFilter.cxx
+  Module:    $RCSfile: vtkContourFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkContourFilter, "$Revision: 1.133 $");
 vtkStandardNewMacro(vtkContourFilter);
 vtkCxxSetObjectMacro(vtkContourFilter,ScalarTree,vtkScalarTree);
 

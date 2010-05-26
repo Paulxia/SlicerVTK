@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericSubdivisionErrorMetric.cxx
+  Module:    $RCSfile: vtkGenericSubdivisionErrorMetric.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkMath.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkGenericSubdivisionErrorMetric,"$Revision: 1.5 $");
 
 //-----------------------------------------------------------------------------
 vtkGenericSubdivisionErrorMetric::vtkGenericSubdivisionErrorMetric()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeDataSet.h
+  Module:    $RCSfile: vtkCompositeDataSet.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class vtkInformationStringKey;
 class VTK_FILTERING_EXPORT vtkCompositeDataSet : public vtkDataObject
 {
 public:
-  vtkTypeMacro(vtkCompositeDataSet, vtkDataObject);
+  vtkTypeRevisionMacro(vtkCompositeDataSet, vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

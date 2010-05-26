@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestOrderStatisticsBoxChart.cxx
+  Module:    $RCSfile: TestOrderStatisticsBoxChart.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,7 +19,6 @@
 -------------------------------------------------------------------------*/
 
 #include "vtkDoubleArray.h"
-#include "vtkMultiBlockDataSet.h"
 #include "vtkStringArray.h"
 #include "vtkTable.h"
 #include "vtkOrderStatistics.h"
@@ -143,6 +142,7 @@ int TestOrderStatisticsBoxChart( int argc, char* argv[] )
   datasetTable->AddColumn( dataset3Arr );
   dataset3Arr->Delete();
 
+  vtkTable* paramsTable = vtkTable::New();
   int nMetrics = 3;
   vtkStdString columns[] = { "Metric 1", "Metric 2", "Metric 0" };
   double centers[] = { 49.5, -1., 49.2188 };
@@ -154,6 +154,7 @@ int TestOrderStatisticsBoxChart( int argc, char* argv[] )
     {
     stdStringCol->InsertNextValue( columns[i] );
     }
+  paramsTable->AddColumn( stdStringCol );
   stdStringCol->Delete();
 
   vtkDoubleArray* doubleCol = vtkDoubleArray::New();
@@ -162,6 +163,7 @@ int TestOrderStatisticsBoxChart( int argc, char* argv[] )
     {
     doubleCol->InsertNextValue( centers[i] );
     }
+  paramsTable->AddColumn( doubleCol );
   doubleCol->Delete();
 
   doubleCol = vtkDoubleArray::New();
@@ -170,27 +172,25 @@ int TestOrderStatisticsBoxChart( int argc, char* argv[] )
     {
     doubleCol->InsertNextValue( radii[i] );
     }
+  paramsTable->AddColumn( doubleCol );
   doubleCol->Delete();
 
-  // Set order statistics algorithm and its input data port
   vtkOrderStatistics* haruspex = vtkOrderStatistics::New();
-  haruspex->SetInput( vtkStatisticsAlgorithm::INPUT_DATA, datasetTable );
-  datasetTable->Delete();
+  haruspex->SetInput( 0, datasetTable );
+  haruspex->SetInput( 1, paramsTable );
+  vtkTable* outputTable = haruspex->GetOutput( 1 );
 
-  // Select Columns of Interest
+  datasetTable->Delete();
+  paramsTable->Delete();
+
+// -- Select Columns of Interest -- 
   for ( int i = 0; i< nMetrics; ++ i )
     {  
     haruspex->AddColumn( columns[i] );
     }
 
-  // Use Learn option for quartiles with InverseCDFAveragedSteps quantile definition
-  haruspex->SetLearnOption( true );
-  haruspex->SetAssessOption( false );
+// -- Test Learn Mode for quartiles with InverseCDFAveragedSteps quantile definition -- 
   haruspex->Update();
-
-  // Get calculated model
-  vtkMultiBlockDataSet* outputMetaDS = vtkMultiBlockDataSet::SafeDownCast( haruspex->GetOutputDataObject( vtkStatisticsAlgorithm::OUTPUT_MODEL ) );
-  vtkTable* outputTable = vtkTable::SafeDownCast( outputMetaDS->GetBlock( 0 ) );
 
   QTestApp app(argc, argv);
 

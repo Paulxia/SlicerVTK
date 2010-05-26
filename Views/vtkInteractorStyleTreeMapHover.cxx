@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleTreeMapHover.cxx
+  Module:    $RCSfile: vtkInteractorStyleTreeMapHover.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 #include "vtkWorldPointPicker.h"
 #include "vtkVariant.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleTreeMapHover, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkInteractorStyleTreeMapHover);
 
 //----------------------------------------------------------------------------

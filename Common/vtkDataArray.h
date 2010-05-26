@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataArray.h
+  Module:    $RCSfile: vtkDataArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class vtkLookupTable;
 class VTK_COMMON_EXPORT vtkDataArray : public vtkAbstractArray
 {
 public:
-  vtkTypeMacro(vtkDataArray,vtkAbstractArray);
+  vtkTypeRevisionMacro(vtkDataArray,vtkAbstractArray);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

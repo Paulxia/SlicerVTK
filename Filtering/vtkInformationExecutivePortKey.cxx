@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationExecutivePortKey.cxx
+  Module:    $RCSfile: vtkInformationExecutivePortKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkInformation.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkInformationExecutivePortKey, "$Revision: 1.9 $");
 
 //----------------------------------------------------------------------------
 vtkInformationExecutivePortKey::vtkInformationExecutivePortKey(const char* name, const char* location):

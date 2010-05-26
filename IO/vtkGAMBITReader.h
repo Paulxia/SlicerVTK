@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGAMBITReader.h
+  Module:    $RCSfile: vtkGAMBITReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_IO_EXPORT vtkGAMBITReader : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkGAMBITReader *New();
-  vtkTypeMacro(vtkGAMBITReader,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkGAMBITReader,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

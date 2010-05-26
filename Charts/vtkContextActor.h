@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextActor.h
+  Module:    $RCSfile: vtkContextActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_CHARTS_EXPORT vtkContextActor : public vtkProp
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkContextActor,vtkProp);
+  vtkTypeRevisionMacro(vtkContextActor,vtkProp);
 
   static vtkContextActor* New();
 

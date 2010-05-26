@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSeedConnectivity.cxx
+  Module:    $RCSfile: vtkImageSeedConnectivity.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageSeedConnectivity, "$Revision: 1.33 $");
 vtkStandardNewMacro(vtkImageSeedConnectivity);
 
 //----------------------------------------------------------------------------

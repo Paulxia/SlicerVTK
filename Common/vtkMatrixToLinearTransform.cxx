@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatrixToLinearTransform.cxx
+  Module:    $RCSfile: vtkMatrixToLinearTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkMatrix4x4.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkMatrixToLinearTransform, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkMatrixToLinearTransform);
 vtkCxxSetObjectMacro(vtkMatrixToLinearTransform,Input,vtkMatrix4x4);
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSimple2DLayoutStrategy.cxx
+  Module:    $RCSfile: vtkSimple2DLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkSimple2DLayoutStrategy, "$Revision: 1.29 $");
 vtkStandardNewMacro(vtkSimple2DLayoutStrategy);
 
 #ifndef MIN

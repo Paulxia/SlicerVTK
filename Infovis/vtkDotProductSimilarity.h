@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDotProductSimilarity.h
+  Module:    $RCSfile: vtkDotProductSimilarity.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -61,7 +61,7 @@ class VTK_INFOVIS_EXPORT vtkDotProductSimilarity : public vtkTableAlgorithm
 {
 public:
   static vtkDotProductSimilarity* New();
-  vtkTypeMacro(vtkDotProductSimilarity, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkDotProductSimilarity, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

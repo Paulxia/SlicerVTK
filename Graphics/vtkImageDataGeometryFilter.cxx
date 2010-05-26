@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDataGeometryFilter.cxx
+  Module:    $RCSfile: vtkImageDataGeometryFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkImageDataGeometryFilter, "$Revision: 1.18 $");
 vtkStandardNewMacro(vtkImageDataGeometryFilter);
 
 // Construct with initial extent of all the data

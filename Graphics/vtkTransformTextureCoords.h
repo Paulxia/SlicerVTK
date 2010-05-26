@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransformTextureCoords.h
+  Module:    $RCSfile: vtkTransformTextureCoords.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@
 class VTK_GRAPHICS_EXPORT vtkTransformTextureCoords : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTransformTextureCoords,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTransformTextureCoords,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

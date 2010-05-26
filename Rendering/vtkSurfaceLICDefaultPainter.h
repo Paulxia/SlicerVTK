@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSurfaceLICDefaultPainter.h
+  Module:    $RCSfile: vtkSurfaceLICDefaultPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_RENDERING_EXPORT vtkSurfaceLICDefaultPainter : public vtkDefaultPainte
 {
 public:
   static vtkSurfaceLICDefaultPainter* New();
-  vtkTypeMacro(vtkSurfaceLICDefaultPainter, vtkDefaultPainter);
+  vtkTypeRevisionMacro(vtkSurfaceLICDefaultPainter, vtkDefaultPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGlyph3D.h
+  Module:    $RCSfile: vtkGlyph3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -94,7 +94,7 @@
 class VTK_GRAPHICS_EXPORT vtkGlyph3D : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkGlyph3D,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGlyph3D,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

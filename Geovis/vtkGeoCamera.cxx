@@ -1,7 +1,7 @@
 /*=============================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoCamera.cxx
+  Module:    $RCSfile: vtkGeoCamera.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkTransform.h"
 #include <float.h>
 
+vtkCxxRevisionMacro(vtkGeoCamera, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkGeoCamera);
 
 

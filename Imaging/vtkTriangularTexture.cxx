@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangularTexture.cxx
+  Module:    $RCSfile: vtkTriangularTexture.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkTriangularTexture, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkTriangularTexture);
 
 // Instantiate object with XSize and YSize = 64; the texture pattern =1

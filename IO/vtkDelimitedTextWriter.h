@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkDelimitedTextWriter.h
+  Module:    $RCSfile: vtkDelimitedTextWriter.h,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_IO_EXPORT vtkDelimitedTextWriter : public vtkWriter
 {
 public:
   static vtkDelimitedTextWriter* New();
-  vtkTypeMacro(vtkDelimitedTextWriter, vtkWriter);
+  vtkTypeRevisionMacro(vtkDelimitedTextWriter, vtkWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -57,17 +57,6 @@ public:
   vtkSetMacro(UseStringDelimiter, bool);
   vtkGetMacro(UseStringDelimiter, bool);
 
-  // Description:
-  // Enable writing to an OutputString instead of the default, a file.
-  vtkSetMacro(WriteToOutputString,bool);
-  vtkGetMacro(WriteToOutputString,bool);
-  vtkBooleanMacro(WriteToOutputString,bool);
-
-  // Description:
-  // This convenience method returns the string, sets the IVAR to NULL,
-  // so that the user is responsible for deleting the string.
-  char *RegisterAndGetOutputString();
-
 //BTX
   // Description:
   // Internal method: Returns the "string" with the "StringDelimiter" if 
@@ -77,10 +66,7 @@ protected:
   vtkDelimitedTextWriter();
   ~vtkDelimitedTextWriter();
 
-  bool WriteToOutputString;
-  char* OutputString;
-
-  bool OpenStream();
+  bool OpenFile();
 
   virtual void WriteData();
   virtual void WriteTable(vtkTable* rectilinearGrid);
@@ -93,7 +79,7 @@ protected:
   char* FieldDelimiter;
   char* StringDelimiter;
   bool UseStringDelimiter;
-  ostream* Stream;
+  ofstream* Stream;
 private:
   vtkDelimitedTextWriter(const vtkDelimitedTextWriter&); // Not implemented.
   void operator=(const vtkDelimitedTextWriter&); // Not implemented.

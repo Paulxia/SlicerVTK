@@ -46,7 +46,7 @@
 * revision history - 
 *          David Thompson  - Added edge/face blocks/sets
 *
-*  Id
+*  $Id: expinix.c,v 1.10 2010-03-02 16:51:02 ndfabia Exp $
 *
 *****************************************************************************/
 

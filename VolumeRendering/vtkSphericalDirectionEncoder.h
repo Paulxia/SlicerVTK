@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSphericalDirectionEncoder.h
+  Module:    $RCSfile: vtkSphericalDirectionEncoder.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@
 class VTK_VOLUMERENDERING_EXPORT vtkSphericalDirectionEncoder : public vtkDirectionEncoder
 {
 public:
-  vtkTypeMacro(vtkSphericalDirectionEncoder,vtkDirectionEncoder);
+  vtkTypeRevisionMacro(vtkSphericalDirectionEncoder,vtkDirectionEncoder);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

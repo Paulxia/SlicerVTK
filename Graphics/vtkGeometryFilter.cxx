@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeometryFilter.cxx
+  Module:    $RCSfile: vtkGeometryFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkWedge.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkGeometryFilter, "$Revision: 1.111 $");
 vtkStandardNewMacro(vtkGeometryFilter);
 vtkCxxSetObjectMacro(vtkGeometryFilter, Locator, vtkIncrementalPointLocator)
 

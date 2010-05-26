@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractPolygonalHandleRepresentation3D.h
+  Module:    $RCSfile: vtkAbstractPolygonalHandleRepresentation3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkAbstractPolygonalHandleRepresentation3D,vtkHandleRepresentation);
+  vtkTypeRevisionMacro(vtkAbstractPolygonalHandleRepresentation3D,vtkHandleRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

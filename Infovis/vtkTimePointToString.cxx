@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTimePointToString.cxx
+  Module:    $RCSfile: vtkTimePointToString.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkTimePointUtility.h"
 #include "vtkTypeUInt64Array.h"
 
+vtkCxxRevisionMacro(vtkTimePointToString, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkTimePointToString);
 
 vtkTimePointToString::vtkTimePointToString()

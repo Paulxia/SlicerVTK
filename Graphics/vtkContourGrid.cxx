@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContourGrid.cxx
+  Module:    $RCSfile: vtkContourGrid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkContourGrid, "$Revision: 1.35 $");
 vtkStandardNewMacro(vtkContourGrid);
 
 // Construct object with initial range (0,1) and single contour value

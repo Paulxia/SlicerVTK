@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConvertSelectionDomain.h
+  Module:    $RCSfile: vtkConvertSelectionDomain.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_VIEWS_EXPORT vtkConvertSelectionDomain : public vtkPassInputTypeAlgori
 {
 public:
   static vtkConvertSelectionDomain *New();
-  vtkTypeMacro(vtkConvertSelectionDomain, vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkConvertSelectionDomain, vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

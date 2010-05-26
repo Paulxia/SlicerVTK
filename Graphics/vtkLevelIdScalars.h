@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLevelIdScalars.h
+  Module:    $RCSfile: vtkLevelIdScalars.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_GRAPHICS_EXPORT vtkLevelIdScalars : public vtkHierarchicalBoxDataSetAl
 {
 public:
   static vtkLevelIdScalars* New();
-  vtkTypeMacro(vtkLevelIdScalars, vtkHierarchicalBoxDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkLevelIdScalars, vtkHierarchicalBoxDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

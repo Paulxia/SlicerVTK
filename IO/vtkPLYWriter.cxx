@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPLYWriter.cxx
+  Module:    $RCSfile: vtkPLYWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <stddef.h>
 
+vtkCxxRevisionMacro(vtkPLYWriter, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkPLYWriter);
 
 vtkCxxSetObjectMacro(vtkPLYWriter,LookupTable,vtkScalarsToColors);

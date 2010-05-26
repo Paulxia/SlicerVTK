@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDebugLeaks.cxx
+  Module:    $RCSfile: vtkDebugLeaks.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@ int vtkDebugLeaksIgnoreClassesCheck(const char* s)
   return 0;
 }
 
+vtkCxxRevisionMacro(vtkDebugLeaks, "$Revision: 1.42 $");
 vtkStandardNewMacro(vtkDebugLeaks);
 
 //----------------------------------------------------------------------------

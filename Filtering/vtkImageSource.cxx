@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSource.cxx
+  Module:    $RCSfile: vtkImageSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkImageSource, "$Revision: 1.64 $");
 
 //----------------------------------------------------------------------------
 vtkImageSource::vtkImageSource()

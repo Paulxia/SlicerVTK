@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProp3D.cxx
+  Module:    $RCSfile: vtkProp3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkProp3D, "$Revision: 1.41 $");
 
 //----------------------------------------------------------------------------
 // Construct with the following defaults: origin(0,0,0)

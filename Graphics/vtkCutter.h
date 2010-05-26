@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCutter.h
+  Module:    $RCSfile: vtkCutter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class vtkRectilinearSynchronizedTemplates;
 class VTK_GRAPHICS_EXPORT vtkCutter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkCutter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCutter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

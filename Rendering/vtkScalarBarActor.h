@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkScalarBarActor.h
+  Module:    $RCSfile: vtkScalarBarActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -68,7 +68,7 @@ class vtkTexture;
 class VTK_RENDERING_EXPORT vtkScalarBarActor : public vtkActor2D
 {
 public:
-  vtkTypeMacro(vtkScalarBarActor,vtkActor2D);
+  vtkTypeRevisionMacro(vtkScalarBarActor,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -152,11 +152,6 @@ public:
   vtkGetStringMacro(Title);
 
   // Description:
-  // Set/Get the title for the component that is selected,
-  vtkSetStringMacro(ComponentTitle);
-  vtkGetStringMacro(ComponentTitle);
-
-  // Description:
   // Shallow copy of a scalar bar actor. Overloads the virtual vtkProp method.
   void ShallowCopy(vtkProp *prop);
 
@@ -209,7 +204,6 @@ protected:
   int   NumberOfLabelsBuilt;
   int   Orientation;
   char  *Title;
-  char* ComponentTitle;
   char  *LabelFormat;
   int   UseOpacity; // off by default
   double TextureGridWidth;

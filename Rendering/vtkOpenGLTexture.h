@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLTexture.h
+  Module:    $RCSfile: vtkOpenGLTexture.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLTexture : public vtkTexture
 {
 public:
   static vtkOpenGLTexture *New();
-  vtkTypeMacro(vtkOpenGLTexture,vtkTexture);
+  vtkTypeRevisionMacro(vtkOpenGLTexture,vtkTexture);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

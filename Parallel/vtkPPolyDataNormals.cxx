@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPPolyDataNormals.cxx
+  Module:    $RCSfile: vtkPPolyDataNormals.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkPolyData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkPPolyDataNormals, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkPPolyDataNormals);
 
 //----------------------------------------------------------------------------

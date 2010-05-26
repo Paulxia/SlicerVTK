@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiThreader.cxx
+  Module:    $RCSfile: vtkMultiThreader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkWindows.h"
 
+vtkCxxRevisionMacro(vtkMultiThreader, "$Revision: 1.53 $");
 vtkStandardNewMacro(vtkMultiThreader);
 
 // These are the includes necessary for multithreaded rendering on an SGI

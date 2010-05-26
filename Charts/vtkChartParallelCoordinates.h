@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChartParallelCoordinates.h
+  Module:    $RCSfile: vtkChartParallelCoordinates.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,7 +16,7 @@
 // .NAME vtkChartParallelCoordinates - Factory class for drawing 2D charts
 //
 // .SECTION Description
-// This defines the interface for a parallel coordinates chart.
+// This defines the interface for a chart.
 
 #ifndef __vtkChartParallelCoordinates_h
 #define __vtkChartParallelCoordinates_h
@@ -24,12 +24,11 @@
 #include "vtkChart.h"
 
 class vtkIdTypeArray;
-class vtkStringArray;
 
 class VTK_CHARTS_EXPORT vtkChartParallelCoordinates : public vtkChart
 {
 public:
-  vtkTypeMacro(vtkChartParallelCoordinates, vtkChart);
+  vtkTypeRevisionMacro(vtkChartParallelCoordinates, vtkChart);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:
@@ -45,18 +44,6 @@ public:
   // Description:
   // Paint event for the chart, called whenever the chart needs to be drawn
   virtual bool Paint(vtkContext2D *painter);
-
-  // Description:
-  // Set the visibility of the specified column.
-  void SetColumnVisibility(const char* name, bool visible);
-
-  // Description:
-  // Get the visibility of the specified column.
-  bool GetColumnVisibility(const char* name);
-
-  // Description:
-  // Get a list of the columns, and the order in which they are displayed.
-  vtkGetObjectMacro(VisibleColumns, vtkStringArray);
 
   // Description:
   // Add a plot to the chart, defaults to using the name of the y column
@@ -80,7 +67,8 @@ public:
   virtual vtkIdType GetNumberOfPlots();
 
   // Description:
-  // Get the axis specified by axisIndex.
+  // Get the axis specified by axisIndex. 0 is x, 1 is y. This should probably
+  // be improved either using a string or enum to select the axis.
   virtual vtkAxis* GetAxis(int axisIndex);
 
   // Description:
@@ -138,15 +126,6 @@ protected:
   // Selected indices for the table the plot is rendering
   vtkIdTypeArray *Selection;
 
-  // Description:
-  // A list of the visible columns in the chart.
-  vtkStringArray *VisibleColumns;
-
-  // Description:
-  // The point cache is marked dirty until it has been initialized.
-  vtkTimeStamp BuildTime;
-
-  void ResetSelection();
   void UpdateGeometry();
   void CalculatePlotTransform();
 

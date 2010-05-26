@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLTreeReader.cxx
+  Module:    $RCSfile: vtkXMLTreeReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include VTKLIBXML2_HEADER(parser.h)
 #include VTKLIBXML2_HEADER(tree.h)
 
+vtkCxxRevisionMacro(vtkXMLTreeReader, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkXMLTreeReader);
 
 const char * vtkXMLTreeReader::TagNameField = ".tagname";

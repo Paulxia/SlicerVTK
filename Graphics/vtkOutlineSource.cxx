@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOutlineSource.cxx
+  Module:    $RCSfile: vtkOutlineSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkOutlineSource, "$Revision: 1.36 $");
 vtkStandardNewMacro(vtkOutlineSource);
 
 //----------------------------------------------------------------------------

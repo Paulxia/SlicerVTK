@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFoldCase.cxx
+  Module:    $RCSfile: vtkFoldCase.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 
 #include <stdexcept>
 
+vtkCxxRevisionMacro(vtkFoldCase, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkFoldCase);
 
 vtkFoldCase::vtkFoldCase() :

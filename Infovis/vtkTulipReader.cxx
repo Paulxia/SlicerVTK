@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTulipReader.cxx
+  Module:    $RCSfile: vtkTulipReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,6 +45,7 @@
 // so it would be nice to put this in a common file.
 static int my_getline(vtksys_ios::istream& stream, vtkStdString &output, char delim='\n');
 
+vtkCxxRevisionMacro(vtkTulipReader, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkTulipReader);
 
 vtkTulipReader::vtkTulipReader()

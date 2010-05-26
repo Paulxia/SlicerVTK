@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGrid.cxx
+  Module:    $RCSfile: vtkRectilinearGrid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkVertex.h"
 #include "vtkVoxel.h"
 
+vtkCxxRevisionMacro(vtkRectilinearGrid, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkRectilinearGrid);
 
 vtkCxxSetObjectMacro(vtkRectilinearGrid,XCoordinates,vtkDataArray);
@@ -55,17 +56,13 @@ vtkRectilinearGrid::vtkRectilinearGrid()
   this->Information->Set(vtkDataObject::DATA_EXTENT_TYPE(), VTK_3D_EXTENT);
   this->Information->Set(vtkDataObject::DATA_EXTENT(), this->Extent, 6);
 
-  this->XCoordinates=vtkDoubleArray::New();
-  this->XCoordinates->SetNumberOfTuples(1);
-  this->XCoordinates->SetComponent(0, 0, 0.0);
-
-  this->YCoordinates=vtkDoubleArray::New();
-  this->YCoordinates->SetNumberOfTuples(1);
-  this->YCoordinates->SetComponent(0, 0, 0.0);
-
-  this->ZCoordinates=vtkDoubleArray::New();
-  this->ZCoordinates->SetNumberOfTuples(1);
-  this->ZCoordinates->SetComponent(0, 0, 0.0);
+  vtkDoubleArray *fs=vtkDoubleArray::New(); fs->Allocate(1);
+  fs->SetNumberOfTuples(1);
+  fs->SetComponent(0, 0, 0.0);
+  this->XCoordinates = fs; fs->Register(this);
+  this->YCoordinates = fs; fs->Register(this);
+  this->ZCoordinates = fs; fs->Register(this);
+  fs->Delete();
 
   this->PointReturn[0] = 0.0;
   this->PointReturn[1] = 0.0;

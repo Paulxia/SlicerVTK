@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDummyGPUInfoList.h
+  Module:    $RCSfile: vtkDummyGPUInfoList.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_RENDERING_EXPORT vtkDummyGPUInfoList : public vtkGPUInfoList
 {
 public:
   static vtkDummyGPUInfoList* New();
-  vtkTypeMacro(vtkDummyGPUInfoList, vtkGPUInfoList);
+  vtkTypeRevisionMacro(vtkDummyGPUInfoList, vtkGPUInfoList);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

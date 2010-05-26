@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostBreadthFirstSearch.h
+  Module:    $RCSfile: vtkBoostBreadthFirstSearch.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_INFOVIS_EXPORT vtkBoostBreadthFirstSearch : public vtkGraphAlgorithm
 {
 public:
   static vtkBoostBreadthFirstSearch *New();
-  vtkTypeMacro(vtkBoostBreadthFirstSearch, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostBreadthFirstSearch, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

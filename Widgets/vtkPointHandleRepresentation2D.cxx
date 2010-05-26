@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointHandleRepresentation2D.cxx
+  Module:    $RCSfile: vtkPointHandleRepresentation2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkCamera.h"
 #include "vtkPointPlacer.h"
 
+vtkCxxRevisionMacro(vtkPointHandleRepresentation2D, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkPointHandleRepresentation2D);
 
 vtkCxxSetObjectMacro(vtkPointHandleRepresentation2D,Property,vtkProperty2D);

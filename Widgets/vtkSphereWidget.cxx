@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSphereWidget.cxx
+  Module:    $RCSfile: vtkSphereWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkSphere.h"
 #include "vtkSphereSource.h"
 
+vtkCxxRevisionMacro(vtkSphereWidget, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkSphereWidget);
 
 vtkSphereWidget::vtkSphereWidget()

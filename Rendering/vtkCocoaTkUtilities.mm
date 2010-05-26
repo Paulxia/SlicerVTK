@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCocoaTkUtilities.mm
+  Module:    $RCSfile: vtkCocoaTkUtilities.mm,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkCocoaTkUtilities.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCocoaTkUtilities, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkCocoaTkUtilities);
 
 void vtkCocoaTkUtilities::PrintSelf(ostream& os, vtkIndent indent)

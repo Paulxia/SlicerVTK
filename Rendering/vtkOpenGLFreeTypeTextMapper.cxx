@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLFreeTypeTextMapper.cxx
+  Module:    $RCSfile: vtkOpenGLFreeTypeTextMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -90,6 +90,7 @@ vtkOpenGLFreeTypeTextMapper_GetGL2PSFontName(vtkTextProperty *tprop,
 
 //----------------------------------------------------------------------------
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLFreeTypeTextMapper, "$Revision: 1.51 $");
 vtkStandardNewMacro(vtkOpenGLFreeTypeTextMapper);
 #endif
 

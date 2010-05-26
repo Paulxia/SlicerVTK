@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkX3DExporter.h
+  Module:    $RCSfile: vtkX3DExporter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_HYBRID_EXPORT vtkX3DExporter : public vtkExporter
 {
 public:
   static vtkX3DExporter *New();
-  vtkTypeMacro(vtkX3DExporter,vtkExporter);
+  vtkTypeRevisionMacro(vtkX3DExporter,vtkExporter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSortFileNames.h
+  Module:    $RCSfile: vtkSortFileNames.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class VTK_IO_EXPORT vtkSortFileNames : public vtkObject
 {
 public:
   
-  vtkTypeMacro(vtkSortFileNames,vtkObject);
+  vtkTypeRevisionMacro(vtkSortFileNames,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);   
   static vtkSortFileNames *New();
 

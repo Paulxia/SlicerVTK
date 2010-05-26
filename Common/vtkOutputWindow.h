@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOutputWindow.h
+  Module:    $RCSfile: vtkOutputWindow.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_COMMON_EXPORT vtkOutputWindow : public vtkObject
 {
 public:
 // Methods from vtkObject
-  vtkTypeMacro(vtkOutputWindow,vtkObject);
+  vtkTypeRevisionMacro(vtkOutputWindow,vtkObject);
   // Description:
   // Print ObjectFactor to stream.
   virtual void PrintSelf(ostream& os, vtkIndent indent);

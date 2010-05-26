@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPassThroughFilter.cxx
+  Module:    $RCSfile: vtkPassThroughFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkPassThroughFilter, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkPassThroughFilter);
 
 int vtkPassThroughFilter::RequestData(

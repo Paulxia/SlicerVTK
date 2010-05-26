@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoAdaptiveArcs.h
+  Module:    $RCSfile: vtkGeoAdaptiveArcs.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_GEOVIS_EXPORT vtkGeoAdaptiveArcs : public vtkPolyDataAlgorithm
 public:
   static vtkGeoAdaptiveArcs *New();
 
-  vtkTypeMacro(vtkGeoAdaptiveArcs,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGeoAdaptiveArcs,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

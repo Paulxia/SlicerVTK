@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricSuperToroid.h
+  Module:    $RCSfile: vtkParametricSuperToroid.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -45,7 +45,7 @@
 class VTK_COMMON_EXPORT vtkParametricSuperToroid : public vtkParametricFunction
 {
 public:
-  vtkTypeMacro(vtkParametricSuperToroid,vtkParametricFunction);
+  vtkTypeRevisionMacro(vtkParametricSuperToroid,vtkParametricFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

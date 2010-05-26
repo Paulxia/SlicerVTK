@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoEdgeStrategy.h
+  Module:    $RCSfile: vtkGeoEdgeStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_INFOVIS_EXPORT vtkGeoEdgeStrategy : public vtkEdgeLayoutStrategy
 {
 public:
   static vtkGeoEdgeStrategy *New();
-  vtkTypeMacro(vtkGeoEdgeStrategy,vtkEdgeLayoutStrategy);
+  vtkTypeRevisionMacro(vtkGeoEdgeStrategy,vtkEdgeLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

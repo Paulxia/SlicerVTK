@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompressCompositer.cxx
+  Module:    $RCSfile: vtkCompressCompositer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,6 +52,7 @@
 
 #include "vtkTimerLog.h"
 
+vtkCxxRevisionMacro(vtkCompressCompositer, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkCompressCompositer);
 
 

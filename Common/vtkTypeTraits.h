@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkTypeTraits.h
+  Module:    $RCSfile: vtkTypeTraits.h,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericEnSightReader.cxx
+  Module:    $RCSfile: vtkGenericEnSightReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include <assert.h>
 #include <ctype.h> /* isspace */
 
+vtkCxxRevisionMacro(vtkGenericEnSightReader, "$Revision: 1.88 $");
 vtkStandardNewMacro(vtkGenericEnSightReader);
 
 vtkCxxSetObjectMacro(vtkGenericEnSightReader,TimeSets, 

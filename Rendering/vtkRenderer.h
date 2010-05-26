@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderer.h
+  Module:    $RCSfile: vtkRenderer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ class vtkVisibleCellSelector;
 class VTK_RENDERING_EXPORT vtkRenderer : public vtkViewport
 {
 public:
-  vtkTypeMacro(vtkRenderer,vtkViewport);
+  vtkTypeRevisionMacro(vtkRenderer,vtkViewport);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkX3DExporterJavaHelper.cxx
+  Module:    $RCSfile: vtkX3DExporterJavaHelper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 
 //----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkX3DExporterJavaHelper);
+vtkCxxRevisionMacro(vtkX3DExporterJavaHelper, "$Revision: 1.1 $");
 
 //----------------------------------------------------------------------------
 void vtkX3DExporterJavaHelper::SetFastInfosetJarLocation(const char* location)

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtSeriesFilterLineEdit.h
+  Module:    $RCSfile: vtkQtSeriesFilterLineEdit.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

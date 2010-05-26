@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtLineChartView.h
+  Module:    $RCSfile: vtkQtLineChartView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ Q_OBJECT
 
 public:
   static vtkQtLineChartView *New();
-  vtkTypeMacro(vtkQtLineChartView, vtkQtChartView);
+  vtkTypeRevisionMacro(vtkQtLineChartView, vtkQtChartView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractVOI.cxx
+  Module:    $RCSfile: vtkExtractVOI.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkExtractVOI, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkExtractVOI);
 
 // Construct object to extract all of the input data.

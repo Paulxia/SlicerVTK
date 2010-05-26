@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableToArray.cxx
+  Module:    $RCSfile: vtkTableToArray.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -38,6 +38,7 @@ public:
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkTableToArray, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkTableToArray);
 
 // ----------------------------------------------------------------------

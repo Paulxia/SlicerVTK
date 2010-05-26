@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataContourLineInterpolator.cxx
+  Module:    $RCSfile: vtkPolyDataContourLineInterpolator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkMath.h"
 #include "vtkPolyDataCollection.h"
 
+vtkCxxRevisionMacro(vtkPolyDataContourLineInterpolator, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------
 vtkPolyDataContourLineInterpolator::vtkPolyDataContourLineInterpolator()

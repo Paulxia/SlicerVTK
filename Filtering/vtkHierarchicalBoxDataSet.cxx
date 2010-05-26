@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHierarchicalBoxDataSet.cxx
+  Module:    $RCSfile: vtkHierarchicalBoxDataSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,11 +30,12 @@
 #include <vtkstd/vector>
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkHierarchicalBoxDataSet, "$Revision: 1.27 $");
 vtkStandardNewMacro(vtkHierarchicalBoxDataSet);
-vtkInformationKeyRestrictedMacro(vtkHierarchicalBoxDataSet,BOX,IntegerVector, 6);
+
+vtkInformationKeyMacro(vtkHierarchicalBoxDataSet,BOX,IntegerVector);
 vtkInformationKeyMacro(vtkHierarchicalBoxDataSet,NUMBER_OF_BLANKED_POINTS,IdType);
 vtkInformationKeyMacro(vtkHierarchicalBoxDataSet,REFINEMENT_RATIO,Integer);
-vtkInformationKeyMacro(vtkHierarchicalBoxDataSet,BOX_DIMENSIONALITY,Integer);
 
 typedef vtkstd::vector<vtkAMRBox> vtkAMRBoxList;
 //----------------------------------------------------------------------------
@@ -139,7 +140,6 @@ void vtkHierarchicalBoxDataSet::SetDataSet(
       {
       const int *loCorner=box.GetLoCorner();
       const int *hiCorner=box.GetHiCorner();
-      info->Set(BOX_DIMENSIONALITY(), box.GetDimensionality());
       info->Set(BOX(),
         loCorner[0], loCorner[1], loCorner[2],
         hiCorner[0], hiCorner[1], hiCorner[2]);
@@ -166,10 +166,6 @@ vtkUniformGrid* vtkHierarchicalBoxDataSet::GetDataSet(unsigned int level,
     vtkInformation* info = levelDS->GetMetaData(id);
     if (info)
       {
-      int dimensionality = info->Has(BOX_DIMENSIONALITY())?
-        info->Get(BOX_DIMENSIONALITY()) : 3;
-      box.SetDimensionality(dimensionality);
-
       int* boxVec = info->Get(BOX());
       if (boxVec)
         {
@@ -292,9 +288,7 @@ void vtkHierarchicalBoxDataSet::GenerateVisibilityArrays()
         vtkInformation* info = this->GetMetaData(
             levelIdx+1,dataSetIdx);
         int* boxVec = info->Get(BOX());
-        int dimensionality = info->Has(BOX_DIMENSIONALITY())?
-          info->Get(BOX_DIMENSIONALITY()) : 3;
-        vtkAMRBox coarsebox(dimensionality,boxVec,boxVec+3);
+        vtkAMRBox coarsebox(3,boxVec,boxVec+3);
         int refinementRatio = this->GetRefinementRatio(levelIdx);
         if (refinementRatio == 0)
           {
@@ -363,9 +357,6 @@ vtkAMRBox vtkHierarchicalBoxDataSet::GetAMRBox(vtkCompositeDataIterator* iter)
   if (this->HasMetaData(iter))
     {
     vtkInformation* info = this->GetMetaData(iter);
-    int dimensionality = info->Has(BOX_DIMENSIONALITY())?
-      info->Get(BOX_DIMENSIONALITY()) : 3;
-    box.SetDimensionality(dimensionality);
     int* boxVec = info->Get(BOX());
     if (boxVec)
       {

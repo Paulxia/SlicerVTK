@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLProjectedTetrahedraMapper.cxx
+  Module:    $RCSfile: vtkOpenGLProjectedTetrahedraMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -57,6 +57,7 @@ const int SqrtTableSize = 2048;
 
 //-----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkOpenGLProjectedTetrahedraMapper, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkOpenGLProjectedTetrahedraMapper);
 
 vtkOpenGLProjectedTetrahedraMapper::vtkOpenGLProjectedTetrahedraMapper()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPieceRequestFilter.h
+  Module:    $RCSfile: vtkPieceRequestFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_PARALLEL_EXPORT vtkPieceRequestFilter : public vtkAlgorithm
 {
 public:
   static vtkPieceRequestFilter *New();
-  vtkTypeMacro(vtkPieceRequestFilter,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkPieceRequestFilter,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMassProperties.cxx
+  Module:    $RCSfile: vtkMassProperties.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkInformation.h"
 #include "vtkInformationVector.h"
 
+vtkCxxRevisionMacro(vtkMassProperties, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkMassProperties);
 
 #define  VTK_CUBE_ROOT(x) \

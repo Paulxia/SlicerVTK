@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellArray.cxx
+  Module:    $RCSfile: vtkCellArray.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkCellArray.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCellArray, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCellArray);
 
 //----------------------------------------------------------------------------

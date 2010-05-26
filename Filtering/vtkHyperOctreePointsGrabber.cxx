@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreePointsGrabber.cxx
+  Module:    $RCSfile: vtkHyperOctreePointsGrabber.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkHyperOctreePointsGrabber, "$Revision: 1.1 $");
 
 //-----------------------------------------------------------------------------
 // Default constructor.

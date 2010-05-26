@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetToStructuredPointsFilter.cxx
+  Module:    $RCSfile: vtkDataSetToStructuredPointsFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkInformation.h"
 #include "vtkStructuredPoints.h"
 
+vtkCxxRevisionMacro(vtkDataSetToStructuredPointsFilter, "$Revision: 1.33 $");
 
 //----------------------------------------------------------------------------
 vtkDataSetToStructuredPointsFilter::vtkDataSetToStructuredPointsFilter()

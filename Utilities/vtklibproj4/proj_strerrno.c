@@ -4,7 +4,7 @@
 ** Copyright (c) 2003 2005, 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "Id";
+LIBPROJ_ID[] = "$Id: proj_strerrno.c,v 1.2 2008-11-10 14:57:43 jeff Exp $";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -50,7 +50,10 @@ proj_strerrno(int err) {
   }
 }
 /*
-** Log: proj_strerrno.c
+** $Log: proj_strerrno.c,v $
+** Revision 1.2  2008-11-10 14:57:43  jeff
+** COMP: Removing conversion warnings.
+**
 ** Revision 1.1  2008-11-07 16:41:16  jeff
 ** ENH: Adding a 2D geoview. Adding the geographic projection library libproj4
 ** to Utilities. Updating the architecture of the geospatial views. All

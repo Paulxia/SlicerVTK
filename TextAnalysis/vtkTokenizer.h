@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTokenizer.h
+  Module:    $RCSfile: vtkTokenizer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -81,7 +81,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkTokenizer :
 {
 public:
   static vtkTokenizer* New();
-  vtkTypeMacro(vtkTokenizer, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkTokenizer, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

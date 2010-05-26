@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMCubesReader.cxx
+  Module:    $RCSfile: vtkMCubesReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+vtkCxxRevisionMacro(vtkMCubesReader, "$Revision: 1.67 $");
 vtkStandardNewMacro(vtkMCubesReader);
 
 // Construct object with FlipNormals turned off and Normals set to true.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContinuousValueWidget.h
+  Module:    $RCSfile: vtkContinuousValueWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -69,7 +69,7 @@ class VTK_WIDGETS_EXPORT vtkContinuousValueWidget : public vtkAbstractWidget
 public:
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkContinuousValueWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkContinuousValueWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

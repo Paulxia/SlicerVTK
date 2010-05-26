@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSelectVisiblePoints.cxx
+  Module:    $RCSfile: vtkSelectVisiblePoints.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkRenderWindow.h"
 #include "vtkRenderer.h"
 
+vtkCxxRevisionMacro(vtkSelectVisiblePoints, "$Revision: 1.41 $");
 vtkStandardNewMacro(vtkSelectVisiblePoints);
 
 // Instantiate object with no renderer; window selection turned off; 

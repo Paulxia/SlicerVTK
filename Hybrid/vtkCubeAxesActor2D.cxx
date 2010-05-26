@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCubeAxesActor2D.cxx
+  Module:    $RCSfile: vtkCubeAxesActor2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkTextProperty.h"
 #include "vtkViewport.h"
 
+vtkCxxRevisionMacro(vtkCubeAxesActor2D, "$Revision: 1.57 $");
 vtkStandardNewMacro(vtkCubeAxesActor2D);
 
 vtkCxxSetObjectMacro(vtkCubeAxesActor2D,Input, vtkDataSet);

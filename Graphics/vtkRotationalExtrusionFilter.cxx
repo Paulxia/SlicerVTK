@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRotationalExtrusionFilter.cxx
+  Module:    $RCSfile: vtkRotationalExtrusionFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkCellData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkRotationalExtrusionFilter, "$Revision: 1.58 $");
 vtkStandardNewMacro(vtkRotationalExtrusionFilter);
 
 // Create object with capping on, angle of 360 degrees, resolution = 12, and

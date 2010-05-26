@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphWriter.cxx
+  Module:    $RCSfile: vtkGraphWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 # include <io.h> /* unlink */
 #endif
 
+vtkCxxRevisionMacro(vtkGraphWriter, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkGraphWriter);
 
 void vtkGraphWriter::WriteData()

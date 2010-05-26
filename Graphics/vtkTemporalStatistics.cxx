@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalStatistics.cxx
+  Module:    $RCSfile: vtkTemporalStatistics.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@
 #include <vtkstd/algorithm>
 
 //=============================================================================
+vtkCxxRevisionMacro(vtkTemporalStatistics, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkTemporalStatistics);
 
 //=============================================================================
@@ -458,10 +459,7 @@ void vtkTemporalStatistics::InitializeArray(vtkDataArray *array,
                           vtkAbstractArray::CreateArray(array->GetDataType())));
     newArray->SetName(vtkTemporalStatisticsMangleName(array->GetName(),
                                                     STANDARD_DEVIATION_SUFFIX));
-        
-    newArray->SetNumberOfComponents(array->GetNumberOfComponents());   
-    newArray->CopyComponentNames( array );    
-    
+    newArray->SetNumberOfComponents(array->GetNumberOfComponents());
     newArray->SetNumberOfTuples(array->GetNumberOfTuples());
     switch (array->GetDataType())
       {

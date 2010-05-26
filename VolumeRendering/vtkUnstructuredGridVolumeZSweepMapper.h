@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridVolumeZSweepMapper.h
+  Module:    $RCSfile: vtkUnstructuredGridVolumeZSweepMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -67,7 +67,7 @@ namespace vtkUnstructuredGridVolumeZSweepMapperNamespace
 class VTK_VOLUMERENDERING_EXPORT vtkUnstructuredGridVolumeZSweepMapper : public vtkUnstructuredGridVolumeMapper
 {
 public:
-  vtkTypeMacro(vtkUnstructuredGridVolumeZSweepMapper,vtkUnstructuredGridVolumeMapper);
+  vtkTypeRevisionMacro(vtkUnstructuredGridVolumeZSweepMapper,vtkUnstructuredGridVolumeMapper);
   void PrintSelf( ostream& os, vtkIndent indent );
   
   // Description:

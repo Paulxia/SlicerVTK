@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkXMLCompositeDataReader.cxx
+  Module:    $RCSfile: vtkXMLCompositeDataReader.cxx,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -40,6 +40,7 @@
 #include <vtkstd/vector>
 #include <vtksys/SystemTools.hxx>
 
+vtkCxxRevisionMacro(vtkXMLCompositeDataReader, "$Revision: 1.5 $");
 
 struct vtkXMLCompositeDataReaderEntry
 {

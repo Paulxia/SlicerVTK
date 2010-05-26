@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCommunicator.h
+  Module:    $RCSfile: vtkCommunicator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_PARALLEL_EXPORT vtkCommunicator : public vtkObject
 
 public:
 
-  vtkTypeMacro(vtkCommunicator, vtkObject);
+  vtkTypeRevisionMacro(vtkCommunicator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -389,10 +389,6 @@ public:
                                   offsets, VTK_ID_TYPE, destProcessId);
   }
 #endif
-  int GatherV(vtkDataArray *sendBuffer, vtkDataArray *recvBuffer,
-              vtkIdType *recvLengths, vtkIdType *offsets, int destProcessId);
-  int GatherV(vtkDataArray *sendBuffer, vtkDataArray *recvBuffer,
-              int destProcessId);
 
   // Description:
   // Scatter takes an array in the process with id \c srcProcessId and
@@ -585,9 +581,6 @@ public:
                                      offsets, VTK_ID_TYPE);
   }
 #endif
-  int AllGatherV(vtkDataArray *sendBuffer, vtkDataArray *recvBuffer,
-                 vtkIdType *recvLengths, vtkIdType *offsets);
-  int AllGatherV(vtkDataArray *sendBuffer, vtkDataArray *recvBuffer);
 
   // Description:
   // Reduce an array to the given destination process.  This version of Reduce

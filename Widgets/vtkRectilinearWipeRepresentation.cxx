@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearWipeRepresentation.cxx
+  Module:    $RCSfile: vtkRectilinearWipeRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkObjectFactory.h"
 
 
+vtkCxxRevisionMacro(vtkRectilinearWipeRepresentation, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkRectilinearWipeRepresentation);
 
 vtkCxxSetObjectMacro(vtkRectilinearWipeRepresentation,RectilinearWipe,vtkImageRectilinearWipe);

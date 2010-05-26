@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransformInterpolator.cxx
+  Module:    $RCSfile: vtkTransformInterpolator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkQuaternionInterpolator.h"
 #include <vtkstd/list>
 
+vtkCxxRevisionMacro(vtkTransformInterpolator, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTransformInterpolator);
 
 // PIMPL STL encapsulation for list of transforms, and list of

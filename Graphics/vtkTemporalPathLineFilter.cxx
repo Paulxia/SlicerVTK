@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Project:   vtkCSCS
-  Module:    vtkTemporalPathLineFilter.cxx
+  Module:    $RCSfile: vtkTemporalPathLineFilter.cxx,v $
 
   Copyright (c) CSCS - Swiss National Supercomputing Centre.
   You may use modify and and distribute this code freely providing this
@@ -33,6 +33,7 @@
 #include <stdexcept>
 #include <cmath>
 //---------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkTemporalPathLineFilter, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkTemporalPathLineFilter);
 //----------------------------------------------------------------------------
 //

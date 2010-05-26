@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageRGBToHSI.h
+  Module:    $RCSfile: vtkImageRGBToHSI.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_IMAGING_EXPORT vtkImageRGBToHSI : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageRGBToHSI *New();
-  vtkTypeMacro(vtkImageRGBToHSI,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageRGBToHSI,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRandomSequence.h
+  Module:    $RCSfile: vtkRandomSequence.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@
 class VTK_COMMON_EXPORT vtkRandomSequence : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkRandomSequence,vtkObject);
+  vtkTypeRevisionMacro(vtkRandomSequence,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSortDataArray.h
+  Module:    $RCSfile: vtkSortDataArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class vtkAbstractArray;
 class VTK_COMMON_EXPORT vtkSortDataArray : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkSortDataArray, vtkObject);
+  vtkTypeRevisionMacro(vtkSortDataArray, vtkObject);
   static vtkSortDataArray *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

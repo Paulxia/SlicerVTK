@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPImageDataWriter.h
+  Module:    $RCSfile: vtkXMLPImageDataWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_IO_EXPORT vtkXMLPImageDataWriter : public vtkXMLPStructuredDataWriter
 {
 public:
   static vtkXMLPImageDataWriter* New();
-  vtkTypeMacro(vtkXMLPImageDataWriter,vtkXMLPStructuredDataWriter);
+  vtkTypeRevisionMacro(vtkXMLPImageDataWriter,vtkXMLPStructuredDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

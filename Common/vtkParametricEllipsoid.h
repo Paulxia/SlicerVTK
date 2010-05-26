@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricEllipsoid.h
+  Module:    $RCSfile: vtkParametricEllipsoid.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -37,7 +37,7 @@
 class VTK_COMMON_EXPORT vtkParametricEllipsoid : public vtkParametricFunction
 {
 public:
-  vtkTypeMacro(vtkParametricEllipsoid,vtkParametricFunction);
+  vtkTypeRevisionMacro(vtkParametricEllipsoid,vtkParametricFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphToPoints.cxx
+  Module:    $RCSfile: vtkGraphToPoints.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkGraphToPoints, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkGraphToPoints);
 
 vtkGraphToPoints::vtkGraphToPoints()

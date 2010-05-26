@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCriticalSection.h
+  Module:    $RCSfile: vtkCriticalSection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -109,7 +109,7 @@ class VTK_COMMON_EXPORT vtkCriticalSection : public vtkObject
 public:
   static vtkCriticalSection *New();
 
-  vtkTypeMacro(vtkCriticalSection,vtkObject);
+  vtkTypeRevisionMacro(vtkCriticalSection,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

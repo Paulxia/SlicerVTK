@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkDepthPeelingPass.cxx
+Module:    $RCSfile: vtkDepthPeelingPass.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -30,6 +30,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkUniformVariables.h"
 #include "vtkTextureUnitManager.h"
 
+vtkCxxRevisionMacro(vtkDepthPeelingPass, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkDepthPeelingPass);
 vtkCxxSetObjectMacro(vtkDepthPeelingPass,TranslucentPass,vtkRenderPass);
 

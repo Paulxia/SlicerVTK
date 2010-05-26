@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoGraticule.cxx
+  Module:    $RCSfile: vtkGeoGraticule.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include <vtkstd/vector>
 
 vtkStandardNewMacro(vtkGeoGraticule);
+vtkCxxRevisionMacro(vtkGeoGraticule,"$Revision: 1.3 $");
 
 double vtkGeoGraticule::LatitudeLevelTics[12] =
 {

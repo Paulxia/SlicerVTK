@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAffineRepresentation2D.cxx
+  Module:    $RCSfile: vtkAffineRepresentation2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkWindow.h"
 
 
+vtkCxxRevisionMacro(vtkAffineRepresentation2D, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkAffineRepresentation2D);
 
 vtkCxxSetObjectMacro(vtkAffineRepresentation2D,Property,vtkProperty2D);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearSynchronizedTemplates.h
+  Module:    $RCSfile: vtkRectilinearSynchronizedTemplates.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_GRAPHICS_EXPORT vtkRectilinearSynchronizedTemplates : public vtkPolyDa
 public:
   static vtkRectilinearSynchronizedTemplates *New();
 
-  vtkTypeMacro(vtkRectilinearSynchronizedTemplates,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkRectilinearSynchronizedTemplates,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

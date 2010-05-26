@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatlabMexAdapter.cxx
+  Module:    $RCSfile: vtkMatlabMexAdapter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,6 +62,7 @@
 
 #define VTK_CREATE(classname, varname) vtkSmartPointer<classname> varname = vtkSmartPointer<classname>::New()
 
+vtkCxxRevisionMacro(vtkMatlabMexAdapter, "$Revision: 1.4 $");
 
 vtkStandardNewMacro(vtkMatlabMexAdapter);
 

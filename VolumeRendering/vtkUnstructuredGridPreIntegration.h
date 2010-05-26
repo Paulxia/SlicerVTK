@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridPreIntegration.h
+  Module:    $RCSfile: vtkUnstructuredGridPreIntegration.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class vtkVolumeProperty;
 class VTK_VOLUMERENDERING_EXPORT vtkUnstructuredGridPreIntegration : public vtkUnstructuredGridVolumeRayIntegrator
 {
 public:
-  vtkTypeMacro(vtkUnstructuredGridPreIntegration,
+  vtkTypeRevisionMacro(vtkUnstructuredGridPreIntegration,
                        vtkUnstructuredGridVolumeRayIntegrator);
   static vtkUnstructuredGridPreIntegration *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);

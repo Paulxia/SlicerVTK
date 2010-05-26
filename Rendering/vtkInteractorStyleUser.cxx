@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleUser.cxx
+  Module:    $RCSfile: vtkInteractorStyleUser.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkCommand.h"
 
 
+vtkCxxRevisionMacro(vtkInteractorStyleUser, "$Revision: 1.35 $");
 vtkStandardNewMacro(vtkInteractorStyleUser);
 
 //----------------------------------------------------------------------------

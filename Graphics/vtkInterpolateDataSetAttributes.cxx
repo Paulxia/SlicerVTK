@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInterpolateDataSetAttributes.cxx
+  Module:    $RCSfile: vtkInterpolateDataSetAttributes.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkStructuredPoints.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkInterpolateDataSetAttributes, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkInterpolateDataSetAttributes);
 
 // Create object with no input or output.

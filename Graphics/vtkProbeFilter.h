@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProbeFilter.h
+  Module:    $RCSfile: vtkProbeFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_GRAPHICS_EXPORT vtkProbeFilter : public vtkDataSetAlgorithm
 {
 public:
   static vtkProbeFilter *New();
-  vtkTypeMacro(vtkProbeFilter,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkProbeFilter,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDefaultPainter.h
+  Module:    $RCSfile: vtkDefaultPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_RENDERING_EXPORT vtkDefaultPainter : public vtkPainter
 {
 public:
   static vtkDefaultPainter *New();
-  vtkTypeMacro(vtkDefaultPainter, vtkPainter);
+  vtkTypeRevisionMacro(vtkDefaultPainter, vtkPainter);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
   
   // Description:

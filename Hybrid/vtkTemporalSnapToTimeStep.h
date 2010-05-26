@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalSnapToTimeStep.h
+  Module:    $RCSfile: vtkTemporalSnapToTimeStep.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_HYBRID_EXPORT vtkTemporalSnapToTimeStep : public vtkTemporalDataSetAlg
 {
 public:
   static vtkTemporalSnapToTimeStep *New();
-  vtkTypeMacro(vtkTemporalSnapToTimeStep, vtkTemporalDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTemporalSnapToTimeStep, vtkTemporalDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextDevice2D.cxx
+  Module:    $RCSfile: vtkContextDevice2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkContextDevice2D, "$Revision: 1.2 $");
 //-----------------------------------------------------------------------------
 //vtkStandardNewMacro(vtkContextDevice2D);
 
@@ -41,8 +42,7 @@ bool vtkContextDevice2D::GetBufferIdMode() const
 }
   
 // ----------------------------------------------------------------------------
-void vtkContextDevice2D::BufferIdModeBegin(
-  vtkAbstractContextBufferId *bufferId)
+void vtkContextDevice2D::BufferIdModeBegin(vtkContextBufferId *bufferId)
 {
   assert("pre: not_yet" && !this->GetBufferIdMode());
   assert("pre: bufferId_exists" && bufferId!=0);

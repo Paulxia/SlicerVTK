@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractUserDefinedPiece.cxx
+  Module:    $RCSfile: vtkExtractUserDefinedPiece.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkInformationVector.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkExtractUserDefinedPiece, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkExtractUserDefinedPiece);
 
 vtkExtractUserDefinedPiece::vtkExtractUserDefinedPiece()

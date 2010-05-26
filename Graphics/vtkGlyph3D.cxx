@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGlyph3D.cxx
+  Module:    $RCSfile: vtkGlyph3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkTransform.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkGlyph3D, "$Revision: 1.127 $");
 vtkStandardNewMacro(vtkGlyph3D);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTranslucentPass.cxx
+  Module:    $RCSfile: vtkTranslucentPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkTranslucentPass, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkTranslucentPass);
 
 // ----------------------------------------------------------------------------

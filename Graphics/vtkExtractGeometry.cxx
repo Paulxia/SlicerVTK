@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractGeometry.cxx
+  Module:    $RCSfile: vtkExtractGeometry.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPointData.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkExtractGeometry, "$Revision: 1.59 $");
 vtkStandardNewMacro(vtkExtractGeometry);
 vtkCxxSetObjectMacro(vtkExtractGeometry,ImplicitFunction,vtkImplicitFunction);
 

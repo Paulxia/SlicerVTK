@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCollectionIterator.cxx
+  Module:    $RCSfile: vtkCollectionIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkCollection.h"
 
+vtkCxxRevisionMacro(vtkCollectionIterator, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkCollectionIterator);
 
 //----------------------------------------------------------------------------

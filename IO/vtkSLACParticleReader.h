@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSLACParticleReader.h
+  Module:    $RCSfile: vtkSLACParticleReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class vtkInformationObjectBaseKey;
 class VTK_IO_EXPORT vtkSLACParticleReader : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkSLACParticleReader, vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSLACParticleReader, vtkPolyDataAlgorithm);
   static vtkSLACParticleReader *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

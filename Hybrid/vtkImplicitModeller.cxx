@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitModeller.cxx
+  Module:    $RCSfile: vtkImplicitModeller.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImplicitModeller, "$Revision: 1.98 $");
 vtkStandardNewMacro(vtkImplicitModeller);
 
 struct vtkImplicitModellerAppendInfo

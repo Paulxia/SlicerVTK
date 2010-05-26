@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAlgorithm.cxx
+  Module:    $RCSfile: vtkAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 #include <vtkstd/set>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkAlgorithm, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkAlgorithm);
 
 vtkCxxSetObjectMacro(vtkAlgorithm,Information,vtkInformation);

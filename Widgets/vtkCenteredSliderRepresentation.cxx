@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCenteredSliderRepresentation.cxx
+  Module:    $RCSfile: vtkCenteredSliderRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,6 +43,7 @@
 #include "vtkUnsignedCharArray.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkCenteredSliderRepresentation, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkCenteredSliderRepresentation);
 
 //----------------------------------------------------------------------

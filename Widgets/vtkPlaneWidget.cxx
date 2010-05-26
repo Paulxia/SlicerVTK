@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlaneWidget.cxx
+  Module:    $RCSfile: vtkPlaneWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 #include "vtkSphereSource.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkPlaneWidget, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkPlaneWidget);
 
 vtkCxxSetObjectMacro(vtkPlaneWidget,PlaneProperty,vtkProperty);

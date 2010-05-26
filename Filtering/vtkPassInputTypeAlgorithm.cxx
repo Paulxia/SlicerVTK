@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPassInputTypeAlgorithm.cxx
+  Module:    $RCSfile: vtkPassInputTypeAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkTable.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkPassInputTypeAlgorithm, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkPassInputTypeAlgorithm);
 
 //----------------------------------------------------------------------------

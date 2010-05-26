@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraturePointInterpolator.h
+  Module:    $RCSfile: vtkQuadraturePointInterpolator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_GRAPHICS_EXPORT vtkQuadraturePointInterpolator : public vtkDataSetAlgo
 {
 public:
   static vtkQuadraturePointInterpolator *New();
-  vtkTypeMacro(vtkQuadraturePointInterpolator,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkQuadraturePointInterpolator,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

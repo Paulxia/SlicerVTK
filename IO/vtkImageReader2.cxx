@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageReader2.cxx
+  Module:    $RCSfile: vtkImageReader2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 
 #include <sys/stat.h>
 
+vtkCxxRevisionMacro(vtkImageReader2, "$Revision: 1.43 $");
 vtkStandardNewMacro(vtkImageReader2);
 
 #ifdef read

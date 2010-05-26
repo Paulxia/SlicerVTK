@@ -14,7 +14,7 @@
   Originally written by Rudolf Marek.
 
  function:
-  last mod: Id
+  last mod: $Id: cpu.c,v 1.1 2009-12-01 13:29:59 dave.demarle Exp $
 
  ********************************************************************/
 

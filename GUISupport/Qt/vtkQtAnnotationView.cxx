@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtAnnotationView.cxx
+  Module:    $RCSfile: vtkQtAnnotationView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,6 +50,7 @@
 
 #include <vtkstd/set>
 
+vtkCxxRevisionMacro(vtkQtAnnotationView, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkQtAnnotationView);
 
 //----------------------------------------------------------------------------

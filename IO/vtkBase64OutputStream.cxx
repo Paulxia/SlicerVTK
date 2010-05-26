@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBase64OutputStream.cxx
+  Module:    $RCSfile: vtkBase64OutputStream.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkBase64Utilities.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkBase64OutputStream, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkBase64OutputStream);
 
 //----------------------------------------------------------------------------

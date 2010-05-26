@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableAlgorithm.h
+  Module:    $RCSfile: vtkTableAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class VTK_FILTERING_EXPORT vtkTableAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkTableAlgorithm *New();
-  vtkTypeMacro(vtkTableAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkTableAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

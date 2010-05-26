@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkColorMaterialHelper.h
+  Module:    $RCSfile: vtkColorMaterialHelper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkColorMaterialHelper : public vtkObject
 {
 public:
   static vtkColorMaterialHelper* New();
-  vtkTypeMacro(vtkColorMaterialHelper, vtkObject);
+  vtkTypeRevisionMacro(vtkColorMaterialHelper, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

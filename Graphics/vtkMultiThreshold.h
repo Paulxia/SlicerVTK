@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiThreshold.h
+  Module:    $RCSfile: vtkMultiThreshold.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -116,7 +116,7 @@ class vtkUnstructuredGrid;
 class VTK_GRAPHICS_EXPORT vtkMultiThreshold : public vtkMultiBlockDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkMultiThreshold,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMultiThreshold,vtkMultiBlockDataSetAlgorithm);
   static vtkMultiThreshold* New();
   virtual void PrintSelf( ostream& os, vtkIndent indent );
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContinuousValueWidgetRepresentation.cxx
+  Module:    $RCSfile: vtkContinuousValueWidgetRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkRenderWindow.h"
 
 
+vtkCxxRevisionMacro(vtkContinuousValueWidgetRepresentation, "$Revision: 1.1 $");
 
 //----------------------------------------------------------------------
 vtkContinuousValueWidgetRepresentation::vtkContinuousValueWidgetRepresentation()

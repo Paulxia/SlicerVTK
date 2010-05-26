@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCoordinate.cxx
+  Module:    $RCSfile: vtkCoordinate.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkViewport.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCoordinate, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkCoordinate);
 
 vtkCxxSetObjectMacro(vtkCoordinate,ReferenceCoordinate,vtkCoordinate);

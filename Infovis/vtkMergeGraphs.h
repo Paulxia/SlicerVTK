@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeGraphs.h
+  Module:    $RCSfile: vtkMergeGraphs.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -55,7 +55,7 @@ class VTK_INFOVIS_EXPORT vtkMergeGraphs : public vtkGraphAlgorithm
 {
 public:
   static vtkMergeGraphs* New();
-  vtkTypeMacro(vtkMergeGraphs,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkMergeGraphs,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -64,24 +64,11 @@ public:
   int ExtendGraph(vtkMutableGraphHelper* g1, vtkGraph* g2);
 
   // Description:
-  // Whether to use an edge window array. The default is to
-  // not use a window array.
-  vtkSetMacro(UseEdgeWindow, bool);
-  vtkGetMacro(UseEdgeWindow, bool);
-  vtkBooleanMacro(UseEdgeWindow, bool);
-
-  // Description:
-  // The edge window array. The default array name is "time".
-  vtkSetStringMacro(EdgeWindowArrayName);
-  vtkGetStringMacro(EdgeWindowArrayName);
-
-  // Description:
-  // The time window amount. Edges with values lower
-  // than the maximum value minus this window will be
-  // removed from the graph. The default edge window is
-  // 10000.
-  vtkSetMacro(EdgeWindow, double);
-  vtkGetMacro(EdgeWindow, double);
+  // The maximum number of edges in the combined graph. Default is -1,
+  // which specifies that there should be no limit on the number
+  // of edges.
+  vtkSetMacro(MaxEdges, vtkIdType);
+  vtkGetMacro(MaxEdges, vtkIdType);
 
 protected:
   vtkMergeGraphs();
@@ -94,9 +81,7 @@ protected:
 
   virtual int FillInputPortInformation(int port, vtkInformation *info);
 
-  bool UseEdgeWindow;
-  char* EdgeWindowArrayName;
-  double EdgeWindow;
+  vtkIdType MaxEdges;
 
 private:
   vtkMergeGraphs(const vtkMergeGraphs&); // Not implemented

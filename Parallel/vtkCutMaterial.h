@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCutMaterial.h
+  Module:    $RCSfile: vtkCutMaterial.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_PARALLEL_EXPORT vtkCutMaterial : public vtkPolyDataAlgorithm
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkCutMaterial,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCutMaterial,vtkPolyDataAlgorithm);
   static vtkCutMaterial *New();
 
   // Description:

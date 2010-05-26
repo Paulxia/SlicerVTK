@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnimationCue.h
+  Module:    $RCSfile: vtkAnimationCue.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@
 class VTK_COMMON_EXPORT vtkAnimationCue: public vtkObject
 {
 public:
-  vtkTypeMacro(vtkAnimationCue,vtkObject);
+  vtkTypeRevisionMacro(vtkAnimationCue,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkAnimationCue* New();

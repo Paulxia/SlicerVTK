@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRepresentationPainter.h
+  Module:    $RCSfile: vtkRepresentationPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_RENDERING_EXPORT vtkRepresentationPainter : public vtkPolyDataPainter
 {
 public:
   static vtkRepresentationPainter* New();
-  vtkTypeMacro(vtkRepresentationPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkRepresentationPainter, vtkPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

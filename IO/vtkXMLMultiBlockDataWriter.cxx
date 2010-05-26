@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLMultiBlockDataWriter.cxx
+  Module:    $RCSfile: vtkXMLMultiBlockDataWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkXMLDataElement.h"
 
 vtkStandardNewMacro(vtkXMLMultiBlockDataWriter);
+vtkCxxRevisionMacro(vtkXMLMultiBlockDataWriter, "$Revision: 1.5 $");
 //----------------------------------------------------------------------------
 vtkXMLMultiBlockDataWriter::vtkXMLMultiBlockDataWriter()
 {

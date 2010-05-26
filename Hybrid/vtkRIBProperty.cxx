@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRIBProperty.cxx
+  Module:    $RCSfile: vtkRIBProperty.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkRIBProperty.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkRIBProperty, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkRIBProperty);
 
 vtkRIBProperty::vtkRIBProperty ()

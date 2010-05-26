@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCastToConcrete.h
+  Module:    $RCSfile: vtkCastToConcrete.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class VTK_FILTERING_EXPORT vtkCastToConcrete : public vtkDataSetAlgorithm
 
 public:
   static vtkCastToConcrete *New();
-  vtkTypeMacro(vtkCastToConcrete,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkCastToConcrete,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

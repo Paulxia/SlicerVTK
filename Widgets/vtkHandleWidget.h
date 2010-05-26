@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHandleWidget.h
+  Module:    $RCSfile: vtkHandleWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -73,7 +73,7 @@ public:
 
   // Description:
   // Standard VTK class macros.
-  vtkTypeMacro(vtkHandleWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkHandleWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

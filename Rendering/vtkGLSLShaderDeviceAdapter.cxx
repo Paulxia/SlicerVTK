@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGLSLShaderDeviceAdapter.cxx
+  Module:    $RCSfile: vtkGLSLShaderDeviceAdapter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@ public:
   MapOfStringToInt AttributeIndicesCache;
 };
 
+vtkCxxRevisionMacro(vtkGLSLShaderDeviceAdapter, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkGLSLShaderDeviceAdapter);
 
 #define GLSL_SHADER_DEVICE_ADAPTER(msg) \

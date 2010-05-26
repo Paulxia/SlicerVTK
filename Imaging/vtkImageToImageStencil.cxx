@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageToImageStencil.cxx
+  Module:    $RCSfile: vtkImageToImageStencil.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageToImageStencil, "$Revision: 1.20 $");
 vtkStandardNewMacro(vtkImageToImageStencil);
 
 //----------------------------------------------------------------------------

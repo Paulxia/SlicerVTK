@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationQuadratureSchemeDefinitionVectorKey.h
+  Module:    $RCSfile: vtkInformationQuadratureSchemeDefinitionVectorKey.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class vtkQuadratureSchemeDefinition;
 class VTK_COMMON_EXPORT vtkInformationQuadratureSchemeDefinitionVectorKey : public vtkInformationKey
 {
 public:
-  vtkTypeMacro(vtkInformationQuadratureSchemeDefinitionVectorKey,vtkInformationKey);
+  vtkTypeRevisionMacro(vtkInformationQuadratureSchemeDefinitionVectorKey,vtkInformationKey);
   void PrintSelf(ostream& os, vtkIndent indent);
   // Description:
   // The name of the static instance and the class in which

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayToTable.h
+  Module:    $RCSfile: vtkArrayToTable.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkArrayToTable : public vtkTableAlgorithm
 {
 public:
   static vtkArrayToTable* New();
-  vtkTypeMacro(vtkArrayToTable, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkArrayToTable, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

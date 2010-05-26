@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkX3DExporterFIWriter.cxx
+  Module:    $RCSfile: vtkX3DExporterFIWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen, Kristian Sons
   All rights reserved.
@@ -200,6 +200,7 @@ void vtkX3DExporterFIByteWriter::PutBits(const vtkstd::string &bitstring)
 
 /* ------------------------------------------------------------------------- */
 vtkStandardNewMacro(vtkX3DExporterFIWriter);
+vtkCxxRevisionMacro(vtkX3DExporterFIWriter, "$Revision: 1.8 $");
 //----------------------------------------------------------------------------
 vtkX3DExporterFIWriter::~vtkX3DExporterFIWriter()
 {

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArray.h
+  Module:    $RCSfile: vtkArray.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -56,7 +56,7 @@
 class VTK_COMMON_EXPORT vtkArray : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkArray, vtkObject);
+  vtkTypeRevisionMacro(vtkArray, vtkObject);
   void PrintSelf(ostream &os, vtkIndent indent);
 
 //BTX

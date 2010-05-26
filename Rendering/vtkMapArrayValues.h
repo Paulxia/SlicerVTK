@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMapArrayValues.h
+  Module:    $RCSfile: vtkMapArrayValues.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class vtkVariant;
 class VTK_RENDERING_EXPORT vtkMapArrayValues : public vtkPassInputTypeAlgorithm
 {
 public:
-  vtkTypeMacro(vtkMapArrayValues,vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkMapArrayValues,vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkMapArrayValues *New();

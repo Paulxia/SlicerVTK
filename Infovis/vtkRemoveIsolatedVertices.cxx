@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRemoveIsolatedVertices.cxx
+  Module:    $RCSfile: vtkRemoveIsolatedVertices.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkRemoveIsolatedVertices, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkRemoveIsolatedVertices);
 //----------------------------------------------------------------------------
 vtkRemoveIsolatedVertices::vtkRemoveIsolatedVertices()

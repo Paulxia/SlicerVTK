@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableBasedClipDataSet.cxx
+  Module:    $RCSfile: vtkTableBasedClipDataSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,6 +59,7 @@
 
 #include "vtkTableBasedClipCases.h"
 
+vtkCxxRevisionMacro( vtkTableBasedClipDataSet, "$Revision: 1.10 $" );
 vtkStandardNewMacro( vtkTableBasedClipDataSet );
 vtkCxxSetObjectMacro( vtkTableBasedClipDataSet, ClipFunction, vtkImplicitFunction );
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProbeFilter.cxx
+  Module:    $RCSfile: vtkProbeFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkProbeFilter, "$Revision: 1.98 $");
 vtkStandardNewMacro(vtkProbeFilter);
 
 class vtkProbeFilter::vtkVectorOfArrays : 

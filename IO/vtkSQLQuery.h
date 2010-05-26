@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSQLQuery.h
+  Module:    $RCSfile: vtkSQLQuery.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -64,7 +64,7 @@ class vtkVariantArray;
 class VTK_IO_EXPORT vtkSQLQuery : public vtkRowQuery
 {
 public:
-  vtkTypeMacro(vtkSQLQuery, vtkRowQuery);
+  vtkTypeRevisionMacro(vtkSQLQuery, vtkRowQuery);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

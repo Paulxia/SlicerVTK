@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkThinPlateSplineTransform.cxx
+  Module:    $RCSfile: vtkThinPlateSplineTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkThinPlateSplineTransform, "$Revision: 1.34 $");
 vtkStandardNewMacro(vtkThinPlateSplineTransform);
 
 //------------------------------------------------------------------------

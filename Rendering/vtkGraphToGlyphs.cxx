@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphToGlyphs.cxx
+  Module:    $RCSfile: vtkGraphToGlyphs.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkTable.h"
 #include "vtkUndirectedGraph.h"
 
+vtkCxxRevisionMacro(vtkGraphToGlyphs, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkGraphToGlyphs);
 
 vtkGraphToGlyphs::vtkGraphToGlyphs()

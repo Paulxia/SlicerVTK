@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFocalPlanePointPlacer.h
+  Module:    $RCSfile: vtkFocalPlanePointPlacer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkFocalPlanePointPlacer,vtkPointPlacer);
+  vtkTypeRevisionMacro(vtkFocalPlanePointPlacer,vtkPointPlacer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Descirption:

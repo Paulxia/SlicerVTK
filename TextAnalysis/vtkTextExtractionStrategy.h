@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextExtractionStrategy.h
+  Module:    $RCSfile: vtkTextExtractionStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkTextExtractionStrategy :
   public vtkObject
 {
 public:
-  vtkTypeMacro(vtkTextExtractionStrategy, vtkObject);
+  vtkTypeRevisionMacro(vtkTextExtractionStrategy, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

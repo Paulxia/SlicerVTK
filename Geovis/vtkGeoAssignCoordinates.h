@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoAssignCoordinates.h
+  Module:    $RCSfile: vtkGeoAssignCoordinates.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class VTK_GEOVIS_EXPORT vtkGeoAssignCoordinates : public vtkPassInputTypeAlgorit
 public:
   static vtkGeoAssignCoordinates *New();
 
-  vtkTypeMacro(vtkGeoAssignCoordinates, vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkGeoAssignCoordinates, vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

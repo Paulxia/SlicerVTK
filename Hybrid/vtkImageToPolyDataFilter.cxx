@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageToPolyDataFilter.cxx
+  Module:    $RCSfile: vtkImageToPolyDataFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkScalarsToColors.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkImageToPolyDataFilter, "$Revision: 1.32 $");
 vtkStandardNewMacro(vtkImageToPolyDataFilter);
 
 vtkCxxSetObjectMacro(vtkImageToPolyDataFilter,LookupTable,vtkScalarsToColors);

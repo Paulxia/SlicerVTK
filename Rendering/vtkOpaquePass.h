@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpaquePass.h
+  Module:    $RCSfile: vtkOpaquePass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkOpaquePass : public vtkDefaultPass
 {
 public:
   static vtkOpaquePass *New();
-  vtkTypeMacro(vtkOpaquePass,vtkDefaultPass);
+  vtkTypeRevisionMacro(vtkOpaquePass,vtkDefaultPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUniformVariables.cxx
+  Module:    $RCSfile: vtkUniformVariables.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include <vtksys/stl/map>
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkUniformVariables, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkUniformVariables);
 
 class ltstr

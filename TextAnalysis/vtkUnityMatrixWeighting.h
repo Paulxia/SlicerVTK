@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnityMatrixWeighting.h
+  Module:    $RCSfile: vtkUnityMatrixWeighting.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -34,7 +34,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkUnityMatrixWeighting :
 {
 public:
   static vtkUnityMatrixWeighting* New();
-  vtkTypeMacro(vtkUnityMatrixWeighting, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkUnityMatrixWeighting, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

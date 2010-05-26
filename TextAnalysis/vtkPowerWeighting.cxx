@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPowerWeighting.cxx
+  Module:    $RCSfile: vtkPowerWeighting.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -34,6 +34,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkPowerWeighting
 
+vtkCxxRevisionMacro(vtkPowerWeighting, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkPowerWeighting);
 
 vtkPowerWeighting::vtkPowerWeighting() :

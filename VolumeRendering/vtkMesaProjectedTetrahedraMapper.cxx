@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaProjectedTetrahedraMapper.cxx
+  Module:    $RCSfile: vtkMesaProjectedTetrahedraMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,4 +38,5 @@
 #include "vtkOpenGLProjectedTetrahedraMapper.cxx"
 #undef vtkOpenGLProjectedTetrahedraMapper
 
+//vtkCxxRevisionMacro(vtkMesaProjectedTetrahedraMapper, "$Revision: 1.1 $");
 //vtkStandardNewMacro(vtkMesaProjectedTetrahedraMapper);

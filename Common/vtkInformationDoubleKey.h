@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationDoubleKey.h
+  Module:    $RCSfile: vtkInformationDoubleKey.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class VTK_COMMON_EXPORT vtkInformationDoubleKey : public vtkInformationKey
 {
 public:
-  vtkTypeMacro(vtkInformationDoubleKey,vtkInformationKey);
+  vtkTypeRevisionMacro(vtkInformationDoubleKey,vtkInformationKey);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkInformationDoubleKey(const char* name, const char* location);

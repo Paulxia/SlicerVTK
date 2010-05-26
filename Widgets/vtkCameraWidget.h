@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCameraWidget.h
+  Module:    $RCSfile: vtkCameraWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ public:
 
   // Description:
   // Standar VTK class methods.
-  vtkTypeMacro(vtkCameraWidget,vtkBorderWidget);
+  vtkTypeRevisionMacro(vtkCameraWidget,vtkBorderWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

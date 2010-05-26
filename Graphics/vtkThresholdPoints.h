@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkThresholdPoints.h
+  Module:    $RCSfile: vtkThresholdPoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_GRAPHICS_EXPORT vtkThresholdPoints : public vtkPolyDataAlgorithm
 {
 public:
   static vtkThresholdPoints *New();
-  vtkTypeMacro(vtkThresholdPoints,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkThresholdPoints,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

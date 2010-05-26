@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOOGLExporter.cxx
+  Module:    $RCSfile: vtkOOGLExporter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkTexture.h"
 #include "vtkMatrix4x4.h"
 
+vtkCxxRevisionMacro(vtkOOGLExporter, "$Revision: 1.35 $");
 vtkStandardNewMacro(vtkOOGLExporter);
 
 vtkOOGLExporter::vtkOOGLExporter()

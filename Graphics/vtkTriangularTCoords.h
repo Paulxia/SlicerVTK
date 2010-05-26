@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangularTCoords.h
+  Module:    $RCSfile: vtkTriangularTCoords.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_GRAPHICS_EXPORT vtkTriangularTCoords : public vtkPolyDataAlgorithm
 {
 public:
   static vtkTriangularTCoords *New();
-  vtkTypeMacro(vtkTriangularTCoords,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTriangularTCoords,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

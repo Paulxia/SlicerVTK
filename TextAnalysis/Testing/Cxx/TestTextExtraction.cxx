@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestTextExtraction.cxx
+  Module:    $RCSfile: TestTextExtraction.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

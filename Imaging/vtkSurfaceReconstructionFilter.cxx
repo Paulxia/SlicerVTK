@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSurfaceReconstructionFilter.cxx
+  Module:    $RCSfile: vtkSurfaceReconstructionFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPointLocator.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkSurfaceReconstructionFilter, "$Revision: 1.37 $");
 vtkStandardNewMacro(vtkSurfaceReconstructionFilter);
 
 vtkSurfaceReconstructionFilter::vtkSurfaceReconstructionFilter()

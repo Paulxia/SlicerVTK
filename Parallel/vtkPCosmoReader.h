@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPCosmoReader.h
+  Module:    $RCSfile: vtkPCosmoReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,7 +15,7 @@
 /*=========================================================================
 
   Program:   VTK/ParaView Los Alamos National Laboratory Modules (PVLANL)
-  Module:    vtkPCosmoReader.h
+  Module:    $RCSfile: vtkPCosmoReader.h,v $
 
 Copyright (c) 2009 Los Alamos National Security, LLC
 
@@ -86,7 +86,7 @@ class VTK_PARALLEL_EXPORT vtkPCosmoReader : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkPCosmoReader *New();
-  vtkTypeMacro(vtkPCosmoReader, vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkPCosmoReader, vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

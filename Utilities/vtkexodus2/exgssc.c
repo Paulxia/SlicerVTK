@@ -46,7 +46,7 @@
 *                                       side or face
 * revision history - 
 *
-*  Id
+*  $Id: exgssc.c,v 1.8 2010-03-01 19:26:42 ndfabia Exp $
 *****************************************************************************/
 
 #include <ctype.h>

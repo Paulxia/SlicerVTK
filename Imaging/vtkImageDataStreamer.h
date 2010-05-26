@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDataStreamer.h
+  Module:    $RCSfile: vtkImageDataStreamer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageDataStreamer : public vtkImageAlgorithm
 {
 public:
   static vtkImageDataStreamer *New();
-  vtkTypeMacro(vtkImageDataStreamer,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageDataStreamer,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

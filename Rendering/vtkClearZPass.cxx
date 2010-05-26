@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClearZPass.cxx
+  Module:    $RCSfile: vtkClearZPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkRenderer.h"
 #include "vtkgl.h"
 
+vtkCxxRevisionMacro(vtkClearZPass, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkClearZPass);
 
 // ----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeRGBAPass.cxx
+  Module:    $RCSfile: vtkCompositeRGBAPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,6 +54,7 @@
 #include <sys/types.h> // Linux specific gettid()
 #endif
 
+vtkCxxRevisionMacro(vtkCompositeRGBAPass, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkCompositeRGBAPass);
 vtkCxxSetObjectMacro(vtkCompositeRGBAPass,Controller,vtkMultiProcessController);
 vtkCxxSetObjectMacro(vtkCompositeRGBAPass,Kdtree,vtkPKdTree);

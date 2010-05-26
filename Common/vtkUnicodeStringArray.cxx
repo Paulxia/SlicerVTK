@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnicodeStringArray.cxx
+  Module:    $RCSfile: vtkUnicodeStringArray.cxx,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2009-07-27 18:47:02 $
+  Version:   $Revision: 1.12 $
 
   Copyright 2004 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive
@@ -28,6 +28,7 @@ public:
   StorageT Storage;
 };
 
+vtkCxxRevisionMacro(vtkUnicodeStringArray, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkUnicodeStringArray);
 
 vtkUnicodeStringArray::vtkUnicodeStringArray(vtkIdType)

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageFourierCenter.cxx
+  Module:    $RCSfile: vtkImageFourierCenter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageFourierCenter, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkImageFourierCenter);
 
 //----------------------------------------------------------------------------

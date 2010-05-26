@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnnotationLink.h
+  Module:    $RCSfile: vtkAnnotationLink.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class VTK_GRAPHICS_EXPORT vtkAnnotationLink : public vtkAnnotationLayersAlgorith
 {
 public:
   static vtkAnnotationLink *New();
-  vtkTypeMacro(vtkAnnotationLink, vtkAnnotationLayersAlgorithm);
+  vtkTypeRevisionMacro(vtkAnnotationLink, vtkAnnotationLayersAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationUnsignedLongKey.h
+  Module:    $RCSfile: vtkInformationUnsignedLongKey.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class VTK_COMMON_EXPORT vtkInformationUnsignedLongKey : public vtkInformationKey
 {
 public:
-  vtkTypeMacro(vtkInformationUnsignedLongKey,vtkInformationKey);
+  vtkTypeRevisionMacro(vtkInformationUnsignedLongKey,vtkInformationKey);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkInformationUnsignedLongKey(const char* name, const char* location);

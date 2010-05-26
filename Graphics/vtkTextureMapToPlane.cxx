@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextureMapToPlane.cxx
+  Module:    $RCSfile: vtkTextureMapToPlane.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkTextureMapToPlane, "$Revision: 1.53 $");
 vtkStandardNewMacro(vtkTextureMapToPlane);
 
 // Construct with s,t range=(0,1) and automatic plane generation turned on.

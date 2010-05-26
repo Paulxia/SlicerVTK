@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTestingObjectFactory.cxx
+  Module:    $RCSfile: vtkTestingObjectFactory.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -12,10 +12,11 @@
      PURPOSE.  See the above copyright notice for more information.
 
 =========================================================================*/
-#include "vtkTestingObjectFactory.h"
 #include "vtkVersion.h"
-#include "vtkTestingInteractor.h"
+#include "vtkTestingObjectFactory.h"
+#include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkTestingObjectFactory, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkTestingObjectFactory);
 
 VTK_CREATE_CREATE_FUNCTION(vtkTestingInteractor);

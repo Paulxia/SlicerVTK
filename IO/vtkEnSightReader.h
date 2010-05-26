@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEnSightReader.h
+  Module:    $RCSfile: vtkEnSightReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class vtkMultiBlockDataSet;
 class VTK_IO_EXPORT vtkEnSightReader : public vtkGenericEnSightReader
 {
 public:
-  vtkTypeMacro(vtkEnSightReader, vtkGenericEnSightReader);
+  vtkTypeRevisionMacro(vtkEnSightReader, vtkGenericEnSightReader);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   //BTX

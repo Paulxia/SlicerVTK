@@ -12,7 +12,6 @@ CREATE_TEST_SOURCELIST(Tests ${KIT}CxxTests.cxx
   TestConditionVariable.cxx
   TestGarbageCollector.cxx
   TestDataArray.cxx
-  TestDataArrayComponentNames.cxx
   TestDirectory.cxx
   TestFastNumericConversion.cxx
   TestMath.cxx

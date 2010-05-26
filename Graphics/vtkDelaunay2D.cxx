@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDelaunay2D.cxx
+  Module:    $RCSfile: vtkDelaunay2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkTriangle.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkDelaunay2D, "$Revision: 1.76 $");
 vtkStandardNewMacro(vtkDelaunay2D);
 vtkCxxSetObjectMacro(vtkDelaunay2D,Transform,vtkAbstractTransform);
 

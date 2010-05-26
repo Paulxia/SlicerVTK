@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOutlineFilter.cxx
+  Module:    $RCSfile: vtkOutlineFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkOutlineSource.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkOutlineFilter, "$Revision: 1.36 $");
 vtkStandardNewMacro(vtkOutlineFilter);
 
 //----------------------------------------------------------------------------

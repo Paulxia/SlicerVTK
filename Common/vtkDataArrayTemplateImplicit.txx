@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataArrayTemplateImplicit.txx
+  Module:    $RCSfile: vtkDataArrayTemplateImplicit.txx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

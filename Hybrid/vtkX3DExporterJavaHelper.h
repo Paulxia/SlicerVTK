@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkX3DExporterJavaHelper.h
+  Module:    $RCSfile: vtkX3DExporterJavaHelper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_HYBRID_EXPORT vtkX3DExporterJavaHelper : public vtkObject
 {
 public:
   static vtkX3DExporterJavaHelper *New();
-  vtkTypeMacro(vtkX3DExporterJavaHelper,vtkObject);
+  vtkTypeRevisionMacro(vtkX3DExporterJavaHelper,vtkObject);
 
   int OpenFile(const char* fileName);
   int Write(const char* data, vtkIdType length);

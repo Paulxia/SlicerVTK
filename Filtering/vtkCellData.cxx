@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellData.cxx
+  Module:    $RCSfile: vtkCellData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkCellData.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCellData, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkCellData);
 
 void vtkCellData::PrintSelf(ostream& os, vtkIndent indent)

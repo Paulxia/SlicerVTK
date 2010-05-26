@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkBoostKruskalMinimumSpanningTree.cxx
+Module:    $RCSfile: vtkBoostKruskalMinimumSpanningTree.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -44,6 +44,7 @@ PURPOSE.  See the above copyright notice for more information.
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkBoostKruskalMinimumSpanningTree, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkBoostKruskalMinimumSpanningTree);
 
 // Constructor/Destructor

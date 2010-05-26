@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOverrideInformation.cxx
+  Module:    $RCSfile: vtkOverrideInformation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkOverrideInformation, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkOverrideInformation);
 vtkCxxSetObjectMacro(vtkOverrideInformation,ObjectFactory,vtkObjectFactory);
 

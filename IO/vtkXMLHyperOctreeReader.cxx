@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLHyperOctreeReader.cxx
+  Module:    $RCSfile: vtkXMLHyperOctreeReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkIntArray.h"
 #include "vtkFieldData.h"
 
+vtkCxxRevisionMacro(vtkXMLHyperOctreeReader, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkXMLHyperOctreeReader);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBSPIntersections.h
+  Module:    $RCSfile: vtkBSPIntersections.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class vtkBSPCuts;
 class VTK_FILTERING_EXPORT vtkBSPIntersections : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkBSPIntersections, vtkObject);
+  vtkTypeRevisionMacro(vtkBSPIntersections, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkBSPIntersections *New();

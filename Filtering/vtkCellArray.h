@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellArray.h
+  Module:    $RCSfile: vtkCellArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@
 class VTK_FILTERING_EXPORT vtkCellArray : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkCellArray,vtkObject);
+  vtkTypeRevisionMacro(vtkCellArray,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

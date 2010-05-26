@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSurfaceLICDefaultPainter.cxx
+  Module:    $RCSfile: vtkSurfaceLICDefaultPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkScalarsToColorsPainter.h"
 
 vtkStandardNewMacro(vtkSurfaceLICDefaultPainter);
+vtkCxxRevisionMacro(vtkSurfaceLICDefaultPainter, "$Revision: 1.1 $");
 vtkCxxSetObjectMacro(vtkSurfaceLICDefaultPainter, SurfaceLICPainter, vtkSurfaceLICPainter);
 //----------------------------------------------------------------------------
 vtkSurfaceLICDefaultPainter::vtkSurfaceLICDefaultPainter()

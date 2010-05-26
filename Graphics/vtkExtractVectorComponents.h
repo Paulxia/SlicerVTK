@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractVectorComponents.h
+  Module:    $RCSfile: vtkExtractVectorComponents.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_GRAPHICS_EXPORT vtkExtractVectorComponents : public vtkDataSetAlgorith
 {
 public:
   static vtkExtractVectorComponents *New();
-  vtkTypeMacro(vtkExtractVectorComponents,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractVectorComponents,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

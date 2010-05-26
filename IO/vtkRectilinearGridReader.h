@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridReader.h
+  Module:    $RCSfile: vtkRectilinearGridReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_IO_EXPORT vtkRectilinearGridReader : public vtkDataReader
 {
 public:
   static vtkRectilinearGridReader *New();
-  vtkTypeMacro(vtkRectilinearGridReader,vtkDataReader);
+  vtkTypeRevisionMacro(vtkRectilinearGridReader,vtkDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

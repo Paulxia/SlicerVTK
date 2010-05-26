@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredVisibilityConstraint.cxx
+  Module:    $RCSfile: vtkStructuredVisibilityConstraint.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,8 @@
 #include "vtkObjectFactory.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkStructuredVisibilityConstraint,
+                    "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkStructuredVisibilityConstraint);
 
 vtkCxxSetObjectMacro(vtkStructuredVisibilityConstraint,

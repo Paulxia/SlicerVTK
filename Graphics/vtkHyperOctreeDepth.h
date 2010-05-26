@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeDepth.h
+  Module:    $RCSfile: vtkHyperOctreeDepth.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_GRAPHICS_EXPORT vtkHyperOctreeDepth : public vtkDataSetAlgorithm
 {
 public:
   static vtkHyperOctreeDepth *New();
-  vtkTypeMacro(vtkHyperOctreeDepth, vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkHyperOctreeDepth, vtkDataSetAlgorithm);
 
 protected:
   vtkHyperOctreeDepth();

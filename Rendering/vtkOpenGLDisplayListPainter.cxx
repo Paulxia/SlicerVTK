@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLDisplayListPainter.cxx
+  Module:    $RCSfile: vtkOpenGLDisplayListPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
 vtkStandardNewMacro(vtkOpenGLDisplayListPainter);
+vtkCxxRevisionMacro(vtkOpenGLDisplayListPainter, "$Revision: 1.13 $");
 #endif
 
 class vtkOpenGLDisplayListPainter::vtkInternals

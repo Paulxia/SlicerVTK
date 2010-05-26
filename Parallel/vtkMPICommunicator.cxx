@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMPICommunicator.cxx
+  Module:    $RCSfile: vtkMPICommunicator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkMPICommunicator, "$Revision: 1.58 $");
 vtkStandardNewMacro(vtkMPICommunicator);
 
 vtkMPICommunicator* vtkMPICommunicator::WorldCommunicator = 0;

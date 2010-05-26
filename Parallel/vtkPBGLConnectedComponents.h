@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLConnectedComponents.h
+  Module:    $RCSfile: vtkPBGLConnectedComponents.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLConnectedComponents : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLConnectedComponents *New();
-  vtkTypeMacro(vtkPBGLConnectedComponents, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLConnectedComponents, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

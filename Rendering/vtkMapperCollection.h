@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMapperCollection.h
+  Module:    $RCSfile: vtkMapperCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkMapperCollection : public vtkCollection
 {
  public:
   static vtkMapperCollection *New();
-  vtkTypeMacro(vtkMapperCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkMapperCollection,vtkCollection);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

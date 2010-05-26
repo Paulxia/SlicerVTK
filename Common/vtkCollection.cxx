@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCollection.cxx
+  Module:    $RCSfile: vtkCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkCollection, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkCollection);
 
 // Construct with empty list.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTexturedSphereSource.cxx
+  Module:    $RCSfile: vtkTexturedSphereSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkTexturedSphereSource, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkTexturedSphereSource);
 
 // Construct sphere with radius=0.5 and default resolution 8 in both Phi

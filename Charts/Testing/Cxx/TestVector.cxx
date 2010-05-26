@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestVector.cxx
+  Module:    $RCSfile: TestVector.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,11 +25,6 @@ int TestVector(int, char*[])
   vtkVector2i vec2i;
   cout << "Size of vtkVector2i: " << sizeof(vec2i) << endl;
   int arr2i[2];
-  
-  // just to avoid warning
-  arr2i[0]=0;
-  arr2i[1]=0;
-  
   cout << "Size of int[2]: " << sizeof(arr2i) << endl;
 
   if (sizeof(vec2i) != sizeof(arr2i))
@@ -108,7 +103,7 @@ int TestVector(int, char*[])
             << "colorPtr[i*3+j] = " << colorPtr[i*3+j] << endl;
         return 1;
         }
-      color[i][j] = static_cast<unsigned char>(i * 2 + i);
+      color[i][j] = i * 2 + i;
       }
     }
 

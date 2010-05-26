@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSphericalDirectionEncoder.cxx
+  Module:    $RCSfile: vtkSphericalDirectionEncoder.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkMath.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkSphericalDirectionEncoder, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkSphericalDirectionEncoder);
 
 float vtkSphericalDirectionEncoder::DecodedGradientTable[65536 * 3];

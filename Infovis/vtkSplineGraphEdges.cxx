@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineGraphEdges.cxx
+  Module:    $RCSfile: vtkSplineGraphEdges.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkMath.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkSplineGraphEdges, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkSplineGraphEdges);
 vtkCxxSetObjectMacro(vtkSplineGraphEdges, Spline, vtkSpline);
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLUnstructuredDataReader.h
+  Module:    $RCSfile: vtkXMLUnstructuredDataReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkUnsignedCharArray;
 class VTK_IO_EXPORT vtkXMLUnstructuredDataReader : public vtkXMLDataReader
 {
 public:
-  vtkTypeMacro(vtkXMLUnstructuredDataReader,vtkXMLDataReader);
+  vtkTypeRevisionMacro(vtkXMLUnstructuredDataReader,vtkXMLDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);  
   
   // Description:

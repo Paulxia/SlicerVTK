@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCullerCollection.h
+  Module:    $RCSfile: vtkCullerCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkCullerCollection : public vtkCollection
 {
  public:
   static vtkCullerCollection *New();
-  vtkTypeMacro(vtkCullerCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkCullerCollection,vtkCollection);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

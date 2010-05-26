@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXRenderWindowTclInteractor.h
+  Module:    $RCSfile: vtkXRenderWindowTclInteractor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkXRenderWindowTclInteractor : public vtkXRenderWind
 {
 public:
   static vtkXRenderWindowTclInteractor *New();
-  vtkTypeMacro(vtkXRenderWindowTclInteractor,vtkXRenderWindowInteractor);
+  vtkTypeRevisionMacro(vtkXRenderWindowTclInteractor,vtkXRenderWindowInteractor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

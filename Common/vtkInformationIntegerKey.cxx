@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationIntegerKey.cxx
+  Module:    $RCSfile: vtkInformationIntegerKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 
 #include "vtkInformation.h"
 
+vtkCxxRevisionMacro(vtkInformationIntegerKey, "$Revision: 1.9 $");
 
 //----------------------------------------------------------------------------
 vtkInformationIntegerKey::vtkInformationIntegerKey(const char* name, const char* location):

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeTextureMapper3D.cxx
+  Module:    $RCSfile: vtkVolumeTextureMapper3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkVolumeProperty.h"
 #include "vtkVolumeRenderingFactory.h"
 
+vtkCxxRevisionMacro(vtkVolumeTextureMapper3D, "$Revision: 1.16 $");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

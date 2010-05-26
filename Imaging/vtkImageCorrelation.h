@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageCorrelation.h
+  Module:    $RCSfile: vtkImageCorrelation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_IMAGING_EXPORT vtkImageCorrelation : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageCorrelation *New();
-  vtkTypeMacro(vtkImageCorrelation,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageCorrelation,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

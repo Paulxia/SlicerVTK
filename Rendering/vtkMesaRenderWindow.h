@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaRenderWindow.h
+  Module:    $RCSfile: vtkMesaRenderWindow.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ protected:
   long OldMonitorSetting;
 
 public:
-  vtkTypeMacro(vtkMesaRenderWindow,vtkRenderWindow);
+  vtkTypeRevisionMacro(vtkMesaRenderWindow,vtkRenderWindow);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

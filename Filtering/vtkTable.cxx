@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTable.cxx
+  Module:    $RCSfile: vtkTable.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 // Standard functions
 //
 
+vtkCxxRevisionMacro(vtkTable, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkTable);
 vtkCxxSetObjectMacro(vtkTable, RowData, vtkDataSetAttributes);
 

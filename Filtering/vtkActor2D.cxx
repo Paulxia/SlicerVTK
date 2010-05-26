@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkActor2D.cxx
+  Module:    $RCSfile: vtkActor2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkPropCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkActor2D, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkActor2D);
 
 vtkCxxSetObjectMacro(vtkActor2D,Property, vtkProperty2D);

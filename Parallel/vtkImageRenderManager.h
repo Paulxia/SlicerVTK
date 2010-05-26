@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageRenderManager.h
+  Module:    $RCSfile: vtkImageRenderManager.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@
 class VTK_PARALLEL_EXPORT vtkImageRenderManager : public vtkParallelRenderManager
 {
 public:
-  vtkTypeMacro(vtkImageRenderManager, vtkParallelRenderManager);
+  vtkTypeRevisionMacro(vtkImageRenderManager, vtkParallelRenderManager);
   static vtkImageRenderManager *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

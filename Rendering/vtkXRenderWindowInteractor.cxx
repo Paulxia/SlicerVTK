@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXRenderWindowInteractor.cxx
+  Module:    $RCSfile: vtkXRenderWindowInteractor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #include "vtkTDxUnixDevice.h"
 #endif
 
+vtkCxxRevisionMacro(vtkXRenderWindowInteractor, "$Revision: 1.143 $");
 vtkStandardNewMacro(vtkXRenderWindowInteractor);
 
 // Map between the X native id to our own integer count id.  Note this

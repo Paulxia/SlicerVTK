@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    EasyView.h
+  Module:    $RCSfile: EasyView.h,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2009-12-10 20:40:51 $
+  Version:   $Revision: 1.6 $
 
   Copyright 2007 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

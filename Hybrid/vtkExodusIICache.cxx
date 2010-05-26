@@ -65,6 +65,7 @@ void printLRUBack( vtkExodusIICacheRef& cit )
 
 // ============================================================================
 
+vtkCxxRevisionMacro(vtkExodusIICache,"$Revision: 1.6 $");
 vtkStandardNewMacro(vtkExodusIICache);
 
 vtkExodusIICache::vtkExodusIICache()

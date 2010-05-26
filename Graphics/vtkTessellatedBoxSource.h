@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTessellatedBoxSource.h
+  Module:    $RCSfile: vtkTessellatedBoxSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_GRAPHICS_EXPORT vtkTessellatedBoxSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkTessellatedBoxSource *New();
-  vtkTypeMacro(vtkTessellatedBoxSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTessellatedBoxSource,vtkPolyDataAlgorithm);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

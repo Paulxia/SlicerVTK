@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPNGReader.cxx
+  Module:    $RCSfile: vtkPNGReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkPointData.h"
 #include "vtk_png.h"
 
+vtkCxxRevisionMacro(vtkPNGReader, "$Revision: 1.27 $");
 vtkStandardNewMacro(vtkPNGReader);
 
 #ifdef _MSC_VER

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLGraphSQLReader.h
+  Module:    $RCSfile: vtkPBGLGraphSQLReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLGraphSQLReader : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLGraphSQLReader* New();
-  vtkTypeMacro(vtkPBGLGraphSQLReader,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLGraphSQLReader,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

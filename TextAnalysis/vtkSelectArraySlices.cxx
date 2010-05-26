@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSelectArraySlices.cxx
+  Module:    $RCSfile: vtkSelectArraySlices.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -38,6 +38,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkSelectArraySlices
 
+vtkCxxRevisionMacro(vtkSelectArraySlices, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkSelectArraySlices);
 
 vtkSelectArraySlices::vtkSelectArraySlices() :

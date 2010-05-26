@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLocator.cxx
+  Module:    $RCSfile: vtkLocator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkDataSet.h"
 #include "vtkGarbageCollector.h"
 
+vtkCxxRevisionMacro(vtkLocator, "$Revision: 1.6 $");
 
 vtkCxxSetObjectMacro(vtkLocator,DataSet,vtkDataSet);
 

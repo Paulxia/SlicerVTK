@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLShortestPaths.h
+  Module:    $RCSfile: vtkPBGLShortestPaths.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLShortestPaths : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLShortestPaths *New();
-  vtkTypeMacro(vtkPBGLShortestPaths, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLShortestPaths, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

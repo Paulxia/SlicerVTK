@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSobel2D.h
+  Module:    $RCSfile: vtkImageSobel2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageSobel2D : public vtkImageSpatialAlgorithm
 {
 public:
   static vtkImageSobel2D *New();
-  vtkTypeMacro(vtkImageSobel2D,vtkImageSpatialAlgorithm);
+  vtkTypeRevisionMacro(vtkImageSobel2D,vtkImageSpatialAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

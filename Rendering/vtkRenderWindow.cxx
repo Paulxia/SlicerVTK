@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderWindow.cxx
+  Module:    $RCSfile: vtkRenderWindow.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkTimerLog.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkRenderWindow, "$Revision: 1.160 $");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

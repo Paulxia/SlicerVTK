@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCGMWriter.h
+  Module:    $RCSfile: vtkCGMWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,7 +52,7 @@ public:
   // resolution is 10,000, and the color mode is set to default.
   static vtkCGMWriter *New();
 
-  vtkTypeMacro(vtkCGMWriter,vtkPolyDataWriter);
+  vtkTypeRevisionMacro(vtkCGMWriter,vtkPolyDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

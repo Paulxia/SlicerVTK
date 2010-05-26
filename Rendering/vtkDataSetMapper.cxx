@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetMapper.cxx
+  Module:    $RCSfile: vtkDataSetMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPolyData.h"
 #include "vtkPolyDataMapper.h"
 
+vtkCxxRevisionMacro(vtkDataSetMapper, "$Revision: 1.70 $");
 vtkStandardNewMacro(vtkDataSetMapper);
 
 //----------------------------------------------------------------------------

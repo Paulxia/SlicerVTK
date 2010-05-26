@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHomogeneousTransform.cxx
+  Module:    $RCSfile: vtkHomogeneousTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkMatrix4x4.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkHomogeneousTransform, "$Revision: 1.12 $");
 
 //----------------------------------------------------------------------------
 vtkHomogeneousTransform::vtkHomogeneousTransform()

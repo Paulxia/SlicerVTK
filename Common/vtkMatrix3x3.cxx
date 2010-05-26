@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatrix3x3.cxx
+  Module:    $RCSfile: vtkMatrix3x3.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkMatrix3x3, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkMatrix3x3);
 
 // Useful for viewing a double[9] as a double[3][3]

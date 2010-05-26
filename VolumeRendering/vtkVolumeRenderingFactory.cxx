@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeRenderingFactory.cxx
+  Module:    $RCSfile: vtkVolumeRenderingFactory.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 
 #include "stdlib.h"
 
+vtkCxxRevisionMacro(vtkVolumeRenderingFactory, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkVolumeRenderingFactory);
 
 

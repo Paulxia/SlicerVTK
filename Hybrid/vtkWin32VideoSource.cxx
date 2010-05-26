@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWin32VideoSource.cxx
+  Module:    $RCSfile: vtkWin32VideoSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,6 +49,7 @@ public:
 // VFW compressed formats are listed at http://www.webartz.com/fourcc/
 #define VTK_BI_UYVY 0x59565955
 
+vtkCxxRevisionMacro(vtkWin32VideoSource, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkWin32VideoSource);
 
 //----------------------------------------------------------------------------

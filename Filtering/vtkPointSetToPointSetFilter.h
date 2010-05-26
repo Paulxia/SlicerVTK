@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointSetToPointSetFilter.h
+  Module:    $RCSfile: vtkPointSetToPointSetFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class vtkUnstructuredGrid;
 class VTK_FILTERING_EXPORT vtkPointSetToPointSetFilter : public vtkPointSetSource
 {
 public:
-  vtkTypeMacro(vtkPointSetToPointSetFilter,vtkPointSetSource);
+  vtkTypeRevisionMacro(vtkPointSetToPointSetFilter,vtkPointSetSource);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

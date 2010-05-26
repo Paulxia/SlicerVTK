@@ -1,7 +1,7 @@
 /*=============================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoTerrainNode.cxx
+  Module:    $RCSfile: vtkGeoTerrainNode.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkGeoMath.h"
 #include "vtkGeoTerrainNode.h"
 
+vtkCxxRevisionMacro(vtkGeoTerrainNode, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkGeoTerrainNode);
 
 

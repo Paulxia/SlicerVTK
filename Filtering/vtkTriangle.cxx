@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangle.cxx
+  Module:    $RCSfile: vtkTriangle.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPolygon.h"
 #include "vtkQuadric.h"
 
+vtkCxxRevisionMacro(vtkTriangle, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkTriangle);
 
 //----------------------------------------------------------------------------

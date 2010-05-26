@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPNMReader.cxx
+  Module:    $RCSfile: vtkPNMReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkImageData.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPNMReader, "$Revision: 1.32 $");
 vtkStandardNewMacro(vtkPNMReader);
 
 char vtkPNMReaderGetChar(FILE *fp)

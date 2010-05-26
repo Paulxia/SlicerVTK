@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphLayoutFilter.cxx
+  Module:    $RCSfile: vtkGraphLayoutFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkGraphLayoutFilter, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkGraphLayoutFilter);
 
 vtkGraphLayoutFilter::vtkGraphLayoutFilter()

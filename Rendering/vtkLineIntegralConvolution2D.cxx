@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLineIntegralConvolution2D.cxx
+  Module:    $RCSfile: vtkLineIntegralConvolution2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,6 +51,7 @@ static const char * vtkLineIntegralConvolution2DCode =
 #endif
 
 vtkStandardNewMacro( vtkLineIntegralConvolution2D );
+vtkCxxRevisionMacro( vtkLineIntegralConvolution2D, "$Revision: 1.4 $" );
 
 // Given the coordinate range of the vector texture, that of the resulting
 // LIC texture, and the size of the output image, this function invokes the

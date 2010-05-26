@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLight.h
+  Module:    $RCSfile: vtkLight.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class vtkMatrix4x4;
 class VTK_RENDERING_EXPORT vtkLight : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkLight,vtkObject);
+  vtkTypeRevisionMacro(vtkLight,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

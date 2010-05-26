@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBiQuadraticQuadraticHexahedron.cxx
+  Module:    $RCSfile: vtkBiQuadraticQuadraticHexahedron.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkPoints.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkBiQuadraticQuadraticHexahedron, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkBiQuadraticQuadraticHexahedron);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkStatisticsAlgorithm.h
+Module:    $RCSfile: vtkStatisticsAlgorithm.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -55,7 +55,6 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkTableAlgorithm.h"
 
 class vtkDataObjectCollection;
-class vtkMultiBlockDataSet;
 class vtkStdString;
 class vtkStringArray;
 class vtkVariant;
@@ -65,7 +64,7 @@ class vtkStatisticsAlgorithmPrivate;
 class VTK_INFOVIS_EXPORT vtkStatisticsAlgorithm : public vtkTableAlgorithm
 {
 public:
-  vtkTypeMacro(vtkStatisticsAlgorithm, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkStatisticsAlgorithm, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
 //BTX
@@ -231,7 +230,7 @@ public:
   // Description:
   // Given a collection of models, calculate aggregate model
   virtual void Aggregate( vtkDataObjectCollection*,
-                          vtkMultiBlockDataSet* ) = 0;
+                          vtkDataObject* ) = 0;
 
 protected:
   vtkStatisticsAlgorithm();
@@ -250,23 +249,23 @@ protected:
   // NB: input parameters are unused.
   virtual void Learn( vtkTable*,
                       vtkTable*,
-                      vtkMultiBlockDataSet* ) = 0;
+                      vtkDataObject* ) = 0;
 
   // Description:
   // Execute the calculations required by the Derive option.
-  virtual void Derive( vtkMultiBlockDataSet* ) = 0;
+  virtual void Derive( vtkDataObject* ) = 0;
 
   // Description:
   // Execute the calculations required by the Assess option.
   virtual void Assess( vtkTable*,
-                       vtkMultiBlockDataSet*,
+                       vtkDataObject*,
                        vtkTable* ) = 0; 
 
   // Description:
   // Execute the calculations required by the Test option.
   virtual void Test( vtkTable*,
-                     vtkMultiBlockDataSet*,
-                     vtkTable* ) = 0; 
+                     vtkDataObject*,
+                     vtkDataObject* ) = 0; 
 
   //BTX
   // Description:

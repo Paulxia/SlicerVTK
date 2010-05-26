@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageClip.h
+  Module:    $RCSfile: vtkImageClip.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_IMAGING_EXPORT vtkImageClip : public vtkImageAlgorithm
 {
 public:
   static vtkImageClip *New();
-  vtkTypeMacro(vtkImageClip,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageClip,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

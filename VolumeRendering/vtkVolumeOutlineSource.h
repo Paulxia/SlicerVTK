@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeOutlineSource.h
+  Module:    $RCSfile: vtkVolumeOutlineSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkVolumeOutlineSource : public vtkPolyDataAlgo
 {
 public:
   static vtkVolumeOutlineSource *New();
-  vtkTypeMacro(vtkVolumeOutlineSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkVolumeOutlineSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -53,13 +53,6 @@ public:
   vtkSetMacro(GenerateScalars, int);
   vtkBooleanMacro(GenerateScalars, int);
   vtkGetMacro(GenerateScalars, int);
-
-  // Description:
-  // Set whether to generate an outline wherever an input face was
-  // cut by a plane.  This is on by default. 
-  vtkSetMacro(GenerateOutline, int);
-  vtkBooleanMacro(GenerateOutline, int);
-  vtkGetMacro(GenerateOutline, int);
 
   // Description:
   // Set whether to generate polygonal faces for the output.  By default,
@@ -95,7 +88,6 @@ protected:
 
   vtkVolumeMapper *VolumeMapper;
   int GenerateScalars;
-  int GenerateOutline;
   int GenerateFaces;
   int ActivePlaneId;
   double Color[3];

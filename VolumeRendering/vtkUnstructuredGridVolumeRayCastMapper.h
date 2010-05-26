@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridVolumeRayCastMapper.h
+  Module:    $RCSfile: vtkUnstructuredGridVolumeRayCastMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkUnstructuredGridVolumeRayCastMapper : public
 {
 public:
   static vtkUnstructuredGridVolumeRayCastMapper *New();
-  vtkTypeMacro(vtkUnstructuredGridVolumeRayCastMapper,vtkUnstructuredGridVolumeMapper);
+  vtkTypeRevisionMacro(vtkUnstructuredGridVolumeRayCastMapper,vtkUnstructuredGridVolumeMapper);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

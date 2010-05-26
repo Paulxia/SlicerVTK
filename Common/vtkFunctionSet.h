@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFunctionSet.h
+  Module:    $RCSfile: vtkFunctionSet.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@
 class VTK_COMMON_EXPORT vtkFunctionSet : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkFunctionSet,vtkObject);
+  vtkTypeRevisionMacro(vtkFunctionSet,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

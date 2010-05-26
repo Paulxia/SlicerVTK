@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLFreeTypeTextMapper.h
+  Module:    $RCSfile: vtkOpenGLFreeTypeTextMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class FTFont;
 class VTK_RENDERING_EXPORT vtkOpenGLFreeTypeTextMapper : public vtkTextMapper
 {
 public:
-  vtkTypeMacro(vtkOpenGLFreeTypeTextMapper,vtkTextMapper);
+  vtkTypeRevisionMacro(vtkOpenGLFreeTypeTextMapper,vtkTextMapper);
   static vtkOpenGLFreeTypeTextMapper *New();
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 

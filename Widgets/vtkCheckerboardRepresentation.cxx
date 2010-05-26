@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCheckerboardRepresentation.cxx
+  Module:    $RCSfile: vtkCheckerboardRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkCommand.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCheckerboardRepresentation, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkCheckerboardRepresentation);
 
 vtkCxxSetObjectMacro(vtkCheckerboardRepresentation,Checkerboard,vtkImageCheckerboard);

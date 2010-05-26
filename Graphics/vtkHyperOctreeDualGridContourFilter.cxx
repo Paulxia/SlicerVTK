@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeDualGridContourFilter.cxx
+  Module:    $RCSfile: vtkHyperOctreeDualGridContourFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -73,6 +73,7 @@ public:
   vtkstd::set<vtkIdType> Set;
 };
 
+vtkCxxRevisionMacro(vtkHyperOctreeDualGridContourFilter, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkHyperOctreeDualGridContourFilter);
 
 //----------------------------------------------------------------------------

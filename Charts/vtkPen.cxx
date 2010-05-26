@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPen.cxx
+  Module:    $RCSfile: vtkPen.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkColor.h"
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkPen, "$Revision: 1.7 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkPen);

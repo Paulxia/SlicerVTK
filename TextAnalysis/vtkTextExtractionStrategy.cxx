@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextExtractionStrategy.cxx
+  Module:    $RCSfile: vtkTextExtractionStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 
 #include <vtkTextExtractionStrategy.h>
 
+vtkCxxRevisionMacro(vtkTextExtractionStrategy, "$Revision: 1.1 $");
 
 vtkTextExtractionStrategy::vtkTextExtractionStrategy()
 {

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkViewUpdater.h
+  Module:    $RCSfile: vtkViewUpdater.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_VIEWS_EXPORT vtkViewUpdater : public vtkObject
 {
 public:
   static vtkViewUpdater *New();
-  vtkTypeMacro(vtkViewUpdater, vtkObject);
+  vtkTypeRevisionMacro(vtkViewUpdater, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   void AddView(vtkView* view);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericDataSet.h
+  Module:    $RCSfile: vtkGenericDataSet.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -67,7 +67,7 @@ class VTK_FILTERING_EXPORT vtkGenericDataSet : public vtkDataObject
 public:
   // Description:
   // Standard VTK type and print macros.
-  vtkTypeMacro(vtkGenericDataSet,vtkDataObject);
+  vtkTypeRevisionMacro(vtkGenericDataSet,vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

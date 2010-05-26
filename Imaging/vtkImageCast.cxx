@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageCast.cxx
+  Module:    $RCSfile: vtkImageCast.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageCast, "$Revision: 1.52 $");
 vtkStandardNewMacro(vtkImageCast);
 
 //----------------------------------------------------------------------------

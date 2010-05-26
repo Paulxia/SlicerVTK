@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextureMapToCylinder.h
+  Module:    $RCSfile: vtkTextureMapToCylinder.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@
 class VTK_GRAPHICS_EXPORT vtkTextureMapToCylinder : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTextureMapToCylinder,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTextureMapToCylinder,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

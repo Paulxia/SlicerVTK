@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLevelIdScalars.cxx
+  Module:    $RCSfile: vtkLevelIdScalars.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkUnsignedCharArray.h"
 
 vtkStandardNewMacro(vtkLevelIdScalars);
+vtkCxxRevisionMacro(vtkLevelIdScalars, "$Revision: 1.1 $");
 //----------------------------------------------------------------------------
 vtkLevelIdScalars::vtkLevelIdScalars()
 {

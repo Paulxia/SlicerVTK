@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractParticleWriter.cxx
+  Module:    $RCSfile: vtkAbstractParticleWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkAbstractParticleWriter.h"
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkAbstractParticleWriter, "$Revision: 1.3 $");
 //----------------------------------------------------------------------------
 // Construct with no start and end write methods or arguments.
 vtkAbstractParticleWriter::vtkAbstractParticleWriter()

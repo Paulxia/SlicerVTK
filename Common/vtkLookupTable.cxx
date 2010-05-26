@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLookupTable.cxx
+  Module:    $RCSfile: vtkLookupTable.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkMath.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkLookupTable, "$Revision: 1.110 $");
 vtkStandardNewMacro(vtkLookupTable);
 
 // Construct with range=(0,1); and hsv ranges set up for rainbow color table 

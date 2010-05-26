@@ -1,7 +1,7 @@
 /*=========================================================================
   
   Program:   Visualization Toolkit
-  Module:    vtkPixelBufferObject.cxx
+  Module:    $RCSfile: vtkPixelBufferObject.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,6 +62,7 @@ const char *BufferObjectUsageAsString[9]=
 #endif
 
 vtkStandardNewMacro(vtkPixelBufferObject);
+vtkCxxRevisionMacro(vtkPixelBufferObject, "$Revision: 1.10 $");
 //----------------------------------------------------------------------------
 vtkPixelBufferObject::vtkPixelBufferObject()
 {

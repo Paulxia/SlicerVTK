@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericEdgeTable.h
+  Module:    $RCSfile: vtkGenericEdgeTable.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ public:
   
   // Description:
   // Standard VTK type and print macros.
-  vtkTypeMacro(vtkGenericEdgeTable,vtkObject);
+  vtkTypeRevisionMacro(vtkGenericEdgeTable,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageIslandRemoval2D.h
+  Module:    $RCSfile: vtkImageIslandRemoval2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ public:
   // Description:
   // Constructor: Sets default filter to be identity.
   static vtkImageIslandRemoval2D *New();
-  vtkTypeMacro(vtkImageIslandRemoval2D,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageIslandRemoval2D,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

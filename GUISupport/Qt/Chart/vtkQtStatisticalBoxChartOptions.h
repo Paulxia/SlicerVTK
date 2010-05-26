@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtStatisticalBoxChartOptions.h
+  Module:    $RCSfile: vtkQtStatisticalBoxChartOptions.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

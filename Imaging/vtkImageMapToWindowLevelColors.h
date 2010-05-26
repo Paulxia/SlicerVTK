@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMapToWindowLevelColors.h
+  Module:    $RCSfile: vtkImageMapToWindowLevelColors.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_IMAGING_EXPORT vtkImageMapToWindowLevelColors : public vtkImageMapToCo
 {
 public:
   static vtkImageMapToWindowLevelColors *New();
-  vtkTypeMacro(vtkImageMapToWindowLevelColors,vtkImageMapToColors);
+  vtkTypeRevisionMacro(vtkImageMapToWindowLevelColors,vtkImageMapToColors);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSimplePointsReader.h
+  Module:    $RCSfile: vtkSimplePointsReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_IO_EXPORT vtkSimplePointsReader : public vtkPolyDataAlgorithm
 {
 public:
   static vtkSimplePointsReader* New();
-  vtkTypeMacro(vtkSimplePointsReader,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSimplePointsReader,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolygonsPainter.h
+  Module:    $RCSfile: vtkPolygonsPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_RENDERING_EXPORT vtkPolygonsPainter : public vtkPrimitivePainter
 {
 public:
   static vtkPolygonsPainter* New();
-  vtkTypeMacro(vtkPolygonsPainter, vtkPrimitivePainter);
+  vtkTypeRevisionMacro(vtkPolygonsPainter, vtkPrimitivePainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

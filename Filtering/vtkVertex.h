@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVertex.h
+  Module:    $RCSfile: vtkVertex.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_FILTERING_EXPORT vtkVertex : public vtkCell
 {
 public:
   static vtkVertex *New();
-  vtkTypeMacro(vtkVertex,vtkCell);
+  vtkTypeRevisionMacro(vtkVertex,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

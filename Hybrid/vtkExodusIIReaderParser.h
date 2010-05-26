@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkExodusIIReaderParser.h
+  Module:    $RCSfile: vtkExodusIIReaderParser.h,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_HYBRID_EXPORT vtkExodusIIReaderParser : public vtkXMLParser
 {
 public:
   static vtkExodusIIReaderParser* New();
-  vtkTypeMacro(vtkExodusIIReaderParser, vtkXMLParser);
+  vtkTypeRevisionMacro(vtkExodusIIReaderParser, vtkXMLParser);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

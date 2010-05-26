@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConvertSelectionDomain.cxx
+  Module:    $RCSfile: vtkConvertSelectionDomain.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 
 #include <vtksys/stl/set>
 
+vtkCxxRevisionMacro(vtkConvertSelectionDomain, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkConvertSelectionDomain);
 //----------------------------------------------------------------------------
 vtkConvertSelectionDomain::vtkConvertSelectionDomain()

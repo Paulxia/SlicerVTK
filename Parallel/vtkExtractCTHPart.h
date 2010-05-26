@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractCTHPart.h
+  Module:    $RCSfile: vtkExtractCTHPart.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkUnsignedCharArray;
 class VTK_PARALLEL_EXPORT vtkExtractCTHPart : public vtkMultiBlockDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkExtractCTHPart,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractCTHPart,vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

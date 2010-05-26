@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointsPainter.cxx
+  Module:    $RCSfile: vtkPointsPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkUnsignedCharArray.h"
 
 vtkStandardNewMacro(vtkPointsPainter);
+vtkCxxRevisionMacro(vtkPointsPainter, "$Revision: 1.4 $");
 //-----------------------------------------------------------------------------
 vtkPointsPainter::vtkPointsPainter()
 {
@@ -106,10 +107,6 @@ int vtkPointsPainter::RenderPrimitive(unsigned long idx, vtkDataArray* n,
   // since this painter does not deal with field colors specially,
   // we just ignore the flag.
   idx &= (~VTK_PDM_FIELD_COLORS);
-
-  // Also ignore edge flags.
-  idx &= (~VTK_PDM_EDGEFLAGS);
-
   switch (idx)
     {
   case 0://no cell/point attribs are present. 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLStructuredDataWriter.h
+  Module:    $RCSfile: vtkXMLStructuredDataWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class vtkInformationVector;
 class VTK_IO_EXPORT vtkXMLStructuredDataWriter : public vtkXMLWriter
 {
 public:
-  vtkTypeMacro(vtkXMLStructuredDataWriter,vtkXMLWriter);
+  vtkTypeRevisionMacro(vtkXMLStructuredDataWriter,vtkXMLWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

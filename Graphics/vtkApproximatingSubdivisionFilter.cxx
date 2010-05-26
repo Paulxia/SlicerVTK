@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkApproximatingSubdivisionFilter.cxx
+  Module:    $RCSfile: vtkApproximatingSubdivisionFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkApproximatingSubdivisionFilter, "$Revision: 1.33 $");
 
 // Construct object with number of subdivisions set to 1.
 vtkApproximatingSubdivisionFilter::vtkApproximatingSubdivisionFilter()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAddMembershipArray.h
+  Module:    $RCSfile: vtkAddMembershipArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkAddMembershipArray : public vtkPassInputTypeAlgorith
 {
 public:
   static vtkAddMembershipArray* New();
-  vtkTypeMacro(vtkAddMembershipArray,vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkAddMembershipArray,vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

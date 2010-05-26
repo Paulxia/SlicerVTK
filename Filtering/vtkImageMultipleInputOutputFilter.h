@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMultipleInputOutputFilter.h
+  Module:    $RCSfile: vtkImageMultipleInputOutputFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@
 class VTK_FILTERING_EXPORT vtkImageMultipleInputOutputFilter : public vtkImageMultipleInputFilter
 {
 public:
-  vtkTypeMacro(vtkImageMultipleInputOutputFilter,vtkImageMultipleInputFilter);
+  vtkTypeRevisionMacro(vtkImageMultipleInputOutputFilter,vtkImageMultipleInputFilter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

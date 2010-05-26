@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoGlobeSource.cxx
+  Module:    $RCSfile: vtkGeoGlobeSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkSmartPointer.h"
 
 vtkStandardNewMacro(vtkGeoGlobeSource);
+vtkCxxRevisionMacro(vtkGeoGlobeSource, "$Revision: 1.2 $");
 //----------------------------------------------------------------------------
 vtkGeoGlobeSource::vtkGeoGlobeSource()
 {

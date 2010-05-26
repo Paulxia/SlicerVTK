@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkExodusIIReaderParser.cxx
+  Module:    $RCSfile: vtkExodusIIReaderParser.cxx,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -23,6 +23,7 @@
 #include <cassert>
 
 vtkStandardNewMacro(vtkExodusIIReaderParser);
+vtkCxxRevisionMacro(vtkExodusIIReaderParser, "$Revision: 1.3 $");
 //-----------------------------------------------------------------------------
 vtkExodusIIReaderParser::vtkExodusIIReaderParser()
 {

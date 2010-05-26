@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkOpenGLRenderer.cxx
+Module:    $RCSfile: vtkOpenGLRenderer.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -46,6 +46,7 @@ public:
 };
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLRenderer, "$Revision: 1.97 $");
 vtkStandardNewMacro(vtkOpenGLRenderer);
 #endif
 

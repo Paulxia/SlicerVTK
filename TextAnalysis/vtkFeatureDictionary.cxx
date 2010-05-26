@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFeatureDictionary.cxx
+  Module:    $RCSfile: vtkFeatureDictionary.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkFeatureDictionary
 
+vtkCxxRevisionMacro(vtkFeatureDictionary, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkFeatureDictionary);
 
 vtkFeatureDictionary::vtkFeatureDictionary()

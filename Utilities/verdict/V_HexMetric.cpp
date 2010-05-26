@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    V_HexMetric.cpp
+  Module:    $RCSfile: V_HexMetric.cpp,v $
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.
@@ -19,6 +19,8 @@
  * This file is part of VERDICT
  *
  */
+
+#define VERDICT_EXPORTS
 
 #include "verdict.h"
 #include "VerdictVector.hpp"

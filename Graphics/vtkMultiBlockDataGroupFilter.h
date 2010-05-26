@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiBlockDataGroupFilter.h
+  Module:    $RCSfile: vtkMultiBlockDataGroupFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@
 class VTK_GRAPHICS_EXPORT vtkMultiBlockDataGroupFilter : public vtkMultiBlockDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkMultiBlockDataGroupFilter,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMultiBlockDataGroupFilter,vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

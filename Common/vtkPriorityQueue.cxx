@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPriorityQueue.cxx
+  Module:    $RCSfile: vtkPriorityQueue.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkPriorityQueue.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPriorityQueue, "$Revision: 1.33 $");
 vtkStandardNewMacro(vtkPriorityQueue);
 
 // Instantiate priority queue with default size and extension size of 1000.

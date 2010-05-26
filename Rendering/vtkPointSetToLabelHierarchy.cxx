@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointSetToLabelHierarchy.cxx
+  Module:    $RCSfile: vtkPointSetToLabelHierarchy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 #include <vtkstd/vector>
 
 vtkStandardNewMacro(vtkPointSetToLabelHierarchy);
+vtkCxxRevisionMacro(vtkPointSetToLabelHierarchy, "$Revision: 1.12 $");
 vtkCxxSetObjectMacro(vtkPointSetToLabelHierarchy, TextProperty, vtkTextProperty);
 
 vtkPointSetToLabelHierarchy::vtkPointSetToLabelHierarchy()

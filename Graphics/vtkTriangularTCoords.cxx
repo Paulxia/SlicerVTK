@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangularTCoords.cxx
+  Module:    $RCSfile: vtkTriangularTCoords.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkTriangularTCoords, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkTriangularTCoords);
 
 int vtkTriangularTCoords::RequestData(

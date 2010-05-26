@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEntropyMatrixWeighting.h
+  Module:    $RCSfile: vtkEntropyMatrixWeighting.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -40,7 +40,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkEntropyMatrixWeighting :
 {
 public:
   static vtkEntropyMatrixWeighting* New();
-  vtkTypeMacro(vtkEntropyMatrixWeighting, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkEntropyMatrixWeighting, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

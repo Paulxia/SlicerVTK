@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitBoolean.cxx
+  Module:    $RCSfile: vtkImplicitBoolean.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImplicitBoolean, "$Revision: 1.36 $");
 vtkStandardNewMacro(vtkImplicitBoolean);
 
 // Construct with union operation.

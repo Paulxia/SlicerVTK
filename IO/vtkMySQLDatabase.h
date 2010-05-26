@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMySQLDatabase.h
+  Module:    $RCSfile: vtkMySQLDatabase.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_IO_EXPORT vtkMySQLDatabase : public vtkSQLDatabase
 //ETX
 
 public:
-  vtkTypeMacro(vtkMySQLDatabase, vtkSQLDatabase);
+  vtkTypeRevisionMacro(vtkMySQLDatabase, vtkSQLDatabase);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkMySQLDatabase *New();
 

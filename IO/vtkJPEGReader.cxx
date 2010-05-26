@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkJPEGReader.cxx
+  Module:    $RCSfile: vtkJPEGReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@ extern "C" {
 }
 
 
+vtkCxxRevisionMacro(vtkJPEGReader, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkJPEGReader);
 
 

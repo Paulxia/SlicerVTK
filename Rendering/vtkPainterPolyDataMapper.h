@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPainterPolyDataMapper.h
+  Module:    $RCSfile: vtkPainterPolyDataMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkPainterPolyDataMapper : public vtkPolyDataMapper
 {
 public:
   static vtkPainterPolyDataMapper* New();
-  vtkTypeMacro(vtkPainterPolyDataMapper, vtkPolyDataMapper);
+  vtkTypeRevisionMacro(vtkPainterPolyDataMapper, vtkPolyDataMapper);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSliceCubes.cxx
+  Module:    $RCSfile: vtkSliceCubes.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkUnsignedShortArray.h"
 #include "vtkVolumeReader.h"
 
+vtkCxxRevisionMacro(vtkSliceCubes, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkSliceCubes);
 
 vtkCxxSetObjectMacro(vtkSliceCubes,Reader,vtkVolumeReader);

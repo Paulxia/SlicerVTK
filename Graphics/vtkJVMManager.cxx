@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkJVMManager.cxx
+  Module:    $RCSfile: vtkJVMManager.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,6 +46,7 @@
 
 //----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkJVMManager);
+vtkCxxRevisionMacro(vtkJVMManager, "$Revision: 1.5 $");
 
 //----------------------------------------------------------------------------
 class vtkJVMManagerInternal

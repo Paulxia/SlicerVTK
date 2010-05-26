@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkThresholdTable.cxx
+  Module:    $RCSfile: vtkThresholdTable.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkVariant.h"
 #include "vtkVariantArray.h"
 
+vtkCxxRevisionMacro(vtkThresholdTable, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkThresholdTable);
 
 vtkThresholdTable::vtkThresholdTable() : MinValue(0), MaxValue(VTK_INT_MAX), Mode(0)

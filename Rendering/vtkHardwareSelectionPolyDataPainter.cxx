@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHardwareSelectionPolyDataPainter.cxx
+  Module:    $RCSfile: vtkHardwareSelectionPolyDataPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkPointData.h"
 
 vtkStandardNewMacro(vtkHardwareSelectionPolyDataPainter);
+vtkCxxRevisionMacro(vtkHardwareSelectionPolyDataPainter, "$Revision: 1.2 $");
 //-----------------------------------------------------------------------------
 static inline int vtkHardwareSelectionPolyDataPainterGetTotalCells(vtkPolyData* pd,
   unsigned long typeflags)

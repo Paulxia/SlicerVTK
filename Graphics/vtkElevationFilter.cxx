@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkElevationFilter.cxx
+  Module:    $RCSfile: vtkElevationFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPointData.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkElevationFilter, "$Revision: 1.58 $");
 vtkStandardNewMacro(vtkElevationFilter);
 
 //----------------------------------------------------------------------------

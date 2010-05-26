@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkOrderStatistics.h
+Module:    $RCSfile: vtkOrderStatistics.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -37,7 +37,6 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include "vtkUnivariateStatisticsAlgorithm.h"
 
-class vtkMultiBlockDataSet;
 class vtkStringArray;
 class vtkTable;
 class vtkVariant;
@@ -45,7 +44,7 @@ class vtkVariant;
 class VTK_INFOVIS_EXPORT vtkOrderStatistics : public vtkUnivariateStatisticsAlgorithm
 {
 public:
-  vtkTypeMacro(vtkOrderStatistics, vtkUnivariateStatisticsAlgorithm);
+  vtkTypeRevisionMacro(vtkOrderStatistics, vtkUnivariateStatisticsAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkOrderStatistics* New();
 
@@ -89,7 +88,7 @@ public:
   // Given a collection of models, calculate aggregate model
   // NB: not implemented
   virtual void Aggregate( vtkDataObjectCollection*,
-                          vtkMultiBlockDataSet* ) { return; };
+                          vtkDataObject* ) { return; };
 
 protected:
   vtkOrderStatistics();
@@ -99,17 +98,17 @@ protected:
   // Execute the calculations required by the Learn option.
   virtual void Learn( vtkTable* inData,
                       vtkTable* inParameters,
-                      vtkMultiBlockDataSet* outMeta );
+                      vtkDataObject* outMeta );
 
   // Description:
   // Execute the calculations required by the Derive option.
-  virtual void Derive( vtkMultiBlockDataSet* );
+  virtual void Derive( vtkDataObject* );
 
   // Description:
   // Execute the calculations required by the Test option.
   virtual void Test( vtkTable*,
-                     vtkMultiBlockDataSet*,
-                     vtkTable* ) { return; };
+                     vtkDataObject*,
+                     vtkDataObject* ) { return; };
 
 //BTX  
   // Description:

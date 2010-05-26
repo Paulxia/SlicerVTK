@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMath.h
+  Module:    $RCSfile: vtkMath.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,7 +56,7 @@ class VTK_COMMON_EXPORT vtkMath : public vtkObject
 {
 public:
   static vtkMath *New();
-  vtkTypeMacro(vtkMath,vtkObject);
+  vtkTypeRevisionMacro(vtkMath,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLMaterialReader.cxx
+  Module:    $RCSfile: vtkXMLMaterialReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkXMLMaterial.h"
 #include "vtkXMLMaterialParser.h"
 
+vtkCxxRevisionMacro(vtkXMLMaterialReader, "$Revision: 1.2 $");
 vtkStandardNewMacro( vtkXMLMaterialReader );
 //-----------------------------------------------------------------------------
 vtkXMLMaterialReader::vtkXMLMaterialReader()

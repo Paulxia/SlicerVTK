@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageFlip.cxx
+  Module:    $RCSfile: vtkImageFlip.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkDataSetAttributes.h"
 
+vtkCxxRevisionMacro(vtkImageFlip, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkImageFlip);
 
 //----------------------------------------------------------------------------

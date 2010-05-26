@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextActor.h
+  Module:    $RCSfile: vtkTextActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class vtkTexture;
 class VTK_RENDERING_EXPORT vtkTextActor : public vtkActor2D
 {
 public:
-  vtkTypeMacro(vtkTextActor,vtkActor2D);
+  vtkTypeRevisionMacro(vtkTextActor,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

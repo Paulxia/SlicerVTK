@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVertexGlyphFilter.h
+  Module:    $RCSfile: vtkVertexGlyphFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@
 class VTK_GRAPHICS_EXPORT vtkVertexGlyphFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkVertexGlyphFilter, vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkVertexGlyphFilter, vtkPolyDataAlgorithm);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
   static vtkVertexGlyphFilter *New();
 

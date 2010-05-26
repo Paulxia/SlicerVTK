@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPoints.h
+  Module:    $RCSfile: vtkPoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ public:
 //ETX
   static vtkPoints *New();
 
-  vtkTypeMacro(vtkPoints,vtkObject);
+  vtkTypeRevisionMacro(vtkPoints,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

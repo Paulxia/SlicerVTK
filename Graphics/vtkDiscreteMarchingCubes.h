@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDiscreteMarchingCubes.h
+  Module:    $RCSfile: vtkDiscreteMarchingCubes.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class VTK_GRAPHICS_EXPORT vtkDiscreteMarchingCubes : public vtkMarchingCubes
 {
 public:
   static vtkDiscreteMarchingCubes *New();
-  vtkTypeMacro(vtkDiscreteMarchingCubes,vtkMarchingCubes);
+  vtkTypeRevisionMacro(vtkDiscreteMarchingCubes,vtkMarchingCubes);
 
 protected:
   vtkDiscreteMarchingCubes();

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDirectionEncoder.h
+  Module:    $RCSfile: vtkDirectionEncoder.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkDirectionEncoder : public vtkObject
 public:
   // Description:
   // Get the name of this class
-  vtkTypeMacro(vtkDirectionEncoder,vtkObject);
+  vtkTypeRevisionMacro(vtkDirectionEncoder,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

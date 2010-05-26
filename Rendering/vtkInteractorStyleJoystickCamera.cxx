@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleJoystickCamera.cxx
+  Module:    $RCSfile: vtkInteractorStyleJoystickCamera.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkRenderer.h"
 #include "vtkRenderWindowInteractor.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleJoystickCamera, "$Revision: 1.34 $");
 vtkStandardNewMacro(vtkInteractorStyleJoystickCamera);
 
 //----------------------------------------------------------------------------

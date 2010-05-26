@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompassRepresentation.cxx
+  Module:    $RCSfile: vtkCompassRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@
 
 #include <sstream>
 
+vtkCxxRevisionMacro(vtkCompassRepresentation, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCompassRepresentation);
 
 //----------------------------------------------------------------------

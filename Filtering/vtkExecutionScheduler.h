@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExecutionScheduler.h
+  Module:    $RCSfile: vtkExecutionScheduler.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class VTK_FILTERING_EXPORT vtkExecutionScheduler : public vtkObject
 {
 public:
   static vtkExecutionScheduler* New();
-  vtkTypeMacro(vtkExecutionScheduler,vtkObject);
+  vtkTypeRevisionMacro(vtkExecutionScheduler,vtkObject);
   void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

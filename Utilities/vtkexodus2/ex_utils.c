@@ -36,7 +36,7 @@
 *
 * exutils - utility routines
 *
-*  Id
+*  $Id: ex_utils.c,v 1.10 2010-03-01 20:10:57 ndfabia Exp $
 *****************************************************************************/
 
 #if defined(DEBUG_QSORT)

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoCamera.h
+  Module:    $RCSfile: vtkGeoCamera.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -80,7 +80,7 @@ class VTK_GEOVIS_EXPORT vtkGeoCamera : public vtkObject
 {
 public:
   static vtkGeoCamera *New();
-  vtkTypeMacro(vtkGeoCamera, vtkObject);
+  vtkTypeRevisionMacro(vtkGeoCamera, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

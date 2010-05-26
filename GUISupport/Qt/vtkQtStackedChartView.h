@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtStackedChartView.h
+  Module:    $RCSfile: vtkQtStackedChartView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ Q_OBJECT
 
 public:
   static vtkQtStackedChartView *New();
-  vtkTypeMacro(vtkQtStackedChartView, vtkQtChartView);
+  vtkTypeRevisionMacro(vtkQtStackedChartView, vtkQtChartView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

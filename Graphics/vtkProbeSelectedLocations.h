@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProbeSelectedLocations.h
+  Module:    $RCSfile: vtkProbeSelectedLocations.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkProbeSelectedLocations : public vtkExtractSelection
 {
 public:
   static vtkProbeSelectedLocations* New();
-  vtkTypeMacro(vtkProbeSelectedLocations, vtkExtractSelectionBase);
+  vtkTypeRevisionMacro(vtkProbeSelectedLocations, vtkExtractSelectionBase);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

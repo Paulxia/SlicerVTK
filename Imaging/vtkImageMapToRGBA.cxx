@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMapToRGBA.cxx
+  Module:    $RCSfile: vtkImageMapToRGBA.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,4 +15,5 @@
 #include "vtkImageMapToRGBA.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImageMapToRGBA, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkImageMapToRGBA);

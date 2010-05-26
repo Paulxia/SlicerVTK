@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtTreeView.h
+  Module:    $RCSfile: vtkQtTreeView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ signals:
 
 public:
   static vtkQtTreeView *New();
-  vtkTypeMacro(vtkQtTreeView, vtkQtView);
+  vtkTypeRevisionMacro(vtkQtTreeView, vtkQtView);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

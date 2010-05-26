@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTokenLengthFilter.cxx
+  Module:    $RCSfile: vtkTokenLengthFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 
 #include <stdexcept>
 
+vtkCxxRevisionMacro(vtkTokenLengthFilter, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkTokenLengthFilter);
 
 vtkTokenLengthFilter::vtkTokenLengthFilter() :

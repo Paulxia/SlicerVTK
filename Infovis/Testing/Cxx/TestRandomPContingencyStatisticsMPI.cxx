@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    TestRandomPContingencyStatisticsMPI.cxx
+Module:    $RCSfile: TestRandomPContingencyStatisticsMPI.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredPointsToUnstructuredGridFilter.h
+  Module:    $RCSfile: vtkStructuredPointsToUnstructuredGridFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class vtkImageData;
 class VTK_FILTERING_EXPORT vtkStructuredPointsToUnstructuredGridFilter : public vtkUnstructuredGridSource
 {
 public:
-  vtkTypeMacro(vtkStructuredPointsToUnstructuredGridFilter,vtkUnstructuredGridSource);
+  vtkTypeRevisionMacro(vtkStructuredPointsToUnstructuredGridFilter,vtkUnstructuredGridSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

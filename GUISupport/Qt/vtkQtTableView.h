@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtTableView.h
+  Module:    $RCSfile: vtkQtTableView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ Q_OBJECT
 
 public:
   static vtkQtTableView *New();
-  vtkTypeMacro(vtkQtTableView, vtkQtView);
+  vtkTypeRevisionMacro(vtkQtTableView, vtkQtView);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

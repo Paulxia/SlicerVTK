@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkODBCQuery.h
+  Module:    $RCSfile: vtkODBCQuery.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_IO_EXPORT vtkODBCQuery : public vtkSQLQuery
 //ETX
 
 public:
-  vtkTypeMacro(vtkODBCQuery, vtkSQLQuery);
+  vtkTypeRevisionMacro(vtkODBCQuery, vtkSQLQuery);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkODBCQuery *New();
 

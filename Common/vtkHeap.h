@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHeap.h
+  Module:    $RCSfile: vtkHeap.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class VTK_COMMON_EXPORT vtkHeap : public vtkObject
 {
 public:
   static vtkHeap *New();
-  vtkTypeMacro(vtkHeap,vtkObject);
+  vtkTypeRevisionMacro(vtkHeap,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

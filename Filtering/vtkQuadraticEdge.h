@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticEdge.h
+  Module:    $RCSfile: vtkQuadraticEdge.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_FILTERING_EXPORT vtkQuadraticEdge : public vtkNonLinearCell
 {
 public:
   static vtkQuadraticEdge *New();
-  vtkTypeMacro(vtkQuadraticEdge,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkQuadraticEdge,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

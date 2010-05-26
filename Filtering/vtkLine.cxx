@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLine.cxx
+  Module:    $RCSfile: vtkLine.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkIncrementalPointLocator.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkLine, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkLine);
 
 //----------------------------------------------------------------------------

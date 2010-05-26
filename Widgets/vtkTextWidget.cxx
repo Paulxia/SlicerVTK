@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextWidget.cxx
+  Module:    $RCSfile: vtkTextWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkCommand.h"
 
+vtkCxxRevisionMacro(vtkTextWidget, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkTextWidget);
 
 //-------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkKdTreeSelector.h
+  Module:    $RCSfile: vtkKdTreeSelector.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkKdTreeSelector : public vtkSelectionAlgorithm
 {
 public:
   static vtkKdTreeSelector* New();
-  vtkTypeMacro(vtkKdTreeSelector, vtkSelectionAlgorithm);
+  vtkTypeRevisionMacro(vtkKdTreeSelector, vtkSelectionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProcess.cxx
+  Module:    $RCSfile: vtkProcess.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkProcess.h"
 #include "vtkMultiProcessController.h"
 
+vtkCxxRevisionMacro(vtkProcess, "$Revision: 1.1 $");
 
 // ----------------------------------------------------------------------------
 vtkProcess::vtkProcess()

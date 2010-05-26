@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRIBLight.h
+  Module:    $RCSfile: vtkRIBLight.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_HYBRID_EXPORT vtkRIBLight : public vtkLight
 {
 public:
   static vtkRIBLight *New();
-  vtkTypeMacro(vtkRIBLight,vtkLight);
+  vtkTypeRevisionMacro(vtkRIBLight,vtkLight);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkBooleanMacro(Shadows,int);

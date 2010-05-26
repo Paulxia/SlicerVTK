@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableToSparseArray.h
+  Module:    $RCSfile: vtkTableToSparseArray.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -45,7 +45,7 @@ class VTK_INFOVIS_EXPORT vtkTableToSparseArray : public vtkArrayDataAlgorithm
 {
 public:
   static vtkTableToSparseArray* New();
-  vtkTypeMacro(vtkTableToSparseArray, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTableToSparseArray, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtRichTextView.h
+  Module:    $RCSfile: vtkQtRichTextView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ Q_OBJECT
 
 public:
   static vtkQtRichTextView *New();
-  vtkTypeMacro(vtkQtRichTextView, vtkQtView);
+  vtkTypeRevisionMacro(vtkQtRichTextView, vtkQtView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

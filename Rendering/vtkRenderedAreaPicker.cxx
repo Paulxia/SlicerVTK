@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderedAreaPicker.cxx
+  Module:    $RCSfile: vtkRenderedAreaPicker.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkPlane.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkRenderedAreaPicker, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkRenderedAreaPicker);
 
 //--------------------------------------------------------------------------

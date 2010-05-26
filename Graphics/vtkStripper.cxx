@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStripper.cxx
+  Module:    $RCSfile: vtkStripper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPolyData.h"
 #include "vtkIdTypeArray.h"
 
+vtkCxxRevisionMacro(vtkStripper, "$Revision: 1.76 $");
 vtkStandardNewMacro(vtkStripper);
 
 // Construct object with MaximumLength set to 1000.

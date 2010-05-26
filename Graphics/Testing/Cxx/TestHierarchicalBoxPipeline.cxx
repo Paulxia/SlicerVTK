@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestHierarchicalBoxPipeline.cxx
+  Module:    $RCSfile: TestHierarchicalBoxPipeline.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

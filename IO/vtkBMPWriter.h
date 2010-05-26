@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBMPWriter.h
+  Module:    $RCSfile: vtkBMPWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_IO_EXPORT vtkBMPWriter : public vtkImageWriter
 {
 public:
   static vtkBMPWriter *New();
-  vtkTypeMacro(vtkBMPWriter,vtkImageWriter);
+  vtkTypeRevisionMacro(vtkBMPWriter,vtkImageWriter);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

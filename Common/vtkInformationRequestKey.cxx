@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationRequestKey.cxx
+  Module:    $RCSfile: vtkInformationRequestKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 
 #include "vtkInformation.h"
 
+vtkCxxRevisionMacro(vtkInformationRequestKey, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------------
 vtkInformationRequestKey::vtkInformationRequestKey(const char* name, const char* location):

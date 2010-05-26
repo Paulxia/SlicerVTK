@@ -31,6 +31,7 @@ extern "C" {
 
 //-------------------------------------------------------------------------
 vtkStandardNewMacro(vtkTIFFReader);
+vtkCxxRevisionMacro(vtkTIFFReader, "1.53");
 
 class vtkTIFFReaderInternal
 {

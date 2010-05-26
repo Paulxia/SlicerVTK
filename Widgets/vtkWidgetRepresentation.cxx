@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWidgetRepresentation.cxx
+  Module:    $RCSfile: vtkWidgetRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkInteractorObserver.h"
 
 
+vtkCxxRevisionMacro(vtkWidgetRepresentation, "$Revision: 1.9 $");
 
 
 //----------------------------------------------------------------------

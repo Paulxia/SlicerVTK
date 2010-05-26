@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSinusoidSource.h
+  Module:    $RCSfile: vtkImageSinusoidSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_IMAGING_EXPORT vtkImageSinusoidSource : public vtkImageAlgorithm
 {
 public:
   static vtkImageSinusoidSource *New();
-  vtkTypeMacro(vtkImageSinusoidSource,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageSinusoidSource,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

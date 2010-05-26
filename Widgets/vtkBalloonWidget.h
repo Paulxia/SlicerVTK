@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBalloonWidget.h
+  Module:    $RCSfile: vtkBalloonWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -86,7 +86,7 @@ public:
 
   // Description:
   // Standard methods for a VTK class.
-  vtkTypeMacro(vtkBalloonWidget,vtkHoverWidget);
+  vtkTypeRevisionMacro(vtkBalloonWidget,vtkHoverWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

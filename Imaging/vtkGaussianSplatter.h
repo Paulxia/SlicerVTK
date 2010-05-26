@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGaussianSplatter.h
+  Module:    $RCSfile: vtkGaussianSplatter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -75,7 +75,7 @@ class vtkDoubleArray;
 class VTK_IMAGING_EXPORT vtkGaussianSplatter : public vtkImageAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkGaussianSplatter,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkGaussianSplatter,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBiQuadraticQuadraticWedge.h
+  Module:    $RCSfile: vtkBiQuadraticQuadraticWedge.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class VTK_FILTERING_EXPORT vtkBiQuadraticQuadraticWedge : public vtkNonLinearCel
 {
 public:
   static vtkBiQuadraticQuadraticWedge *New ();
-  vtkTypeMacro(vtkBiQuadraticQuadraticWedge,vtkNonLinearCell);
+  vtkTypeRevisionMacro (vtkBiQuadraticQuadraticWedge, vtkNonLinearCell);
   void PrintSelf (ostream & os, vtkIndent indent);
 
   // Description:

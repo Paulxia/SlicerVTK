@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMinimalStandardRandomSequence.h
+  Module:    $RCSfile: vtkMinimalStandardRandomSequence.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_COMMON_EXPORT vtkMinimalStandardRandomSequence
   : public vtkRandomSequence
 {
 public:
-  vtkTypeMacro(vtkMinimalStandardRandomSequence,vtkRandomSequence);
+  vtkTypeRevisionMacro(vtkMinimalStandardRandomSequence,vtkRandomSequence);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkMinimalStandardRandomSequence* New();

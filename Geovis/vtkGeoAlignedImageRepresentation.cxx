@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoAlignedImageRepresentation.cxx
+  Module:    $RCSfile: vtkGeoAlignedImageRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -130,6 +130,7 @@ vtkGeoAlignedImageRepresentationFind(vtkGeoSource* source, vtkGeoImageNode* p, d
 }
 
 vtkStandardNewMacro(vtkGeoAlignedImageRepresentation);
+vtkCxxRevisionMacro(vtkGeoAlignedImageRepresentation, "$Revision: 1.13 $");
 vtkCxxSetObjectMacro(vtkGeoAlignedImageRepresentation, GeoSource, vtkGeoSource);
 //----------------------------------------------------------------------------
 vtkGeoAlignedImageRepresentation::vtkGeoAlignedImageRepresentation()

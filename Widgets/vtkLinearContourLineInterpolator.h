@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLinearContourLineInterpolator.h
+  Module:    $RCSfile: vtkLinearContourLineInterpolator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ public:
   
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkLinearContourLineInterpolator,vtkContourLineInterpolator);
+  vtkTypeRevisionMacro(vtkLinearContourLineInterpolator,vtkContourLineInterpolator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual int InterpolateLine( vtkRenderer *ren, 

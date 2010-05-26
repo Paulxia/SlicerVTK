@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostBreadthFirstSearch.cxx
+  Module:    $RCSfile: vtkBoostBreadthFirstSearch.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,6 +52,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkBoostBreadthFirstSearch, "$Revision: 1.18 $");
 vtkStandardNewMacro(vtkBoostBreadthFirstSearch);
 
 // Redefine the bfs visitor, the only visitor we

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMySQLQuery.cxx
+  Module:    $RCSfile: vtkMySQLQuery.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -482,6 +482,7 @@ bool vtkMySQLQueryInternals::ValidPreparedStatementSQL(const char *query)
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkMySQLQuery, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkMySQLQuery);
 
 // ----------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCylinderSource.cxx
+  Module:    $RCSfile: vtkCylinderSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkCylinderSource, "$Revision: 1.55 $");
 vtkStandardNewMacro(vtkCylinderSource);
 
 vtkCylinderSource::vtkCylinderSource (int res)

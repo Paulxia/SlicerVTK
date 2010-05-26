@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTensor.h
+  Module:    $RCSfile: vtkTensor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_COMMON_EXPORT vtkTensor : public vtkObject
 {
 public:
   static vtkTensor *New();
-  vtkTypeMacro(vtkTensor,vtkObject);
+  vtkTypeRevisionMacro(vtkTensor,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

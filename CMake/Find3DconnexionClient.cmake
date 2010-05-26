@@ -1,7 +1,7 @@
 # =============================================================================
 #
 #  Program:   Visualization Toolkit
-#  Module:    Find3DconnexionClient.cmake
+#  Module:    $RCSfile: Find3DconnexionClient.cmake,v $
 #
 #  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 #  All rights reserved.

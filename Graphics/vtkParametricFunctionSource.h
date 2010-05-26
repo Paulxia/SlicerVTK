@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricFunctionSource.h
+  Module:    $RCSfile: vtkParametricFunctionSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -48,7 +48,7 @@ class vtkParametricFunction;
 class VTK_GRAPHICS_EXPORT vtkParametricFunctionSource : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkParametricFunctionSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkParametricFunctionSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

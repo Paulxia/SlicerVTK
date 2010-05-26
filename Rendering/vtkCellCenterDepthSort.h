@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellCenterDepthSort.h
+  Module:    $RCSfile: vtkCellCenterDepthSort.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class vtkCellCenterDepthSortStack;
 class VTK_RENDERING_EXPORT vtkCellCenterDepthSort : public vtkVisibilitySort
 {
 public:
-  vtkTypeMacro(vtkCellCenterDepthSort, vtkVisibilitySort);
+  vtkTypeRevisionMacro(vtkCellCenterDepthSort, vtkVisibilitySort);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
   static vtkCellCenterDepthSort *New();
 

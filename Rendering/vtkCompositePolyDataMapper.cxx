@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositePolyDataMapper.cxx
+  Module:    $RCSfile: vtkCompositePolyDataMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkCompositePolyDataMapper, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCompositePolyDataMapper);
 
 class vtkCompositePolyDataMapperInternals

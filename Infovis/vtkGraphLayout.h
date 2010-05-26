@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphLayout.h
+  Module:    $RCSfile: vtkGraphLayout.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class VTK_INFOVIS_EXPORT vtkGraphLayout : public vtkGraphAlgorithm
 {
 public:
   static vtkGraphLayout *New();
-  vtkTypeMacro(vtkGraphLayout, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkGraphLayout, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

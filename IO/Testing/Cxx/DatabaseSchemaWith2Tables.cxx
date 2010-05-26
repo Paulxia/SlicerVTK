@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    DatabaseSchemaWith2Tables.cxx
+  Module:    $RCSfile: DatabaseSchemaWith2Tables.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

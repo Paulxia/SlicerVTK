@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointSetToLabelHierarchy.h
+  Module:    $RCSfile: vtkPointSetToLabelHierarchy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_RENDERING_EXPORT vtkPointSetToLabelHierarchy : public vtkLabelHierarch
 {
 public:
   static vtkPointSetToLabelHierarchy* New();
-  vtkTypeMacro(vtkPointSetToLabelHierarchy,vtkLabelHierarchyAlgorithm);
+  vtkTypeRevisionMacro(vtkPointSetToLabelHierarchy,vtkLabelHierarchyAlgorithm);
   virtual void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

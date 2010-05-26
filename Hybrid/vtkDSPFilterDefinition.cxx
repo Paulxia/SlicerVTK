@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDSPFilterDefinition.cxx
+  Module:    $RCSfile: vtkDSPFilterDefinition.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include <vtkstd/vector>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkDSPFilterDefinition, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkDSPFilterDefinition);
 
 class vtkDSPFilterDefinitionVectorDoubleSTLCloak

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoxMuellerRandomSequence.cxx
+  Module:    $RCSfile: vtkBoxMuellerRandomSequence.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkMath.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkBoxMuellerRandomSequence, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkBoxMuellerRandomSequence);
 
 

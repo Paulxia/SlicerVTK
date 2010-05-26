@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIncrementalOctreePointLocator.cxx
+  Module:    $RCSfile: vtkIncrementalOctreePointLocator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include <vtkstd/queue>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro( vtkIncrementalOctreePointLocator, "$Revision: 1.3 $" );
 vtkStandardNewMacro( vtkIncrementalOctreePointLocator );
 
 // ---------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCurvatures.h
+  Module:    $RCSfile: vtkCurvatures.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -71,7 +71,7 @@
 class VTK_GRAPHICS_EXPORT vtkCurvatures : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkCurvatures,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCurvatures,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

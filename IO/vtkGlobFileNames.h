@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGlobFileNames.h
+  Module:    $RCSfile: vtkGlobFileNames.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_IO_EXPORT vtkGlobFileNames : public vtkObject
 public:
   // Description:
   // Return the class name as a string.
-  vtkTypeMacro(vtkGlobFileNames,vtkObject);
+  vtkTypeRevisionMacro(vtkGlobFileNames,vtkObject);
 
   // Description:
   // Create a new vtkGlobFileNames object.

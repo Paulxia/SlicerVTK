@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationStringKey.h
+  Module:    $RCSfile: vtkInformationStringKey.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class VTK_COMMON_EXPORT vtkInformationStringKey : public vtkInformationKey
 {
 public:
-  vtkTypeMacro(vtkInformationStringKey,vtkInformationKey);
+  vtkTypeRevisionMacro(vtkInformationStringKey,vtkInformationKey);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkInformationStringKey(const char* name, const char* location);

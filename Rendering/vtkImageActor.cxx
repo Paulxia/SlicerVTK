@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageActor.cxx
+  Module:    $RCSfile: vtkImageActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkRenderer.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkImageActor, "$Revision: 1.24 $");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

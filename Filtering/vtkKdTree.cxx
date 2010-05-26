@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkKdTree.cxx
+  Module:    $RCSfile: vtkKdTree.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,6 +51,7 @@
 #include <vtkstd/queue>
 #include <vtkstd/set>
 
+vtkCxxRevisionMacro(vtkKdTree, "$Revision: 1.6 $");
 
 // Timing data ---------------------------------------------
 
@@ -2429,7 +2430,7 @@ int vtkKdTree::FindClosestPointInSphere(double x, double y, double z,
       int newLocalCloseId = this->_FindClosestPointInRegion(neighbor,
                                                             x, y, z, newDistance2);
       
-      if (newDistance2 < minDistance2 && newDistance2 <= radius*radius)
+      if (newDistance2 < minDistance2)
         {
         minDistance2 = newDistance2;
         localCloseId = newLocalCloseId;

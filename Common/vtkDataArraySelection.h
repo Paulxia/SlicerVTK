@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataArraySelection.h
+  Module:    $RCSfile: vtkDataArraySelection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class vtkDataArraySelectionInternals;
 class VTK_COMMON_EXPORT vtkDataArraySelection : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkDataArraySelection,vtkObject);
+  vtkTypeRevisionMacro(vtkDataArraySelection,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkDataArraySelection* New();
 

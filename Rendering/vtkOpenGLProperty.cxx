@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLProperty.cxx
+  Module:    $RCSfile: vtkOpenGLProperty.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@
 #include <assert.h>
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLProperty, "$Revision: 1.60 $");
 vtkStandardNewMacro(vtkOpenGLProperty);
 #endif
 

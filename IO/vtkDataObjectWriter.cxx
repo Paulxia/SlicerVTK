@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataObjectWriter.cxx
+  Module:    $RCSfile: vtkDataObjectWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkInformation.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkDataObjectWriter, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkDataObjectWriter);
 
 vtkDataObjectWriter::vtkDataObjectWriter()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenerateIndexArray.h
+  Module:    $RCSfile: vtkGenerateIndexArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class VTK_INFOVIS_EXPORT vtkGenerateIndexArray : public vtkDataObjectAlgorithm
 public:
   static vtkGenerateIndexArray *New();
 
-  vtkTypeMacro(vtkGenerateIndexArray, vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkGenerateIndexArray, vtkDataObjectAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

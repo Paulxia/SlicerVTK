@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDirectory.h
+  Module:    $RCSfile: vtkDirectory.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_COMMON_EXPORT vtkDirectory : public vtkObject
 public:
   // Description:
   // Return the class name as a string.
-  vtkTypeMacro(vtkDirectory,vtkObject);
+  vtkTypeRevisionMacro(vtkDirectory,vtkObject);
 
   // Description:
   // Create a new vtkDirectory object.

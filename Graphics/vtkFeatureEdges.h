@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFeatureEdges.h
+  Module:    $RCSfile: vtkFeatureEdges.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class vtkIncrementalPointLocator;
 class VTK_GRAPHICS_EXPORT vtkFeatureEdges : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkFeatureEdges,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkFeatureEdges,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

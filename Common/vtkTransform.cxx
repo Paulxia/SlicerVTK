@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransform.cxx
+  Module:    $RCSfile: vtkTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 
 #include <stdlib.h>
 
+vtkCxxRevisionMacro(vtkTransform, "$Revision: 1.111 $");
 vtkStandardNewMacro(vtkTransform);
 
 //----------------------------------------------------------------------------

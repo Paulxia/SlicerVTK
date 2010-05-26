@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedIds.cxx
+  Module:    $RCSfile: vtkExtractSelectedIds.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkStringArray.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkExtractSelectedIds, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkExtractSelectedIds);
 
 //----------------------------------------------------------------------------

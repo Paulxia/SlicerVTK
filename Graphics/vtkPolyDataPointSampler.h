@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataPointSampler.h
+  Module:    $RCSfile: vtkPolyDataPointSampler.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ public:
 
   // Description:
   // Standard macros for type information and printing.
-  vtkTypeMacro(vtkPolyDataPointSampler,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPolyDataPointSampler,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

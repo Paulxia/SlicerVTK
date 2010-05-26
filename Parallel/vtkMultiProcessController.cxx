@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiProcessController.cxx
+  Module:    $RCSfile: vtkMultiProcessController.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ class VTK_PARALLEL_EXPORT vtkMultiProcessControllerRMI : public vtkObject
 {
 public:
   static vtkMultiProcessControllerRMI *New(); 
-  vtkTypeMacro(vtkMultiProcessControllerRMI, vtkObject);
+  vtkTypeRevisionMacro(vtkMultiProcessControllerRMI, vtkObject);
   
   int Tag;
   vtkRMIFunctionType Function;
@@ -72,8 +72,10 @@ protected:
   void operator=(const vtkMultiProcessControllerRMI&);
 };
 
+vtkCxxRevisionMacro(vtkMultiProcessControllerRMI, "$Revision: 1.39 $");
 vtkStandardNewMacro(vtkMultiProcessControllerRMI);
 
+vtkCxxRevisionMacro(vtkMultiProcessController, "$Revision: 1.39 $");
 
 //----------------------------------------------------------------------------
 // An RMI function that will break the "ProcessRMIs" loop.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPOpenFOAMReader.h
+  Module:    $RCSfile: vtkPOpenFOAMReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ public:
   enum caseType { DECOMPOSED_CASE = 0, RECONSTRUCTED_CASE = 1 };
   //ETX
   static vtkPOpenFOAMReader *New();
-  vtkTypeMacro(vtkPOpenFOAMReader, vtkOpenFOAMReader);
+  vtkTypeRevisionMacro(vtkPOpenFOAMReader, vtkOpenFOAMReader);
 
   void PrintSelf(ostream &os, vtkIndent indent);
 

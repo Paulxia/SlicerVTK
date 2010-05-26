@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPKdTree.h
+  Module:    $RCSfile: vtkPKdTree.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class vtkKdNode;
 class VTK_PARALLEL_EXPORT vtkPKdTree : public vtkKdTree
 {
 public:
-  vtkTypeMacro(vtkPKdTree, vtkKdTree);
+  vtkTypeRevisionMacro(vtkPKdTree, vtkKdTree);
 
 
   void PrintSelf(ostream& os, vtkIndent indent);

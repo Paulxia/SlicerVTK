@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkObjectFactory.h
+  Module:    $RCSfile: vtkObjectFactory.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -110,7 +110,7 @@ public:
   // Instance methods to be used on individual instances of vtkObjectFactory
   
   // Methods from vtkObject
-  vtkTypeMacro(vtkObjectFactory,vtkObject);
+  vtkTypeRevisionMacro(vtkObjectFactory,vtkObject);
   // Description:
   // Print ObjectFactory to stream.
   virtual void PrintSelf(ostream& os, vtkIndent indent);

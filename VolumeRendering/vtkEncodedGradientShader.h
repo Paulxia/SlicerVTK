@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEncodedGradientShader.h
+  Module:    $RCSfile: vtkEncodedGradientShader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkEncodedGradientShader : public vtkObject
 {
 public:
   static vtkEncodedGradientShader *New();
-  vtkTypeMacro(vtkEncodedGradientShader,vtkObject);
+  vtkTypeRevisionMacro(vtkEncodedGradientShader,vtkObject);
 
   // Description:
   // Print the vtkEncodedGradientShader

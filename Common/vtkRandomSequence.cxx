@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRandomSequence.cxx
+  Module:    $RCSfile: vtkRandomSequence.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 
 #include <cassert>
 
+vtkCxxRevisionMacro(vtkRandomSequence, "$Revision: 1.2 $");
 
 // ----------------------------------------------------------------------------
 vtkRandomSequence::vtkRandomSequence()

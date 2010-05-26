@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMagnitude.cxx
+  Module:    $RCSfile: vtkImageMagnitude.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageMagnitude, "$Revision: 1.43 $");
 vtkStandardNewMacro(vtkImageMagnitude);
 
 //----------------------------------------------------------------------------

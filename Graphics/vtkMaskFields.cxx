@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMaskFields.cxx
+  Module:    $RCSfile: vtkMaskFields.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkMaskFields, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkMaskFields);
 
 char vtkMaskFields::FieldLocationNames[3][12] 

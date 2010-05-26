@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphLayoutView.cxx
+  Module:    $RCSfile: vtkGraphLayoutView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkSimple2DLayoutStrategy.h"
 #include "vtkTextProperty.h"
 
+vtkCxxRevisionMacro(vtkGraphLayoutView, "$Revision: 1.67 $");
 vtkStandardNewMacro(vtkGraphLayoutView);
 //----------------------------------------------------------------------------
 vtkGraphLayoutView::vtkGraphLayoutView()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkHierarchicalDataExtractLevel.cxx
+Module:    $RCSfile: vtkHierarchicalDataExtractLevel.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -16,6 +16,7 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkHierarchicalDataExtractLevel, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkHierarchicalDataExtractLevel);
 
 //----------------------------------------------------------------------------

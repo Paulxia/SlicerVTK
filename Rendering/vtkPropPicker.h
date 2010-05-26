@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPropPicker.h
+  Module:    $RCSfile: vtkPropPicker.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_RENDERING_EXPORT vtkPropPicker : public vtkAbstractPropPicker
 public:
   static vtkPropPicker *New();
 
-  vtkTypeMacro(vtkPropPicker,vtkAbstractPropPicker);
+  vtkTypeRevisionMacro(vtkPropPicker,vtkAbstractPropPicker);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

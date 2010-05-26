@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLSDynaReader.cxx
+  Module:    $RCSfile: vtkLSDynaReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -110,6 +110,7 @@ typedef FILE* vtkLSDynaFile_t;
 #endif // VTK_LSDYNA_DBG_MULTIBLOCK
 
 vtkStandardNewMacro(vtkLSDynaReader);
+vtkCxxRevisionMacro(vtkLSDynaReader,"$Revision: 1.21 $");
 
 // Names of vtkDataArrays provided with grid:
 #define LS_ARRAYNAME_USERID             "UserID"
@@ -1304,7 +1305,7 @@ class vtkXMLDynaSummaryParser : public vtkXMLParser
 {
 public:
   static vtkXMLDynaSummaryParser* New();
-  vtkTypeMacro(vtkXMLDynaSummaryParser,vtkXMLParser);
+  vtkTypeRevisionMacro(vtkXMLDynaSummaryParser,vtkXMLParser);
 
   /// Must be set before calling Parse();
   vtkLSDynaReaderPrivate* P;
@@ -1481,6 +1482,7 @@ private:
 };
 
 vtkStandardNewMacro(vtkXMLDynaSummaryParser);
+vtkCxxRevisionMacro(vtkXMLDynaSummaryParser,"$Revision: 1.21 $");
 // ============================================== End of XML Summary reader class
 
 

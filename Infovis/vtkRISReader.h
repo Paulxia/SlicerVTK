@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRISReader.h
+  Module:    $RCSfile: vtkRISReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_INFOVIS_EXPORT vtkRISReader : public vtkTableAlgorithm
 {
 public:
   static vtkRISReader* New();
-  vtkTypeMacro(vtkRISReader,vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkRISReader,vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

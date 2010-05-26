@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedBlock.cxx
+  Module:    $RCSfile: vtkExtractSelectedBlock.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 
 #include <vtkstd/set>
 vtkStandardNewMacro(vtkExtractSelectedBlock);
+vtkCxxRevisionMacro(vtkExtractSelectedBlock, "$Revision: 1.5 $");
 //----------------------------------------------------------------------------
 vtkExtractSelectedBlock::vtkExtractSelectedBlock()
 {

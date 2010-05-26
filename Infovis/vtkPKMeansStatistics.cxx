@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPKMeansStatistics.cxx
+  Module:    $RCSfile: vtkPKMeansStatistics.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 
 
 vtkStandardNewMacro(vtkPKMeansStatistics);
+vtkCxxRevisionMacro(vtkPKMeansStatistics, "$Revision: 1.4 $");
 vtkCxxSetObjectMacro(vtkPKMeansStatistics, Controller, vtkMultiProcessController);
 //-----------------------------------------------------------------------------
 vtkPKMeansStatistics::vtkPKMeansStatistics()

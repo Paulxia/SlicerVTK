@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricSuperEllipsoid.h
+  Module:    $RCSfile: vtkParametricSuperEllipsoid.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -41,7 +41,7 @@
 class VTK_COMMON_EXPORT vtkParametricSuperEllipsoid : public vtkParametricFunction
 {
 public:
-  vtkTypeMacro(vtkParametricSuperEllipsoid,vtkParametricFunction);
+  vtkTypeRevisionMacro(vtkParametricSuperEllipsoid,vtkParametricFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

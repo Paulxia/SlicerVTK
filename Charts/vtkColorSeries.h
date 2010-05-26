@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkColorSeries.h
+  Module:    $RCSfile: vtkColorSeries.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@
 class VTK_CHARTS_EXPORT vtkColorSeries : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkColorSeries, vtkObject);
+  vtkTypeRevisionMacro(vtkColorSeries, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

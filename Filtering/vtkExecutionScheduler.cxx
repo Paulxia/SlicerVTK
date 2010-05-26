@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExecutionScheduler.cxx
+  Module:    $RCSfile: vtkExecutionScheduler.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,6 +50,7 @@
 #include <vtksys/hash_set.hxx>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkExecutionScheduler, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkExecutionScheduler);
 
 vtkInformationKeyMacro(vtkExecutionScheduler, TASK_PRIORITY, Integer);

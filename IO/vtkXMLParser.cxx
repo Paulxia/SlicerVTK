@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLParser.cxx
+  Module:    $RCSfile: vtkXMLParser.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include <ctype.h>
 #include <sys/stat.h>
 
+vtkCxxRevisionMacro(vtkXMLParser, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkXMLParser);
 
 //----------------------------------------------------------------------------

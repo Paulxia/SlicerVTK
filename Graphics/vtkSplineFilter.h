@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineFilter.h
+  Module:    $RCSfile: vtkSplineFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class vtkSpline;
 class VTK_GRAPHICS_EXPORT vtkSplineFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkSplineFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSplineFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

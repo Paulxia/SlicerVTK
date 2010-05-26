@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStringArray.h
+  Module:    $RCSfile: vtkStringArray.h,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2009-03-12 16:21:41 $
+  Version:   $Revision: 1.10 $
 
   Copyright 2004 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive
@@ -50,7 +50,7 @@ class VTK_COMMON_EXPORT vtkStringArray : public vtkAbstractArray
 {
 public:
   static vtkStringArray* New();
-  vtkTypeMacro(vtkStringArray,vtkAbstractArray);
+  vtkTypeRevisionMacro(vtkStringArray,vtkAbstractArray);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //

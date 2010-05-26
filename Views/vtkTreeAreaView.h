@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeAreaView.h
+  Module:    $RCSfile: vtkTreeAreaView.h,v $
 
   -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -50,7 +50,7 @@ class VTK_VIEWS_EXPORT vtkTreeAreaView : public vtkRenderView
 {
 public:
   static vtkTreeAreaView *New();
-  vtkTypeMacro(vtkTreeAreaView, vtkRenderView);
+  vtkTypeRevisionMacro(vtkTreeAreaView, vtkRenderView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

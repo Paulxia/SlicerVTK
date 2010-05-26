@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    PrmMagnify.cxx
+  Module:    $RCSfile: PrmMagnify.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@
 class vtkTestMagnifyRenderManager : public vtkParallelRenderManager
 {
 public:
-  vtkTypeMacro(vtkTestMagnifyRenderManager, vtkParallelRenderManager);
+  vtkTypeRevisionMacro(vtkTestMagnifyRenderManager, vtkParallelRenderManager);
   static vtkTestMagnifyRenderManager *New();
 
 protected:
@@ -69,6 +69,7 @@ private:
   void operator=(const vtkTestMagnifyRenderManager &);  // Not implemented.
 };
 
+vtkCxxRevisionMacro(vtkTestMagnifyRenderManager, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTestMagnifyRenderManager);
 
 vtkTestMagnifyRenderManager::vtkTestMagnifyRenderManager()

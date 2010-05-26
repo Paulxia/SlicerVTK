@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkStrahlerMetric.cxx
+Module:    $RCSfile: vtkStrahlerMetric.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -32,6 +32,7 @@ the U.S. Government retains certain rights in this software.
 //--------------------------------------------------------------------------
 
 vtkStandardNewMacro(vtkStrahlerMetric);
+vtkCxxRevisionMacro(vtkStrahlerMetric,"1.00");
 
 vtkStrahlerMetric::vtkStrahlerMetric()
 {

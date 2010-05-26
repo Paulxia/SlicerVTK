@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAmoebaMinimizer.h
+  Module:    $RCSfile: vtkAmoebaMinimizer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_COMMON_EXPORT vtkAmoebaMinimizer : public vtkObject
 {
 public:
   static vtkAmoebaMinimizer *New();
-  vtkTypeMacro(vtkAmoebaMinimizer,vtkObject);
+  vtkTypeRevisionMacro(vtkAmoebaMinimizer,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

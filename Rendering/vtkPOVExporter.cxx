@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPOVExporter.cxx
+  Module:    $RCSfile: vtkPOVExporter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,7 +15,7 @@
 /*=========================================================================
 
   Program:   VTK/ParaView Los Alamos National Laboratory Modules (PVLANL)
-  Module:    vtkPOVExporter.cxx
+  Module:    $RCSfile: vtkPOVExporter.cxx,v $
 
 Copyright (c) 2007, Los Alamos National Security, LLC
 
@@ -83,6 +83,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPOVExporter, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkPOVExporter);
 
 //Can't use printf("%d", a_vtkIdType) because vtkIdType is not always int.

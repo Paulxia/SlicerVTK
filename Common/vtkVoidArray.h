@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVoidArray.h
+  Module:    $RCSfile: vtkVoidArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ public:
   // Initialize with empty array.
   static vtkVoidArray *New();
 
-  vtkTypeMacro(vtkVoidArray,vtkObject);
+  vtkTypeRevisionMacro(vtkVoidArray,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

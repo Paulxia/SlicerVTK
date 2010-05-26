@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipPlanesPainter.h
+  Module:    $RCSfile: vtkClipPlanesPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_RENDERING_EXPORT vtkClipPlanesPainter : public vtkPainter
 {
 public:
   static vtkClipPlanesPainter* New();
-  vtkTypeMacro(vtkClipPlanesPainter, vtkPainter);
+  vtkTypeRevisionMacro(vtkClipPlanesPainter, vtkPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

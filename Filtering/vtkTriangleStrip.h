@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangleStrip.h
+  Module:    $RCSfile: vtkTriangleStrip.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_FILTERING_EXPORT vtkTriangleStrip : public vtkCell
 {
 public:
   static vtkTriangleStrip *New();
-  vtkTypeMacro(vtkTriangleStrip,vtkCell);
+  vtkTypeRevisionMacro(vtkTriangleStrip,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

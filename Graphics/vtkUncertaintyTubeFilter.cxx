@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUncertaintyTubeFilter.cxx
+  Module:    $RCSfile: vtkUncertaintyTubeFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkPolyData.h"
 #include "vtkPolyLine.h"
 
+vtkCxxRevisionMacro(vtkUncertaintyTubeFilter, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkUncertaintyTubeFilter);
 
 //

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridWriter.h
+  Module:    $RCSfile: vtkRectilinearGridWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_IO_EXPORT vtkRectilinearGridWriter : public vtkDataWriter
 {
 public:
   static vtkRectilinearGridWriter *New();
-  vtkTypeMacro(vtkRectilinearGridWriter,vtkDataWriter);
+  vtkTypeRevisionMacro(vtkRectilinearGridWriter,vtkDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
                                
   // Description:

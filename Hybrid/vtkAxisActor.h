@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAxisActor.h
+  Module:    $RCSfile: vtkAxisActor.h,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2008-07-18 00:11:04 $
+  Version:   $Revision: 1.3 $
   Thanks:    Kathleen Bonnell, B Division, Lawrence Livermore Nat'l Laboratory
 
 Copyright (c) 1993-2000 Ken Martin, Will Schroeder, Bill Lorensen 
@@ -85,7 +85,7 @@ class vtkVectorText;
 class VTK_HYBRID_EXPORT vtkAxisActor : public vtkActor
 {
 public:
-  vtkTypeMacro(vtkAxisActor,vtkActor);
+  vtkTypeRevisionMacro(vtkAxisActor,vtkActor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

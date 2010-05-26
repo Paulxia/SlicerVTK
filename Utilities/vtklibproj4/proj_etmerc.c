@@ -4,7 +4,7 @@
 ** Copyright (c) 2008   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "Id";
+LIBPROJ_ID[] = "$Id: proj_etmerc.c,v 1.1 2008-11-07 16:41:14 jeff Exp $";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the

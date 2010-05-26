@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageIterator.h
+  Module:    $RCSfile: vtkImageIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class vtkImageData;
 
 template<class DType>
-class VTK_FILTERING_EXPORT vtkImageIterator
+class vtkImageIterator
 {
 public:
   typedef DType *SpanIterator;

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChacoReader.cxx
+  Module:    $RCSfile: vtkChacoReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkChacoReader, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkChacoReader);
 
 //----------------------------------------------------------------------------

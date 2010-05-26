@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoRandomGraphSource.cxx
+  Module:    $RCSfile: vtkGeoRandomGraphSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkGeoRandomGraphSource, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkGeoRandomGraphSource);
 
 // ----------------------------------------------------------------------

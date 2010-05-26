@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationIntegerPointerKey.h
+  Module:    $RCSfile: vtkInformationIntegerPointerKey.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class VTK_COMMON_EXPORT vtkInformationIntegerPointerKey : public vtkInformationKey
 {
 public:
-  vtkTypeMacro(vtkInformationIntegerPointerKey,vtkInformationKey);
+  vtkTypeRevisionMacro(vtkInformationIntegerPointerKey,vtkInformationKey);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkInformationIntegerPointerKey(const char* name, const char* location,

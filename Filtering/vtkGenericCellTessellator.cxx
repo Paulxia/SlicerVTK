@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericCellTessellator.cxx
+  Module:    $RCSfile: vtkGenericCellTessellator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkGenericCellTessellator, "$Revision: 1.15 $");
 vtkCxxSetObjectMacro(vtkGenericCellTessellator, ErrorMetrics, vtkCollection);
 
 //-----------------------------------------------------------------------------

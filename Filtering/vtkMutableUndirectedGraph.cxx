@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMutableUndirectedGraph.cxx
+  Module:    $RCSfile: vtkMutableUndirectedGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 //----------------------------------------------------------------------------
 // class vtkMutableUndirectedGraph
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkMutableUndirectedGraph, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkMutableUndirectedGraph);
 //----------------------------------------------------------------------------
 vtkMutableUndirectedGraph::vtkMutableUndirectedGraph()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridGeometryFilter.cxx
+  Module:    $RCSfile: vtkStructuredGridGeometryFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkStructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkStructuredGridGeometryFilter, "$Revision: 1.65 $");
 vtkStandardNewMacro(vtkStructuredGridGeometryFilter);
 
 // Construct with initial extent of all the data

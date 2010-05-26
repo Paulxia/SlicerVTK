@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPassThroughLayoutStrategy.cxx
+  Module:    $RCSfile: vtkPassThroughLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPassThroughLayoutStrategy, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkPassThroughLayoutStrategy);
 
 // ----------------------------------------------------------------------

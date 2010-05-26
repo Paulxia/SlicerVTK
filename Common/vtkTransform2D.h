@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransform2D.h
+  Module:    $RCSfile: vtkTransform2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_COMMON_EXPORT vtkTransform2D : public vtkObject
 {
  public:
   static vtkTransform2D *New();
-  vtkTypeMacro(vtkTransform2D,vtkObject);
+  vtkTypeRevisionMacro(vtkTransform2D,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

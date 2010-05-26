@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLSDynaReader.h
+  Module:    $RCSfile: vtkLSDynaReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -155,7 +155,7 @@ class vtkUnstructuredGrid;
 class VTK_HYBRID_EXPORT vtkLSDynaReader : public vtkMultiBlockDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkLSDynaReader,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkLSDynaReader,vtkMultiBlockDataSetAlgorithm);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
   static vtkLSDynaReader *New();
 

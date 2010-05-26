@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGL2PSExporter.h
+  Module:    $RCSfile: vtkGL2PSExporter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -87,7 +87,7 @@ class VTK_RENDERING_EXPORT vtkGL2PSExporter : public vtkExporter
 {
 public:
   static vtkGL2PSExporter *New();
-  vtkTypeMacro(vtkGL2PSExporter,vtkExporter);
+  vtkTypeRevisionMacro(vtkGL2PSExporter,vtkExporter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

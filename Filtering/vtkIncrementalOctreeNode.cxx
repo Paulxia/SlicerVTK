@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIncrementalOctreeNode.cxx
+  Module:    $RCSfile: vtkIncrementalOctreeNode.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkIncrementalOctreeNode.h"
 
+vtkCxxRevisionMacro( vtkIncrementalOctreeNode, "$Revision: 1.7 $" );
 vtkStandardNewMacro( vtkIncrementalOctreeNode );
 
 vtkCxxSetObjectMacro( vtkIncrementalOctreeNode, PointIdSet, vtkIdList );

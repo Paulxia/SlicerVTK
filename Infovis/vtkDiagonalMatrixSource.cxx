@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDiagonalMatrixSource.cxx
+  Module:    $RCSfile: vtkDiagonalMatrixSource.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -29,6 +29,7 @@
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkDiagonalMatrixSource, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkDiagonalMatrixSource);
 
 // ----------------------------------------------------------------------

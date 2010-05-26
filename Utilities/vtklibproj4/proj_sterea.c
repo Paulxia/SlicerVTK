@@ -4,7 +4,7 @@
 ** Copyright (c) 2003, 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "Id";
+LIBPROJ_ID[] = "$Id: proj_sterea.c,v 1.2 2008-11-07 21:40:43 jeff Exp $";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -81,7 +81,10 @@ ENTRY0(sterea)
   P->fwd = e_forward;
 ENDENTRY(P)
 /*
-** Log: proj_sterea.c
+** $Log: proj_sterea.c,v $
+** Revision 1.2  2008-11-07 21:40:43  jeff
+** ENH: Fixing some proj.4 warnings.
+**
 ** Revision 1.1  2008-11-07 16:41:16  jeff
 ** ENH: Adding a 2D geoview. Adding the geographic projection library libproj4
 ** to Utilities. Updating the architecture of the geospatial views. All

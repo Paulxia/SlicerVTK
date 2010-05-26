@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIncrementalOctreePointLocator.h
+  Module:    $RCSfile: vtkIncrementalOctreePointLocator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -57,7 +57,7 @@ class VTK_FILTERING_EXPORT vtkIncrementalOctreePointLocator : public vtkIncremen
 {
 public:
  
-  vtkTypeMacro( vtkIncrementalOctreePointLocator, vtkIncrementalPointLocator );
+  vtkTypeRevisionMacro( vtkIncrementalOctreePointLocator, vtkIncrementalPointLocator );
   void PrintSelf( ostream & os, vtkIndent indent );
 
   static vtkIncrementalOctreePointLocator * New();

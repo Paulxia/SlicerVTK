@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMetaImageWriter.cxx
+  Module:    $RCSfile: vtkMetaImageWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #include <sys/stat.h>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkMetaImageWriter, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkMetaImageWriter);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoArcs.cxx
+  Module:    $RCSfile: vtkGeoArcs.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include <vtksys/stl/map>
 using vtksys_stl::map;
 
+vtkCxxRevisionMacro(vtkGeoArcs, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkGeoArcs);
 
 vtkGeoArcs::vtkGeoArcs()

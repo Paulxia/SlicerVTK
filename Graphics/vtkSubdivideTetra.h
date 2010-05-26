@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSubdivideTetra.h
+  Module:    $RCSfile: vtkSubdivideTetra.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_GRAPHICS_EXPORT vtkSubdivideTetra : public vtkUnstructuredGridAlgorith
 {
 public:
   static vtkSubdivideTetra *New();
-  vtkTypeMacro(vtkSubdivideTetra,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkSubdivideTetra,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoxWidget.h
+  Module:    $RCSfile: vtkBoxWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -96,7 +96,7 @@ public:
   // Instantiate the object.
   static vtkBoxWidget *New();
 
-  vtkTypeMacro(vtkBoxWidget,vtk3DWidget);
+  vtkTypeRevisionMacro(vtkBoxWidget,vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

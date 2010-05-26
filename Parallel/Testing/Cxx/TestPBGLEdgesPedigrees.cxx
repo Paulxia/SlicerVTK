@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestPBGLEdgesPedigrees.cxx
+  Module:    $RCSfile: TestPBGLEdgesPedigrees.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

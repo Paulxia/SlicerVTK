@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    UnstructuredGridFastGradients.cxx
+  Module:    $RCSfile: UnstructuredGridFastGradients.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

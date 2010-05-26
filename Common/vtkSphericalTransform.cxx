@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSphericalTransform.cxx
+  Module:    $RCSfile: vtkSphericalTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include <math.h>
 #include <stdlib.h>
 
+vtkCxxRevisionMacro(vtkSphericalTransform, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkSphericalTransform);
 
 //----------------------------------------------------------------------------

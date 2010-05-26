@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipConvexPolyData.h
+  Module:    $RCSfile: vtkClipConvexPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkClipConvexPolyData : public vtkPolyDataAlgorithm
 {
 public:
   static vtkClipConvexPolyData *New();
-  vtkTypeMacro(vtkClipConvexPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkClipConvexPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

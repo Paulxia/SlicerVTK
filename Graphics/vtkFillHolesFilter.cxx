@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFillHolesFilter.cxx
+  Module:    $RCSfile: vtkFillHolesFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkSphere.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkFillHolesFilter, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkFillHolesFilter);
 
 //------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeRayCastMIPFunction.h
+  Module:    $RCSfile: vtkVolumeRayCastMIPFunction.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkVolumeRayCastMIPFunction : public vtkVolumeR
 {
 public:
   static vtkVolumeRayCastMIPFunction *New();
-  vtkTypeMacro(vtkVolumeRayCastMIPFunction,vtkVolumeRayCastFunction);
+  vtkTypeRevisionMacro(vtkVolumeRayCastMIPFunction,vtkVolumeRayCastFunction);
   void PrintSelf( ostream& os, vtkIndent indent );
 
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridToTetrahedra.cxx
+  Module:    $RCSfile: vtkRectilinearGridToTetrahedra.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkVoxel.h"
 
+vtkCxxRevisionMacro(vtkRectilinearGridToTetrahedra, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkRectilinearGridToTetrahedra);
 
 // ways to convert to a voxel to tetrahedra.

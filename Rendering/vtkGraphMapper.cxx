@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphMapper.cxx
+  Module:    $RCSfile: vtkGraphMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,6 +52,7 @@
 #include "vtkVertexGlyphFilter.h"
 #include "vtkViewTheme.h"
 
+vtkCxxRevisionMacro(vtkGraphMapper, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkGraphMapper);
 
 #define VTK_CREATE(type,name) \

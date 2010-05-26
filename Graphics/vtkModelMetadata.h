@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkModelMetadata.h
+  Module:    $RCSfile: vtkModelMetadata.h,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -18,26 +18,26 @@
 ----------------------------------------------------------------------------*/
 
 // .NAME vtkModelMetadata - This class encapsulates the metadata
-//   that appear in mesh-based file formats but do not appear in
+//   that appear in mesh-based file formats but do not appear in 
 //   vtkUnstructuredGrid.  It can pack itself into the field
 //   arrays of a vtkUnstructuredGrid, and be unpacked by metadata
 //   aware filters and writers later on.
 //
 // .SECTION Description
 //   This class is inspired by the Exodus II file format, but
-//   because this class does not depend on the Exodus library, it
-//   should be possible to use it to represent metadata for other
+//   because this class does not depend on the Exodus library, it 
+//   should be possible to use it to represent metadata for other 
 //   dataset file formats.  Sandia Labs uses it in their Exodus II
 //   reader, their Exodus II writer and their EnSight writer.
 //   vtkDistributedDataFilter looks for metadata attached to
 //   it's input and redistributes the metadata with the grid.
-//
+//  
 //   The fields in this class are those described in the document
 //   "EXODUS II: A Finite Element Data Model", SAND92-2137, November 1995.
 //
 //   Element and node IDs stored in this object must be global IDs,
 //   in the event that the original dataset was partitioned across
-//   many files.
+//   many files.  
 //
 //   One way to initialize this object is by using vtkExodusModel
 //   (a Sandia class used by the Sandia Exodus reader).
@@ -45,19 +45,19 @@
 //   vtkUnstructuredGrid drawn from it and will set the required fields.
 //
 //   Alternatively, you can use all the Set*
-//   methods to set the individual fields. This class does not
-//   copy the data, it simply uses your pointer. This
-//   class will free the storage associated with your pointer
+//   methods to set the individual fields. This class does not 
+//   copy the data, it simply uses your pointer. This 
+//   class will free the storage associated with your pointer 
 //   when the class is deleted.  Most fields have sensible defaults.
 //   The only requirement is that if you are using this ModelMetadata
-//   to write out an Exodus or EnSight file in parallel, you must
-//   SetBlockIds and SetBlockIdArrayName.  Your vtkUnstructuredGrid must
+//   to write out an Exodus or EnSight file in parallel, you must 
+//   SetBlockIds and SetBlockIdArrayName.  Your vtkUnstructuredGrid must 
 //   have a cell array giving the block ID for each cell.
 //
 // .SECTION Caveats
-//   The Exodus II library supports an optimized element order map
-//   (section 3.7 in the SAND document).  It contains all the element
-//   IDs, listed in the order in which a solver should process them.
+//   The Exodus II library supports an optimized element order map 
+//   (section 3.7 in the SAND document).  It contains all the element 
+//   IDs, listed in the order in which a solver should process them.  
 //   We don't include this, and won't unless there is a request.
 //
 //   There is an assumption in some classes that the name of the cell
@@ -73,6 +73,10 @@
 
 #include "vtkObject.h"
 
+#define myVtkGetMacro(name, type) virtual type Get##name() const { return this->name; }
+
+#define myVtkGetStringMacro(name) virtual char* Get##name () const { return this->name; }
+
 class vtkDataSet;
 class vtkCharArray;
 class vtkIdTypeArray;
@@ -82,9 +86,9 @@ class vtkIntArray;
 class vtkModelMetadataSTLCloak;
 
 class VTK_GRAPHICS_EXPORT vtkModelMetadata : public vtkObject
-{
+{ 
 public:
-  vtkTypeMacro(vtkModelMetadata, vtkObject);
+  vtkTypeRevisionMacro(vtkModelMetadata, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
   static vtkModelMetadata *New();
 
@@ -105,7 +109,7 @@ public:
   //    VERBOSE_TESTING is defined in your execution environment,
   //    this method will print more than mere counts, and actually
   //    print a few of the IDs, distribution factors and so on.  If
-  //    VERY_VERBOSE_TESTING is defined, it will print out
+  //    VERY_VERBOSE_TESTING is defined, it will print out 
   //    all ID lists, distribution factor lists, and so on.
 
   virtual void PrintLocalInformation();
@@ -113,14 +117,14 @@ public:
   // Description:
   //   The title of the dataset.
   vtkSetStringMacro(Title);
-  const char *GetTitle() const {return this->Title;}
+  myVtkGetStringMacro(Title);
 
   // Description:
-  //   Set the information lines.
+  //   Set the information lines. 
   void SetInformationLines(int numLines, char **lines);
-
+  
   // Description:
-  //   Add an information line.
+  //   Add an information line. 
   void AddInformationLine(char *info);
 
   // Description:
@@ -130,15 +134,14 @@ public:
 
   // Description:
   //   Get the number of information lines.
-  int GetNumberOfInformationLines() const {
-    return this->NumberOfInformationLines;}
+  myVtkGetMacro(NumberOfInformationLines, int);
 
   // Description:
   //   Set the list of QA records.  If there was already a
   //   a list, it will be replaced with this one.  We use your
   //   pointer and delete the records when done.
-  void SetQARecords(int numberOfRecords, char *QARecords[][4]);
-
+  void SetQARecords(int numberOfRecords, char *QARecords[][4]); 
+  
   // Description:
   //   Add a QA record.  They fields are:
   //    The code name
@@ -149,12 +152,12 @@ public:
 
   // Description:
   //   Get a pointer to the 4 fields of a QA record
-  void GetQARecord(int which, char **name, char **version,
-                   char **date, char **time) const;
+  void GetQARecord(int which, 
+          char **name, char **version, char **date, char **time) const;
 
   // Description:
   //   Get the number of QA records
-  int GetNumberOfQARecords() const {return this->NumberOfQARecords;}
+  myVtkGetMacro(NumberOfQARecords, int);
 
   // Description:
   //    Set the index of the time step represented by the results
@@ -162,14 +165,14 @@ public:
   //    step indices start at 0 in this file, they start at 1 in
   //    an Exodus file.
   vtkSetMacro(TimeStepIndex, int);
-  int GetTimeStepIndex() const {return this->TimeStepIndex;}
+  myVtkGetMacro(TimeStepIndex, int);
 
   // Description:
   //    Set the total number of time steps in the file,
   //    and the value at each time step.  We use your time
   //    step value array and delete it when we're done.
   void SetTimeSteps(int numberOfTimeSteps, float *timeStepValues);
-  int GetNumberOfTimeSteps() const {return this->NumberOfTimeSteps;}
+  myVtkGetMacro(NumberOfTimeSteps, int);
 
   // Description:
   //    Get the time step values
@@ -183,13 +186,13 @@ public:
   // Description:
   //   Get the dimension of the model.  This is also the number
   //   of coordinate names.
-  int GetDimension() const {return this->Dimension;}
+  myVtkGetMacro(Dimension, int);
 
   // Description:
   //   The number of blocks in the file.  Set this before setting
   //   any of the block arrays.
   vtkSetMacro(NumberOfBlocks, int);
-  int GetNumberOfBlocks() const {return this->NumberOfBlocks;}
+  myVtkGetMacro(NumberOfBlocks, int);
 
   // Description:
   //   An arbitrary integer ID for each block.
@@ -198,7 +201,7 @@ public:
   int *GetBlockIds() const {return this->BlockIds;}
 
   // Description:
-  //   Element type for each block - a name that means
+  //   Element type for each block - a name that means 
   //   something to person who created the file.
   //   We use your pointers, and free the memory when the object is freed.
   void SetBlockElementType(char **);
@@ -220,19 +223,19 @@ public:
 
   // Description:
   //   Set or get a pointer to a list global element IDs for the
-  //   elements in each block.
+  //   elements in each block. 
   //   We use your pointers, and free the memory when the object is freed.
   void SetBlockElementIdList(int *);
   int *GetBlockElementIdList() const {return this->BlockElementIdList;}
 
   // Description:
-  //    Get the length of the list of elements in every block.
-  int GetSumElementsPerBlock() const {return this->SumElementsPerBlock;}
+  //    Get the length of the list of elements in every block. 
+  myVtkGetMacro(SumElementsPerBlock, int);                                         
 
   // Description:
   //   Get a list of the index into the BlockElementIdList of the
   //   start of each block's elements.
-  int *GetBlockElementIdListIndex()const {return this->BlockElementIdListIndex;}
+  int *GetBlockElementIdListIndex()const {return this->BlockElementIdListIndex;} 
 
   // Description:
   //   Set or get a pointer to a list of the number of attributes
@@ -251,32 +254,31 @@ public:
 
   // Description:
   //    Get the length of the list of floating point block attributes.
-  int GetSizeBlockAttributeArray() const {
-    return this->SizeBlockAttributeArray;}
+  myVtkGetMacro(SizeBlockAttributeArray, int);
 
   // Description:
   //   Get a list of the index into the BlockAttributes of the
   //   start of each block's element attribute list.
-  int *GetBlockAttributesIndex() const {return this->BlockAttributesIndex;}
+  int *GetBlockAttributesIndex()const {return this->BlockAttributesIndex;};
 
   // Description:
   //   The number of node sets in the file.  Set this value before
   //   setting the various node set arrays.
   vtkSetMacro(NumberOfNodeSets, int);
-  int GetNumberOfNodeSets() const {return this->NumberOfNodeSets;}
+  myVtkGetMacro(NumberOfNodeSets, int);
 
   // Description:
   //   Set or get the list the IDs for each node set.
   //   Length of list is the number of node sets.
   //   We use your pointer, and free the memory when the object is freed.
   void SetNodeSetIds(int *);
-  int *GetNodeSetIds() const {return this->NodeSetIds;}
+  int *GetNodeSetIds()const {return this->NodeSetIds;}
 
   // Description:
   //   Set or get a pointer to a list of the number of nodes in each node set.
   //   We use your pointer, and free the memory when the object is freed.
   int SetNodeSetSize(int *);
-  int *GetNodeSetSize() const {return this->NodeSetSize;}
+  int *GetNodeSetSize()const {return this->NodeSetSize;}
 
   // Description:
   //   Set or get a pointer to a concatenated list of the
@@ -284,63 +286,59 @@ public:
   //   node set 0, then all IDs in node set 1, and so on.
   //   We use your pointer, and free the memory when the object is freed.
   void SetNodeSetNodeIdList(int *);
-  int *GetNodeSetNodeIdList() const {return this->NodeSetNodeIdList;}
+  int *GetNodeSetNodeIdList()const {return this->NodeSetNodeIdList;}
 
   // Description:
   //   Set or get a list of the number of distribution factors stored
   //   by each node set.  This is either 0 or equal to the number of
-  //   nodes in the node set.
+  //   nodes in the node set. 
   //   Length of list is number of node sets.
   //   We use your pointer, and free the memory when the object is freed.
   int SetNodeSetNumberOfDistributionFactors(int *);
-  int *GetNodeSetNumberOfDistributionFactors() const
-    {return this->NodeSetNumberOfDistributionFactors;}
+  int *GetNodeSetNumberOfDistributionFactors()const {return this->NodeSetNumberOfDistributionFactors;}
 
   // Description:
   //   Set or get a list of the distribution factors for the node sets.
   //   The list is organized by node set, and within node set by node.
   //   We use your pointer, and free the memory when the object is freed.
   void SetNodeSetDistributionFactors(float *);
-  float *GetNodeSetDistributionFactors() const {
-    return this->NodeSetDistributionFactors;}
+  float *GetNodeSetDistributionFactors()const {return this->NodeSetDistributionFactors;}
 
   // Description:
   //   Get the total number of nodes in all node sets
-  int GetSumNodesPerNodeSet() const {return this->SumNodesPerNodeSet;}
+  myVtkGetMacro(SumNodesPerNodeSet, int);     
 
   // Description:
   //   Get the total number of distribution factors stored for all node sets
-  int GetSumDistFactPerNodeSet() const {return this->SumDistFactPerNodeSet;}
+  myVtkGetMacro(SumDistFactPerNodeSet, int);
 
   // Description:
   //   Get a list of the index of the starting entry for each node set
   //   in the list of node set node IDs.
-  int *GetNodeSetNodeIdListIndex() const {
-    return this->NodeSetNodeIdListIndex;}
+  int *GetNodeSetNodeIdListIndex() const {return this->NodeSetNodeIdListIndex;}
 
   // Description:
   //   Get a list of the index of the starting entry for each node set
   //   in the list of node set distribution factors.
-  int *GetNodeSetDistributionFactorIndex() const {
-    return this->NodeSetDistributionFactorIndex;}
+  int *GetNodeSetDistributionFactorIndex() const {return this->NodeSetDistributionFactorIndex;}
 
   // Description:
   //   Set or get the number of side sets.  Set this value before
   //   setting any of the other side set arrays.
   vtkSetMacro(NumberOfSideSets, int);
-  int GetNumberOfSideSets() const {return this->NumberOfSideSets;}
+  myVtkGetMacro(NumberOfSideSets, int);
 
   // Description:
-  //   Set or get a pointer to a list giving the ID of each side set.
+  //   Set or get a pointer to a list giving the ID of each side set. 
   //   We use your pointer, and free the memory when the object is freed.
   void SetSideSetIds(int *);
-  int *GetSideSetIds() const {return this->SideSetIds;}
+  int *GetSideSetIds()const {return this->SideSetIds;}
 
   // Description:
   //   Set or get a pointer to a list of the number of sides  in each side set.
   //   We use your pointer, and free the memory when the object is freed.
   int SetSideSetSize(int *sizes);
-  int *GetSideSetSize() const {return this->SideSetSize;}
+  int *GetSideSetSize()const {return this->SideSetSize;}
 
   // Description:
   //   Set or get a pointer to a list of the number of distribution
@@ -348,8 +346,7 @@ public:
   //   no distribution factors, or 1 per node in the side set.
   //   We use your pointer, and free the memory when the object is freed.
   int SetSideSetNumberOfDistributionFactors(int *df);
-  int *GetSideSetNumberOfDistributionFactors() const {
-    return this->SideSetNumberOfDistributionFactors;}
+  int *GetSideSetNumberOfDistributionFactors()const {return this->SideSetNumberOfDistributionFactors;}
 
   // Description:
   //   Set or get a pointer to a list of the elements containing each
@@ -357,7 +354,7 @@ public:
   //   within side set by element.
   //   We use your pointer, and free the memory when the object is freed.
   void SetSideSetElementList(int *);
-  int *GetSideSetElementList() const {return this->SideSetElementList;}
+  int *GetSideSetElementList()const {return this->SideSetElementList;}
 
   // Description:
   //   Set or get a pointer to the element side for each side in the side set.
@@ -365,8 +362,8 @@ public:
   //   types of cells.)  Side Ids are arranged by side set and within
   //   side set by side, and correspond to the SideSetElementList.
   //   We use your pointer, and free the memory when the object is freed.
-  void SetSideSetSideList(int *);
-  int *GetSideSetSideList() const {return this->SideSetSideList;}
+  void SetSideSetSideList( int *);
+  int *GetSideSetSideList()const {return this->SideSetSideList;}
 
   // Description:
   //   Set or get a pointer to a list of the number of nodes in each
@@ -374,7 +371,7 @@ public:
   //   within side set by side.
   //   We use your pointer, and free the memory when the object is freed.
   void SetSideSetNumDFPerSide(int *numNodes);
-  int *GetSideSetNumDFPerSide() const {return this->SideSetNumDFPerSide;}
+  int *GetSideSetNumDFPerSide()const {return this->SideSetNumDFPerSide;}
 
   // Description:
   //   Set or get a pointer to a list of all the distribution factors.
@@ -387,94 +384,88 @@ public:
   //   by side set, by node.
   //   We use your pointer, and free the memory when the object is freed.
   void SetSideSetDistributionFactors(float *);
-  float *GetSideSetDistributionFactors() const {
-    return this->SideSetDistributionFactors;}
+  float *GetSideSetDistributionFactors()const {return this->SideSetDistributionFactors;}
 
   // Description:
   //   Get the total number of sides in all side sets
-  int GetSumSidesPerSideSet() const {return this->SumSidesPerSideSet;}
+  myVtkGetMacro(SumSidesPerSideSet, int);
 
   // Description:
   //   Get the total number of distribution factors stored for all side sets
-  int GetSumDistFactPerSideSet() const {return this->SumDistFactPerSideSet;}
+  myVtkGetMacro(SumDistFactPerSideSet, int);
 
   // Description:
   //   Get a list of the index of the starting entry for each side set
   //   in the list of side set side IDs.
-  int *GetSideSetListIndex() const {return this->SideSetListIndex;}
+  int *GetSideSetListIndex()const {return this->SideSetListIndex;}
 
   // Description:
   //   Get a list of the index of the starting entry for each side set
   //   in the list of side set distribution factors.
-  int *GetSideSetDistributionFactorIndex() const {
-    return this->SideSetDistributionFactorIndex;}
+  int *GetSideSetDistributionFactorIndex()const {return this->SideSetDistributionFactorIndex;}
 
   // Description:
   //   The number of block properties (global variables)
-  int GetNumberOfBlockProperties() const {
-    return this->NumberOfBlockProperties;}
+  myVtkGetMacro(NumberOfBlockProperties, int);
 
   // Description:
-  //   Set or get the names of the block properties.
+  //   Set or get the names of the block properties.  
   void SetBlockPropertyNames(int numProp, char **names);
-  char **GetBlockPropertyNames() const {return this->BlockPropertyNames;}
+  char **GetBlockPropertyNames()const {return this->BlockPropertyNames;}
 
   // Description:
   //   Set or get value for each variable for each block.  List
   //   the integer values in order by variable and within variable
   //   by block.
   void SetBlockPropertyValue(int *);
-  int *GetBlockPropertyValue() const {return this->BlockPropertyValue;}
+  int *GetBlockPropertyValue()const {return this->BlockPropertyValue;}
 
   // Description:
   //   The number of node set properties (global variables)
-  int GetNumberOfNodeSetProperties() const {
-    return this->NumberOfNodeSetProperties;}
+  myVtkGetMacro(NumberOfNodeSetProperties, int);
 
   // Description:
-  //   Set or get the names of the node setproperties.
+  //   Set or get the names of the node setproperties.  
   void SetNodeSetPropertyNames(int numProp, char **names);
-  char **GetNodeSetPropertyNames() const {return this->NodeSetPropertyNames;}
+  char **GetNodeSetPropertyNames()const {return this->NodeSetPropertyNames;}
 
   // Description:
   //   Set or get value for each variable for each node set.  List
   //   the integer values in order by variable and within variable
   //   by node set.
   void SetNodeSetPropertyValue(int *);
-  int *GetNodeSetPropertyValue() const {return this->NodeSetPropertyValue;}
+  int *GetNodeSetPropertyValue()const {return this->NodeSetPropertyValue;}
 
   // Description:
   //   The number of side set properties (global variables)
-  int GetNumberOfSideSetProperties() const {
-    return this->NumberOfSideSetProperties;}
+  myVtkGetMacro(NumberOfSideSetProperties, int);
 
   // Description:
-  //   Set or get the names of the side set properties.
+  //   Set or get the names of the side set properties.  
   void SetSideSetPropertyNames(int numProp, char **names);
-  char **GetSideSetPropertyNames() const {return this->SideSetPropertyNames;}
+  char **GetSideSetPropertyNames()const {return this->SideSetPropertyNames;}
 
   // Description:
   //   Set or get value for each variable for each side set.  List
   //   the integer values in order by variable and within variable
   //   by side set.
   void SetSideSetPropertyValue(int *);
-  int *GetSideSetPropertyValue() const {return this->SideSetPropertyValue;}
+  int *GetSideSetPropertyValue()const {return this->SideSetPropertyValue;}
 
   // Description:
   //   Get the number of global variables per time step
-  int GetNumberOfGlobalVariables() const {
-    return this->NumberOfGlobalVariables;}
+  myVtkGetMacro(NumberOfGlobalVariables, int);
 
   // Description:
   //  Set or get the names of the global variables
   void SetGlobalVariableNames(int numVarNames, char **n);
-  char **GetGlobalVariableNames() const {return this->GlobalVariableNames;}
+  char **GetGlobalVariableNames()const {return this->GlobalVariableNames;}
 
   // Description:
   //   Set or get the values of the global variables at the current
   //   time step.
   void SetGlobalVariableValue(float *f);
-  float *GetGlobalVariableValue() const {return this->GlobalVariableValue;}
+  float *GetGlobalVariableValue()const {return this->GlobalVariableValue;}
 
   // Description:
   //   The ModelMetadata maintains a list of the element variables that
@@ -488,8 +479,7 @@ public:
   //   the variable in the list of original names that represents it's
   //   first component.
   void SetElementVariableInfo(int numOrigNames, char **origNames,
-                              int numNames, char **names, int *numComp,
-                              int *map);
+            int numNames, char **names,  int *numComp, int *map);
 
   // Description:
   //   The ModelMetadata maintains a list of the node variables that
@@ -503,8 +493,7 @@ public:
   //   the variable in the list of original names that represents it's
   //   first component.
   void SetNodeVariableInfo(int numOrigNames, char **origNames,
-                           int numNames, char **names,  int *numComp,
-                           int *map);
+            int numNames, char **names,  int *numComp, int *map);
 
   // Description:
   //   A truth table indicating which element variables are
@@ -512,17 +501,15 @@ public:
   //   element variables that were in the file.
   //   The table is by block ID and within block ID by variable.
   void SetElementVariableTruthTable(int *);
-  int *GetElementVariableTruthTable() const {
-    return this->ElementVariableTruthTable;}
+  int *GetElementVariableTruthTable()const {return this->ElementVariableTruthTable;}
 
   // Description:
   //   Instead of a truth table of all "1"s, you can set this
   //   instance variable to indicate that all variables are
   //   defined in all blocks.
   vtkSetMacro(AllVariablesDefinedInAllBlocks, int);
+  myVtkGetMacro(AllVariablesDefinedInAllBlocks, int);
   vtkBooleanMacro(AllVariablesDefinedInAllBlocks, int);
-  int GetAllVariablesDefinedInAllBlocks() const {
-    return this->AllVariablesDefinedInAllBlocks;}
 
   // Description:
   //   If the element variable named is defined for the block Id
@@ -547,39 +534,27 @@ public:
   //   These methods return names of the original variables, the names
   //   of the grid variables, a list of the number of components in
   //   each grid variable, and a list of the index into the list of
-  //   original variable names where the original name of the first
+  //   original variable names where the original name of the first 
   //   component of a grid variable may be found.  The names of subsequent
   //   components would immediately follow the name of the the first
   //   component.
-  int GetOriginalNumberOfElementVariables() const {
-    return this->OriginalNumberOfElementVariables;}
-  char **GetOriginalElementVariableNames() const {
-    return this->OriginalElementVariableNames;}
-  int GetNumberOfElementVariables() const {
-    return this->NumberOfElementVariables;}
-  char **GetElementVariableNames() const {
-    return this->ElementVariableNames;}
-  int *GetElementVariableNumberOfComponents() const {
-    return this->ElementVariableNumberOfComponents;}
-  int *GetMapToOriginalElementVariableNames() const {
-    return this->MapToOriginalElementVariableNames;}
+  myVtkGetMacro(OriginalNumberOfElementVariables, int);
+  char **GetOriginalElementVariableNames()const {return this->OriginalElementVariableNames;}
+  myVtkGetMacro(NumberOfElementVariables, int);
+  char **GetElementVariableNames()const {return this->ElementVariableNames;}
+  int *GetElementVariableNumberOfComponents()const {return this->ElementVariableNumberOfComponents;}
+  int *GetMapToOriginalElementVariableNames()const {return this->MapToOriginalElementVariableNames;}
 
-  int GetOriginalNumberOfNodeVariables() const {
-    return this->OriginalNumberOfNodeVariables;}
-  char **GetOriginalNodeVariableNames() const {
-    return this->OriginalNodeVariableNames;}
-  int GetNumberOfNodeVariables() const {
-    return this->NumberOfNodeVariables;}
-  char **GetNodeVariableNames() const {
-    return this->NodeVariableNames;}
-  int *GetNodeVariableNumberOfComponents() const {
-    return this->NodeVariableNumberOfComponents;}
-  int *GetMapToOriginalNodeVariableNames() const {
-    return this->MapToOriginalNodeVariableNames;}
+  myVtkGetMacro(OriginalNumberOfNodeVariables, int);
+  char **GetOriginalNodeVariableNames()const {return this->OriginalNodeVariableNames;}
+  myVtkGetMacro(NumberOfNodeVariables, int);
+  char **GetNodeVariableNames()const {return this->NodeVariableNames;}
+  int *GetNodeVariableNumberOfComponents()const {return this->NodeVariableNumberOfComponents;}
+  int *GetMapToOriginalNodeVariableNames()const {return this->MapToOriginalNodeVariableNames;}
 
   // Description:
   //   Given the name of an element variable the vtkUnstructuredGrid
-  //   described by this ModelMetadata, and a component number, give
+  //   described by this ModelMetadata, and a component number, give 
   //   the name of the scalar array in the original
   //   file that turned into that component when the file was
   //   read into VTK.
@@ -587,7 +562,7 @@ public:
 
   // Description:
   //   Given the name of an node variable the vtkUnstructuredGrid
-  //   described by this ModelMetadata, and a component number, give
+  //   described by this ModelMetadata, and a component number, give 
   //   the name of the scalar array in the original
   //   file that turned into that component when the file was
   //   read into VTK.
@@ -638,14 +613,14 @@ public:
   // Description:
   //   In VTK we take vtkUnstructuredGrids and perform
   //   operations on them, including subsetting and merging
-  //   grids.  We need to modify the metadata object
+  //   grids.  We need to modify the metadata object 
   //   when this happens.  MergeModelMetadata merges the supplied
-  //   model (both global and local metadata) into this model.
+  //   model (both global and local metadata) into this model.  
   //   The models must be from the same file set.
   //
   //   MergeModelMetadata assumes that no element in one metadata
   //   object appears in the other.  (It doesn't test for duplicate
-  //   elements when merging the two metadata objects.)
+  //   elements when merging the two metadata objects.) 
   int MergeModelMetadata(const vtkModelMetadata *em);
 
   // Description:
@@ -666,7 +641,7 @@ public:
 
   // Description:
   //   Create and return a new metadata object containing only the
-  //   global metadata of this metadata object.
+  //   global metadata of this metadata object.  
   vtkModelMetadata *ExtractGlobalMetadata();
 
   // Description:
@@ -725,7 +700,7 @@ private:
   vtkIntArray *PackSizeArray(int maxStr, int maxLine);
   int InitializeFromIntArray(vtkModelMetadata *sizes, vtkIntArray *ia);
   vtkIntArray *PackIntArray();
-  int InitializeFromCharArray(vtkModelMetadata *sizes,
+  int InitializeFromCharArray(vtkModelMetadata *sizes, 
                    vtkCharArray *uca, int maxStr, int maxLine);
   vtkCharArray *PackCharArray(int maxStr, int maxLine);
   int InitializeFromFloatArray(vtkFloatArray *fa);
@@ -734,7 +709,7 @@ private:
   static char *StrDupWithNew(const char *s);
 
   static char *WriteLines(char *p, int maxLines, int maxLen, char **lines);
-  static char *ReadLines(char ***to, int maxLines,
+  static char *ReadLines(char ***to, int maxLines, 
                             int maxLen, char *from);
   static char **CopyLines(char **lines, int num);
   static int *CopyInts(int *vals, int num);
@@ -759,11 +734,11 @@ private:
     int *id2, int *id2Idx, int id2Len,
     int **idNew, int **idNewIdx, int *idNewLen);
 
-  void ExtractCellsFromBlockData(vtkModelMetadataSTLCloak *idset,
+  void ExtractCellsFromBlockData(vtkModelMetadataSTLCloak *idset, 
                                  vtkModelMetadata *mmd);
-  void ExtractNodesFromNodeSetData(vtkModelMetadataSTLCloak *idset,
+  void ExtractNodesFromNodeSetData(vtkModelMetadataSTLCloak *idset, 
                                    vtkModelMetadata *mmd);
-  void ExtractSidesFromSideSetData(vtkModelMetadataSTLCloak *idset,
+  void ExtractSidesFromSideSetData(vtkModelMetadataSTLCloak *idset, 
                                    vtkModelMetadata *mmd);
 
   void ShowFloats(const char *what, int num, float *f);
@@ -807,7 +782,7 @@ private:
 
   // Time steps
 
-  int TimeStepIndex;     // starting at 0 (Exodus file starts at 1)
+  int TimeStepIndex;     // starting at 0 (Exodus file starts at 1) 
   int NumberOfTimeSteps; // (G)
   float *TimeStepValues; // (G)
 
@@ -825,10 +800,10 @@ private:
 
   // Block information - values that we calculate
 
-  int SumElementsPerBlock;
+  int SumElementsPerBlock;                                         
   int SizeBlockAttributeArray;
 
-  int *BlockElementIdListIndex;          // NumberOfBlocks
+  int *BlockElementIdListIndex;          // NumberOfBlocks         
   int *BlockAttributesIndex;             // NumberOfBlocks
 
   vtkModelMetadataSTLCloak *BlockIdIndex;    // computed map
@@ -854,7 +829,7 @@ private:
   // Side Sets - input to class with Set*
 
   int NumberOfSideSets; // (G)
-
+  
   int *SideSetIds;                          // NumberOfSideSets (G)
   int *SideSetSize;                         // NumberOfSideSets (L)
   int *SideSetNumberOfDistributionFactors;  // NSS (L) (SSNDF[i] = 0 or NumNodesInSide)

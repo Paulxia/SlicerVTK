@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageIterateFilter.cxx
+  Module:    $RCSfile: vtkImageIterateFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkInformationVector.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageIterateFilter, "$Revision: 1.40 $");
 
 //----------------------------------------------------------------------------
 vtkImageIterateFilter::vtkImageIterateFilter()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMaskFields.h
+  Module:    $RCSfile: vtkMaskFields.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class vtkDataSet;
 class VTK_GRAPHICS_EXPORT vtkMaskFields : public vtkDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkMaskFields,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMaskFields,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

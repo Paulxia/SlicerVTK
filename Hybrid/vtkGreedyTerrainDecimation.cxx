@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGreedyTerrainDecimation.cxx
+  Module:    $RCSfile: vtkGreedyTerrainDecimation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkGreedyTerrainDecimation, "$Revision: 1.25 $");
 vtkStandardNewMacro(vtkGreedyTerrainDecimation);
 
 // Define some constants describing vertices

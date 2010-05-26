@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenFOAMReader.cxx
+  Module:    $RCSfile: vtkOpenFOAMReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -100,7 +100,7 @@
 #endif
 // for fabs()
 #include <math.h>
-// for isalnum() / isspace() / isdigit()
+// for isalnum() / isspace() / isdigit() 
 #include <ctype.h>
 
 #if VTK_FOAMFILE_OMIT_CRCCHECK
@@ -108,6 +108,7 @@ uLong ZEXPORT crc32(uLong, const Bytef *, uInt)
 { return 0; }
 #endif
 
+vtkCxxRevisionMacro(vtkOpenFOAMReader, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkOpenFOAMReader);
 
 // forward declarations
@@ -151,7 +152,7 @@ class VTK_IO_EXPORT vtkOpenFOAMReaderPrivate : public vtkObject
 {
 public:
   static vtkOpenFOAMReaderPrivate *New();
-  vtkTypeMacro(vtkOpenFOAMReaderPrivate, vtkObject);
+  vtkTypeRevisionMacro(vtkOpenFOAMReaderPrivate, vtkObject);
 
   vtkDoubleArray *GetTimeValues()
     {return this->TimeValues;}
@@ -176,8 +177,8 @@ private:
     {
     enum bt
       {
-      PHYSICAL = 1,   // patch, wall
-      PROCESSOR = 2,  // processor
+      PHYSICAL = 1, // patch, wall
+      PROCESSOR = 2, // processor
       GEOMETRICAL = 0 // symmetryPlane, wedge, cyclic, empty, etc.
       };
     vtkStdString BoundaryName;
@@ -339,6 +340,7 @@ private:
       const vtkFoamIntVectorVector *, vtkPoints *);
 };
 
+vtkCxxRevisionMacro(vtkOpenFOAMReaderPrivate, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkOpenFOAMReaderPrivate);
 
 //-----------------------------------------------------------------------------
@@ -774,13 +776,7 @@ private:
 public:
   // #inputMode values
   enum inputModes
-    {
-        INPUT_MODE_MERGE,
-        INPUT_MODE_OVERWRITE,
-        INPUT_MODE_PROTECT,
-        INPUT_MODE_WARN,
-        INPUT_MODE_ERROR
-    };
+    {INPUT_MODE_MERGE, INPUT_MODE_OVERWRITE, INPUT_MODE_ERROR};
 
 private:
   bool Is13Positions;
@@ -871,43 +867,7 @@ private:
     // lineNumber_ = 0;
   }
 
-  //! Return file name (part beyond last /)
-  vtkStdString ExtractName(const vtkStdString& path) const
-  {
-#if defined(_WIN32)
-    const vtkStdString pathFindSeparator = "/\\", pathSeparator = "\\";
-#else
-    const vtkStdString pathFindSeparator = "/", pathSeparator = "/";
-#endif
-    vtkStdString::size_type pos = path.find_last_of(pathFindSeparator);
-    if (pos == vtkStdString::npos)
-      {
-      // no slash
-      return path;
-      }
-    else if (pos+1 == path.size())
-      {
-      // final trailing slash
-      vtkStdString::size_type endPos = pos;
-      pos = path.find_last_of(pathFindSeparator, pos-1);
-      if (pos == vtkStdString::npos)
-        {
-        // no further slash
-        return path.substr(0, endPos);
-        }
-      else
-        {
-        return path.substr(pos + 1, endPos - pos - 1);
-        }
-      }
-    else
-      {
-      return path.substr(pos + 1, vtkStdString::npos);
-      }
-  }
-
-  //! Return directory path name (part before last /)
-  vtkStdString ExtractPath(const vtkStdString& path) const
+  const vtkStdString ExtractPath(const vtkStdString& path) const
   {
 #if defined(_WIN32)
     const vtkStdString pathFindSeparator = "/\\", pathSeparator = "\\";
@@ -915,11 +875,9 @@ private:
     const vtkStdString pathFindSeparator = "/", pathSeparator = "/";
 #endif
     const vtkStdString::size_type pos = path.find_last_of(pathFindSeparator);
-    return pos == vtkStdString::npos
-        ? vtkStdString(".") + pathSeparator
+    return pos == vtkStdString::npos ? vtkStdString(".") + pathSeparator
         : path.substr(0, pos + 1);
   }
-
 
 public:
   vtkFoamFile(const vtkStdString& casePath) :
@@ -976,13 +934,6 @@ public:
             {
             expandedPath = this->CasePath;
             wasPathSeparator = true;
-            isExpanded = true;
-            }
-          else if (variable == "FOAM_CASENAME")
-            {
-            // FOAM_CASENAME is the final directory name from CasePath
-            expandedPath += this->ExtractName(this->CasePath);
-            wasPathSeparator = false;
             isExpanded = true;
             }
           else
@@ -1272,8 +1223,8 @@ public:
       case '#':
         {
 #if VTK_FOAMFILE_RECOGNIZE_LINEHEAD
-        // the OpenFOAM #-directives can indeed be placed in the
-        // middle of a line
+        // placing #-directives in the middle of a line looks like
+        // valid for the genuine OF 1.5 parser
         if(!this->Superclass::WasNewline)
           {
           throw this->StackString()
@@ -1297,28 +1248,6 @@ public:
           this->IncludeFile(fileNameToken.ToString(),
               this->ExtractPath(this->FileName));
           }
-        else if (directiveToken == "includeIfPresent")
-          {
-          vtkFoamToken fileNameToken;
-          if (!this->Read(fileNameToken))
-            {
-            throw this->StackString() << "Unexpected EOF reading filename";
-            }
-
-          // special treatment since the file is allowed to be missing
-          const vtkStdString fullName =
-            this->ExpandPath(fileNameToken.ToString(),
-                this->ExtractPath(this->FileName));
-
-          FILE *fh = fopen(fullName.c_str(), "rb");
-          if (fh)
-            {
-            fclose(fh);
-
-            this->IncludeFile(fileNameToken.ToString(),
-                 this->ExtractPath(this->FileName));
-            }
-          }
         else if (directiveToken == "inputMode")
           {
           vtkFoamToken modeToken;
@@ -1327,7 +1256,7 @@ public:
             throw this->StackString()
             << "Unexpected EOF reading inputMode specifier";
             }
-          if (modeToken == "merge" || modeToken == "default")
+          if (modeToken == "merge")
             {
             this->InputMode = INPUT_MODE_MERGE;
             }
@@ -1335,26 +1264,14 @@ public:
             {
             this->InputMode = INPUT_MODE_OVERWRITE;
             }
-          else if (modeToken == "protect")
-            {
-            // not properly supported - treat like "merge" for now
-            // this->InputMode = INPUT_MODE_PROTECT;
-            this->InputMode = INPUT_MODE_MERGE;
-            }
-          else if (modeToken == "warn")
-            {
-            // not properly supported - treat like "error" for now
-            // this->InputMode = INPUT_MODE_WARN;
-            this->InputMode = INPUT_MODE_ERROR;
-            }
-          else if (modeToken == "error")
+          else if (modeToken == "error" || modeToken == "default")
             {
             this->InputMode = INPUT_MODE_ERROR;
             }
           else
             {
             throw this->StackString() << "Expected one of inputMode specifiers "
-            "(merge, overwrite, protect, warn, error, default), found " << modeToken;
+            "(merge, overwrite, error, default), found " << modeToken;
             }
           }
         else
@@ -1793,7 +1710,7 @@ bool vtkFoamFile::InflateNext(unsigned char *buf,
       if (this->Superclass::Z.avail_in == 0)
         {
         this->Superclass::Z.next_in = this->Superclass::Inbuf;
-        this->Superclass::Z.avail_in = static_cast<uInt>(fread(this->Superclass::Inbuf, 1,
+        this->Superclass::Z.avail_in = static_cast<uInt>(fread(this->Superclass::Inbuf, 1, 
           VTK_FOAMFILE_INBUFSIZE, this->Superclass::File));
         if (ferror(this->Superclass::File))
           {
@@ -2872,6 +2789,7 @@ public:
                 previousEntry->Read(io);
                 }
               else // INPUT_MODE_ERROR
+
                 {
                 throw vtkFoamError() << "Found duplicated entries with keyword "
                 << currToken.ToString();

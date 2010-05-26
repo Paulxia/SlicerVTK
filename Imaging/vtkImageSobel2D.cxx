@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSobel2D.cxx
+  Module:    $RCSfile: vtkImageSobel2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageSobel2D, "$Revision: 1.38 $");
 vtkStandardNewMacro(vtkImageSobel2D);
 
 //----------------------------------------------------------------------------

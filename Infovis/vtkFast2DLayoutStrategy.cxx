@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFast2DLayoutStrategy.cxx
+  Module:    $RCSfile: vtkFast2DLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkFast2DLayoutStrategy, "$Revision: 1.24 $");
 vtkStandardNewMacro(vtkFast2DLayoutStrategy);
 
 // This is just a convenient macro for smart pointers

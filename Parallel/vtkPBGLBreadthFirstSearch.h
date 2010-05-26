@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLBreadthFirstSearch.h
+  Module:    $RCSfile: vtkPBGLBreadthFirstSearch.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLBreadthFirstSearch : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLBreadthFirstSearch *New();
-  vtkTypeMacro(vtkPBGLBreadthFirstSearch, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLBreadthFirstSearch, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

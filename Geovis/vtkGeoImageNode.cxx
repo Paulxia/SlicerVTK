@@ -1,7 +1,7 @@
 /*=============================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoImageNode.cxx
+  Module:    $RCSfile: vtkGeoImageNode.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkXMLImageDataReader.h"
 #include "vtkXMLImageDataWriter.h"
 
+vtkCxxRevisionMacro(vtkGeoImageNode, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkGeoImageNode);
 
 

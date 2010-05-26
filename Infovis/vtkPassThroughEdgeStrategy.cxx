@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPassThroughEdgeStrategy.cxx
+  Module:    $RCSfile: vtkPassThroughEdgeStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include <vtksys/stl/map>
 
 vtkStandardNewMacro(vtkPassThroughEdgeStrategy);
+vtkCxxRevisionMacro(vtkPassThroughEdgeStrategy, "$Revision: 1.1 $");
 
 vtkPassThroughEdgeStrategy::vtkPassThroughEdgeStrategy()
 {

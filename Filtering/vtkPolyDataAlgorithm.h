@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataAlgorithm.h
+  Module:    $RCSfile: vtkPolyDataAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_FILTERING_EXPORT vtkPolyDataAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkPolyDataAlgorithm *New();
-  vtkTypeMacro(vtkPolyDataAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkPolyDataAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

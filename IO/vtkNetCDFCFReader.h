@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNetCDFCFReader.h
+  Module:    $RCSfile: vtkNetCDFCFReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class vtkStructuredGrid;
 class VTK_IO_EXPORT vtkNetCDFCFReader : public vtkNetCDFReader
 {
 public:
-  vtkTypeMacro(vtkNetCDFCFReader, vtkNetCDFReader);
+  vtkTypeRevisionMacro(vtkNetCDFCFReader, vtkNetCDFReader);
   static vtkNetCDFCFReader *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

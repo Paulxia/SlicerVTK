@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalInterpolatedVelocityField.h
+  Module:    $RCSfile: vtkTemporalInterpolatedVelocityField.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -64,7 +64,7 @@ class vtkCachingInterpolatedVelocityField;
 class VTK_PARALLEL_EXPORT vtkTemporalInterpolatedVelocityField : public vtkFunctionSet
 {
 public:
-  vtkTypeMacro(vtkTemporalInterpolatedVelocityField,vtkFunctionSet);
+  vtkTypeRevisionMacro(vtkTemporalInterpolatedVelocityField,vtkFunctionSet);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

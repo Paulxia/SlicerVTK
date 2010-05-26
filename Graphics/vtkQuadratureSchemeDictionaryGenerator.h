@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadratureSchemeDictionaryGenerator.h
+  Module:    $RCSfile: vtkQuadratureSchemeDictionaryGenerator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class vtkInformationVector;
 class VTK_GRAPHICS_EXPORT vtkQuadratureSchemeDictionaryGenerator : public vtkDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkQuadratureSchemeDictionaryGenerator,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkQuadratureSchemeDictionaryGenerator,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkQuadratureSchemeDictionaryGenerator *New();
 

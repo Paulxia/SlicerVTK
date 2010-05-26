@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeSurfaceFilter.cxx
+  Module:    $RCSfile: vtkHyperOctreeSurfaceFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPointData.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkHyperOctreeSurfaceFilter, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkHyperOctreeSurfaceFilter);
 
 // merging: locator

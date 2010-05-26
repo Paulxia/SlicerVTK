@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPipelineGraphSource.cxx
+  Module:    $RCSfile: vtkPipelineGraphSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,6 +47,7 @@ using vtksys_ios::ostringstream;
 #define VTK_CREATE(type, name) \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkPipelineGraphSource, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPipelineGraphSource);
 
 // ----------------------------------------------------------------------

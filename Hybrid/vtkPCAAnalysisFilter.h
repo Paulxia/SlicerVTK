@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPCAAnalysisFilter.h
+  Module:    $RCSfile: vtkPCAAnalysisFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,7 +56,7 @@ class vtkPointSet;
 class VTK_HYBRID_EXPORT vtkPCAAnalysisFilter : public vtkPointSetAlgorithm
 {
  public:
-  vtkTypeMacro(vtkPCAAnalysisFilter,vtkPointSetAlgorithm);
+  vtkTypeRevisionMacro(vtkPCAAnalysisFilter,vtkPointSetAlgorithm);
   
   // Description:
   // Prints information about the state of the filter.

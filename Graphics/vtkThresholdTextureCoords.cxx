@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkThresholdTextureCoords.cxx
+  Module:    $RCSfile: vtkThresholdTextureCoords.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkThresholdTextureCoords, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkThresholdTextureCoords);
 
 // Construct with lower threshold=0, upper threshold=1, threshold 

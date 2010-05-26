@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphHierarchicalBundleEdges.cxx
+  Module:    $RCSfile: vtkGraphHierarchicalBundleEdges.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 #include <vtksys/stl/map>
 using vtksys_stl::map;
 
+vtkCxxRevisionMacro(vtkGraphHierarchicalBundleEdges, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkGraphHierarchicalBundleEdges);
 
 vtkGraphHierarchicalBundleEdges::vtkGraphHierarchicalBundleEdges()
@@ -160,7 +161,7 @@ int vtkGraphHierarchicalBundleEdges::RequestData(
             }
           else
             {
-            graphDomain = graphIdArray->GetName();
+            graphDomain == graphIdArray->GetName();
             }
           if(graphDomain != treeDomain)
             {
@@ -277,7 +278,6 @@ int vtkGraphHierarchicalBundleEdges::RequestData(
 
     // Insert points into the polyline going up the tree to
     // the common ancestor.
-    output->ClearEdgePoints(e.Id);
     for (vtkIdType s = 0; s < sourceList->IsId(curTarget); s++)
       {
       tree->GetPoint(sourceList->GetId(s), pt);

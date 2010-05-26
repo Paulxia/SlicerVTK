@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkPairwiseExtractHistogram2D.cxx
+Module:    $RCSfile: vtkPairwiseExtractHistogram2D.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -45,6 +45,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include <vtkstd/string>
 #include <vtkstd/map>
 //------------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkPairwiseExtractHistogram2D, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkPairwiseExtractHistogram2D);
 //------------------------------------------------------------------------------
 class vtkPairwiseExtractHistogram2D::Internals
@@ -86,8 +87,9 @@ void vtkPairwiseExtractHistogram2D::PrintSelf(ostream& os, vtkIndent indent)
 //------------------------------------------------------------------------------
 void vtkPairwiseExtractHistogram2D::Learn(vtkTable *inData, 
                                           vtkTable* vtkNotUsed(inParameters), 
-                                          vtkMultiBlockDataSet *outMeta)
+                                          vtkDataObject *outMetaDO)
 {
+  vtkTable* outMeta = vtkTable::SafeDownCast( outMetaDO ); 
   if ( ! outMeta ) 
     { 
     return; 
@@ -99,9 +101,7 @@ void vtkPairwiseExtractHistogram2D::Learn(vtkTable *inData,
     return;
     }
   
-  // The primary statistics table
-  vtkTable* primaryTab = vtkTable::New();
-
+  
   // if the number of columns in the input has changed, we'll need to do 
   // some reinitializing
   int numHistograms = inData->GetNumberOfColumns()-1;
@@ -254,7 +254,7 @@ void vtkPairwiseExtractHistogram2D::Learn(vtkTable *inData,
     }
   
   // build the output table
-  primaryTab->Initialize();
+  outMeta->Initialize();
   for (int i=0; i<this->HistogramFilters->GetNumberOfItems(); i++)
     {
     vtkExtractHistogram2D* f = this->GetHistogramFilter(i);
@@ -262,18 +262,25 @@ void vtkPairwiseExtractHistogram2D::Learn(vtkTable *inData,
       {
       if (f->GetMTime() > this->BuildTime)
         f->Update();
-      primaryTab->AddColumn(f->GetOutput()->GetColumn(0));
+      outMeta->AddColumn(f->GetOutput()->GetColumn(0));
       }
     }
   
-  // Finally set first block of output meta port to primary statistics table
-  outMeta->SetNumberOfBlocks( 1 );
-  outMeta->GetMetaData( static_cast<unsigned>( 0 ) )->Set( vtkCompositeDataSet::NAME(), "Primary Statistics" );
-  outMeta->SetBlock( 0, primaryTab );
-
-  // Clean up
-  primaryTab->Delete();
-
+  // build the reordered output table
+/*
+  vtkTable* outReorderedTable = vtkTable::SafeDownCast(
+  this->GetOutputDataObject(vtkPairwiseExtractHistogram2D::REORDERED_INPUT));
+  
+  if (outReorderedTable && this->Implementation->ColumnPairs.size())
+  {
+  outReorderedTable->Initialize();
+  outReorderedTable->AddColumn(inData->GetColumnByName(this->Implementation->ColumnPairs[0].first));
+  for (int i=0; i<(int)this->Implementation->ColumnPairs.size(); i++)
+  {
+  outReorderedTable->AddColumn(inData->GetColumnByName(this->Implementation->ColumnPairs[i].second));
+  }
+  }
+*/
   this->BuildTime.Modified();
 }
 //------------------------------------------------------------------------------

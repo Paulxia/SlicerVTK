@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPImageDataWriter.cxx
+  Module:    $RCSfile: vtkXMLPImageDataWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkXMLImageDataWriter.h"
 
+vtkCxxRevisionMacro(vtkXMLPImageDataWriter, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkXMLPImageDataWriter);
 
 //----------------------------------------------------------------------------

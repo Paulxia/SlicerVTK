@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFLUENTReader.cxx
+  Module:    $RCSfile: vtkFLUENTReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,6 +58,7 @@
 #include <ctype.h>
 #include <sys/stat.h>
 
+vtkCxxRevisionMacro(vtkFLUENTReader, "$Revision: 1.27 $");
 vtkStandardNewMacro(vtkFLUENTReader);
 
 #define VTK_FILE_BYTE_ORDER_BIG_ENDIAN 0

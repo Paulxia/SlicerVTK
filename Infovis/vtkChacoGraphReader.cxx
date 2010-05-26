@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChacoGraphReader.cxx
+  Module:    $RCSfile: vtkChacoGraphReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -64,6 +64,7 @@
 // so it would be nice to put this in a common file.
 static int my_getline(vtksys_ios::istream& stream, vtkStdString &output, char delim='\n');
 
+vtkCxxRevisionMacro(vtkChacoGraphReader, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkChacoGraphReader);
 
 vtkChacoGraphReader::vtkChacoGraphReader()

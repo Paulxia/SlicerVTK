@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFastSplatter.h
+  Module:    $RCSfile: vtkFastSplatter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@
 class VTK_IMAGING_EXPORT vtkFastSplatter : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkFastSplatter, vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkFastSplatter, vtkImageAlgorithm);
   static vtkFastSplatter *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

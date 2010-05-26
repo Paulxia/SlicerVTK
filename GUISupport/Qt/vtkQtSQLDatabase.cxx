@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtSQLDatabase.cxx
+  Module:    $RCSfile: vtkQtSQLDatabase.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include <vtksys/SystemTools.hxx>
 #include <vtksys/ios/sstream>
 
+vtkCxxRevisionMacro(vtkQtSQLDatabase, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkQtSQLDatabase);
 
 int vtkQtSQLDatabase::id = 0;

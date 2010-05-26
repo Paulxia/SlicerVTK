@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnityMatrixWeighting.cxx
+  Module:    $RCSfile: vtkUnityMatrixWeighting.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -32,6 +32,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkUnityMatrixWeighting
 
+vtkCxxRevisionMacro(vtkUnityMatrixWeighting, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkUnityMatrixWeighting);
 
 vtkUnityMatrixWeighting::vtkUnityMatrixWeighting() :

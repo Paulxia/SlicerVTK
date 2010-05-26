@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAVIWriter.h
+  Module:    $RCSfile: vtkAVIWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_IO_EXPORT vtkAVIWriter : public vtkGenericMovieWriter
 {
 public:
   static vtkAVIWriter *New();
-  vtkTypeMacro(vtkAVIWriter,vtkGenericMovieWriter);
+  vtkTypeRevisionMacro(vtkAVIWriter,vtkGenericMovieWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

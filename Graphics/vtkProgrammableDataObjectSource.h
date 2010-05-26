@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProgrammableDataObjectSource.h
+  Module:    $RCSfile: vtkProgrammableDataObjectSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_GRAPHICS_EXPORT vtkProgrammableDataObjectSource : public vtkDataObject
 {
 public:
   static vtkProgrammableDataObjectSource *New();
-  vtkTypeMacro(vtkProgrammableDataObjectSource,vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkProgrammableDataObjectSource,vtkDataObjectAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

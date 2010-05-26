@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGradientFilter.cxx
+  Module:    $RCSfile: vtkGradientFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@
 
 //-----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkGradientFilter, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkGradientFilter);
 
 namespace 

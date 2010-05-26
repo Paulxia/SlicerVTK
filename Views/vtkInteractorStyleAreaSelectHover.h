@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleAreaSelectHover.h
+  Module:    $RCSfile: vtkInteractorStyleAreaSelectHover.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class VTK_VIEWS_EXPORT vtkInteractorStyleAreaSelectHover : public vtkInteractorS
 {
 public:
   static vtkInteractorStyleAreaSelectHover* New();
-  vtkTypeMacro(vtkInteractorStyleAreaSelectHover,vtkInteractorStyleRubberBand2D);
+  vtkTypeRevisionMacro(vtkInteractorStyleAreaSelectHover,vtkInteractorStyleRubberBand2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

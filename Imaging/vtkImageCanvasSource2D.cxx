@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageCanvasSource2D.cxx
+  Module:    $RCSfile: vtkImageCanvasSource2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@ public:
 
 
 
+vtkCxxRevisionMacro(vtkImageCanvasSource2D, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkImageCanvasSource2D);
 
 //----------------------------------------------------------------------------

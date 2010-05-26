@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOrientedGlyphFocalPlaneContourRepresentation.cxx
+  Module:    $RCSfile: vtkOrientedGlyphFocalPlaneContourRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 #include "vtkFocalPlanePointPlacer.h"
 #include "vtkBezierContourLineInterpolator.h"
 
+vtkCxxRevisionMacro(vtkOrientedGlyphFocalPlaneContourRepresentation, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkOrientedGlyphFocalPlaneContourRepresentation);
 
 //----------------------------------------------------------------------

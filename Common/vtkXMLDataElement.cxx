@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLDataElement.cxx
+  Module:    $RCSfile: vtkXMLDataElement.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@ using vtksys_ios::istringstream;
 using vtkstd::string;
 #include <locale> // C++ locale
 
+vtkCxxRevisionMacro(vtkXMLDataElement, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkXMLDataElement);
 
 //----------------------------------------------------------------------------

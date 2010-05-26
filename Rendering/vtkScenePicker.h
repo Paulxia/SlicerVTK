@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkScenePicker.h
+  Module:    $RCSfile: vtkScenePicker.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,7 +56,7 @@ class VTK_RENDERING_EXPORT vtkScenePicker : public vtkObject
   //ETX
 public:
   static vtkScenePicker * New();
-  vtkTypeMacro(vtkScenePicker,vtkObject);
+  vtkTypeRevisionMacro(vtkScenePicker,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

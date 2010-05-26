@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistanceRepresentation2D.cxx
+  Module:    $RCSfile: vtkDistanceRepresentation2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkTextProperty.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkDistanceRepresentation2D, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkDistanceRepresentation2D);
 
 //----------------------------------------------------------------------

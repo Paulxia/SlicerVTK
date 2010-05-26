@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTensorProbeRepresentation.h
+  Module:    $RCSfile: vtkTensorProbeRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_WIDGETS_EXPORT vtkTensorProbeRepresentation :
 public:
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkTensorProbeRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkTensorProbeRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPruneTreeFilter.cxx
+  Module:    $RCSfile: vtkPruneTreeFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include <vtksys/stl/utility>
 #include <vtksys/stl/vector>
 
+vtkCxxRevisionMacro(vtkPruneTreeFilter, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkPruneTreeFilter);
 
 

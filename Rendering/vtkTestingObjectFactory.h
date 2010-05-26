@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTestingObjectFactory.h
+  Module:    $RCSfile: vtkTestingObjectFactory.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,25 +25,24 @@
 // exit. This factory overrides vtkRenderWindowInteractor so that the
 // Start() method just returns.
 // To use this factory:
-// \code
 //   #include "vtkTestingObjectFactory.h"
 //   vtkTestingObjectFactory* factory = vtkTestingObjectFactory::New();
 //   vtkObjectFactory::RegisterFactory(factory);
-// \endcode
-
+//
 #include "vtkObjectFactory.h"
-
 #include "vtkTesting.h"            // Required for testing framework
 #include "vtkTestDriver.h"         // Required for testing framework
 #include "vtkTestingInteractor.h"  // Required for testing framework
 #include "vtkSmartPointer.h"       // Required for testing framework
-
+//BTX
+#include <vtkstd/string> // STL Header; Required for string
+//ETX
 
 class VTK_RENDERING_EXPORT vtkTestingObjectFactory : public vtkObjectFactory
 {
 public:
   static vtkTestingObjectFactory* New();
-  vtkTypeMacro(vtkTestingObjectFactory,vtkObjectFactory);
+  vtkTypeRevisionMacro(vtkTestingObjectFactory,vtkObjectFactory);
   virtual const char* GetVTKSourceVersion();
   const char* GetDescription() { return "Factory for overrides during testing"; }
   void PrintSelf(ostream& os, vtkIndent indent);

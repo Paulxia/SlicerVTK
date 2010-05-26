@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTubeFilter.cxx
+  Module:    $RCSfile: vtkTubeFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 #include "vtkPolyLine.h"
 
+vtkCxxRevisionMacro(vtkTubeFilter, "$Revision: 1.89 $");
 vtkStandardNewMacro(vtkTubeFilter);
 
 // Construct object with radius 0.5, radius variation turned off, the number 

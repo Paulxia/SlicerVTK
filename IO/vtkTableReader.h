@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableReader.h
+  Module:    $RCSfile: vtkTableReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_IO_EXPORT vtkTableReader : public vtkDataReader
 {
 public:
   static vtkTableReader *New();
-  vtkTypeMacro(vtkTableReader,vtkDataReader);
+  vtkTypeRevisionMacro(vtkTableReader,vtkDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

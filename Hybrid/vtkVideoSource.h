@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVideoSource.h
+  Module:    $RCSfile: vtkVideoSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_HYBRID_EXPORT vtkVideoSource : public vtkImageAlgorithm
 {
 public:
   static vtkVideoSource *New();
-  vtkTypeMacro(vtkVideoSource,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkVideoSource,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);   
 
   // Description:

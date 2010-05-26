@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnsignedCharArray.h
+  Module:    $RCSfile: vtkUnsignedCharArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_COMMON_EXPORT vtkUnsignedCharArray : public vtkDataArray
 {
 public:
   static vtkUnsignedCharArray* New();
-  vtkTypeMacro(vtkUnsignedCharArray,vtkDataArray);
+  vtkTypeRevisionMacro(vtkUnsignedCharArray,vtkDataArray);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -94,42 +94,6 @@ public:
     { return this->RealSuperclass::InsertNextValue(f); }
 
   // Description:
-  // Get the range of array values for the given component in the
-  // native data type.
-  unsigned char *GetValueRange(int comp)
-    { return this->RealSuperclass::GetValueRange(comp); }
-//BTX
-  void GetValueRange(unsigned char range[2], int comp)
-    { this->RealSuperclass::GetValueRange(range, comp); }
-//ETX
-
-  // Description:
-  // Get the range of array values for the 0th component in the
-  // native data type.
-  unsigned char *GetValueRange()
-    { return this->RealSuperclass::GetValueRange(0); }
-//BTX
-  void GetValueRange(unsigned char range[2])
-    { this->RealSuperclass::GetValueRange(range, 0); }
-//ETX
-
-  // Description:
-  // Get the minimum data value in its native type.
-  static unsigned char GetDataTypeValueMin() { return VTK_UNSIGNED_CHAR_MIN; }
-
-  // Description:
-  // Get the maximum data value in its native type.
-  static unsigned char GetDataTypeValueMax() { return VTK_UNSIGNED_CHAR_MAX; }
-
-//BTX
-  // Description:
-  // Get the data type range in its native type.
-  static void GetDataTypeValueRange(unsigned char range[2])
-    { range[0] = vtkUnsignedCharArray::GetDataTypeValueMin();
-      range[1] = vtkUnsignedCharArray::GetDataTypeValueMax(); }
-//ETX
-
-  // Description:
   // Get the address of a particular data index. Make sure data is allocated
   // for the number of items requested. Set MaxId according to the number of
   // data values requested.
@@ -148,7 +112,7 @@ public:
   // the array supplied by the user.  Set save to 1 to keep the class
   // from deleting the array when it cleans up or reallocates memory.
   // The class uses the actual array provided; it does not copy the data
-  // from the suppled array.
+  // from the suppled array. 
   void SetArray(unsigned char* array, vtkIdType size, int save)
     { this->RealSuperclass::SetArray(array, size, save); }
   void SetArray(unsigned char* array, vtkIdType size, int save, int deleteMethod)

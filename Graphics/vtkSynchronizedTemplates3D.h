@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSynchronizedTemplates3D.h
+  Module:    $RCSfile: vtkSynchronizedTemplates3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_GRAPHICS_EXPORT vtkSynchronizedTemplates3D : public vtkPolyDataAlgorit
 public:
   static vtkSynchronizedTemplates3D *New();
 
-  vtkTypeMacro(vtkSynchronizedTemplates3D,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSynchronizedTemplates3D,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

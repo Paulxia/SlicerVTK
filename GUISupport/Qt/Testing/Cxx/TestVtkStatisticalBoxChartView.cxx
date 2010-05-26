@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestVtkStatisticalBoxChartView.cxx
+  Module:    $RCSfile: TestVtkStatisticalBoxChartView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

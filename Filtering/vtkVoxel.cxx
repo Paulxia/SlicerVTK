@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVoxel.cxx
+  Module:    $RCSfile: vtkVoxel.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPoints.h"
 #include "vtkBox.h"
 
+vtkCxxRevisionMacro(vtkVoxel, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkVoxel);
 
 //----------------------------------------------------------------------------

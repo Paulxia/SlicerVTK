@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRibbonFilter.cxx
+  Module:    $RCSfile: vtkRibbonFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPolyData.h"
 #include "vtkPolyLine.h"
 
+vtkCxxRevisionMacro(vtkRibbonFilter, "$Revision: 1.83 $");
 vtkStandardNewMacro(vtkRibbonFilter);
 
 // Construct ribbon so that width is 0.1, the width does 

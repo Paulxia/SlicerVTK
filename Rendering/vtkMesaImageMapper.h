@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaImageMapper.h
+  Module:    $RCSfile: vtkMesaImageMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkMesaImageMapper : public vtkImageMapper
 {
 public:
   static vtkMesaImageMapper *New();
-  vtkTypeMacro(vtkMesaImageMapper,vtkImageMapper);
+  vtkTypeRevisionMacro(vtkMesaImageMapper,vtkImageMapper);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

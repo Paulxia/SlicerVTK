@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLMinimumSpanningTree.cxx
+  Module:    $RCSfile: vtkPBGLMinimumSpanningTree.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,6 +59,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkPBGLMinimumSpanningTree, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkPBGLMinimumSpanningTree);
 
 // Constructor/Destructor

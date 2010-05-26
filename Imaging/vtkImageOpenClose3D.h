@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageOpenClose3D.h
+  Module:    $RCSfile: vtkImageOpenClose3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ public:
   // Description:
   // Default open value is 0, and default close value is 255.
   static vtkImageOpenClose3D *New();
-  vtkTypeMacro(vtkImageOpenClose3D,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageOpenClose3D,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

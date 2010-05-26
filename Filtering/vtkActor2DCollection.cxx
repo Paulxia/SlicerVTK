@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkActor2DCollection.cxx
+  Module:    $RCSfile: vtkActor2DCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkActor2DCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkActor2DCollection, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkActor2DCollection);
 
 // protected function to delete an element. Internal use only.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkZLibDataCompressor.h
+  Module:    $RCSfile: vtkZLibDataCompressor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,7 +25,7 @@
 class VTK_IO_EXPORT vtkZLibDataCompressor : public vtkDataCompressor
 {
 public:
-  vtkTypeMacro(vtkZLibDataCompressor,vtkDataCompressor);
+  vtkTypeRevisionMacro(vtkZLibDataCompressor,vtkDataCompressor);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkZLibDataCompressor* New();  
   

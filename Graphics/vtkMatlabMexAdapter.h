@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatlabMexAdapter.h
+  Module:    $RCSfile: vtkMatlabMexAdapter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -68,7 +68,7 @@ class VTK_GRAPHICS_EXPORT vtkMatlabMexAdapter : public vtkObject
 
 public:
 
-  vtkTypeMacro(vtkMatlabMexAdapter, vtkObject);
+  vtkTypeRevisionMacro(vtkMatlabMexAdapter, vtkObject);
 
   void PrintSelf(ostream& os, vtkIndent indent);
 

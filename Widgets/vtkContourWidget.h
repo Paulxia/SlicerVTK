@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContourWidget.h
+  Module:    $RCSfile: vtkContourWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -128,7 +128,7 @@ public:
 
   // Description:
   // Standard methods for a VTK class.
-  vtkTypeMacro(vtkContourWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkContourWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredPointsCollection.h
+  Module:    $RCSfile: vtkStructuredPointsCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_FILTERING_EXPORT vtkStructuredPointsCollection : public vtkCollection
 {
 public:
   static vtkStructuredPointsCollection *New();
-  vtkTypeMacro(vtkStructuredPointsCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkStructuredPointsCollection,vtkCollection);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

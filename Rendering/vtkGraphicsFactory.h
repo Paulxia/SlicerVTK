@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphicsFactory.h
+  Module:    $RCSfile: vtkGraphicsFactory.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,7 +24,7 @@ class VTK_RENDERING_EXPORT vtkGraphicsFactory : public vtkObject
 {
 public:
   static vtkGraphicsFactory *New();
-  vtkTypeMacro(vtkGraphicsFactory,vtkObject);
+  vtkTypeRevisionMacro(vtkGraphicsFactory,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

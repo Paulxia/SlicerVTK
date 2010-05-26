@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNetworkHierarchy.cxx
+  Module:    $RCSfile: vtkNetworkHierarchy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 #include <vtksys/ios/sstream>
 #include <vtkstd/algorithm>
 
+vtkCxxRevisionMacro(vtkNetworkHierarchy, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkNetworkHierarchy);
 
 // This is just a macro wrapping for smart pointers

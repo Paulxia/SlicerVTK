@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageReader2.h
+  Module:    $RCSfile: vtkImageReader2.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_IO_EXPORT vtkImageReader2 : public vtkImageAlgorithm
 {
 public:
   static vtkImageReader2 *New();
-  vtkTypeMacro(vtkImageReader2,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageReader2,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);   
 
   // Description:

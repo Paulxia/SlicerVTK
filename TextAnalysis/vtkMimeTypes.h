@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMimeTypes.h
+  Module:    $RCSfile: vtkMimeTypes.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -55,7 +55,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkMimeTypes :
 {
 public:
   static vtkMimeTypes* New();
-  vtkTypeMacro(vtkMimeTypes, vtkObject);
+  vtkTypeRevisionMacro(vtkMimeTypes, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

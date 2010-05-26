@@ -48,7 +48,7 @@
 * revision history - 
 *   20061003 - David Thompson - moved to ex_put_one_attr
 *
-*  Id
+*  $Id: expoea.c,v 1.3 2010-03-01 19:26:44 ndfabia Exp $
 *
 *****************************************************************************/
 

@@ -1,4 +1,4 @@
-/* Id */
+/* $Id: tif_color.c,v 1.2 2008-06-10 15:23:27 fbertel Exp $ */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

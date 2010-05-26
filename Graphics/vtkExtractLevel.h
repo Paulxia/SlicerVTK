@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractLevel.h
+  Module:    $RCSfile: vtkExtractLevel.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_GRAPHICS_EXPORT vtkExtractLevel : public vtkHierarchicalBoxDataSetAlgo
 {
 public:
   static vtkExtractLevel* New();
-  vtkTypeMacro(vtkExtractLevel, vtkHierarchicalBoxDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractLevel, vtkHierarchicalBoxDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 

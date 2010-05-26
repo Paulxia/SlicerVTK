@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEmptyRepresentation.cxx
+  Module:    $RCSfile: vtkEmptyRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkConvertSelectionDomain.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkEmptyRepresentation, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkEmptyRepresentation);
 
 

@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkBoostPrimMinimumSpanningTree.h
+Module:    $RCSfile: vtkBoostPrimMinimumSpanningTree.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -52,7 +52,7 @@ class VTK_INFOVIS_EXPORT vtkBoostPrimMinimumSpanningTree : public vtkTreeAlgorit
 {
 public:
   static vtkBoostPrimMinimumSpanningTree *New();
-  vtkTypeMacro(vtkBoostPrimMinimumSpanningTree, vtkTreeAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostPrimMinimumSpanningTree, vtkTreeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

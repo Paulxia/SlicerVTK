@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkThreadedStreamingPipeline.cxx
+  Module:    $RCSfile: vtkThreadedStreamingPipeline.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,6 +50,7 @@
 #include <vtksys/hash_set.hxx>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkThreadedStreamingPipeline, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkThreadedStreamingPipeline);
 
 vtkInformationKeyMacro(vtkThreadedStreamingPipeline, AUTO_PROPAGATE, Integer);

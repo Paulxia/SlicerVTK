@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayNorm.cxx
+  Module:    $RCSfile: vtkArrayNorm.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -34,6 +34,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkArrayNorm
 
+vtkCxxRevisionMacro(vtkArrayNorm, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkArrayNorm);
 
 vtkArrayNorm::vtkArrayNorm() :

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLImageActor.h
+  Module:    $RCSfile: vtkOpenGLImageActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLImageActor : public vtkImageActor
 {
 public:
   static vtkOpenGLImageActor *New();
-  vtkTypeMacro(vtkOpenGLImageActor,vtkImageActor);
+  vtkTypeRevisionMacro(vtkOpenGLImageActor,vtkImageActor);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

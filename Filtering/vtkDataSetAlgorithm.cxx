@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetAlgorithm.cxx
+  Module:    $RCSfile: vtkDataSetAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkStructuredPoints.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkDataSetAlgorithm, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkDataSetAlgorithm);
 
 //----------------------------------------------------------------------------

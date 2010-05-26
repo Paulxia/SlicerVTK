@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWindowToImageFilter.cxx
+  Module:    $RCSfile: vtkWindowToImageFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkActor2DCollection.h"
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkWindowToImageFilter, "$Revision: 1.50 $");
 vtkStandardNewMacro(vtkWindowToImageFilter);
 
 class vtkWTI2DHelperClass

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageConnector.cxx
+  Module:    $RCSfile: vtkImageConnector.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkImageData.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImageConnector, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkImageConnector);
 
 //----------------------------------------------------------------------------

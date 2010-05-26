@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiProcessController.h
+  Module:    $RCSfile: vtkMultiProcessController.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -61,7 +61,7 @@ typedef void (*vtkRMIFunctionType)(void *localArg,
 class VTK_PARALLEL_EXPORT vtkMultiProcessController : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkMultiProcessController,vtkObject);
+  vtkTypeRevisionMacro(vtkMultiProcessController,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -526,22 +526,6 @@ public:
                                        offsets, destProcessId);
   }
 #endif
-  int GatherV(vtkDataArray *sendBuffer, vtkDataArray *recvBuffer,
-              vtkIdType *recvLengths, vtkIdType *offsets, int destProcessId) {
-    return this->Communicator->GatherV(sendBuffer, recvBuffer,
-                                       recvLengths, offsets,
-                                       destProcessId);
-  }
-
-  // Description:
-  // This special form of GatherV will automatically determine \c recvLengths
-  // and \c offsets to tightly pack the data in the \c recvBuffer in process
-  // order.  It will also resize \c recvBuffer in order to accommodate the
-  // incoming data (unlike the other GatherV variants).
-  int GatherV(vtkDataArray *sendBuffer, vtkDataArray *recvBuffer,
-              int destProcessId) {
-    return this->Communicator->GatherV(sendBuffer, recvBuffer, destProcessId);
-  }
 
   // Description:
   // Scatter takes an array in the process with id \c srcProcessId and
@@ -735,20 +719,6 @@ public:
                                           offsets);
   }
 #endif
-  int AllGatherV(vtkDataArray *sendBuffer, vtkDataArray *recvBuffer,
-                 vtkIdType *recvLengths, vtkIdType *offsets) {
-    return this->Communicator->AllGatherV(sendBuffer, recvBuffer,
-                                          recvLengths, offsets);
-  }
-
-  // Description:
-  // This special form of AllGatherV will automatically determine \c recvLengths
-  // and \c offsets to tightly pack the data in the \c recvBuffer in process
-  // order.  It will also resize \c recvBuffer in order to accommodate the
-  // incoming data (unlike the other GatherV variants).
-  int AllGatherV(vtkDataArray *sendBuffer, vtkDataArray *recvBuffer) {
-    return this->Communicator->AllGatherV(sendBuffer, recvBuffer);
-  }
 
   // Description:
   // Reduce an array to the given destination process.  This version of Reduce

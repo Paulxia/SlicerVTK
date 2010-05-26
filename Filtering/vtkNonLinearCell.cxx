@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNonLinearCell.cxx
+  Module:    $RCSfile: vtkNonLinearCell.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkNonLinearCell.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkNonLinearCell, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------------
 vtkNonLinearCell::vtkNonLinearCell()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeRenderManager.cxx
+  Module:    $RCSfile: vtkCompositeRenderManager.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkTimerLog.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkCompositeRenderManager, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkCompositeRenderManager);
 
 vtkCxxSetObjectMacro(vtkCompositeRenderManager, Compositer, vtkCompositer);

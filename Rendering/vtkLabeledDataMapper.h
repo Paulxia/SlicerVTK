@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabeledDataMapper.h
+  Module:    $RCSfile: vtkLabeledDataMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -67,7 +67,7 @@ public:
   // are labeled.
   static vtkLabeledDataMapper *New();
 
-  vtkTypeMacro(vtkLabeledDataMapper,vtkMapper2D);
+  vtkTypeRevisionMacro(vtkLabeledDataMapper,vtkMapper2D);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

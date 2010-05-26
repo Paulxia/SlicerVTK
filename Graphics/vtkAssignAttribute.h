@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAssignAttribute.h
+  Module:    $RCSfile: vtkAssignAttribute.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -63,7 +63,7 @@ class vtkFieldData;
 class VTK_GRAPHICS_EXPORT vtkAssignAttribute : public vtkPassInputTypeAlgorithm
 {
 public:
-  vtkTypeMacro(vtkAssignAttribute,vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkAssignAttribute,vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

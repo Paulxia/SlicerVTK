@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLRMATGraphSource.h
+  Module:    $RCSfile: vtkPBGLRMATGraphSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -70,7 +70,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLRMATGraphSource : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLRMATGraphSource* New();
-  vtkTypeMacro(vtkPBGLRMATGraphSource,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLRMATGraphSource,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

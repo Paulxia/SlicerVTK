@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMFIXReader.cxx
+  Module:    $RCSfile: vtkMFIXReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkStringArray.h"
 
+vtkCxxRevisionMacro(vtkMFIXReader, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkMFIXReader);
 
 //----------------------------------------------------------------------------

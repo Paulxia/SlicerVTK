@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataObjectGenerator.cxx
+  Module:    $RCSfile: vtkDataObjectGenerator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkDataObjectGenerator, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkDataObjectGenerator);
 
 //============================================================================

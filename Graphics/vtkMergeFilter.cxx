@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeFilter.cxx
+  Module:    $RCSfile: vtkMergeFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkStructuredPoints.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkMergeFilter, "$Revision: 1.70 $");
 vtkStandardNewMacro(vtkMergeFilter);
 
 class vtkFieldNode
@@ -477,7 +478,7 @@ int vtkMergeFilter::RequestData(
 //  Trick:  Abstract data types that may or may not be the same type
 // (structured/unstructured), but the points/cells match up.
 // Output/Geometry may be structured while ScalarInput may be 
-// unstructured (but really have same triangulation/topology as geometry).
+// unstructured (but really have same triagulation/topology as geometry).
 // Just request all the input. Always generate all of the output (todo).
 int vtkMergeFilter::RequestUpdateExtent(
   vtkInformation *vtkNotUsed(request),

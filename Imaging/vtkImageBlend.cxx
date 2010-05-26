@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageBlend.cxx
+  Module:    $RCSfile: vtkImageBlend.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkImageBlend, "$Revision: 1.49 $");
 vtkStandardNewMacro(vtkImageBlend);
 
 //----------------------------------------------------------------------------

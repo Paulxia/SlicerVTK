@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaCamera.cxx
+  Module:    $RCSfile: vtkMesaCamera.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,4 +38,5 @@
 #include "vtkOpenGLCamera.cxx"
 #undef vtkOpenGLCamera
 
+vtkCxxRevisionMacro(vtkMesaCamera, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkMesaCamera);

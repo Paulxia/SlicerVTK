@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkXMLMultiGroupDataReader.h
+  Module:    $RCSfile: vtkXMLMultiGroupDataReader.h,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_IO_EXPORT vtkXMLMultiGroupDataReader : public vtkXMLMultiBlockDataRead
 {
 public:
   static vtkXMLMultiGroupDataReader* New();
-  vtkTypeMacro(vtkXMLMultiGroupDataReader,vtkXMLMultiBlockDataReader);
+  vtkTypeRevisionMacro(vtkXMLMultiGroupDataReader,vtkXMLMultiBlockDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

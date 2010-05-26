@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridSource.cxx
+  Module:    $RCSfile: vtkUnstructuredGridSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridSource, "$Revision: 1.31 $");
 
 //----------------------------------------------------------------------------
 vtkUnstructuredGridSource::vtkUnstructuredGridSource()

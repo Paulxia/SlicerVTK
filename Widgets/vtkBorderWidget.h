@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBorderWidget.h
+  Module:    $RCSfile: vtkBorderWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -83,7 +83,7 @@ public:
 
   // Description;
   // Standard methods for class.
-  vtkTypeMacro(vtkBorderWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkBorderWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

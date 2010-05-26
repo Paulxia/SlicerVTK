@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLineSource.cxx
+  Module:    $RCSfile: vtkLineSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 
 #include <math.h>
+vtkCxxRevisionMacro(vtkLineSource, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkLineSource);
 
 vtkLineSource::vtkLineSource(int res)

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGAMBITReader.cxx
+  Module:    $RCSfile: vtkGAMBITReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkIntArray.h"
 #include "vtkCellArray.h"
 
+vtkCxxRevisionMacro(vtkGAMBITReader, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkGAMBITReader);
 
 //----------------------------------------------------------------------------

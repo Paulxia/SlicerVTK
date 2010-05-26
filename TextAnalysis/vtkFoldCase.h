@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFoldCase.h
+  Module:    $RCSfile: vtkFoldCase.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkFoldCase :
 {
 public:
   static vtkFoldCase* New();
-  vtkTypeMacro(vtkFoldCase, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkFoldCase, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkSetStringMacro(ResultArray);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoxWidget2.h
+  Module:    $RCSfile: vtkBoxWidget2.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -105,7 +105,7 @@ public:
 
   // Description:
   // Standard class methods for type information and printing.
-  vtkTypeMacro(vtkBoxWidget2,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkBoxWidget2,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

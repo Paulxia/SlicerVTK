@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabeledTreeMapDataMapper.h
+  Module:    $RCSfile: vtkLabeledTreeMapDataMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class VTK_RENDERING_EXPORT vtkLabeledTreeMapDataMapper : public vtkLabeledDataMa
 {
 public:
   static vtkLabeledTreeMapDataMapper *New();
-  vtkTypeMacro(vtkLabeledTreeMapDataMapper,vtkLabeledDataMapper);
+  vtkTypeRevisionMacro(vtkLabeledTreeMapDataMapper,vtkLabeledDataMapper);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

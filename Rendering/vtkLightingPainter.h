@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLightingPainter.h
+  Module:    $RCSfile: vtkLightingPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,7 +24,7 @@ class VTK_RENDERING_EXPORT vtkLightingPainter : public vtkPolyDataPainter
 {
 public:
   static vtkLightingPainter* New();
-  vtkTypeMacro(vtkLightingPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkLightingPainter, vtkPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

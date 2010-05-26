@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBooleanTexture.cxx
+  Module:    $RCSfile: vtkBooleanTexture.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPointData.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkBooleanTexture, "$Revision: 1.45 $");
 vtkStandardNewMacro(vtkBooleanTexture);
 
 vtkBooleanTexture::vtkBooleanTexture()

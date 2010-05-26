@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIconGlyphFilter.cxx
+  Module:    $RCSfile: vtkIconGlyphFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkIconGlyphFilter, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkIconGlyphFilter);
 
 //-----------------------------------------------------------------------------

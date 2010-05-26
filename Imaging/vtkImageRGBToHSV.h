@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageRGBToHSV.h
+  Module:    $RCSfile: vtkImageRGBToHSV.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageRGBToHSV : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageRGBToHSV *New();
-  vtkTypeMacro(vtkImageRGBToHSV,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageRGBToHSV,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

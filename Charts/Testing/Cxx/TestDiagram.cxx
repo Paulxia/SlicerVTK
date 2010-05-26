@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestDiagram.cxx
+  Module:    $RCSfile: TestDiagram.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class APIDiagram : public vtkContextItem
 {
 public:
   static APIDiagram *New();
-  vtkTypeMacro(APIDiagram, vtkContextItem);
+  vtkTypeRevisionMacro(APIDiagram, vtkContextItem);
   // Paint event for the chart, called whenever the chart needs to be drawn
   virtual bool Paint(vtkContext2D *painter);
 };
@@ -76,6 +76,7 @@ int TestDiagram( int argc, char * argv [] )
 
 // Make our new derived class to draw a diagram
 vtkStandardNewMacro(APIDiagram);
+vtkCxxRevisionMacro(APIDiagram, "$Revision: 1.5 $");
 // This function draws our API diagram
 bool APIDiagram::Paint(vtkContext2D *painter)
 {

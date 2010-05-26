@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEdgeLayout.cxx
+  Module:    $RCSfile: vtkEdgeLayout.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkPointData.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkEdgeLayout, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkEdgeLayout);
 
 // ----------------------------------------------------------------------

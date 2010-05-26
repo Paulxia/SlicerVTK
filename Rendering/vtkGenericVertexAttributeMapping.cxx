@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericVertexAttributeMapping.cxx
+  Module:    $RCSfile: vtkGenericVertexAttributeMapping.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkGenericVertexAttributeMapping);
+vtkCxxRevisionMacro(vtkGenericVertexAttributeMapping, "$Revision: 1.3 $");
 //----------------------------------------------------------------------------
 vtkGenericVertexAttributeMapping::vtkGenericVertexAttributeMapping()
 {

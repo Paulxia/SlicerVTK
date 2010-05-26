@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPLinearExtrusionFilter.h
+  Module:    $RCSfile: vtkPLinearExtrusionFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class VTK_PARALLEL_EXPORT vtkPLinearExtrusionFilter : public vtkLinearExtrusionFilter 
 {
 public:
-  vtkTypeMacro(vtkPLinearExtrusionFilter,vtkLinearExtrusionFilter);
+  vtkTypeRevisionMacro(vtkPLinearExtrusionFilter,vtkLinearExtrusionFilter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

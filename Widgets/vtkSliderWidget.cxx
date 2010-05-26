@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSliderWidget.cxx
+  Module:    $RCSfile: vtkSliderWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkEvent.h"
 #include "vtkWidgetEvent.h"
 
+vtkCxxRevisionMacro(vtkSliderWidget, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkSliderWidget);
 
 //----------------------------------------------------------------------------------

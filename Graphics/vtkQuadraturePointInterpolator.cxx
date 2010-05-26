@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraturePointInterpolator.cxx
+  Module:    $RCSfile: vtkQuadraturePointInterpolator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@ using vtksys_ios::ostringstream;
 
 #include "vtkQuadraturePointsUtilities.hxx"
 
+vtkCxxRevisionMacro(vtkQuadraturePointInterpolator, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkQuadraturePointInterpolator);
 
 //-----------------------------------------------------------------------------
@@ -181,7 +182,6 @@ int vtkQuadraturePointInterpolator::InterpolateFields(
     int nComps=V->GetNumberOfComponents();
     vtkDoubleArray *interpolated=vtkDoubleArray::New();
     interpolated->SetNumberOfComponents(nComps);
-    interpolated->CopyComponentNames( V );
     interpolated->Allocate(nComps*nCells); // at least one qp per cell
     ostringstream interpolatedName;
     interpolatedName << V->GetName();// << "_QP_Interpolated";

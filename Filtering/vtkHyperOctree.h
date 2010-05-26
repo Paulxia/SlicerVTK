@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctree.h
+  Module:    $RCSfile: vtkHyperOctree.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -144,7 +144,7 @@ public:
   static vtkInformationDoubleVectorKey* SIZES();
   static vtkHyperOctree *New();
   
-  vtkTypeMacro(vtkHyperOctree,vtkDataSet);
+  vtkTypeRevisionMacro(vtkHyperOctree,vtkDataSet);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistanceRepresentation2D.h
+  Module:    $RCSfile: vtkDistanceRepresentation2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ public:
 
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkDistanceRepresentation2D,vtkDistanceRepresentation);
+  vtkTypeRevisionMacro(vtkDistanceRepresentation2D,vtkDistanceRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

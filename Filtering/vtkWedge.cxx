@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWedge.cxx
+  Module:    $RCSfile: vtkWedge.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkTriangle.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkWedge, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkWedge);
 
 static const double VTK_DIVERGED = 1.e6;

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProcessStatistics.h
+  Module:    $RCSfile: vtkProcessStatistics.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ public:
   // Construct the ProcessStatistics with eight points.
   static vtkProcessStatistics *New();
 
-  vtkTypeMacro(vtkProcessStatistics,vtkObject);
+  vtkTypeRevisionMacro(vtkProcessStatistics,vtkObject);
 
   int    GetProcessSizeInBytes();
   double GetProcessCPUTimeInMilliseconds();

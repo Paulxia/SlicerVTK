@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFiniteDifferenceGradientEstimator.h
+  Module:    $RCSfile: vtkFiniteDifferenceGradientEstimator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@
 class VTK_VOLUMERENDERING_EXPORT vtkFiniteDifferenceGradientEstimator : public vtkEncodedGradientEstimator
 {
 public:
-  vtkTypeMacro(vtkFiniteDifferenceGradientEstimator,vtkEncodedGradientEstimator);
+  vtkTypeRevisionMacro(vtkFiniteDifferenceGradientEstimator,vtkEncodedGradientEstimator);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

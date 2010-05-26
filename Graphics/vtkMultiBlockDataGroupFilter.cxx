@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiBlockDataGroupFilter.cxx
+  Module:    $RCSfile: vtkMultiBlockDataGroupFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkOnePieceExtentTranslator.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkMultiBlockDataGroupFilter, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkMultiBlockDataGroupFilter);
 //-----------------------------------------------------------------------------
 vtkMultiBlockDataGroupFilter::vtkMultiBlockDataGroupFilter()

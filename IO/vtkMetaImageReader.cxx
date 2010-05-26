@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMetaImageReader.cxx
+  Module:    $RCSfile: vtkMetaImageReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 #include <sys/stat.h>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkMetaImageReader, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkMetaImageReader);
 
 //----------------------------------------------------------------------------

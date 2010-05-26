@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoSource.cxx
+  Module:    $RCSfile: vtkGeoSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -72,6 +72,7 @@ public:
   vtksys_stl::vector<int> ThreadIds;
 };
 
+vtkCxxRevisionMacro(vtkGeoSource, "$Revision: 1.8 $");
 vtkGeoSource::vtkGeoSource()
 {
   this->InputSet = vtkCollection::New();

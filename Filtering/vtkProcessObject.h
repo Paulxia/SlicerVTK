@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProcessObject.h
+  Module:    $RCSfile: vtkProcessObject.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ class vtkDataObject;
 class VTK_FILTERING_EXPORT vtkProcessObject : public vtkAlgorithm
 {
 public:
-  vtkTypeMacro(vtkProcessObject,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkProcessObject,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

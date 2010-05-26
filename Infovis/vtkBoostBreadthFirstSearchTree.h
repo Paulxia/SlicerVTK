@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostBreadthFirstSearchTree.h
+  Module:    $RCSfile: vtkBoostBreadthFirstSearchTree.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_INFOVIS_EXPORT vtkBoostBreadthFirstSearchTree : public vtkTreeAlgorith
 {
 public:
   static vtkBoostBreadthFirstSearchTree *New();
-  vtkTypeMacro(vtkBoostBreadthFirstSearchTree, vtkTreeAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostBreadthFirstSearchTree, vtkTreeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:
@@ -68,12 +68,6 @@ public:
   vtkGetMacro(CreateGraphVertexIdArray, bool);
   vtkBooleanMacro(CreateGraphVertexIdArray, bool);
 
-  // Description:
-  // Turn on this option to reverse the edges in the graph.
-  vtkSetMacro(ReverseEdges, bool);
-  vtkGetMacro(ReverseEdges, bool);
-  vtkBooleanMacro(ReverseEdges, bool);
-
 protected:
   vtkBoostBreadthFirstSearchTree();
   ~vtkBoostBreadthFirstSearchTree();
@@ -91,7 +85,6 @@ private:
   //ETX
   bool ArrayNameSet;
   bool CreateGraphVertexIdArray;
-  bool ReverseEdges;
   
   // Description:
   // Using the convenience function for set strings internally

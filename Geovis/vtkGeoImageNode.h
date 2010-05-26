@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoImageNode.h
+  Module:    $RCSfile: vtkGeoImageNode.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_GEOVIS_EXPORT vtkGeoImageNode : public vtkGeoTreeNode
 {
 public:
   static vtkGeoImageNode *New();
-  vtkTypeMacro(vtkGeoImageNode, vtkGeoTreeNode);
+  vtkTypeRevisionMacro(vtkGeoImageNode, vtkGeoTreeNode);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Decription:

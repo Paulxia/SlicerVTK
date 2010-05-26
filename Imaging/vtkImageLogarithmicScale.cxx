@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageLogarithmicScale.cxx
+  Module:    $RCSfile: vtkImageLogarithmicScale.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageLogarithmicScale, "$Revision: 1.27 $");
 vtkStandardNewMacro(vtkImageLogarithmicScale);
 
 //----------------------------------------------------------------------------

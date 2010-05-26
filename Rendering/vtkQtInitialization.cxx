@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtInitialization.cxx
+  Module:    $RCSfile: vtkQtInitialization.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 
 #include <QApplication>
 
+vtkCxxRevisionMacro(vtkQtInitialization, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkQtInitialization);
 
 vtkQtInitialization::vtkQtInitialization()

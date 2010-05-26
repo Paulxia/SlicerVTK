@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFixedPointVolumeRayCastMapper.h
+  Module:    $RCSfile: vtkFixedPointVolumeRayCastMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -92,7 +92,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkFixedPointVolumeRayCastMapper : public vtkVo
 {
 public:
   static vtkFixedPointVolumeRayCastMapper *New();
-  vtkTypeMacro(vtkFixedPointVolumeRayCastMapper,vtkVolumeMapper);
+  vtkTypeRevisionMacro(vtkFixedPointVolumeRayCastMapper,vtkVolumeMapper);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXOpenGLRenderWindow.h
+  Module:    $RCSfile: vtkXOpenGLRenderWindow.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_RENDERING_EXPORT vtkXOpenGLRenderWindow : public vtkOpenGLRenderWindow
 {
 public:
   static vtkXOpenGLRenderWindow *New();
-  vtkTypeMacro(vtkXOpenGLRenderWindow,vtkOpenGLRenderWindow);
+  vtkTypeRevisionMacro(vtkXOpenGLRenderWindow,vtkOpenGLRenderWindow);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

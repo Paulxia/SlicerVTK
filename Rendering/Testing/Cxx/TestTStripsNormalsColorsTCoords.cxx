@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestTStripsNormalsColorsTCoords.cxx
+  Module:    $RCSfile: TestTStripsNormalsColorsTCoords.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

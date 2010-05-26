@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShrinkFilter.cxx
+  Module:    $RCSfile: vtkShrinkFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkShrinkFilter, "$Revision: 1.72 $");
 vtkStandardNewMacro(vtkShrinkFilter);
 
 //----------------------------------------------------------------------------

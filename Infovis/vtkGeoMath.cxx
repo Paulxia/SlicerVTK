@@ -1,7 +1,7 @@
 /*=============================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoMath.cxx
+  Module:    $RCSfile: vtkGeoMath.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkGeoMath.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkGeoMath, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkGeoMath);
 
 

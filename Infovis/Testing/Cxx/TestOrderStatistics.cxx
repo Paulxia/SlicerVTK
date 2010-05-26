@@ -14,7 +14,6 @@
 #include "vtkStringArray.h"
 #include "vtkTable.h"
 #include "vtkOrderStatistics.h"
-#include "vtkMultiBlockDataSet.h"
 
 #include <vtkstd/map>
 //=============================================================================
@@ -122,16 +121,11 @@ int TestOrderStatistics( int, char *[] )
   int nMetrics = 3;
   vtkStdString columns[] = { "Metric 1", "Metric 2", "Metric 0" };
 
-  // Set order statistics algorithm and its input data port
   vtkOrderStatistics* os = vtkOrderStatistics::New();
-
-  // First verify that absence of input does not cause trouble
-  cout << "## Verifying that absence of input does not cause trouble... ";
-  os->Update();
-  cout << "done.\n";
-
-  // Prepare first test with data
   os->SetInput( vtkStatisticsAlgorithm::INPUT_DATA, datasetTable );
+  vtkTable* outputData = os->GetOutput( vtkStatisticsAlgorithm::OUTPUT_DATA );
+  vtkTable* outputMeta = os->GetOutput( vtkStatisticsAlgorithm::OUTPUT_MODEL );
+
   datasetTable->Delete();
 
   // Select Columns of Interest
@@ -156,26 +150,21 @@ int TestOrderStatistics( int, char *[] )
       32., -1., -1., -1., -1., -1.,
     };
 
-  // Get calculated model
-  vtkMultiBlockDataSet* outputMetaDS = vtkMultiBlockDataSet::SafeDownCast( os->GetOutputDataObject( vtkStatisticsAlgorithm::OUTPUT_MODEL ) );
-  vtkTable* outputPrimary = vtkTable::SafeDownCast( outputMetaDS->GetBlock( 0 ) );
-
   cout << "## Calculated the following 5-points statistics with InverseCDFAveragedSteps quantile definition):\n";
-  for ( vtkIdType r = 0; r < outputPrimary->GetNumberOfRows(); ++ r )
+  for ( vtkIdType r = 0; r < outputMeta->GetNumberOfRows(); ++ r )
     {
     cout << "   ";
-    for ( int i = 0; i < outputPrimary->GetNumberOfColumns(); ++ i )
+    for ( int i = 0; i < outputMeta->GetNumberOfColumns(); ++ i )
       {
-      cout << outputPrimary->GetColumnName( i )
+      cout << outputMeta->GetColumnName( i )
            << "="
-           << outputPrimary->GetValue( r, i ).ToString()
+           << outputMeta->GetValue( r, i ).ToString()
            << "  ";
 
-      // Verify some of the calculated primary statistics
-      if ( i && outputPrimary->GetValue( r, i ).ToDouble() - valsTest1[r * valsOffset + i] > 1.e-6 )
+      if ( i && outputMeta->GetValue( r, i ).ToDouble() != valsTest1[r * valsOffset + i] )
         {
-        vtkGenericWarningMacro("Incorrect 5-points statistics: " << valsTest1[r * valsOffset + i] << ".");
         testStatus = 1;
+        vtkGenericWarningMacro("Incorrect 5-points statistics: " << valsTest1[r * valsOffset + i] << ".");
         }
       }
     cout << "\n";
@@ -193,33 +182,26 @@ int TestOrderStatistics( int, char *[] )
       32., -1., -1., -1., -1., -1.,
     };
 
-  // Get calculated model
-  outputMetaDS = vtkMultiBlockDataSet::SafeDownCast( os->GetOutputDataObject( vtkStatisticsAlgorithm::OUTPUT_MODEL ) );
-  outputPrimary = vtkTable::SafeDownCast( outputMetaDS->GetBlock( 0 ) );
-
   cout << "## Calculated the following 5-points statistics with InverseCDF quantile definition:\n";
-  for ( vtkIdType r = 0; r < outputPrimary->GetNumberOfRows(); ++ r )
+  for ( vtkIdType r = 0; r < outputMeta->GetNumberOfRows(); ++ r )
     {
     cout << "   ";
-    for ( int i = 0; i < outputPrimary->GetNumberOfColumns(); ++ i )
+    for ( int i = 0; i < outputMeta->GetNumberOfColumns(); ++ i )
       {
-      cout << outputPrimary->GetColumnName( i )
+      cout << outputMeta->GetColumnName( i )
            << "="
-           << outputPrimary->GetValue( r, i ).ToString()
+           << outputMeta->GetValue( r, i ).ToString()
            << "  ";
 
-      // Verify some of the calculated primary statistics
-      if ( i && outputPrimary->GetValue( r, i ).ToDouble() - valsTest1[r * valsOffset + i] > 1.e-6 )
+      if ( i && outputMeta->GetValue( r, i ).ToDouble() != valsTest2[r * valsOffset + i] )
         {
-        vtkGenericWarningMacro("Incorrect 5-points statistics: " << valsTest2[r * valsOffset + i] << ".");
         testStatus = 1;
+        vtkGenericWarningMacro("Incorrect 5-points statistics: " << valsTest2[r * valsOffset + i] << ".");
         }
       }
     cout << "\n";
     }
 
-  // Get output (annotated) data
-  vtkTable* outputData = os->GetOutput( vtkStatisticsAlgorithm::OUTPUT_DATA );
   vtkstd::map<int,int> histoMetric[2];
   for ( vtkIdType r = 0; r < outputData->GetNumberOfRows(); ++ r )
     {
@@ -259,19 +241,15 @@ int TestOrderStatistics( int, char *[] )
   os->SetAssessOption( false );
   os->Update();
 
-  // Get calculated model
-  outputMetaDS = vtkMultiBlockDataSet::SafeDownCast( os->GetOutputDataObject( vtkStatisticsAlgorithm::OUTPUT_MODEL ) );
-  outputPrimary = vtkTable::SafeDownCast( outputMetaDS->GetBlock( 0 ) );
-
   cout << "## Calculated the following deciles with InverseCDF quantile definition:\n";
-  for ( vtkIdType r = 0; r < outputPrimary->GetNumberOfRows(); ++ r )
+  for ( vtkIdType r = 0; r < outputMeta->GetNumberOfRows(); ++ r )
     {
     cout << "   ";
-    for ( int i = 0; i < outputPrimary->GetNumberOfColumns(); ++ i )
+    for ( int i = 0; i < outputMeta->GetNumberOfColumns(); ++ i )
       {
-      cout << outputPrimary->GetColumnName( i )
+      cout << outputMeta->GetColumnName( i )
            << "="
-           << outputPrimary->GetValue( r, i ).ToString()
+           << outputMeta->GetValue( r, i ).ToString()
            << "  ";
       }
     cout << "\n";
@@ -348,19 +326,15 @@ int TestOrderStatistics( int, char *[] )
   os->SetAssessOption( true );
   os->Update();
 
-  // Get calculated model
-  outputMetaDS = vtkMultiBlockDataSet::SafeDownCast( os->GetOutputDataObject( vtkStatisticsAlgorithm::OUTPUT_MODEL ) );
-  outputPrimary = vtkTable::SafeDownCast( outputMetaDS->GetBlock( 0 ) );
-
   cout << "## Calculated the following 5-points statistics with non-numerical ordinal data (letters):\n";
-  for ( vtkIdType r = 0; r < outputPrimary->GetNumberOfRows(); ++ r )
+  for ( vtkIdType r = 0; r < outputMeta->GetNumberOfRows(); ++ r )
     {
     cout << "   ";
-    for ( int i = 0; i < outputPrimary->GetNumberOfColumns(); ++ i )
+    for ( int i = 0; i < outputMeta->GetNumberOfColumns(); ++ i )
       {
-      cout << outputPrimary->GetColumnName( i )
+      cout << outputMeta->GetColumnName( i )
            << "="
-           << outputPrimary->GetValue( r, i ).ToString()
+           << outputMeta->GetValue( r, i ).ToString()
            << "  ";
       }
     cout << "\n";

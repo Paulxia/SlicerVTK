@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointSetAlgorithm.h
+  Module:    $RCSfile: vtkPointSetAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_FILTERING_EXPORT vtkPointSetAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkPointSetAlgorithm *New();
-  vtkTypeMacro(vtkPointSetAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkPointSetAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

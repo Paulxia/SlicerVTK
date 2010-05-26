@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWidgetEventTranslator.h
+  Module:    $RCSfile: vtkWidgetEventTranslator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ public:
 
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkWidgetEventTranslator,vtkObject);
+  vtkTypeRevisionMacro(vtkWidgetEventTranslator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

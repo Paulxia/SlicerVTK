@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphItem.cxx
+  Module:    $RCSfile: vtkGraphItem.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 
 //-----------------------------------------------------------------------------
 vtkCxxSetObjectMacro(vtkGraphItem, Graph, vtkGraph);
+vtkCxxRevisionMacro(vtkGraphItem, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkGraphItem);
 
 class vtkGraphItem::Implementation

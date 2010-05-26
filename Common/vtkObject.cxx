@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkObject.cxx
+  Module:    $RCSfile: vtkObject.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkObject, "$Revision: 1.102 $");
 
 // Initialize static member that controls warning display
 static int vtkObjectGlobalWarningDisplay = 1;

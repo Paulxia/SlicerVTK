@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArcSource.h
+  Module:    $RCSfile: vtkArcSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_GRAPHICS_EXPORT vtkArcSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkArcSource *New();
-  vtkTypeMacro(vtkArcSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkArcSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

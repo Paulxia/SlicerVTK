@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeDataGeometryFilter.cxx
+  Module:    $RCSfile: vtkCompositeDataGeometryFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkCompositeDataSet.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCompositeDataGeometryFilter, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkCompositeDataGeometryFilter);
 
 //-----------------------------------------------------------------------------

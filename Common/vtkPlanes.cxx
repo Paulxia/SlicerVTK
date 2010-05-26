@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlanes.cxx
+  Module:    $RCSfile: vtkPlanes.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkPlanes, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkPlanes);
 vtkCxxSetObjectMacro(vtkPlanes,Points,vtkPoints);
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVectorDot.h
+  Module:    $RCSfile: vtkVectorDot.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@
 class VTK_GRAPHICS_EXPORT vtkVectorDot : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkVectorDot,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkVectorDot,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

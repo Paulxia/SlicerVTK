@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRCalculatorFilter.h
+  Module:    $RCSfile: vtkRCalculatorFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ public:
   
   static vtkRCalculatorFilter *New();
 
-  vtkTypeMacro(vtkRCalculatorFilter, vtkDataObjectAlgorithm );
+  vtkTypeRevisionMacro(vtkRCalculatorFilter, vtkDataObjectAlgorithm );
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

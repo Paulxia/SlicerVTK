@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtChartView.cxx
+  Module:    $RCSfile: vtkQtChartView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -107,6 +107,7 @@ private:
 };
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtChartView, "$Revision: 1.3 $");
 
 //----------------------------------------------------------------------------
 vtkQtChartView::vtkQtChartView()

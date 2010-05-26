@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextSource.h
+  Module:    $RCSfile: vtkTextSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@
 class VTK_GRAPHICS_EXPORT vtkTextSource : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTextSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTextSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

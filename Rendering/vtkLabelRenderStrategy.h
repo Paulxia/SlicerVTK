@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabelRenderStrategy.h
+  Module:    $RCSfile: vtkLabelRenderStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_RENDERING_EXPORT vtkLabelRenderStrategy : public vtkObject
 {
  public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkLabelRenderStrategy, vtkObject);
+  vtkTypeRevisionMacro(vtkLabelRenderStrategy, vtkObject);
 
   // Description:
   // Whether the text rendering strategy supports rotation.

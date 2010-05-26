@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLFileReadTester.h
+  Module:    $RCSfile: vtkXMLFileReadTester.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@
 class VTK_IO_EXPORT vtkXMLFileReadTester: public vtkXMLParser
 {
 public:
-  vtkTypeMacro(vtkXMLFileReadTester,vtkXMLParser);
+  vtkTypeRevisionMacro(vtkXMLFileReadTester,vtkXMLParser);
   void PrintSelf(ostream& os, vtkIndent indent);  
   static vtkXMLFileReadTester* New();
   

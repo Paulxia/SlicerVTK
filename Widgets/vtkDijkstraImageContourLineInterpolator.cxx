@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDijkstraImageContourLineInterpolator.cxx
+  Module:    $RCSfile: vtkDijkstraImageContourLineInterpolator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkDijkstraImageContourLineInterpolator,"$Revision: 1.5 $");
 vtkStandardNewMacro(vtkDijkstraImageContourLineInterpolator);
 
 //----------------------------------------------------------------------

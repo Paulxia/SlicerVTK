@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoxWidget2.cxx
+  Module:    $RCSfile: vtkBoxWidget2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkRenderer.h"
 
 
+vtkCxxRevisionMacro(vtkBoxWidget2, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkBoxWidget2);
 
 //----------------------------------------------------------------------------

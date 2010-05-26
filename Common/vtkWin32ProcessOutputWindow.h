@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWin32ProcessOutputWindow.h
+  Module:    $RCSfile: vtkWin32ProcessOutputWindow.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class VTK_COMMON_EXPORT vtkWin32ProcessOutputWindow : public vtkOutputWindow
 {
 public:
-  vtkTypeMacro(vtkWin32ProcessOutputWindow,vtkOutputWindow);
+  vtkTypeRevisionMacro(vtkWin32ProcessOutputWindow,vtkOutputWindow);
   static vtkWin32ProcessOutputWindow* New();
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 

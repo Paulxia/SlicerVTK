@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAxes.h
+  Module:    $RCSfile: vtkAxes.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_GRAPHICS_EXPORT vtkAxes : public vtkPolyDataAlgorithm
 public:
   static vtkAxes *New();
 
-  vtkTypeMacro(vtkAxes,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkAxes,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

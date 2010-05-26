@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEmptyCell.cxx
+  Module:    $RCSfile: vtkEmptyCell.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkEmptyCell, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkEmptyCell);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGlobeSource.cxx
+  Module:    $RCSfile: vtkGlobeSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkGlobeSource, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkGlobeSource);
 
   // 0=NE, 1=SE, 2=SW, 3=NW

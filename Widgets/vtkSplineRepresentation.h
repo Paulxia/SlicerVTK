@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineRepresentation.h
+  Module:    $RCSfile: vtkSplineRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_WIDGETS_EXPORT vtkSplineRepresentation : public vtkWidgetRepresentatio
 {
 public:
   static vtkSplineRepresentation* New();
-  vtkTypeMacro(vtkSplineRepresentation, vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkSplineRepresentation, vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 //BTX
   // Used to manage the InteractionState of the widget

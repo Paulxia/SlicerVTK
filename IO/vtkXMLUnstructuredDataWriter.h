@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLUnstructuredDataWriter.h
+  Module:    $RCSfile: vtkXMLUnstructuredDataWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class vtkIdTypeArray;
 class VTK_IO_EXPORT vtkXMLUnstructuredDataWriter : public vtkXMLWriter
 {
 public:
-  vtkTypeMacro(vtkXMLUnstructuredDataWriter,vtkXMLWriter);
+  vtkTypeRevisionMacro(vtkXMLUnstructuredDataWriter,vtkXMLWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

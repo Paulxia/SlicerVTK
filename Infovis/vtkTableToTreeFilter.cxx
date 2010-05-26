@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableToTreeFilter.cxx
+  Module:    $RCSfile: vtkTableToTreeFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include <vtkstd/vector>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkTableToTreeFilter, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkTableToTreeFilter);
 
 

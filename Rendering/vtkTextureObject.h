@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextureObject.h
+  Module:    $RCSfile: vtkTextureObject.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -94,7 +94,7 @@ public:
   //ETX
   
   static vtkTextureObject* New();
-  vtkTypeMacro(vtkTextureObject, vtkObject);
+  vtkTypeRevisionMacro(vtkTextureObject, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -474,7 +474,6 @@ protected:
   vtkWeakPointer<vtkRenderWindow> Context;
   unsigned int Handle;
   bool SupportsTextureInteger;
-  bool SupportsTextureFloat;
 
   int WrapS;
   int WrapT;

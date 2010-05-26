@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCocoaRenderWindowInteractor.h
+  Module:    $RCSfile: vtkCocoaRenderWindowInteractor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ public:
   // Construct object so that light follows camera motion.
   static vtkCocoaRenderWindowInteractor *New();
 
-  vtkTypeMacro(vtkCocoaRenderWindowInteractor,vtkRenderWindowInteractor);
+  vtkTypeRevisionMacro(vtkCocoaRenderWindowInteractor,vtkRenderWindowInteractor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

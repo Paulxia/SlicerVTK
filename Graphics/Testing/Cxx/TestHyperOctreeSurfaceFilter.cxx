@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestHyperOctreeSurfaceFilter.cxx
+  Module:    $RCSfile: TestHyperOctreeSurfaceFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHexagonalPrism.cxx
+  Module:    $RCSfile: vtkHexagonalPrism.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkMath.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkHexagonalPrism, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkHexagonalPrism);
 
 static const double VTK_DIVERGED = 1.e6;

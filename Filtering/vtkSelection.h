@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkSelection.h
+  Module:    $RCSfile: vtkSelection.h,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -35,7 +35,7 @@ struct vtkSelectionInternals;
 class VTK_FILTERING_EXPORT vtkSelection : public vtkDataObject
 {
 public:
-  vtkTypeMacro(vtkSelection,vtkDataObject);
+  vtkTypeRevisionMacro(vtkSelection,vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkSelection* New();
 

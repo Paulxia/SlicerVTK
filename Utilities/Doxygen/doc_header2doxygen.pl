@@ -273,13 +273,13 @@ foreach my $source (@files) {
         last if $line =~ /\/\/ \.NAME/;
 
         # Date. Example:
-        # Date:      $Date$
+        # Date:      $Date: 2009-12-01 16:10:13 $
 
         if ($line =~ /^\s*Date:\s*(.*)$/) {
             $date = $1;
 
         # Version. Example:
-        # Version:   $Revision$
+        # Version:   $Revision: 1.19 $
 
         } elsif ($line =~ /^\s*Version:\s*(.*)$/) {
             $revision = $1;

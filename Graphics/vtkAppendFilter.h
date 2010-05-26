@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAppendFilter.h
+  Module:    $RCSfile: vtkAppendFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkAppendFilter : public vtkUnstructuredGridAlgorithm
 public:
   static vtkAppendFilter *New();
 
-  vtkTypeMacro(vtkAppendFilter,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkAppendFilter,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

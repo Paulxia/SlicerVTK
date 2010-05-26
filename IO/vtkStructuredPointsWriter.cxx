@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredPointsWriter.cxx
+  Module:    $RCSfile: vtkStructuredPointsWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #endif
 
 
+vtkCxxRevisionMacro(vtkStructuredPointsWriter, "$Revision: 1.42 $");
 vtkStandardNewMacro(vtkStructuredPointsWriter);
 
 void vtkStructuredPointsWriter::WriteData()

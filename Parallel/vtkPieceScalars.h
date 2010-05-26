@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPieceScalars.h
+  Module:    $RCSfile: vtkPieceScalars.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_PARALLEL_EXPORT vtkPieceScalars : public vtkDataSetAlgorithm
 public:
   static vtkPieceScalars *New();
 
-  vtkTypeMacro(vtkPieceScalars,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkPieceScalars,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestLinePlot.cxx
+  Module:    $RCSfile: TestLinePlot.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,29 +25,31 @@
 #include "vtkRenderWindowInteractor.h"
 #include "vtkRegressionTestImage.h"
 
+#define VTK_CREATE(type, name) \
+  vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
+
 //----------------------------------------------------------------------------
 int TestLinePlot( int argc, char * argv [] )
 {
   // Set up a 2D scene, add an XY chart to it
-  vtkSmartPointer<vtkContextView> view =
-      vtkSmartPointer<vtkContextView>::New();
+  VTK_CREATE(vtkContextView, view);
   view->GetRenderer()->SetBackground(1.0, 1.0, 1.0);
   view->GetRenderWindow()->SetSize(400, 300);
-  vtkSmartPointer<vtkChartXY> chart = vtkSmartPointer<vtkChartXY>::New();
+  VTK_CREATE(vtkChartXY, chart);
   view->GetScene()->AddItem(chart);
 
   // Create a table with some points in it...
-  vtkSmartPointer<vtkTable> table = vtkSmartPointer<vtkTable>::New();
-  vtkSmartPointer<vtkFloatArray> arrX = vtkSmartPointer<vtkFloatArray>::New();
+  VTK_CREATE(vtkTable, table);
+  VTK_CREATE(vtkFloatArray, arrX);
   arrX->SetName("X Axis");
   table->AddColumn(arrX);
-  vtkSmartPointer<vtkFloatArray> arrC = vtkSmartPointer<vtkFloatArray>::New();
+  VTK_CREATE(vtkFloatArray, arrC);
   arrC->SetName("Cosine");
   table->AddColumn(arrC);
-  vtkSmartPointer<vtkFloatArray> arrS = vtkSmartPointer<vtkFloatArray>::New();
+  VTK_CREATE(vtkFloatArray, arrS);
   arrS->SetName("Sine");
   table->AddColumn(arrS);
-  vtkSmartPointer<vtkFloatArray> arrS2 = vtkSmartPointer<vtkFloatArray>::New();
+  VTK_CREATE(vtkFloatArray, arrS2);
   arrS2->SetName("Sine2");
   table->AddColumn(arrS2);
   // Test charting with a few more points...
@@ -82,7 +84,6 @@ int TestLinePlot( int argc, char * argv [] )
   //int retVal = vtkRegressionTestImage(view->GetRenderWindow());
   if(retVal == vtkRegressionTester::DO_INTERACTOR)
     {
-    view->GetInteractor()->Initialize();
     view->GetInteractor()->Start();
     }
 

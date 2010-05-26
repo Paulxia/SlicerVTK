@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMetaImageReader.h
+  Module:    $RCSfile: vtkMetaImageReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -68,7 +68,7 @@ namespace vtkmetaio { class MetaImage; } // forward declaration
 class VTK_IO_EXPORT vtkMetaImageReader : public vtkImageReader2
 {
 public:
-  vtkTypeMacro(vtkMetaImageReader,vtkImageReader2);
+  vtkTypeRevisionMacro(vtkMetaImageReader,vtkImageReader2);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPixel.h
+  Module:    $RCSfile: vtkPixel.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_FILTERING_EXPORT vtkPixel : public vtkCell
 {
 public:
   static vtkPixel *New();
-  vtkTypeMacro(vtkPixel,vtkCell);
+  vtkTypeRevisionMacro(vtkPixel,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

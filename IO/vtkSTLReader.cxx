@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSTLReader.cxx
+  Module:    $RCSfile: vtkSTLReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include <ctype.h>
 #include <vtksys/SystemTools.hxx>
 
+vtkCxxRevisionMacro(vtkSTLReader, "$Revision: 1.79 $");
 vtkStandardNewMacro(vtkSTLReader);
 
 #define VTK_ASCII 0
@@ -220,7 +221,6 @@ int vtkSTLReader::RequestData(
 
   if (mergedScalars) 
     {
-    mergedScalars->SetName("STLSolidLabeling");
     output->GetCellData()->SetScalars(mergedScalars);
     mergedScalars->Delete();
     }

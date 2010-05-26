@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumetricPass.h
+  Module:    $RCSfile: vtkVolumetricPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkVolumetricPass : public vtkDefaultPass
 {
 public:
   static vtkVolumetricPass *New();
-  vtkTypeMacro(vtkVolumetricPass,vtkDefaultPass);
+  vtkTypeRevisionMacro(vtkVolumetricPass,vtkDefaultPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

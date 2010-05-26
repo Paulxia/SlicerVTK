@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageItem.h
+  Module:    $RCSfile: vtkImageItem.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class vtkImageData;
 class VTK_CHARTS_EXPORT vtkImageItem : public vtkContextItem
 {
 public:
-  vtkTypeMacro(vtkImageItem, vtkContextItem);
+  vtkTypeRevisionMacro(vtkImageItem, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   static vtkImageItem *New();

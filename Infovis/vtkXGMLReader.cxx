@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkXGMLReader.cxx
+Module:    $RCSfile: vtkXGMLReader.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -47,6 +47,7 @@ PURPOSE.  See the above copyright notice for more information.
 // Copied from vtkTulipReader.cxx ..
 static int my_getline(vtksys_ios::istream& stream, vtkStdString &output, char delim='\n');
 
+vtkCxxRevisionMacro(vtkXGMLReader, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkXGMLReader);
 
 vtkXGMLReader::vtkXGMLReader()

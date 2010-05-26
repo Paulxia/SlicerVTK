@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtentSplitter.cxx
+  Module:    $RCSfile: vtkExtentSplitter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include <vtkstd/queue>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkExtentSplitter, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkExtentSplitter);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEdgeCenters.h
+  Module:    $RCSfile: vtkEdgeCenters.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@
 class VTK_INFOVIS_EXPORT vtkEdgeCenters : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkEdgeCenters,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkEdgeCenters,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

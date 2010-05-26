@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDecimatePolylineFilter.cxx
+  Module:    $RCSfile: vtkDecimatePolylineFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include <vtkstd/vector>
 #include <vtkstd/queue>
 
+vtkCxxRevisionMacro(vtkDecimatePolylineFilter, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkDecimatePolylineFilter);
 
 //------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridReader.h
+  Module:    $RCSfile: vtkUnstructuredGridReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_IO_EXPORT vtkUnstructuredGridReader : public vtkDataReader
 {
 public:
   static vtkUnstructuredGridReader *New();
-  vtkTypeMacro(vtkUnstructuredGridReader,vtkDataReader);
+  vtkTypeRevisionMacro(vtkUnstructuredGridReader,vtkDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

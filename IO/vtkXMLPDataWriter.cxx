@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPDataWriter.cxx
+  Module:    $RCSfile: vtkXMLPDataWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 
 #include <vtksys/ios/sstream>
 
+vtkCxxRevisionMacro(vtkXMLPDataWriter, "$Revision: 1.17 $");
 
 //----------------------------------------------------------------------------
 vtkXMLPDataWriter::vtkXMLPDataWriter()

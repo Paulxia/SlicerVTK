@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetEdgeSubdivisionCriterion.h
+  Module:    $RCSfile: vtkDataSetEdgeSubdivisionCriterion.h,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2007-06-01 16:13:52 $
+  Version:   $Revision: 1.2 $
 
   Copyright 2003 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive
@@ -43,7 +43,7 @@ class vtkDataSet;
 class VTK_GRAPHICS_EXPORT vtkDataSetEdgeSubdivisionCriterion : public vtkEdgeSubdivisionCriterion
 {
   public:
-    vtkTypeMacro(vtkDataSetEdgeSubdivisionCriterion,vtkEdgeSubdivisionCriterion);
+    vtkTypeRevisionMacro(vtkDataSetEdgeSubdivisionCriterion,vtkEdgeSubdivisionCriterion);
     static vtkDataSetEdgeSubdivisionCriterion* New();
     virtual void PrintSelf( ostream& os, vtkIndent indent );
 

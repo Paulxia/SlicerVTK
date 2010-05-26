@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipPolyData.cxx
+  Module:    $RCSfile: vtkClipPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkClipPolyData, "$Revision: 1.61 $");
 vtkStandardNewMacro(vtkClipPolyData);
 vtkCxxSetObjectMacro(vtkClipPolyData,ClipFunction,vtkImplicitFunction);
 

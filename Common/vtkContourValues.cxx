@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContourValues.cxx
+  Module:    $RCSfile: vtkContourValues.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkDoubleArray.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkContourValues, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkContourValues);
 
 // Construct object with a single contour value at 0.0.

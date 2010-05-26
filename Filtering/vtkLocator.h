@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLocator.h
+  Module:    $RCSfile: vtkLocator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ class vtkPolyData;
 class VTK_FILTERING_EXPORT vtkLocator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkLocator,vtkObject);
+  vtkTypeRevisionMacro(vtkLocator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

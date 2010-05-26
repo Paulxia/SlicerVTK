@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextMapper.cxx
+  Module:    $RCSfile: vtkTextMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkTextProperty.h"
 #include "vtkToolkits.h"
 
+vtkCxxRevisionMacro(vtkTextMapper, "$Revision: 1.57 $");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

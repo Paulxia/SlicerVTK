@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericContourFilter.h
+  Module:    $RCSfile: vtkGenericContourFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkCellData;
 class VTK_GENERIC_FILTERING_EXPORT vtkGenericContourFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkGenericContourFilter,
+  vtkTypeRevisionMacro(vtkGenericContourFilter,
                        vtkPolyDataAlgorithm);
   
   void PrintSelf(ostream& os, vtkIndent indent);

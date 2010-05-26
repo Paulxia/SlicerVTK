@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageData.h
+  Module:    $RCSfile: vtkImageData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_FILTERING_EXPORT vtkImageData : public vtkDataSet
 public:
   static vtkImageData *New();
 
-  vtkTypeMacro(vtkImageData,vtkDataSet);
+  vtkTypeRevisionMacro(vtkImageData,vtkDataSet);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

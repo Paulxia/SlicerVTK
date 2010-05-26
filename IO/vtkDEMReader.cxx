@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDEMReader.cxx
+  Module:    $RCSfile: vtkDEMReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkDEMReader, "$Revision: 1.42 $");
 vtkStandardNewMacro(vtkDEMReader);
 
 #define VTK_SW  0

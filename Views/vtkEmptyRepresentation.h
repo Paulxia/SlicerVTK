@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEmptyRepresentation.h
+  Module:    $RCSfile: vtkEmptyRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_VIEWS_EXPORT vtkEmptyRepresentation : public vtkDataRepresentation
 {
 public:
   static vtkEmptyRepresentation* New();
-  vtkTypeMacro(vtkEmptyRepresentation, vtkDataRepresentation);
+  vtkTypeRevisionMacro(vtkEmptyRepresentation, vtkDataRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

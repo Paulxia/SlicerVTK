@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelection.h
+  Module:    $RCSfile: vtkExtractSelection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_GRAPHICS_EXPORT vtkExtractSelection : public vtkExtractSelectionBase
 {
 public:
   static vtkExtractSelection *New();
-  vtkTypeMacro(vtkExtractSelection, vtkExtractSelectionBase);
+  vtkTypeRevisionMacro(vtkExtractSelection, vtkExtractSelectionBase);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

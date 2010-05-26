@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMarchingContourFilter.cxx
+  Module:    $RCSfile: vtkMarchingContourFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkMarchingContourFilter, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkMarchingContourFilter);
 
 // Construct object with initial range (0,1) and single contour value

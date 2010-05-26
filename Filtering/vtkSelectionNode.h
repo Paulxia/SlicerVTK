@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkSelectionNode.h
+  Module:    $RCSfile: vtkSelectionNode.h,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -59,7 +59,7 @@ class vtkTable;
 class VTK_FILTERING_EXPORT vtkSelectionNode : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkSelectionNode,vtkObject);
+  vtkTypeRevisionMacro(vtkSelectionNode,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkSelectionNode* New();
 

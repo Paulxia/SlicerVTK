@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChartXY.cxx
+  Module:    $RCSfile: vtkChartXY.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,6 @@
 #include "vtkSmartPointer.h"
 
 #include "vtkObjectFactory.h"
-#include "vtkCommand.h"
 
 #include "vtkStdString.h"
 #include "vtkTextProperty.h"
@@ -65,17 +64,15 @@ public:
   vtkChartXYPrivate()
     {
     this->Colors = vtkSmartPointer<vtkColorSeries>::New();
-    this->PlotCorners.resize(4);
-    this->PlotTransforms.resize(4);
-    this->PlotTransforms[0] = vtkSmartPointer<vtkTransform2D>::New();
     }
 
   vtkstd::vector<vtkPlot *> plots; // Charts can contain multiple plots of data
-  vtkstd::vector< vtkstd::vector<vtkPlot *> > PlotCorners; // Stored by corner...
-  vtkstd::vector< vtkSmartPointer<vtkTransform2D> > PlotTransforms; // Transforms
   vtkstd::vector<vtkAxis *> axes; // Charts can contain multiple axes
   vtkSmartPointer<vtkColorSeries> Colors; // Colors in the chart
 };
+
+//-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkChartXY, "$Revision: 1.46.4.1 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkChartXY);
@@ -105,6 +102,7 @@ vtkChartXY::vtkChartXY()
   this->Grid->SetXAxis(this->ChartPrivate->axes[1]);
   this->Grid->SetYAxis(this->ChartPrivate->axes[0]);
 
+  this->PlotTransform = vtkTransform2D::New();
   this->PlotTransformValid = false;
 
   this->BoxOrigin[0] = this->BoxOrigin[1] = 0.0f;
@@ -112,7 +110,7 @@ vtkChartXY::vtkChartXY()
   this->DrawBox = false;
   this->DrawNearestPoint = false;
   this->DrawAxesAtOrigin = false;
-  this->BarWidthFraction = 0.8f;
+  this->BarWidthFraction = 0.8;
 
   this->Tooltip = vtkTooltipItem::New();
   this->Tooltip->SetVisible(false);
@@ -125,7 +123,7 @@ vtkChartXY::~vtkChartXY()
     {
     this->ChartPrivate->plots[i]->Delete();
     }
-  for (size_t i = 0; i < 4; ++i)
+  for (int i = 0; i < 4; ++i)
     {
     this->ChartPrivate->axes[i]->Delete();
     }
@@ -137,6 +135,11 @@ vtkChartXY::~vtkChartXY()
   this->Legend->Delete();
   this->Legend = 0;
 
+  if (this->PlotTransform)
+    {
+    this->PlotTransform->Delete();
+    this->PlotTransform = NULL;
+    }
   this->Tooltip->Delete();
   this->Tooltip = 0;
 }
@@ -225,11 +228,11 @@ bool vtkChartXY::Paint(vtkContext2D *painter)
   if (!this->PlotTransformValid)
     {
     this->RecalculatePlotBounds();
-    this->RecalculatePlotTransforms();
+    this->RecalculatePlotTransform();
     }
   else if (recalculateTransform)
     {
-    this->RecalculatePlotTransforms();
+    this->RecalculatePlotTransform();
     }
 
   // Update the axes in the chart
@@ -321,27 +324,20 @@ void vtkChartXY::RenderPlots(vtkContext2D *painter)
   painter->GetDevice()->SetClipping(clipi);
 
   // Push the matrix and use the transform we just calculated
-  for (int i = 0; i < 4; ++i)
-    {
-    if (this->ChartPrivate->PlotCorners[i].size())
-      {
-      painter->PushMatrix();
-      painter->AppendTransform(this->ChartPrivate->PlotTransforms[i]);
+  painter->PushMatrix();
+  painter->AppendTransform(this->PlotTransform);
 
-      // Now iterate through the plots
-      vtkstd::vector<vtkPlot*>::iterator it =
-          this->ChartPrivate->PlotCorners[i].begin();
-      for ( ; it != this->ChartPrivate->PlotCorners[i].end(); ++it)
-        {
-        (*it)->SetSelection(idArray);
-        (*it)->Paint(painter);
-        }
-      painter->PopMatrix();
-      }
+  // Now iterate through the plots
+  size_t n = this->ChartPrivate->plots.size();
+  for (size_t i = 0; i < n; ++i)
+    {
+    this->ChartPrivate->plots[i]->SetSelection(idArray);
+    this->ChartPrivate->plots[i]->Paint(painter);
     }
 
   // Stop clipping of the plot area and reset back to screen coordinates
   painter->GetDevice()->DisableClipping();
+  painter->PopMatrix();
 }
 
 //-----------------------------------------------------------------------------
@@ -379,121 +375,59 @@ void vtkChartXY::CalculateBarPlots()
       {
       barWidth = 1.0f / bars.size() * this->BarWidthFraction;
       }
-
     // Now set the offsets and widths on each bar
-    // The offsetIndex deals with the fact that half the bars
-    // must shift to the left of the point and half to the right
-    int offsetIndex = static_cast<int>(bars.size() - 1);
     for (size_t i = 0; i < bars.size(); ++i)
       {
       bars[i]->SetWidth(barWidth);
-      bars[i]->SetOffset(offsetIndex * (barWidth / 2));
-      // Increment by two since we need to shift by half widths
-      // but make room for entire bars. Increment backwards because
-      // offsets are always subtracted and Positive offsets move
-      // the bar leftwards.  Negative offsets will shift the bar
-      // to the right.
-      offsetIndex -= 2;
-      //bars[i]->SetOffset(float(bars.size()-i-1)*(barWidth/2));
+      bars[i]->SetOffset(float(bars.size()-i-1)*barWidth);
       }
     }
 }
 
 //-----------------------------------------------------------------------------
-void vtkChartXY::RecalculatePlotTransforms()
-{
-  if (this->ChartPrivate->PlotCorners[0].size())
-    {
-    this->RecalculatePlotTransform(this->ChartPrivate->axes[vtkAxis::BOTTOM],
-                                   this->ChartPrivate->axes[vtkAxis::LEFT],
-                                   this->ChartPrivate->PlotTransforms[0]);
-    }
-  if (this->ChartPrivate->PlotCorners[1].size())
-    {
-    if (!this->ChartPrivate->PlotTransforms[1])
-      {
-      this->ChartPrivate->PlotTransforms[1] = vtkSmartPointer<vtkTransform2D>::New();
-      }
-    this->RecalculatePlotTransform(this->ChartPrivate->axes[vtkAxis::BOTTOM],
-                                   this->ChartPrivate->axes[vtkAxis::RIGHT],
-                                   this->ChartPrivate->PlotTransforms[1]);
-    }
-  if (this->ChartPrivate->PlotCorners[2].size())
-    {
-    if (!this->ChartPrivate->PlotTransforms[2])
-      {
-      this->ChartPrivate->PlotTransforms[2] = vtkSmartPointer<vtkTransform2D>::New();
-      }
-    this->RecalculatePlotTransform(this->ChartPrivate->axes[vtkAxis::TOP],
-                                   this->ChartPrivate->axes[vtkAxis::RIGHT],
-                                   this->ChartPrivate->PlotTransforms[2]);
-    }
-  if (this->ChartPrivate->PlotCorners[3].size())
-    {
-    if (!this->ChartPrivate->PlotTransforms[3])
-      {
-      this->ChartPrivate->PlotTransforms[3] = vtkSmartPointer<vtkTransform2D>::New();
-      }
-    this->RecalculatePlotTransform(this->ChartPrivate->axes[vtkAxis::TOP],
-                                   this->ChartPrivate->axes[vtkAxis::LEFT],
-                                   this->ChartPrivate->PlotTransforms[3]);
-    }
-}
-
-//-----------------------------------------------------------------------------
-void vtkChartXY::RecalculatePlotTransform(vtkAxis *x, vtkAxis *y,
-                                          vtkTransform2D *transform)
+void vtkChartXY::RecalculatePlotTransform()
 {
   // Get the scale for the plot area from the x and y axes
-  float *min = x->GetPoint1();
-  float *max = x->GetPoint2();
+
+  // First the bottom axis (x)
+  vtkAxis* axis = this->ChartPrivate->axes[vtkAxis::BOTTOM];
+  float *min = axis->GetPoint1();
+  float *max = axis->GetPoint2();
   if (fabs(max[0] - min[0]) == 0.0f)
     {
     return;
     }
-  float xScale = (x->GetMaximum() - x->GetMinimum()) / (max[0] - min[0]);
+  float xScale = (axis->GetMaximum() - axis->GetMinimum()) / (max[0] - min[0]);
 
-  // Now the y axis
-  min = y->GetPoint1();
-  max = y->GetPoint2();
+  // Now the left axis (y)
+  axis = this->ChartPrivate->axes[vtkAxis::LEFT];
+  min = axis->GetPoint1();
+  max = axis->GetPoint2();
   if (fabs(max[1] - min[1]) == 0.0f)
     {
     return;
     }
-  float yScale = (y->GetMaximum() - y->GetMinimum()) / (max[1] - min[1]);
+  float yScale = (axis->GetMaximum() - axis->GetMinimum()) / (max[1] - min[1]);
 
-  transform->Identity();
-  transform->Translate(this->Point1[0], this->Point1[1]);
+  this->PlotTransform->Identity();
+  this->PlotTransform->Translate(this->Point1[0], this->Point1[1]);
   // Get the scale for the plot area from the x and y axes
-  transform->Scale(1.0 / xScale, 1.0 / yScale);
-  transform->Translate(
+  this->PlotTransform->Scale(1.0 / xScale, 1.0 / yScale);
+  this->PlotTransform->Translate(
       -this->ChartPrivate->axes[vtkAxis::BOTTOM]->GetMinimum(),
       -this->ChartPrivate->axes[vtkAxis::LEFT]->GetMinimum());
 
   // Move the axes if necessary and if the draw axes at origin ivar is true.
-  if (this->DrawAxesAtOrigin && x == this->ChartPrivate->axes[vtkAxis::BOTTOM] &&
-      y == this->ChartPrivate->axes[vtkAxis::LEFT])
+  if (this->DrawAxesAtOrigin)
     {
     // Get the screen coordinates for the origin, and move the axes there.
     float origin[2] = { 0.0, 0.0 };
-    transform->TransformPoints(origin, origin, 1);
+    this->PlotTransform->TransformPoints(origin, origin, 1);
     // Need to clamp the axes in the plot area.
-    if (int(origin[0]) < this->Point1[0])
-      {
-      origin[0] = this->Point1[0];
-      }
-    if (int(origin[0]) > this->Point2[0])
-      {
-      origin[0] = this->Point2[0];
-      }
-    if (int(origin[1]) < this->Point1[1])
-      {
-      origin[1] = this->Point1[1];
-      }
-    if (int(origin[1]) > this->Point2[1])
-      {
-      origin[1] = this->Point2[1];
-      }
+    if (int(origin[0]) < this->Point1[0]) origin[0] = this->Point1[0];
+    if (int(origin[0]) > this->Point2[0]) origin[0] = this->Point2[0];
+    if (int(origin[1]) < this->Point1[1]) origin[1] = this->Point1[1];
+    if (int(origin[1]) > this->Point2[1]) origin[1] = this->Point2[1];
 
     this->ChartPrivate->axes[vtkAxis::BOTTOM]->SetPoint1(this->Point1[0], origin[1]);
     this->ChartPrivate->axes[vtkAxis::BOTTOM]->SetPoint2(this->Point2[0], origin[1]);
@@ -505,210 +439,57 @@ void vtkChartXY::RecalculatePlotTransform(vtkAxis *x, vtkAxis *y,
 }
 
 //-----------------------------------------------------------------------------
-int vtkChartXY::GetPlotCorner(vtkPlot *plot)
-{
-  vtkAxis *x = plot->GetXAxis();
-  vtkAxis *y = plot->GetYAxis();
-  if (x == this->ChartPrivate->axes[vtkAxis::BOTTOM] &&
-      y == this->ChartPrivate->axes[vtkAxis::LEFT])
-    {
-    return 0;
-    }
-  else if (x == this->ChartPrivate->axes[vtkAxis::BOTTOM] &&
-           y == this->ChartPrivate->axes[vtkAxis::RIGHT])
-    {
-    return 1;
-    }
-  else if (x == this->ChartPrivate->axes[vtkAxis::TOP] &&
-           y == this->ChartPrivate->axes[vtkAxis::RIGHT])
-    {
-    return 2;
-    }
-  else if (x == this->ChartPrivate->axes[vtkAxis::TOP] &&
-           y == this->ChartPrivate->axes[vtkAxis::LEFT])
-    {
-    return 3;
-    }
-  else
-    {
-    // Should never happen.
-    return 4;
-    }
-}
-
-//-----------------------------------------------------------------------------
-void vtkChartXY::SetPlotCorner(vtkPlot *plot, int corner)
-{
-  if (corner < 0 || corner > 3)
-    {
-    vtkWarningMacro("Invalid corner specified, should be between 0 and 3: "
-                    << corner);
-    return;
-    }
-  if (!this->RemovePlotFromConers(plot))
-    {
-    vtkWarningMacro("Error removing plot from corners.");
-    }
-  this->ChartPrivate->PlotCorners[corner].push_back(plot);
-  if (corner == 0)
-    {
-    plot->SetXAxis(this->ChartPrivate->axes[vtkAxis::BOTTOM]);
-    plot->SetYAxis(this->ChartPrivate->axes[vtkAxis::LEFT]);
-    }
-  else if (corner == 1)
-    {
-    plot->SetXAxis(this->ChartPrivate->axes[vtkAxis::BOTTOM]);
-    plot->SetYAxis(this->ChartPrivate->axes[vtkAxis::RIGHT]);
-    }
-  else if (corner == 2)
-    {
-    plot->SetXAxis(this->ChartPrivate->axes[vtkAxis::TOP]);
-    plot->SetYAxis(this->ChartPrivate->axes[vtkAxis::RIGHT]);
-    }
-  else if (corner == 3)
-    {
-    plot->SetXAxis(this->ChartPrivate->axes[vtkAxis::TOP]);
-    plot->SetYAxis(this->ChartPrivate->axes[vtkAxis::LEFT]);
-    }
-  this->PlotTransformValid = false;
-}
-
-//-----------------------------------------------------------------------------
 void vtkChartXY::RecalculatePlotBounds()
 {
-  // Get the bounds of each plot, and each axis  - ordering as laid out below
-  double y1[] = { 0.0, 0.0 }; // left -> 0
-  double x1[] = { 0.0, 0.0 }; // bottom -> 1
-  double y2[] = { 0.0, 0.0 }; // right -> 2
-  double x2[] = { 0.0, 0.0 }; // top -> 3
-  // Store whether the ranges have been initialized - follows same order
-  bool initialized[] = { false, false, false, false };
+  // Get the bounds of each plot.
+  float xmin = 0.0;
+  float xmax = 1.0;
+  float ymin = 0.0;
+  float ymax = 1.0;
+  bool initialized = false;
 
-  vtkstd::vector<vtkPlot*>::iterator it;
+  size_t n = this->ChartPrivate->plots.size();
   double bounds[4] = { 0.0, 0.0, 0.0, 0.0 };
-  for (it = this->ChartPrivate->plots.begin();
-       it != this->ChartPrivate->plots.end(); ++it)
+  for (size_t i = 0; i < n; ++i)
     {
-    if ((*it)->GetVisible() == false)
+    if (this->ChartPrivate->plots[i]->GetVisible() == false)
       {
       continue;
       }
-    (*it)->GetBounds(bounds);
-    int corner = this->GetPlotCorner(*it);
-
-    // Initialize the appropriate ranges, or push out the ranges
-    if ((corner == 0 || corner == 3)) // left
+    this->ChartPrivate->plots[i]->GetBounds(bounds);
+    if (!initialized)
       {
-      if (!initialized[0])
-        {
-        y1[0] = bounds[2];
-        y1[1] = bounds[3];
-        initialized[0] = true;
-        }
-      else
-        {
-        if (y1[0] > bounds[2]) // min
-          {
-          y1[0] = bounds[2];
-          }
-        if (y1[1] < bounds[3]) // max
-          {
-          y1[1] = bounds[3];
-          }
-        }
+      // Initialize the bounds for the chart
+      xmin = float(bounds[0]);
+      xmax = float(bounds[1]);
+      ymin = float(bounds[2]);
+      ymax = float(bounds[3]);
+      initialized = true;
       }
-    if ((corner == 0 || corner == 1)) // bottom
+    else
       {
-      if (!initialized[1])
-        {
-        x1[0] = bounds[0];
-        x1[1] = bounds[1];
-        initialized[1] = true;
-        }
-      else
-        {
-        if (x1[0] > bounds[0]) // min
-          {
-          x1[0] = bounds[0];
-          }
-        if (x1[1] < bounds[1]) // max
-          {
-          x1[1] = bounds[1];
-          }
-        }
-      }
-    if ((corner == 1 || corner == 2)) // right
-      {
-      if (!initialized[2])
-        {
-        y2[0] = bounds[2];
-        y2[1] = bounds[3];
-        initialized[2] = true;
-        }
-      else
-        {
-        if (y2[0] > bounds[2]) // min
-          {
-          y2[0] = bounds[2];
-          }
-        if (y2[1] < bounds[3]) // max
-          {
-          y2[1] = bounds[3];
-          }
-        }
-      }
-    if ((corner == 2 || corner == 3)) // top
-      {
-      if (!initialized[1])
-        {
-        x2[0] = bounds[0];
-        x2[1] = bounds[1];
-        initialized[3] = true;
-        }
-      else
-        {
-        if (x2[0] > bounds[0]) // min
-          {
-          x2[0] = bounds[0];
-          }
-        if (x2[1] < bounds[1]) // max
-          {
-          x2[1] = bounds[1];
-          }
-        }
+      if (xmin > bounds[0]) xmin = float(bounds[0]);
+      if (xmax < bounds[1]) xmax = float(bounds[1]);
+      if (ymin > bounds[2]) ymin = float(bounds[2]);
+      if (ymax < bounds[3]) ymax = float(bounds[3]);
       }
     }
 
   // Now set the newly calculated bounds on the axes
-  for (int i = 0; i < 4; ++i)
+  vtkAxis* xAxis = this->ChartPrivate->axes[vtkAxis::BOTTOM];
+  vtkAxis* yAxis = this->ChartPrivate->axes[vtkAxis::LEFT];
+  if (xAxis->GetBehavior() == 0)
     {
-    vtkAxis *axis = this->ChartPrivate->axes[i];
-    double *range = 0;
-    switch (i)
-      {
-      case 0:
-        range = y1;
-        break;
-      case 1:
-        range = x1;
-        break;
-      case 2:
-        range = y2;
-        break;
-      case 3:
-        range = x2;
-        break;
-      default:
-        return;
-      }
-
-    if (axis->GetBehavior() == 0 && initialized[i])
-      {
-      axis->SetRange(range[0], range[1]);
-      axis->AutoScale();
-      }
+    xAxis->SetMinimum(xmin);
+    xAxis->SetMaximum(xmax);
+    xAxis->AutoScale();
     }
-
+  if (yAxis->GetBehavior() == 0)
+    {
+    yAxis->SetMinimum(ymin);
+    yAxis->SetMaximum(ymax);
+    yAxis->AutoScale();
+    }
   this->Modified();
 }
 
@@ -727,13 +508,17 @@ vtkPlot * vtkChartXY::AddPlot(int type)
     case LINE:
       {
       vtkPlotLine *line = vtkPlotLine::New();
+      this->ChartPrivate->plots.push_back(line);
       line->GetPen()->SetColor(color.GetData());
+      line->SetXAxis(this->ChartPrivate->axes[vtkAxis::BOTTOM]);
+      line->SetYAxis(this->ChartPrivate->axes[vtkAxis::LEFT]);
       plot = line;
       break;
       }
     case POINTS:
       {
       vtkPlotPoints *points = vtkPlotPoints::New();
+      this->ChartPrivate->plots.push_back(points);
       points->GetPen()->SetColor(color.GetData());
       plot = points;
       break;
@@ -741,6 +526,7 @@ vtkPlot * vtkChartXY::AddPlot(int type)
     case BAR:
       {
       vtkPlotBar *bar = vtkPlotBar::New();
+      this->ChartPrivate->plots.push_back(bar);
       bar->GetBrush()->SetColor(color.GetData());
       plot = bar;
       break;
@@ -748,11 +534,6 @@ vtkPlot * vtkChartXY::AddPlot(int type)
     default:
       plot = NULL;
     }
-  // Add the plot to the default corner
-  plot->SetXAxis(this->ChartPrivate->axes[vtkAxis::BOTTOM]);
-  plot->SetYAxis(this->ChartPrivate->axes[vtkAxis::LEFT]);
-  this->ChartPrivate->plots.push_back(plot);
-  this->ChartPrivate->PlotCorners[0].push_back(plot);
   // Ensure that the bounds are recalculated
   this->PlotTransformValid = false;
   // Mark the scene as dirty
@@ -765,10 +546,8 @@ bool vtkChartXY::RemovePlot(vtkIdType index)
 {
   if (static_cast<vtkIdType>(this->ChartPrivate->plots.size()) > index)
     {
-    this->RemovePlotFromConers(this->ChartPrivate->plots[index]);
     this->ChartPrivate->plots[index]->Delete();
     this->ChartPrivate->plots.erase(this->ChartPrivate->plots.begin()+index);
-
     // Ensure that the bounds are recalculated
     this->PlotTransformValid = false;
     // Mark the scene as dirty
@@ -881,16 +660,12 @@ bool vtkChartXY::MouseMoveEvent(const vtkContextMouseEvent &mouse)
   if (mouse.Button == vtkContextMouseEvent::LEFT_BUTTON)
     {
     // Figure out how much the mouse has moved by in plot coordinates - pan
-    double screenPos[2] = { mouse.ScreenPos[0], mouse.ScreenPos[1] };
-    double lastScreenPos[2] = { mouse.LastScreenPos[0], mouse.LastScreenPos[1] };
-    double pos[2] = { 0.0, 0.0 };
-    double last[2] = { 0.0, 0.0 };
+    double pos[] = { mouse.ScreenPos[0], mouse.ScreenPos[1] };
+    double last[] = { mouse.LastScreenPos[0], mouse.LastScreenPos[1] };
 
     // Go from screen to scene coordinates to work out the delta
-    this->ChartPrivate->PlotTransforms[0]
-        ->InverseTransformPoints(screenPos, pos, 1);
-    this->ChartPrivate->PlotTransforms[0]
-        ->InverseTransformPoints(lastScreenPos, last, 1);
+    this->PlotTransform->InverseTransformPoints(pos, pos, 1);
+    this->PlotTransform->InverseTransformPoints(last, last, 1);
     double delta[] = { last[0] - pos[0], last[1] - pos[1] };
 
     // Now move the axes and recalculate the transform
@@ -901,34 +676,7 @@ bool vtkChartXY::MouseMoveEvent(const vtkContextMouseEvent &mouse)
     yAxis->SetMinimum(yAxis->GetMinimum() + delta[1]);
     yAxis->SetMaximum(yAxis->GetMaximum() + delta[1]);
 
-    // Same again for the axes in the top right
-    if (this->ChartPrivate->PlotTransforms[2])
-    {
-      // Go from screen to scene coordinates to work out the delta
-      this->ChartPrivate->PlotTransforms[2]
-          ->InverseTransformPoints(screenPos, pos, 1);
-      this->ChartPrivate->PlotTransforms[2]
-          ->InverseTransformPoints(lastScreenPos, last, 1);
-      delta[0] = last[0] - pos[0];
-      delta[1] = last[1] - pos[1];
-
-      // Now move the axes and recalculate the transform
-      xAxis = this->ChartPrivate->axes[vtkAxis::TOP];
-      yAxis = this->ChartPrivate->axes[vtkAxis::RIGHT];
-      xAxis->SetMinimum(xAxis->GetMinimum() + delta[0]);
-      xAxis->SetMaximum(xAxis->GetMaximum() + delta[0]);
-      yAxis->SetMinimum(yAxis->GetMinimum() + delta[1]);
-      yAxis->SetMaximum(yAxis->GetMaximum() + delta[1]);
-    }
-
-    this->RecalculatePlotTransforms();
-    // Mark the scene as dirty
-    this->Scene->SetDirty(true);
-    }
-  else if (mouse.Button == vtkContextMouseEvent::MIDDLE_BUTTON)
-    {
-    this->BoxGeometry[0] = mouse.Pos[0] - this->BoxOrigin[0];
-    this->BoxGeometry[1] = mouse.Pos[1] - this->BoxOrigin[1];
+    this->RecalculatePlotTransform();
     // Mark the scene as dirty
     this->Scene->SetDirty(true);
     }
@@ -952,41 +700,32 @@ bool vtkChartXY::MouseMoveEvent(const vtkContextMouseEvent &mouse)
 bool vtkChartXY::LocatePointInPlots(const vtkContextMouseEvent &mouse)
 {
   size_t n = this->ChartPrivate->plots.size();
-  if (mouse.ScreenPos[0] > this->Point1[0] &&
-      mouse.ScreenPos[0] < this->Point2[0] &&
-      mouse.ScreenPos[1] > this->Point1[1] &&
-      mouse.ScreenPos[1] < this->Point2[1] && n)
+  if (mouse.ScreenPos[0] > this->Point1[0] && mouse.ScreenPos[0] < this->Point2[0] &&
+      mouse.ScreenPos[1] > this->Point1[1] && mouse.ScreenPos[1] < this->Point2[1] &&
+      this->PlotTransform && n)
     {
-    // Iterate through each corner, and check for a nearby point
-    for (int i = 0; i < 4; ++i)
+    vtkVector2f plotPos, position;
+    this->PlotTransform->InverseTransformPoints(mouse.Pos.GetData(),
+                                                position.GetData(),
+                                                1);
+    // Use a tolerance of +/- 5 pixels
+    vtkVector2f tolerance(5*(1.0/this->PlotTransform->GetMatrix()->GetElement(0, 0)),
+                          5*(1.0/this->PlotTransform->GetMatrix()->GetElement(1, 1)));
+    // Iterate through the visible plots and return on the first hit
+    for (int i = static_cast<int>(--n); i >= 0; --i)
       {
-      if (this->ChartPrivate->PlotCorners[i].size())
+      vtkPlot* plot = this->ChartPrivate->plots[i];
+      if (plot->GetVisible())
         {
-        vtkVector2f plotPos, position;
-        vtkTransform2D* transform = this->ChartPrivate->PlotTransforms[i];
-        transform->InverseTransformPoints(mouse.Pos.GetData(),
-                                          position.GetData(), 1);
-        // Use a tolerance of +/- 5 pixels
-        vtkVector2f tolerance(5*(1.0/transform->GetMatrix()->GetElement(0, 0)),
-                              5*(1.0/transform->GetMatrix()->GetElement(1, 1)));
-        // Iterate through the visible plots and return on the first hit
-        for (int j = static_cast<int>(this->ChartPrivate->PlotCorners[i].size()-1);
-             j >= 0; --j)
+        bool found = plot->GetNearestPoint(position, tolerance, &plotPos);
+        if (found)
           {
-          vtkPlot* plot = this->ChartPrivate->PlotCorners[i][j];
-          if (plot->GetVisible())
-            {
-            bool found = plot->GetNearestPoint(position, tolerance, &plotPos);
-            if (found)
-              {
-              // We found a point, set up the tooltip and return
-              vtksys_ios::ostringstream ostr;
-              ostr << plot->GetLabel() << ": " << plotPos.X() << ", " << plotPos.Y();
-              this->Tooltip->SetText(ostr.str().c_str());
-              this->Tooltip->SetPosition(mouse.ScreenPos[0]+2, mouse.ScreenPos[1]+2);
-              return true;
-              }
-            }
+          // We found a point, set up the tooltip and return
+          vtksys_ios::ostringstream ostr;
+          ostr << plot->GetLabel() << ": " << plotPos.X() << ", " << plotPos.Y();
+          this->Tooltip->SetText(ostr.str().c_str());
+          this->Tooltip->SetPosition(mouse.ScreenPos[0]+2, mouse.ScreenPos[1]+2);
+          return true;
           }
         }
       }
@@ -1011,15 +750,6 @@ bool vtkChartXY::MouseButtonPressEvent(const vtkContextMouseEvent &mouse)
     // The mouse panning action.
     return true;
     }
-  else if (mouse.Button == vtkContextMouseEvent::MIDDLE_BUTTON)
-    {
-    // Selection, for now at least...
-    this->BoxOrigin[0] = mouse.Pos[0];
-    this->BoxOrigin[1] = mouse.Pos[1];
-    this->BoxGeometry[0] = this->BoxGeometry[1] = 0.0f;
-    this->DrawBox = true;
-    return true;
-    }
   else if (mouse.Button == vtkContextMouseEvent::RIGHT_BUTTON)
     {
     // Right mouse button - zoom box
@@ -1038,75 +768,7 @@ bool vtkChartXY::MouseButtonPressEvent(const vtkContextMouseEvent &mouse)
 //-----------------------------------------------------------------------------
 bool vtkChartXY::MouseButtonReleaseEvent(const vtkContextMouseEvent &mouse)
 {
-  if (mouse.Button == vtkContextMouseEvent::MIDDLE_BUTTON)
-    {
-    // Check whether a valid selection box was drawn
-    this->BoxGeometry[0] = mouse.Pos[0] - this->BoxOrigin[0];
-    this->BoxGeometry[1] = mouse.Pos[1] - this->BoxOrigin[1];
-    if (fabs(this->BoxGeometry[0]) < 0.5 || fabs(this->BoxGeometry[1]) < 0.5)
-      {
-      // Invalid box size - do nothing
-      this->BoxGeometry[0] = this->BoxGeometry[1] = 0.0f;
-      this->DrawBox = false;
-      return true;
-      }
-
-    // Iterate through the plots and build a selection
-    for (int i = 0; i < 4; ++i)
-    {
-      if (this->ChartPrivate->PlotCorners[i].size())
-      {
-        vtkTransform2D *transform = this->ChartPrivate->PlotTransforms[i];
-        transform->InverseTransformPoints(this->BoxOrigin, this->BoxOrigin, 1);
-        float point2[] = { mouse.Pos[0], mouse.Pos[1] };
-        transform->InverseTransformPoints(point2, point2, 1);
-
-        vtkVector2f min(this->BoxOrigin);
-        vtkVector2f max(point2);
-        if (min.X() > max.X())
-          {
-          float tmp = min.X();
-          min.SetX(max.X());
-          max.SetX(tmp);
-          }
-        if (min.Y() > max.Y())
-          {
-          float tmp = min.Y();
-          min.SetY(max.Y());
-          max.SetY(tmp);
-          }
-
-        vtkstd::vector<vtkPlot*>::iterator it =
-            this->ChartPrivate->PlotCorners[i].begin();
-        for ( ; it != this->ChartPrivate->PlotCorners[i].end(); ++it)
-          {
-          vtkPlot* plot = *it;
-          if (plot->SelectPoints(min, max))
-            {
-            if (this->AnnotationLink)
-              {
-              // FIXME: Build up a selection from each plot?
-              vtkSelection* selection = vtkSelection::New();
-              vtkSelectionNode* node = vtkSelectionNode::New();
-              selection->AddNode(node);
-              node->SetSelectionList(plot->GetSelection());
-              this->AnnotationLink->SetCurrentSelection(selection);
-              node->Delete();
-              selection->Delete();
-              }
-            }
-          }
-        }
-      }
-
-    this->InvokeEvent(vtkCommand::SelectionChangedEvent);
-    this->BoxGeometry[0] = this->BoxGeometry[1] = 0.0f;
-    this->DrawBox = false;
-    // Mark the scene as dirty
-    this->Scene->SetDirty(true);
-    return true;
-    }
-  if (mouse.Button == vtkContextMouseEvent::RIGHT_BUTTON)
+  if (mouse.Button == 2)
     {
     // Check whether a valid zoom box was drawn
     this->BoxGeometry[0] = mouse.Pos[0] - this->BoxOrigin[0];
@@ -1120,16 +782,46 @@ bool vtkChartXY::MouseButtonReleaseEvent(const vtkContextMouseEvent &mouse)
       }
 
     // Zoom into the chart by the specified amount, and recalculate the bounds
+    this->PlotTransform->InverseTransformPoints(this->BoxOrigin,
+                                                this->BoxOrigin, 1);
     float point2[] = { mouse.Pos[0], mouse.Pos[1] };
+    this->PlotTransform->InverseTransformPoints(point2, point2, 1);
 
-    this->ZoomInAxes(this->ChartPrivate->axes[vtkAxis::BOTTOM],
-                     this->ChartPrivate->axes[vtkAxis::LEFT],
-                     this->BoxOrigin, point2);
-    this->ZoomInAxes(this->ChartPrivate->axes[vtkAxis::TOP],
-                     this->ChartPrivate->axes[vtkAxis::RIGHT],
-                     this->BoxOrigin, point2);
+    // Ensure we preserve the directionality of the axes
+    vtkAxis* xAxis = this->ChartPrivate->axes[vtkAxis::BOTTOM];
+    vtkAxis* yAxis = this->ChartPrivate->axes[vtkAxis::LEFT];
+    if (xAxis->GetMaximum() > xAxis->GetMinimum())
+      {
+      xAxis->SetMaximum(this->BoxOrigin[0] > point2[0] ?
+                              this->BoxOrigin[0] : point2[0]);
+      xAxis->SetMinimum(this->BoxOrigin[0] < point2[0] ?
+                              this->BoxOrigin[0] : point2[0]);
+      }
+    else
+      {
+      xAxis->SetMaximum(this->BoxOrigin[0] < point2[0] ?
+                              this->BoxOrigin[0] : point2[0]);
+      xAxis->SetMinimum(this->BoxOrigin[0] > point2[0] ?
+                              this->BoxOrigin[0] : point2[0]);
+      }
+    if (yAxis->GetMaximum() > yAxis->GetMinimum())
+      {
+      yAxis->SetMaximum(this->BoxOrigin[1] > point2[1] ?
+                              this->BoxOrigin[1] : point2[1]);
+      yAxis->SetMinimum(this->BoxOrigin[1] < point2[1] ?
+                              this->BoxOrigin[1] : point2[1]);
+      }
+    else
+      {
+      yAxis->SetMaximum(this->BoxOrigin[1] < point2[1] ?
+                              this->BoxOrigin[1] : point2[1]);
+      yAxis->SetMinimum(this->BoxOrigin[1] > point2[1] ?
+                              this->BoxOrigin[1] : point2[1]);
+      }
 
-    this->RecalculatePlotTransforms();
+    this->RecalculatePlotTransform();
+    xAxis->RecalculateTickSpacing();
+    yAxis->RecalculateTickSpacing();
     this->BoxGeometry[0] = this->BoxGeometry[1] = 0.0f;
     this->DrawBox = false;
     // Mark the scene as dirty
@@ -1139,68 +831,43 @@ bool vtkChartXY::MouseButtonReleaseEvent(const vtkContextMouseEvent &mouse)
   return false;
 }
 
-void vtkChartXY::ZoomInAxes(vtkAxis *x, vtkAxis *y, float *origin, float *max)
-{
-  vtkTransform2D *transform = vtkTransform2D::New();
-  this->RecalculatePlotTransform(x, y, transform);
-  float torigin[2];
-  transform->InverseTransformPoints(origin, torigin, 1);
-  float tmax[2];
-  transform->InverseTransformPoints(max, tmax, 1);
-
-  // Ensure we preserve the directionality of the axes
-  if (x->GetMaximum() > x->GetMinimum())
-    {
-    x->SetMaximum(torigin[0] > tmax[0] ? torigin[0] : tmax[0]);
-    x->SetMinimum(torigin[0] < tmax[0] ? torigin[0] : tmax[0]);
-    }
-  else
-    {
-    x->SetMaximum(torigin[0] < tmax[0] ? torigin[0] : tmax[0]);
-    x->SetMinimum(torigin[0] > tmax[0] ? torigin[0] : tmax[0]);
-    }
-  if (y->GetMaximum() > y->GetMinimum())
-    {
-    y->SetMaximum(torigin[1] > tmax[1] ? torigin[1] : tmax[1]);
-    y->SetMinimum(torigin[1] < tmax[1] ? torigin[1] : tmax[1]);
-    }
-  else
-    {
-    y->SetMaximum(torigin[1] < tmax[1] ? torigin[1] : tmax[1]);
-    y->SetMinimum(torigin[1] > tmax[1] ? torigin[1] : tmax[1]);
-    }
-  x->RecalculateTickSpacing();
-  y->RecalculateTickSpacing();
-  transform->Delete();
-}
-
 //-----------------------------------------------------------------------------
 bool vtkChartXY::MouseWheelEvent(const vtkContextMouseEvent &, int delta)
 {
   this->Tooltip->SetVisible(false);
   // Get the bounds of each plot.
-  for (int i = 0; i < 4; ++i)
-    {
-    vtkAxis *axis = this->ChartPrivate->axes[i];
-    double min = axis->GetMinimum();
-    double max = axis->GetMaximum();
-    double frac = (max - min) * 0.1;
-    if (frac > 0.0)
-      {
-      min += delta*frac;
-      max -= delta*frac;
-      }
-    else
-      {
-      min -= delta*frac;
-      max += delta*frac;
-      }
-    axis->SetMinimum(min);
-    axis->SetMaximum(max);
-    axis->RecalculateTickSpacing();
-    }
+  vtkAxis* xAxis = this->ChartPrivate->axes[vtkAxis::BOTTOM];
+  vtkAxis* yAxis = this->ChartPrivate->axes[vtkAxis::LEFT];
+  float xmin = xAxis->GetMinimum();
+  float xmax = xAxis->GetMaximum();
+  float deltax = xmax - xmin;
+  float ymin = yAxis->GetMinimum();
+  float ymax = yAxis->GetMaximum();
+  float deltay = ymax - ymin;
 
-  this->RecalculatePlotTransforms();
+  if (delta > 0)
+    {
+    xmin += 0.1 * deltax;
+    xmax -= 0.1 * deltax;
+    ymin += 0.1 * deltay;
+    ymax -= 0.1 * deltay;
+    }
+  else
+    {
+    xmin -= 0.1 * deltax;
+    xmax += 0.1 * deltax;
+    ymin -= 0.1 * deltay;
+    ymax += 0.1 * deltay;
+    }
+  // Now set the newly calculated bounds on the axes
+  xAxis->SetMinimum(xmin);
+  xAxis->SetMaximum(xmax);
+  yAxis->SetMinimum(ymin);
+  yAxis->SetMaximum(ymax);
+
+  this->RecalculatePlotTransform();
+  xAxis->RecalculateTickSpacing();
+  yAxis->RecalculateTickSpacing();
 
   // Mark the scene as dirty
   this->Scene->SetDirty(true);
@@ -1209,29 +876,69 @@ bool vtkChartXY::MouseWheelEvent(const vtkContextMouseEvent &, int delta)
 }
 
 //-----------------------------------------------------------------------------
-void vtkChartXY::ProcessSelectionEvent(vtkObject* , void* )
+void vtkChartXY::ProcessSelectionEvent(vtkObject* caller, void* callData)
 {
+  cout << "ProcessSelectionEvent called in XY! " << caller << "\t" << callData << endl;
+  unsigned int *rect = reinterpret_cast<unsigned int *>(callData);
+
+  // The origin of the plot area
+  float xOrigin = this->Point1[0];
+  float yOrigin = this->Point1[1];
+
+  vtkAxis* xAxis = this->ChartPrivate->axes[vtkAxis::BOTTOM];
+  vtkAxis* yAxis = this->ChartPrivate->axes[vtkAxis::LEFT];
+
+  // Get the scale for the plot area from the x and y axes
+  float *min = xAxis->GetPoint1();
+  float *max = xAxis->GetPoint2();
+  double xScale = (xAxis->GetMaximum() - xAxis->GetMinimum()) /
+                 (max[0] - min[0]);
+  min = yAxis->GetPoint1();
+  max = yAxis->GetPoint2();
+  double yScale = (yAxis->GetMaximum() - yAxis->GetMinimum()) /
+                 (max[1] - min[1]);
+
+  double matrix[3][3];
+  matrix[0][0] = xScale;
+  matrix[0][1] = 0;
+  matrix[0][2] = -1.0 * xOrigin*xScale;
+
+  matrix[1][0] = yScale;
+  matrix[1][1] = 0;
+  matrix[1][2] = -1.0 * yOrigin*yScale;
+
+  matrix[2][0] = 0;
+  matrix[2][1] = 0;
+  matrix[2][2] = 1;
+
+  double tRect[4];
+
+  tRect[0] = matrix[0][0]*rect[0] + matrix[0][2];
+  tRect[1] = matrix[1][0]*rect[1] + matrix[1][2];
+
+  tRect[2] = matrix[0][0]*rect[2] + matrix[0][2];
+  tRect[3] = matrix[1][0]*rect[3] + matrix[1][2];
+
+  // As an example - handle zooming using the rubber band...
+  if (tRect[0] > tRect[2])
+    {
+    double tmp = tRect[0];
+    tRect[0] = tRect[2];
+    tRect[2] = tmp;
+    }
+  if (tRect[1] > tRect[3])
+    {
+    double tmp = tRect[1];
+    tRect[1] = tRect[3];
+    tRect[3] = tmp;
+    }
+  // Now set the values of the axes
+  xAxis->SetMinimum(tRect[0]);
+  xAxis->SetMaximum(tRect[2]);
+  yAxis->SetMinimum(tRect[1]);
+  yAxis->SetMaximum(tRect[3]);
 }
 
-//-----------------------------------------------------------------------------
-bool vtkChartXY::RemovePlotFromConers(vtkPlot *plot)
-{
-  // We know the plot will only ever be in one of the corners
-  for (int i = 0; i < 4; ++i)
-    {
-    vtkstd::vector<vtkPlot*>::iterator it =
-        this->ChartPrivate->PlotCorners[i].begin();
-    for ( ; it !=this->ChartPrivate->PlotCorners[i].end(); ++it)
-      {
-      if ((*it) == plot)
-        {
-        this->ChartPrivate->PlotCorners[i].erase(it);
-        return true;
-        }
-      }
-    }
-  return false;
-}
 
 //-----------------------------------------------------------------------------
 void vtkChartXY::PrintSelf(ostream &os, vtkIndent indent)

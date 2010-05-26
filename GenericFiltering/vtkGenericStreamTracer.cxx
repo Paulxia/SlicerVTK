@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkits
-  Module:    vtkGenericStreamTracer.cxx
+  Module:    $RCSfile: vtkGenericStreamTracer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkExecutive.h" // for GetExecutive()
 #include "vtkInformationVector.h"
 
+vtkCxxRevisionMacro(vtkGenericStreamTracer, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkGenericStreamTracer);
 vtkCxxSetObjectMacro(vtkGenericStreamTracer,Integrator,vtkInitialValueProblemSolver);
 vtkCxxSetObjectMacro(vtkGenericStreamTracer,InterpolatorPrototype,vtkGenericInterpolatedVelocityField);

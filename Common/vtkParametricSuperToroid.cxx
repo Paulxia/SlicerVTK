@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricSuperToroid.cxx
+  Module:    $RCSfile: vtkParametricSuperToroid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkMath.h"
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkParametricSuperToroid, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkParametricSuperToroid);
 
 //----------------------------------------------------------------------------

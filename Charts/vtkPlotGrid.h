@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlotGrid.h
+  Module:    $RCSfile: vtkPlotGrid.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class vtkAxis;
 class VTK_CHARTS_EXPORT vtkPlotGrid : public vtkContextItem
 {
 public:
-  vtkTypeMacro(vtkPlotGrid, vtkContextItem);
+  vtkTypeRevisionMacro(vtkPlotGrid, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

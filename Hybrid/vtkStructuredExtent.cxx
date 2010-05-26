@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredExtent.cxx
+  Module:    $RCSfile: vtkStructuredExtent.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkStructuredExtent);
+vtkCxxRevisionMacro(vtkStructuredExtent, "$Revision: 1.1 $");
 //----------------------------------------------------------------------------
 vtkStructuredExtent::vtkStructuredExtent()
 {

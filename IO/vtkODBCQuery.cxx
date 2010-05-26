@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkODBCQuery.cxx
+  Module:    $RCSfile: vtkODBCQuery.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,6 +45,7 @@
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkODBCQuery, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkODBCQuery);
 
 static vtkStdString GetErrorMessage(SQLSMALLINT handleType, SQLHANDLE handle, int *code=0);

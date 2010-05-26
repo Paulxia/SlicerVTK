@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnnotationLayers.cxx
+  Module:    $RCSfile: vtkAnnotationLayers.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -41,6 +41,7 @@
    affect other headers.  */
 #include <vtkstd/algorithm>
 
+vtkCxxRevisionMacro(vtkAnnotationLayers, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkAnnotationLayers);
 vtkCxxSetObjectMacro(vtkAnnotationLayers, CurrentAnnotation, vtkAnnotation);
 

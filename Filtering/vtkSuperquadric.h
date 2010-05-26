@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSuperquadric.h
+  Module:    $RCSfile: vtkSuperquadric.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ public:
   // scale (1,1,1), size 0.5, phi roundness 1.0, and theta roundness 0.0.
   static vtkSuperquadric *New();
 
-  vtkTypeMacro(vtkSuperquadric,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkSuperquadric,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // ImplicitFunction interface

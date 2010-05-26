@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    BoxClipTriangulateAndInterpolate.cxx
+  Module:    $RCSfile: BoxClipTriangulateAndInterpolate.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

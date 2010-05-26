@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricEnneper.cxx
+  Module:    $RCSfile: vtkParametricEnneper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkParametricEnneper, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkParametricEnneper);
 
 //----------------------------------------------------------------------------

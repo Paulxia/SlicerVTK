@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWin32OutputWindow.cxx
+  Module:    $RCSfile: vtkWin32OutputWindow.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkWindows.h"
 
+vtkCxxRevisionMacro(vtkWin32OutputWindow, "$Revision: 1.25 $");
 vtkStandardNewMacro(vtkWin32OutputWindow);
 
 HWND vtkWin32OutputWindowOutputWindow = 0;

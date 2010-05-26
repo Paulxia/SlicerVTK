@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBandedPolyDataContourFilter.cxx
+  Module:    $RCSfile: vtkBandedPolyDataContourFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 
 #include <float.h>
 
+vtkCxxRevisionMacro(vtkBandedPolyDataContourFilter, "$Revision: 1.58 $");
 vtkStandardNewMacro(vtkBandedPolyDataContourFilter);
 
 // Construct object.

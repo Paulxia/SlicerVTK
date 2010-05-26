@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridOutlineFilter.cxx
+  Module:    $RCSfile: vtkRectilinearGridOutlineFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkRectilinearGrid.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkRectilinearGridOutlineFilter, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkRectilinearGridOutlineFilter);
 
 

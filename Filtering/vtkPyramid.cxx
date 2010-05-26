@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPyramid.cxx
+  Module:    $RCSfile: vtkPyramid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkTriangle.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkPyramid, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkPyramid);
 
 static const double VTK_DIVERGED = 1.e6;

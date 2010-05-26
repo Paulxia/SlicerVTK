@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkSelection.cxx
+  Module:    $RCSfile: vtkSelection.cxx,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -38,6 +38,7 @@ struct vtkSelectionInternals
 };
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkSelection, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkSelection);
 
 //----------------------------------------------------------------------------

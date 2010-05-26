@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageNonMaximumSuppression.cxx
+  Module:    $RCSfile: vtkImageNonMaximumSuppression.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageNonMaximumSuppression, "$Revision: 1.58 $");
 vtkStandardNewMacro(vtkImageNonMaximumSuppression);
 
 //----------------------------------------------------------------------------

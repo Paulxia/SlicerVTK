@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayWeights.cxx
+  Module:    $RCSfile: vtkArrayWeights.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

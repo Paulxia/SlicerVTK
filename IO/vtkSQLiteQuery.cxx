@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSQLiteQuery.cxx
+  Module:    $RCSfile: vtkSQLiteQuery.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #define COMMIT_TRANSACTION "COMMIT"
 #define ROLLBACK_TRANSACTION "ROLLBACK"
 
+vtkCxxRevisionMacro(vtkSQLiteQuery, "$Revision: 1.20 $");
 vtkStandardNewMacro(vtkSQLiteQuery);
 
 // ----------------------------------------------------------------------

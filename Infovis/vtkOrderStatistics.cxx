@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkOrderStatistics.cxx
+Module:    $RCSfile: vtkOrderStatistics.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -23,12 +23,11 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkOrderStatistics.h"
 #include "vtkStatisticsAlgorithmPrivate.h"
 
-#include "vtkDoubleArray.h"
 #include "vtkIdTypeArray.h"
 #include "vtkInformation.h"
+#include "vtkInformationVector.h"
 #include "vtkIntArray.h"
 #include "vtkObjectFactory.h"
-#include "vtkMultiBlockDataSet.h"
 #include "vtkStringArray.h"
 #include "vtkTable.h"
 #include "vtkVariantArray.h"
@@ -38,6 +37,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include <vtksys/stl/set>
 #include <vtksys/ios/sstream> 
 
+vtkCxxRevisionMacro(vtkOrderStatistics, "$Revision: 1.55 $");
 vtkStandardNewMacro(vtkOrderStatistics);
 
 // ----------------------------------------------------------------------
@@ -110,31 +110,40 @@ bool vtkOrderStatistics::SetParameter( const char* parameter,
 // ----------------------------------------------------------------------
 void vtkOrderStatistics::Learn( vtkTable* inData,
                                 vtkTable* vtkNotUsed( inParameters ),
-                                vtkMultiBlockDataSet* outMeta )
+                                vtkDataObject* outMetaDO )
 {
-  if ( ! inData )
-    {
-    return;
-    }
-
-  if ( ! outMeta )
-    {
-    return;
-    }
-
-  // The primary statistics table
-  vtkTable* primaryTab = vtkTable::New();
+  vtkTable* outMeta = vtkTable::SafeDownCast( outMetaDO ); 
+  if ( ! outMeta ) 
+    { 
+    return; 
+    } 
 
   vtkStringArray* stringCol = vtkStringArray::New();
   stringCol->SetName( "Variable" );
-  primaryTab->AddColumn( stringCol );
+  outMeta->AddColumn( stringCol );
   stringCol->Delete();
 
   vtkIdTypeArray* idTypeCol = vtkIdTypeArray::New();
   idTypeCol->SetName( "Cardinality" );
-  primaryTab->AddColumn( idTypeCol );
+  outMeta->AddColumn( idTypeCol );
   idTypeCol->Delete();
 
+  vtkIdType n = inData->GetNumberOfRows();
+  if ( n <= 0 )
+    {
+    return;
+    }
+
+  if ( ! this->Internals->Requests.size() )
+    {
+    return;
+    }
+
+  if ( inData->GetNumberOfColumns() <= 0 )
+    {
+    return;
+    }
+  
   vtkVariantArray* variantCol;
   double dq = 1. / static_cast<double>( this->NumberOfIntervals );
   for ( int i = 0; i <= this->NumberOfIntervals; ++ i )
@@ -170,12 +179,11 @@ void vtkOrderStatistics::Learn( vtkTable* inData,
           break;
         }
       }
-    primaryTab->AddColumn( variantCol );
+    outMeta->AddColumn( variantCol );
     variantCol->Delete();
     }
 
   // Loop over requests
-  vtkIdType nRow = inData->GetNumberOfRows();
   for ( vtksys_stl::set<vtksys_stl::set<vtkStdString> >::iterator rit = this->Internals->Requests.begin(); 
         rit != this->Internals->Requests.end(); ++ rit )
     {
@@ -197,10 +205,10 @@ void vtkOrderStatistics::Learn( vtkTable* inData,
     
     int i = 0;
     row->SetValue( i ++, col );
-    row->SetValue( i ++, nRow );
+    row->SetValue( i ++, n );
     
     vtksys_stl::vector<double> quantileThresholds;
-    double dh = nRow / static_cast<double>( this->NumberOfIntervals );
+    double dh = n / static_cast<double>( this->NumberOfIntervals );
     for ( int j = 0; j < this->NumberOfIntervals; ++ j )
       {
       quantileThresholds.push_back( j * dh );
@@ -214,7 +222,7 @@ void vtkOrderStatistics::Learn( vtkTable* inData,
       vtkDataArray* darr = vtkDataArray::SafeDownCast( arr );
 
       vtksys_stl::map<double,vtkIdType> distr;
-      for ( vtkIdType r = 0; r < nRow; ++ r )
+      for ( vtkIdType r = 0; r < n; ++ r )
         {
         ++ distr[darr->GetTuple1( r )];
         }
@@ -241,13 +249,13 @@ void vtkOrderStatistics::Learn( vtkTable* inData,
         }
     
       row->SetValue( i, distr.rbegin()->first );
-      primaryTab->InsertNextRow( row );
+      outMeta->InsertNextRow( row );
       }
     else if ( arr->IsA("vtkStringArray") ) 
       {
       vtkStringArray* sarr = vtkStringArray::SafeDownCast( arr ); 
       vtksys_stl::map<vtkStdString,vtkIdType> distr;
-      for ( vtkIdType r = 0; r < nRow; ++ r )
+      for ( vtkIdType r = 0; r < n; ++ r )
         {
         ++ distr[sarr->GetValue( r )];
         }
@@ -264,7 +272,7 @@ void vtkOrderStatistics::Learn( vtkTable* inData,
         }
       
       row->SetValue( i, distr.rbegin()->first );
-      primaryTab->InsertNextRow( row );
+      outMeta->InsertNextRow( row );
       }
     else // column is of type vtkVariantArray, which is not supported by this filter
       {
@@ -276,19 +284,11 @@ void vtkOrderStatistics::Learn( vtkTable* inData,
     row->Delete();
     }
 
-  // Finally set first block of output meta port to primary statistics table
-  outMeta->SetNumberOfBlocks( 1 );
-  outMeta->GetMetaData( static_cast<unsigned>( 0 ) )->Set( vtkCompositeDataSet::NAME(), "Primary Statistics" );
-  outMeta->SetBlock( 0, primaryTab );
-
-  // Clean up
-  primaryTab->Delete();
-
   return;
 }
 
 // ----------------------------------------------------------------------
-void vtkOrderStatistics::Derive( vtkMultiBlockDataSet* vtkNotUsed( inMeta ) )
+void vtkOrderStatistics::Derive( vtkDataObject* vtkNotUsed( inMeta ) )
 {
 }
 
@@ -338,23 +338,16 @@ void vtkOrderStatistics::SelectAssessFunctor( vtkTable* outData,
                                               vtkStringArray* rowNames,
                                               AssessFunctor*& dfunc )
 {
-  vtkMultiBlockDataSet* inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO );
-  if ( ! inMeta
-       || inMeta->GetNumberOfBlocks() < 1 )
+  vtkTable* inMeta = vtkTable::SafeDownCast( inMetaDO ); 
+  if ( ! inMeta ) 
     { 
     return; 
-    }
-
-  vtkTable* primaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) );
-  if ( ! primaryTab )
-    {
-    return;
     }
 
   vtkStdString varName = rowNames->GetValue( 0 );
 
   // Downcast meta columns to string arrays for efficient data access
-  vtkStringArray* vars = vtkStringArray::SafeDownCast( primaryTab->GetColumnByName( "Variable" ) );
+  vtkStringArray* vars = vtkStringArray::SafeDownCast( inMeta->GetColumnByName( "Variable" ) );
   if ( ! vars )
     {
     dfunc = 0;
@@ -362,7 +355,7 @@ void vtkOrderStatistics::SelectAssessFunctor( vtkTable* outData,
     }
 
   // Loop over parameters table until the requested variable is found
-  vtkIdType nRowP = primaryTab->GetNumberOfRows();
+  vtkIdType nRowP = inMeta->GetNumberOfRows();
   for ( int r = 0; r < nRowP; ++ r )
     {
     if ( vars->GetValue( r ) == varName )
@@ -375,7 +368,7 @@ void vtkOrderStatistics::SelectAssessFunctor( vtkTable* outData,
         return;
         }
 
-      dfunc = new TableColumnBucketingFunctor( vals, primaryTab->GetRow( r ) );
+      dfunc = new TableColumnBucketingFunctor( vals, inMeta->GetRow( r ) );
       return;
       }
     }

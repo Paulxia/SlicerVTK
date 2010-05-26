@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSQLiteDatabase.cxx
+  Module:    $RCSfile: vtkSQLiteDatabase.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include <vtksqlite/vtk_sqlite3.h>
 
 vtkStandardNewMacro(vtkSQLiteDatabase);
+vtkCxxRevisionMacro(vtkSQLiteDatabase, "$Revision: 1.24 $");
 
 // ----------------------------------------------------------------------
 vtkSQLiteDatabase::vtkSQLiteDatabase()

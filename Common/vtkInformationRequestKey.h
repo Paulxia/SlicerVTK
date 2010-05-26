@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationRequestKey.h
+  Module:    $RCSfile: vtkInformationRequestKey.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class VTK_COMMON_EXPORT vtkInformationRequestKey : public vtkInformationKey
 {
 public:
-  vtkTypeMacro(vtkInformationRequestKey,vtkInformationKey);
+  vtkTypeRevisionMacro(vtkInformationRequestKey,vtkInformationKey);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkInformationRequestKey(const char* name, const char* location);

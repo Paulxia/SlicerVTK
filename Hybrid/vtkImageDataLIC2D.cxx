@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDataLIC2D.cxx
+  Module:    $RCSfile: vtkImageDataLIC2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
   ext[0] << ", " << ext[1] << ", " << ext[2] << ", " << ext[3] << ", " << ext[4] << ", " << ext[5] 
 
 vtkStandardNewMacro(vtkImageDataLIC2D);
+vtkCxxRevisionMacro(vtkImageDataLIC2D, "$Revision: 1.5 $");
 //----------------------------------------------------------------------------
 vtkImageDataLIC2D::vtkImageDataLIC2D()
 {

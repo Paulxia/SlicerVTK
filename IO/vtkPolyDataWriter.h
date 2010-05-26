@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataWriter.h
+  Module:    $RCSfile: vtkPolyDataWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_IO_EXPORT vtkPolyDataWriter : public vtkDataWriter
 {
 public:
   static vtkPolyDataWriter *New();
-  vtkTypeMacro(vtkPolyDataWriter,vtkDataWriter);
+  vtkTypeRevisionMacro(vtkPolyDataWriter,vtkDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

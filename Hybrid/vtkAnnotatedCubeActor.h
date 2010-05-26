@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnnotatedCubeActor.h
+  Module:    $RCSfile: vtkAnnotatedCubeActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class VTK_HYBRID_EXPORT vtkAnnotatedCubeActor : public vtkProp3D
 {
 public:
   static vtkAnnotatedCubeActor *New();
-  vtkTypeMacro(vtkAnnotatedCubeActor,vtkProp3D);
+  vtkTypeRevisionMacro(vtkAnnotatedCubeActor,vtkProp3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

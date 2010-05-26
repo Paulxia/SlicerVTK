@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLandmarkTransform.cxx
+  Module:    $RCSfile: vtkLandmarkTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkLandmarkTransform, "$Revision: 1.24 $");
 vtkStandardNewMacro(vtkLandmarkTransform);
 
 //----------------------------------------------------------------------------

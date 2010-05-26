@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFrustumSource.cxx
+  Module:    $RCSfile: vtkFrustumSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkInformationVector.h"
 #include "vtkCellArray.h"
 
+vtkCxxRevisionMacro(vtkFrustumSource, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkFrustumSource);
 vtkCxxSetObjectMacro(vtkFrustumSource,Planes,vtkPlanes);
 

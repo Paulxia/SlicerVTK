@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMimeTypeStrategy.cxx
+  Module:    $RCSfile: vtkMimeTypeStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 
 #include <vtkMimeTypeStrategy.h>
 
+vtkCxxRevisionMacro(vtkMimeTypeStrategy, "$Revision: 1.2 $");
 
 vtkMimeTypeStrategy::vtkMimeTypeStrategy()
 {

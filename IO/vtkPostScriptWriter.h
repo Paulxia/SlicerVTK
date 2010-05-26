@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPostScriptWriter.h
+  Module:    $RCSfile: vtkPostScriptWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_IO_EXPORT vtkPostScriptWriter : public vtkImageWriter
 {
 public:
   static vtkPostScriptWriter *New();
-  vtkTypeMacro(vtkPostScriptWriter,vtkImageWriter);
+  vtkTypeRevisionMacro(vtkPostScriptWriter,vtkImageWriter);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

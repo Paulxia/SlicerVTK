@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDijkstraImageGeodesicPath.cxx
+  Module:    $RCSfile: vtkDijkstraImageGeodesicPath.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 
 #include "vtkDijkstraGraphInternals.h"
 
+vtkCxxRevisionMacro(vtkDijkstraImageGeodesicPath, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkDijkstraImageGeodesicPath);
 
 //----------------------------------------------------------------------------

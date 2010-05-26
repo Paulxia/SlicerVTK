@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeTextureMapper2D.cxx
+  Module:    $RCSfile: vtkVolumeTextureMapper2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -461,6 +461,7 @@ void vtkVolumeTextureMapper2D_TraverseVolume( T *data_ptr,
 
 }
 
+vtkCxxRevisionMacro(vtkVolumeTextureMapper2D, "$Revision: 1.5 $");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

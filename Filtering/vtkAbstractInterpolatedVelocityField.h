@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractInterpolatedVelocityField.h
+  Module:    $RCSfile: vtkAbstractInterpolatedVelocityField.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -80,7 +80,7 @@ class vtkAbstractInterpolatedVelocityFieldDataSetsType;
 class VTK_FILTERING_EXPORT vtkAbstractInterpolatedVelocityField : public vtkFunctionSet
 {
 public:
-  vtkTypeMacro( vtkAbstractInterpolatedVelocityField, vtkFunctionSet );
+  vtkTypeRevisionMacro( vtkAbstractInterpolatedVelocityField, vtkFunctionSet );
   void PrintSelf( ostream & os, vtkIndent indent );
   
   // Description:

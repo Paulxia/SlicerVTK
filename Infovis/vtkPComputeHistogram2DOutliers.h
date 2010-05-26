@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPComputeHistogram2DOutliers.h
+  Module:    $RCSfile: vtkPComputeHistogram2DOutliers.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_INFOVIS_EXPORT vtkPComputeHistogram2DOutliers : public vtkComputeHisto
 {
 public:
   static vtkPComputeHistogram2DOutliers* New();
-  vtkTypeMacro(vtkPComputeHistogram2DOutliers, vtkComputeHistogram2DOutliers);
+  vtkTypeRevisionMacro(vtkPComputeHistogram2DOutliers, vtkComputeHistogram2DOutliers);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual void SetController(vtkMultiProcessController*);

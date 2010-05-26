@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSpatialFilter.h
+  Module:    $RCSfile: vtkImageSpatialFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_IMAGING_EXPORT vtkImageSpatialFilter : public vtkImageToImageFilter
 {
 public:
   static vtkImageSpatialFilter *New();
-  vtkTypeMacro(vtkImageSpatialFilter,vtkImageToImageFilter);
+  vtkTypeRevisionMacro(vtkImageSpatialFilter,vtkImageToImageFilter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

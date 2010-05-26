@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtView.cxx
+  Module:    $RCSfile: vtkQtView.cxx,v $
 
 =========================================================================*/
 /*-------------------------------------------------------------------------
@@ -16,6 +16,7 @@
 #include <QPixmap>
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkQtView, "$Revision: 1.5 $");
 
 //----------------------------------------------------------------------------
 vtkQtView::vtkQtView()

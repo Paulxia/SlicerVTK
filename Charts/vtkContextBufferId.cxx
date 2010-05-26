@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextBufferId.cxx
+  Module:    $RCSfile: vtkContextBufferId.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,13 +18,15 @@
 #include "vtkIntArray.h"
 #include <cassert>
 #include "vtkObjectFactory.h"
-#include "vtkgl.h"
 
+vtkCxxRevisionMacro(vtkContextBufferId, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkContextBufferId);
 
 // ----------------------------------------------------------------------------
 vtkContextBufferId::vtkContextBufferId()
 {
+  this->Width=0;
+  this->Height=0;
   this->IdArray=0;
 }
 
@@ -63,53 +65,6 @@ bool vtkContextBufferId::IsAllocated() const
 
   return this->IdArray!=0 &&
     this->IdArray->GetNumberOfTuples()>=(this->Width*this->Height);
-}
-
-// ----------------------------------------------------------------------------
-void vtkContextBufferId::SetValues(int srcXmin,
-                                   int srcYmin)
-{
-  assert("pre: is_allocated" && this->IsAllocated());
-  
-  GLint savedReadBuffer;
-  glGetIntegerv(GL_READ_BUFFER,&savedReadBuffer);
-
-  glReadBuffer(GL_BACK_LEFT);
-  
-  // Expensive call here (memory allocation)
-  unsigned char *rgb=new unsigned char[this->Width*this->Height*3];
-  
-  glPixelStorei(GL_PACK_ALIGNMENT,1);
-  
-  // Expensive call here (memory transfer, blocking)
-  glReadPixels(srcXmin,srcYmin,this->Width,this->Height,GL_RGB,
-               GL_UNSIGNED_BYTE,rgb);
-  
-  if(savedReadBuffer!=GL_BACK_LEFT)
-    {
-    glReadBuffer(static_cast<GLenum>(savedReadBuffer));
-    }
-  
-  // vtkIntArray
-  // Interpret rgb into ids.
-  // We cannot just use reinterpret_cast for two reasons:
-  // 1. we don't know if the host system is little or big endian.
-  // 2. we have rgb, not rgba. if we try to grab rgba and there is not
-  // alpha comment, it would be set to 1.0 (255, 0xff). we don't want that.
-  
-  // Expensive iteration.
-  vtkIdType i=0;
-  vtkIdType s=this->Width*this->Height;
-  while(i<s)
-    {
-    vtkIdType j=i*3;
-    int value=(static_cast<int>(rgb[j])<<16)|(static_cast<int>(rgb[j+1])<<8)
-      |static_cast<int>(rgb[j+2]);
-    this->SetValue(i,value);
-    ++i;
-    }
-
-  delete[] rgb;
 }
 
 // ----------------------------------------------------------------------------

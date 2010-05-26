@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractParticleWriter.h
+  Module:    $RCSfile: vtkAbstractParticleWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@
 class VTK_IO_EXPORT vtkAbstractParticleWriter : public vtkWriter
 {
 public:
-  vtkTypeMacro(vtkAbstractParticleWriter,vtkWriter);
+  vtkTypeRevisionMacro(vtkAbstractParticleWriter,vtkWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEdgePoints.cxx
+  Module:    $RCSfile: vtkEdgePoints.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkEdgePoints, "$Revision: 1.59 $");
 vtkStandardNewMacro(vtkEdgePoints);
 
 // Construct object with contour value of 0.0.

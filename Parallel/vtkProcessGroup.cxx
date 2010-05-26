@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProcessGroup.cxx
+  Module:    $RCSfile: vtkProcessGroup.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include <vtkstd/algorithm>
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkProcessGroup, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkProcessGroup);
 
 //-----------------------------------------------------------------------------

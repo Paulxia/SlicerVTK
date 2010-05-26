@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphLayout.cxx
+  Module:    $RCSfile: vtkGraphLayout.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkPoints.h"
 #include "vtkTable.h"
 
+vtkCxxRevisionMacro(vtkGraphLayout, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkGraphLayout);
 vtkCxxSetObjectMacro(vtkGraphLayout, Transform, vtkAbstractTransform);
 

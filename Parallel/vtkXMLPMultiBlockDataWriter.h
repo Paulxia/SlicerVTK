@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPMultiBlockDataWriter.h
+  Module:    $RCSfile: vtkXMLPMultiBlockDataWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_PARALLEL_EXPORT vtkXMLPMultiBlockDataWriter : public vtkXMLMultiBlockD
 {
 public:
   static vtkXMLPMultiBlockDataWriter* New();
-  vtkTypeMacro(vtkXMLPMultiBlockDataWriter, vtkXMLMultiBlockDataWriter);
+  vtkTypeRevisionMacro(vtkXMLPMultiBlockDataWriter, vtkXMLMultiBlockDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

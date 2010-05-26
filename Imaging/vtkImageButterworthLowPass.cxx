@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageButterworthLowPass.cxx
+  Module:    $RCSfile: vtkImageButterworthLowPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageButterworthLowPass, "$Revision: 1.29 $");
 vtkStandardNewMacro(vtkImageButterworthLowPass);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkComputingResources.h
+  Module:    $RCSfile: vtkComputingResources.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_FILTERING_EXPORT vtkComputingResources : public vtkObject
 {
 public:
   static vtkComputingResources* New();
-  vtkTypeMacro(vtkComputingResources,vtkObject);
+  vtkTypeRevisionMacro(vtkComputingResources,vtkObject);
   void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageNoiseSource.cxx
+  Module:    $RCSfile: vtkImageNoiseSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageNoiseSource, "$Revision: 1.32 $");
 vtkStandardNewMacro(vtkImageNoiseSource);
 
 //----------------------------------------------------------------------------

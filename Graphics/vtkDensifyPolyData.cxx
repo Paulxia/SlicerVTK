@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDensifyPolyData.cxx
+  Module:    $RCSfile: vtkDensifyPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -348,6 +348,7 @@ private:
 
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkDensifyPolyData, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkDensifyPolyData);
 
 //----------------------------------------------------------------------------

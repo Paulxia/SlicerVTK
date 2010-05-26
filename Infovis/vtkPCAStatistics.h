@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkPCAStatistics.h
+Module:    $RCSfile: vtkPCAStatistics.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -47,7 +47,7 @@ PURPOSE.  See the above copyright notice for more information.
 class VTK_INFOVIS_EXPORT vtkPCAStatistics : public vtkMultiCorrelativeStatistics
 {
 public:
-  vtkTypeMacro(vtkPCAStatistics,vtkMultiCorrelativeStatistics);
+  vtkTypeRevisionMacro(vtkPCAStatistics,vtkMultiCorrelativeStatistics);
   virtual void PrintSelf( ostream& os, vtkIndent indent );
   static vtkPCAStatistics* New();
 
@@ -188,12 +188,12 @@ protected:
 
   // Description:
   // Execute the calculations required by the Derive option.
-  virtual void Derive( vtkMultiBlockDataSet* inMeta );
+  virtual void Derive( vtkDataObject* inMeta );
 
   // Description:
   // Execute the calculations required by the Assess option.
   virtual void Assess( vtkTable*, 
-                       vtkMultiBlockDataSet*, 
+                       vtkDataObject*, 
                        vtkTable* );
 
   //BTX  

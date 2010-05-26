@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLUtilities.cxx
+  Module:    $RCSfile: vtkXMLUtilities.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 typedef vtkstd::vector<vtkXMLDataElement*> vtkXMLUtilitiesDataElementContainer;
 
 vtkStandardNewMacro(vtkXMLUtilities);
+vtkCxxRevisionMacro(vtkXMLUtilities, "$Revision: 1.10 $");
 
 #define  VTK_XML_UTILITIES_FACTORED_POOL_NAME "FactoredPool"
 #define  VTK_XML_UTILITIES_FACTORED_NAME      "Factored"

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFileExtensionMimeTypeStrategy.cxx
+  Module:    $RCSfile: vtkFileExtensionMimeTypeStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <boost/algorithm/string.hpp>
 
+vtkCxxRevisionMacro(vtkFileExtensionMimeTypeStrategy, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkFileExtensionMimeTypeStrategy);
 
 class vtkFileExtensionMimeTypeStrategy::implementation

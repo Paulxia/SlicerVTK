@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTranslucentPass.h
+  Module:    $RCSfile: vtkTranslucentPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkTranslucentPass : public vtkDefaultPass
 {
 public:
   static vtkTranslucentPass *New();
-  vtkTypeMacro(vtkTranslucentPass,vtkDefaultPass);
+  vtkTypeRevisionMacro(vtkTranslucentPass,vtkDefaultPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

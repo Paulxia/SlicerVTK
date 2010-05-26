@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoxRepresentation.h
+  Module:    $RCSfile: vtkBoxRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,7 +62,7 @@ public:
 
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkBoxRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkBoxRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

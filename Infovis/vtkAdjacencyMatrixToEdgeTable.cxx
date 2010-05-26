@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAdjacencyMatrixToEdgeTable.cxx
+  Module:    $RCSfile: vtkAdjacencyMatrixToEdgeTable.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -35,6 +35,7 @@
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkAdjacencyMatrixToEdgeTable, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkAdjacencyMatrixToEdgeTable);
 
 // ----------------------------------------------------------------------

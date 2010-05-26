@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphReader.h
+  Module:    $RCSfile: vtkGraphReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_IO_EXPORT vtkGraphReader : public vtkDataReader
 {
 public:
   static vtkGraphReader *New();
-  vtkTypeMacro(vtkGraphReader,vtkDataReader);
+  vtkTypeRevisionMacro(vtkGraphReader,vtkDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

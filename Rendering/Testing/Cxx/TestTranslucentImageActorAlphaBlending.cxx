@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestTranslucentImageActorAlphaBlending.cxx
+  Module:    $RCSfile: TestTranslucentImageActorAlphaBlending.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

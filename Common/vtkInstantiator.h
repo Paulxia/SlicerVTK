@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInstantiator.h
+  Module:    $RCSfile: vtkInstantiator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -66,7 +66,7 @@ class VTK_COMMON_EXPORT vtkInstantiator : public vtkObject
 {
 public:
   static vtkInstantiator* New();
-  vtkTypeMacro(vtkInstantiator,vtkObject);
+  vtkTypeRevisionMacro(vtkInstantiator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

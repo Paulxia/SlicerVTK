@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProcessIdScalars.cxx
+  Module:    $RCSfile: vtkProcessIdScalars.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPointData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkProcessIdScalars, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkProcessIdScalars);
 
 vtkCxxSetObjectMacro(vtkProcessIdScalars,Controller,

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkViewDependentErrorMetric.h
+  Module:    $RCSfile: vtkViewDependentErrorMetric.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ public:
   
   // Description:
   // Standard VTK type and error macros.
-  vtkTypeMacro(vtkViewDependentErrorMetric,vtkGenericSubdivisionErrorMetric);
+  vtkTypeRevisionMacro(vtkViewDependentErrorMetric,vtkGenericSubdivisionErrorMetric);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

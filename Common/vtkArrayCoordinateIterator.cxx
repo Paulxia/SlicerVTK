@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayCoordinateIterator.cxx
+  Module:    $RCSfile: vtkArrayCoordinateIterator.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -25,6 +25,7 @@
 
 #include <vtksys/stl/iterator>
 
+vtkCxxRevisionMacro(vtkArrayCoordinateIterator, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkArrayCoordinateIterator);
 
 vtkArrayCoordinateIterator::vtkArrayCoordinateIterator() :

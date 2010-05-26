@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPostgreSQLDatabase.cxx
+  Module:    $RCSfile: vtkPostgreSQLDatabase.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include <assert.h>
 
 vtkStandardNewMacro(vtkPostgreSQLDatabase);
+vtkCxxRevisionMacro(vtkPostgreSQLDatabase, "$Revision: 1.34 $");
 
 // ----------------------------------------------------------------------
 vtkPostgreSQLDatabase::vtkPostgreSQLDatabase()

@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    V_GaussIntegration.cpp
+  Module:    $RCSfile: V_GaussIntegration.cpp,v $
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.
@@ -20,6 +20,8 @@
  * This file is part of VERDICT
  *
  */
+
+#define VERDICT_EXPORTS
 
 #include "verdict.h"
 #include "V_GaussIntegration.hpp"

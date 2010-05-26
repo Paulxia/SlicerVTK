@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBalloonRepresentation.h
+  Module:    $RCSfile: vtkBalloonRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -79,7 +79,7 @@ public:
 
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkBalloonRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkBalloonRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

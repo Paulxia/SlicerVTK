@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ExerciseUnstructuredGridRayCastMapper.cxx
+  Module:    $RCSfile: ExerciseUnstructuredGridRayCastMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@
 class vtkClassifyVolume : public vtkDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkClassifyVolume, vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkClassifyVolume, vtkDataSetAlgorithm);
   static vtkClassifyVolume *New();
 
   vtkGetObjectMacro(TransferFunction, vtkVolumeProperty);
@@ -75,6 +75,7 @@ private:
 
 //-----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkClassifyVolume, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkClassifyVolume);
 
 vtkClassifyVolume::vtkClassifyVolume()

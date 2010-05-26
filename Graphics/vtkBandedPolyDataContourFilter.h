@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBandedPolyDataContourFilter.h
+  Module:    $RCSfile: vtkBandedPolyDataContourFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class vtkDoubleArray;
 class VTK_GRAPHICS_EXPORT vtkBandedPolyDataContourFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkBandedPolyDataContourFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkBandedPolyDataContourFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

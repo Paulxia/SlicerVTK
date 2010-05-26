@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPDataSetWriter.h
+  Module:    $RCSfile: vtkPDataSetWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_PARALLEL_EXPORT vtkPDataSetWriter : public vtkDataSetWriter
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkPDataSetWriter,vtkDataSetWriter);
+  vtkTypeRevisionMacro(vtkPDataSetWriter,vtkDataSetWriter);
   static vtkPDataSetWriter *New();
 
   // Description:

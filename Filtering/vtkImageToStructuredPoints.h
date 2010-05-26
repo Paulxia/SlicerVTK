@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageToStructuredPoints.h
+  Module:    $RCSfile: vtkImageToStructuredPoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_FILTERING_EXPORT vtkImageToStructuredPoints : public vtkImageAlgorithm
 {
 public:
   static vtkImageToStructuredPoints *New();
-  vtkTypeMacro(vtkImageToStructuredPoints,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageToStructuredPoints,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

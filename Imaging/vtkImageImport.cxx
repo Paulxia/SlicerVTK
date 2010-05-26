@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageImport.cxx
+  Module:    $RCSfile: vtkImageImport.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include <ctype.h>
 #include <vtkstd/exception>
 
+vtkCxxRevisionMacro(vtkImageImport, "$Revision: 1.54 $");
 vtkStandardNewMacro(vtkImageImport);
 
 

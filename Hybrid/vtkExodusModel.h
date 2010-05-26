@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExodusModel.h
+  Module:    $RCSfile: vtkExodusModel.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -63,7 +63,7 @@ class vtkUnstructuredGrid;
 class VTK_HYBRID_EXPORT vtkExodusModel : public vtkObject
 { 
 public:
-  vtkTypeMacro(vtkExodusModel, vtkObject);
+  vtkTypeRevisionMacro(vtkExodusModel, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   static vtkExodusModel *New();

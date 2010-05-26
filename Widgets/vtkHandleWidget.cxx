@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHandleWidget.cxx
+  Module:    $RCSfile: vtkHandleWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkWidgetEvent.h"
 
 
+vtkCxxRevisionMacro(vtkHandleWidget, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkHandleWidget);
 
 //----------------------------------------------------------------------------------

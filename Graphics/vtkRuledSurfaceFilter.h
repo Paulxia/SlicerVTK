@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRuledSurfaceFilter.h
+  Module:    $RCSfile: vtkRuledSurfaceFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -63,7 +63,7 @@ class vtkPolyData;
 class VTK_GRAPHICS_EXPORT vtkRuledSurfaceFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkRuledSurfaceFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkRuledSurfaceFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointLocator.cxx
+  Module:    $RCSfile: vtkPointLocator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkPointLocator, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkPointLocator);
 
 static const int VTK_INITIAL_SIZE=1000;

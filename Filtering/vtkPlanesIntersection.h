@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlanesIntersection.h
+  Module:    $RCSfile: vtkPlanesIntersection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class vtkCell;
 
 class VTK_FILTERING_EXPORT vtkPlanesIntersection : public vtkPlanes
 {
-  vtkTypeMacro(vtkPlanesIntersection, vtkPlanes);
+  vtkTypeRevisionMacro(vtkPlanesIntersection, vtkPlanes);
 
 public:
   void PrintSelf(ostream& os, vtkIndent indent);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtBarChartView.cxx
+  Module:    $RCSfile: vtkQtBarChartView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkQtChartWidget.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtBarChartView, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkQtBarChartView);
 
 //----------------------------------------------------------------------------

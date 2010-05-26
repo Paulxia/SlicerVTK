@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtView.h
+  Module:    $RCSfile: vtkQtView.h,v $
 
 =========================================================================*/
 /*-------------------------------------------------------------------------
@@ -31,7 +31,7 @@ class QVTK_EXPORT vtkQtView : public QObject, public vtkView
 Q_OBJECT
 public:
 
-  vtkTypeMacro(vtkQtView, vtkView);
+  vtkTypeRevisionMacro(vtkQtView, vtkView);
   void PrintSelf(ostream& os, vtkIndent indent);
       
   // Description:

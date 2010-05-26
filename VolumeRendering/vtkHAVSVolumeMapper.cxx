@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkHAVSVolumeMapper.cxx
+Module:    $RCSfile: vtkHAVSVolumeMapper.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -36,6 +36,7 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkHAVSVolumeMapper, "$Revision: 1.8 $");
 // Needed when we don't use the vtkStandardNewMacro.
 vtkInstantiatorNewMacro(vtkHAVSVolumeMapper);
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationObjectBaseVectorKey.cxx
+  Module:    $RCSfile: vtkInformationObjectBaseVectorKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@ private:
 
 
 //============================================================================
+vtkCxxRevisionMacro(vtkInformationObjectBaseVectorKey, "$Revision: 1.4 $");
 
 //----------------------------------------------------------------------------
 vtkInformationObjectBaseVectorKey::vtkInformationObjectBaseVectorKey(

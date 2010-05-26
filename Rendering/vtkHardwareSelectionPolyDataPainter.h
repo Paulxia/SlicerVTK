@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHardwareSelectionPolyDataPainter.h
+  Module:    $RCSfile: vtkHardwareSelectionPolyDataPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkHardwareSelectionPolyDataPainter :
 {
 public:
   static vtkHardwareSelectionPolyDataPainter* New();
-  vtkTypeMacro(vtkHardwareSelectionPolyDataPainter, vtkStandardPolyDataPainter);
+  vtkTypeRevisionMacro(vtkHardwareSelectionPolyDataPainter, vtkStandardPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtSQLQuery.cxx
+  Module:    $RCSfile: vtkQtSQLQuery.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,6 +47,7 @@ public:
 };
 
 
+vtkCxxRevisionMacro(vtkQtSQLQuery, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkQtSQLQuery);
 
 vtkQtSQLQuery::vtkQtSQLQuery()

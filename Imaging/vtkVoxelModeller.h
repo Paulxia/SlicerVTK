@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVoxelModeller.h
+  Module:    $RCSfile: vtkVoxelModeller.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@
 class VTK_IMAGING_EXPORT vtkVoxelModeller : public vtkImageAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkVoxelModeller,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkVoxelModeller,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

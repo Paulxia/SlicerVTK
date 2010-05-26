@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkView.cxx
+  Module:    $RCSfile: vtkView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -76,6 +76,7 @@ public:
 };
   
 
+vtkCxxRevisionMacro(vtkView, "$Revision: 1.23 $");
 vtkStandardNewMacro(vtkView);
 //----------------------------------------------------------------------------
 vtkView::vtkView()

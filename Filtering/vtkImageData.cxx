@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageData.cxx
+  Module:    $RCSfile: vtkImageData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkVertex.h"
 #include "vtkVoxel.h"
 
+vtkCxxRevisionMacro(vtkImageData, "$Revision: 1.42 $");
 vtkStandardNewMacro(vtkImageData);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoAdaptiveArcs.cxx
+  Module:    $RCSfile: vtkGeoAdaptiveArcs.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #include <vtksys/stl/map>
 using vtksys_stl::map;
 
+vtkCxxRevisionMacro(vtkGeoAdaptiveArcs, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkGeoAdaptiveArcs);
 
 //-------------------------------------------------------------------------

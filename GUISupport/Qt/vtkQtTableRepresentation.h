@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtTableRepresentation.h
+  Module:    $RCSfile: vtkQtTableRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -61,7 +61,7 @@ class vtkQtTableModelAdapter;
 class QVTK_EXPORT vtkQtTableRepresentation : public vtkDataRepresentation
 {
 public:
-  vtkTypeMacro(vtkQtTableRepresentation, vtkDataRepresentation);
+  vtkTypeRevisionMacro(vtkQtTableRepresentation, vtkDataRepresentation);
   void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

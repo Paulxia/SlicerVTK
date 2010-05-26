@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointHandleRepresentation3D.h
+  Module:    $RCSfile: vtkPointHandleRepresentation3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkPointHandleRepresentation3D,vtkHandleRepresentation);
+  vtkTypeRevisionMacro(vtkPointHandleRepresentation3D,vtkHandleRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransformCollection.h
+  Module:    $RCSfile: vtkTransformCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@
 class VTK_COMMON_EXPORT vtkTransformCollection : public vtkCollection
 {
 public:
-  vtkTypeMacro(vtkTransformCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkTransformCollection,vtkCollection);
   static vtkTransformCollection *New();
 
   // Description:

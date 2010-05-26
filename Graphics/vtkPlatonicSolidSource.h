@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlatonicSolidSource.h
+  Module:    $RCSfile: vtkPlatonicSolidSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_GRAPHICS_EXPORT vtkPlatonicSolidSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkPlatonicSolidSource *New();
-  vtkTypeMacro(vtkPlatonicSolidSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPlatonicSolidSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

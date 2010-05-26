@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSimplePointsReader.cxx
+  Module:    $RCSfile: vtkSimplePointsReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkPolyData.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkSimplePointsReader, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkSimplePointsReader);
 
 //----------------------------------------------------------------------------

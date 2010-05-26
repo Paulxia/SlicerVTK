@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDemandDrivenPipeline.cxx
+  Module:    $RCSfile: vtkDemandDrivenPipeline.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkDemandDrivenPipeline, "$Revision: 1.61 $");
 vtkStandardNewMacro(vtkDemandDrivenPipeline);
 
 vtkInformationKeyMacro(vtkDemandDrivenPipeline, DATA_NOT_GENERATED, Integer);

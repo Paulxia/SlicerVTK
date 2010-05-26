@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPerturbCoincidentVertices.cxx
+  Module:    $RCSfile: vtkPerturbCoincidentVertices.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkPerturbCoincidentVertices, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkPerturbCoincidentVertices);
 //----------------------------------------------------------------------------
 vtkPerturbCoincidentVertices::vtkPerturbCoincidentVertices()

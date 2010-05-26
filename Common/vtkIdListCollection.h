@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIdListCollection.h
+  Module:    $RCSfile: vtkIdListCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_COMMON_EXPORT vtkIdListCollection : public vtkCollection
 {
 public:
   static vtkIdListCollection *New();
-  vtkTypeMacro(vtkIdListCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkIdListCollection,vtkCollection);
 
   // Description:
   // Add a dataset to the list.

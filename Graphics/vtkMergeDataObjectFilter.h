@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeDataObjectFilter.h
+  Module:    $RCSfile: vtkMergeDataObjectFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_GRAPHICS_EXPORT vtkMergeDataObjectFilter : public vtkDataSetAlgorithm
 {
 public:
   static vtkMergeDataObjectFilter *New();
-  vtkTypeMacro(vtkMergeDataObjectFilter,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMergeDataObjectFilter,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

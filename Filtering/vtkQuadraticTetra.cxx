@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticTetra.cxx
+  Module:    $RCSfile: vtkQuadraticTetra.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkDoubleArray.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkQuadraticTetra, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkQuadraticTetra);
 
 //----------------------------------------------------------------------------

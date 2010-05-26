@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTetra.cxx
+  Module:    $RCSfile: vtkTetra.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkTriangle.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkTetra, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkTetra);
 
 //----------------------------------------------------------------------------

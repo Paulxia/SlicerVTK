@@ -55,7 +55,7 @@
 * revision history - 
 *   20061002 - David Thompson - Adapted from ex_get_elem_var
 *
-*  Id
+*  $Id: exgvar.c,v 1.3 2010-03-01 19:26:42 ndfabia Exp $
 *
 *****************************************************************************/
 

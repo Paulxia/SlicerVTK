@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaPolyDataMapper.cxx
+  Module:    $RCSfile: vtkMesaPolyDataMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,4 +48,5 @@
 #undef vtkOpenGLPolyDataMapperDrawLines
 #undef vtkOpenGLPolyDataMapper
 
+vtkCxxRevisionMacro(vtkMesaPolyDataMapper, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkMesaPolyDataMapper);

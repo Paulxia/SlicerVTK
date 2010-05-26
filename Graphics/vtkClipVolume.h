@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipVolume.h
+  Module:    $RCSfile: vtkClipVolume.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -79,7 +79,7 @@ class vtkUnsignedCharArray;
 class VTK_GRAPHICS_EXPORT vtkClipVolume : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkClipVolume,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkClipVolume,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

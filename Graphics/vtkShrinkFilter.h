@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShrinkFilter.h
+  Module:    $RCSfile: vtkShrinkFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkShrinkFilter : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkShrinkFilter *New();
-  vtkTypeMacro(vtkShrinkFilter,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkShrinkFilter,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

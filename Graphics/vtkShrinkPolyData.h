@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShrinkPolyData.h
+  Module:    $RCSfile: vtkShrinkPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_GRAPHICS_EXPORT vtkShrinkPolyData : public vtkPolyDataAlgorithm
 {
 public:
   static vtkShrinkPolyData *New();
-  vtkTypeMacro(vtkShrinkPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkShrinkPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

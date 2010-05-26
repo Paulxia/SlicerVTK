@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSeparableConvolution.cxx
+  Module:    $RCSfile: vtkImageSeparableConvolution.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageSeparableConvolution, "$Revision: 1.21 $");
 vtkStandardNewMacro(vtkImageSeparableConvolution);
 vtkCxxSetObjectMacro(vtkImageSeparableConvolution,XKernel,vtkFloatArray);
 vtkCxxSetObjectMacro(vtkImageSeparableConvolution,YKernel,vtkFloatArray);

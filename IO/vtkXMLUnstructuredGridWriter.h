@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLUnstructuredGridWriter.h
+  Module:    $RCSfile: vtkXMLUnstructuredGridWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class vtkUnstructuredGrid;
 class VTK_IO_EXPORT vtkXMLUnstructuredGridWriter : public vtkXMLUnstructuredDataWriter
 {
 public:
-  vtkTypeMacro(vtkXMLUnstructuredGridWriter,vtkXMLUnstructuredDataWriter);
+  vtkTypeRevisionMacro(vtkXMLUnstructuredGridWriter,vtkXMLUnstructuredDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkXMLUnstructuredGridWriter* New();
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTensor.cxx
+  Module:    $RCSfile: vtkTensor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkTensor.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkTensor, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkTensor);
 
 // Construct tensor initially pointing to internal storage.

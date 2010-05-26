@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageEllipsoidSource.h
+  Module:    $RCSfile: vtkImageEllipsoidSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageEllipsoidSource : public vtkImageAlgorithm
 {
 public:
   static vtkImageEllipsoidSource *New();
-  vtkTypeMacro(vtkImageEllipsoidSource,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageEllipsoidSource,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);   
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGradientFilter.h
+  Module:    $RCSfile: vtkGradientFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@
 class VTK_GRAPHICS_EXPORT vtkGradientFilter : public vtkDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkGradientFilter, vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkGradientFilter, vtkDataSetAlgorithm);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   static vtkGradientFilter *New();

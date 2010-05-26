@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextureMapToSphere.cxx
+  Module:    $RCSfile: vtkTextureMapToSphere.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkTextureMapToSphere, "$Revision: 1.35 $");
 vtkStandardNewMacro(vtkTextureMapToSphere);
 
 // Create object with Center (0,0,0) and the PreventSeam ivar is set to true. The 

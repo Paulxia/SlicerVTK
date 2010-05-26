@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNetCDFPOPReader.h
+  Module:    $RCSfile: vtkNetCDFPOPReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class vtkCallbackCommand;
 class VTK_IO_EXPORT vtkNetCDFPOPReader : public vtkRectilinearGridAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkNetCDFPOPReader,vtkRectilinearGridAlgorithm);
+  vtkTypeRevisionMacro(vtkNetCDFPOPReader,vtkRectilinearGridAlgorithm);
   static vtkNetCDFPOPReader *New();
   void PrintSelf(ostream& os, vtkIndent indent);
   

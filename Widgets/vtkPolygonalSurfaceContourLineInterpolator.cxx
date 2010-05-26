@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolygonalSurfaceContourLineInterpolator.cxx
+  Module:    $RCSfile: vtkPolygonalSurfaceContourLineInterpolator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,8 @@
 #include "vtkPolygonalSurfacePointPlacer.h"
 #include "vtkDijkstraGraphGeodesicPath.h"
 
+vtkCxxRevisionMacro(vtkPolygonalSurfaceContourLineInterpolator,
+                                            "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkPolygonalSurfaceContourLineInterpolator);
 
 //----------------------------------------------------------------------

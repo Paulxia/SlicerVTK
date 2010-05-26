@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitFunctionCollection.cxx
+  Module:    $RCSfile: vtkImplicitFunctionCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,4 +15,5 @@
 #include "vtkImplicitFunctionCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImplicitFunctionCollection, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkImplicitFunctionCollection);

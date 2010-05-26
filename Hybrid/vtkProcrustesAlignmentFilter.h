@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProcrustesAlignmentFilter.h
+  Module:    $RCSfile: vtkProcrustesAlignmentFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class vtkPoints;
 class VTK_HYBRID_EXPORT vtkProcrustesAlignmentFilter : public vtkPointSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkProcrustesAlignmentFilter,vtkPointSetAlgorithm);
+  vtkTypeRevisionMacro(vtkProcrustesAlignmentFilter,vtkPointSetAlgorithm);
 
   // Description:
   // Prints information about the state of the filter.

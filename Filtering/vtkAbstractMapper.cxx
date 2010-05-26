@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractMapper.cxx
+  Module:    $RCSfile: vtkAbstractMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPointData.h"
 #include "vtkTimerLog.h"
 
+vtkCxxRevisionMacro(vtkAbstractMapper, "$Revision: 1.6 $");
 
 vtkCxxSetObjectMacro(vtkAbstractMapper,ClippingPlanes,vtkPlaneCollection);
 

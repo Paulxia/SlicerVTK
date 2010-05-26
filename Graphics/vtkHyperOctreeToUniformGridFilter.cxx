@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeToUniformGridFilter.cxx
+  Module:    $RCSfile: vtkHyperOctreeToUniformGridFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkImageData.h"
 #include "vtkStreamingDemandDrivenPipeline.h" // WHOLE_EXTENT() key
 
+vtkCxxRevisionMacro(vtkHyperOctreeToUniformGridFilter, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkHyperOctreeToUniformGridFilter);
 
 // merging: locator

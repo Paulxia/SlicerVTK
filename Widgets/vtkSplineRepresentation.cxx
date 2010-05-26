@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineRepresentation.cxx
+  Module:    $RCSfile: vtkSplineRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include "vtkDoubleArray.h"
 
 vtkStandardNewMacro(vtkSplineRepresentation);
+vtkCxxRevisionMacro(vtkSplineRepresentation, "$Revision: 1.4 $");
 //----------------------------------------------------------------------------
 vtkSplineRepresentation::vtkSplineRepresentation()
 {

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkJavaScriptDataWriter.h
+  Module:    $RCSfile: vtkJavaScriptDataWriter.h,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_IO_EXPORT vtkJavaScriptDataWriter : public vtkWriter
 {
 public:
   static vtkJavaScriptDataWriter* New();
-  vtkTypeMacro(vtkJavaScriptDataWriter, vtkWriter);
+  vtkTypeRevisionMacro(vtkJavaScriptDataWriter, vtkWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPRectilinearGridWriter.cxx
+  Module:    $RCSfile: vtkXMLPRectilinearGridWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkRectilinearGrid.h"
 #include "vtkXMLRectilinearGridWriter.h"
 
+vtkCxxRevisionMacro(vtkXMLPRectilinearGridWriter, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkXMLPRectilinearGridWriter);
 
 //----------------------------------------------------------------------------

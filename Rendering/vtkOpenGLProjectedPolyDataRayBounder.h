@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLProjectedPolyDataRayBounder.h
+  Module:    $RCSfile: vtkOpenGLProjectedPolyDataRayBounder.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class vtkWindow;
 class VTK_RENDERING_EXPORT vtkOpenGLProjectedPolyDataRayBounder : public vtkProjectedPolyDataRayBounder
 {
 public:
-  vtkTypeMacro(vtkOpenGLProjectedPolyDataRayBounder,vtkProjectedPolyDataRayBounder);
+  vtkTypeRevisionMacro(vtkOpenGLProjectedPolyDataRayBounder,vtkProjectedPolyDataRayBounder);    
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

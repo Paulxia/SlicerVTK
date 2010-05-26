@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConeLayoutStrategy.h
+  Module:    $RCSfile: vtkConeLayoutStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -53,7 +53,7 @@ class VTK_INFOVIS_EXPORT vtkConeLayoutStrategy : public vtkGraphLayoutStrategy
 public:
   static vtkConeLayoutStrategy *New();
 
-  vtkTypeMacro(vtkConeLayoutStrategy, vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkConeLayoutStrategy, vtkGraphLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

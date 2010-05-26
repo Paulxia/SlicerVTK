@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAssignCoordinates.cxx
+  Module:    $RCSfile: vtkAssignCoordinates.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkPointSet.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkAssignCoordinates, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkAssignCoordinates);
 
 vtkAssignCoordinates::vtkAssignCoordinates()

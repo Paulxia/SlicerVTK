@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExodusReader.cxx
+  Module:    $RCSfile: vtkExodusReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -942,7 +942,7 @@ private:
   vtkstd::map<vtkStdString,int> apbIndents;
 
 public:
-  vtkTypeMacro(vtkExodusXMLParser,vtkXMLParser);
+  vtkTypeRevisionMacro(vtkExodusXMLParser,vtkXMLParser);
 
   static vtkExodusXMLParser* New();
 
@@ -1395,6 +1395,7 @@ private:
 };
 
 
+vtkCxxRevisionMacro(vtkExodusXMLParser, "$Revision: 1.58 $");
 vtkStandardNewMacro(vtkExodusXMLParser);
 
 // This is a cruddy hack... because we need to pass a
@@ -1576,6 +1577,7 @@ void vtkExodusMetadata::Finalize()
 }
 
 
+vtkCxxRevisionMacro(vtkExodusReader, "$Revision: 1.58 $");
 vtkStandardNewMacro(vtkExodusReader);
 
 #ifdef ARRAY_TYPE_NAMES_IN_CXX_FILE

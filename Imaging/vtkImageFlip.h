@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageFlip.h
+  Module:    $RCSfile: vtkImageFlip.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_IMAGING_EXPORT vtkImageFlip : public vtkImageReslice
 public:
   static vtkImageFlip *New();
 
-  vtkTypeMacro(vtkImageFlip,vtkImageReslice);
+  vtkTypeRevisionMacro(vtkImageFlip,vtkImageReslice);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

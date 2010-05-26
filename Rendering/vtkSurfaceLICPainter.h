@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSurfaceLICPainter.h
+  Module:    $RCSfile: vtkSurfaceLICPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_RENDERING_EXPORT vtkSurfaceLICPainter : public vtkPolyDataPainter
 {
 public:
   static vtkSurfaceLICPainter* New();
-  vtkTypeMacro(vtkSurfaceLICPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkSurfaceLICPainter, vtkPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

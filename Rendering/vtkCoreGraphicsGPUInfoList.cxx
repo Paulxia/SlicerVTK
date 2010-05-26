@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCoreGraphicsGPUInfoList.cxx
+  Module:    $RCSfile: vtkCoreGraphicsGPUInfoList.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include <assert.h>
 #include <ApplicationServices/ApplicationServices.h>
 
+vtkCxxRevisionMacro(vtkCoreGraphicsGPUInfoList, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkCoreGraphicsGPUInfoList);
 
 // ----------------------------------------------------------------------------

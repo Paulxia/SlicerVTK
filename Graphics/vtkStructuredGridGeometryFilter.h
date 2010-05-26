@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridGeometryFilter.h
+  Module:    $RCSfile: vtkStructuredGridGeometryFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_GRAPHICS_EXPORT vtkStructuredGridGeometryFilter : public vtkPolyDataAl
 {
 public:
   static vtkStructuredGridGeometryFilter *New();
-  vtkTypeMacro(vtkStructuredGridGeometryFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkStructuredGridGeometryFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnivariateStatisticsAlgorithm.cxx
+  Module:    $RCSfile: vtkUnivariateStatisticsAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,9 +21,7 @@
 #include "vtkUnivariateStatisticsAlgorithm.h"
 
 #include "vtkDoubleArray.h"
-#include "vtkInformation.h"
 #include "vtkObjectFactory.h"
-#include "vtkMultiBlockDataSet.h"
 #include "vtkStatisticsAlgorithmPrivate.h"
 #include "vtkStdString.h"
 #include "vtkStringArray.h"
@@ -35,6 +33,7 @@
 
 #define VTK_STATISTICS_NUMBER_OF_VARIABLES 1
 
+vtkCxxRevisionMacro(vtkUnivariateStatisticsAlgorithm, "$Revision: 1.32 $");
 
 // ----------------------------------------------------------------------
 vtkUnivariateStatisticsAlgorithm::vtkUnivariateStatisticsAlgorithm()
@@ -69,15 +68,42 @@ int vtkUnivariateStatisticsAlgorithm::RequestSelectedColumns()
 
 // ----------------------------------------------------------------------
 void vtkUnivariateStatisticsAlgorithm::Assess( vtkTable* inData,
-                                               vtkMultiBlockDataSet* inMeta,
+                                               vtkDataObject* inMetaDO,
                                                vtkTable* outData )
 {
-  if ( ! inData )
+  vtkTable* inMeta = vtkTable::SafeDownCast( inMetaDO ); 
+  if ( ! inMeta ) 
+    { 
+    return; 
+    } 
+
+  if ( ! inData || inData->GetNumberOfColumns() <= 0 )
     {
     return;
     }
 
-  if ( ! inMeta )
+  vtkIdType nRowD = inData->GetNumberOfRows();
+  if ( nRowD <= 0 )
+    {
+    return;
+    }
+
+  vtkIdType nColP;
+  if ( this->AssessParameters )
+    {
+    nColP = this->AssessParameters->GetNumberOfValues();
+    if ( inMeta->GetNumberOfColumns() - VTK_STATISTICS_NUMBER_OF_VARIABLES < nColP )
+      {
+      vtkWarningMacro( "Parameter table has " 
+                       << inMeta->GetNumberOfColumns() - VTK_STATISTICS_NUMBER_OF_VARIABLES
+                       << " parameters < "
+                       << nColP
+                       << " columns. Doing nothing." );
+      return;
+      }
+    }
+
+  if ( ! inMeta->GetNumberOfRows() )
     {
     return;
     }
@@ -104,7 +130,6 @@ void vtkUnivariateStatisticsAlgorithm::Assess( vtkTable* inData,
     // Store names to be able to use SetValueByName, and create the outData columns
     int nv = this->AssessNames->GetNumberOfValues();
     vtkStdString* names = new vtkStdString[nv];
-    vtkIdType nRowData = inData->GetNumberOfRows();
     for ( int v = 0; v < nv; ++ v )
       {
       vtksys_ios::ostringstream assessColName;
@@ -117,7 +142,7 @@ void vtkUnivariateStatisticsAlgorithm::Assess( vtkTable* inData,
 
       vtkDoubleArray* assessValues = vtkDoubleArray::New(); 
       assessValues->SetName( names[v] ); 
-      assessValues->SetNumberOfTuples( nRowData  ); 
+      assessValues->SetNumberOfTuples( nRowD  ); 
       outData->AddColumn( assessValues ); 
       assessValues->Delete(); 
       }
@@ -140,7 +165,7 @@ void vtkUnivariateStatisticsAlgorithm::Assess( vtkTable* inData,
       {
       // Assess each entry of the column
       vtkVariantArray* assessResult = vtkVariantArray::New();
-      for ( vtkIdType r = 0; r < nRowData; ++ r )
+      for ( vtkIdType r = 0; r < nRowD; ++ r )
         {
         (*dfunc)( assessResult, r );
         for ( int v = 0; v < nv; ++ v )

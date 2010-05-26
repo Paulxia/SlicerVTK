@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRandomGraphSource.cxx
+  Module:    $RCSfile: vtkRandomGraphSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include <vtksys/stl/set>
 #include <vtksys/stl/algorithm>
 
+vtkCxxRevisionMacro(vtkRandomGraphSource, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkRandomGraphSource);
 
 // ----------------------------------------------------------------------

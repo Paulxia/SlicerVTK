@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCircularLayoutStrategy.cxx
+  Module:    $RCSfile: vtkCircularLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkCircularLayoutStrategy, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCircularLayoutStrategy);
 
 vtkCircularLayoutStrategy::vtkCircularLayoutStrategy()

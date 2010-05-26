@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageGaussianSource.h
+  Module:    $RCSfile: vtkImageGaussianSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_IMAGING_EXPORT vtkImageGaussianSource : public vtkImageAlgorithm
 {
 public:
   static vtkImageGaussianSource *New();
-  vtkTypeMacro(vtkImageGaussianSource,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageGaussianSource,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabelHierarchyAlgorithm.cxx
+  Module:    $RCSfile: vtkLabelHierarchyAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
+vtkCxxRevisionMacro(vtkLabelHierarchyAlgorithm, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkLabelHierarchyAlgorithm);
 
 //----------------------------------------------------------------------------

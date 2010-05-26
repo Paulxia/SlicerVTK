@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkCocoaRenderWindow.h
+Module:    $RCSfile: vtkCocoaRenderWindow.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -45,7 +45,7 @@ class VTK_RENDERING_EXPORT vtkCocoaRenderWindow : public vtkOpenGLRenderWindow
 {
 public:
   static vtkCocoaRenderWindow *New();
-  vtkTypeMacro(vtkCocoaRenderWindow,vtkOpenGLRenderWindow);
+  vtkTypeRevisionMacro(vtkCocoaRenderWindow,vtkOpenGLRenderWindow);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

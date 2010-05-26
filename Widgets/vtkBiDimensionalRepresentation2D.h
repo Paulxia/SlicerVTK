@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBiDimensionalRepresentation2D.h
+  Module:    $RCSfile: vtkBiDimensionalRepresentation2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -61,7 +61,7 @@ public:
 
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkBiDimensionalRepresentation2D,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkBiDimensionalRepresentation2D,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

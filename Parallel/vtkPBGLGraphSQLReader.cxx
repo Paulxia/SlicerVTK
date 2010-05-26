@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLGraphSQLReader.cxx
+  Module:    $RCSfile: vtkPBGLGraphSQLReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 #define VTK_CREATE(type, name) \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkPBGLGraphSQLReader, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkPBGLGraphSQLReader);
 
 

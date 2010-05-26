@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlot.cxx
+  Module:    $RCSfile: vtkPlot.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 
 #include "vtkStdString.h"
 
+vtkCxxRevisionMacro(vtkPlot, "$Revision: 1.14 $");
 vtkCxxSetObjectMacro(vtkPlot, Selection, vtkIdTypeArray);
 vtkCxxSetObjectMacro(vtkPlot, XAxis, vtkAxis);
 vtkCxxSetObjectMacro(vtkPlot, YAxis, vtkAxis);
@@ -62,11 +63,6 @@ vtkPlot::~vtkPlot()
     this->Data->Delete();
     this->Data = NULL;
     }
-  if (this->Selection)
-    {
-    this->Selection->Delete();
-    this->Selection = NULL;
-    }
   this->SetLabel(NULL);
   this->SetXAxis(NULL);
   this->SetYAxis(NULL);
@@ -81,12 +77,6 @@ bool vtkPlot::PaintLegend(vtkContext2D*, float*)
 //-----------------------------------------------------------------------------
 bool vtkPlot::GetNearestPoint(const vtkVector2f&, const vtkVector2f&,
                               vtkVector2f*)
-{
-  return false;
-}
-
-//-----------------------------------------------------------------------------
-bool vtkPlot::SelectPoints(const vtkVector2f&, const vtkVector2f&)
 {
   return false;
 }
@@ -174,12 +164,6 @@ void vtkPlot::SetInput(vtkTable *table, vtkIdType xColumn,
   this->SetInput(table,
                  table->GetColumnName(xColumn),
                  table->GetColumnName(yColumn));
-}
-
-//-----------------------------------------------------------------------------
-vtkTable* vtkPlot::GetInput()
-{
-  return this->Data->GetInput();
 }
 
 //-----------------------------------------------------------------------------

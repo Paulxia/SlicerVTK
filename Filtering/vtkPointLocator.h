@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointLocator.h
+  Module:    $RCSfile: vtkPointLocator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ public:
   // 25 points per bucket.
   static vtkPointLocator *New();
 
-  vtkTypeMacro(vtkPointLocator,vtkIncrementalPointLocator);
+  vtkTypeRevisionMacro(vtkPointLocator,vtkIncrementalPointLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

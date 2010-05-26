@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericGeometryFilter.cxx
+  Module:    $RCSfile: vtkGenericGeometryFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 #include "vtkGenericCellTessellator.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkGenericGeometryFilter, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkGenericGeometryFilter);
 
 vtkCxxSetObjectMacro(vtkGenericGeometryFilter,Locator,vtkIncrementalPointLocator);

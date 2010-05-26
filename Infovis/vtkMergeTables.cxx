@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeTables.cxx
+  Module:    $RCSfile: vtkMergeTables.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkStringArray.h"
 #include "vtkTable.h"
 
+vtkCxxRevisionMacro(vtkMergeTables, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkMergeTables);
 //---------------------------------------------------------------------------
 vtkMergeTables::vtkMergeTables()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIncrementalPointLocator.cxx
+  Module:    $RCSfile: vtkIncrementalPointLocator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro( vtkIncrementalPointLocator, "$Revision: 1.1 $" );
 
 vtkIncrementalPointLocator::vtkIncrementalPointLocator()
 {

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageAccumulate.h
+  Module:    $RCSfile: vtkImageAccumulate.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_IMAGING_EXPORT vtkImageAccumulate : public vtkImageAlgorithm
 {
 public:
   static vtkImageAccumulate *New();
-  vtkTypeMacro(vtkImageAccumulate,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageAccumulate,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDotProduct.h
+  Module:    $RCSfile: vtkImageDotProduct.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_IMAGING_EXPORT vtkImageDotProduct : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageDotProduct *New();
-  vtkTypeMacro(vtkImageDotProduct,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageDotProduct,vtkThreadedImageAlgorithm);
 
   // Description:
   // Set the two inputs to this filter

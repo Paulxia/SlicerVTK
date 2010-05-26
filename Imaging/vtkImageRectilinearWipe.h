@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageRectilinearWipe.h
+  Module:    $RCSfile: vtkImageRectilinearWipe.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ class VTK_IMAGING_EXPORT vtkImageRectilinearWipe : public vtkThreadedImageAlgori
 {
 public:
   static vtkImageRectilinearWipe *New();
-  vtkTypeMacro(vtkImageRectilinearWipe,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageRectilinearWipe,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

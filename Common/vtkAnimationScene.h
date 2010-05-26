@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnimationScene.h
+  Module:    $RCSfile: vtkAnimationScene.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class vtkTimerLog;
 class VTK_COMMON_EXPORT vtkAnimationScene: public vtkAnimationCue
 {
 public:
-  vtkTypeMacro(vtkAnimationScene, vtkAnimationCue);
+  vtkTypeRevisionMacro(vtkAnimationScene, vtkAnimationCue);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkAnimationScene* New();
 

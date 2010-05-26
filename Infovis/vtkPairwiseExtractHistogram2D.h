@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPairwiseExtractHistogram2D.h
+  Module:    $RCSfile: vtkPairwiseExtractHistogram2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@
 //  vtkExtractHistogram2D vtkPPairwiseExtractHistogram2D
 // 
 // .SECTION Thanks
-//  Developed by David Feng and Philippe Pebay at Sandia National Laboratories
+//  Developed by David Feng at Sandia National Laboratories
 //------------------------------------------------------------------------------
 #ifndef __vtkPairwiseExtractHistogram2D_h
 #define __vtkPairwiseExtractHistogram2D_h
@@ -47,13 +47,12 @@ class vtkCollection;
 class vtkExtractHistogram2D;
 class vtkImageData;
 class vtkIdTypeArray;
-class vtkMultiBlockDataSet;
 
 class VTK_INFOVIS_EXPORT vtkPairwiseExtractHistogram2D : public vtkStatisticsAlgorithm
 {
 public:
   static vtkPairwiseExtractHistogram2D* New();
-  vtkTypeMacro(vtkPairwiseExtractHistogram2D, vtkStatisticsAlgorithm);
+  vtkTypeRevisionMacro(vtkPairwiseExtractHistogram2D, vtkStatisticsAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -133,7 +132,8 @@ public:
 
   // Description:
   // Given a collection of models, calculate aggregate model.  Not used
-  virtual void Aggregate( vtkDataObjectCollection*, vtkMultiBlockDataSet* ) {};
+  virtual void Aggregate( vtkDataObjectCollection*, vtkDataObject* )
+    {};
 
 protected:
   vtkPairwiseExtractHistogram2D();
@@ -155,23 +155,23 @@ protected:
   // Does the actual histogram computation works.
   virtual void Learn( vtkTable* inData,
                       vtkTable* inParameters,
-                      vtkMultiBlockDataSet* outMeta );
+                      vtkDataObject* outMeta );
 
   // Description:
   // Execute the calculations required by the Derive option. Not used.
-  virtual void Derive( vtkMultiBlockDataSet* ) {};
+  virtual void Derive( vtkDataObject* ) {};
 
   // Description:
   // Execute the assess option. Not implemented.
   virtual void Assess( vtkTable*, 
-                       vtkMultiBlockDataSet*, 
+                       vtkDataObject*, 
                        vtkTable* ) {};
 
   // Description:
   // Execute the calculations required by the Test option.
   virtual void Test( vtkTable*,
-                     vtkMultiBlockDataSet*,
-                     vtkTable* ) { return; }; 
+                     vtkDataObject*,
+                     vtkDataObject* ) { return; }; 
 
   // Description:
   // Provide the appropriate assessment functor.

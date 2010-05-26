@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOctreePointLocatorNode.cxx
+  Module:    $RCSfile: vtkOctreePointLocatorNode.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPlanesIntersection.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkOctreePointLocatorNode, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkOctreePointLocatorNode);
 
 //----------------------------------------------------------------------------

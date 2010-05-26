@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeContourFilter.cxx
+  Module:    $RCSfile: vtkHyperOctreeContourFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -79,7 +79,7 @@ class vtkHyperOctreeContourPointsGrabber : public vtkHyperOctreePointsGrabber
 public:
   static vtkHyperOctreeContourPointsGrabber *New();
   
-  vtkTypeMacro(vtkHyperOctreeContourPointsGrabber,vtkHyperOctreePointsGrabber);
+  vtkTypeRevisionMacro(vtkHyperOctreeContourPointsGrabber,vtkHyperOctreePointsGrabber);
   
   void PrintSelf(ostream& os, vtkIndent indent);
   
@@ -154,6 +154,7 @@ private:
   void operator=(const vtkHyperOctreeContourPointsGrabber&);    // Not implemented.
 };
   
+vtkCxxRevisionMacro(vtkHyperOctreeContourFilter, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkHyperOctreeContourFilter);
 
 //----------------------------------------------------------------------------
@@ -1287,6 +1288,7 @@ int vtkHyperOctreeContourFilter::FillInputPortInformation(int,
 }
 
 
+vtkCxxRevisionMacro(vtkHyperOctreeContourPointsGrabber, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkHyperOctreeContourPointsGrabber);
 
 //-----------------------------------------------------------------------------

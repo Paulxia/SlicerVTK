@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataWriter.cxx
+  Module:    $RCSfile: vtkDataWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,6 +45,7 @@
 #include <vtksys/ios/sstream>
 
 
+vtkCxxRevisionMacro(vtkDataWriter, "$Revision: 1.137 $");
 vtkStandardNewMacro(vtkDataWriter);
 
 // this undef is required on the hp. vtkMutexLock ends up including

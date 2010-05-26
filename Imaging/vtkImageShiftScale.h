@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageShiftScale.h
+  Module:    $RCSfile: vtkImageShiftScale.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_IMAGING_EXPORT vtkImageShiftScale : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageShiftScale *New();
-  vtkTypeMacro(vtkImageShiftScale,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageShiftScale,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

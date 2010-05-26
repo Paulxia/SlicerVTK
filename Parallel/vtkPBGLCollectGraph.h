@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLCollectGraph.h
+  Module:    $RCSfile: vtkPBGLCollectGraph.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -57,7 +57,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLCollectGraph : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLCollectGraph *New();
-  vtkTypeMacro(vtkPBGLCollectGraph, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLCollectGraph, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

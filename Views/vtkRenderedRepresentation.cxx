@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderedRepresentation.cxx
+  Module:    $RCSfile: vtkRenderedRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkRenderedRepresentation, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkRenderedRepresentation);
 
 class vtkRenderedRepresentation::Internals

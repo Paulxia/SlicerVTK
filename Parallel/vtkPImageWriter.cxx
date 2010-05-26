@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPImageWriter.cxx
+  Module:    $RCSfile: vtkPImageWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
       file = NULL; \
       } \
 
+vtkCxxRevisionMacro(vtkPImageWriter, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkPImageWriter);
 
 #ifdef write

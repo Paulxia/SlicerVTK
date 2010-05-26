@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractUnstructuredGrid.h
+  Module:    $RCSfile: vtkExtractUnstructuredGrid.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class vtkIncrementalPointLocator;
 class VTK_GRAPHICS_EXPORT vtkExtractUnstructuredGrid : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkExtractUnstructuredGrid,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractUnstructuredGrid,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

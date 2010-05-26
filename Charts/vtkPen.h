@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPen.h
+  Module:    $RCSfile: vtkPen.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@
 class VTK_CHARTS_EXPORT vtkPen : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkPen, vtkObject);
+  vtkTypeRevisionMacro(vtkPen, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   static vtkPen *New();

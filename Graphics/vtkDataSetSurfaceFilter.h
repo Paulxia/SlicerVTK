@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetSurfaceFilter.h
+  Module:    $RCSfile: vtkDataSetSurfaceFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_GRAPHICS_EXPORT vtkDataSetSurfaceFilter : public vtkPolyDataAlgorithm
 {
 public:
   static vtkDataSetSurfaceFilter *New();
-  vtkTypeMacro(vtkDataSetSurfaceFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDataSetSurfaceFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -80,34 +80,6 @@ public:
   vtkGetMacro(PassThroughPointIds,int);
   vtkBooleanMacro(PassThroughPointIds,int);
 
-  // Description:
-  // If PassThroughCellIds or PassThroughPointIds is on, then these ivars
-  // control the name given to the field in which the ids are written into.  If
-  // set to NULL, then vtkOriginalCellIds or vtkOriginalPointIds (the default)
-  // is used, respectively.
-  vtkSetStringMacro(OriginalCellIdsName);
-  virtual const char *GetOriginalCellIdsName() {
-    return (  this->OriginalCellIdsName
-            ? this->OriginalCellIdsName : "vtkOriginalCellIds");
-  }
-  vtkSetStringMacro(OriginalPointIdsName);
-  virtual const char *GetOriginalPointIdsName() {
-    return (  this->OriginalPointIdsName
-            ? this->OriginalPointIdsName : "vtkOriginalPointIds");
-  }
-
-  // Description:
-  // If the input is an unstructured grid with nonlinear faces, this parameter
-  // determines how many times the face is subdivided into linear faces.  If 0,
-  // the output is the equivalent of its linear couterpart (and the midpoints
-  // determining the nonlinear interpolation are discarded).  If 1 (the
-  // default), the nonlinear face is triangulated based on the midpoints.  If
-  // greater than 1, the triangulated pieces are recursively subdivided to reach
-  // the desired subdivision.  Setting the value to greater than 1 may cause
-  // some point data to not be passed even if no nonlinear faces exist.  This
-  // option has no effect if the input is not an unstructured grid.
-  vtkSetMacro(NonlinearSubdivisionLevel, int);
-  vtkGetMacro(NonlinearSubdivisionLevel, int);
 
   // Description:
   // Direct access methods that can be used to use the this class as an
@@ -171,14 +143,6 @@ protected:
   vtkIdType *PointMap;
   vtkIdType GetOutputPointId(vtkIdType inPtId, vtkDataSet *input, 
                              vtkPoints *outPts, vtkPointData *outPD);
-//BTX
-  class vtkEdgeInterpolationMap;
-//ETX
-  vtkEdgeInterpolationMap *EdgeMap;
-  vtkIdType GetInterpolatedPointId(vtkIdType edgePtA, vtkIdType edgePtB,
-                                   vtkDataSet *input, vtkCell *cell,
-                                   double pcoords[3], vtkPoints *outPts,
-                                   vtkPointData *outPD);
   
   vtkIdType NumberOfNewCells;
   
@@ -200,14 +164,10 @@ protected:
   void RecordOrigCellId(vtkIdType newIndex, vtkIdType origId);
   virtual void RecordOrigCellId(vtkIdType newIndex, vtkFastGeomQuad *quad);
   vtkIdTypeArray *OriginalCellIds;
-  char *OriginalCellIdsName;
 
   int PassThroughPointIds;
   void RecordOrigPointId(vtkIdType newIndex, vtkIdType origId);
   vtkIdTypeArray *OriginalPointIds;
-  char *OriginalPointIdsName;
-
-  int NonlinearSubdivisionLevel;
 
 private:
   vtkDataSetSurfaceFilter(const vtkDataSetSurfaceFilter&);  // Not implemented.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLightingPainter.cxx
+  Module:    $RCSfile: vtkLightingPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 
 // Needed when we don't use the vtkStandardNewMacro.
 vtkInstantiatorNewMacro(vtkLightingPainter);
+vtkCxxRevisionMacro(vtkLightingPainter, "$Revision: 1.3 $");
 //-----------------------------------------------------------------------------
 vtkLightingPainter::vtkLightingPainter()
 {

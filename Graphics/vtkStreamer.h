@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStreamer.h
+  Module:    $RCSfile: vtkStreamer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,7 +62,7 @@ class vtkMultiThreader;
 class VTK_GRAPHICS_EXPORT vtkStreamer : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkStreamer,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkStreamer,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLineWidget.h
+  Module:    $RCSfile: vtkLineWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -92,7 +92,7 @@ public:
   // Instantiate the object.
   static vtkLineWidget *New();
 
-  vtkTypeMacro(vtkLineWidget,vtk3DWidget);
+  vtkTypeRevisionMacro(vtkLineWidget,vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

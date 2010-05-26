@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAppendCompositeDataLeaves.cxx
+  Module:    $RCSfile: vtkAppendCompositeDataLeaves.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkPolyData.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkAppendCompositeDataLeaves, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkAppendCompositeDataLeaves);
 
 //----------------------------------------------------------------------------

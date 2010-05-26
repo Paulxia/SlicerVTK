@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompassWidget.cxx
+  Module:    $RCSfile: vtkCompassWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkWidgetEventTranslator.h"
 #include "vtkTimerLog.h"
 
+vtkCxxRevisionMacro(vtkCompassWidget, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCompassWidget);
 
 //------------------------------------------------------------

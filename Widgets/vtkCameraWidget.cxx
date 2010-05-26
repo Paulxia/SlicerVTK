@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCameraWidget.cxx
+  Module:    $RCSfile: vtkCameraWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkCallbackCommand.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCameraWidget, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCameraWidget);
 
 //-------------------------------------------------------------------------

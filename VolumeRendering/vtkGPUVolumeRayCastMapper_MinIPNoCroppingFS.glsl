@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGPUVolumeRayCastMapper_MinIPNoCroppingFS.glsl
+  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_MinIPNoCroppingFS.glsl,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

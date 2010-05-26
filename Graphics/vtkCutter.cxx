@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCutter.cxx
+  Module:    $RCSfile: vtkCutter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,6 +43,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkCutter, "$Revision: 1.94 $");
 vtkStandardNewMacro(vtkCutter);
 vtkCxxSetObjectMacro(vtkCutter,CutFunction,vtkImplicitFunction);
 vtkCxxSetObjectMacro(vtkCutter,Locator,vtkIncrementalPointLocator)

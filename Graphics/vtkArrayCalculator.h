@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayCalculator.h
+  Module:    $RCSfile: vtkArrayCalculator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -71,7 +71,7 @@ class vtkFunctionParser;
 class VTK_GRAPHICS_EXPORT vtkArrayCalculator : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkArrayCalculator,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkArrayCalculator,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkArrayCalculator *New();

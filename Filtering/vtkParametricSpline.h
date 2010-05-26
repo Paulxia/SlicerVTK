@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricSpline.h
+  Module:    $RCSfile: vtkParametricSpline.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -43,7 +43,7 @@ class vtkPoints;
 class VTK_FILTERING_EXPORT vtkParametricSpline : public vtkParametricFunction
 {
 public:
-  vtkTypeMacro(vtkParametricSpline,vtkParametricFunction);
+  vtkTypeRevisionMacro(vtkParametricSpline,vtkParametricFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

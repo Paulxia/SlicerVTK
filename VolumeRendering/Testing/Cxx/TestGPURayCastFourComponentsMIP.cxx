@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestGPURayCastFourComponentsMIP.cxx
+  Module:    $RCSfile: TestGPURayCastFourComponentsMIP.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

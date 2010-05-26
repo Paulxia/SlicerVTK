@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCaptionWidget.h
+  Module:    $RCSfile: vtkCaptionWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ public:
 
   // Description:
   // Standard VTK class methods.
-  vtkTypeMacro(vtkCaptionWidget,vtkBorderWidget);
+  vtkTypeRevisionMacro(vtkCaptionWidget,vtkBorderWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

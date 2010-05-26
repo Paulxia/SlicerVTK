@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkWindBladeReader.cxx
+Module:    $RCSfile: vtkWindBladeReader.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -50,6 +50,7 @@ static const char * Slash = "\\";
 static const char * Slash = "/";
 #endif
 
+vtkCxxRevisionMacro(vtkWindBladeReader, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkWindBladeReader);
 
 //----------------------------------------------------------------------------
@@ -62,13 +63,14 @@ vtkWindBladeReader::vtkWindBladeReader()
 
   // Set up two output ports, one for fields, one for blades
   this->SetNumberOfOutputPorts(2);
+  /*vtkUnstructuredGrid* blade = vtkUnstructuredGrid::New();
+  blade->ReleaseData();
+  this->GetExecutive()->SetOutputData(1, blade);
+  blade->Delete();*/
 
   // Irregularly spaced grid description for entire problem
   this->Points = vtkPoints::New();
-  this->xSpacing = vtkFloatArray::New();
-  this->ySpacing = vtkFloatArray::New();
-  this->zSpacing = vtkFloatArray::New();
-  this->zTopographicValues = 0;
+  this->SetSpacing = 1;
 
   // Blade geometry
   this->BPoints = vtkPoints::New();
@@ -140,12 +142,6 @@ vtkWindBladeReader::~vtkWindBladeReader()
   this->YPosition->Delete();
   this->HubHeight->Delete();
   this->BladeCount->Delete();
-  this->xSpacing->Delete();
-  this->ySpacing->Delete();
-  this->zSpacing->Delete();
-
-  if (this->zTopographicValues != 0)
-    delete [] zTopographicValues;
 
   this->Points->Delete();
   this->BPoints->Delete();
@@ -197,7 +193,6 @@ int vtkWindBladeReader::RequestInformation(
   vtkInformation* fieldInfo = outputVector->GetInformationObject(0);
   vtkStructuredGrid *field = vtkStructuredGrid::SafeDownCast(
                              fieldInfo->Get(vtkDataObject::DATA_OBJECT()));
-  vtkUnstructuredGrid* blade = GetBladeOutput();
 
   // Read global size and variable information from input file one time
   if (this->NumberOfVariables == 0) {
@@ -224,13 +219,8 @@ int vtkWindBladeReader::RequestInformation(
     this->WholeExtent[5] = this->Dimension[2] - 1;     
 
     field->SetWholeExtent(this->WholeExtent);
-    field->SetDimensions(this->Dimension);
     fieldInfo->Set(vtkStreamingDemandDrivenPipeline::WHOLE_EXTENT(),
                    this->WholeExtent, 6);
-    blade->SetWholeExtent(this->WholeExtent);
-
-    // Create the rectilinear coordinate spacing for entire problem
-    CreateCoordinates();
 
     // Collect temporal information
     this->TimeSteps = NULL;
@@ -266,12 +256,41 @@ int vtkWindBladeReader::RequestInformation(
 // ParaView is doing the partitioning for this reader
 //----------------------------------------------------------------------------
 int vtkWindBladeReader::RequestUpdateExtent(
-  vtkInformation* vtkNotUsed(request),
-  vtkInformationVector** vtkNotUsed(inputVector),
-  vtkInformationVector* vtkNotUsed(outputVector))
+      vtkInformation* vtkNotUsed(request),
+      vtkInformationVector** vtkNotUsed(inputVector),
+      vtkInformationVector* outputVector)
 {
   // If Modified is not set, blades do not turn
   this->Modified();
+
+  vtkInformation* fieldInfo = outputVector->GetInformationObject(0);
+  vtkStructuredGrid *field = GetFieldOutput();
+  field->SetDimensions(this->Dimension);
+  field->SetWholeExtent(this->WholeExtent);
+
+  // not used? vtkInformation* bladeInfo = outputVector->GetInformationObject(1);
+  vtkUnstructuredGrid* blade = GetBladeOutput();
+  blade->SetWholeExtent(this->WholeExtent);
+
+  // Fetch the extents on this processor from stream and set in output object
+  fieldInfo->Get(vtkStreamingDemandDrivenPipeline::UPDATE_EXTENT(), 
+                 this->SubExtent);
+
+  // Set the subextent dimension size
+  this->SubDimension[0] = this->SubExtent[1] - this->SubExtent[0] + 1;
+  this->SubDimension[1] = this->SubExtent[3] - this->SubExtent[2] + 1;
+  this->SubDimension[2] = this->SubExtent[5] - this->SubExtent[4] + 1;
+
+  // Total size of the subextent
+  this->NumberOfTuples = 1;
+  for (int dim = 0; dim < DIMENSION; dim++)
+    this->NumberOfTuples *= this->SubDimension[dim];
+
+  // Set the variable spacing for this subextent one time only
+  if (this->SetSpacing == 1) {
+    CreateCoordinates();
+    this->SetSpacing = 0;
+  }
   return 1;
 }
 
@@ -293,23 +312,11 @@ int vtkWindBladeReader::RequestData(
   vtkInformation* fieldInfo = outVector->GetInformationObject(0);
   vtkStructuredGrid *field = GetFieldOutput();
 
-  // Set the extent info for this processor
-  fieldInfo->Get(vtkStreamingDemandDrivenPipeline::UPDATE_EXTENT(),
-                 this->SubExtent);
+  // Set the info for this processor every time
+  field->SetDimensions(this->Dimension);
+  field->SetWholeExtent(this->WholeExtent);
   field->SetExtent(this->SubExtent);
-
-  // Set the rectilinear coordinates matching the requested subextents
-  // Extents may include ghost cells for filters that require them
-  FillCoordinates();
   field->SetPoints(this->Points);
-
-  this->SubDimension[0] = this->SubExtent[1] - this->SubExtent[0] + 1;
-  this->SubDimension[1] = this->SubExtent[3] - this->SubExtent[2] + 1;
-  this->SubDimension[2] = this->SubExtent[5] - this->SubExtent[4] + 1;
-
-  this->NumberOfTuples = 1;
-  for (int dim = 0; dim < DIMENSION; dim++)
-    this->NumberOfTuples *= this->SubDimension[dim];
 
   // Collect the time step requested
   double* requestedTimeSteps = NULL;
@@ -541,6 +548,7 @@ void vtkWindBladeReader::CalculateVorticity(int vort, int uvw, int density)
   for (int k = this->SubExtent[4]; k <= this->SubExtent[5]; k++) {
     for (int j = this->SubExtent[2]; j <= this->SubExtent[3]; j++) {
       for (int i = this->SubExtent[0]; i <= this->SubExtent[1]; i++) {
+// not used?        int index = (k * planeSize) + (j * rowSize) + i;
 
         // Edges are initialized to 0
         if (j == this->SubExtent[2] || j == this->SubExtent[3] ||
@@ -802,6 +810,8 @@ void vtkWindBladeReader::FindVariableOffsets()
 {
   // Open the first data file
   ostringstream fileName; 
+  cout << "DataDirectory: " << this->DataDirectory << endl;
+  cout << "DataBaseName: " << this->DataBaseName << endl;
   fileName << this->RootDirectory << Slash
            << this->DataDirectory << Slash 
            << this->DataBaseName << this->TimeStepFirst;
@@ -833,24 +843,44 @@ void vtkWindBladeReader::FindVariableOffsets()
 }
 
 //----------------------------------------------------------------------------
-// Fill in the rectilinear points for the requested subextents
+// Calculate the Points for flat Rectilinear type grid or topographic
+// generalized StructuredGrid which is what is being created here
 //----------------------------------------------------------------------------
-void vtkWindBladeReader::FillCoordinates()
+void vtkWindBladeReader::CreateCoordinates()
 {
-  this->Points->Delete();
-  this->Points = vtkPoints::New();
+  vtkFloatArray* xSpacing = vtkFloatArray::New();
+  vtkFloatArray* ySpacing = vtkFloatArray::New();
+  vtkFloatArray* zSpacing = vtkFloatArray::New();
 
   // If dataset is flat, x and y are constant spacing, z is stretched
   if (this->UseTopographyFile == 0) {
+    float value = 0.0;
+    for (int i = 0; i < this->Dimension[0]; i++) {
+      xSpacing->InsertNextValue(value);
+      value += this->Step[0];
+    }
+
+    value = 0.0;
+    for (int j = 0; j < this->Dimension[1]; j++) {
+      ySpacing->InsertNextValue(value);
+      value += this->Step[1];
+    }
+  
+    double maxZ = this->Step[2] * this->Dimension[2];
+    for (int k = 0; k < this->Dimension[2]; k++) {
+      double zcoord = (k * this->Step[2]) + (0.5 * this->Step[2]);
+      double zcartesian = GDeform(zcoord, maxZ, 0);
+      zSpacing->InsertNextValue(zcartesian);
+    }
 
     // Save vtkPoints instead of spacing coordinates because topography file
     // requires this to be vtkStructuredGrid and not vtkRectilinearGrid
     for (int k = this->SubExtent[4]; k <= this->SubExtent[5]; k++) {
-      float z = this->zSpacing->GetValue(k);
+      float z = zSpacing->GetValue(k);
       for (int j = this->SubExtent[2]; j <= this->SubExtent[3]; j++) {
-        float y = this->ySpacing->GetValue(j);
+        float y = ySpacing->GetValue(j);
         for (int i = this->SubExtent[0]; i <= this->SubExtent[1]; i++) {
-          float x = this->xSpacing->GetValue(i);
+          float x = xSpacing->GetValue(i);
           this->Points->InsertNextPoint(x, y, z);
         }
       }
@@ -860,64 +890,35 @@ void vtkWindBladeReader::FillCoordinates()
   // If dataset is topographic, x and y are constant spacing center on (0,0)
   // Z data is calculated from an x by y topographic data file
   else {
+    float xHalf = (((this->Dimension[0] + 1.0) / 2.0) - 1.0) * this->Step[0];
+    for (int i = 0; i < this->Dimension[0]; i++)
+      xSpacing->InsertNextValue((i * this->Step[0]) - xHalf);
+
+    float yHalf = (((this->Dimension[1] + 1.0) / 2.0) - 1.0) * this->Step[1];
+    for (int j = 0; j < this->Dimension[1]; j++)
+      ySpacing->InsertNextValue((j * this->Step[1]) - yHalf);
+
+    float* zValues = new float[this->BlockSize];
+    CreateZTopography(zValues);
+
     int planeSize = this->Dimension[0] * this->Dimension[1];
     int rowSize = this->Dimension[0];
 
     for (int k = this->SubExtent[4]; k <= this->SubExtent[5]; k++) {
       for (int j = this->SubExtent[2]; j <= this->SubExtent[3]; j++) {
-        float y = this->ySpacing->GetValue(j);
+        float y = ySpacing->GetValue(j);
         for (int i = this->SubExtent[0]; i <= this->SubExtent[1]; i++) {
-          float x = this->xSpacing->GetValue(i);
+          float x = xSpacing->GetValue(i);
           int index = (k * planeSize) + (j * rowSize) + i;
-          this->Points->InsertNextPoint(x, y, this->zTopographicValues[index]);
+          this->Points->InsertNextPoint(x, y, zValues[index]);
         }
       }
     }
+    delete [] zValues;
   }
-}
-
-//----------------------------------------------------------------------------
-// Calculate the Points for flat Rectilinear type grid or topographic
-// generalized StructuredGrid which is what is being created here
-//----------------------------------------------------------------------------
-void vtkWindBladeReader::CreateCoordinates()
-{
-  // If dataset is flat, x and y are constant spacing, z is stretched
-  if (this->UseTopographyFile == 0) {
-    float value = 0.0;
-    for (int i = 0; i < this->Dimension[0]; i++) {
-      this->xSpacing->InsertNextValue(value);
-      value += this->Step[0];
-    }
-
-    value = 0.0;
-    for (int j = 0; j < this->Dimension[1]; j++) {
-      this->ySpacing->InsertNextValue(value);
-      value += this->Step[1];
-    }
-
-    double maxZ = this->Step[2] * this->Dimension[2];
-    for (int k = 0; k < this->Dimension[2]; k++) {
-      double zcoord = (k * this->Step[2]) + (0.5 * this->Step[2]);
-      double zcartesian = GDeform(zcoord, maxZ, 0);
-      this->zSpacing->InsertNextValue(zcartesian);
-    }
-  }
-
-  // If dataset is topographic, x and y are constant spacing center on (0,0)
-  // Z data is calculated from an x by y topographic data file
-  else {
-    float xHalf = (((this->Dimension[0] + 1.0) / 2.0) - 1.0) * this->Step[0];
-    for (int i = 0; i < this->Dimension[0]; i++)
-      this->xSpacing->InsertNextValue((i * this->Step[0]) - xHalf);
-
-    float yHalf = (((this->Dimension[1] + 1.0) / 2.0) - 1.0) * this->Step[1];
-    for (int j = 0; j < this->Dimension[1]; j++)
-      this->ySpacing->InsertNextValue((j * this->Step[1]) - yHalf);
-
-    this->zTopographicValues = new float[this->BlockSize];
-    CreateZTopography(this->zTopographicValues);
-  }
+  xSpacing->Delete();
+  ySpacing->Delete();
+  zSpacing->Delete();
 }
 
 //----------------------------------------------------------------------------
@@ -926,10 +927,7 @@ void vtkWindBladeReader::CreateCoordinates()
 void vtkWindBladeReader::CreateZTopography(float* zValues)
 {
   // Read the x,y topography data file
-  ostringstream fileName;
-  fileName << this->RootDirectory << Slash
-           << this->TopographyFile;
-  FILE* filePtr = fopen(fileName.str().c_str(), "r");
+  FILE* filePtr = fopen(this->TopographyFile.c_str(), "r");
   int blockSize = this->Dimension[0] * this->Dimension[1];
   float* topoData = new float[blockSize];
 
@@ -1143,6 +1141,8 @@ void vtkWindBladeReader::SetupBladeData()
 {
   // Load the tower information
   ostringstream fileName;
+  cout << "TurbineDirectory: " << this->TurbineDirectory << endl;
+  cout << "TurbineTowerName: " << this->TurbineTowerName << endl;
   fileName << this->RootDirectory << Slash 
            << this->TurbineDirectory << Slash 
            << this->TurbineTowerName; 
@@ -1174,6 +1174,8 @@ void vtkWindBladeReader::SetupBladeData()
 
   // Calculate the number of cells in unstructured turbine blades
   ostringstream fileName2;
+  cout << "TurbineDirectory: " << this->TurbineDirectory << endl;
+  cout << "TurbineBladeName: " << this->TurbineBladeName << endl;
   fileName2 << this->RootDirectory << Slash
             << this->TurbineDirectory << Slash
             << this->TurbineBladeName << this->TimeStepFirst;
@@ -1199,9 +1201,7 @@ void vtkWindBladeReader::LoadBladeData(int timeStep)
 {
   // Open the file for this time step
   ostringstream fileName;
-  fileName << this->RootDirectory << Slash
-           << this->TurbineDirectory << Slash 
-           << this->TurbineBladeName 
+  fileName << this->TurbineDirectory << Slash << this->TurbineBladeName 
            << this->TimeSteps[timeStep];
   ifstream inStr(fileName.str().c_str());
   char inBuf[LINE_SIZE];

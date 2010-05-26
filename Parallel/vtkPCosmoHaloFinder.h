@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPCosmoHaloFinder.h
+  Module:    $RCSfile: vtkPCosmoHaloFinder.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,7 +15,7 @@
 /*=========================================================================
 
   Program:   VTK/ParaView Los Alamos National Laboratory Modules (PVLANL)
-  Module:    vtkPCosmoHaloFinder.h
+  Module:    $RCSfile: vtkPCosmoHaloFinder.h,v $
 
 Copyright (c) 2007, 2009, Los Alamos National Security, LLC
 
@@ -76,7 +76,7 @@ class VTK_PARALLEL_EXPORT vtkPCosmoHaloFinder : public vtkUnstructuredGridAlgori
  public:
   static vtkPCosmoHaloFinder *New();
 
-  vtkTypeMacro(vtkPCosmoHaloFinder,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkPCosmoHaloFinder,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

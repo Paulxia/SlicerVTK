@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWarpLens.h
+  Module:    $RCSfile: vtkWarpLens.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_GRAPHICS_EXPORT vtkWarpLens : public vtkPointSetAlgorithm
 {
 public:
   static vtkWarpLens *New();
-  vtkTypeMacro(vtkWarpLens,vtkPointSetAlgorithm);
+  vtkTypeRevisionMacro(vtkWarpLens,vtkPointSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

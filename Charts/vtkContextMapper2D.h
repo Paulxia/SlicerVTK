@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextMapper2D.h
+  Module:    $RCSfile: vtkContextMapper2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkAbstractArray;
 class VTK_CHARTS_EXPORT vtkContextMapper2D : public vtkAlgorithm
 {
 public:
-  vtkTypeMacro(vtkContextMapper2D, vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkContextMapper2D, vtkAlgorithm);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
   static vtkContextMapper2D *New();
 

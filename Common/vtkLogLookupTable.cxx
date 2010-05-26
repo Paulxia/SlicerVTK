@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLogLookupTable.cxx
+  Module:    $RCSfile: vtkLogLookupTable.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkLogLookupTable, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkLogLookupTable);
 
 // Construct with (minimum,maximum) range 1 to 10 (based on 

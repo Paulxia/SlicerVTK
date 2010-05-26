@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGPUInfo.cxx
+  Module:    $RCSfile: vtkGPUInfo.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkGPUInfo.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkGPUInfo, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkGPUInfo);
 
 // ----------------------------------------------------------------------------

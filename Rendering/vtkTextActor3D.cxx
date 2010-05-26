@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextActor3D.cxx
+  Module:    $RCSfile: vtkTextActor3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkMatrix4x4.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkTextActor3D, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkTextActor3D);
 
 vtkCxxSetObjectMacro(vtkTextActor3D, TextProperty, vtkTextProperty);

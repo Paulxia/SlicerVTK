@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLogoRepresentation.h
+  Module:    $RCSfile: vtkLogoRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ public:
 
   // Description:
   // Standard VTK class methods.
-  vtkTypeMacro(vtkLogoRepresentation,vtkBorderRepresentation);
+  vtkTypeRevisionMacro(vtkLogoRepresentation,vtkBorderRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractCellLocator.cxx
+  Module:    $RCSfile: vtkAbstractCellLocator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkDataSet.h"
 #include "vtkMath.h"
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkAbstractCellLocator, "$Revision: 1.9 $");
 //----------------------------------------------------------------------------
 vtkAbstractCellLocator::vtkAbstractCellLocator()
 {

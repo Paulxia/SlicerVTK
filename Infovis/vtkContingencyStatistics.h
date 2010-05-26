@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkContingencyStatistics.h
+Module:    $RCSfile: vtkContingencyStatistics.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -45,7 +45,7 @@ class vtkVariant;
 class VTK_INFOVIS_EXPORT vtkContingencyStatistics : public vtkBivariateStatisticsAlgorithm
 {
 public:
-  vtkTypeMacro(vtkContingencyStatistics, vtkBivariateStatisticsAlgorithm);
+  vtkTypeRevisionMacro(vtkContingencyStatistics, vtkBivariateStatisticsAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkContingencyStatistics* New();
 
@@ -53,33 +53,40 @@ public:
   // Given a collection of models, calculate aggregate model
   // NB: not implemented
   virtual void Aggregate( vtkDataObjectCollection*,
-                          vtkMultiBlockDataSet* ) { return; };
+                          vtkDataObject* ) { return; };
 
 protected:
   vtkContingencyStatistics();
   ~vtkContingencyStatistics();
 
   // Description:
+  // This algorithm accepts and returns a multiblock dataset containing several tables for
+  // its meta input/output instead of a single vtkTable.
+  // FillInputPortInformation/FillOutputPortInformation are overridden accordingly.
+  virtual int FillInputPortInformation( int port, vtkInformation* info );
+  virtual int FillOutputPortInformation( int port, vtkInformation* info );
+
+  // Description:
   // Execute the calculations required by the Learn option.
   virtual void Learn( vtkTable* inData,
                       vtkTable* inParameters,
-                      vtkMultiBlockDataSet* outMeta );
+                      vtkDataObject* outMeta );
 
   // Description:
   // Execute the calculations required by the Derive option.
-  virtual void Derive( vtkMultiBlockDataSet* );
+  virtual void Derive( vtkDataObject* );
 
   // Description:
   // Execute the calculations required by the Assess option.
   virtual void Assess( vtkTable* inData,
-                       vtkMultiBlockDataSet* inMeta,
+                       vtkDataObject* inMeta,
                        vtkTable* outData ); 
   
   // Description:
   // Execute the calculations required by the Test option.
   virtual void Test( vtkTable* inData,
-                     vtkMultiBlockDataSet* inMeta,
-                     vtkTable* outMeta ); 
+                     vtkDataObject* inMeta,
+                     vtkDataObject* outMeta ); 
 
 //BTX  
   // Description:

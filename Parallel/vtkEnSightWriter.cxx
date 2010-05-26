@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEnSightWriter.cxx
+  Module:    $RCSfile: vtkEnSightWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -86,6 +86,7 @@
 
 //----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkEnSightWriter);
+vtkCxxRevisionMacro(vtkEnSightWriter, "$Revision: 1.7 $");
 
 vtkCxxSetObjectMacro(vtkEnSightWriter, ModelMetadata, vtkModelMetadata);
 

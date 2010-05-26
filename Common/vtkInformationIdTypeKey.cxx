@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationIdTypeKey.cxx
+  Module:    $RCSfile: vtkInformationIdTypeKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 
 #include "vtkInformation.h"
 
+vtkCxxRevisionMacro(vtkInformationIdTypeKey, "$Revision: 1.4 $");
 
 //----------------------------------------------------------------------------
 vtkInformationIdTypeKey::vtkInformationIdTypeKey(const char* name, const char* location):

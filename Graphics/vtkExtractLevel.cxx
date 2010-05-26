@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractLevel.cxx
+  Module:    $RCSfile: vtkExtractLevel.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@ class vtkExtractLevel::vtkSet : public vtkstd::set<unsigned int>
 };
 
 vtkStandardNewMacro(vtkExtractLevel);
+vtkCxxRevisionMacro(vtkExtractLevel, "$Revision: 1.1 $");
 //----------------------------------------------------------------------------
 vtkExtractLevel::vtkExtractLevel()
 {

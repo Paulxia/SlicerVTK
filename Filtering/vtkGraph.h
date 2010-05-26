@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraph.h
+  Module:    $RCSfile: vtkGraph.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -272,7 +272,7 @@ struct vtkEdgeType : vtkEdgeBase
 class VTK_FILTERING_EXPORT vtkGraph : public vtkDataObject
 {
 public:
-  vtkTypeMacro(vtkGraph, vtkDataObject);
+  vtkTypeRevisionMacro(vtkGraph, vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

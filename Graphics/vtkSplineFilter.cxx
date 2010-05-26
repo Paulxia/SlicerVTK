@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineFilter.cxx
+  Module:    $RCSfile: vtkSplineFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkSplineFilter, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkSplineFilter);
 vtkCxxSetObjectMacro(vtkSplineFilter,Spline,vtkSpline);
 

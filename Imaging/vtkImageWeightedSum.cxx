@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageWeightedSum.cxx
+  Module:    $RCSfile: vtkImageWeightedSum.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkDataSetAttributes.h"
 
+vtkCxxRevisionMacro(vtkImageWeightedSum, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkImageWeightedSum);
 
 vtkCxxSetObjectMacro(vtkImageWeightedSum,Weights,vtkDoubleArray);

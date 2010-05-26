@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageIdealLowPass.cxx
+  Module:    $RCSfile: vtkImageIdealLowPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageIdealLowPass, "$Revision: 1.23 $");
 vtkStandardNewMacro(vtkImageIdealLowPass);
 
 //----------------------------------------------------------------------------

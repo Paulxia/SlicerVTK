@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShaderProgram.cxx
+  Module:    $RCSfile: vtkShaderProgram.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,6 +45,7 @@
 #include "vtkGLSLShaderProgram.h"
 #endif
 
+vtkCxxRevisionMacro(vtkShaderProgram, "$Revision: 1.10 $");
 vtkCxxSetObjectMacro(vtkShaderProgram, Material, vtkXMLMaterial);
 //-----------------------------------------------------------------------------
 vtkShaderProgram::vtkShaderProgram()

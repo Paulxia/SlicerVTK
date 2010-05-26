@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLHardwareSupport.cxx
+  Module:    $RCSfile: vtkOpenGLHardwareSupport.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkOpenGLRenderWindow.h"
 #include "vtkgl.h"
 
+vtkCxxRevisionMacro(vtkOpenGLHardwareSupport, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkOpenGLHardwareSupport);
 
 vtkCxxSetObjectMacro(vtkOpenGLHardwareSupport, ExtensionManager, vtkOpenGLExtensionManager);

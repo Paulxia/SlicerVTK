@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoGraticule.h
+  Module:    $RCSfile: vtkGeoGraticule.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_GEOVIS_EXPORT vtkGeoGraticule : public vtkPolyDataAlgorithm
 public:
   static vtkGeoGraticule* New();
   virtual void PrintSelf( ostream& os, vtkIndent indent );
-  vtkTypeMacro(vtkGeoGraticule,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGeoGraticule,vtkPolyDataAlgorithm);
 
   // Description:
   // The latitude bounds of the graticule.

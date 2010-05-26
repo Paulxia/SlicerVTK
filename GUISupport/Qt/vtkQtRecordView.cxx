@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtRecordView.cxx
+  Module:    $RCSfile: vtkQtRecordView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkTable.h"
 
+vtkCxxRevisionMacro(vtkQtRecordView, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkQtRecordView);
 
 //----------------------------------------------------------------------------
@@ -44,7 +45,6 @@ vtkQtRecordView::vtkQtRecordView()
 {
   this->TextWidget = new QTextEdit();
   this->DataObjectToTable = vtkSmartPointer<vtkDataObjectToTable>::New();
-  this->DataObjectToTable->SetFieldType(vtkDataObjectToTable::VERTEX_DATA);
   this->FieldType = vtkQtRecordView::VERTEX_DATA;
   this->Text = NULL;
   this->CurrentSelectionMTime = 0;
@@ -78,18 +78,19 @@ void vtkQtRecordView::SetFieldType(int type)
     }
 }
 
-void vtkQtRecordView::AddRepresentationInternal(vtkDataRepresentation* rep)
-{    
-  vtkAlgorithmOutput *conn;
-  conn = rep->GetInputConnection();
-
+//----------------------------------------------------------------------------
+void vtkQtRecordView::AddInputConnection( 
+  vtkAlgorithmOutput* conn, 
+  vtkAlgorithmOutput* vtkNotUsed(selectionConn))
+{  
   this->DataObjectToTable->SetInputConnection(0, conn);
 }
 
-void vtkQtRecordView::RemoveRepresentationInternal(vtkDataRepresentation* rep)
-{   
-  vtkAlgorithmOutput *conn;
-  conn = rep->GetInputConnection();
+//----------------------------------------------------------------------------
+void vtkQtRecordView::RemoveInputConnection(
+  vtkAlgorithmOutput* conn, 
+  vtkAlgorithmOutput* vtkNotUsed(selectionConn))
+{  
   this->DataObjectToTable->RemoveInputConnection(0, conn);
 }
 

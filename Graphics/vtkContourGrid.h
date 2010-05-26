@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContourGrid.h
+  Module:    $RCSfile: vtkContourGrid.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -57,7 +57,7 @@ class vtkIncrementalPointLocator;
 class VTK_GRAPHICS_EXPORT vtkContourGrid : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkContourGrid,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkContourGrid,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

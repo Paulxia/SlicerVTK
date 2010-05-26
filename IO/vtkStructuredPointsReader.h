@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredPointsReader.h
+  Module:    $RCSfile: vtkStructuredPointsReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_IO_EXPORT vtkStructuredPointsReader : public vtkDataReader
 {
 public:
   static vtkStructuredPointsReader *New();
-  vtkTypeMacro(vtkStructuredPointsReader,vtkDataReader);
+  vtkTypeRevisionMacro(vtkStructuredPointsReader,vtkDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

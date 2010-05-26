@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDynamic2DLabelMapper.cxx
+  Module:    $RCSfile: vtkDynamic2DLabelMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -55,6 +55,7 @@ using vtksys_ios::ofstream;
 # define SNPRINTF snprintf
 #endif
 
+vtkCxxRevisionMacro(vtkDynamic2DLabelMapper, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkDynamic2DLabelMapper);
 
 //----------------------------------------------------------------------------

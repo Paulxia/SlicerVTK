@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSquarifyLayoutStrategy.h
+  Module:    $RCSfile: vtkSquarifyLayoutStrategy.h,v $
   
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_INFOVIS_EXPORT vtkSquarifyLayoutStrategy : public vtkTreeMapLayoutStra
 {
 public:
   static vtkSquarifyLayoutStrategy *New();
-  vtkTypeMacro(vtkSquarifyLayoutStrategy,vtkTreeMapLayoutStrategy);
+  vtkTypeRevisionMacro(vtkSquarifyLayoutStrategy,vtkTreeMapLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

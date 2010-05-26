@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkThinPlateSplineTransform.h
+  Module:    $RCSfile: vtkThinPlateSplineTransform.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@
 class VTK_HYBRID_EXPORT vtkThinPlateSplineTransform : public vtkWarpTransform
 {
 public:
-  vtkTypeMacro(vtkThinPlateSplineTransform,vtkWarpTransform);
+  vtkTypeRevisionMacro(vtkThinPlateSplineTransform,vtkWarpTransform);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkThinPlateSplineTransform *New();
 

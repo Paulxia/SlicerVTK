@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDilateErode3D.h
+  Module:    $RCSfile: vtkImageDilateErode3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ public:
   // Construct an instance of vtkImageDilateErode3D filter.
   // By default zero values are dilated.
   static vtkImageDilateErode3D *New();
-  vtkTypeMacro(vtkImageDilateErode3D,vtkImageSpatialAlgorithm);
+  vtkTypeRevisionMacro(vtkImageDilateErode3D,vtkImageSpatialAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

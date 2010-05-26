@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParallelRenderManager.h
+  Module:    $RCSfile: vtkParallelRenderManager.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class vtkUnsignedCharArray;
 class VTK_PARALLEL_EXPORT vtkParallelRenderManager : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkParallelRenderManager, vtkObject);
+  vtkTypeRevisionMacro(vtkParallelRenderManager, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

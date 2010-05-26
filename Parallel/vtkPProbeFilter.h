@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPProbeFilter.h
+  Module:    $RCSfile: vtkPProbeFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,7 +25,7 @@ class vtkMultiProcessController;
 class VTK_PARALLEL_EXPORT vtkPProbeFilter : public vtkCompositeDataProbeFilter
 {
 public:
-  vtkTypeMacro(vtkPProbeFilter,vtkCompositeDataProbeFilter);
+  vtkTypeRevisionMacro(vtkPProbeFilter,vtkCompositeDataProbeFilter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkPProbeFilter *New();

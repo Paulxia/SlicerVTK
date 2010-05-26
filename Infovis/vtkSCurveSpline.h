@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSCurveSpline.h
+  Module:    $RCSfile: vtkSCurveSpline.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_INFOVIS_EXPORT vtkSCurveSpline : public vtkSpline
 public:
   static vtkSCurveSpline *New();
 
-  vtkTypeMacro(vtkSCurveSpline,vtkSpline);
+  vtkTypeRevisionMacro(vtkSCurveSpline,vtkSpline);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

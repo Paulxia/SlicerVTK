@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContourRepresentation.h
+  Module:    $RCSfile: vtkContourRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -107,7 +107,7 @@ class VTK_WIDGETS_EXPORT vtkContourRepresentation : public vtkWidgetRepresentati
 public:
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkContourRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkContourRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

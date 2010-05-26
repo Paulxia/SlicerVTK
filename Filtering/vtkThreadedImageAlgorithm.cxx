@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkThreadedImageAlgorithm.cxx
+  Module:    $RCSfile: vtkThreadedImageAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
+vtkCxxRevisionMacro(vtkThreadedImageAlgorithm, "$Revision: 1.12 $");
 
 //----------------------------------------------------------------------------
 vtkThreadedImageAlgorithm::vtkThreadedImageAlgorithm()

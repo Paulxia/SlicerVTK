@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractUnstructuredGrid.cxx
+  Module:    $RCSfile: vtkExtractUnstructuredGrid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkExtractUnstructuredGrid, "$Revision: 1.39 $");
 vtkStandardNewMacro(vtkExtractUnstructuredGrid);
 
 // Construct with all types of clipping turned off.

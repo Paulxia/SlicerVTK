@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPUnstructuredDataWriter.cxx
+  Module:    $RCSfile: vtkXMLPUnstructuredDataWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkXMLUnstructuredDataWriter.h"
 
+vtkCxxRevisionMacro(vtkXMLPUnstructuredDataWriter, "$Revision: 1.8 $");
 
 //----------------------------------------------------------------------------
 vtkXMLPUnstructuredDataWriter::vtkXMLPUnstructuredDataWriter()

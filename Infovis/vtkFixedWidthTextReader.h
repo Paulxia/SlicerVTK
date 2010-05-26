@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFixedWidthTextReader.h
+  Module:    $RCSfile: vtkFixedWidthTextReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class VTK_INFOVIS_EXPORT vtkFixedWidthTextReader : public vtkTableAlgorithm
 {
 public:
   static vtkFixedWidthTextReader* New();
-  vtkTypeMacro(vtkFixedWidthTextReader,vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkFixedWidthTextReader,vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkGetStringMacro(FileName);

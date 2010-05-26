@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParse.h
+  Module:    $RCSfile: vtkParse.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -12,8 +12,6 @@
      PURPOSE.  See the above copyright notice for more information.
 
 =========================================================================*/
-
-#include "vtkParseType.h"
 
 #define MAX_ARGS 20  
 

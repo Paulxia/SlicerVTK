@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChooserPainter.h
+  Module:    $RCSfile: vtkChooserPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkChooserPainter : public vtkPolyDataPainter
 {
 public:
   static vtkChooserPainter *New();
-  vtkTypeMacro(vtkChooserPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkChooserPainter, vtkPolyDataPainter);
   void PrintSelf(ostream &os, vtkIndent indent);
 
   void SetVertPainter(vtkPolyDataPainter*);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridReader.cxx
+  Module:    $RCSfile: vtkRectilinearGridReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkRectilinearGrid.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkRectilinearGridReader, "$Revision: 1.33 $");
 vtkStandardNewMacro(vtkRectilinearGridReader);
 
 //----------------------------------------------------------------------------

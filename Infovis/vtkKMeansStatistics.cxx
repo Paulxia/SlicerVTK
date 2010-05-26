@@ -19,6 +19,7 @@
 #include <vtksys/ios/sstream>
 
 vtkStandardNewMacro(vtkKMeansStatistics);
+vtkCxxRevisionMacro(vtkKMeansStatistics,"$Revision: 1.19 $");
 vtkCxxSetObjectMacro(vtkKMeansStatistics,DistanceFunctor,vtkKMeansDistanceFunctor);
 
 // ----------------------------------------------------------------------
@@ -56,6 +57,39 @@ void vtkKMeansStatistics::PrintSelf( ostream& os, vtkIndent indent )
   os << indent << "DistanceFunctor: " << this->DistanceFunctor << endl;
 }
 
+
+// ----------------------------------------------------------------------
+int vtkKMeansStatistics::FillOutputPortInformation( int port, vtkInformation* info )
+{
+  int stat;
+  if ( port == vtkStatisticsAlgorithm::OUTPUT_MODEL )
+    {
+    info->Set( vtkDataObject::DATA_TYPE_NAME(), "vtkMultiBlockDataSet" );
+    stat = 1;
+    }
+  else 
+    {
+    stat = this->Superclass::FillOutputPortInformation( port, info );
+    }
+  return stat;
+}
+
+// ----------------------------------------------------------------------
+int vtkKMeansStatistics::FillInputPortInformation( int port, vtkInformation* info )
+{
+  int stat;
+  if ( port == INPUT_MODEL )
+    {
+    info->Set( vtkAlgorithm::INPUT_IS_OPTIONAL(), 1 );
+    info->Set( vtkAlgorithm::INPUT_REQUIRED_DATA_TYPE(), "vtkMultiBlockDataSet" );
+    stat = 1;
+    }
+  else 
+    {
+    stat = this->Superclass::FillInputPortInformation( port, info );
+    }
+  return stat;
+}
 
 // ----------------------------------------------------------------------
 int vtkKMeansStatistics::InitializeDataAndClusterCenters(vtkTable* inParameters,
@@ -262,14 +296,21 @@ void vtkKMeansStatistics::UpdateClusterCenters( vtkTable* newClusterElements,
 // ----------------------------------------------------------------------
 void vtkKMeansStatistics::Learn( vtkTable* inData, 
                                  vtkTable* inParameters,
-                                 vtkMultiBlockDataSet* outMeta )
+                                 vtkDataObject* outMetaDO )
 {
-  if ( ! outMeta )
+  vtkMultiBlockDataSet* outMeta = vtkMultiBlockDataSet::SafeDownCast( outMetaDO );
+  if ( !outMeta )
     {
     return;
     }
+  vtkIdType numObservations = inData->GetNumberOfRows();
+  if ( numObservations <= 0 )
+    {
+    return;
+    }
+  vtkIdType totalNumberOfObservations = this->GetTotalNumberOfObservations( numObservations );
 
-  if ( ! inData )
+  if ( inData->GetNumberOfColumns() <= 0 )
     {
     return;
     }
@@ -306,8 +347,6 @@ void vtkKMeansStatistics::Learn( vtkTable* inData,
     return;
     }
                                  
-  vtkIdType numObservations = inData->GetNumberOfRows();
-  vtkIdType totalNumberOfObservations = this->GetTotalNumberOfObservations( numObservations );
   vtkIdType numToAllocate = curClusterElements->GetNumberOfRows();
   vtkIdTypeArray* numIterations = vtkIdTypeArray::New();
   vtkIdTypeArray* numDataElementsInCluster = vtkIdTypeArray::New();
@@ -484,8 +523,9 @@ void vtkKMeansStatistics::Learn( vtkTable* inData,
 }
 
 // ----------------------------------------------------------------------
-void vtkKMeansStatistics::Derive( vtkMultiBlockDataSet* outMeta )
+void vtkKMeansStatistics::Derive( vtkDataObject* outMetaDO )
 {
+  vtkMultiBlockDataSet* outMeta = vtkMultiBlockDataSet::SafeDownCast( outMetaDO );
   vtkTable* outTable;
   vtkIdTypeArray* clusterRunIDs;
   vtkIdTypeArray* numIterations;
@@ -493,7 +533,7 @@ void vtkKMeansStatistics::Derive( vtkMultiBlockDataSet* outMeta )
   vtkDoubleArray* error;
   
   if (
-    ! outMeta ||
+    ! outMeta || outMeta->GetNumberOfBlocks() < 1 ||
     ! ( outTable = vtkTable::SafeDownCast( outMeta->GetBlock( 0 ) ) ) ||
     ! ( clusterRunIDs = vtkIdTypeArray::SafeDownCast( outTable->GetColumn( 0 ) ) ) ||
     ! ( numberOfClusters = vtkIdTypeArray::SafeDownCast( outTable->GetColumn( 1 ) ) ) ||
@@ -584,15 +624,22 @@ void vtkKMeansStatistics::Derive( vtkMultiBlockDataSet* outMeta )
 
 // ----------------------------------------------------------------------
 void vtkKMeansStatistics::Assess( vtkTable* inData, 
-                                  vtkMultiBlockDataSet* inMeta, 
+                                  vtkDataObject* inMetaDO, 
                                   vtkTable* outData )
 {
-  if ( ! inData )
+  vtkMultiBlockDataSet* inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO );
+  if ( ! inMeta || ! outData )
     {
     return;
     }
 
-  if ( ! inMeta )
+  if ( inData->GetNumberOfColumns() <= 0 )
+    {
+    return;
+    }
+
+  vtkIdType nsamples = inData->GetNumberOfRows();
+  if ( nsamples <= 0 )
     {
     return;
     }
@@ -629,7 +676,6 @@ void vtkKMeansStatistics::Assess( vtkTable* inData,
   vtkIdType nv = this->AssessNames->GetNumberOfValues();
   int numRuns = kmfunc->GetNumberOfRuns();
   vtkStdString* names = new vtkStdString[nv*numRuns];
-  vtkIdType nRow = inData->GetNumberOfRows();
   for ( int i = 0; i < numRuns; ++ i )
     {
     for ( vtkIdType v = 0; v < nv; ++ v )
@@ -651,7 +697,7 @@ void vtkKMeansStatistics::Assess( vtkTable* inData,
          }
        names[i*nv+v] = assessColName.str().c_str(); // Storing names to be able to use SetValueByName which is faster than SetValue
        assessValues->SetName( names[i*nv+v] );
-       assessValues->SetNumberOfTuples( nRow );
+       assessValues->SetNumberOfTuples( nsamples );
        outData->AddColumn( assessValues );
        assessValues->Delete();
       }
@@ -659,7 +705,7 @@ void vtkKMeansStatistics::Assess( vtkTable* inData,
        
   // Assess each entry of the column
   vtkVariantArray* assessResult = vtkVariantArray::New();
-  for ( vtkIdType r = 0; r < nRow; ++ r )
+  for ( vtkIdType r = 0; r < nsamples; ++ r )
     {
     (*dfunc)( assessResult, r );
     for ( vtkIdType j = 0; j < nv*numRuns; ++ j )

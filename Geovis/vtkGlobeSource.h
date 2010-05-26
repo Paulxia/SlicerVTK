@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGlobeSource.h
+  Module:    $RCSfile: vtkGlobeSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class vtkFloatArray;
 class VTK_GEOVIS_EXPORT vtkGlobeSource : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkGlobeSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGlobeSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 

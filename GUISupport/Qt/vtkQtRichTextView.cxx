@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkQtRichTextView.cxx
+Module:    $RCSfile: vtkQtRichTextView.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -55,6 +55,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include <QHttpRequestHeader>
 #include <QUrl>
 
+vtkCxxRevisionMacro(vtkQtRichTextView, "$Revision: 1.20 $");
 vtkStandardNewMacro(vtkQtRichTextView);
 
 /////////////////////////////////////////////////////////////////////////////

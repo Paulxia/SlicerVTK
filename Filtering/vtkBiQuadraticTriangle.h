@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBiQuadraticTriangle.h
+  Module:    $RCSfile: vtkBiQuadraticTriangle.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class VTK_FILTERING_EXPORT vtkBiQuadraticTriangle : public vtkNonLinearCell
 {
 public:
   static vtkBiQuadraticTriangle *New();
-  vtkTypeMacro(vtkBiQuadraticTriangle,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkBiQuadraticTriangle,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLShortestPaths.cxx
+  Module:    $RCSfile: vtkPBGLShortestPaths.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,6 +58,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkPBGLShortestPaths, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkPBGLShortestPaths);
 
 // Function object used to reduce (vertex, distance) pairs to find

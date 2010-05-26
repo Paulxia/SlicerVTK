@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRungeKutta45.cxx
+  Module:    $RCSfile: vtkRungeKutta45.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkFunctionSet.h"
 
+vtkCxxRevisionMacro(vtkRungeKutta45, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkRungeKutta45);
 
 //----------------------------------------------------------------------------

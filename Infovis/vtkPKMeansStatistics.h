@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPKMeansStatistics.h
+  Module:    $RCSfile: vtkPKMeansStatistics.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_INFOVIS_EXPORT vtkPKMeansStatistics : public vtkKMeansStatistics
 {
 public:
   static vtkPKMeansStatistics* New();
-  vtkTypeMacro(vtkPKMeansStatistics, vtkKMeansStatistics);
+  vtkTypeRevisionMacro(vtkPKMeansStatistics, vtkKMeansStatistics);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

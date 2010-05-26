@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestQtTreeRingLabeler.cxx
+  Module:    $RCSfile: TestQtTreeRingLabeler.cxx,v $
 
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNetCDFReader.h
+  Module:    $RCSfile: vtkNetCDFReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class vtkStringArray;
 class VTK_IO_EXPORT vtkNetCDFReader : public vtkDataObjectAlgorithm
 {
 public:
-  vtkTypeMacro(vtkNetCDFReader, vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkNetCDFReader, vtkDataObjectAlgorithm);
   static vtkNetCDFReader *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOrderedTriangulator.cxx
+  Module:    $RCSfile: vtkOrderedTriangulator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include <vtkstd/map>
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkOrderedTriangulator, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkOrderedTriangulator);
 
 #ifdef _WIN32_WCE

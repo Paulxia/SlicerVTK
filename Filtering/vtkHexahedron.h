@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHexahedron.h
+  Module:    $RCSfile: vtkHexahedron.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_FILTERING_EXPORT vtkHexahedron : public vtkCell3D
 {
 public:
   static vtkHexahedron *New();
-  vtkTypeMacro(vtkHexahedron,vtkCell3D);
+  vtkTypeRevisionMacro(vtkHexahedron,vtkCell3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

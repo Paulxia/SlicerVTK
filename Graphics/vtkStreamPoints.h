@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStreamPoints.h
+  Module:    $RCSfile: vtkStreamPoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@
 class VTK_GRAPHICS_EXPORT vtkStreamPoints : public vtkStreamer
 {
 public:
-  vtkTypeMacro(vtkStreamPoints,vtkStreamer);
+  vtkTypeRevisionMacro(vtkStreamPoints,vtkStreamer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

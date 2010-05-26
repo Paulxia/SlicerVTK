@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParallelopipedWidget.cxx
+  Module:    $RCSfile: vtkParallelopipedWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkWidgetSet.h"
 #include "vtkGarbageCollector.h"
 
+vtkCxxRevisionMacro(vtkParallelopipedWidget, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkParallelopipedWidget);
 
 //----------------------------------------------------------------------

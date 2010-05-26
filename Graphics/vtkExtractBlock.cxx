@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractBlock.cxx
+  Module:    $RCSfile: vtkExtractBlock.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@ class vtkExtractBlock::vtkSet : public vtkstd::set<unsigned int>
 };
 
 vtkStandardNewMacro(vtkExtractBlock);
+vtkCxxRevisionMacro(vtkExtractBlock, "$Revision: 1.7 $");
 vtkInformationKeyMacro(vtkExtractBlock, DONT_PRUNE, Integer);
 //----------------------------------------------------------------------------
 vtkExtractBlock::vtkExtractBlock()

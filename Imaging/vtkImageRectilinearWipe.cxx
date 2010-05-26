@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageRectilinearWipe.cxx
+  Module:    $RCSfile: vtkImageRectilinearWipe.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageRectilinearWipe, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkImageRectilinearWipe);
 
 //----------------------------------------------------------------------------

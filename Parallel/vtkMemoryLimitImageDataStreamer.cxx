@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMemoryLimitImageDataStreamer.cxx
+  Module:    $RCSfile: vtkMemoryLimitImageDataStreamer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPipelineSize.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkMemoryLimitImageDataStreamer, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkMemoryLimitImageDataStreamer);
 
 //----------------------------------------------------------------------------

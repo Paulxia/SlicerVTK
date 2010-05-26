@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellCenters.cxx
+  Module:    $RCSfile: vtkCellCenters.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 #include "vtkCellArray.h"
 
+vtkCxxRevisionMacro(vtkCellCenters, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkCellCenters);
 
 // Construct object with vertex cell generation turned off.

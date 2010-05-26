@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageImportExecutive.h
+  Module:    $RCSfile: vtkImageImportExecutive.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_IMAGING_EXPORT vtkImageImportExecutive :
 {
 public:
   static vtkImageImportExecutive* New();
-  vtkTypeMacro(vtkImageImportExecutive,
+  vtkTypeRevisionMacro(vtkImageImportExecutive,
                        vtkStreamingDemandDrivenPipeline);
 
   // Description:

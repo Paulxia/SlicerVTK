@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAngleRepresentation2D.cxx
+  Module:    $RCSfile: vtkAngleRepresentation2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkMath.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkAngleRepresentation2D, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkAngleRepresentation2D);
 
 

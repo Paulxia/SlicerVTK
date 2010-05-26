@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNGramExtraction.cxx
+  Module:    $RCSfile: vtkNGramExtraction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include <vtksys/ios/sstream>
 #include <vtksys/stl/stdexcept>
 
+vtkCxxRevisionMacro(vtkNGramExtraction, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkNGramExtraction);
 
 vtkNGramExtraction::vtkNGramExtraction() :

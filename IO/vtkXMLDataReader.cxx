@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLDataReader.cxx
+  Module:    $RCSfile: vtkXMLDataReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 
 #include "assert.h"
 
+vtkCxxRevisionMacro(vtkXMLDataReader, "$Revision: 1.40 $");
 
 //----------------------------------------------------------------------------
 vtkXMLDataReader::vtkXMLDataReader()

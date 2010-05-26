@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMeshQuality.h
+  Module:    $RCSfile: vtkMeshQuality.h,v $
   Language:  C++
-  Date:      $Date$ 
-  Version:   $Revision$
+  Date:      $Date: 2008-03-05 18:15:17 $ 
+  Version:   $Revision: 1.33 $
 
   Copyright 2003-2006 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive
@@ -101,7 +101,7 @@ class VTK_GRAPHICS_EXPORT vtkMeshQuality : public vtkDataSetAlgorithm
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkMeshQuality,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMeshQuality,vtkDataSetAlgorithm);
   static vtkMeshQuality* New();
 
   // Description:

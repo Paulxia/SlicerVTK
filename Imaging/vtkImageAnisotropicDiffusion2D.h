@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageAnisotropicDiffusion2D.h
+  Module:    $RCSfile: vtkImageAnisotropicDiffusion2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_IMAGING_EXPORT vtkImageAnisotropicDiffusion2D : public vtkImageSpatial
 {
 public:
   static vtkImageAnisotropicDiffusion2D *New();
-  vtkTypeMacro(vtkImageAnisotropicDiffusion2D,vtkImageSpatialAlgorithm);
+  vtkTypeRevisionMacro(vtkImageAnisotropicDiffusion2D,vtkImageSpatialAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

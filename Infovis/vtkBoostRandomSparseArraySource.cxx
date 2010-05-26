@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostRandomSparseArraySource.cxx
+  Module:    $RCSfile: vtkBoostRandomSparseArraySource.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -30,6 +30,7 @@
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkBoostRandomSparseArraySource, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkBoostRandomSparseArraySource);
 
 // ----------------------------------------------------------------------

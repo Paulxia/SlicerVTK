@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageGaussianSource.cxx
+  Module:    $RCSfile: vtkImageGaussianSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageGaussianSource, "$Revision: 1.34 $");
 vtkStandardNewMacro(vtkImageGaussianSource);
 
 //----------------------------------------------------------------------------

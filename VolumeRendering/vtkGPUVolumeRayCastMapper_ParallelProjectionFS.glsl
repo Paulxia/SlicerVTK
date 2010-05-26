@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGPUVolumeRayCastMapper_ParallelProjectionFS.glsl
+  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_ParallelProjectionFS.glsl,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

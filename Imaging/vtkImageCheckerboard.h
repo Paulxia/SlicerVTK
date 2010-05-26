@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageCheckerboard.h
+  Module:    $RCSfile: vtkImageCheckerboard.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_IMAGING_EXPORT vtkImageCheckerboard : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageCheckerboard *New();
-  vtkTypeMacro(vtkImageCheckerboard,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageCheckerboard,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

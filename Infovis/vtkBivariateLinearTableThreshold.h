@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkBivariateLinearTableThreshold.h
+Module:    $RCSfile: vtkBivariateLinearTableThreshold.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -49,7 +49,7 @@ class VTK_INFOVIS_EXPORT vtkBivariateLinearTableThreshold : public vtkTableAlgor
 {
 public:
   static vtkBivariateLinearTableThreshold* New();
-  vtkTypeMacro(vtkBivariateLinearTableThreshold, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkBivariateLinearTableThreshold, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridAlgorithm.h
+  Module:    $RCSfile: vtkStructuredGridAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_FILTERING_EXPORT vtkStructuredGridAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkStructuredGridAlgorithm *New();
-  vtkTypeMacro(vtkStructuredGridAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkStructuredGridAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

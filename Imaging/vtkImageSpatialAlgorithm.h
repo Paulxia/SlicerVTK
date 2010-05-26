@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageSpatialAlgorithm.h
+  Module:    $RCSfile: vtkImageSpatialAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_IMAGING_EXPORT vtkImageSpatialAlgorithm : public vtkThreadedImageAlgor
 {
 public:
   static vtkImageSpatialAlgorithm *New();
-  vtkTypeMacro(vtkImageSpatialAlgorithm,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageSpatialAlgorithm,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

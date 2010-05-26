@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalInterpolatedVelocityField.cxx
+  Module:    $RCSfile: vtkTemporalInterpolatedVelocityField.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 
 #include <vtkstd/vector>
 //---------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkTemporalInterpolatedVelocityField, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkTemporalInterpolatedVelocityField);
 //---------------------------------------------------------------------------
 vtkTemporalInterpolatedVelocityField::vtkTemporalInterpolatedVelocityField()

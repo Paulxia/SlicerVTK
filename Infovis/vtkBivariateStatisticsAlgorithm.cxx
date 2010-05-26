@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBivariateStatisticsAlgorithm.cxx
+  Module:    $RCSfile: vtkBivariateStatisticsAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,7 +22,6 @@
 #include "vtkStatisticsAlgorithmPrivate.h"
 
 #include "vtkDoubleArray.h"
-#include "vtkMultiBlockDataSet.h"
 #include "vtkObjectFactory.h"
 #include "vtkStdString.h"
 #include "vtkStringArray.h"
@@ -34,6 +33,7 @@
 
 #define VTK_STATISTICS_NUMBER_OF_VARIABLES 2
 
+vtkCxxRevisionMacro(vtkBivariateStatisticsAlgorithm, "$Revision: 1.20 $");
 
 // ----------------------------------------------------------------------
 vtkBivariateStatisticsAlgorithm::vtkBivariateStatisticsAlgorithm()
@@ -68,21 +68,47 @@ int vtkBivariateStatisticsAlgorithm::RequestSelectedColumns()
 
 // ----------------------------------------------------------------------
 void vtkBivariateStatisticsAlgorithm::Assess( vtkTable* inData,
-                                              vtkMultiBlockDataSet* inMeta,
+                                              vtkDataObject* inMetaDO,
                                               vtkTable* outData )
 {
-  if ( ! inData )
-    {
-    return;
-    }
-
+  vtkTable* inMeta = vtkTable::SafeDownCast( inMetaDO );
   if ( ! inMeta )
     {
     return;
     }
 
+  if ( ! inData || inData->GetNumberOfColumns() <= 0 )
+    {
+    return;
+    }
+
+  vtkIdType nRowD = inData->GetNumberOfRows();
+  if ( nRowD <= 0 )
+    {
+    return;
+    }
+
+  vtkIdType nColP;
+  if ( this->AssessParameters )
+    {
+    nColP = this->AssessParameters->GetNumberOfValues();
+    if ( inMeta->GetNumberOfColumns() - VTK_STATISTICS_NUMBER_OF_VARIABLES < nColP )
+      {
+      vtkWarningMacro( "Parameter table has " 
+                       << inMeta->GetNumberOfColumns() - VTK_STATISTICS_NUMBER_OF_VARIABLES
+                       << " parameters < "
+                       << nColP
+                       << " columns. Doing nothing." );
+      return;
+      }
+    }
+
+  if ( ! inMeta->GetNumberOfRows() )
+    {
+    return;
+    }
+
   // Loop over requests
-  vtkIdType nRowData = inData->GetNumberOfRows();
   for ( vtksys_stl::set<vtksys_stl::set<vtkStdString> >::const_iterator rit = this->Internals->Requests.begin(); 
         rit != this->Internals->Requests.end(); ++ rit )
     {
@@ -129,7 +155,7 @@ void vtkBivariateStatisticsAlgorithm::Assess( vtkTable* inData,
 
       vtkDoubleArray* assessValues = vtkDoubleArray::New(); 
       assessValues->SetName( names[v] ); 
-      assessValues->SetNumberOfTuples( nRowData  ); 
+      assessValues->SetNumberOfTuples( nRowD  ); 
       outData->AddColumn( assessValues ); 
       assessValues->Delete(); 
       }
@@ -149,12 +175,14 @@ void vtkBivariateStatisticsAlgorithm::Assess( vtkTable* inData,
                        << ","
                        << varNameY.c_str()
                        << "). Ignoring it." );
+      delete [] names;
+      continue;
       }
     else
       {
       // Assess each entry of the column
       vtkVariantArray* assessResult = vtkVariantArray::New();
-      for ( vtkIdType r = 0; r < nRowData; ++ r )
+      for ( vtkIdType r = 0; r < nRowD; ++ r )
         {
         (*dfunc)( assessResult, r );
         for ( int v = 0; v < nv; ++ v )

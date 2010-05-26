@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTIFFWriter.h
+  Module:    $RCSfile: vtkTIFFWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_IO_EXPORT vtkTIFFWriter : public vtkImageWriter
 {
 public:
   static vtkTIFFWriter *New();
-  vtkTypeMacro(vtkTIFFWriter,vtkImageWriter);
+  vtkTypeRevisionMacro(vtkTIFFWriter,vtkImageWriter);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

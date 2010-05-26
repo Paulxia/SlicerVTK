@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTimeSourceExample.h
+  Module:    $RCSfile: vtkTimeSourceExample.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkTimeSourceExample : public vtkUnstructuredGridAlgor
 {
 public:
   static vtkTimeSourceExample *New();
-  vtkTypeMacro(vtkTimeSourceExample,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkTimeSourceExample,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //Description:

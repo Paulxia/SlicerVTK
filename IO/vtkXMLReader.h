@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLReader.h
+  Module:    $RCSfile: vtkXMLReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class vtkInformation;
 class VTK_IO_EXPORT vtkXMLReader : public vtkAlgorithm
 {
 public:
-  vtkTypeMacro(vtkXMLReader,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkXMLReader,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:
@@ -95,10 +95,6 @@ public:
   vtkGetVector2Macro(TimeStepRange, int);
   vtkSetVector2Macro(TimeStepRange, int);
 
-  virtual int ProcessRequest(vtkInformation *request,
-                             vtkInformationVector **inputVector,
-                             vtkInformationVector *outputVector);
-  
 protected:
   vtkXMLReader();
   ~vtkXMLReader();
@@ -222,7 +218,10 @@ protected:
   virtual void SetProgressRange(float* range, int curStep, float* fractions);
   virtual void UpdateProgressDiscrete(float progress);
   float ProgressRange[2];
-  
+
+  virtual int ProcessRequest(vtkInformation *request,
+                             vtkInformationVector **inputVector,
+                             vtkInformationVector *outputVector);
   virtual int RequestData(vtkInformation *request,
                           vtkInformationVector **inputVector,
                           vtkInformationVector *outputVector);

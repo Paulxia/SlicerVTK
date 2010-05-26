@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMinimalStandardRandomSequence.cxx
+  Module:    $RCSfile: vtkMinimalStandardRandomSequence.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include <cassert>
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkMinimalStandardRandomSequence, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkMinimalStandardRandomSequence);
 
 const int VTK_K_A=16807;

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHull.h
+  Module:    $RCSfile: vtkHull.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ class VTK_GRAPHICS_EXPORT vtkHull : public vtkPolyDataAlgorithm
 {
 public:
   static vtkHull *New();
-  vtkTypeMacro(vtkHull,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkHull,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

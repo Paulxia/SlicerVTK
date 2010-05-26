@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkCompositeDataSetAlgorithm.cxx
+Module:    $RCSfile: vtkCompositeDataSetAlgorithm.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -23,6 +23,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkCompositeDataSetAlgorithm, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkCompositeDataSetAlgorithm);
 
 //----------------------------------------------------------------------------

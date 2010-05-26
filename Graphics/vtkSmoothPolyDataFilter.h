@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSmoothPolyDataFilter.h
+  Module:    $RCSfile: vtkSmoothPolyDataFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -97,7 +97,7 @@ class vtkSmoothPoints;
 class VTK_GRAPHICS_EXPORT vtkSmoothPolyDataFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkSmoothPolyDataFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSmoothPolyDataFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

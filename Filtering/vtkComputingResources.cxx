@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkComputingResources.cxx
+  Module:    $RCSfile: vtkComputingResources.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 #include <vtksys/hash_map.hxx>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkComputingResources, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkComputingResources);
 
 //----------------------------------------------------------------------------

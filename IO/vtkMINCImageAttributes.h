@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMINCImageAttributes.h
+  Module:    $RCSfile: vtkMINCImageAttributes.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -79,7 +79,7 @@ class vtkMINCImageAttributeMap;
 class VTK_IO_EXPORT vtkMINCImageAttributes : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkMINCImageAttributes,vtkObject);
+  vtkTypeRevisionMacro(vtkMINCImageAttributes,vtkObject);
 
   static vtkMINCImageAttributes *New();
   virtual void PrintSelf(ostream& os, vtkIndent indent);

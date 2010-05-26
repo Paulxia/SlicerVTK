@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeDataIterator.cxx
+  Module:    $RCSfile: vtkCompositeDataIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -273,6 +273,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkCompositeDataIterator);
+vtkCxxRevisionMacro(vtkCompositeDataIterator, "$Revision: 1.9 $");
 //----------------------------------------------------------------------------
 vtkCompositeDataIterator::vtkCompositeDataIterator()
 {

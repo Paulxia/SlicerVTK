@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClosedSurfacePointPlacer.h
+  Module:    $RCSfile: vtkClosedSurfacePointPlacer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkClosedSurfacePointPlacer,vtkPointPlacer);
+  vtkTypeRevisionMacro(vtkClosedSurfacePointPlacer,vtkPointPlacer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

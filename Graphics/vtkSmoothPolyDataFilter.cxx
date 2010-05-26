@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSmoothPolyDataFilter.cxx
+  Module:    $RCSfile: vtkSmoothPolyDataFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTriangleFilter.h"
 
+vtkCxxRevisionMacro(vtkSmoothPolyDataFilter, "$Revision: 1.46 $");
 vtkStandardNewMacro(vtkSmoothPolyDataFilter);
 
 // The following code defines a helper class for performing mesh smoothing

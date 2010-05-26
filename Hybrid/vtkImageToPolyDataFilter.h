@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageToPolyDataFilter.h
+  Module:    $RCSfile: vtkImageToPolyDataFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -81,7 +81,7 @@ class vtkUnsignedCharArray;
 class VTK_HYBRID_EXPORT vtkImageToPolyDataFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkImageToPolyDataFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkImageToPolyDataFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

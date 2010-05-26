@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPDataSetWriter.cxx
+  Module:    $RCSfile: vtkXMLPDataSetWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkXMLPStructuredGridWriter.h"
 #include "vtkXMLPUnstructuredGridWriter.h"
 
+vtkCxxRevisionMacro(vtkXMLPDataSetWriter, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkXMLPDataSetWriter);
 
 //----------------------------------------------------------------------------

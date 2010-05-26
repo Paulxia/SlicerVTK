@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPostgreSQLDatabase.h
+  Module:    $RCSfile: vtkPostgreSQLDatabase.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ class VTK_IO_EXPORT vtkPostgreSQLDatabase : public vtkSQLDatabase
   //ETX
 
 public:
-  vtkTypeMacro(vtkPostgreSQLDatabase, vtkSQLDatabase);
+  vtkTypeRevisionMacro(vtkPostgreSQLDatabase, vtkSQLDatabase);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkPostgreSQLDatabase *New();
 

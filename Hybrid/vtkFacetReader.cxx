@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFacetReader.cxx
+  Module:    $RCSfile: vtkFacetReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include <vtkstd/string>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkFacetReader, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkFacetReader);
 
 //------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMPIEventLog.h
+  Module:    $RCSfile: vtkMPIEventLog.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@
 class VTK_PARALLEL_EXPORT vtkMPIEventLog : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkMPIEventLog,vtkObject);
+  vtkTypeRevisionMacro(vtkMPIEventLog,vtkObject);
   
   // Description:
   // Construct a vtkMPIEventLog with the following initial state:

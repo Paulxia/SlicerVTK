@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUndirectedGraphAlgorithm.h
+  Module:    $RCSfile: vtkUndirectedGraphAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,7 +52,7 @@ class VTK_FILTERING_EXPORT vtkUndirectedGraphAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkUndirectedGraphAlgorithm *New();
-  vtkTypeMacro(vtkUndirectedGraphAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkUndirectedGraphAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtXMLProcessor.h
+  Module:    $RCSfile: vtkQtXMLProcessor.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -114,7 +114,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkQtXMLProcessor:
 {
 public:
   static vtkQtXMLProcessor* New();
-  vtkTypeMacro(vtkQtXMLProcessor,vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkQtXMLProcessor,vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
 //BTX

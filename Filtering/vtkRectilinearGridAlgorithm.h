@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridAlgorithm.h
+  Module:    $RCSfile: vtkRectilinearGridAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_FILTERING_EXPORT vtkRectilinearGridAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkRectilinearGridAlgorithm *New();
-  vtkTypeMacro(vtkRectilinearGridAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkRectilinearGridAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

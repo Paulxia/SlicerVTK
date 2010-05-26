@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangleFilter.cxx
+  Module:    $RCSfile: vtkTriangleFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPolygon.h"
 #include "vtkTriangleStrip.h"
 
+vtkCxxRevisionMacro(vtkTriangleFilter, "$Revision: 1.54 $");
 vtkStandardNewMacro(vtkTriangleFilter);
 
 int vtkTriangleFilter::RequestData(

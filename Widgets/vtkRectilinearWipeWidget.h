@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearWipeWidget.h
+  Module:    $RCSfile: vtkRectilinearWipeWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -89,7 +89,7 @@ public:
 
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkRectilinearWipeWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkRectilinearWipeWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

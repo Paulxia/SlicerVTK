@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangle.h
+  Module:    $RCSfile: vtkTriangle.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_FILTERING_EXPORT vtkTriangle : public vtkCell
 {
 public:
   static vtkTriangle *New();
-  vtkTypeMacro(vtkTriangle,vtkCell);
+  vtkTypeRevisionMacro(vtkTriangle,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

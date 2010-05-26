@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkColorTransferFunction.cxx
+  Module:    $RCSfile: vtkColorTransferFunction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include <vtkstd/iterator>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkColorTransferFunction, "$Revision: 1.81 $");
 vtkStandardNewMacro(vtkColorTransferFunction);
 
 #define MY_MAX(x, y) ((x) > (y) ? (x) : (y))

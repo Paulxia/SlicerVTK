@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageResample.cxx
+  Module:    $RCSfile: vtkImageResample.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageResample, "$Revision: 1.43 $");
 vtkStandardNewMacro(vtkImageResample);
 
 //----------------------------------------------------------------------------

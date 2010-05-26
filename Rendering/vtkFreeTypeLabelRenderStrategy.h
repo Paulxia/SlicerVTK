@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFreeTypeLabelRenderStrategy.h
+  Module:    $RCSfile: vtkFreeTypeLabelRenderStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkFreeTypeLabelRenderStrategy : public vtkLabelRende
 {
  public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkFreeTypeLabelRenderStrategy, vtkLabelRenderStrategy);
+  vtkTypeRevisionMacro(vtkFreeTypeLabelRenderStrategy, vtkLabelRenderStrategy);
   static vtkFreeTypeLabelRenderStrategy* New();
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoMath.h
+  Module:    $RCSfile: vtkGeoMath.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_INFOVIS_EXPORT vtkGeoMath : public vtkObject
 {
 public:
   static vtkGeoMath *New();
-  vtkTypeMacro(vtkGeoMath, vtkObject);
+  vtkTypeRevisionMacro(vtkGeoMath, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

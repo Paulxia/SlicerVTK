@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPostgreSQLQuery.h
+  Module:    $RCSfile: vtkPostgreSQLQuery.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_IO_EXPORT vtkPostgreSQLQuery : public vtkSQLQuery
 public:
   static vtkPostgreSQLQuery* New();
   void PrintSelf( ostream& os, vtkIndent indent );
-  vtkTypeMacro(vtkPostgreSQLQuery, vtkSQLQuery);
+  vtkTypeRevisionMacro(vtkPostgreSQLQuery, vtkSQLQuery);
 
   // Description:
   // Execute the query.  This must be performed

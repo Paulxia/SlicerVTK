@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCubeAxesActor.cxx
+  Module:    $RCSfile: vtkCubeAxesActor.cxx,v $
   Thanks:    Kathleen Bonnell, B Division, Lawrence Livermore National Lab
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
@@ -32,6 +32,7 @@
 // *************************************************************************
 
 vtkStandardNewMacro(vtkCubeAxesActor);
+vtkCxxRevisionMacro(vtkCubeAxesActor, "$Revision: 1.5 $");
 vtkCxxSetObjectMacro(vtkCubeAxesActor, Camera,vtkCamera);
 
 // *************************************************************************

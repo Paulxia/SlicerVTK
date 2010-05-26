@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextItem.h
+  Module:    $RCSfile: vtkContextItem.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkContextMouseEvent;
 class VTK_CHARTS_EXPORT vtkContextItem : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkContextItem, vtkObject);
+  vtkTypeRevisionMacro(vtkContextItem, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:
@@ -123,11 +123,6 @@ public:
   // Description:
   // Get the vtkContextScene for the item, always set for an item in a scene.
   vtkContextScene* GetScene();
-  
-  // Description:
-  // Release graphics resources hold by the item. The default implementation
-  // is empty.
-  virtual void ReleaseGraphicsResources();
   
 //BTX
 protected:

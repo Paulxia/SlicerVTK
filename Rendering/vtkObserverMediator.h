@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkObserverMediator.h
+  Module:    $RCSfile: vtkObserverMediator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ public:
 
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkObserverMediator,vtkObject);
+  vtkTypeRevisionMacro(vtkObserverMediator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

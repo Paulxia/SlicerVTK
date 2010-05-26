@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericVertexAttributeMapping.h
+  Module:    $RCSfile: vtkGenericVertexAttributeMapping.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkGenericVertexAttributeMapping : public vtkObject
 {
 public:
   static vtkGenericVertexAttributeMapping* New();
-  vtkTypeMacro(vtkGenericVertexAttributeMapping, vtkObject);
+  vtkTypeRevisionMacro(vtkGenericVertexAttributeMapping, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

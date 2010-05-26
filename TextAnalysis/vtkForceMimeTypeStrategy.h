@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkForceMimeTypeStrategy.h
+  Module:    $RCSfile: vtkForceMimeTypeStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkForceMimeTypeStrategy :
 {
 public:
   static vtkForceMimeTypeStrategy* New();
-  vtkTypeMacro(vtkForceMimeTypeStrategy, vtkMimeTypeStrategy);
+  vtkTypeRevisionMacro(vtkForceMimeTypeStrategy, vtkMimeTypeStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkGetStringMacro(MimeType);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAVSucdReader.cxx
+  Module:    $RCSfile: vtkAVSucdReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkByteSwap.h"
 #include "vtkCellArray.h"
 
+vtkCxxRevisionMacro(vtkAVSucdReader, "$Revision: 1.27 $");
 vtkStandardNewMacro(vtkAVSucdReader);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLExtensionManagerConfigure.h.in
+  Module:    $RCSfile: vtkOpenGLExtensionManagerConfigure.h.in,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

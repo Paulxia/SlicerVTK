@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBMPReader.cxx
+  Module:    $RCSfile: vtkBMPReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkBMPReader, "$Revision: 1.55 $");
 vtkStandardNewMacro(vtkBMPReader);
 
 #ifdef read

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineGraphEdges.h
+  Module:    $RCSfile: vtkSplineGraphEdges.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkSplineGraphEdges : public vtkGraphAlgorithm
 {
 public:
   static vtkSplineGraphEdges *New();
-  vtkTypeMacro(vtkSplineGraphEdges,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkSplineGraphEdges,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

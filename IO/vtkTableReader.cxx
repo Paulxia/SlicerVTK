@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableReader.cxx
+  Module:    $RCSfile: vtkTableReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTable.h"
 
+vtkCxxRevisionMacro(vtkTableReader, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkTableReader);
 
 #ifdef read

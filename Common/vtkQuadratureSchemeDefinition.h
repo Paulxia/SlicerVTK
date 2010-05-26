@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadratureSchemeDefinition.h
+  Module:    $RCSfile: vtkQuadratureSchemeDefinition.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_COMMON_EXPORT vtkQuadratureSchemeDefinition : public vtkObject
 {
 public:
   // vtk stuff
-  vtkTypeMacro(vtkQuadratureSchemeDefinition,vtkObject);
+  vtkTypeRevisionMacro(vtkQuadratureSchemeDefinition,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkInformationQuadratureSchemeDefinitionVectorKey* DICTIONARY();
   static vtkInformationStringKey* QUADRATURE_OFFSET_ARRAY_NAME();

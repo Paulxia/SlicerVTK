@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalShiftScale.cxx
+  Module:    $RCSfile: vtkTemporalShiftScale.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkTemporalShiftScale, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkTemporalShiftScale);
 
 //----------------------------------------------------------------------------

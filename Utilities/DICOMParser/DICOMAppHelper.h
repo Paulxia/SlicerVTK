@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   DICOMParser
-  Module:    DICOMAppHelper.h
+  Module:    $RCSfile: DICOMAppHelper.h,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2006-10-09 14:06:03 $
+  Version:   $Revision: 1.16 $
 
   Copyright (c) 2003 Matt Turek
   All rights reserved.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkTemporalStreamTracer.cxx
+Module:    $RCSfile: vtkTemporalStreamTracer.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -68,6 +68,7 @@ PURPOSE.  See the above copyright notice for more information.
 using namespace vtkTemporalStreamTracerNamespace;
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkTemporalStreamTracer, "$Revision: 1.32 $");
 //----------------------------------------------------------------------------
 //#define JB_DEBUG__
 #if defined JB_DEBUG__

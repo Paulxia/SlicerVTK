@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPerturbCoincidentVertices.h
+  Module:    $RCSfile: vtkPerturbCoincidentVertices.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_INFOVIS_EXPORT vtkPerturbCoincidentVertices : public vtkGraphAlgorithm
 {
 public:
   static vtkPerturbCoincidentVertices* New();
-  vtkTypeMacro(vtkPerturbCoincidentVertices,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPerturbCoincidentVertices,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

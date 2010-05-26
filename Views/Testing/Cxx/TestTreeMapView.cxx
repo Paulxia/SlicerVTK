@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestTreeMapView.cxx
+  Module:    $RCSfile: TestTreeMapView.cxx,v $
 
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

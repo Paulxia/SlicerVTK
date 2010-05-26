@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRInterface.cxx
+  Module:    $RCSfile: vtkRInterface.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,7 +23,6 @@
 #undef HAVE_UINTPTR_T
 #ifdef HAVE_VTK_UINTPTR_T
 #define HAVE_UINTPTR_T HAVE_VTK_UINTPTR_T
-#include <stdint.h>
 #endif
 
 #include "vtkInformation.h"
@@ -32,6 +31,7 @@
 #include "vtkDataArray.h"
 #include "vtkRAdapter.h"
 
+vtkCxxRevisionMacro(vtkRInterface, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkRInterface);
 
 #include "R.h"
@@ -68,6 +68,10 @@ public:
     R_SignalHandlers = 0;
 #endif
 
+#ifdef CSTACK_DEFNS
+    R_CStackLimit = (uintptr_t)-1; 
+#endif
+
   const char* path = vtksys::SystemTools::GetEnv("R_HOME");
   if (!path)
     {
@@ -77,15 +81,7 @@ public:
     }
     const char* path2 = vtksys::SystemTools::GetEnv("R_HOME");
     char *R_argv[]= {"vtkRInterface", "--gui=none", "--no-save", "--no-readline", "--silent"};
-
-    Rf_initialize_R(sizeof(R_argv)/sizeof(R_argv[0]), R_argv);
-
-#ifdef CSTACK_DEFNS
-    R_CStackLimit = (uintptr_t)-1;
-#endif
-
-    R_Interactive = static_cast<Rboolean>(TRUE);
-    setup_Rmainloop();
+    Rf_initEmbeddedR(sizeof(R_argv)/sizeof(R_argv[0]), R_argv);
 
     this->Rinitialized = 1;
     this->refcount++;

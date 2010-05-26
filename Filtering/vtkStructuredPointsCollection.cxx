@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredPointsCollection.cxx
+  Module:    $RCSfile: vtkStructuredPointsCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkStructuredPointsCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkStructuredPointsCollection, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkStructuredPointsCollection);
 
 //----------------------------------------------------------------------------

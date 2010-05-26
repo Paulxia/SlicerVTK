@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericMovieWriter.cxx
+  Module:    $RCSfile: vtkGenericMovieWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkImageData.h"
 #include "vtkErrorCode.h"
 
+vtkCxxRevisionMacro(vtkGenericMovieWriter, "$Revision: 1.3 $");
 
 //---------------------------------------------------------------------------
 vtkGenericMovieWriter::vtkGenericMovieWriter()

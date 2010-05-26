@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCleanPolyData.h
+  Module:    $RCSfile: vtkCleanPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -66,7 +66,7 @@ class VTK_GRAPHICS_EXPORT vtkCleanPolyData : public vtkPolyDataAlgorithm
 public:
   static vtkCleanPolyData *New();
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkCleanPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCleanPolyData,vtkPolyDataAlgorithm);
 
   // Description:
   // By default ToleranceIsAbsolute is false and Tolerance is
@@ -78,29 +78,28 @@ public:
 
   // Description:
   // Specify tolerance in terms of fraction of bounding box length.
-  // Default is 0.0.
   vtkSetClampMacro(Tolerance,double,0.0,1.0);
   vtkGetMacro(Tolerance,double);
 
   // Description:
-  // Specify tolerance in absolute terms. Default is 1.0.
+  // Specify tolerance in absolute terms
   vtkSetClampMacro(AbsoluteTolerance,double,0.0,VTK_DOUBLE_MAX);
   vtkGetMacro(AbsoluteTolerance,double);
 
   // Description:
-  // Turn on/off conversion of degenerate lines to points. Default is On.
+  // Turn on/off conversion of degenerate lines to points
   vtkSetMacro(ConvertLinesToPoints,int);
   vtkBooleanMacro(ConvertLinesToPoints,int);
   vtkGetMacro(ConvertLinesToPoints,int);
 
   // Description:
-  // Turn on/off conversion of degenerate polys to lines. Default is On.
+  // Turn on/off conversion of degenerate polys to lines
   vtkSetMacro(ConvertPolysToLines,int);
   vtkBooleanMacro(ConvertPolysToLines,int);
   vtkGetMacro(ConvertPolysToLines,int);
 
   // Description:
-  // Turn on/off conversion of degenerate strips to polys. Default is On.
+  // Turn on/off conversion of degenerate strips to polys
   vtkSetMacro(ConvertStripsToPolys,int);
   vtkBooleanMacro(ConvertStripsToPolys,int);
   vtkGetMacro(ConvertStripsToPolys,int);

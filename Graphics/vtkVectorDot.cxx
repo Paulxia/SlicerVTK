@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVectorDot.cxx
+  Module:    $RCSfile: vtkVectorDot.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkVectorDot, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkVectorDot);
 
 // Construct object with scalar range is (-1,1).

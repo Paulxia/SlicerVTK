@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtListView.h
+  Module:    $RCSfile: vtkQtListView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ Q_OBJECT
 
 public:
   static vtkQtListView *New();
-  vtkTypeMacro(vtkQtListView, vtkQtView);
+  vtkTypeRevisionMacro(vtkQtListView, vtkQtView);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

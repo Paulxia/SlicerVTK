@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkSQLDatabaseSchema.cxx
+Module:    $RCSfile: vtkSQLDatabaseSchema.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -29,6 +29,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include <vtkstd/vector>
 
 // ----------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkSQLDatabaseSchema, "$Revision: 1.23 $");
 vtkStandardNewMacro(vtkSQLDatabaseSchema);
 
 // ----------------------------------------------------------------------

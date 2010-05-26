@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridVolumeZSweepMapper.cxx
+  Module:    $RCSfile: vtkUnstructuredGridVolumeZSweepMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -2368,6 +2368,7 @@ using namespace vtkUnstructuredGridVolumeZSweepMapperNamespace;
 //-----------------------------------------------------------------------------
 // Implementation of the public class.
 
+vtkCxxRevisionMacro(vtkUnstructuredGridVolumeZSweepMapper, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkUnstructuredGridVolumeZSweepMapper);
 
 vtkCxxSetObjectMacro(vtkUnstructuredGridVolumeZSweepMapper, RayIntegrator,

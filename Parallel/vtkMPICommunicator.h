@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMPICommunicator.h
+  Module:    $RCSfile: vtkMPICommunicator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,7 +62,7 @@ public:
 
 //ETX
 
-  vtkTypeMacro( vtkMPICommunicator,vtkCommunicator);
+  vtkTypeRevisionMacro( vtkMPICommunicator,vtkCommunicator);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

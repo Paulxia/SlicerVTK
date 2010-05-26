@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkView.h
+  Module:    $RCSfile: vtkView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class VTK_VIEWS_EXPORT vtkView : public vtkObject
 {
 public:
   static vtkView *New();
-  vtkTypeMacro(vtkView, vtkObject);
+  vtkTypeRevisionMacro(vtkView, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

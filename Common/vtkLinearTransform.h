@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLinearTransform.h
+  Module:    $RCSfile: vtkLinearTransform.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_COMMON_EXPORT vtkLinearTransform : public vtkHomogeneousTransform
 {
 public:
 
-  vtkTypeMacro(vtkLinearTransform,vtkHomogeneousTransform);
+  vtkTypeRevisionMacro(vtkLinearTransform,vtkHomogeneousTransform);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

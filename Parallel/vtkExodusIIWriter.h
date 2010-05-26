@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExodusIIWriter.h
+  Module:    $RCSfile: vtkExodusIIWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -80,7 +80,7 @@ class VTK_PARALLEL_EXPORT vtkExodusIIWriter : public vtkWriter
 {
 public:
   static vtkExodusIIWriter *New ();
-  vtkTypeMacro(vtkExodusIIWriter,vtkWriter);
+  vtkTypeRevisionMacro (vtkExodusIIWriter, vtkWriter);
   void PrintSelf (ostream& os, vtkIndent indent);
 
   // Description:

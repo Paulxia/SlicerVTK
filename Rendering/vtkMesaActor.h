@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaActor.h
+  Module:    $RCSfile: vtkMesaActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ protected:
   
 public:
   static vtkMesaActor *New();
-  vtkTypeMacro(vtkMesaActor,vtkActor);
+  vtkTypeRevisionMacro(vtkMesaActor,vtkActor);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

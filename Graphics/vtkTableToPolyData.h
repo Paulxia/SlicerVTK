@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableToPolyData.h
+  Module:    $RCSfile: vtkTableToPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_GRAPHICS_EXPORT vtkTableToPolyData : public vtkPolyDataAlgorithm
 {
 public:
   static vtkTableToPolyData* New();
-  vtkTypeMacro(vtkTableToPolyData, vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTableToPolyData, vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

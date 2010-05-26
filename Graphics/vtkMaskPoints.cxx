@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMaskPoints.cxx
+  Module:    $RCSfile: vtkMaskPoints.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkMaskPoints, "$Revision: 1.51 $");
 vtkStandardNewMacro(vtkMaskPoints);
 
 //----------------------------------------------------------------------------

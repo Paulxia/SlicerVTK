@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPPCAStatistics.h
+  Module:    $RCSfile: vtkPPCAStatistics.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class vtkMultiProcessController;
 class VTK_INFOVIS_EXPORT vtkPPCAStatistics : public vtkPCAStatistics
 {
 public:
-  vtkTypeMacro(vtkPPCAStatistics, vtkPCAStatistics);
+  vtkTypeRevisionMacro(vtkPPCAStatistics, vtkPCAStatistics);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkPPCAStatistics* New();
 
@@ -52,8 +52,8 @@ protected:
 
   // Execute the parallel calculations required by the Learn option.
   virtual void Learn( vtkTable* inData,
-                      vtkTable* inParameters,
-                      vtkMultiBlockDataSet* outMeta );
+                             vtkTable* inParameters,
+                             vtkDataObject* outMeta );
 private:
   vtkPPCAStatistics(const vtkPPCAStatistics&); // Not implemented.
   void operator=(const vtkPPCAStatistics&); // Not implemented.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkScalarTree.h
+  Module:    $RCSfile: vtkScalarTree.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class vtkTimeStamp;
 class VTK_FILTERING_EXPORT vtkScalarTree : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkScalarTree,vtkObject);
+  vtkTypeRevisionMacro(vtkScalarTree,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

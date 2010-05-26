@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDelimitedTextReader.h
+  Module:    $RCSfile: vtkDelimitedTextReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -57,7 +57,7 @@ class VTK_INFOVIS_EXPORT vtkDelimitedTextReader : public vtkTableAlgorithm
 {
 public:
   static vtkDelimitedTextReader* New();
-  vtkTypeMacro(vtkDelimitedTextReader, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkDelimitedTextReader, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Descriptin:

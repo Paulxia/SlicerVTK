@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractArray.cxx
+  Module:    $RCSfile: vtkAbstractArray.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,6 @@
 #include "vtkUnsignedLongArray.h"
 #include "vtkUnsignedShortArray.h"
 #include "vtkVariantArray.h"
-#include "vtkInformationIntegerKey.h"
 
 #if defined(VTK_TYPE_USE_LONG_LONG)
 # include "vtkLongLongArray.h"
@@ -46,13 +45,7 @@
 # endif
 #endif
 
-vtkInformationKeyMacro(vtkAbstractArray, GUI_HIDE, Integer);
-
-namespace
-{
-  typedef  vtkstd::vector< vtkStdString* > vtkInternalComponentNameBase;
-}
-class vtkAbstractArray::vtkInternalComponentNames : public vtkInternalComponentNameBase {};
+vtkCxxRevisionMacro(vtkAbstractArray, "$Revision: 1.17 $");
 
 //----------------------------------------------------------------------------
 // Construct object with sane defaults.
@@ -63,125 +56,14 @@ vtkAbstractArray::vtkAbstractArray(vtkIdType vtkNotUsed(numComp))
   this->NumberOfComponents = 1;
   this->Name = NULL;
   this->Information = NULL;
-
-  this->ComponentNames = NULL;
 }
 
 //----------------------------------------------------------------------------
 vtkAbstractArray::~vtkAbstractArray()
 {
-  if ( this->ComponentNames )
-    {
-    for ( unsigned int i=0; i < this->ComponentNames->size(); ++i)
-      {
-      if ( this->ComponentNames->at(i) )
-        {
-        delete this->ComponentNames->at(i);
-        }
-      }
-    this->ComponentNames->clear();
-    delete this->ComponentNames;
-    this->ComponentNames = NULL;
-    }
-
   this->SetName(NULL);
   this->SetInformation(NULL);
 }
-
-//----------------------------------------------------------------------------
-void vtkAbstractArray::SetComponentName( vtkIdType component, const char *name )
-  {
-  if ( component < 0 || name == NULL )
-    {
-    return;
-    }
-  unsigned int index = static_cast<unsigned int>( component );
-  if ( this->ComponentNames == NULL )
-    {
-    //delayed allocate
-    this->ComponentNames = new vtkAbstractArray::vtkInternalComponentNames();
-    }
-
-  if ( index == this->ComponentNames->size() )
-    {
-    //the array isn't large enough, so we will resize
-    this->ComponentNames->push_back( new vtkStdString(name) );
-    return;
-    }
-  else if ( index > this->ComponentNames->size() )
-    {
-    this->ComponentNames->resize( index+1, NULL );
-    }
-
-  //replace an exisiting element
-  vtkStdString *compName = this->ComponentNames->at(index);
-  if ( !compName )
-    {
-    compName = new vtkStdString(name);
-    this->ComponentNames->at(index) = compName;
-    }
-  else
-    {
-    compName->assign( name );
-    }
-  }
-
-//----------------------------------------------------------------------------
-const char* vtkAbstractArray::GetComponentName( vtkIdType component )
-{
-  unsigned int index = static_cast<unsigned int>( component );
-  if ( !this->ComponentNames || component < 0 ||
-    index >= this->ComponentNames->size() )
-    {
-    //make sure we have valid vector
-    return NULL;
-    }
-
-  vtkStdString *compName = this->ComponentNames->at( index );
-  return ( compName ) ? compName->c_str() : NULL;
-  }
-
-//----------------------------------------------------------------------------
-bool vtkAbstractArray::HasAComponentName()
-{
-  return (this->ComponentNames) ? ( this->ComponentNames->size() > 0 ) : 0;
-}
-
-//----------------------------------------------------------------------------
-int vtkAbstractArray::CopyComponentNames( vtkAbstractArray *da )
-{
-  if (  da && da != this && da->ComponentNames )
-    {
-    //clear the vector of the all data
-    if ( !this->ComponentNames )
-      {
-      this->ComponentNames = new vtkAbstractArray::vtkInternalComponentNames();
-      }
-
-    //copy the passed in components
-    for ( unsigned int i=0; i < this->ComponentNames->size(); ++i)
-      {
-      if ( this->ComponentNames->at(i) )
-        {
-        delete this->ComponentNames->at(i);
-        }
-      }
-    this->ComponentNames->clear();
-    this->ComponentNames->reserve( da->ComponentNames->size() );
-    const char *name;
-    for ( unsigned int i = 0; i < da->ComponentNames->size(); ++i )
-      {
-      name = da->GetComponentName(i);
-      if ( name )
-        {
-        this->SetComponentName(i, name);
-        }
-      }
-    return 1;
-    }
-  return 0;
-}
-
 
 //----------------------------------------------------------------------------
 void vtkAbstractArray::SetInformation(vtkInformation *args)
@@ -220,7 +102,7 @@ void vtkAbstractArray::GetTuples(vtkIdList* ptIds, vtkAbstractArray* aa)
 }
 
 //----------------------------------------------------------------------------
-void vtkAbstractArray::GetTuples(vtkIdType p1, vtkIdType p2,
+void vtkAbstractArray::GetTuples(vtkIdType p1, vtkIdType p2, 
   vtkAbstractArray* aa)
 {
   if (aa->GetNumberOfComponents() != this->GetNumberOfComponents())
@@ -228,7 +110,7 @@ void vtkAbstractArray::GetTuples(vtkIdType p1, vtkIdType p2,
     vtkWarningMacro("Number of components for input and output do not match.");
     return;
     }
-
+  
   // Here we give the slowest implementation. Subclasses can override
   // to use the knowledge about the data.
   vtkIdType num = p2 - p1 + 1;
@@ -245,7 +127,6 @@ void vtkAbstractArray::DeepCopy( vtkAbstractArray* da )
     {
     this->CopyInformation(da->GetInformation(),/*deep=*/1);
     }
-  this->CopyComponentNames( da );
 }
 
 //----------------------------------------------------------------------------
@@ -287,7 +168,7 @@ int vtkAbstractArray::GetDataTypeSize(int type)
     vtkTemplateMacro(
       return vtkAbstractArrayGetDataTypeSize(static_cast<VTK_TT*>(0))
       );
-
+      
     case VTK_BIT:
       return 0;
       break;
@@ -303,7 +184,7 @@ int vtkAbstractArray::GetDataTypeSize(int type)
     default:
       vtkGenericWarningMacro(<<"Unsupported data type!");
     }
-
+  
   return 1;
 }
 
@@ -370,7 +251,7 @@ vtkAbstractArray* vtkAbstractArray::CreateArray(int dataType)
 
     case VTK_ID_TYPE:
       return vtkIdTypeArray::New();
-
+   
     case VTK_STRING:
       return vtkStringArray::New();
 
@@ -426,15 +307,6 @@ void vtkAbstractArray::PrintSelf(ostream& os, vtkIndent indent)
   os << indent << "Size: " << this->Size << "\n";
   os << indent << "MaxId: " << this->MaxId << "\n";
   os << indent << "NumberOfComponents: " << this->NumberOfComponents << endl;
-  if ( this->ComponentNames )
-    {
-    os << indent << "ComponentNames: " << endl;
-    vtkIndent nextIndent = indent.GetNextIndent();
-    for ( unsigned int i=0; i < this->ComponentNames->size(); ++i )
-      {
-      os << nextIndent << i << " : " << this->ComponentNames->at(i) << endl;
-      }
-    }
   os << indent << "Information: " << this->Information << endl;
   if ( this->Information )
     {

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAxesActor.cxx
+  Module:    $RCSfile: vtkAxesActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkTextProperty.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkAxesActor, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkAxesActor);
 
 vtkCxxSetObjectMacro( vtkAxesActor, UserDefinedTip, vtkPolyData );

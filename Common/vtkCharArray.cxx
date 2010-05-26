@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCharArray.cxx
+  Module:    $RCSfile: vtkCharArray.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@ VTK_ARRAY_ITERATOR_TEMPLATE_INSTANTIATE(char);
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkCharArray, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkCharArray);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageLaplacian.h
+  Module:    $RCSfile: vtkImageLaplacian.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_IMAGING_EXPORT vtkImageLaplacian : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageLaplacian *New();
-  vtkTypeMacro(vtkImageLaplacian,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageLaplacian,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

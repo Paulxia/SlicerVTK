@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoxMuellerRandomSequence.h
+  Module:    $RCSfile: vtkBoxMuellerRandomSequence.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@
 class VTK_COMMON_EXPORT vtkBoxMuellerRandomSequence: public vtkGaussianRandomSequence
 {
 public:
-  vtkTypeMacro(vtkBoxMuellerRandomSequence,vtkGaussianRandomSequence);
+  vtkTypeRevisionMacro(vtkBoxMuellerRandomSequence,vtkGaussianRandomSequence);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkBoxMuellerRandomSequence* New();

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPContingencyStatistics.h
+  Module:    $RCSfile: vtkPContingencyStatistics.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,14 +38,13 @@
 #include <vtkstd/vector> // STL Header
 //ETX
 
-class vtkMultiBlockDataSet;
 class vtkMultiProcessController;
 
 class VTK_INFOVIS_EXPORT vtkPContingencyStatistics : public vtkContingencyStatistics
 {
 public:
   static vtkPContingencyStatistics* New();
-  vtkTypeMacro(vtkPContingencyStatistics, vtkContingencyStatistics);
+  vtkTypeRevisionMacro(vtkPContingencyStatistics, vtkContingencyStatistics);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -58,7 +57,7 @@ public:
   // Execute the parallel calculations required by the Learn option.
   virtual void Learn( vtkTable* inData,
                       vtkTable* inParameters,
-                      vtkMultiBlockDataSet* outMeta );
+                      vtkDataObject* outMeta );
 
 protected:
   vtkPContingencyStatistics();

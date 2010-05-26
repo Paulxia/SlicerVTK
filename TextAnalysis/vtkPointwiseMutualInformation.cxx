@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointwiseMutualInformation.cxx
+  Module:    $RCSfile: vtkPointwiseMutualInformation.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -35,6 +35,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkPointwiseMutualInformation
 
+vtkCxxRevisionMacro(vtkPointwiseMutualInformation, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPointwiseMutualInformation);
 
 vtkPointwiseMutualInformation::vtkPointwiseMutualInformation()

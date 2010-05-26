@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellDerivatives.cxx
+  Module:    $RCSfile: vtkCellDerivatives.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkCellDerivatives, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkCellDerivatives);
 
 vtkCellDerivatives::vtkCellDerivatives()

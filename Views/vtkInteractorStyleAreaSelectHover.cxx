@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleAreaSelectHover.cxx
+  Module:    $RCSfile: vtkInteractorStyleAreaSelectHover.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,6 +47,7 @@
 #define VTK_CREATE(type, name)                                  \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkInteractorStyleAreaSelectHover, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkInteractorStyleAreaSelectHover);
 
 vtkCxxSetObjectMacro(vtkInteractorStyleAreaSelectHover, Layout, vtkAreaLayout);

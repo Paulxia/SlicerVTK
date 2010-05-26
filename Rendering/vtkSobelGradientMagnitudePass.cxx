@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSobelGradientMagnitudePass.cxx
+  Module:    $RCSfile: vtkSobelGradientMagnitudePass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 #include "vtkPixelBufferObject.h"
 #include "vtkImageExtractComponents.h"
 
+vtkCxxRevisionMacro(vtkSobelGradientMagnitudePass, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkSobelGradientMagnitudePass);
 
 extern const char *vtkSobelGradientMagnitudePassShader1_fs;

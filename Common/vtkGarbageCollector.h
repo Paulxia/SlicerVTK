@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGarbageCollector.h
+  Module:    $RCSfile: vtkGarbageCollector.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -92,7 +92,7 @@ class vtkObjectBaseToGarbageCollectorFriendship;
 class VTK_COMMON_EXPORT vtkGarbageCollector : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkGarbageCollector,vtkObject);
+  vtkTypeRevisionMacro(vtkGarbageCollector,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkGarbageCollector* New();
 

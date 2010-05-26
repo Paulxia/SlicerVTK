@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOutEdgeIterator.h
+  Module:    $RCSfile: vtkOutEdgeIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_FILTERING_EXPORT vtkOutEdgeIterator : public vtkObject
 {
 public:
   static vtkOutEdgeIterator *New();
-  vtkTypeMacro(vtkOutEdgeIterator, vtkObject);
+  vtkTypeRevisionMacro(vtkOutEdgeIterator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

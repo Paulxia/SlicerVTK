@@ -63,7 +63,7 @@ INCLUDE(vtkCompilerExtras)
 #-----------------------------------------------------------------------------
 # VTK version number.  An even minor number corresponds to releases.
 SET(VTK_MAJOR_VERSION 5)
-SET(VTK_MINOR_VERSION 7)
+SET(VTK_MINOR_VERSION 6)
 SET(VTK_BUILD_VERSION 0)
 SET(VTK_VERSION
     "${VTK_MAJOR_VERSION}.${VTK_MINOR_VERSION}.${VTK_BUILD_VERSION}")
@@ -248,6 +248,9 @@ OPTION(VTK_LEGACY_SILENT "Silence all legacy code messages." OFF)
 MARK_AS_ADVANCED(VTK_LEGACY_REMOVE VTK_LEGACY_SILENT)
 
 #-----------------------------------------------------------------------------
+OPTION(VTK_USE_OPENFOAM "Build openfoam reader" ON)
+MARK_AS_ADVANCED(VTK_USE_OPENFOAM)
+
 OPTION(VTK_USE_METAIO "Build metaio" ON)
 MARK_AS_ADVANCED(VTK_USE_METAIO)
 

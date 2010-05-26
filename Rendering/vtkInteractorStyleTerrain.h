@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleTerrain.h
+  Module:    $RCSfile: vtkInteractorStyleTerrain.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ public:
   // Instantiate the object.
   static vtkInteractorStyleTerrain *New();
 
-  vtkTypeMacro(vtkInteractorStyleTerrain,vtkInteractorStyle);
+  vtkTypeRevisionMacro(vtkInteractorStyleTerrain,vtkInteractorStyle);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

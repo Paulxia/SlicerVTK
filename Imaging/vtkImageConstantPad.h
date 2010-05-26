@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageConstantPad.h
+  Module:    $RCSfile: vtkImageConstantPad.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_IMAGING_EXPORT vtkImageConstantPad : public vtkImagePadFilter
 {
 public:
   static vtkImageConstantPad *New();
-  vtkTypeMacro(vtkImageConstantPad,vtkImagePadFilter);
+  vtkTypeRevisionMacro(vtkImageConstantPad,vtkImagePadFilter);
 
   void PrintSelf(ostream& os, vtkIndent indent);
 

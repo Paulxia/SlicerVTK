@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPCorrelativeStatistics.cxx
+  Module:    $RCSfile: vtkPCorrelativeStatistics.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,12 +20,12 @@
 #include "vtkInformation.h"
 #include "vtkInformationVector.h"
 #include "vtkObjectFactory.h"
-#include "vtkMultiBlockDataSet.h"
 #include "vtkMultiProcessController.h"
 #include "vtkTable.h"
 #include "vtkVariant.h"
 
 vtkStandardNewMacro(vtkPCorrelativeStatistics);
+vtkCxxRevisionMacro(vtkPCorrelativeStatistics, "$Revision: 1.7 $");
 vtkCxxSetObjectMacro(vtkPCorrelativeStatistics, Controller, vtkMultiProcessController);
 //-----------------------------------------------------------------------------
 vtkPCorrelativeStatistics::vtkPCorrelativeStatistics()
@@ -49,9 +49,10 @@ void vtkPCorrelativeStatistics::PrintSelf(ostream& os, vtkIndent indent)
 
 // ----------------------------------------------------------------------
 void vtkPCorrelativeStatistics::Learn( vtkTable* inData,
-                                       vtkTable* inParameters,
-                                       vtkMultiBlockDataSet* outMeta )
+                                              vtkTable* inParameters,
+                                              vtkDataObject* outMetaDO )
 {
+  vtkTable* outMeta = vtkTable::SafeDownCast( outMetaDO ); 
   if ( ! outMeta ) 
     { 
     return; 
@@ -60,13 +61,7 @@ void vtkPCorrelativeStatistics::Learn( vtkTable* inData,
   // First calculate correlative statistics on local data set
   this->Superclass::Learn( inData, inParameters, outMeta );
 
-  vtkTable* primaryTab = vtkTable::SafeDownCast( outMeta->GetBlock( 0 ) );
-  if ( ! primaryTab ) 
-    {
-    return;
-    }
-
-  vtkIdType nRow = primaryTab->GetNumberOfRows();
+  vtkIdType nRow = outMeta->GetNumberOfRows();
   if ( ! nRow )
     {
     // No statistics were calculated.
@@ -88,7 +83,7 @@ void vtkPCorrelativeStatistics::Learn( vtkTable* inData,
     }
   
   // (All) gather all sample sizes
-  int n_l = primaryTab->GetValueByName( 0, "Cardinality" ).ToInt(); // Cardinality
+  int n_l = outMeta->GetValueByName( 0, "Cardinality" ).ToInt(); // Cardinality
   int* n_g = new int[np];
   com->AllGather( &n_l, n_g, 1 ); 
   
@@ -97,11 +92,11 @@ void vtkPCorrelativeStatistics::Learn( vtkTable* inData,
     {
     // (All) gather all local M statistics
     double M_l[5];
-    M_l[0] = primaryTab->GetValueByName( r, "Mean X" ).ToDouble();
-    M_l[1] = primaryTab->GetValueByName( r, "Mean Y" ).ToDouble();
-    M_l[2] = primaryTab->GetValueByName( r, "M2 X" ).ToDouble();
-    M_l[3] = primaryTab->GetValueByName( r, "M2 Y" ).ToDouble();
-    M_l[4] = primaryTab->GetValueByName( r, "M XY" ).ToDouble();
+    M_l[0] = outMeta->GetValueByName( r, "Mean X" ).ToDouble();
+    M_l[1] = outMeta->GetValueByName( r, "Mean Y" ).ToDouble();
+    M_l[2] = outMeta->GetValueByName( r, "M2 X" ).ToDouble();
+    M_l[3] = outMeta->GetValueByName( r, "M2 Y" ).ToDouble();
+    M_l[4] = outMeta->GetValueByName( r, "M XY" ).ToDouble();
     double* M_g = new double[5 * np];
     com->AllGather( M_l, M_g, 5 );
 
@@ -151,14 +146,14 @@ void vtkPCorrelativeStatistics::Learn( vtkTable* inData,
       ns = N;
       }
 
-    primaryTab->SetValueByName( r, "Mean X", meanX );
-    primaryTab->SetValueByName( r, "Mean Y", meanY );
-    primaryTab->SetValueByName( r, "M2 X", mom2X );
-    primaryTab->SetValueByName( r, "M2 Y", mom2Y );
-    primaryTab->SetValueByName( r, "M XY", momXY );
+    outMeta->SetValueByName( r, "Mean X", meanX );
+    outMeta->SetValueByName( r, "Mean Y", meanY );
+    outMeta->SetValueByName( r, "M2 X", mom2X );
+    outMeta->SetValueByName( r, "M2 Y", mom2Y );
+    outMeta->SetValueByName( r, "M XY", momXY );
 
     // Set global statistics
-    primaryTab->SetValueByName( r, "Cardinality", ns );
+    outMeta->SetValueByName( r, "Cardinality", ns );
 
     // Clean-up
     delete [] M_g;

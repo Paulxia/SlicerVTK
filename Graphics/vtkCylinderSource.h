@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCylinderSource.h
+  Module:    $RCSfile: vtkCylinderSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkCylinderSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkCylinderSource *New();
-  vtkTypeMacro(vtkCylinderSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCylinderSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

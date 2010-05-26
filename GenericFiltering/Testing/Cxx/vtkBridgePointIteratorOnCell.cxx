@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBridgePointIteratorOnCell.cxx
+  Module:    $RCSfile: vtkBridgePointIteratorOnCell.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkBridgeCell.h"
 #include "vtkCell.h"
 
+vtkCxxRevisionMacro(vtkBridgePointIteratorOnCell, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkBridgePointIteratorOnCell);
 
 //-----------------------------------------------------------------------------

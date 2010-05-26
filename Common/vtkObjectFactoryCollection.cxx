@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkObjectFactoryCollection.cxx
+  Module:    $RCSfile: vtkObjectFactoryCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 
 #include "vtkDebugLeaks.h"
 
+vtkCxxRevisionMacro(vtkObjectFactoryCollection, "$Revision: 1.5 $");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

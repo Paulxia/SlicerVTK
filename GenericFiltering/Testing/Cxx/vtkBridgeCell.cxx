@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBridgeCell.cxx
+  Module:    $RCSfile: vtkBridgeCell.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -68,6 +68,7 @@
 # include "vtkQuadraticPyramid.h"
 
 
+vtkCxxRevisionMacro(vtkBridgeCell, "$Revision: 1.20 $");
 
 vtkStandardNewMacro(vtkBridgeCell);
 

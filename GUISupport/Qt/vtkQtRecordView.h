@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtRecordView.h
+  Module:    $RCSfile: vtkQtRecordView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ Q_OBJECT
 
 public:
   static vtkQtRecordView *New();
-  vtkTypeMacro(vtkQtRecordView, vtkQtView);
+  vtkTypeRevisionMacro(vtkQtRecordView, vtkQtView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -85,8 +85,18 @@ protected:
   vtkQtRecordView();
   ~vtkQtRecordView();
     
-  virtual void AddRepresentationInternal(vtkDataRepresentation* rep);
-  virtual void RemoveRepresentationInternal(vtkDataRepresentation* rep);
+  // Description:
+  // Connects the algorithm output to the internal pipeline.
+  // This view only supports a single representation.
+  virtual void AddInputConnection(
+    vtkAlgorithmOutput* conn,
+    vtkAlgorithmOutput* selectionConn);
+  
+  // Description:
+  // Removes the algorithm output from the internal pipeline.
+  virtual void RemoveInputConnection(
+    vtkAlgorithmOutput* conn,
+    vtkAlgorithmOutput* selectionConn);
     
 //BTX
   vtkSmartPointer<vtkDataObjectToTable> DataObjectToTable;

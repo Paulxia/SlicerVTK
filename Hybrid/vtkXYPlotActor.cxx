@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXYPlotActor.cxx
+  Module:    $RCSfile: vtkXYPlotActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 
 #define VTK_MAX_PLOTS 50
 
+vtkCxxRevisionMacro(vtkXYPlotActor, "$Revision: 1.72 $");
 vtkStandardNewMacro(vtkXYPlotActor);
 
 vtkCxxSetObjectMacro(vtkXYPlotActor,TitleTextProperty,vtkTextProperty);

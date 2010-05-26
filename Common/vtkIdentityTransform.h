@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIdentityTransform.h
+  Module:    $RCSfile: vtkIdentityTransform.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_COMMON_EXPORT vtkIdentityTransform : public vtkLinearTransform
 public:
   static vtkIdentityTransform *New();
 
-  vtkTypeMacro(vtkIdentityTransform,vtkLinearTransform);
+  vtkTypeRevisionMacro(vtkIdentityTransform,vtkLinearTransform);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

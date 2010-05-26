@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoundedPlanePointPlacer.cxx
+  Module:    $RCSfile: vtkBoundedPlanePointPlacer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include <vtkstd/algorithm>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkBoundedPlanePointPlacer, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkBoundedPlanePointPlacer);
 
 vtkCxxSetObjectMacro(vtkBoundedPlanePointPlacer, ObliquePlane, vtkPlane);

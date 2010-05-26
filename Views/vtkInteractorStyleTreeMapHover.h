@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleTreeMapHover.h
+  Module:    $RCSfile: vtkInteractorStyleTreeMapHover.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class VTK_VIEWS_EXPORT vtkInteractorStyleTreeMapHover : public vtkInteractorStyl
 {
 public:
   static vtkInteractorStyleTreeMapHover* New();
-  vtkTypeMacro(vtkInteractorStyleTreeMapHover,vtkInteractorStyleImage);
+  vtkTypeRevisionMacro(vtkInteractorStyleTreeMapHover,vtkInteractorStyleImage);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

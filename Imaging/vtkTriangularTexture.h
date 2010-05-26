@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangularTexture.h
+  Module:    $RCSfile: vtkTriangularTexture.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@
 class VTK_IMAGING_EXPORT vtkTriangularTexture : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkTriangularTexture,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkTriangularTexture,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestGenericVertexAttributesGLSLCxx.cxx
+  Module:    $RCSfile: TestGenericVertexAttributesGLSLCxx.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

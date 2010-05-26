@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkScalarBarWidget.cxx
+  Module:    $RCSfile: vtkScalarBarWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkWidgetCallbackMapper.h"
 #include "vtkWidgetEvent.h"
 
+vtkCxxRevisionMacro(vtkScalarBarWidget, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkScalarBarWidget);
 
 //-------------------------------------------------------------------------

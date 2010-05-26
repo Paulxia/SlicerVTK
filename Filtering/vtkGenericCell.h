@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericCell.h
+  Module:    $RCSfile: vtkGenericCell.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ public:
   // Create handle to any type of cell; by default a vtkEmptyCell.
   static vtkGenericCell *New();
 
-  vtkTypeMacro(vtkGenericCell,vtkCell);
+  vtkTypeRevisionMacro(vtkGenericCell,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

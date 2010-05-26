@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedSlices.h
+  Module:    $RCSfile: vtkExtractSelectedSlices.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -47,7 +47,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkExtractSelectedSlices :
 {
 public:
   static vtkExtractSelectedSlices* New();
-  vtkTypeMacro(vtkExtractSelectedSlices, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractSelectedSlices, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

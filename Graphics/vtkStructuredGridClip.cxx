@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridClip.cxx
+  Module:    $RCSfile: vtkStructuredGridClip.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkStructuredGridClip, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkStructuredGridClip);
 
 //----------------------------------------------------------------------------

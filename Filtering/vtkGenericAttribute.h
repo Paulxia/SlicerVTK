@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericAttribute.h
+  Module:    $RCSfile: vtkGenericAttribute.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ enum
 class VTK_FILTERING_EXPORT vtkGenericAttribute : public vtkObject
 {
  public:
-  vtkTypeMacro(vtkGenericAttribute,vtkObject);
+  vtkTypeRevisionMacro(vtkGenericAttribute,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

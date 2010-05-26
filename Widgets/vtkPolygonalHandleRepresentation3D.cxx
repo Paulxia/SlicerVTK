@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolygonalHandleRepresentation3D.cxx
+  Module:    $RCSfile: vtkPolygonalHandleRepresentation3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkMatrix4x4.h"
 #include "vtkPointPlacer.h"
 
+vtkCxxRevisionMacro(vtkPolygonalHandleRepresentation3D, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkPolygonalHandleRepresentation3D);
 
 //----------------------------------------------------------------------

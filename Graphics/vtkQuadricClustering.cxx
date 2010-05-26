@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadricClustering.cxx
+  Module:    $RCSfile: vtkQuadricClustering.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkTriangle.h"
 #include <vtksys/hash_set.hxx> // keep track of inserted triangles
 
+vtkCxxRevisionMacro(vtkQuadricClustering, "$Revision: 1.90 $");
 vtkStandardNewMacro(vtkQuadricClustering);
 
 //----------------------------------------------------------------------------

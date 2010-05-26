@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPLYReader.h
+  Module:    $RCSfile: vtkPLYReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@
 class VTK_IO_EXPORT vtkPLYReader : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkPLYReader,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPLYReader,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

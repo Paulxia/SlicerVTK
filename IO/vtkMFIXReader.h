@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMFIXReader.h
+  Module:    $RCSfile: vtkMFIXReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class VTK_IO_EXPORT vtkMFIXReader : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkMFIXReader *New();
-  vtkTypeMacro(vtkMFIXReader,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkMFIXReader,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

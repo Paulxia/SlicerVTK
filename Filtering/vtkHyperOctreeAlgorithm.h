@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeAlgorithm.h
+  Module:    $RCSfile: vtkHyperOctreeAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class vtkHyperOctree;
 class VTK_FILTERING_EXPORT vtkHyperOctreeAlgorithm : public vtkAlgorithm
 {
 public:
-  vtkTypeMacro(vtkHyperOctreeAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkHyperOctreeAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

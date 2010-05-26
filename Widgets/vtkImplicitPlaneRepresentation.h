@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitPlaneRepresentation.h
+  Module:    $RCSfile: vtkImplicitPlaneRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -65,7 +65,7 @@ public:
 
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkImplicitPlaneRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkImplicitPlaneRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

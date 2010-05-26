@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlotParallelCoordinates.h
+  Module:    $RCSfile: vtkPlotParallelCoordinates.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class vtkStdString;
 class VTK_CHARTS_EXPORT vtkPlotParallelCoordinates : public vtkPlot
 {
 public:
-  vtkTypeMacro(vtkPlotParallelCoordinates, vtkPlot);
+  vtkTypeRevisionMacro(vtkPlotParallelCoordinates, vtkPlot);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:
@@ -79,14 +79,6 @@ public:
   // Description:
   // Reset the selection criteria for the chart.
   bool ResetSelectionRange();
-
-  // Description:
-  // This is a convenience function to set the input table.
-  virtual void SetInput(vtkTable *table);
-  virtual void SetInput(vtkTable *table, const char*, const char*)
-  {
-    this->SetInput(table);
-  }
 
 //BTX
 protected:

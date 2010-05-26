@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOBBTree.cxx
+  Module:    $RCSfile: vtkOBBTree.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkTriangle.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkOBBTree, "$Revision: 1.66 $");
 vtkStandardNewMacro(vtkOBBTree);
 
 #define vtkCELLTRIANGLES(CELLPTIDS, TYPE, IDX, PTID0, PTID1, PTID2) \

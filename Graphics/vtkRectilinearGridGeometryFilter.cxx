@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridGeometryFilter.cxx
+  Module:    $RCSfile: vtkRectilinearGridGeometryFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPolyData.h"
 #include "vtkRectilinearGrid.h"
 
+vtkCxxRevisionMacro(vtkRectilinearGridGeometryFilter, "$Revision: 1.33 $");
 vtkStandardNewMacro(vtkRectilinearGridGeometryFilter);
 
 // Construct with initial extent (0,100, 0,100, 0,0) (i.e., a k-plane).

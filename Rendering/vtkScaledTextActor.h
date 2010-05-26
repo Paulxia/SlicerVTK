@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkScaledTextActor.h
+  Module:    $RCSfile: vtkScaledTextActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@
 class VTK_RENDERING_EXPORT vtkScaledTextActor : public vtkTextActor
 {
 public:
-  vtkTypeMacro(vtkScaledTextActor,vtkTextActor);
+  vtkTypeRevisionMacro(vtkScaledTextActor,vtkTextActor);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

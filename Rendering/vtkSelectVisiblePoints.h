@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSelectVisiblePoints.h
+  Module:    $RCSfile: vtkSelectVisiblePoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkMatrix4x4;
 class VTK_RENDERING_EXPORT vtkSelectVisiblePoints : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkSelectVisiblePoints,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSelectVisiblePoints,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

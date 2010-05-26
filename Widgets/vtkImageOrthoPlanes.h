@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageOrthoPlanes.h
+  Module:    $RCSfile: vtkImageOrthoPlanes.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_WIDGETS_EXPORT vtkImageOrthoPlanes : public vtkObject
 {
 public:
   static vtkImageOrthoPlanes *New();
-  vtkTypeMacro(vtkImageOrthoPlanes,vtkObject);
+  vtkTypeRevisionMacro(vtkImageOrthoPlanes,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

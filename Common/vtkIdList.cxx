@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIdList.cxx
+  Module:    $RCSfile: vtkIdList.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkIdList.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkIdList, "$Revision: 1.45 $");
 vtkStandardNewMacro(vtkIdList);
 
 vtkIdList::vtkIdList()

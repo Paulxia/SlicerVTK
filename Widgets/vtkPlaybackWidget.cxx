@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlaybackWidget.cxx
+  Module:    $RCSfile: vtkPlaybackWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkCallbackCommand.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPlaybackWidget, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkPlaybackWidget);
 
 //-------------------------------------------------------------------------

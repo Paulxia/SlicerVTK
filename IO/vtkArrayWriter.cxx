@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayWriter.cxx
+  Module:    $RCSfile: vtkArrayWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -311,6 +311,7 @@ bool WriteDenseArrayAscii(const vtkStdString& type_name, vtkArray* array, ostrea
 
 } // End anonymous namespace
 
+vtkCxxRevisionMacro(vtkArrayWriter, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkArrayWriter);
 
 vtkArrayWriter::vtkArrayWriter()

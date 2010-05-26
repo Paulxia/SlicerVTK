@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitDataSet.h
+  Module:    $RCSfile: vtkImplicitDataSet.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class vtkDataSet;
 class VTK_FILTERING_EXPORT vtkImplicitDataSet : public vtkImplicitFunction
 {
 public:
-  vtkTypeMacro(vtkImplicitDataSet,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkImplicitDataSet,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

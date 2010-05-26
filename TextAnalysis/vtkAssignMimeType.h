@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAssignMimeType.h
+  Module:    $RCSfile: vtkAssignMimeType.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,7 +56,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkAssignMimeType :
 {
 public:
   static vtkAssignMimeType* New();
-  vtkTypeMacro(vtkAssignMimeType, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkAssignMimeType, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,4 +1,4 @@
-/* Id */
+/* $Id: tif_dirwrite.c,v 1.3 2008-04-23 14:53:46 david.cole Exp $ */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

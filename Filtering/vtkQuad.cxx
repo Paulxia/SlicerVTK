@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuad.cxx
+  Module:    $RCSfile: vtkQuad.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkIncrementalPointLocator.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkQuad, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkQuad);
 
 static const double VTK_DIVERGED = 1.e6;

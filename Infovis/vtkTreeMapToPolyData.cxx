@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeMapToPolyData.cxx
+  Module:    $RCSfile: vtkTreeMapToPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkPointData.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkTreeMapToPolyData, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkTreeMapToPolyData);
 
 vtkTreeMapToPolyData::vtkTreeMapToPolyData()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPassArrays.cxx
+  Module:    $RCSfile: vtkPassArrays.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include <vtksys/stl/utility>
 #include <vtksys/stl/vector>
 
+vtkCxxRevisionMacro(vtkPassArrays, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkPassArrays);
 
 class vtkPassArrays::Internals

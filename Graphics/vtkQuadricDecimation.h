@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadricDecimation.h
+  Module:    $RCSfile: vtkQuadricDecimation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -64,7 +64,7 @@ class vtkDoubleArray;
 class VTK_GRAPHICS_EXPORT vtkQuadricDecimation : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkQuadricDecimation, vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkQuadricDecimation, vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkQuadricDecimation *New();
 

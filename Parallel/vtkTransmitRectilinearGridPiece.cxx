@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransmitRectilinearGridPiece.cxx
+  Module:    $RCSfile: vtkTransmitRectilinearGridPiece.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkRectilinearGrid.h"
 #include "vtkDoubleArray.h"
 
+vtkCxxRevisionMacro(vtkTransmitRectilinearGridPiece, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTransmitRectilinearGridPiece);
 
 vtkCxxSetObjectMacro(vtkTransmitRectilinearGridPiece,Controller,

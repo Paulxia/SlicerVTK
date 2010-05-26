@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkObjectFactory.cxx
+  Module:    $RCSfile: vtkObjectFactory.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkObjectFactory, "$Revision: 1.49 $");
 
 vtkObjectFactoryCollection* vtkObjectFactory::RegisteredFactories = 0;
 

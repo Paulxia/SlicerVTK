@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    v_vector.h
+  Module:    $RCSfile: v_vector.h,v $
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.

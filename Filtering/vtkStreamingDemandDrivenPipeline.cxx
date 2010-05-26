@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStreamingDemandDrivenPipeline.cxx
+  Module:    $RCSfile: vtkStreamingDemandDrivenPipeline.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkStreamingDemandDrivenPipeline, "$Revision: 1.64 $");
 vtkStandardNewMacro(vtkStreamingDemandDrivenPipeline);
 
 vtkInformationKeyMacro(vtkStreamingDemandDrivenPipeline, CONTINUE_EXECUTING, Integer);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetTriangleFilter.h
+  Module:    $RCSfile: vtkDataSetTriangleFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_GRAPHICS_EXPORT vtkDataSetTriangleFilter : public vtkUnstructuredGridA
 {
 public:
   static vtkDataSetTriangleFilter *New();
-  vtkTypeMacro(vtkDataSetTriangleFilter,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkDataSetTriangleFilter,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

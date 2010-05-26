@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDataLIC2DExtentTranslator.h
+  Module:    $RCSfile: vtkImageDataLIC2DExtentTranslator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@ class VTK_HYBRID_EXPORT vtkImageDataLIC2DExtentTranslator : public vtkExtentTran
 {
 public:
   static vtkImageDataLIC2DExtentTranslator* New();
-  vtkTypeMacro(vtkImageDataLIC2DExtentTranslator, vtkExtentTranslator);
+  vtkTypeRevisionMacro(vtkImageDataLIC2DExtentTranslator, vtkExtentTranslator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

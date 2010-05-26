@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleTrackballActor.cxx
+  Module:    $RCSfile: vtkInteractorStyleTrackballActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkRenderer.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleTrackballActor, "$Revision: 1.37 $");
 vtkStandardNewMacro(vtkInteractorStyleTrackballActor);
 
 //----------------------------------------------------------------------------

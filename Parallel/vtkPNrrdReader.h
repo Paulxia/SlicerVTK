@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPNrrdReader.h
+  Module:    $RCSfile: vtkPNrrdReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class vtkCharArray;
 class VTK_PARALLEL_EXPORT vtkPNrrdReader : public vtkMPIImageReader
 {
 public:
-  vtkTypeMacro(vtkPNrrdReader, vtkMPIImageReader);
+  vtkTypeRevisionMacro(vtkPNrrdReader, vtkMPIImageReader);
   static vtkPNrrdReader *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

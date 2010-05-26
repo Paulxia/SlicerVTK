@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVersion.cxx
+  Module:    $RCSfile: vtkVersion.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,4 +15,5 @@
 #include "vtkVersion.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkVersion, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkVersion);

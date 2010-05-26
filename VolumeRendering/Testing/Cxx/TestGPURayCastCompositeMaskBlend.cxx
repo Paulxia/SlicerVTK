@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestGPURayCastCompositeMaskBlend.cxx
+  Module:    $RCSfile: TestGPURayCastCompositeMaskBlend.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

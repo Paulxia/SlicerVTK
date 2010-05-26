@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleRubberBandZoom.cxx
+  Module:    $RCSfile: vtkInteractorStyleRubberBandZoom.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkRenderWindowInteractor.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleRubberBandZoom, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkInteractorStyleRubberBandZoom);
 
 vtkInteractorStyleRubberBandZoom::vtkInteractorStyleRubberBandZoom()

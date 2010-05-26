@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageInPlaceFilter.h
+  Module:    $RCSfile: vtkImageInPlaceFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@
 class VTK_FILTERING_EXPORT vtkImageInPlaceFilter : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkImageInPlaceFilter,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageInPlaceFilter,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

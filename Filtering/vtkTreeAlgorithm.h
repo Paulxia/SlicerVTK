@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeAlgorithm.h
+  Module:    $RCSfile: vtkTreeAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_FILTERING_EXPORT vtkTreeAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkTreeAlgorithm *New();
-  vtkTypeMacro(vtkTreeAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkTreeAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

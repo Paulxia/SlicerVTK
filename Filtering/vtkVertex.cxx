@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVertex.cxx
+  Module:    $RCSfile: vtkVertex.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkIncrementalPointLocator.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkVertex, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkVertex);
 
 //----------------------------------------------------------------------------

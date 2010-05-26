@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSeedWidget.cxx
+  Module:    $RCSfile: vtkSeedWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include <vtkstd/iterator>
 #include <vtkstd/list>
 
+vtkCxxRevisionMacro(vtkSeedWidget, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkSeedWidget);
 
 // The vtkSeedList is a PIMPLed list<T>.

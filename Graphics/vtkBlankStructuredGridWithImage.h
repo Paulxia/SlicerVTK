@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBlankStructuredGridWithImage.h
+  Module:    $RCSfile: vtkBlankStructuredGridWithImage.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_GRAPHICS_EXPORT vtkBlankStructuredGridWithImage : public vtkStructured
 {
 public:
   static vtkBlankStructuredGridWithImage *New();
-  vtkTypeMacro(vtkBlankStructuredGridWithImage,vtkStructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkBlankStructuredGridWithImage,vtkStructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointSet.h
+  Module:    $RCSfile: vtkPointSet.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class vtkPointLocator;
 class VTK_FILTERING_EXPORT vtkPointSet : public vtkDataSet
 {
 public:
-  vtkTypeMacro(vtkPointSet,vtkDataSet);
+  vtkTypeRevisionMacro(vtkPointSet,vtkDataSet);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

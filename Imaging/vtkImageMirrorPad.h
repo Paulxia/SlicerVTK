@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMirrorPad.h
+  Module:    $RCSfile: vtkImageMirrorPad.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_IMAGING_EXPORT vtkImageMirrorPad : public vtkImagePadFilter
 {
 public:
   static vtkImageMirrorPad *New();
-  vtkTypeMacro(vtkImageMirrorPad,vtkImagePadFilter);
+  vtkTypeRevisionMacro(vtkImageMirrorPad,vtkImagePadFilter);
 
 protected:
   vtkImageMirrorPad() {};

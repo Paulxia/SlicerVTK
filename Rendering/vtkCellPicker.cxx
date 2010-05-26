@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellPicker.cxx
+  Module:    $RCSfile: vtkCellPicker.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 #include "vtkCamera.h"
 #include "vtkAbstractCellLocator.h"
 
+vtkCxxRevisionMacro(vtkCellPicker, "$Revision: 1.49.4.1 $");
 vtkStandardNewMacro(vtkCellPicker);
 
 //----------------------------------------------------------------------------

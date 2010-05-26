@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPDBReader.cxx
+  Module:    $RCSfile: vtkPDBReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkPoints.h"
 #include "vtkIdTypeArray.h"
 
+vtkCxxRevisionMacro(vtkPDBReader, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkPDBReader);
 
 vtkPDBReader::vtkPDBReader()

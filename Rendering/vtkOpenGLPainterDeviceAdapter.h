@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLPainterDeviceAdapter.h
+  Module:    $RCSfile: vtkOpenGLPainterDeviceAdapter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -53,7 +53,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLPainterDeviceAdapter :
   public vtkPainterDeviceAdapter
 {
 public:
-  vtkTypeMacro(vtkOpenGLPainterDeviceAdapter, vtkPainterDeviceAdapter);
+  vtkTypeRevisionMacro(vtkOpenGLPainterDeviceAdapter, vtkPainterDeviceAdapter);
   static vtkOpenGLPainterDeviceAdapter *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

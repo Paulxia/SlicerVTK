@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractCells.h
+  Module:    $RCSfile: vtkExtractCells.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class vtkModelMetadata;
 class VTK_GRAPHICS_EXPORT vtkExtractCells : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkExtractCells, vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractCells, vtkUnstructuredGridAlgorithm);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   static vtkExtractCells *New();

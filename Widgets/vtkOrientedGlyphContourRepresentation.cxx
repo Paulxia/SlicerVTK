@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOrientedGlyphContourRepresentation.cxx
+  Module:    $RCSfile: vtkOrientedGlyphContourRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@
 #include "vtkOpenGL.h"
 #include "vtkSphereSource.h"
 
+vtkCxxRevisionMacro(vtkOrientedGlyphContourRepresentation, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkOrientedGlyphContourRepresentation);
 
 //----------------------------------------------------------------------

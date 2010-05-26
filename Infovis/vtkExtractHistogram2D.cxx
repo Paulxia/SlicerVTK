@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkExtractHistogram2D.cxx
+Module:    $RCSfile: vtkExtractHistogram2D.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -28,13 +28,13 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkInformation.h"
 #include "vtkInformationVector.h"
 #include "vtkObjectFactory.h"
-#include "vtkMultiBlockDataSet.h"
 #include "vtkPointData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTable.h"
 #include "vtkTimerLog.h"
 #include "vtkUnsignedIntArray.h"
 //------------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkExtractHistogram2D, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkExtractHistogram2D);
 vtkCxxSetObjectMacro(vtkExtractHistogram2D,RowMask,vtkDataArray);
 //------------------------------------------------------------------------------
@@ -112,8 +112,13 @@ void vtkExtractHistogram2D::PrintSelf(ostream& os, vtkIndent indent)
 //------------------------------------------------------------------------------
 void vtkExtractHistogram2D::Learn(vtkTable *vtkNotUsed(inData), 
                                   vtkTable* vtkNotUsed(inParameters), 
-                                  vtkMultiBlockDataSet *outMeta)
+                                  vtkDataObject *outMetaDO)
 {
+
+  vtkTable* outMeta = vtkTable::SafeDownCast( outMetaDO ); 
+  vtkImageData* outImage = vtkImageData::SafeDownCast(
+    this->GetOutputDataObject(vtkExtractHistogram2D::HISTOGRAM_IMAGE));
+
   if ( !outMeta ) 
     { 
     return; 
@@ -125,9 +130,6 @@ void vtkExtractHistogram2D::Learn(vtkTable *vtkNotUsed(inData),
     return;
     }
 
-  vtkImageData* outImage = vtkImageData::SafeDownCast(
-    this->GetOutputDataObject(vtkExtractHistogram2D::HISTOGRAM_IMAGE));
-
   vtkDataArray* col1=NULL, *col2=NULL; 
   if (! this->GetInputArrays(col1,col2))
     {
@@ -136,8 +138,7 @@ void vtkExtractHistogram2D::Learn(vtkTable *vtkNotUsed(inData),
 
   this->ComputeBinExtents(col1,col2);
   
-  // The primary statistics table
-  vtkTable* primaryTab = vtkTable::New();
+
 
   int numValues = col1->GetNumberOfTuples();
   if (numValues != col2->GetNumberOfTuples())
@@ -208,16 +209,8 @@ void vtkExtractHistogram2D::Learn(vtkTable *vtkNotUsed(inData),
       }
     }
 
-  primaryTab->Initialize();
-  primaryTab->AddColumn(histogram);
-
-  // Finally set first block of output meta port to primary statistics table
-  outMeta->SetNumberOfBlocks( 1 );
-  outMeta->GetMetaData( static_cast<unsigned>( 0 ) )->Set( vtkCompositeDataSet::NAME(), "Primary Statistics" );
-  outMeta->SetBlock( 0, primaryTab );
-
-  // Clean up
-  primaryTab->Delete();
+  outMeta->Initialize();
+  outMeta->AddColumn(histogram);
 }
 
 //------------------------------------------------------------------------------
@@ -250,12 +243,6 @@ vtkImageData* vtkExtractHistogram2D::GetOutputHistogramImage()
 int vtkExtractHistogram2D::GetInputArrays(vtkDataArray*& col1, vtkDataArray*& col2)
 {
   vtkTable* inData = vtkTable::SafeDownCast(this->GetInputDataObject(0,0));
-
-  if (!inData)
-    {
-    vtkErrorMacro(<<"Error: Empty input.");
-    return 0;
-    }
   
   if (this->Internals->Requests.size() > 0)
     {

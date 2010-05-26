@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkTableToPolyData.cxx
+  Module:    $RCSfile: vtkTableToPolyData.cxx,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkInformation.h"
 
 vtkStandardNewMacro(vtkTableToPolyData);
+vtkCxxRevisionMacro(vtkTableToPolyData, "$Revision: 1.5 $");
 //----------------------------------------------------------------------------
 vtkTableToPolyData::vtkTableToPolyData()
 {

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransformFilter.cxx
+  Module:    $RCSfile: vtkTransformFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkPointSet.h"
 
+vtkCxxRevisionMacro(vtkTransformFilter, "$Revision: 1.47 $");
 vtkStandardNewMacro(vtkTransformFilter);
 vtkCxxSetObjectMacro(vtkTransformFilter,Transform,vtkAbstractTransform);
 

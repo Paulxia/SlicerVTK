@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkScenePicker.cxx
+  Module:    $RCSfile: vtkScenePicker.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,6 +59,7 @@ protected:
   bool InteractiveRender;
 };
 
+vtkCxxRevisionMacro(vtkScenePicker, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkScenePicker);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   ParaView
-  Module:    vtkXMLHierarchicalBoxDataReader.h
+  Module:    $RCSfile: vtkXMLHierarchicalBoxDataReader.h,v $
 
   Copyright (c) Kitware, Inc.
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_IO_EXPORT vtkXMLHierarchicalBoxDataReader : public vtkXMLCompositeData
 {
 public:
   static vtkXMLHierarchicalBoxDataReader* New();
-  vtkTypeMacro(vtkXMLHierarchicalBoxDataReader,vtkXMLCompositeDataReader);
+  vtkTypeRevisionMacro(vtkXMLHierarchicalBoxDataReader,vtkXMLCompositeDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

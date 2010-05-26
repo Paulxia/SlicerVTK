@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaLightingPainter.cxx
+  Module:    $RCSfile: vtkMesaLightingPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,4 +32,5 @@
 #include "vtkOpenGLLightingPainter.cxx"
 #undef vtkOpenGLLightingPainter
 
+vtkCxxRevisionMacro(vtkMesaLightingPainter, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMesaLightingPainter);

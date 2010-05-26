@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageWrapPad.cxx
+  Module:    $RCSfile: vtkImageWrapPad.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageWrapPad, "$Revision: 1.34 $");
 vtkStandardNewMacro(vtkImageWrapPad);
 
 //----------------------------------------------------------------------------

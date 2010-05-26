@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAttributesErrorMetric.cxx
+  Module:    $RCSfile: vtkAttributesErrorMetric.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkGenericDataSet.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkAttributesErrorMetric,"$Revision: 1.9 $");
 vtkStandardNewMacro(vtkAttributesErrorMetric);
 
 //-----------------------------------------------------------------------------

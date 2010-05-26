@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMILVideoSource.h
+  Module:    $RCSfile: vtkMILVideoSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -66,7 +66,7 @@ class VTK_HYBRID_EXPORT vtkMILVideoSource : public vtkVideoSource
 {
 public:
   static vtkMILVideoSource *New();
-  vtkTypeMacro(vtkMILVideoSource,vtkVideoSource);
+  vtkTypeRevisionMacro(vtkMILVideoSource,vtkVideoSource);
   void PrintSelf(ostream& os, vtkIndent indent);   
 
   // Description:

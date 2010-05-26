@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyVertex.cxx
+  Module:    $RCSfile: vtkPolyVertex.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPoints.h"
 #include "vtkVertex.h"
 
+vtkCxxRevisionMacro(vtkPolyVertex, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPolyVertex);
 
 //----------------------------------------------------------------------------

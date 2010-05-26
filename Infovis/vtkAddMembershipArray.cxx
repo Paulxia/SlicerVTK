@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAddMembershipArray.cxx
+  Module:    $RCSfile: vtkAddMembershipArray.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@
 #include "vtkVariant.h"
 #include "vtkVariantArray.h"
 
+vtkCxxRevisionMacro(vtkAddMembershipArray, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkAddMembershipArray);
 vtkCxxSetObjectMacro(vtkAddMembershipArray,InputValues,vtkAbstractArray);
 

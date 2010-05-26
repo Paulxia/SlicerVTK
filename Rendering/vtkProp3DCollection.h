@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProp3DCollection.h
+  Module:    $RCSfile: vtkProp3DCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkProp3DCollection : public vtkPropCollection
 {
 public:
   static vtkProp3DCollection *New();
-  vtkTypeMacro(vtkProp3DCollection,vtkPropCollection);
+  vtkTypeRevisionMacro(vtkProp3DCollection,vtkPropCollection);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

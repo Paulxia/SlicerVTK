@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextActor.cxx
+  Module:    $RCSfile: vtkTextActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkTexture.h"
 #include "vtkRenderer.h"
 
+vtkCxxRevisionMacro(vtkTextActor, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkTextActor);
 vtkCxxSetObjectMacro(vtkTextActor,Texture,vtkTexture);
 

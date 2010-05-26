@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeZPass.cxx
+  Module:    $RCSfile: vtkCompositeZPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,6 +51,7 @@
 #include <sys/types.h> // Linux specific gettid()
 #endif
 
+vtkCxxRevisionMacro(vtkCompositeZPass, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkCompositeZPass);
 vtkCxxSetObjectMacro(vtkCompositeZPass,Controller,vtkMultiProcessController);
 

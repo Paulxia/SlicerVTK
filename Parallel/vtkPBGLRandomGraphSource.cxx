@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLRandomGraphSource.cxx
+  Module:    $RCSfile: vtkPBGLRandomGraphSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@
 #include <boost/mpi/communicator.hpp>
 #include <boost/mpi/collectives/scan.hpp>
 
+vtkCxxRevisionMacro(vtkPBGLRandomGraphSource, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkPBGLRandomGraphSource);
 
 // ----------------------------------------------------------------------

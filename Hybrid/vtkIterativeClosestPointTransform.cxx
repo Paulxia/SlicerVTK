@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIterativeClosestPointTransform.cxx
+  Module:    $RCSfile: vtkIterativeClosestPointTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPoints.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkIterativeClosestPointTransform, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkIterativeClosestPointTransform);
 
 //----------------------------------------------------------------------------

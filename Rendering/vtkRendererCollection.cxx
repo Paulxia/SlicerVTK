@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRendererCollection.cxx
+  Module:    $RCSfile: vtkRendererCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 
 #include <stdlib.h>
 
+vtkCxxRevisionMacro(vtkRendererCollection, "$Revision: 1.33 $");
 vtkStandardNewMacro(vtkRendererCollection);
 
 // Forward the Render() method to each renderer in the list.

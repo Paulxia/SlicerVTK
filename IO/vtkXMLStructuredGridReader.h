@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLStructuredGridReader.h
+  Module:    $RCSfile: vtkXMLStructuredGridReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkStructuredGrid;
 class VTK_IO_EXPORT vtkXMLStructuredGridReader : public vtkXMLStructuredDataReader
 {
 public:
-  vtkTypeMacro(vtkXMLStructuredGridReader,vtkXMLStructuredDataReader);
+  vtkTypeRevisionMacro(vtkXMLStructuredGridReader,vtkXMLStructuredDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkXMLStructuredGridReader *New();
   

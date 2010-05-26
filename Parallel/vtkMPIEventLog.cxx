@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMPIEventLog.cxx
+  Module:    $RCSfile: vtkMPIEventLog.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 int vtkMPIEventLog::LastEventId = 0;
 
+vtkCxxRevisionMacro(vtkMPIEventLog, "$Revision: 1.7.96.1 $");
 vtkStandardNewMacro(vtkMPIEventLog);
 
 void vtkMPIEventLog::PrintSelf(ostream& os, vtkIndent indent)

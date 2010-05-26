@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHierarchicalGraphView.h
+  Module:    $RCSfile: vtkHierarchicalGraphView.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -46,7 +46,7 @@ class VTK_VIEWS_EXPORT vtkHierarchicalGraphView : public vtkGraphLayoutView
 {
 public:
   static vtkHierarchicalGraphView *New();
-  vtkTypeMacro(vtkHierarchicalGraphView, vtkGraphLayoutView);
+  vtkTypeRevisionMacro(vtkHierarchicalGraphView, vtkGraphLayoutView);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

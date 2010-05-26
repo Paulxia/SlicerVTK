@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProgrammableFilter.h
+  Module:    $RCSfile: vtkProgrammableFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_GRAPHICS_EXPORT vtkProgrammableFilter : public vtkPassInputTypeAlgorit
 {
 public:
   static vtkProgrammableFilter *New();
-  vtkTypeMacro(vtkProgrammableFilter,vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkProgrammableFilter,vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

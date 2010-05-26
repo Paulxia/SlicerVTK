@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAssemblyPath.h
+  Module:    $RCSfile: vtkAssemblyPath.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class vtkProp;
 class VTK_COMMON_EXPORT vtkAssemblyPath : public vtkCollection
 {
 public:
-  vtkTypeMacro(vtkAssemblyPath,vtkCollection);
+  vtkTypeRevisionMacro(vtkAssemblyPath,vtkCollection);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnnotation.cxx
+  Module:    $RCSfile: vtkAnnotation.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -31,6 +31,7 @@
 #include "vtkSelection.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkAnnotation, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkAnnotation);
 
 vtkCxxSetObjectMacro(vtkAnnotation, Selection, vtkSelection);

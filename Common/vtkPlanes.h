@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlanes.h
+  Module:    $RCSfile: vtkPlanes.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class VTK_COMMON_EXPORT vtkPlanes : public vtkImplicitFunction
 {
 public:
   static vtkPlanes *New();
-  vtkTypeMacro(vtkPlanes,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkPlanes,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

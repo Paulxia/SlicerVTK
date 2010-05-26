@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransmitPolyDataPiece.h
+  Module:    $RCSfile: vtkTransmitPolyDataPiece.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_PARALLEL_EXPORT vtkTransmitPolyDataPiece : public vtkPolyDataAlgorithm
 {
 public:
   static vtkTransmitPolyDataPiece *New();
-  vtkTypeMacro(vtkTransmitPolyDataPiece, vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTransmitPolyDataPiece, vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

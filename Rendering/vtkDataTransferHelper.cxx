@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataTransferHelper.cxx
+  Module:    $RCSfile: vtkDataTransferHelper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@ static void vtkGetDimensions(int extents[6], int dims[3])
 }
 
 vtkStandardNewMacro(vtkDataTransferHelper);
+vtkCxxRevisionMacro(vtkDataTransferHelper, "$Revision: 1.3 $");
 vtkCxxSetObjectMacro(vtkDataTransferHelper, Texture, vtkTextureObject);
 vtkCxxSetObjectMacro(vtkDataTransferHelper, Array, vtkDataArray);
 //----------------------------------------------------------------------------

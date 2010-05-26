@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPPairwiseExtractHistogram2D.h
+  Module:    $RCSfile: vtkPPairwiseExtractHistogram2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,21 +35,21 @@
 //  vtkExtractHistogram2D vtkPairwiseExtractHistogram2D vtkPExtractHistogram2D
 // 
 // .SECTION Thanks
-//  Developed by David Feng and Philippe Pebay at Sandia National Laboratories
+//  Developed by David Feng at Sandia National Laboratories
 //------------------------------------------------------------------------------
 #ifndef __vtkPPairwiseExtractHistogram2D_h
 #define __vtkPPairwiseExtractHistogram2D_h
-
+//------------------------------------------------------------------------------
 #include "vtkPairwiseExtractHistogram2D.h"
-
+//------------------------------------------------------------------------------
 class vtkExtractHistogram2D;
 class vtkMultiProcessController;
-
+//------------------------------------------------------------------------------
 class VTK_INFOVIS_EXPORT vtkPPairwiseExtractHistogram2D : public vtkPairwiseExtractHistogram2D
 {
 public:
   static vtkPPairwiseExtractHistogram2D* New();
-  vtkTypeMacro(vtkPPairwiseExtractHistogram2D, vtkPairwiseExtractHistogram2D);
+  vtkTypeRevisionMacro(vtkPPairwiseExtractHistogram2D, vtkPairwiseExtractHistogram2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual void SetController(vtkMultiProcessController*);

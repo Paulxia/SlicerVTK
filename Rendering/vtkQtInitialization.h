@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtInitialization.h
+  Module:    $RCSfile: vtkQtInitialization.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_RENDERING_EXPORT vtkQtInitialization : public vtkObject
 {
 public:
   static vtkQtInitialization* New();
-  vtkTypeMacro(vtkQtInitialization, vtkObject);
+  vtkTypeRevisionMacro(vtkQtInitialization, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

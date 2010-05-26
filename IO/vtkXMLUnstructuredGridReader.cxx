@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLUnstructuredGridReader.cxx
+  Module:    $RCSfile: vtkXMLUnstructuredGridReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkXMLUnstructuredGridReader, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkXMLUnstructuredGridReader);
 
 //----------------------------------------------------------------------------

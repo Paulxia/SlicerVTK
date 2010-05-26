@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCriticalSection.cxx
+  Module:    $RCSfile: vtkCriticalSection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkCriticalSection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCriticalSection, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkCriticalSection);
 
 // New for the SimpleCriticalSection

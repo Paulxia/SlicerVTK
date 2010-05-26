@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStreamTracer.h
+  Module:    $RCSfile: vtkStreamTracer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -93,7 +93,7 @@ class vtkAbstractInterpolatedVelocityField;
 class VTK_GRAPHICS_EXPORT vtkStreamTracer : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkStreamTracer,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkStreamTracer,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXYPlotWidget.h
+  Module:    $RCSfile: vtkXYPlotWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_WIDGETS_EXPORT vtkXYPlotWidget : public vtkInteractorObserver
 {
 public:
   static vtkXYPlotWidget *New();
-  vtkTypeMacro(vtkXYPlotWidget,vtkInteractorObserver);
+  vtkTypeRevisionMacro(vtkXYPlotWidget,vtkInteractorObserver);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

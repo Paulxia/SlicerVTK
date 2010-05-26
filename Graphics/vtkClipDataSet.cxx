@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipDataSet.cxx
+  Module:    $RCSfile: vtkClipDataSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkClipDataSet, "$Revision: 1.59 $");
 vtkStandardNewMacro(vtkClipDataSet);
 vtkCxxSetObjectMacro(vtkClipDataSet,ClipFunction,vtkImplicitFunction);
 

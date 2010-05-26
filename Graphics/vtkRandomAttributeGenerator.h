@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRandomAttributeGenerator.h
+  Module:    $RCSfile: vtkRandomAttributeGenerator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ public:
   // Create instance with minimum speed 0.0, maximum speed 1.0.
   static vtkRandomAttributeGenerator *New();
 
-  vtkTypeMacro(vtkRandomAttributeGenerator,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkRandomAttributeGenerator,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

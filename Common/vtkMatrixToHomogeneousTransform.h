@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatrixToHomogeneousTransform.h
+  Module:    $RCSfile: vtkMatrixToHomogeneousTransform.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_COMMON_EXPORT vtkMatrixToHomogeneousTransform : public vtkHomogeneousT
 {
  public:
   static vtkMatrixToHomogeneousTransform *New();
-  vtkTypeMacro(vtkMatrixToHomogeneousTransform,vtkHomogeneousTransform);
+  vtkTypeRevisionMacro(vtkMatrixToHomogeneousTransform,vtkHomogeneousTransform);
   void PrintSelf (ostream& os, vtkIndent indent);
 
   // Set the input matrix.  Any modifications to the matrix will be

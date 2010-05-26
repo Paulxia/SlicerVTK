@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLMaterial.h
+  Module:    $RCSfile: vtkXMLMaterial.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_IO_EXPORT vtkXMLMaterial : public vtkObject
 {
 public:
   static vtkXMLMaterial* New();
-  vtkTypeMacro(vtkXMLMaterial, vtkObject);
+  vtkTypeRevisionMacro(vtkXMLMaterial, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

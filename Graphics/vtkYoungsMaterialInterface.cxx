@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkYoungsMaterialInterface.cxx
+  Module:    $RCSfile: vtkYoungsMaterialInterface.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -128,6 +128,7 @@ public:
 };
 
 // standard constructors and factory
+vtkCxxRevisionMacro(vtkYoungsMaterialInterface, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkYoungsMaterialInterface);
 
 #ifdef DEBUG

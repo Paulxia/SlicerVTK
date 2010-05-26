@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphLayoutStrategy.cxx
+  Module:    $RCSfile: vtkGraphLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 #include "vtkGraph.h"
 
+vtkCxxRevisionMacro(vtkGraphLayoutStrategy, "$Revision: 1.10 $");
 
 void vtkGraphLayoutStrategy::SetGraph(vtkGraph *graph)
 {

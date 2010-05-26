@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTubeFilter.h
+  Module:    $RCSfile: vtkTubeFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -72,7 +72,7 @@ class vtkPoints;
 class VTK_GRAPHICS_EXPORT vtkTubeFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkTubeFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTubeFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

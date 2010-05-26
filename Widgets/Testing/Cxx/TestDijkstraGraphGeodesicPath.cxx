@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestDijkstraGraphGeodesicPath.cxx
+  Module:    $RCSfile: TestDijkstraGraphGeodesicPath.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

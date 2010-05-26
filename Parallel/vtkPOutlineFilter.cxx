@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPOutlineFilter.cxx
+  Module:    $RCSfile: vtkPOutlineFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkPOutlineFilter, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkPOutlineFilter);
 vtkCxxSetObjectMacro(vtkPOutlineFilter, Controller, vtkMultiProcessController);
 

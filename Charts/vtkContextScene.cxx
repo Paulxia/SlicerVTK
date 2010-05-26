@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextScene.cxx
+  Module:    $RCSfile: vtkContextScene.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,8 +31,6 @@
 #include "vtkInteractorStyleRubberBand2D.h"
 #include "vtkObjectFactory.h"
 #include "vtkContextBufferId.h"
-#include "vtkOpenGLContextBufferId.h"
-#include "vtkOpenGLRenderWindow.h"
 
 // My STL containers
 #include <vtkstd/vector>
@@ -68,8 +66,8 @@ public:
         return;
         }
 
-//      cout << "eventId: " << eventId << " -> "
-//           << this->GetStringFromEventId(eventId) << endl;
+      //cout << "eventId: " << eventId << " -> "
+      //    << this->GetStringFromEventId(eventId) << endl;
 
       switch (eventId)
         {
@@ -146,6 +144,7 @@ public:
 };
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkContextScene, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkContextScene);
 vtkCxxSetObjectMacro(vtkContextScene, AnnotationLink, vtkAnnotationLink);
 
@@ -159,8 +158,6 @@ vtkContextScene::vtkContextScene()
   this->Geometry[1] = 0;
   this->BufferId=0;
   this->BufferIdDirty=true;
-  this->BufferIdSupportTested=false;
-  this->BufferIdSupported=false;
   this->UseBufferId = true;
   this->Transform = NULL;
 }
@@ -187,7 +184,6 @@ vtkContextScene::~vtkContextScene()
 void vtkContextScene::SetRenderer(vtkRenderer *r)
 {
   this->Renderer=r;
-  this->BufferIdSupportTested=false;
 }
 
 //-----------------------------------------------------------------------------
@@ -331,20 +327,6 @@ void vtkContextScene::SetDirty(bool isDirty)
     }
 }
 
-// ----------------------------------------------------------------------------
-void vtkContextScene::ReleaseGraphicsResources()
-{
-  if(this->BufferId!=0)
-    {
-    this->BufferId->ReleaseGraphicsResources();
-    }
-  vtkstd::vector<vtkContextItem *>::iterator it;
-  for (it = this->Storage->items.begin(); it != this->Storage->items.end(); ++it)
-    {
-    (*it)->ReleaseGraphicsResources();
-    }
-}
-
 //-----------------------------------------------------------------------------
 vtkWeakPointer<vtkContext2D> vtkContextScene::GetLastPainter()
 {
@@ -352,7 +334,7 @@ vtkWeakPointer<vtkContext2D> vtkContextScene::GetLastPainter()
 }
 
 //-----------------------------------------------------------------------------
-vtkAbstractContextBufferId *vtkContextScene::GetBufferId()
+vtkContextBufferId *vtkContextScene::GetBufferId()
 {
   return this->BufferId;
 }
@@ -408,21 +390,6 @@ void vtkContextScene::ProcessSelectionEvent(vtkObject* caller, void* callData)
 }
 
 // ----------------------------------------------------------------------------
-void vtkContextScene::TestBufferIdSupport()
-{
-  if(!this->BufferIdSupportTested)
-    {
-    vtkOpenGLContextBufferId *b=vtkOpenGLContextBufferId::New();
-    b->SetContext(static_cast<vtkOpenGLRenderWindow *>(
-                    this->Renderer->GetRenderWindow()));
-    this->BufferIdSupported=b->IsSupported();
-    b->ReleaseGraphicsResources();
-    b->Delete();
-    this->BufferIdSupportTested=true;
-    }
-}
-
-// ----------------------------------------------------------------------------
 void vtkContextScene::UpdateBufferId()
 {
   int lowerLeft[2];
@@ -437,10 +404,7 @@ void vtkContextScene::UpdateBufferId()
     {
     if(this->BufferId==0)
       {
-      vtkOpenGLContextBufferId *b=vtkOpenGLContextBufferId::New();
-      this->BufferId=b;
-      b->SetContext(static_cast<vtkOpenGLRenderWindow *>(
-                      this->Renderer->GetRenderWindow()));
+      this->BufferId=vtkContextBufferId::New();
       }
     this->BufferId->SetWidth(width);
     this->BufferId->SetHeight(height);
@@ -458,8 +422,7 @@ void vtkContextScene::UpdateBufferId()
 vtkIdType vtkContextScene::GetPickedItem(int x, int y)
 {
   vtkIdType result = -1;
-  this->TestBufferIdSupport();
-  if (this->UseBufferId && this->BufferIdSupported)
+  if (this->UseBufferId)
     {
     this->UpdateBufferId();
     result=this->BufferId->GetPickedItem(x,y);
@@ -476,20 +439,6 @@ vtkIdType vtkContextScene::GetPickedItem(int x, int y)
         break;
         }
       }
-    }
-
-  // Work-around for Qt bug under Linux (and maybe other platforms), 4.5.2
-  // or 4.6.2 :
-  // when the cursor leaves the window, Qt returns an extra mouse move event
-  // with coordinates out of the window area. The problem is that the pixel
-  // underneath is not owned by the OpenGL context, hence the bufferid contains
-  // garbage (see OpenGL pixel ownership test).
-  // As a workaround, any value out of the scope of
-  // [-1,this->GetNumberOfItems()-1] is set to -1 (<=> no hit)
-
-  if(result<-1 || result>=this->GetNumberOfItems())
-    {
-    result=-1;
     }
 
   assert("post: valid_result" && result>=-1 &&

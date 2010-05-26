@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridVolumeMapper.cxx
+  Module:    $RCSfile: vtkUnstructuredGridVolumeMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkInformation.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridVolumeMapper, "$Revision: 1.1 $");
 
 // Construct a vtkUnstructuredGridVolumeMapper with empty scalar input and
 // clipping off.

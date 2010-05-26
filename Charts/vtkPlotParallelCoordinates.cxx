@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlotParallelCoordinates.cxx
+  Module:    $RCSfile: vtkPlotParallelCoordinates.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,7 +20,6 @@
 #include "vtkAxis.h"
 #include "vtkPen.h"
 #include "vtkFloatArray.h"
-#include "vtkDoubleArray.h"
 #include "vtkVector.h"
 #include "vtkTransform2D.h"
 #include "vtkContextDevice2D.h"
@@ -29,13 +28,8 @@
 #include "vtkTable.h"
 #include "vtkDataArray.h"
 #include "vtkIdTypeArray.h"
-#include "vtkStringArray.h"
 #include "vtkTimeStamp.h"
 #include "vtkInformation.h"
-#include "vtkSmartPointer.h"
-
-// Need to turn some arrays of strings into categories
-#include "vtkStringToCategory.h"
 
 #include "vtkObjectFactory.h"
 
@@ -55,6 +49,7 @@ public:
   bool SelectionInitialized;
 };
 
+vtkCxxRevisionMacro(vtkPlotParallelCoordinates, "$Revision: 1.3 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkPlotParallelCoordinates);
@@ -65,7 +60,6 @@ vtkPlotParallelCoordinates::vtkPlotParallelCoordinates()
   this->Points = NULL;
   this->Storage = new vtkPlotParallelCoordinates::Private;
   this->Parent = NULL;
-  this->Pen->SetColor(0, 0, 0, 25);
 }
 
 //-----------------------------------------------------------------------------
@@ -148,7 +142,7 @@ bool vtkPlotParallelCoordinates::Paint(vtkContext2D *painter)
     }
 
   // Draw all of the lines
-  painter->ApplyPen(this->Pen);
+  painter->GetPen()->SetColor(230, 230, 230, 255);
   for (size_t i = 0; i < rows; ++i)
     {
     for (size_t j = 0; j < cols; ++j)
@@ -161,7 +155,7 @@ bool vtkPlotParallelCoordinates::Paint(vtkContext2D *painter)
   // Now draw the selected lines
   if (this->Selection)
     {
-    painter->GetPen()->SetColor(255, 0, 0, 100);
+    painter->GetPen()->SetColor(255, 0, 0, 255);
     for (vtkIdType i = 0; i < this->Selection->GetNumberOfTuples(); ++i)
       {
       for (size_t j = 0; j < cols; ++j)
@@ -262,31 +256,6 @@ bool vtkPlotParallelCoordinates::ResetSelectionRange()
 }
 
 //-----------------------------------------------------------------------------
-void vtkPlotParallelCoordinates::SetInput(vtkTable* table)
-{
-  if (table == this->Data->GetInput() && (!table ||
-                                          table->GetMTime() < this->BuildTime))
-    {
-    return;
-    }
-
-  this->vtkPlot::SetInput(table);
-  if (this->Parent && table)
-    {
-    // By default make the first 10 columns visible in a plot.
-    for (vtkIdType i = 0; i < table->GetNumberOfColumns() && i < 10; ++i)
-      {
-      this->Parent->SetColumnVisibility(table->GetColumnName(i), true);
-      }
-    }
-  else if (this->Parent)
-    {
-    // No table, therefore no visible columns
-    this->Parent->GetVisibleColumns()->SetNumberOfTuples(0);
-    }
-}
-
-//-----------------------------------------------------------------------------
 bool vtkPlotParallelCoordinates::UpdateTableCache(vtkTable *table)
 {
   // Each axis is a column in our storage array, they are scaled from 0.0 to 1.0
@@ -295,69 +264,21 @@ bool vtkPlotParallelCoordinates::UpdateTableCache(vtkTable *table)
     return false;
     }
 
-  vtkStringArray* cols = this->Parent->GetVisibleColumns();
-  this->Storage->resize(cols->GetNumberOfTuples());
-  this->Storage->AxisPos.resize(cols->GetNumberOfTuples());
+  this->Storage->resize(table->GetNumberOfColumns());
+  this->Storage->AxisPos.resize(table->GetNumberOfColumns());
   vtkIdType rows = table->GetNumberOfRows();
-
-  for (vtkIdType i = 0; i < cols->GetNumberOfTuples(); ++i)
+  for (vtkIdType i = 0; i < table->GetNumberOfColumns(); ++i)
     {
     vtkstd::vector<float>& col = this->Storage->at(i);
-    vtkAxis* axis = this->Parent->GetAxis(i);
     col.resize(rows);
-    vtkSmartPointer<vtkDataArray> data =
-        vtkDataArray::SafeDownCast(table->GetColumnByName(cols->GetValue(i)));
+    vtkDataArray* data = vtkDataArray::SafeDownCast(table->GetColumn(i));
     if (!data)
       {
-      if (table->GetColumnByName(cols->GetValue(i))->IsA("vtkStringArray"))
-        {
-        // We have a different kind of column - attempt to make it into an enum
-        vtkStringToCategory* stoc = vtkStringToCategory::New();
-        stoc->SetInput(table);
-        stoc->SetInputArrayToProcess(0, 0, 0,
-                                     vtkDataObject::FIELD_ASSOCIATION_ROWS,
-                                     cols->GetValue(i));
-        stoc->SetCategoryArrayName("enumPC");
-        stoc->Update();
-        vtkTable* table2 = vtkTable::SafeDownCast(stoc->GetOutput());
-        vtkTable* stringTable = vtkTable::SafeDownCast(stoc->GetOutput(1));
-        if (table2)
-          {
-          data = vtkDataArray::SafeDownCast(table2->GetColumnByName("enumPC"));
-          }
-        if (stringTable && stringTable->GetColumnByName("Strings"))
-          {
-          vtkStringArray* strings =
-              vtkStringArray::SafeDownCast(stringTable->GetColumnByName("Strings"));
-          vtkSmartPointer<vtkDoubleArray> arr =
-              vtkSmartPointer<vtkDoubleArray>::New();
-          for (vtkIdType j = 0; j < strings->GetNumberOfTuples(); ++j)
-            {
-            arr->InsertNextValue(j);
-            }
-          // Now we need to set the range on the string axis
-          axis->SetTickLabels(strings);
-          axis->SetTickPositions(arr);
-          if (strings->GetNumberOfTuples() > 1)
-            {
-            axis->SetRange(0.0, strings->GetNumberOfTuples()-1);
-            }
-          else
-            {
-            axis->SetRange(-0.1, 0.1);
-            }
-          axis->Update();
-          }
-        stoc->Delete();
-        }
-      // If we still don't have a valid data array then skip this column.
-      if (!data)
-        {
-        continue;
-        }
+      continue;
       }
 
     // Also need the range from the appropriate axis, to normalize points
+    vtkAxis* axis = this->Parent->GetAxis(i);
     float min = axis->GetMinimum();
     float max = axis->GetMaximum();
     float scale = 1.0f / (max - min);

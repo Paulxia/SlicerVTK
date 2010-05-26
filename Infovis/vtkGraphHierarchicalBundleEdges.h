@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphHierarchicalBundleEdges.h
+  Module:    $RCSfile: vtkGraphHierarchicalBundleEdges.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class VTK_INFOVIS_EXPORT vtkGraphHierarchicalBundleEdges : public vtkGraphAlgori
 public:
   static vtkGraphHierarchicalBundleEdges *New();
 
-  vtkTypeMacro(vtkGraphHierarchicalBundleEdges,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkGraphHierarchicalBundleEdges,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

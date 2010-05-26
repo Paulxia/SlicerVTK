@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestSeedWidgetNonUniformRepresentations.cxx
+  Module:    $RCSfile: TestSeedWidgetNonUniformRepresentations.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

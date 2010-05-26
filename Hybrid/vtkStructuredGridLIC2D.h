@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridLIC2D.h
+  Module:    $RCSfile: vtkStructuredGridLIC2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ class VTK_HYBRID_EXPORT vtkStructuredGridLIC2D : public vtkStructuredGridAlgorit
 {
 public:
   static vtkStructuredGridLIC2D* New();
-  vtkTypeMacro(vtkStructuredGridLIC2D, vtkStructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkStructuredGridLIC2D, vtkStructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

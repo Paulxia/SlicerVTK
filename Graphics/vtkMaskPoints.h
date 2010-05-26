@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMaskPoints.h
+  Module:    $RCSfile: vtkMaskPoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkMaskPoints : public vtkPolyDataAlgorithm
 {
 public:
   static vtkMaskPoints *New();
-  vtkTypeMacro(vtkMaskPoints,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkMaskPoints,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeMapLayout.cxx
+  Module:    $RCSfile: vtkTreeMapLayout.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkTree.h"
 #include "vtkTreeMapLayoutStrategy.h"
 
+vtkCxxRevisionMacro(vtkTreeMapLayout, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkTreeMapLayout);
 
 vtkTreeMapLayout::vtkTreeMapLayout()

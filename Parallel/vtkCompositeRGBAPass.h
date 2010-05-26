@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeRGBAPass.h
+  Module:    $RCSfile: vtkCompositeRGBAPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class VTK_PARALLEL_EXPORT vtkCompositeRGBAPass : public vtkRenderPass
 {
 public:
   static vtkCompositeRGBAPass *New();
-  vtkTypeMacro(vtkCompositeRGBAPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkCompositeRGBAPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

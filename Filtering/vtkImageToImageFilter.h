@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageToImageFilter.h
+  Module:    $RCSfile: vtkImageToImageFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class vtkMultiThreader;
 class VTK_FILTERING_EXPORT vtkImageToImageFilter : public vtkImageSource
 {
 public:
-  vtkTypeMacro(vtkImageToImageFilter,vtkImageSource);
+  vtkTypeRevisionMacro(vtkImageToImageFilter,vtkImageSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

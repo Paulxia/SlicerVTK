@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleRubberBandPick.h
+  Module:    $RCSfile: vtkInteractorStyleRubberBandPick.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleRubberBandPick : public vtkInteract
 {
 public:
   static vtkInteractorStyleRubberBandPick *New();
-  vtkTypeMacro(vtkInteractorStyleRubberBandPick, vtkInteractorStyleTrackballCamera);
+  vtkTypeRevisionMacro(vtkInteractorStyleRubberBandPick, vtkInteractorStyleTrackballCamera);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   void StartSelect();

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticTetra.h
+  Module:    $RCSfile: vtkQuadraticTetra.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class VTK_FILTERING_EXPORT vtkQuadraticTetra : public vtkNonLinearCell
 {
 public:
   static vtkQuadraticTetra *New();
-  vtkTypeMacro(vtkQuadraticTetra,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkQuadraticTetra,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDicer.h
+  Module:    $RCSfile: vtkDicer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@
 class VTK_GRAPHICS_EXPORT vtkDicer : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkDicer,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkDicer,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

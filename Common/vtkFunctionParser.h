@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFunctionParser.h
+  Module:    $RCSfile: vtkFunctionParser.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -116,7 +116,7 @@ class VTK_COMMON_EXPORT vtkFunctionParser : public vtkObject
 {
 public:
   static vtkFunctionParser *New();
-  vtkTypeMacro(vtkFunctionParser, vtkObject);
+  vtkTypeRevisionMacro(vtkFunctionParser, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Decription:

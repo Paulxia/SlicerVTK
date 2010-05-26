@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSimple3DCirclesStrategy.h
+  Module:    $RCSfile: vtkSimple3DCirclesStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_INFOVIS_EXPORT vtkSimple3DCirclesStrategy : public vtkGraphLayoutStrat
   {
 public:
   static vtkSimple3DCirclesStrategy * New();
-  vtkTypeMacro(vtkSimple3DCirclesStrategy,vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkSimple3DCirclesStrategy,vtkGraphLayoutStrategy);
   void PrintSelf( ostream& os, vtkIndent indent );
 
 //BTX

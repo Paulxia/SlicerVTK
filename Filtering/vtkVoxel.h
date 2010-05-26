@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVoxel.h
+  Module:    $RCSfile: vtkVoxel.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_FILTERING_EXPORT vtkVoxel : public vtkCell3D
 {
 public:
   static vtkVoxel *New();
-  vtkTypeMacro(vtkVoxel,vtkCell3D);
+  vtkTypeRevisionMacro(vtkVoxel,vtkCell3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

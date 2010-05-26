@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeRayCastCompositeFunction.cxx
+  Module:    $RCSfile: vtkVolumeRayCastCompositeFunction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkVolumeRayCastCompositeFunction, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkVolumeRayCastCompositeFunction);
 
 #define VTK_REMAINING_OPACITY           0.02

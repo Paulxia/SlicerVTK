@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtTableView.cxx
+  Module:    $RCSfile: vtkQtTableView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,6 +49,7 @@
 #include "vtkTable.h"
 #include "vtkViewTheme.h"
 
+vtkCxxRevisionMacro(vtkQtTableView, "$Revision: 1.22 $");
 vtkStandardNewMacro(vtkQtTableView);
 
 //----------------------------------------------------------------------------
@@ -416,8 +417,6 @@ void vtkQtTableView::SetVTKSelection()
 //----------------------------------------------------------------------------
 void vtkQtTableView::Update()
 {
-  vtkView::Update() ;
-   
   if(this->InSelectionChanged)
     {
     this->InSelectionChanged = false;
@@ -430,7 +429,7 @@ void vtkQtTableView::Update()
     this->TableAdapter->reset();
     return;
     }
-  
+
   vtkAlgorithmOutput *selConn, *annConn, *conn;
   conn = rep->GetInputConnection();
   annConn = rep->GetInternalAnnotationOutputPort();

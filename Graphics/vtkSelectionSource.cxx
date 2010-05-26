@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSelectionSource.cxx
+  Module:    $RCSfile: vtkSelectionSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkstd/vector"
 #include "vtkstd/set"
 
+vtkCxxRevisionMacro(vtkSelectionSource, "$Revision: 1.27 $");
 vtkStandardNewMacro(vtkSelectionSource);
 
 class vtkSelectionSourceInternals

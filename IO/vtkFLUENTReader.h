@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFLUENTReader.h
+  Module:    $RCSfile: vtkFLUENTReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_IO_EXPORT vtkFLUENTReader : public vtkMultiBlockDataSetAlgorithm
 {
 public:
   static vtkFLUENTReader *New();
-  vtkTypeMacro(vtkFLUENTReader,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkFLUENTReader,vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

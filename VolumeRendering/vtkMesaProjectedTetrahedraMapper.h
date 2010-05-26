@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaProjectedTetrahedraMapper.h
+  Module:    $RCSfile: vtkMesaProjectedTetrahedraMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class vtkFloatArray;
 class VTK_VOLUMERENDERING_EXPORT vtkMesaProjectedTetrahedraMapper : public vtkProjectedTetrahedraMapper
 {
 public:
-  vtkTypeMacro(vtkMesaProjectedTetrahedraMapper,
+  vtkTypeRevisionMacro(vtkMesaProjectedTetrahedraMapper,
                        vtkProjectedTetrahedraMapper);
   static vtkMesaProjectedTetrahedraMapper *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);

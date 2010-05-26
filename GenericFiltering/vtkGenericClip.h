@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericClip.h
+  Module:    $RCSfile: vtkGenericClip.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -69,7 +69,7 @@ class vtkIncrementalPointLocator;
 class VTK_GENERIC_FILTERING_EXPORT vtkGenericClip : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkGenericClip,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkGenericClip,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

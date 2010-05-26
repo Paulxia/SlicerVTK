@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRowQueryToTable.cxx
+  Module:    $RCSfile: vtkRowQueryToTable.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 
 #include <vtksys/ios/sstream>
 
+vtkCxxRevisionMacro(vtkRowQueryToTable, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkRowQueryToTable);
 
 vtkRowQueryToTable::vtkRowQueryToTable()
@@ -104,10 +105,6 @@ int vtkRowQueryToTable::RequestData(
     if (type == VTK_TYPE_UINT64)
       {
       arr = vtkTypeUInt64Array::New();
-      }
-    else if (type == 0)
-      {
-      arr = vtkAbstractArray::CreateArray(VTK_DOUBLE);
       }
     else
       {

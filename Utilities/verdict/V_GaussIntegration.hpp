@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    V_GaussIntegration.hpp
+  Module:    $RCSfile: V_GaussIntegration.hpp,v $
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.

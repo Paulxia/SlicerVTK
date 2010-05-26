@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParametricSpline.cxx
+  Module:    $RCSfile: vtkParametricSpline.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkPoints.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkParametricSpline, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkParametricSpline);
 
 //----------------------------------------------------------------------------

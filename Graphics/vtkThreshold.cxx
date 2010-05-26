@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkThreshold.cxx
+  Module:    $RCSfile: vtkThreshold.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkThreshold, "$Revision: 1.73 $");
 vtkStandardNewMacro(vtkThreshold);
 
 // Construct with lower threshold=0, upper threshold=1, and threshold 

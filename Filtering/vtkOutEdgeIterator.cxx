@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOutEdgeIterator.cxx
+  Module:    $RCSfile: vtkOutEdgeIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkGraphEdge.h"
 
 vtkCxxSetObjectMacro(vtkOutEdgeIterator, Graph, vtkGraph);
+vtkCxxRevisionMacro(vtkOutEdgeIterator, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkOutEdgeIterator);
 //----------------------------------------------------------------------------
 vtkOutEdgeIterator::vtkOutEdgeIterator()

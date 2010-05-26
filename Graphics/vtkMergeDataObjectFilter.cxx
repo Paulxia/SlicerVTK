@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeDataObjectFilter.cxx
+  Module:    $RCSfile: vtkMergeDataObjectFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkMergeDataObjectFilter, "$Revision: 1.24 $");
 vtkStandardNewMacro(vtkMergeDataObjectFilter);
 
 //----------------------------------------------------------------------------

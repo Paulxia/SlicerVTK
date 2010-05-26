@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    VerdictVector.cpp
+  Module:    $RCSfile: VerdictVector.cpp,v $
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.
@@ -21,6 +21,8 @@
  *
  */
 
+
+#define VERDICT_EXPORTS
 
 #include "verdict.h"
 #include <math.h>

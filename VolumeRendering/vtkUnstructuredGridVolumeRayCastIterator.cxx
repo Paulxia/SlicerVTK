@@ -3,7 +3,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridVolumeRayCastIterator.cxx
+  Module:    $RCSfile: vtkUnstructuredGridVolumeRayCastIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 =========================================================================*/
 #include "vtkUnstructuredGridVolumeRayCastIterator.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridVolumeRayCastIterator, "$Revision: 1.1 $");
 
 //----------------------------------------------------------------------------
 

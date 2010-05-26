@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDivergence.h
+  Module:    $RCSfile: vtkImageDivergence.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_IMAGING_EXPORT vtkImageDivergence : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageDivergence *New();
-  vtkTypeMacro(vtkImageDivergence,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageDivergence,vtkThreadedImageAlgorithm);
 
 protected:
   vtkImageDivergence();

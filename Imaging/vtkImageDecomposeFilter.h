@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDecomposeFilter.h
+  Module:    $RCSfile: vtkImageDecomposeFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ public:
   // Description:
   // Construct an instance of vtkImageDecomposeFilter filter with default
   // dimensionality 3.
-  vtkTypeMacro(vtkImageDecomposeFilter,vtkImageIterateFilter);
+  vtkTypeRevisionMacro(vtkImageDecomposeFilter,vtkImageIterateFilter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

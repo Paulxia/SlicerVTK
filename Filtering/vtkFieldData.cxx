@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFieldData.cxx
+  Module:    $RCSfile: vtkFieldData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkIdList.h"
 #include "vtkInformation.h"
 
+vtkCxxRevisionMacro(vtkFieldData, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkFieldData);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLStructuredDataReader.cxx
+  Module:    $RCSfile: vtkXMLStructuredDataReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkXMLDataElement.h"
 #include "vtkXMLDataParser.h"
 
+vtkCxxRevisionMacro(vtkXMLStructuredDataReader, "$Revision: 1.29 $");
 
 //----------------------------------------------------------------------------
 vtkXMLStructuredDataReader::vtkXMLStructuredDataReader()

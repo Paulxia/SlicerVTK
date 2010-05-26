@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineWidget.h
+  Module:    $RCSfile: vtkSplineWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -109,7 +109,7 @@ public:
   // Instantiate the object.
   static vtkSplineWidget *New();
 
-  vtkTypeMacro(vtkSplineWidget,vtk3DWidget);
+  vtkTypeRevisionMacro(vtkSplineWidget,vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

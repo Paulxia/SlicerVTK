@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSeedRepresentation.h
+  Module:    $RCSfile: vtkSeedRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ public:
 
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkSeedRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkSeedRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

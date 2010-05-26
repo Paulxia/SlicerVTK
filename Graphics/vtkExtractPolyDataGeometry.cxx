@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractPolyDataGeometry.cxx
+  Module:    $RCSfile: vtkExtractPolyDataGeometry.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkExtractPolyDataGeometry, "$Revision: 1.27 $");
 vtkStandardNewMacro(vtkExtractPolyDataGeometry);
 vtkCxxSetObjectMacro(vtkExtractPolyDataGeometry,
                      ImplicitFunction,vtkImplicitFunction);

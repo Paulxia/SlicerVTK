@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExecutiveCollection.h
+  Module:    $RCSfile: vtkExecutiveCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_FILTERING_EXPORT vtkExecutiveCollection : public vtkCollection
 {
 public:
   static vtkExecutiveCollection *New();
-  vtkTypeMacro(vtkExecutiveCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkExecutiveCollection,vtkCollection);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

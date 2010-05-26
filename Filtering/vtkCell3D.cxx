@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCell3D.cxx
+  Module:    $RCSfile: vtkCell3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkCellArray.h"
 #include "vtkDoubleArray.h"
 
+vtkCxxRevisionMacro(vtkCell3D, "$Revision: 1.3 $");
 
 vtkCell3D::vtkCell3D()
 {

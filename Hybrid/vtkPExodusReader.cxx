@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPExodusReader.cxx
+  Module:    $RCSfile: vtkPExodusReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,6 +52,7 @@
 #define DEBUG 0
 #define vtkPExodusReaderMAXPATHLEN 2048
 
+vtkCxxRevisionMacro(vtkPExodusReader, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkPExodusReader);
 
 class vtkPExodusReaderUpdateProgress : public vtkCommand

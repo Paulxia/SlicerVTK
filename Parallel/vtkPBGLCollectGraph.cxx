@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLCollectGraph.cxx
+  Module:    $RCSfile: vtkPBGLCollectGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,6 +56,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkPBGLCollectGraph, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkPBGLCollectGraph);
 
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaDisplayListPainter.h
+  Module:    $RCSfile: vtkMesaDisplayListPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_RENDERING_EXPORT vtkMesaDisplayListPainter : public vtkDisplayListPain
 {
 public:
   static vtkMesaDisplayListPainter* New();
-  vtkTypeMacro(vtkMesaDisplayListPainter, vtkDisplayListPainter);
+  vtkTypeRevisionMacro(vtkMesaDisplayListPainter, vtkDisplayListPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 

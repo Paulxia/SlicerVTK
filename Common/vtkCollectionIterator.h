@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCollectionIterator.h
+  Module:    $RCSfile: vtkCollectionIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkCollectionElement;
 class VTK_COMMON_EXPORT vtkCollectionIterator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkCollectionIterator,vtkObject);
+  vtkTypeRevisionMacro(vtkCollectionIterator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkCollectionIterator* New();
   

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayIterator.h
+  Module:    $RCSfile: vtkArrayIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class vtkAbstractArray;
 class VTK_COMMON_EXPORT vtkArrayIterator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkArrayIterator, vtkObject);
+  vtkTypeRevisionMacro(vtkArrayIterator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnicodeString.h
+  Module:    $RCSfile: vtkUnicodeString.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

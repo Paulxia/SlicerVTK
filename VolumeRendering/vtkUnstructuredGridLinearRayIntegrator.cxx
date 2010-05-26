@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridLinearRayIntegrator.cxx
+  Module:    $RCSfile: vtkUnstructuredGridLinearRayIntegrator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -310,6 +310,7 @@ inline void vtkLinearRayIntegratorTransferFunction::GetColor(double x,
 
 //-----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkUnstructuredGridLinearRayIntegrator, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkUnstructuredGridLinearRayIntegrator);
 
 vtkUnstructuredGridLinearRayIntegrator::vtkUnstructuredGridLinearRayIntegrator()

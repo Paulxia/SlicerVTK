@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOctreePointLocator.h
+  Module:    $RCSfile: vtkOctreePointLocator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class vtkPolyData;
 class VTK_FILTERING_EXPORT vtkOctreePointLocator : public vtkAbstractPointLocator
 {
 public:
-  vtkTypeMacro(vtkOctreePointLocator, vtkAbstractPointLocator);
+  vtkTypeRevisionMacro(vtkOctreePointLocator, vtkAbstractPointLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkOctreePointLocator *New();

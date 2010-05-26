@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkServerSocket.cxx
+  Module:    $RCSfile: vtkServerSocket.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkServerSocket);
+vtkCxxRevisionMacro(vtkServerSocket, "$Revision: 1.2 $");
 //-----------------------------------------------------------------------------
 vtkServerSocket::vtkServerSocket()
 {

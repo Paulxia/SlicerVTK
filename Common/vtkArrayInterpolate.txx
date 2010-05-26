@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrayInterpolate.txx
+  Module:    $RCSfile: vtkArrayInterpolate.txx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

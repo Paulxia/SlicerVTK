@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOutlineFilter.h
+  Module:    $RCSfile: vtkOutlineFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_GRAPHICS_EXPORT vtkOutlineFilter : public vtkPolyDataAlgorithm
 {
 public:
   static vtkOutlineFilter *New();
-  vtkTypeMacro(vtkOutlineFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkOutlineFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

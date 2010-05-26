@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredPointsGeometryFilter.cxx
+  Module:    $RCSfile: vtkStructuredPointsGeometryFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkStructuredPointsGeometryFilter.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkStructuredPointsGeometryFilter, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkStructuredPointsGeometryFilter);
 
 vtkStructuredPointsGeometryFilter::vtkStructuredPointsGeometryFilter()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticWedge.h
+  Module:    $RCSfile: vtkQuadraticWedge.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_FILTERING_EXPORT vtkQuadraticWedge : public vtkNonLinearCell
 {
 public:
   static vtkQuadraticWedge *New();
-  vtkTypeMacro(vtkQuadraticWedge,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkQuadraticWedge,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

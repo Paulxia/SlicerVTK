@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ProjectedTetrahedraZoomIn.cxx
+  Module:    $RCSfile: ProjectedTetrahedraZoomIn.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

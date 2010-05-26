@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractPointLocator.cxx
+  Module:    $RCSfile: vtkAbstractPointLocator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkDataSet.h"
 #include "vtkIdList.h"
 
+vtkCxxRevisionMacro(vtkAbstractPointLocator, "$Revision: 1.1 $");
 
 vtkAbstractPointLocator::vtkAbstractPointLocator()
 {

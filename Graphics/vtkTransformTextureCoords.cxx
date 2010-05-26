@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransformTextureCoords.cxx
+  Module:    $RCSfile: vtkTransformTextureCoords.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPointData.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkTransformTextureCoords, "$Revision: 1.37 $");
 vtkStandardNewMacro(vtkTransformTextureCoords);
 
 // Create instance with Origin (0.5,0.5,0.5); Position (0,0,0); and Scale

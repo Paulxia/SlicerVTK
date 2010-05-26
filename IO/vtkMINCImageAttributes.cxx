@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMINCImageAttributes.cxx
+  Module:    $RCSfile: vtkMINCImageAttributes.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -122,6 +122,7 @@ private:
 };
 
 //--------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkMINCImageAttributes, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkMINCImageAttributes);
 
 vtkCxxSetObjectMacro(vtkMINCImageAttributes,ImageMin,vtkDoubleArray);

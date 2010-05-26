@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractCells.cxx
+  Module:    $RCSfile: vtkExtractCells.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkInformationVector.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkExtractCells, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkExtractCells);
 
 #include <vtkstd/set>

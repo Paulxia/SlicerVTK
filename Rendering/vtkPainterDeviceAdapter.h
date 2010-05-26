@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPainterDeviceAdapter.h
+  Module:    $RCSfile: vtkPainterDeviceAdapter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,7 +52,7 @@ class VTK_RENDERING_EXPORT vtkPainterDeviceAdapter : public vtkObject
 {
 public:
   static vtkPainterDeviceAdapter* New();
-  vtkTypeMacro(vtkPainterDeviceAdapter, vtkObject);
+  vtkTypeRevisionMacro(vtkPainterDeviceAdapter, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

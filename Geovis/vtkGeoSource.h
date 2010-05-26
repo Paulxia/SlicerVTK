@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoSource.h
+  Module:    $RCSfile: vtkGeoSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkMutexLock;
 class VTK_GEOVIS_EXPORT vtkGeoSource : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkGeoSource,vtkObject);
+  vtkTypeRevisionMacro(vtkGeoSource,vtkObject);
 
   vtkGeoSource();
   ~vtkGeoSource();

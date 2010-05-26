@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoView2D.cxx
+  Module:    $RCSfile: vtkGeoView2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkViewTheme.h"
 
+vtkCxxRevisionMacro(vtkGeoView2D, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkGeoView2D);
 vtkCxxSetObjectMacro(vtkGeoView2D, Surface, vtkGeoTerrain2D);
 

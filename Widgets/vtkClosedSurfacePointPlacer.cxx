@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClosedSurfacePointPlacer.cxx
+  Module:    $RCSfile: vtkClosedSurfacePointPlacer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include <vtkstd/algorithm>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkClosedSurfacePointPlacer, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkClosedSurfacePointPlacer);
 vtkCxxSetObjectMacro(vtkClosedSurfacePointPlacer, BoundingPlanes,vtkPlaneCollection);
 

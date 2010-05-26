@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNonMergingPointLocator.h
+  Module:    $RCSfile: vtkNonMergingPointLocator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_FILTERING_EXPORT vtkNonMergingPointLocator : public vtkPointLocator
 public:
   static vtkNonMergingPointLocator * New();
   
-  vtkTypeMacro( vtkNonMergingPointLocator, vtkPointLocator );
+  vtkTypeRevisionMacro( vtkNonMergingPointLocator, vtkPointLocator );
   void PrintSelf( ostream & os, vtkIndent indent );
 
 //BTX

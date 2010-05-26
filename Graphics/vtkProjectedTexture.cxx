@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProjectedTexture.cxx
+  Module:    $RCSfile: vtkProjectedTexture.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkProjectedTexture, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkProjectedTexture);
 
 // Description:

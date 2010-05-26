@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArcPlotter.cxx
+  Module:    $RCSfile: vtkArcPlotter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkArcPlotter, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkArcPlotter);
 
 vtkCxxSetObjectMacro(vtkArcPlotter,Camera,vtkCamera);

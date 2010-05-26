@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageEuclideanDistance.h
+  Module:    $RCSfile: vtkImageEuclideanDistance.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,7 +52,7 @@ class VTK_IMAGING_EXPORT vtkImageEuclideanDistance : public vtkImageDecomposeFil
 {
 public:
   static vtkImageEuclideanDistance *New();
-  vtkTypeMacro(vtkImageEuclideanDistance,vtkImageDecomposeFilter);
+  vtkTypeRevisionMacro(vtkImageEuclideanDistance,vtkImageDecomposeFilter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

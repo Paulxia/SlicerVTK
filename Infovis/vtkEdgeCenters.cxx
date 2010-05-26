@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEdgeCenters.cxx
+  Module:    $RCSfile: vtkEdgeCenters.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkEdgeCenters, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkEdgeCenters);
 
 // Construct object with vertex cell generation turned off.

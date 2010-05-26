@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDirectedAcyclicGraph.cxx
+  Module:    $RCSfile: vtkDirectedAcyclicGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 
 using vtksys_stl::vector;
 
+vtkCxxRevisionMacro(vtkDirectedAcyclicGraph, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkDirectedAcyclicGraph);
 //----------------------------------------------------------------------------
 vtkDirectedAcyclicGraph::vtkDirectedAcyclicGraph()

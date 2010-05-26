@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkSQLDatabase.cxx
+Module:    $RCSfile: vtkSQLDatabase.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -82,6 +82,7 @@ public:
 // Used to clean up the Callbacks 
 static vtkSQLDatabaseCleanup vtkCleanupSQLDatabaseGlobal;
 
+vtkCxxRevisionMacro(vtkSQLDatabase, "$Revision: 1.50 $");
 vtkInformationKeyMacro(vtkSQLDatabase, DATABASE, ObjectBase);
 
 // ----------------------------------------------------------------------

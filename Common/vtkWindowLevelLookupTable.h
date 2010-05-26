@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWindowLevelLookupTable.h
+  Module:    $RCSfile: vtkWindowLevelLookupTable.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_COMMON_EXPORT vtkWindowLevelLookupTable : public vtkLookupTable
 {
 public:
   static vtkWindowLevelLookupTable *New();
-  vtkTypeMacro(vtkWindowLevelLookupTable,vtkLookupTable);
+  vtkTypeRevisionMacro(vtkWindowLevelLookupTable,vtkLookupTable);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

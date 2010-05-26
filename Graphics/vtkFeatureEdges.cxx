@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFeatureEdges.cxx
+  Module:    $RCSfile: vtkFeatureEdges.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkPointData.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkFeatureEdges, "$Revision: 1.77 $");
 vtkStandardNewMacro(vtkFeatureEdges);
 
 // Construct object with feature angle = 30; all types of edges, except 

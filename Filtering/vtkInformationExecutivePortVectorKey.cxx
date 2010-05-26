@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationExecutivePortVectorKey.cxx
+  Module:    $RCSfile: vtkInformationExecutivePortVectorKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 // make garbage collecting easier but results in a weak reference.
 #define VTK_USE_SINGLE_REF 1
 
+vtkCxxRevisionMacro(vtkInformationExecutivePortVectorKey, "$Revision: 1.11 $");
 
 //----------------------------------------------------------------------------
 vtkInformationExecutivePortVectorKey::vtkInformationExecutivePortVectorKey(const char* name, const char* location):

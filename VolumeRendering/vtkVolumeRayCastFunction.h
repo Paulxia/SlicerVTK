@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeRayCastFunction.h
+  Module:    $RCSfile: vtkVolumeRayCastFunction.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -130,7 +130,7 @@ typedef struct
 class VTK_VOLUMERENDERING_EXPORT vtkVolumeRayCastFunction : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkVolumeRayCastFunction,vtkObject);
+  vtkTypeRevisionMacro(vtkVolumeRayCastFunction,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlaybackWidget.h
+  Module:    $RCSfile: vtkPlaybackWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ public:
 
   // Description:
   // Standar VTK class methods.
-  vtkTypeMacro(vtkPlaybackWidget,vtkBorderWidget);
+  vtkTypeRevisionMacro(vtkPlaybackWidget,vtkBorderWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

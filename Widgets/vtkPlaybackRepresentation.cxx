@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlaybackRepresentation.cxx
+  Module:    $RCSfile: vtkPlaybackRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkTransformPolyDataFilter.h"
 
 
+vtkCxxRevisionMacro(vtkPlaybackRepresentation, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkPlaybackRepresentation);
 
 vtkPlaybackRepresentation::vtkPlaybackRepresentation()

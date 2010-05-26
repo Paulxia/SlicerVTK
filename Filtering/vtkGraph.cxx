@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraph.cxx
+  Module:    $RCSfile: vtkGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class vtkGraphEdgePoints : public vtkObject
 {
 public:
   static vtkGraphEdgePoints *New();
-  vtkTypeMacro(vtkGraphEdgePoints, vtkObject);
+  vtkTypeRevisionMacro(vtkGraphEdgePoints, vtkObject);
   vtksys_stl::vector< vtksys_stl::vector<double> > Storage;
 
 protected:
@@ -66,6 +66,7 @@ private:
   void operator=(const vtkGraphEdgePoints&);  // Not implemented.
 };
 vtkStandardNewMacro(vtkGraphEdgePoints);
+vtkCxxRevisionMacro(vtkGraphEdgePoints, "$Revision: 1.39 $");
 
 //----------------------------------------------------------------------------
 // class vtkGraph
@@ -74,6 +75,7 @@ vtkCxxSetObjectMacro(vtkGraph, Points, vtkPoints);
 vtkCxxSetObjectMacro(vtkGraph, Internals, vtkGraphInternals);
 vtkCxxSetObjectMacro(vtkGraph, EdgePoints, vtkGraphEdgePoints);
 vtkCxxSetObjectMacro(vtkGraph, EdgeList, vtkIdTypeArray);
+vtkCxxRevisionMacro(vtkGraph, "$Revision: 1.39 $");
 //----------------------------------------------------------------------------
 vtkGraph::vtkGraph()
 {
@@ -1593,7 +1595,7 @@ void vtkGraph::RemoveEdgeInternal(vtkIdType e, bool directed)
     {
     this->Internals->ReplaceEdgeFromInList(le, e, this->Internals->Adjacency[lv].InEdges);
     }
-  else if (lu != lv)
+  else if (u != v)
     {
     this->Internals->ReplaceEdgeFromOutList(le, e, this->Internals->Adjacency[lv].OutEdges);
     }

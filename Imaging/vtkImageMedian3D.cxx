@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMedian3D.cxx
+  Module:    $RCSfile: vtkImageMedian3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageMedian3D, "$Revision: 1.49 $");
 vtkStandardNewMacro(vtkImageMedian3D);
 
 //-----------------------------------------------------------------------------

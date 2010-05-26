@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorEventRecorder.h
+  Module:    $RCSfile: vtkInteractorEventRecorder.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_RENDERING_EXPORT vtkInteractorEventRecorder : public vtkInteractorObse
 {
 public:
   static vtkInteractorEventRecorder *New();
-  vtkTypeMacro(vtkInteractorEventRecorder,vtkInteractorObserver);
+  vtkTypeRevisionMacro(vtkInteractorEventRecorder,vtkInteractorObserver);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Satisfy the superclass API. Enable/disable listening for events.

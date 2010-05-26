@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBooleanTexture.h
+  Module:    $RCSfile: vtkBooleanTexture.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_IMAGING_EXPORT vtkBooleanTexture : public vtkImageAlgorithm
 public:
   static vtkBooleanTexture *New();
 
-  vtkTypeMacro(vtkBooleanTexture,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkBooleanTexture,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

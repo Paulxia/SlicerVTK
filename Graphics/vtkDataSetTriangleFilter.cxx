@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetTriangleFilter.cxx
+  Module:    $RCSfile: vtkDataSetTriangleFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkRectilinearGrid.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkDataSetTriangleFilter, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkDataSetTriangleFilter);
 
 vtkDataSetTriangleFilter::vtkDataSetTriangleFilter()

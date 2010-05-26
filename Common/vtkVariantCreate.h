@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVariantCreate.h
+  Module:    $RCSfile: vtkVariantCreate.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

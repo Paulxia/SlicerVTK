@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEdgeLayout.h
+  Module:    $RCSfile: vtkEdgeLayout.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_INFOVIS_EXPORT vtkEdgeLayout : public vtkGraphAlgorithm
 {
 public:
   static vtkEdgeLayout *New();
-  vtkTypeMacro(vtkEdgeLayout, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkEdgeLayout, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

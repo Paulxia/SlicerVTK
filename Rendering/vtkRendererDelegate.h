@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRendererDelegate.h
+  Module:    $RCSfile: vtkRendererDelegate.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkRenderer;
 class VTK_RENDERING_EXPORT vtkRendererDelegate : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkRendererDelegate,vtkObject);
+  vtkTypeRevisionMacro(vtkRendererDelegate,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

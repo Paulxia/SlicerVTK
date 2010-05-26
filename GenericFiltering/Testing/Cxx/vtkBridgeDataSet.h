@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBridgeDataSet.h
+  Module:    $RCSfile: vtkBridgeDataSet.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_BRIDGE_EXPORT vtkBridgeDataSet : public vtkGenericDataSet
 {
 public:
   static vtkBridgeDataSet *New();
-  vtkTypeMacro(vtkBridgeDataSet,vtkGenericDataSet);
+  vtkTypeRevisionMacro(vtkBridgeDataSet,vtkGenericDataSet);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipPolyData.h
+  Module:    $RCSfile: vtkClipPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -64,7 +64,7 @@ class vtkIncrementalPointLocator;
 class VTK_GRAPHICS_EXPORT vtkClipPolyData : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkClipPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkClipPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

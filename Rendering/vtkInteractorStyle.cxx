@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyle.cxx
+  Module:    $RCSfile: vtkInteractorStyle.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkEventForwarderCommand.h"
 #include "vtkTDxInteractorStyleCamera.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyle, "$Revision: 1.106 $");
 vtkStandardNewMacro(vtkInteractorStyle);
 vtkCxxSetObjectMacro(vtkInteractorStyle,TDxStyle,vtkTDxInteractorStyle);
 

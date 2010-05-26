@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataSourceWidget.cxx
+  Module:    $RCSfile: vtkPolyDataSourceWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkProp3D.h"
 
 
+vtkCxxRevisionMacro(vtkPolyDataSourceWidget, "$Revision: 1.1 $");
 
 vtkPolyDataSourceWidget::vtkPolyDataSourceWidget() : vtk3DWidget()
 {

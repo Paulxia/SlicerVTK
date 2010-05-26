@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAssignMimeType.cxx
+  Module:    $RCSfile: vtkAssignMimeType.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 
 #include <stdexcept>
 
+vtkCxxRevisionMacro(vtkAssignMimeType, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkAssignMimeType);
 vtkCxxSetObjectMacro(vtkAssignMimeType,MimeTypes,vtkMimeTypes);
 

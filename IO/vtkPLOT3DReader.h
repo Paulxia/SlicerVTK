@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPLOT3DReader.h
+  Module:    $RCSfile: vtkPLOT3DReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -84,7 +84,7 @@ class VTK_IO_EXPORT vtkPLOT3DReader : public vtkStructuredGridSource
 {
 public:
   static vtkPLOT3DReader *New();
-  vtkTypeMacro(vtkPLOT3DReader,vtkStructuredGridSource);
+  vtkTypeRevisionMacro(vtkPLOT3DReader,vtkStructuredGridSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

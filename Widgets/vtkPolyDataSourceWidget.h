@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataSourceWidget.h
+  Module:    $RCSfile: vtkPolyDataSourceWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class vtkPolyDataSource;
 class VTK_WIDGETS_EXPORT vtkPolyDataSourceWidget : public vtk3DWidget
 {
  public:
-  vtkTypeMacro(vtkPolyDataSourceWidget, vtk3DWidget);
+  vtkTypeRevisionMacro(vtkPolyDataSourceWidget, vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

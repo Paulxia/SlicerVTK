@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextureUnitManager.cxx
+  Module:    $RCSfile: vtkTextureUnitManager.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include <assert.h>
 
 vtkStandardNewMacro(vtkTextureUnitManager);
+vtkCxxRevisionMacro(vtkTextureUnitManager, "$Revision: 1.4 $");
 
 // ----------------------------------------------------------------------------
 vtkTextureUnitManager::vtkTextureUnitManager()

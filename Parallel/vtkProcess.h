@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProcess.h
+  Module:    $RCSfile: vtkProcess.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class vtkMultiProcessController;
 class VTK_PARALLEL_EXPORT vtkProcess : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkProcess,vtkObject);
+  vtkTypeRevisionMacro(vtkProcess,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description

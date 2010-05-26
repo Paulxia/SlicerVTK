@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationVector.cxx
+  Module:    $RCSfile: vtkInformationVector.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkInformationVector, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkInformationVector);
 
 class vtkInformationVectorInternals

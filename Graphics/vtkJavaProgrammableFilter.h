@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkJavaProgrammableFilter.h
+  Module:    $RCSfile: vtkJavaProgrammableFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -62,7 +62,7 @@ class VTK_GRAPHICS_JAVA_EXPORT vtkJavaProgrammableFilter : public vtkAlgorithm
 {
 public:
   static vtkJavaProgrammableFilter* New();
-  vtkTypeMacro(vtkJavaProgrammableFilter, vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkJavaProgrammableFilter, vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

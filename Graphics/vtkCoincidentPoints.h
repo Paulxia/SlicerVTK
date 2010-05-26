@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCoincidentPoints.h
+  Module:    $RCSfile: vtkCoincidentPoints.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkCoincidentPoints : public vtkObject
 {
 public:
   static vtkCoincidentPoints* New();
-  vtkTypeMacro(vtkCoincidentPoints,vtkObject);
+  vtkTypeRevisionMacro(vtkCoincidentPoints,vtkObject);
   virtual void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

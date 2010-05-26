@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistributedDataFilter.cxx
+  Module:    $RCSfile: vtkDistributedDataFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -60,6 +60,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkDistributedDataFilter, "$Revision: 1.55 $")
 
 vtkStandardNewMacro(vtkDistributedDataFilter)
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFixedWidthTextReader.cxx
+  Module:    $RCSfile: vtkFixedWidthTextReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkFixedWidthTextReader, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkFixedWidthTextReader);
 
 // Function body at bottom of file

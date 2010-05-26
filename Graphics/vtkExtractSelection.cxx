@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelection.cxx
+  Module:    $RCSfile: vtkExtractSelection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTable.h"
 
+vtkCxxRevisionMacro(vtkExtractSelection, "$Revision: 1.29 $");
 vtkStandardNewMacro(vtkExtractSelection);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExodusIIReader.h
+  Module:    $RCSfile: vtkExodusIIReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -52,7 +52,7 @@ class VTK_HYBRID_EXPORT vtkExodusIIReader : public vtkMultiBlockDataSetAlgorithm
 {
 public:
   static vtkExodusIIReader *New();
-  vtkTypeMacro(vtkExodusIIReader,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkExodusIIReader,vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -201,8 +201,7 @@ public:
     FACE_BLOCK_ATTRIB = 80,    //!< a face block attribute array (time-constant scalar per element)
     EDGE_BLOCK_ATTRIB = 79,    //!< an edge block attribute array (time-constant scalar per element)
     FACE_ID = 105,             //!< face id map (old-style face_num_map or first new-style face map) array
-    EDGE_ID = 106,             //!< edge id map (old-style edge_num_map or first new-style edge map) array
-    ENTITY_COUNTS = 109        //!< polyhedra per-entity count ex_get_block returns the sum for polyhedra
+    EDGE_ID = 106              //!< edge id map (old-style edge_num_map or first new-style edge map) array
   };
   /// Ways to decorate edge and face variables.
   enum DecorationType {

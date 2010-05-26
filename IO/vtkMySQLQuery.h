@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMySQLQuery.h
+  Module:    $RCSfile: vtkMySQLQuery.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_IO_EXPORT vtkMySQLQuery : public vtkSQLQuery
 //ETX
 
 public:
-  vtkTypeMacro(vtkMySQLQuery, vtkSQLQuery);
+  vtkTypeRevisionMacro(vtkMySQLQuery, vtkSQLQuery);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkMySQLQuery *New();
 

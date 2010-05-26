@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleJoystickActor.cxx
+  Module:    $RCSfile: vtkInteractorStyleJoystickActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkTransform.h"
 #include "vtkMatrix4x4.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleJoystickActor, "$Revision: 1.35 $");
 vtkStandardNewMacro(vtkInteractorStyleJoystickActor);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageGradientMagnitude.h
+  Module:    $RCSfile: vtkImageGradientMagnitude.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_IMAGING_EXPORT vtkImageGradientMagnitude : public vtkThreadedImageAlgo
 {
 public:
   static vtkImageGradientMagnitude *New();
-  vtkTypeMacro(vtkImageGradientMagnitude,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageGradientMagnitude,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

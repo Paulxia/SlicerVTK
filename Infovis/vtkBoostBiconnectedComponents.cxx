@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostBiconnectedComponents.cxx
+  Module:    $RCSfile: vtkBoostBiconnectedComponents.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@ using namespace boost;
 using vtksys_stl::vector;
 using vtksys_stl::pair;
 
+vtkCxxRevisionMacro(vtkBoostBiconnectedComponents, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkBoostBiconnectedComponents);
 
 vtkBoostBiconnectedComponents::vtkBoostBiconnectedComponents()

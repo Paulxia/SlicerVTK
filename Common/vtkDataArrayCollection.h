@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataArrayCollection.h
+  Module:    $RCSfile: vtkDataArrayCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_COMMON_EXPORT vtkDataArrayCollection : public vtkCollection
 {
 public:
   static vtkDataArrayCollection *New();
-  vtkTypeMacro(vtkDataArrayCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkDataArrayCollection,vtkCollection);
 
   // Description:
   // Add a dataarray to the list.

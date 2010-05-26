@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeAreaView.cxx
+  Module:    $RCSfile: vtkTreeAreaView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,12 +36,14 @@
 #include "vtkTree.h"
 #include "vtkAreaLayoutStrategy.h"
 
+vtkCxxRevisionMacro(vtkTreeAreaView, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkTreeAreaView);
 //----------------------------------------------------------------------------
 vtkTreeAreaView::vtkTreeAreaView()
 {
   this->SetInteractionModeTo2D();
   this->ReuseSingleRepresentationOn();
+  this->RenderOnMouseMoveOn();
 }
 
 //----------------------------------------------------------------------------

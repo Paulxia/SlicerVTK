@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCardinalSpline.cxx
+  Module:    $RCSfile: vtkCardinalSpline.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkPiecewiseFunction.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkCardinalSpline, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkCardinalSpline);
 
 //----------------------------------------------------------------------------

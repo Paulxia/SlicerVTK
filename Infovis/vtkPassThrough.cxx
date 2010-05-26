@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPassThrough.cxx
+  Module:    $RCSfile: vtkPassThrough.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkInformationVector.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPassThrough, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPassThrough);
 
 //----------------------------------------------------------------------------

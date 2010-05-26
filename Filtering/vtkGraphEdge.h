@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphEdge.h
+  Module:    $RCSfile: vtkGraphEdge.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_FILTERING_EXPORT vtkGraphEdge : public vtkObject
 {
 public:
   static vtkGraphEdge *New();
-  vtkTypeMacro(vtkGraphEdge, vtkObject);
+  vtkTypeRevisionMacro(vtkGraphEdge, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

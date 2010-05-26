@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFloatArray.cxx
+  Module:    $RCSfile: vtkFloatArray.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@ VTK_ARRAY_ITERATOR_TEMPLATE_INSTANTIATE(float);
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkFloatArray, "$Revision: 1.59 $");
 vtkStandardNewMacro(vtkFloatArray);
 
 //----------------------------------------------------------------------------

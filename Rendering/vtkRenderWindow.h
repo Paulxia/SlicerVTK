@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderWindow.h
+  Module:    $RCSfile: vtkRenderWindow.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -94,7 +94,7 @@ class vtkUnsignedCharArray;
 class VTK_RENDERING_EXPORT vtkRenderWindow : public vtkWindow
 {
 public:
-  vtkTypeMacro(vtkRenderWindow,vtkWindow);
+  vtkTypeRevisionMacro(vtkRenderWindow,vtkWindow);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

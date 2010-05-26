@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticPyramid.h
+  Module:    $RCSfile: vtkQuadraticPyramid.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ class VTK_FILTERING_EXPORT vtkQuadraticPyramid : public vtkNonLinearCell
 {
 public:
   static vtkQuadraticPyramid *New();
-  vtkTypeMacro(vtkQuadraticPyramid,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkQuadraticPyramid,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

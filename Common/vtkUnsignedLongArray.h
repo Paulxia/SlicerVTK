@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnsignedLongArray.h
+  Module:    $RCSfile: vtkUnsignedLongArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_COMMON_EXPORT vtkUnsignedLongArray : public vtkDataArray
 {
 public:
   static vtkUnsignedLongArray* New();
-  vtkTypeMacro(vtkUnsignedLongArray,vtkDataArray);
+  vtkTypeRevisionMacro(vtkUnsignedLongArray,vtkDataArray);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -94,42 +94,6 @@ public:
     { return this->RealSuperclass::InsertNextValue(f); }
 
   // Description:
-  // Get the range of array values for the given component in the
-  // native data type.
-  unsigned long *GetValueRange(int comp)
-    { return this->RealSuperclass::GetValueRange(comp); }
-//BTX
-  void GetValueRange(unsigned long range[2], int comp)
-    { this->RealSuperclass::GetValueRange(range, comp); }
-//ETX
-
-  // Description:
-  // Get the range of array values for the 0th component in the
-  // native data type.
-  unsigned long *GetValueRange()
-    { return this->RealSuperclass::GetValueRange(0); }
-//BTX
-  void GetValueRange(unsigned long range[2])
-    { this->RealSuperclass::GetValueRange(range, 0); }
-//ETX
-
-  // Description:
-  // Get the minimum data value in its native type.
-  static unsigned long GetDataTypeValueMin() { return VTK_UNSIGNED_LONG_MIN; }
-
-  // Description:
-  // Get the maximum data value in its native type.
-  static unsigned long GetDataTypeValueMax() { return VTK_UNSIGNED_LONG_MAX; }
-
-//BTX
-  // Description:
-  // Get the data type range in its native type.
-  static void GetDataTypeValueRange(unsigned long range[2])
-    { range[0] = vtkUnsignedLongArray::GetDataTypeValueMin();
-      range[1] = vtkUnsignedLongArray::GetDataTypeValueMax(); }
-//ETX
-
-  // Description:
   // Get the address of a particular data index. Make sure data is allocated
   // for the number of items requested. Set MaxId according to the number of
   // data values requested.
@@ -148,7 +112,7 @@ public:
   // the array supplied by the user.  Set save to 1 to keep the class
   // from deleting the array when it cleans up or reallocates memory.
   // The class uses the actual array provided; it does not copy the data
-  // from the suppled array.
+  // from the suppled array. 
   void SetArray(unsigned long* array, vtkIdType size, int save)
     { this->RealSuperclass::SetArray(array, size, save); }
   void SetArray(unsigned long* array, vtkIdType size, int save, int deleteMethod)

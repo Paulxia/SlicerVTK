@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxWinDevice.cxx
+  Module:    $RCSfile: vtkTDxWinDevice.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkTDxWinDevice,"$Revision: 1.11 $");
 vtkStandardNewMacro(vtkTDxWinDevice);
 
 #include <atlbase.h> // for CComPtr<> (a smart pointer)

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompressCompositer.h
+  Module:    $RCSfile: vtkCompressCompositer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_PARALLEL_EXPORT vtkCompressCompositer : public vtkCompositer
 {
 public:
   static vtkCompressCompositer *New();
-  vtkTypeMacro(vtkCompressCompositer,vtkCompositer);
+  vtkTypeRevisionMacro(vtkCompressCompositer,vtkCompositer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual void CompositeBuffer(vtkDataArray *pBuf, vtkFloatArray *zBuf,

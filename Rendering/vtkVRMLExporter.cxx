@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVRMLExporter.cxx
+  Module:    $RCSfile: vtkVRMLExporter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkTexture.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkVRMLExporter, "$Revision: 1.84 $");
 vtkStandardNewMacro(vtkVRMLExporter);
 
 vtkVRMLExporter::vtkVRMLExporter()

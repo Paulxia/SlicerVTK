@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPOpenFOAMReader.cxx
+  Module:    $RCSfile: vtkPOpenFOAMReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkStringArray.h"
 
+vtkCxxRevisionMacro(vtkPOpenFOAMReader, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkPOpenFOAMReader);
 vtkCxxSetObjectMacro(vtkPOpenFOAMReader, Controller, vtkMultiProcessController);
 

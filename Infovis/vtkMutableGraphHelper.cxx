@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMutableGraphHelper.cxx
+  Module:    $RCSfile: vtkMutableGraphHelper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkObjectFactory.h"
 
 vtkCxxSetObjectMacro(vtkMutableGraphHelper, InternalGraph, vtkGraph);
+vtkCxxRevisionMacro(vtkMutableGraphHelper, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMutableGraphHelper);
 //----------------------------------------------------------------------------
 vtkMutableGraphHelper::vtkMutableGraphHelper()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRuledSurfaceFilter.cxx
+  Module:    $RCSfile: vtkRuledSurfaceFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPolyData.h"
 #include "vtkPolyLine.h"
 
+vtkCxxRevisionMacro(vtkRuledSurfaceFilter, "$Revision: 1.27 $");
 vtkStandardNewMacro(vtkRuledSurfaceFilter);
 
 vtkRuledSurfaceFilter::vtkRuledSurfaceFilter()

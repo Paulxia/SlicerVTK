@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextProperty.cxx
+  Module:    $RCSfile: vtkTextProperty.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkTextProperty.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkTextProperty, "$Revision: 1.14 $");
 vtkStandardNewMacro(vtkTextProperty);
 
 //----------------------------------------------------------------------------

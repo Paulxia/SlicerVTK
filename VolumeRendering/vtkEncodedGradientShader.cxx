@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEncodedGradientShader.cxx
+  Module:    $RCSfile: vtkEncodedGradientShader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkEncodedGradientShader, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkEncodedGradientShader);
 
 vtkEncodedGradientShader::vtkEncodedGradientShader()

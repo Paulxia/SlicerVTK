@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLODProp3D.h
+  Module:    $RCSfile: vtkLODProp3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -55,7 +55,7 @@ public:
   // Create an instance of this class.
   static vtkLODProp3D *New();
 
-  vtkTypeMacro(vtkLODProp3D,vtkProp3D);
+  vtkTypeRevisionMacro(vtkLODProp3D,vtkProp3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

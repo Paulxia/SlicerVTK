@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkColorMaterialHelper.cxx
+  Module:    $RCSfile: vtkColorMaterialHelper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 extern const char * vtkColorMaterialHelper_vs;
 
 vtkStandardNewMacro(vtkColorMaterialHelper);
+vtkCxxRevisionMacro(vtkColorMaterialHelper, "$Revision: 1.1 $");
 vtkCxxSetObjectMacro(vtkColorMaterialHelper, Shader, vtkShaderProgram2);
 //----------------------------------------------------------------------------
 vtkColorMaterialHelper::vtkColorMaterialHelper()

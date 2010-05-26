@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInitialValueProblemSolver.cxx
+  Module:    $RCSfile: vtkInitialValueProblemSolver.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 
 #include "vtkFunctionSet.h"
 
+vtkCxxRevisionMacro(vtkInitialValueProblemSolver, "$Revision: 1.11 $");
 
 vtkInitialValueProblemSolver::vtkInitialValueProblemSolver() 
 {

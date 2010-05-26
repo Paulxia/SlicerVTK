@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDiscretizableColorTransferFunction.h
+  Module:    $RCSfile: vtkDiscretizableColorTransferFunction.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_FILTERING_EXPORT vtkDiscretizableColorTransferFunction : public vtkCol
 {
 public:
   static vtkDiscretizableColorTransferFunction* New();
-  vtkTypeMacro(vtkDiscretizableColorTransferFunction, vtkColorTransferFunction);
+  vtkTypeRevisionMacro(vtkDiscretizableColorTransferFunction, vtkColorTransferFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

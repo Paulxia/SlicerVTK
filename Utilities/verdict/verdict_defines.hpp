@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    verdict_defines.hpp
+  Module:    $RCSfile: verdict_defines.hpp,v $
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.

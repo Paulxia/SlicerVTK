@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkQtTreeRingLabelMapper.cxx
+Module:    $RCSfile: vtkQtTreeRingLabelMapper.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -57,6 +57,7 @@ PURPOSE.  See the above copyright notice for more information.
 #define VTK_CREATE(type, name)                                  \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkQtTreeRingLabelMapper, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkQtTreeRingLabelMapper);
 
 vtkCxxSetObjectMacro(vtkQtTreeRingLabelMapper,LabelTextProperty,vtkTextProperty);

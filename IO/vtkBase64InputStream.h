@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBase64InputStream.h
+  Module:    $RCSfile: vtkBase64InputStream.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,7 +25,7 @@
 class VTK_IO_EXPORT vtkBase64InputStream : public vtkInputStream
 {
 public:
-  vtkTypeMacro(vtkBase64InputStream,vtkInputStream);
+  vtkTypeRevisionMacro(vtkBase64InputStream,vtkInputStream);
   static vtkBase64InputStream *New();
   void PrintSelf(ostream& os, vtkIndent indent);
   

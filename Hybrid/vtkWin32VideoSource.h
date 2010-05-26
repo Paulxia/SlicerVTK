@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWin32VideoSource.h
+  Module:    $RCSfile: vtkWin32VideoSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_HYBRID_EXPORT vtkWin32VideoSource : public vtkVideoSource
 {
 public:
   static vtkWin32VideoSource *New();
-  vtkTypeMacro(vtkWin32VideoSource,vtkVideoSource);
+  vtkTypeRevisionMacro(vtkWin32VideoSource,vtkVideoSource);
   void PrintSelf(ostream& os, vtkIndent indent);   
 
   // Description:

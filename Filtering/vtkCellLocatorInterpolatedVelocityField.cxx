@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellLocatorInterpolatedVelocityField.cxx
+  Module:    $RCSfile: vtkCellLocatorInterpolatedVelocityField.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkModifiedBSPTree.h"
 
+vtkCxxRevisionMacro ( vtkCellLocatorInterpolatedVelocityField, "$Revision: 1.7 $" );
 vtkStandardNewMacro ( vtkCellLocatorInterpolatedVelocityField ); 
 vtkCxxSetObjectMacro( vtkCellLocatorInterpolatedVelocityField, CellLocatorPrototype, vtkAbstractCellLocator );
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiBlockMergeFilter.h
+  Module:    $RCSfile: vtkMultiBlockMergeFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_GRAPHICS_EXPORT vtkMultiBlockMergeFilter
 : public vtkMultiBlockDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkMultiBlockMergeFilter,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMultiBlockMergeFilter,vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

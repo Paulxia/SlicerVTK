@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTexturedActor2D.cxx
+  Module:    $RCSfile: vtkTexturedActor2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkRenderer.h"
 #include "vtkTexture.h"
 
+vtkCxxRevisionMacro(vtkTexturedActor2D, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkTexturedActor2D);
 
 vtkCxxSetObjectMacro(vtkTexturedActor2D, Texture, vtkTexture);
@@ -55,12 +56,7 @@ int vtkTexturedActor2D::RenderOverlay(vtkViewport* viewport)
     {
     this->Texture->Render(ren);
     }
-  int result=this->Superclass::RenderOverlay(viewport);
-  if (this->Texture)
-    {
-    this->Texture->PostRender(ren);
-    }
-   return result;
+  return this->Superclass::RenderOverlay(viewport);
 }
 
 //-----------------------------------------------------------------------------
@@ -72,12 +68,7 @@ int vtkTexturedActor2D::RenderOpaqueGeometry(vtkViewport* viewport)
     {
     this->Texture->Render(ren);
     }
-  int result=this->Superclass::RenderOpaqueGeometry(viewport);
-  if (this->Texture)
-    {
-    this->Texture->PostRender(ren);
-    }
-  return result;
+  return this->Superclass::RenderOpaqueGeometry(viewport);
 }
 
 //-----------------------------------------------------------------------------
@@ -90,12 +81,7 @@ int vtkTexturedActor2D::RenderTranslucentPolygonalGeometry(
     {
     this->Texture->Render(ren);
     }
-  int result=this->Superclass::RenderTranslucentPolygonalGeometry(viewport);
-  if (this->Texture)
-    {
-    this->Texture->PostRender(ren);
-    }
-  return result;
+  return this->Superclass::RenderTranslucentPolygonalGeometry(viewport);
 }
 
 //-----------------------------------------------------------------------------

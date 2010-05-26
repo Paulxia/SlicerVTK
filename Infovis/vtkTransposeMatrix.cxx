@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransposeMatrix.cxx
+  Module:    $RCSfile: vtkTransposeMatrix.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -31,6 +31,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkTransposeMatrix
 
+vtkCxxRevisionMacro(vtkTransposeMatrix, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkTransposeMatrix);
 
 vtkTransposeMatrix::vtkTransposeMatrix()

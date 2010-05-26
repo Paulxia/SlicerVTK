@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointHandleRepresentation3D.cxx
+  Module:    $RCSfile: vtkPointHandleRepresentation3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkFocalPlanePointPlacer.h"
 #include "vtkCamera.h"
 
+vtkCxxRevisionMacro(vtkPointHandleRepresentation3D, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkPointHandleRepresentation3D);
 
 vtkCxxSetObjectMacro(vtkPointHandleRepresentation3D,Property,vtkProperty);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLRenderWindow.h
+  Module:    $RCSfile: vtkOpenGLRenderWindow.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ protected:
   long OldMonitorSetting;
 
 public:
-  vtkTypeMacro(vtkOpenGLRenderWindow,vtkRenderWindow);
+  vtkTypeRevisionMacro(vtkOpenGLRenderWindow,vtkRenderWindow);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

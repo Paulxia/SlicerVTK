@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPiecewiseFunctionAlgorithm.h
+  Module:    $RCSfile: vtkPiecewiseFunctionAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_FILTERING_EXPORT vtkPiecewiseFunctionAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkPiecewiseFunctionAlgorithm *New();
-  vtkTypeMacro(vtkPiecewiseFunctionAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkPiecewiseFunctionAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

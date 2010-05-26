@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHierarchicalDataSetGeometryFilter.h
+  Module:    $RCSfile: vtkHierarchicalDataSetGeometryFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkHierarchicalDataSetGeometryFilter :
 {
 public:
   static vtkHierarchicalDataSetGeometryFilter *New();
-  vtkTypeMacro(vtkHierarchicalDataSetGeometryFilter,
+  vtkTypeRevisionMacro(vtkHierarchicalDataSetGeometryFilter,
     vtkCompositeDataGeometryFilter);
   void PrintSelf(ostream& os, vtkIndent indent);
 

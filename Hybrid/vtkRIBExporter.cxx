@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRIBExporter.cxx
+  Module:    $RCSfile: vtkRIBExporter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@
 
 #include <vtksys/ios/sstream>
 
+vtkCxxRevisionMacro(vtkRIBExporter, "$Revision: 1.65 $");
 vtkStandardNewMacro(vtkRIBExporter);
 
 typedef double RtColor[3];

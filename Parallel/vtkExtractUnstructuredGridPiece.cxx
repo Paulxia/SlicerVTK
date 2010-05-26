@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractUnstructuredGridPiece.cxx
+  Module:    $RCSfile: vtkExtractUnstructuredGridPiece.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkUnsignedCharArray.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkExtractUnstructuredGridPiece, "$Revision: 1.20 $");
 vtkStandardNewMacro(vtkExtractUnstructuredGridPiece);
 
 vtkExtractUnstructuredGridPiece::vtkExtractUnstructuredGridPiece()

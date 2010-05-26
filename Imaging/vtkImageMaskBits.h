@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMaskBits.h
+  Module:    $RCSfile: vtkImageMaskBits.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageMaskBits : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageMaskBits *New();
-  vtkTypeMacro(vtkImageMaskBits,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageMaskBits,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

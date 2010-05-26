@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPropPicker.cxx
+  Module:    $RCSfile: vtkPropPicker.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkRenderer.h"
 #include "vtkWorldPointPicker.h"
 
+vtkCxxRevisionMacro(vtkPropPicker, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkPropPicker);
 
 vtkPropPicker::vtkPropPicker()

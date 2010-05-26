@@ -1,7 +1,7 @@
 // ============================================================================
 //
 //  Program:   Visualization Toolkit
-//  Module:    vtkOpenGLPropertyDefaultPropFunc_vs.glsl
+//  Module:    $RCSfile: vtkOpenGLPropertyDefaultPropFunc_vs.glsl,v $
 //
 //  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 //  All rights reserved.

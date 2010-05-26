@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableToSparseArray.cxx
+  Module:    $RCSfile: vtkTableToSparseArray.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -43,6 +43,7 @@ public:
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkTableToSparseArray, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkTableToSparseArray);
 
 // ----------------------------------------------------------------------

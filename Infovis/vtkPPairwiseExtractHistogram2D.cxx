@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkPPairwiseExtractHistogram2D.cxx
+Module:    $RCSfile: vtkPPairwiseExtractHistogram2D.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -41,6 +41,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include <vtkstd/vector>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkPPairwiseExtractHistogram2D, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkPPairwiseExtractHistogram2D);
 vtkCxxSetObjectMacro(vtkPPairwiseExtractHistogram2D, Controller, vtkMultiProcessController);
 

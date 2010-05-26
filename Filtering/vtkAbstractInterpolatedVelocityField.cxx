@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAbstractInterpolatedVelocityField.cxx
+  Module:    $RCSfile: vtkAbstractInterpolatedVelocityField.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro( vtkAbstractInterpolatedVelocityField, "$Revision: 1.6 $" );
 
 //----------------------------------------------------------------------------
 const double vtkAbstractInterpolatedVelocityField::TOLERANCE_SCALE = 1.0E-8;

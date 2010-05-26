@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    StructuredGridLIC2DDemo.cxx
+  Module:    $RCSfile: StructuredGridLIC2DDemo.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMimeTypes.cxx
+  Module:    $RCSfile: vtkMimeTypes.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@ public:
 ////////////////////////////////////////////////////////////////
 // vtkMimeTypes
 
+vtkCxxRevisionMacro(vtkMimeTypes, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkMimeTypes);
 
 vtkMimeTypes::vtkMimeTypes() :

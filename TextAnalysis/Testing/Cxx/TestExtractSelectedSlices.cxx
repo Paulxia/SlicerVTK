@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestExtractSelectedSlices.cxx
+  Module:    $RCSfile: TestExtractSelectedSlices.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

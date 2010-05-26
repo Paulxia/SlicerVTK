@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSQLDatabaseTableSource.cxx
+  Module:    $RCSfile: vtkSQLDatabaseTableSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -63,6 +63,7 @@ public:
   vtkRowQueryToTable* Table;
 };
 
+vtkCxxRevisionMacro(vtkSQLDatabaseTableSource, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkSQLDatabaseTableSource);
 
 //---------------------------------------------------------------------------

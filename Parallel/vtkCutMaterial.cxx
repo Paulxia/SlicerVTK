@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCutMaterial.cxx
+  Module:    $RCSfile: vtkCutMaterial.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkThreshold.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkCutMaterial, "$Revision: 1.19 $");
 vtkStandardNewMacro(vtkCutMaterial);
 
 // Instantiate object with no input and no defined output.

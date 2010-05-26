@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMutableDirectedGraph.cxx
+  Module:    $RCSfile: vtkMutableDirectedGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 //----------------------------------------------------------------------------
 // class vtkMutableDirectedGraph
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkMutableDirectedGraph, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkMutableDirectedGraph);
 //----------------------------------------------------------------------------
 vtkMutableDirectedGraph::vtkMutableDirectedGraph()

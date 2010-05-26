@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationKeyVectorKey.cxx
+  Module:    $RCSfile: vtkInformationKeyVectorKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include <vtkstd/vector>
 #include <vtkstd/algorithm> // find()
 
+vtkCxxRevisionMacro(vtkInformationKeyVectorKey, "$Revision: 1.9 $");
 
 //----------------------------------------------------------------------------
 vtkInformationKeyVectorKey::vtkInformationKeyVectorKey(const char* name, const char* location):

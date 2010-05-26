@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSortDataArray.cxx
+  Module:    $RCSfile: vtkSortDataArray.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 // -------------------------------------------------------------------------
 
 vtkStandardNewMacro(vtkSortDataArray);
+vtkCxxRevisionMacro(vtkSortDataArray,"$Revision: 1.3 $");
 
 vtkSortDataArray::vtkSortDataArray()
 {

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeFields.cxx
+  Module:    $RCSfile: vtkMergeFields.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkMergeFields, "$Revision: 1.20 $");
 vtkStandardNewMacro(vtkMergeFields);
 
 char vtkMergeFields::FieldLocationNames[3][12] 

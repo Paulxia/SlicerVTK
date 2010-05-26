@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEntropyMatrixWeighting.cxx
+  Module:    $RCSfile: vtkEntropyMatrixWeighting.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -41,6 +41,7 @@ static inline double log2(double n)
 ///////////////////////////////////////////////////////////////////////////////
 // vtkEntropyMatrixWeighting
 
+vtkCxxRevisionMacro(vtkEntropyMatrixWeighting, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkEntropyMatrixWeighting);
 
 vtkEntropyMatrixWeighting::vtkEntropyMatrixWeighting() :

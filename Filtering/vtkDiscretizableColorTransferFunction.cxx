@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDiscretizableColorTransferFunction.cxx
+  Module:    $RCSfile: vtkDiscretizableColorTransferFunction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include <vtkstd/vector>
 
 vtkStandardNewMacro(vtkDiscretizableColorTransferFunction);
+vtkCxxRevisionMacro(vtkDiscretizableColorTransferFunction, "$Revision: 1.2 $");
 //-----------------------------------------------------------------------------
 vtkDiscretizableColorTransferFunction::vtkDiscretizableColorTransferFunction()
 {

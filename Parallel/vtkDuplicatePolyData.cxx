@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDuplicatePolyData.cxx
+  Module:    $RCSfile: vtkDuplicatePolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkSocketController.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkDuplicatePolyData, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkDuplicatePolyData);
 
 vtkCxxSetObjectMacro(vtkDuplicatePolyData,Controller, vtkMultiProcessController);

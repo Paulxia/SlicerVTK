@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSquarifyLayoutStrategy.cxx
+  Module:    $RCSfile: vtkSquarifyLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPoints.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkSquarifyLayoutStrategy, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkSquarifyLayoutStrategy);
 
 vtkSquarifyLayoutStrategy::vtkSquarifyLayoutStrategy()

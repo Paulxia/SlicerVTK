@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWin32OutputWindowProcessEncoded.c
+  Module:    $RCSfile: vtkWin32OutputWindowProcessEncoded.c,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParallelopipedWidget.h
+  Module:    $RCSfile: vtkParallelopipedWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,7 +56,7 @@ public:
   // Instantiate the object.
   static vtkParallelopipedWidget *New();
 
-  vtkTypeMacro(vtkParallelopipedWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkParallelopipedWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

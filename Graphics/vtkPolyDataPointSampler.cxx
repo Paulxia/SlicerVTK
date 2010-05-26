@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataPointSampler.cxx
+  Module:    $RCSfile: vtkPolyDataPointSampler.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkEdgeTable.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkPolyDataPointSampler, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkPolyDataPointSampler);
 
 //------------------------------------------------------------------------

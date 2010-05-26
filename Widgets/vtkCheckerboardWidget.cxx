@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCheckerboardWidget.cxx
+  Module:    $RCSfile: vtkCheckerboardWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkRenderer.h"
 #include "vtkSliderWidget.h"
 
+vtkCxxRevisionMacro(vtkCheckerboardWidget, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkCheckerboardWidget);
 
 

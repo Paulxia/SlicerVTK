@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLogoRepresentation.cxx
+  Module:    $RCSfile: vtkLogoRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkRenderer.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkLogoRepresentation, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkLogoRepresentation);
 
 vtkCxxSetObjectMacro(vtkLogoRepresentation, Image, vtkImageData);

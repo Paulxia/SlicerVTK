@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPassThroughEdgeStrategy.h
+  Module:    $RCSfile: vtkPassThroughEdgeStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_INFOVIS_EXPORT vtkPassThroughEdgeStrategy : public vtkEdgeLayoutStrate
 {
 public:
   static vtkPassThroughEdgeStrategy* New();
-  vtkTypeMacro(vtkPassThroughEdgeStrategy,vtkEdgeLayoutStrategy);
+  vtkTypeRevisionMacro(vtkPassThroughEdgeStrategy,vtkEdgeLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

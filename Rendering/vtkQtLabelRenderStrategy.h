@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtLabelRenderStrategy.h
+  Module:    $RCSfile: vtkQtLabelRenderStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_RENDERING_EXPORT vtkQtLabelRenderStrategy : public vtkLabelRenderStrat
 {
  public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkQtLabelRenderStrategy, vtkLabelRenderStrategy);
+  vtkTypeRevisionMacro(vtkQtLabelRenderStrategy, vtkLabelRenderStrategy);
   static vtkQtLabelRenderStrategy* New();
 
   //BTX

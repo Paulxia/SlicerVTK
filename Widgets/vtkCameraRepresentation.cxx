@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCameraRepresentation.cxx
+  Module:    $RCSfile: vtkCameraRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkTransformPolyDataFilter.h"
 
 
+vtkCxxRevisionMacro(vtkCameraRepresentation, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkCameraRepresentation);
 
 vtkCxxSetObjectMacro(vtkCameraRepresentation, Camera, vtkCamera);

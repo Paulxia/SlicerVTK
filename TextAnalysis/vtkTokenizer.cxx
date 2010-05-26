@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTokenizer.cxx
+  Module:    $RCSfile: vtkTokenizer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -63,6 +63,7 @@ public:
   DelimiterRanges KeptDelimiters;
 };
 
+vtkCxxRevisionMacro(vtkTokenizer, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkTokenizer);
 
 vtkTokenizer::vtkTokenizer() :

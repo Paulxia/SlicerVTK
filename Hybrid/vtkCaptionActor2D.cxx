@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCaptionActor2D.cxx
+  Module:    $RCSfile: vtkCaptionActor2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkTextProperty.h"
 #include "vtkViewport.h"
 
+vtkCxxRevisionMacro(vtkCaptionActor2D, "$Revision: 1.37 $");
 vtkStandardNewMacro(vtkCaptionActor2D);
 
 vtkCxxSetObjectMacro(vtkCaptionActor2D,LeaderGlyph,vtkPolyData);

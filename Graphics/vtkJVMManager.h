@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkJVMManager.h
+  Module:    $RCSfile: vtkJVMManager.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -71,7 +71,7 @@ class VTK_GRAPHICS_JAVA_EXPORT vtkJVMManager : public vtkObject
 {
 public:
   static vtkJVMManager *New();
-  vtkTypeMacro(vtkJVMManager,vtkObject);
+  vtkTypeRevisionMacro(vtkJVMManager,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

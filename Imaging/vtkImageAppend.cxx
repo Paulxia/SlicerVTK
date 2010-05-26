@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageAppend.cxx
+  Module:    $RCSfile: vtkImageAppend.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageAppend, "$Revision: 1.35 $");
 vtkStandardNewMacro(vtkImageAppend);
 
 //----------------------------------------------------------------------------

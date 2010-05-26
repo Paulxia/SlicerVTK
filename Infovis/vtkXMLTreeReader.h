@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLTreeReader.h
+  Module:    $RCSfile: vtkXMLTreeReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -92,7 +92,7 @@ class VTK_INFOVIS_EXPORT vtkXMLTreeReader : public vtkTreeAlgorithm
 {
 public:
   static vtkXMLTreeReader* New();
-  vtkTypeMacro(vtkXMLTreeReader,vtkTreeAlgorithm);
+  vtkTypeRevisionMacro(vtkXMLTreeReader,vtkTreeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

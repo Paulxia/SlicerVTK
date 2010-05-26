@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkQImageToImageSource.h
+Module:    $RCSfile: vtkQImageToImageSource.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -29,7 +29,7 @@ class VTK_RENDERING_EXPORT vtkQImageToImageSource : public vtkImageAlgorithm
 {
 public:
   static vtkQImageToImageSource *New();
-  vtkTypeMacro(vtkQImageToImageSource,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkQImageToImageSource,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

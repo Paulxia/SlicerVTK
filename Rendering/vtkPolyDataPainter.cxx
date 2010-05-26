@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataPainter.cxx
+  Module:    $RCSfile: vtkPolyDataPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkPolyDataPainter, "$Revision: 1.5 $");
 vtkInformationKeyMacro(vtkPolyDataPainter, BUILD_NORMALS, Integer);
 vtkInformationKeyMacro(vtkPolyDataPainter, DATA_ARRAY_TO_VERTEX_ATTRIBUTE, ObjectBase);
 vtkInformationKeyMacro(vtkPolyDataPainter, DISABLE_SCALAR_COLOR, Integer);

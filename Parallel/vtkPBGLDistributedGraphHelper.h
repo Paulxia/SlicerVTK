@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLDistributedGraphHelper.h
+  Module:    $RCSfile: vtkPBGLDistributedGraphHelper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,8 @@ namespace boost { namespace graph { namespace distributed {
 class VTK_PARALLEL_EXPORT vtkPBGLDistributedGraphHelper : public vtkDistributedGraphHelper
 {
  public:
-  vtkTypeMacro(vtkPBGLDistributedGraphHelper,vtkDistributedGraphHelper);
+  vtkTypeRevisionMacro (vtkPBGLDistributedGraphHelper,
+                        vtkDistributedGraphHelper);
 
   // Description:
   // Creates an empty Parallel BGL distributed graph helper

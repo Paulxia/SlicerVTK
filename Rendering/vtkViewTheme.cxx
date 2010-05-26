@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkViewTheme.cxx
+  Module:    $RCSfile: vtkViewTheme.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkTextProperty.h"
 
+vtkCxxRevisionMacro(vtkViewTheme, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkViewTheme);
 vtkCxxSetObjectMacro(vtkViewTheme, PointLookupTable, vtkScalarsToColors);
 vtkCxxSetObjectMacro(vtkViewTheme, CellLookupTable, vtkScalarsToColors);

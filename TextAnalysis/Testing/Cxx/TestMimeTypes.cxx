@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestMimeTypes.cxx
+  Module:    $RCSfile: TestMimeTypes.cxx,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2009-10-20 16:46:56 $
+  Version:   $Revision: 1.4 $
 
   Copyright 2008 Sandia Corporation.
   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive

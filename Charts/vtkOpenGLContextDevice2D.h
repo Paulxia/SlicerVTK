@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLContextDevice2D.h
+  Module:    $RCSfile: vtkOpenGLContextDevice2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class vtkOpenGLExtensionManager;
 class VTK_CHARTS_EXPORT vtkOpenGLContextDevice2D : public vtkContextDevice2D
 {
 public:
-  vtkTypeMacro(vtkOpenGLContextDevice2D, vtkContextDevice2D);
+  vtkTypeRevisionMacro(vtkOpenGLContextDevice2D, vtkContextDevice2D);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:
@@ -165,7 +165,7 @@ public:
   // \pre not_yet: !GetBufferIdMode()
   // \pre bufferId_exists: bufferId!=0
   // \post started: GetBufferIdMode()
-  virtual void BufferIdModeBegin(vtkAbstractContextBufferId *bufferId);
+  virtual void BufferIdModeBegin(vtkContextBufferId *bufferId);
 
   // Description:
   // Finalize BufferId creation Mode. It makes sure that the content of the
@@ -185,14 +185,6 @@ public:
   // Force the use of the Qt based string render strategy. If Qt is not available
   // then freetype will be used and this will return false.
   bool SetStringRendererToQt();
-
-  // Description:
-  // Check whether the current context device has support for GLSL.
-  bool HasGLSL();
-
-  // Description:
-  // Get the active RenderWindow of the device. Will return null if not active.
-  vtkGetObjectMacro(RenderWindow, vtkOpenGLRenderWindow);
 
   // Description:
   // Release any graphics resources that are being consumed by this device.
@@ -244,10 +236,6 @@ protected:
   // Description:
   // Load the OpenGL extensions we need.
   bool LoadExtensions(vtkOpenGLExtensionManager *m);
-
-  // Description:
-  // The OpenGL render window being used by the device
-  vtkOpenGLRenderWindow* RenderWindow;
 
 private:
   vtkOpenGLContextDevice2D(const vtkOpenGLContextDevice2D &); // Not implemented.

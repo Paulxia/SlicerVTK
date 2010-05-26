@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVectorNorm.cxx
+  Module:    $RCSfile: vtkVectorNorm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkVectorNorm, "$Revision: 1.45 $");
 vtkStandardNewMacro(vtkVectorNorm);
 
 // Construct with normalize flag off.

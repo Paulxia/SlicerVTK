@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDefaultPainter.cxx
+  Module:    $RCSfile: vtkDefaultPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkScalarsToColorsPainter.h"
 
 vtkStandardNewMacro(vtkDefaultPainter);
+vtkCxxRevisionMacro(vtkDefaultPainter, "$Revision: 1.12 $");
 vtkCxxSetObjectMacro(vtkDefaultPainter, DefaultPainterDelegate, vtkPainter);
 vtkCxxSetObjectMacro(vtkDefaultPainter, ScalarsToColorsPainter, 
   vtkScalarsToColorsPainter);

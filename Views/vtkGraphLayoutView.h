@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphLayoutView.h
+  Module:    $RCSfile: vtkGraphLayoutView.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class VTK_VIEWS_EXPORT vtkGraphLayoutView : public vtkRenderView
 {
 public:
   static vtkGraphLayoutView *New();
-  vtkTypeMacro(vtkGraphLayoutView, vtkRenderView);
+  vtkTypeRevisionMacro(vtkGraphLayoutView, vtkRenderView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -94,8 +94,7 @@ public:
   vtkBooleanMacro(HideEdgeLabelsOnInteraction, bool);
 
   // Description:
-  // The array to use for coloring vertices.  The default behavior
-  // is to color by vertex degree.
+  // The array to use for coloring vertices.  Default is "color".
   void SetVertexColorArrayName(const char* name);
   const char* GetVertexColorArrayName();
   

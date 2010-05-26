@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaImageActor.h
+  Module:    $RCSfile: vtkMesaImageActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkMesaImageActor : public vtkImageActor
 {
 public:
   static vtkMesaImageActor *New();
-  vtkTypeMacro(vtkMesaImageActor,vtkImageActor);
+  vtkTypeRevisionMacro(vtkMesaImageActor,vtkImageActor);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

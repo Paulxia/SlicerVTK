@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoAssignCoordinates.cxx
+  Module:    $RCSfile: vtkGeoAssignCoordinates.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkPoints.h"
 
 vtkCxxSetObjectMacro(vtkGeoAssignCoordinates, Transform, vtkAbstractTransform);
+vtkCxxRevisionMacro(vtkGeoAssignCoordinates, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkGeoAssignCoordinates);
 
 vtkGeoAssignCoordinates::vtkGeoAssignCoordinates()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCurvatures.cxx
+  Module:    $RCSfile: vtkCurvatures.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkTensor.h"
 #include "vtkTriangle.h"
 
+vtkCxxRevisionMacro(vtkCurvatures, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkCurvatures);
 
 //------------------------------------------------------------------------------

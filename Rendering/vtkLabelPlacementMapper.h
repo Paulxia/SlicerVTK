@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabelPlacementMapper.h
+  Module:    $RCSfile: vtkLabelPlacementMapper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_RENDERING_EXPORT vtkLabelPlacementMapper : public vtkMapper2D
 {
 public:
   static vtkLabelPlacementMapper *New();
-  vtkTypeMacro(vtkLabelPlacementMapper, vtkMapper2D);
+  vtkTypeRevisionMacro(vtkLabelPlacementMapper, vtkMapper2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

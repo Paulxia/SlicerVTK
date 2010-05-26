@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPrimitivePainter.h
+  Module:    $RCSfile: vtkPrimitivePainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class vtkUnsignedCharArray;
 class VTK_RENDERING_EXPORT vtkPrimitivePainter : public vtkPolyDataPainter
 {
 public:
-  vtkTypeMacro(vtkPrimitivePainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkPrimitivePainter, vtkPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:
@@ -49,15 +49,14 @@ protected:
 
   //BTX
   enum {
-    VTK_PDM_NORMALS = 0x001,
-    VTK_PDM_COLORS = 0x002,
-    VTK_PDM_TCOORDS = 0x004,
-    VTK_PDM_CELL_COLORS = 0x008,
-    VTK_PDM_CELL_NORMALS = 0x010,
-    VTK_PDM_OPAQUE_COLORS = 0x020,
-    VTK_PDM_FIELD_COLORS = 0x040,
-    VTK_PDM_EDGEFLAGS = 0x080,
-    VTK_PDM_GENERIC_VERTEX_ATTRIBUTES = 0x100
+    VTK_PDM_NORMALS = 0x01,
+    VTK_PDM_COLORS = 0x02,
+    VTK_PDM_TCOORDS = 0x04,
+    VTK_PDM_CELL_COLORS = 0x08,
+    VTK_PDM_CELL_NORMALS = 0x10,
+    VTK_PDM_OPAQUE_COLORS = 0x20,
+    VTK_PDM_FIELD_COLORS = 0x40,
+    VTK_PDM_GENERIC_VERTEX_ATTRIBUTES =0x80
   };
   //ETX
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGroupLeafVertices.h
+  Module:    $RCSfile: vtkGroupLeafVertices.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_INFOVIS_EXPORT vtkGroupLeafVertices : public vtkTreeAlgorithm
 {
 public:
   static vtkGroupLeafVertices* New();
-  vtkTypeMacro(vtkGroupLeafVertices,vtkTreeAlgorithm);
+  vtkTypeRevisionMacro(vtkGroupLeafVertices,vtkTreeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

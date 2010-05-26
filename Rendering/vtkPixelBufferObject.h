@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPixelBufferObject.h
+  Module:    $RCSfile: vtkPixelBufferObject.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -55,7 +55,7 @@ public:
   //ETX
   
   static vtkPixelBufferObject* New();
-  vtkTypeMacro(vtkPixelBufferObject, vtkObject);
+  vtkTypeRevisionMacro(vtkPixelBufferObject, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

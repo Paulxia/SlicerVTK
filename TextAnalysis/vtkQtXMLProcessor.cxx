@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtXMLProcessor.cxx
+  Module:    $RCSfile: vtkQtXMLProcessor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -302,6 +302,7 @@ public:
 ////////////////////////////////////////////////////////////////////////////////////////
 // vtkQtXMLProcessor
 
+vtkCxxRevisionMacro(vtkQtXMLProcessor, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkQtXMLProcessor);
 
 vtkQtXMLProcessor::vtkQtXMLProcessor() :

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExecutiveCollection.cxx
+  Module:    $RCSfile: vtkExecutiveCollection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkExecutiveCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkExecutiveCollection, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkExecutiveCollection);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolygon.h
+  Module:    $RCSfile: vtkPolygon.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_FILTERING_EXPORT vtkPolygon : public vtkCell
 {
 public:
   static vtkPolygon *New();
-  vtkTypeMacro(vtkPolygon,vtkCell);
+  vtkTypeRevisionMacro(vtkPolygon,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

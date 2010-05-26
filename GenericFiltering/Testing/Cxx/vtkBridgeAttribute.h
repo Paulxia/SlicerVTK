@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBridgeAttribute.h
+  Module:    $RCSfile: vtkBridgeAttribute.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_BRIDGE_EXPORT vtkBridgeAttribute : public vtkGenericAttribute
 {
  public:
   static vtkBridgeAttribute *New();
-  vtkTypeMacro(vtkBridgeAttribute,vtkGenericAttribute);
+  vtkTypeRevisionMacro(vtkBridgeAttribute,vtkGenericAttribute);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

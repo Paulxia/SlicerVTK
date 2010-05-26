@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContinuousValueWidgetRepresentation.h
+  Module:    $RCSfile: vtkContinuousValueWidgetRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_WIDGETS_EXPORT vtkContinuousValueWidgetRepresentation :
 public:
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkContinuousValueWidgetRepresentation,
+  vtkTypeRevisionMacro(vtkContinuousValueWidgetRepresentation,
                        vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
   

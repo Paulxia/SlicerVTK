@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArcParallelEdgeStrategy.h
+  Module:    $RCSfile: vtkArcParallelEdgeStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class VTK_INFOVIS_EXPORT vtkArcParallelEdgeStrategy : public vtkEdgeLayoutStrate
 {
 public:
   static vtkArcParallelEdgeStrategy* New();
-  vtkTypeMacro(vtkArcParallelEdgeStrategy,vtkEdgeLayoutStrategy);
+  vtkTypeRevisionMacro(vtkArcParallelEdgeStrategy,vtkEdgeLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

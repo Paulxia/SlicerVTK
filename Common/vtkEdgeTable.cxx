@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEdgeTable.cxx
+  Module:    $RCSfile: vtkEdgeTable.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkVoidArray.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkEdgeTable, "$Revision: 1.39 $");
 vtkStandardNewMacro(vtkEdgeTable);
 
 // Instantiate object based on maximum point id.

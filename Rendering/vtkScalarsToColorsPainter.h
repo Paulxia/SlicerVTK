@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkScalarsToColorsPainter.h
+  Module:    $RCSfile: vtkScalarsToColorsPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_RENDERING_EXPORT vtkScalarsToColorsPainter : public vtkPainter
 {
 public:
   static vtkScalarsToColorsPainter* New();
-  vtkTypeMacro(vtkScalarsToColorsPainter, vtkPainter);
+  vtkTypeRevisionMacro(vtkScalarsToColorsPainter, vtkPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

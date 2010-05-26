@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDiskSource.h
+  Module:    $RCSfile: vtkDiskSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_GRAPHICS_EXPORT vtkDiskSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkDiskSource *New();
-  vtkTypeMacro(vtkDiskSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDiskSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

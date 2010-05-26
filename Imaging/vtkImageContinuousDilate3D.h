@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageContinuousDilate3D.h
+  Module:    $RCSfile: vtkImageContinuousDilate3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ public:
   // Construct an instance of vtkImageContinuousDilate3D filter.
   // By default zero values are dilated.
   static vtkImageContinuousDilate3D *New();
-  vtkTypeMacro(vtkImageContinuousDilate3D,vtkImageSpatialAlgorithm);
+  vtkTypeRevisionMacro(vtkImageContinuousDilate3D,vtkImageSpatialAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

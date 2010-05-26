@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDashedStreamLine.h
+  Module:    $RCSfile: vtkDashedStreamLine.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_GRAPHICS_EXPORT vtkDashedStreamLine : public vtkStreamLine
 {
 public:
   static vtkDashedStreamLine *New();
-  vtkTypeMacro(vtkDashedStreamLine,vtkStreamLine);
+  vtkTypeRevisionMacro(vtkDashedStreamLine,vtkStreamLine);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

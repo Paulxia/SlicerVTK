@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChartXY.h
+  Module:    $RCSfile: vtkChartXY.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class vtkChartXYPrivate; // Private class to keep my STL vector in...
 class VTK_CHARTS_EXPORT vtkChartXY : public vtkChart
 {
 public:
-  vtkTypeMacro(vtkChartXY, vtkChart);
+  vtkTypeRevisionMacro(vtkChartXY, vtkChart);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:
@@ -72,14 +72,6 @@ public:
   // Description:
   // Get the number of plots the chart contains.
   virtual vtkIdType GetNumberOfPlots();
-
-  // Description:
-  // Figure out which quadrant the plot is in.
-  int GetPlotCorner(vtkPlot *plot);
-
-  // Description:
-  // Figure out which quadrant the plot is in.
-  void SetPlotCorner(vtkPlot *plot, int corner);
 
   // Description:
   // Get the axis specified by axisIndex. This should probably
@@ -150,13 +142,9 @@ protected:
   ~vtkChartXY();
 
   // Description:
-  // Recalculate the necessary transforms.
-  void RecalculatePlotTransforms();
-
-  // Description:
-  // Recalculate the supplied transform for the two axes.
-  void RecalculatePlotTransform(vtkAxis *x, vtkAxis *y,
-                                vtkTransform2D *transform);
+  // Recalculate the plot area transform to fit in all points that will be
+  // plotted.
+  void RecalculatePlotTransform();
 
   // Description:
   // Calculate the optimal zoom level such that all of the points to be plotted
@@ -178,6 +166,10 @@ protected:
   // Description:
   // The tooltip item for the chart - can be used to display extra information.
   vtkTooltipItem *Tooltip;
+
+  // Description:
+  // The 2D transform for the series drawn in the plot area
+  vtkTransform2D *PlotTransform;
 
   // Description:
   // Does the plot area transform need to be recalculated?
@@ -227,12 +219,6 @@ private:
   // Description:
   // Try to locate a point within the plots to display in a tooltip
   bool LocatePointInPlots(const vtkContextMouseEvent &mouse);
-
-  // Description:
-  // Remove the plot from the plot corners list.
-  bool RemovePlotFromConers(vtkPlot *plot);
-
-  void ZoomInAxes(vtkAxis *x, vtkAxis *y, float *orign, float *max);
 
 //ETX
 };

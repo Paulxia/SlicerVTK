@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPDataSetReader.cxx
+  Module:    $RCSfile: vtkPDataSetReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkExtentTranslator.h"
 
+vtkCxxRevisionMacro(vtkPDataSetReader, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkPDataSetReader);
 
 //----------------------------------------------------------------------------

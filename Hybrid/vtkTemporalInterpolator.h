@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTemporalInterpolator.h
+  Module:    $RCSfile: vtkTemporalInterpolator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -60,7 +60,7 @@ class VTK_HYBRID_EXPORT vtkTemporalInterpolator : public vtkTemporalDataSetAlgor
 {
 public:
   static vtkTemporalInterpolator *New();
-  vtkTypeMacro(vtkTemporalInterpolator, vtkTemporalDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTemporalInterpolator, vtkTemporalDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

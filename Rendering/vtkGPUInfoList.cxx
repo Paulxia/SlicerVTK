@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGPUInfoList.cxx
+  Module:    $RCSfile: vtkGPUInfoList.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include <vtkstd/vector>
 #include "vtkGPUInfoListArray.h"
 
+vtkCxxRevisionMacro(vtkGPUInfoList, "$Revision: 1.2 $");
 
 // ----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

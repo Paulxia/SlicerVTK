@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLightsPass.cxx
+  Module:    $RCSfile: vtkLightsPass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkRenderer.h"
 #include "vtkgl.h"
 
+vtkCxxRevisionMacro(vtkLightsPass, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkLightsPass);
 
 // ----------------------------------------------------------------------------

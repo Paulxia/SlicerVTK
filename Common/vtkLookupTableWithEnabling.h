@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLookupTableWithEnabling.h
+  Module:    $RCSfile: vtkLookupTableWithEnabling.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_COMMON_EXPORT vtkLookupTableWithEnabling : public vtkLookupTable
 public:
   static vtkLookupTableWithEnabling *New();
   
-  vtkTypeMacro(vtkLookupTableWithEnabling,vtkLookupTable);
+  vtkTypeRevisionMacro(vtkLookupTableWithEnabling,vtkLookupTable);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

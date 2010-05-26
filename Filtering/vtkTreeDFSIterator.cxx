@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeDFSIterator.cxx
+  Module:    $RCSfile: vtkTreeDFSIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@ public:
   stack<vtkTreeDFSIteratorPosition> Stack;
 };
 
+vtkCxxRevisionMacro(vtkTreeDFSIterator, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkTreeDFSIterator);
 
 vtkTreeDFSIterator::vtkTreeDFSIterator()

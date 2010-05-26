@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabelHierarchyIterator.h
+  Module:    $RCSfile: vtkLabelHierarchyIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class vtkPolyData;
 class VTK_RENDERING_EXPORT vtkLabelHierarchyIterator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkLabelHierarchyIterator,vtkObject);
+  vtkTypeRevisionMacro(vtkLabelHierarchyIterator,vtkObject);
   virtual void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

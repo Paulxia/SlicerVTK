@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMarchingSquares.h
+  Module:    $RCSfile: vtkMarchingSquares.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_GRAPHICS_EXPORT vtkMarchingSquares : public vtkPolyDataAlgorithm
 {
 public:
   static vtkMarchingSquares *New();
-  vtkTypeMacro(vtkMarchingSquares,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkMarchingSquares,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

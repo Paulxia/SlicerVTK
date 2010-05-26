@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUGFacetReader.cxx
+  Module:    $RCSfile: vtkUGFacetReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkShortArray.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkUGFacetReader, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkUGFacetReader);
 
 // Construct object to extract all parts, and with point merging

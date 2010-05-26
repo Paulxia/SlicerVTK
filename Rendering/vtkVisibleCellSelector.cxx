@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVisibleCellSelector.cxx
+  Module:    $RCSfile: vtkVisibleCellSelector.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -200,6 +200,7 @@ public:
 };
 
 //////////////////////////////////////////////////////////////////////////////
+vtkCxxRevisionMacro(vtkVisibleCellSelector, "$Revision: 1.28 $");
 vtkStandardNewMacro(vtkVisibleCellSelector);
 vtkCxxSetObjectMacro(vtkVisibleCellSelector, Renderer, vtkRenderer);
 

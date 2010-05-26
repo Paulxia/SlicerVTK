@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyLine.cxx
+  Module:    $RCSfile: vtkPolyLine.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <vtkstd/algorithm>
 
+vtkCxxRevisionMacro(vtkPolyLine, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkPolyLine);
 
 //----------------------------------------------------------------------------

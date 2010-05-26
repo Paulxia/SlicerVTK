@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractDataSets.h
+  Module:    $RCSfile: vtkExtractDataSets.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_GRAPHICS_EXPORT vtkExtractDataSets : public vtkHierarchicalBoxDataSetA
 {
 public:
   static vtkExtractDataSets* New();
-  vtkTypeMacro(vtkExtractDataSets, vtkHierarchicalBoxDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractDataSets, vtkHierarchicalBoxDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

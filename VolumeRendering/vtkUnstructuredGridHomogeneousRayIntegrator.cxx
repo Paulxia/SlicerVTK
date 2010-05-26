@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridHomogeneousRayIntegrator.cxx
+  Module:    $RCSfile: vtkUnstructuredGridHomogeneousRayIntegrator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 
 //-----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkUnstructuredGridHomogeneousRayIntegrator, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkUnstructuredGridHomogeneousRayIntegrator);
 
 //-----------------------------------------------------------------------------

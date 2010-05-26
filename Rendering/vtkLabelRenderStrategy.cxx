@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabelRenderStrategy.cxx
+  Module:    $RCSfile: vtkLabelRenderStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkRenderer.h"
 #include "vtkTextProperty.h"
 
+vtkCxxRevisionMacro(vtkLabelRenderStrategy, "$Revision: 1.1 $");
 vtkCxxSetObjectMacro(vtkLabelRenderStrategy, Renderer, vtkRenderer);
 vtkCxxSetObjectMacro(vtkLabelRenderStrategy, DefaultTextProperty, vtkTextProperty);
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphToPolyData.cxx
+  Module:    $RCSfile: vtkGraphToPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 #include <vtksys/stl/utility>
 #include <vtksys/stl/vector>
 
+vtkCxxRevisionMacro(vtkGraphToPolyData, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkGraphToPolyData);
 
 vtkGraphToPolyData::vtkGraphToPolyData()

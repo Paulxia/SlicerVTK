@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSliderRepresentation3D.cxx
+  Module:    $RCSfile: vtkSliderRepresentation3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 #include "vtkWindow.h"
 
 
+vtkCxxRevisionMacro(vtkSliderRepresentation3D, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkSliderRepresentation3D);
 
 //----------------------------------------------------------------------

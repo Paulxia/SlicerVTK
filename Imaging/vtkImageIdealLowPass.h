@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageIdealLowPass.h
+  Module:    $RCSfile: vtkImageIdealLowPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,7 +37,7 @@ class VTK_IMAGING_EXPORT vtkImageIdealLowPass : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageIdealLowPass *New();
-  vtkTypeMacro(vtkImageIdealLowPass,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageIdealLowPass,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

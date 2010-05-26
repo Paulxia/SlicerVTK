@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ArrayUserTypes.cxx
+  Module:    $RCSfile: ArrayUserTypes.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

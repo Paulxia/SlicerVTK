@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearSynchronizedTemplates.cxx
+  Module:    $RCSfile: vtkRectilinearSynchronizedTemplates.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkRectilinearSynchronizedTemplates, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkRectilinearSynchronizedTemplates);
 
 //----------------------------------------------------------------------------

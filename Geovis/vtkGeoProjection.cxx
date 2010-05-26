@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoProjection.cxx
+  Module:    $RCSfile: vtkGeoProjection.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtk_libproj4.h"
 
 vtkStandardNewMacro(vtkGeoProjection);
+vtkCxxRevisionMacro(vtkGeoProjection,"$Revision: 1.1 $");
 
 static int vtkGeoProjectionNumProj = -1;
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPieceRequestFilter.cxx
+  Module:    $RCSfile: vtkPieceRequestFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkPieceRequestFilter, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPieceRequestFilter);
 
 //----------------------------------------------------------------------------

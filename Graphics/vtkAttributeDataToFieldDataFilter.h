@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAttributeDataToFieldDataFilter.h
+  Module:    $RCSfile: vtkAttributeDataToFieldDataFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_GRAPHICS_EXPORT vtkAttributeDataToFieldDataFilter : public vtkDataSetA
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkAttributeDataToFieldDataFilter,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkAttributeDataToFieldDataFilter,vtkDataSetAlgorithm);
 
   // Description:
   // Construct this object.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRemoveHiddenData.cxx
+  Module:    $RCSfile: vtkRemoveHiddenData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,6 +41,7 @@
 #include "vtkSelectionNode.h"
 
 
+vtkCxxRevisionMacro(vtkRemoveHiddenData, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkRemoveHiddenData);
 
 vtkRemoveHiddenData::vtkRemoveHiddenData()

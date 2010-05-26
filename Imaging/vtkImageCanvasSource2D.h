@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageCanvasSource2D.h
+  Module:    $RCSfile: vtkImageCanvasSource2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ public:
   // Construct an instance of vtkImageCanvasSource2D with no data.
   static vtkImageCanvasSource2D *New();
 
-  vtkTypeMacro(vtkImageCanvasSource2D,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageCanvasSource2D,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

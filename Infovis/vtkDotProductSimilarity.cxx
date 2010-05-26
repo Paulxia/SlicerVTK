@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDotProductSimilarity.cxx
+  Module:    $RCSfile: vtkDotProductSimilarity.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -85,6 +85,7 @@ private:
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkDotProductSimilarity, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkDotProductSimilarity);
 
 // ----------------------------------------------------------------------

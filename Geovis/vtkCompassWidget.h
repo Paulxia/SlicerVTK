@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompassWidget.h
+  Module:    $RCSfile: vtkCompassWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -74,7 +74,7 @@ public:
 
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkCompassWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkCompassWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

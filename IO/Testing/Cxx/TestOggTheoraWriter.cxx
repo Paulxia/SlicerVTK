@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestOggTheoraWriter.cxx
+  Module:    $RCSfile: TestOggTheoraWriter.cxx,v $
 
   Copyright (c) Michael Wild, Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

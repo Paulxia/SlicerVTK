@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeometricErrorMetric.cxx
+  Module:    $RCSfile: vtkGeometricErrorMetric.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkMath.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkGeometricErrorMetric,"$Revision: 1.7 $");
 vtkStandardNewMacro(vtkGeometricErrorMetric);
 
 //-----------------------------------------------------------------------------

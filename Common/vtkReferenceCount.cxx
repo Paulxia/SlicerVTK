@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkReferenceCount.cxx
+  Module:    $RCSfile: vtkReferenceCount.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkReferenceCount.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkReferenceCount, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkReferenceCount);
 
 vtkReferenceCount::vtkReferenceCount() 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConnectivityFilter.h
+  Module:    $RCSfile: vtkConnectivityFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -65,7 +65,7 @@ class vtkIntArray;
 class VTK_GRAPHICS_EXPORT vtkConnectivityFilter : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkConnectivityFilter,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkConnectivityFilter,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

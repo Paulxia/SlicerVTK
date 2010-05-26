@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFillHolesFilter.h
+  Module:    $RCSfile: vtkFillHolesFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ public:
   // Description:
   // Standard methods for instantiation, type information and printing.
   static vtkFillHolesFilter *New();
-  vtkTypeMacro(vtkFillHolesFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkFillHolesFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipHyperOctree.cxx
+  Module:    $RCSfile: vtkClipHyperOctree.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@
 #include <math.h>
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkClipHyperOctree, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkClipHyperOctree);
 vtkCxxSetObjectMacro(vtkClipHyperOctree,ClipFunction,vtkImplicitFunction);
 

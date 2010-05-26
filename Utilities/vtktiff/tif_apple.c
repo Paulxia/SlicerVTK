@@ -1,4 +1,4 @@
-/* Header */
+/* $Header: /cvsroot/VTK/VTK/Utilities/vtktiff/tif_apple.c,v 1.2 2008-03-11 13:37:57 andinet Exp $ */
 
 /*
  * Copyright (c) 1988-1997 Sam Leffler

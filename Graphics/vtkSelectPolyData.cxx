@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSelectPolyData.cxx
+  Module:    $RCSfile: vtkSelectPolyData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkTriangleFilter.h"
 #include "vtkTriangleStrip.h"
 
+vtkCxxRevisionMacro(vtkSelectPolyData, "$Revision: 1.36 $");
 vtkStandardNewMacro(vtkSelectPolyData);
 
 vtkCxxSetObjectMacro(vtkSelectPolyData,Loop,vtkPoints);

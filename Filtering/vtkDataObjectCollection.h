@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataObjectCollection.h
+  Module:    $RCSfile: vtkDataObjectCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_FILTERING_EXPORT vtkDataObjectCollection : public vtkCollection
 {
 public:
   static vtkDataObjectCollection *New();
-  vtkTypeMacro(vtkDataObjectCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkDataObjectCollection,vtkCollection);
 
   // Description:
   // Add a data object to the list.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCorrelativeStatistics.cxx
+  Module:    $RCSfile: vtkCorrelativeStatistics.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,6 @@
 #include "vtkIdTypeArray.h"
 #include "vtkInformation.h"
 #include "vtkInformationVector.h"
-#include "vtkMultiBlockDataSet.h"
 #include "vtkObjectFactory.h"
 #include "vtkStringArray.h"
 #include "vtkStdString.h"
@@ -39,6 +38,7 @@
 
 #include <vtksys/ios/sstream>
 
+vtkCxxRevisionMacro(vtkCorrelativeStatistics, "$Revision: 1.62 $");
 vtkStandardNewMacro(vtkCorrelativeStatistics);
 
 // ----------------------------------------------------------------------
@@ -69,8 +69,9 @@ void vtkCorrelativeStatistics::PrintSelf( ostream &os, vtkIndent indent )
 
 // ----------------------------------------------------------------------
 void vtkCorrelativeStatistics::Aggregate( vtkDataObjectCollection* inMetaColl,
-                                          vtkMultiBlockDataSet* outMeta )
+                                          vtkDataObject* outMetaDO )
 {
+  vtkTable* outMeta = vtkTable::SafeDownCast( outMetaDO );
   if ( ! outMeta ) 
     { 
     return; 
@@ -81,57 +82,36 @@ void vtkCorrelativeStatistics::Aggregate( vtkDataObjectCollection* inMetaColl,
   inMetaColl->InitTraversal( it );
   vtkDataObject *inMetaDO = inMetaColl->GetNextDataObject( it );
 
-  // Verify that the first input model is indeed contained in a multiblock data set
-  vtkMultiBlockDataSet* inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO );
+  // Verify that the model is indeed contained in a table
+  vtkTable* inMeta = vtkTable::SafeDownCast( inMetaDO );
   if ( ! inMeta ) 
     { 
     return; 
     }
 
-  // Verify that the first primary statistics are indeed contained in a table
-  vtkTable* primaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) );
-  if ( ! primaryTab )
-    {
-    return;
-    }
-
-  vtkIdType nRow = primaryTab->GetNumberOfRows();
+  vtkIdType nRow = inMeta->GetNumberOfRows();
   if ( ! nRow )
     {
     // No statistics were calculated.
     return;
     }
 
-  // Use this first model to initialize the aggregated one
-  vtkTable* aggregatedTab = vtkTable::New();
-  aggregatedTab->DeepCopy( primaryTab );
+  // use this first model to initialize the aggregated one
+  outMeta->DeepCopy( inMeta );
 
   // Now, loop over all remaining models and update aggregated each time
   while ( ( inMetaDO = inMetaColl->GetNextDataObject( it ) ) )
     {
     // Verify that the model is indeed contained in a table
-    inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO );
+    inMeta = vtkTable::SafeDownCast( inMetaDO );
     if ( ! inMeta ) 
       { 
-      aggregatedTab->Delete();
-
       return; 
       }
     
-    // Verify that the current primary statistics are indeed contained in a table
-    primaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) );
-    if ( ! primaryTab )
-      {
-      aggregatedTab->Delete();
-
-      return;
-      }
-
-    if ( primaryTab->GetNumberOfRows() != nRow )
+    if ( inMeta->GetNumberOfRows() != nRow )
       {
       // Models do not match
-      aggregatedTab->Delete();
-
       return;
       }
 
@@ -139,29 +119,27 @@ void vtkCorrelativeStatistics::Aggregate( vtkDataObjectCollection* inMetaColl,
     for ( int r = 0; r < nRow; ++ r )
       {
       // Verify that variable names match each other
-      if ( primaryTab->GetValueByName( r, "Variable" ) != aggregatedTab->GetValueByName( r, "Variable" ) )
+      if ( inMeta->GetValueByName( r, "Variable" ) != outMeta->GetValueByName( r, "Variable" ) )
         {
         // Models do not match
-        aggregatedTab->Delete();
-
         return;
         }
 
       // Get aggregated statistics
-      int n = aggregatedTab->GetValueByName( r, "Cardinality" ).ToInt();
-      double meanX = aggregatedTab->GetValueByName( r, "Mean X" ).ToDouble();
-      double meanY = aggregatedTab->GetValueByName( r, "Mean Y" ).ToDouble();
-      double M2X = aggregatedTab->GetValueByName( r, "M2 X" ).ToDouble();
-      double M2Y = aggregatedTab->GetValueByName( r, "M2 Y" ).ToDouble();
-      double MXY = aggregatedTab->GetValueByName( r, "M XY" ).ToDouble();
+      int n = outMeta->GetValueByName( r, "Cardinality" ).ToInt();
+      double meanX = outMeta->GetValueByName( r, "Mean X" ).ToDouble();
+      double meanY = outMeta->GetValueByName( r, "Mean Y" ).ToDouble();
+      double M2X = outMeta->GetValueByName( r, "M2 X" ).ToDouble();
+      double M2Y = outMeta->GetValueByName( r, "M2 Y" ).ToDouble();
+      double MXY = outMeta->GetValueByName( r, "M XY" ).ToDouble();
       
       // Get current model statistics
-      int n_c = primaryTab->GetValueByName( r, "Cardinality" ).ToInt();
-      double meanX_c = primaryTab->GetValueByName( r, "Mean X" ).ToDouble();
-      double meanY_c = primaryTab->GetValueByName( r, "Mean Y" ).ToDouble();
-      double M2X_c = primaryTab->GetValueByName( r, "M2 X" ).ToDouble();
-      double M2Y_c = primaryTab->GetValueByName( r, "M2 Y" ).ToDouble();
-      double MXY_c = primaryTab->GetValueByName( r, "M XY" ).ToDouble();
+      int n_c = inMeta->GetValueByName( r, "Cardinality" ).ToInt();
+      double meanX_c = inMeta->GetValueByName( r, "Mean X" ).ToDouble();
+      double meanY_c = inMeta->GetValueByName( r, "Mean Y" ).ToDouble();
+      double M2X_c = outMeta->GetValueByName( r, "M2 X" ).ToDouble();
+      double M2Y_c = outMeta->GetValueByName( r, "M2 Y" ).ToDouble();
+      double MXY_c = outMeta->GetValueByName( r, "M XY" ).ToDouble();
       
       // Update global statics
       int N = n + n_c; 
@@ -190,22 +168,14 @@ void vtkCorrelativeStatistics::Aggregate( vtkDataObjectCollection* inMetaColl,
       meanY += n_c * deltaY_sur_N;
 
       // Store updated model
-      aggregatedTab->SetValueByName( r, "Cardinality", N );
-      aggregatedTab->SetValueByName( r, "Mean X", meanX );
-      aggregatedTab->SetValueByName( r, "Mean Y", meanY );
-      aggregatedTab->SetValueByName( r, "M2 X", M2X );
-      aggregatedTab->SetValueByName( r, "M2 Y", M2Y );
-      aggregatedTab->SetValueByName( r, "M XY", MXY );
+      outMeta->SetValueByName( r, "Cardinality", N );
+      outMeta->SetValueByName( r, "Mean X", meanX );
+      outMeta->SetValueByName( r, "Mean Y", meanY );
+      outMeta->SetValueByName( r, "M2 X", M2X );
+      outMeta->SetValueByName( r, "M2 Y", M2Y );
+      outMeta->SetValueByName( r, "M XY", MXY );
       }
     }
-
-  // Finally set first block of aggregated model to primary statistics table
-  outMeta->SetNumberOfBlocks( 1 );
-  outMeta->GetMetaData( static_cast<unsigned>( 0 ) )->Set( vtkCompositeDataSet::NAME(), "Primary Statistics" );
-  outMeta->SetBlock( 0, aggregatedTab );
-
-  // Clean up
-  aggregatedTab->Delete();
 
   return;
 }
@@ -213,63 +183,66 @@ void vtkCorrelativeStatistics::Aggregate( vtkDataObjectCollection* inMetaColl,
 // ----------------------------------------------------------------------
 void vtkCorrelativeStatistics::Learn( vtkTable* inData,
                                       vtkTable* vtkNotUsed( inParameters ),
-                                      vtkMultiBlockDataSet* outMeta )
+                                      vtkDataObject* outMetaDO )
 {
-  if ( ! inData )
-    {
-    return;
-    }
-
-  if ( ! outMeta )
-    {
-    return;
-    }
-
-  // Summary table: assigns a unique key to each (variable X,variable Y) pair
-  vtkTable* primaryTab = vtkTable::New();
+  vtkTable* outMeta = vtkTable::SafeDownCast( outMetaDO ); 
+  if ( ! outMeta ) 
+    { 
+    return; 
+    } 
 
   vtkIdTypeArray* idTypeCol = vtkIdTypeArray::New();
   idTypeCol->SetName( "Cardinality" );
-  primaryTab->AddColumn( idTypeCol );
+  outMeta->AddColumn( idTypeCol );
   idTypeCol->Delete();
 
   vtkStringArray* stringCol = vtkStringArray::New();
   stringCol->SetName( "Variable X" );
-  primaryTab->AddColumn( stringCol );
+  outMeta->AddColumn( stringCol );
   stringCol->Delete();
 
   stringCol = vtkStringArray::New();
   stringCol->SetName( "Variable Y" );
-  primaryTab->AddColumn( stringCol );
+  outMeta->AddColumn( stringCol );
   stringCol->Delete();
 
   vtkDoubleArray* doubleCol = vtkDoubleArray::New();
   doubleCol->SetName( "Mean X" );
-  primaryTab->AddColumn( doubleCol );
+  outMeta->AddColumn( doubleCol );
   doubleCol->Delete();
   
   doubleCol = vtkDoubleArray::New();
   doubleCol->SetName( "Mean Y" );
-  primaryTab->AddColumn( doubleCol );
+  outMeta->AddColumn( doubleCol );
   doubleCol->Delete();
   
   doubleCol = vtkDoubleArray::New();
   doubleCol->SetName( "M2 X" );
-  primaryTab->AddColumn( doubleCol );
+  outMeta->AddColumn( doubleCol );
   doubleCol->Delete();
 
   doubleCol = vtkDoubleArray::New();
   doubleCol->SetName( "M2 Y" );
-  primaryTab->AddColumn( doubleCol );
+  outMeta->AddColumn( doubleCol );
   doubleCol->Delete();
 
   doubleCol = vtkDoubleArray::New();
   doubleCol->SetName( "M XY" );
-  primaryTab->AddColumn( doubleCol );
+  outMeta->AddColumn( doubleCol );
   doubleCol->Delete();
 
-  // Loop over requests
   vtkIdType nRow = inData->GetNumberOfRows();
+  if ( ! nRow )
+    {
+    return;
+    }
+
+  if ( ! inData->GetNumberOfColumns() )
+    {
+    return;
+    }
+
+  // Loop over requests
   for ( vtksys_stl::set<vtksys_stl::set<vtkStdString> >::const_iterator rit = this->Internals->Requests.begin(); 
         rit != this->Internals->Requests.end(); ++ rit )
     {
@@ -332,30 +305,31 @@ void vtkCorrelativeStatistics::Learn( vtkTable* inData,
     row->SetValue( 6, mom2Y );
     row->SetValue( 7, momXY );
 
-    primaryTab->InsertNextRow( row );
+    outMeta->InsertNextRow( row );
 
     row->Delete();
     }
     
-  // Finally set first block of output meta port to primary statistics table
-  outMeta->SetNumberOfBlocks( 1 );
-  outMeta->GetMetaData( static_cast<unsigned>( 0 ) )->Set( vtkCompositeDataSet::NAME(), "Primary Statistics" );
-  outMeta->SetBlock( 0, primaryTab );
-
-  // Clean up
-  primaryTab->Delete();
+  return;
 }
 
 // ----------------------------------------------------------------------
-void vtkCorrelativeStatistics::Derive( vtkMultiBlockDataSet* inMeta )
+void vtkCorrelativeStatistics::Derive( vtkDataObject* inMetaDO )
 {
-  if ( ! inMeta || inMeta->GetNumberOfBlocks() < 1 )
+  vtkTable* inMeta = vtkTable::SafeDownCast( inMetaDO ); 
+  if ( ! inMeta ) 
+    { 
+    return; 
+    } 
+
+  vtkIdType nCol = inMeta->GetNumberOfColumns();
+  if ( nCol < 8 )
     {
     return;
     }
 
-  vtkTable* primaryTab = vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) );
-  if ( ! primaryTab  )
+  vtkIdType nRow = inMeta->GetNumberOfRows();
+  if ( ! nRow )
     {
     return;
     }
@@ -370,44 +344,40 @@ void vtkCorrelativeStatistics::Derive( vtkMultiBlockDataSet* inMeta )
                                  "Intersect X/Y", 
                                  "Pearson r" };
   
-  // Create table for derived statistics
-  vtkIdType nRow = primaryTab->GetNumberOfRows();
-  vtkTable* derivedTab = vtkTable::New();
   vtkDoubleArray* doubleCol;
   for ( int j = 0; j < numDoubles; ++ j )
     {
-    if ( ! derivedTab->GetColumnByName( doubleNames[j] ) )
+    if ( ! inMeta->GetColumnByName( doubleNames[j] ) )
       {
       doubleCol = vtkDoubleArray::New();
       doubleCol->SetName( doubleNames[j] );
       doubleCol->SetNumberOfTuples( nRow );
-      derivedTab->AddColumn( doubleCol );
+      inMeta->AddColumn( doubleCol );
       doubleCol->Delete();
       }
     }
 
-  if ( ! derivedTab->GetColumnByName( "Linear Correlation" ) )
+  if ( ! inMeta->GetColumnByName( "Linear Correlation" ) )
     {  
     vtkStringArray* stringCol = vtkStringArray::New();
     stringCol->SetName( "Linear Correlation" );
     stringCol->SetNumberOfTuples( nRow );
-    derivedTab->AddColumn( stringCol );
+    inMeta->AddColumn( stringCol );
     stringCol->Delete();
     }
 
-  // Storage for stdv x, stdv y, var x, var y, cov, slope y/x, int. y/x, slope x/y, int. x/y, r
-  double* derivedVals = new double[numDoubles]; // 
+  double* derivedVals = new double[numDoubles]; // var x, var y, cov, slope y/x, int. y/x, slope x/y, int. x/y, r
 
   for ( int i = 0; i < nRow; ++ i )
     {
-    vtkStdString c1 = primaryTab->GetValueByName( i, "Variable X" ).ToString();
-    vtkStdString c2 = primaryTab->GetValueByName( i, "Variable Y" ).ToString();
-    double m2X = primaryTab->GetValueByName( i, "M2 X" ).ToDouble();
-    double m2Y = primaryTab->GetValueByName( i, "M2 Y" ).ToDouble();
-    double mXY = primaryTab->GetValueByName( i, "M XY" ).ToDouble();
+    vtkStdString c1 = inMeta->GetValueByName( i, "Variable X" ).ToString();
+    vtkStdString c2 = inMeta->GetValueByName( i, "Variable Y" ).ToString();
+    double m2X = inMeta->GetValueByName( i, "M2 X" ).ToDouble();
+    double m2Y = inMeta->GetValueByName( i, "M2 Y" ).ToDouble();
+    double mXY = inMeta->GetValueByName( i, "M XY" ).ToDouble();
 
     double varX, varY, covXY;
-    int numSamples = primaryTab->GetValueByName(i, "Cardinality" ).ToInt();
+    int numSamples = inMeta->GetValueByName(i, "Cardinality" ).ToInt();
     if ( numSamples == 1 )
       {
       varX  = 0.;
@@ -447,8 +417,8 @@ void vtkCorrelativeStatistics::Derive( vtkMultiBlockDataSet* inMeta )
       }
     else
       {
-      double meanX = primaryTab->GetValueByName( i, "Mean X" ).ToDouble();
-      double meanY = primaryTab->GetValueByName( i, "Mean Y" ).ToDouble();
+      double meanX = inMeta->GetValueByName( i, "Mean X" ).ToDouble();
+      double meanY = inMeta->GetValueByName( i, "Mean Y" ).ToDouble();
 
       // variable Y on variable X:
       //   slope
@@ -466,20 +436,13 @@ void vtkCorrelativeStatistics::Derive( vtkMultiBlockDataSet* inMeta )
       derivedVals[7] = covXY / sqrt( varX * varY );
       }
 
-    derivedTab->SetValueByName( i, "Linear Correlation", status );
+    inMeta->SetValueByName( i, "Linear Correlation", status );
     for ( int j = 0; j < numDoubles; ++ j )
       {
-      derivedTab->SetValueByName( i, doubleNames[j], derivedVals[j] );
+      inMeta->SetValueByName( i, doubleNames[j], derivedVals[j] );
       }
     }
 
-  // Finally set second block of output meta port to derived statistics table
-  inMeta->SetNumberOfBlocks( 2 );
-  inMeta->GetMetaData( static_cast<unsigned>( 0 ) )->Set( vtkCompositeDataSet::NAME(), "Derived Statistics" );
-  inMeta->SetBlock( 1, derivedTab );
-
-  // Clean up
-  derivedTab->Delete();
   delete [] derivedVals;
 }
 
@@ -532,37 +495,18 @@ void vtkCorrelativeStatistics::SelectAssessFunctor( vtkTable* outData,
                                                     vtkStringArray* rowNames,
                                                     AssessFunctor*& dfunc )
 {
-  vtkMultiBlockDataSet* inMeta = vtkMultiBlockDataSet::SafeDownCast( inMetaDO ); 
-  if ( ! inMeta
-       || inMeta->GetNumberOfBlocks() < 2 )
+  vtkTable* inMeta = vtkTable::SafeDownCast( inMetaDO ); 
+  if ( ! inMeta ) 
     { 
     return; 
-    }
-
-  vtkTable* primaryTab= vtkTable::SafeDownCast( inMeta->GetBlock( 0 ) );
-  if ( ! primaryTab )
-    {
-    return;
-    }
-
-  vtkTable* derivedTab = vtkTable::SafeDownCast( inMeta->GetBlock( 1 ) );
-  if ( ! derivedTab )
-    {
-    return;
-    }
-
-  vtkIdType nRowPrim = primaryTab->GetNumberOfRows();
-  if ( nRowPrim != derivedTab->GetNumberOfRows() )
-    {
-    return;
-    }
+    } 
 
   vtkStdString varNameX = rowNames->GetValue( 0 );
   vtkStdString varNameY = rowNames->GetValue( 1 );
 
   // Downcast meta columns to string arrays for efficient data access
-  vtkStringArray* varX = vtkStringArray::SafeDownCast( primaryTab->GetColumnByName( "Variable X" ) );
-  vtkStringArray* varY = vtkStringArray::SafeDownCast( primaryTab->GetColumnByName( "Variable Y" ) );
+  vtkStringArray* varX = vtkStringArray::SafeDownCast( inMeta->GetColumnByName( "Variable X" ) );
+  vtkStringArray* varY = vtkStringArray::SafeDownCast( inMeta->GetColumnByName( "Variable Y" ) );
   if ( ! varX || ! varY )
     {
     dfunc = 0;
@@ -570,7 +514,8 @@ void vtkCorrelativeStatistics::SelectAssessFunctor( vtkTable* outData,
     }
 
   // Loop over parameters table until the requested variables are found 
-  for ( int r = 0; r < nRowPrim; ++ r )
+  vtkIdType nRowP = inMeta->GetNumberOfRows();
+  for ( int r = 0; r < nRowP; ++ r )
     {
     if ( varX->GetValue( r ) == varNameX
          && 
@@ -594,11 +539,11 @@ void vtkCorrelativeStatistics::SelectAssessFunctor( vtkTable* outData,
         return;
         }
 
-      double meanX = primaryTab->GetValueByName( r, this->AssessParameters->GetValue( 0 ) ).ToDouble();
-      double meanY = primaryTab->GetValueByName( r, this->AssessParameters->GetValue( 1 ) ).ToDouble();
-      double variX = derivedTab->GetValueByName( r, this->AssessParameters->GetValue( 2 ) ).ToDouble();
-      double variY = derivedTab->GetValueByName( r, this->AssessParameters->GetValue( 3 ) ).ToDouble();
-      double covXY = derivedTab->GetValueByName( r, this->AssessParameters->GetValue( 4 ) ).ToDouble();
+      double meanX = inMeta->GetValueByName( r, this->AssessParameters->GetValue( 0 ) ).ToDouble();
+      double meanY = inMeta->GetValueByName( r, this->AssessParameters->GetValue( 1 ) ).ToDouble();
+      double variX = inMeta->GetValueByName( r, this->AssessParameters->GetValue( 2 ) ).ToDouble();
+      double variY = inMeta->GetValueByName( r, this->AssessParameters->GetValue( 3 ) ).ToDouble();
+      double covXY = inMeta->GetValueByName( r, this->AssessParameters->GetValue( 4 ) ).ToDouble();
 
       double d = variX * variY - covXY * covXY;
       if ( d <= 0. )

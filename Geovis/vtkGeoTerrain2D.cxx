@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoTerrain2D.cxx
+  Module:    $RCSfile: vtkGeoTerrain2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkRenderer.h"
 
 vtkStandardNewMacro(vtkGeoTerrain2D);
+vtkCxxRevisionMacro(vtkGeoTerrain2D, "$Revision: 1.5 $");
 //----------------------------------------------------------------------------
 vtkGeoTerrain2D::vtkGeoTerrain2D()
 {

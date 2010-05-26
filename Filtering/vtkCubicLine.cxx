@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCubicLine.cxx
+  Module:    $RCSfile: vtkCubicLine.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPoints.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkCubicLine, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkCubicLine);
 
 //----------------------------------------------------------------------------

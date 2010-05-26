@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConcatenateArray.h
+  Module:    $RCSfile: vtkConcatenateArray.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -45,7 +45,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkConcatenateArray : public vtkArrayDataAlgorith
 {
 public:
   static vtkConcatenateArray* New();
-  vtkTypeMacro(vtkConcatenateArray, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkConcatenateArray, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHexahedron.cxx
+  Module:    $RCSfile: vtkHexahedron.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPoints.h"
 #include "vtkQuad.h"
 
+vtkCxxRevisionMacro(vtkHexahedron, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkHexahedron);
 
 static const double VTK_DIVERGED = 1.e6;

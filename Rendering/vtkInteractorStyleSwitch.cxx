@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleSwitch.cxx
+  Module:    $RCSfile: vtkInteractorStyleSwitch.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkRenderWindowInteractor.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleSwitch, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkInteractorStyleSwitch);
 
 //----------------------------------------------------------------------------

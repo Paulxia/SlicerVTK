@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSocketController.cxx
+  Module:    $RCSfile: vtkSocketController.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 
 int vtkSocketController::Initialized = 0;
 
+vtkCxxRevisionMacro(vtkSocketController, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkSocketController);
 
 //----------------------------------------------------------------------------

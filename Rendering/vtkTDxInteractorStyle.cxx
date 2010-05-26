@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxInteractorStyle.cxx
+  Module:    $RCSfile: vtkTDxInteractorStyle.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkTDxInteractorStyleSettings.h"
 #include "vtkTDxMotionEventInfo.h" // Borland needs it.
 
+vtkCxxRevisionMacro(vtkTDxInteractorStyle, "$Revision: 1.3 $");
 
 vtkCxxSetObjectMacro(vtkTDxInteractorStyle,Settings,
                      vtkTDxInteractorStyleSettings);

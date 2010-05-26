@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkScalarBarWidget.h
+  Module:    $RCSfile: vtkScalarBarWidget.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,7 +42,7 @@ class VTK_WIDGETS_EXPORT vtkScalarBarWidget : public vtkBorderWidget
 {
 public:
   static vtkScalarBarWidget *New();
-  vtkTypeMacro(vtkScalarBarWidget, vtkBorderWidget);
+  vtkTypeRevisionMacro(vtkScalarBarWidget, vtkBorderWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

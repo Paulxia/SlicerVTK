@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLinearExtrusionFilter.cxx
+  Module:    $RCSfile: vtkLinearExtrusionFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkLinearExtrusionFilter, "$Revision: 1.63 $");
 vtkStandardNewMacro(vtkLinearExtrusionFilter);
 
 // Create object with normal extrusion type, capping on, scale factor=1.0,

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGPUVolumeRayCastMapper_ScaleBiasFS.glsl
+  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_ScaleBiasFS.glsl,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

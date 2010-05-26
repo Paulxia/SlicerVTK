@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractPiece.cxx
+  Module:    $RCSfile: vtkExtractPiece.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkStructuredGrid.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkExtractPiece, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkExtractPiece);
 
 //=============================================================================

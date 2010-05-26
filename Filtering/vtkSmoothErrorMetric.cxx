@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSmoothErrorMetric.cxx
+  Module:    $RCSfile: vtkSmoothErrorMetric.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkMath.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkSmoothErrorMetric,"$Revision: 1.2 $");
 vtkStandardNewMacro(vtkSmoothErrorMetric);
 
 //-----------------------------------------------------------------------------

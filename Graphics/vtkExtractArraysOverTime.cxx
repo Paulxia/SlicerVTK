@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractArraysOverTime.cxx
+  Module:    $RCSfile: vtkExtractArraysOverTime.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -560,6 +560,7 @@ vtkExtractArraysOverTime::vtkInternal::GetOutput(
 }
 
 //****************************************************************************
+vtkCxxRevisionMacro(vtkExtractArraysOverTime, "$Revision: 1.28 $");
 vtkStandardNewMacro(vtkExtractArraysOverTime);
 //----------------------------------------------------------------------------
 vtkExtractArraysOverTime::vtkExtractArraysOverTime()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEarthSource.cxx
+  Module:    $RCSfile: vtkEarthSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkEarthSource, "$Revision: 1.27 $");
 vtkStandardNewMacro(vtkEarthSource);
 
 // Description:

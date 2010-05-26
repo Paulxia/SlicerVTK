@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMarchingCubes.h
+  Module:    $RCSfile: vtkMarchingCubes.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_GRAPHICS_EXPORT vtkMarchingCubes : public vtkPolyDataAlgorithm
 {
 public:
   static vtkMarchingCubes *New();
-  vtkTypeMacro(vtkMarchingCubes,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkMarchingCubes,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Methods to set contour values

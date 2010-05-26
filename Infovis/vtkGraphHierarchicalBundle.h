@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphHierarchicalBundle.h
+  Module:    $RCSfile: vtkGraphHierarchicalBundle.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,7 +59,7 @@ class VTK_INFOVIS_EXPORT vtkGraphHierarchicalBundle : public vtkPolyDataAlgorith
 public:
   static vtkGraphHierarchicalBundle *New();
 
-  vtkTypeMacro(vtkGraphHierarchicalBundle,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGraphHierarchicalBundle,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

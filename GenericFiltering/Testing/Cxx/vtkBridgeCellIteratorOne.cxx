@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBridgeCellIteratorOne.cxx
+  Module:    $RCSfile: vtkBridgeCellIteratorOne.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include "vtkVertex.h"
 #include "vtkPolyVertex.h"
 
+vtkCxxRevisionMacro(vtkBridgeCellIteratorOne, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkBridgeCellIteratorOne);
 
 //-----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericCell.cxx
+  Module:    $RCSfile: vtkGenericCell.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,6 +51,7 @@
 #include "vtkBiQuadraticQuadraticHexahedron.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkGenericCell, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkGenericCell);
 
 //----------------------------------------------------------------------------

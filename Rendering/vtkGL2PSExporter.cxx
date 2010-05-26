@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGL2PSExporter.cxx
+  Module:    $RCSfile: vtkGL2PSExporter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -167,6 +167,7 @@ void _Turn2DPropsOn(vtkRendererCollection *renCol, vtkIntArray *act2dVis)
     }
 }
 
+vtkCxxRevisionMacro(vtkGL2PSExporter, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkGL2PSExporter);
 
 static float vtkGL2PSExporterGlobalPointSizeFactor = 5.0/7.0;

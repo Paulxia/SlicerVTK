@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageReslice.h
+  Module:    $RCSfile: vtkImageReslice.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -68,7 +68,7 @@ class VTK_IMAGING_EXPORT vtkImageReslice : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageReslice *New();
-  vtkTypeMacro(vtkImageReslice, vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageReslice, vtkThreadedImageAlgorithm);
 
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 

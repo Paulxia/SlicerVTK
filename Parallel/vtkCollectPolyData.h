@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCollectPolyData.h
+  Module:    $RCSfile: vtkCollectPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_PARALLEL_EXPORT vtkCollectPolyData : public vtkPolyDataAlgorithm
 {
 public:
   static vtkCollectPolyData *New();
-  vtkTypeMacro(vtkCollectPolyData, vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCollectPolyData, vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

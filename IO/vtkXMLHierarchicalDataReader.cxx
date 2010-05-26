@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLHierarchicalDataReader.cxx
+  Module:    $RCSfile: vtkXMLHierarchicalDataReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkXMLHierarchicalDataReader);
+vtkCxxRevisionMacro(vtkXMLHierarchicalDataReader, "$Revision: 1.6 $");
 //----------------------------------------------------------------------------
 vtkXMLHierarchicalDataReader::vtkXMLHierarchicalDataReader()
 {

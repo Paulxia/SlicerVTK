@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageVariance3D.h
+  Module:    $RCSfile: vtkImageVariance3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_IMAGING_EXPORT vtkImageVariance3D : public vtkImageSpatialAlgorithm
 {
 public:
   static vtkImageVariance3D *New();
-  vtkTypeMacro(vtkImageVariance3D,vtkImageSpatialAlgorithm);
+  vtkTypeRevisionMacro(vtkImageVariance3D,vtkImageSpatialAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

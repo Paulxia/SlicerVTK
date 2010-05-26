@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkJPEGWriter.cxx
+  Module:    $RCSfile: vtkJPEGWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@ extern "C" {
 #include <setjmp.h>
 }
 
+vtkCxxRevisionMacro(vtkJPEGWriter, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkJPEGWriter);
 
 vtkCxxSetObjectMacro(vtkJPEGWriter,Result,vtkUnsignedCharArray);

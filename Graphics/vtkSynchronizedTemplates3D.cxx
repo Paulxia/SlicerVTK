@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSynchronizedTemplates3D.cxx
+  Module:    $RCSfile: vtkSynchronizedTemplates3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkSynchronizedTemplates3D, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkSynchronizedTemplates3D);
 
 //----------------------------------------------------------------------------

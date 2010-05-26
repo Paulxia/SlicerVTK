@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    VerdictVector.hpp
+  Module:    $RCSfile: VerdictVector.hpp,v $
 
   Copyright (c) 2006 Sandia Corporation.
   All rights reserved.

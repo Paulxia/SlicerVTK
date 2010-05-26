@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSocketCollection.h
+  Module:    $RCSfile: vtkSocketCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_COMMON_EXPORT vtkSocketCollection : public vtkCollection
 {
 public:
   static vtkSocketCollection* New();
-  vtkTypeMacro(vtkSocketCollection, vtkCollection);
+  vtkTypeRevisionMacro(vtkSocketCollection, vtkCollection);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Add Socket to the collection.

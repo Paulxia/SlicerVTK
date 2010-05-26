@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNonMergingPointLocator.cxx
+  Module:    $RCSfile: vtkNonMergingPointLocator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkPoints.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro( vtkNonMergingPointLocator, "$Revision: 1.1 $" );
 vtkStandardNewMacro( vtkNonMergingPointLocator );
 
 //----------------------------------------------------------------------------

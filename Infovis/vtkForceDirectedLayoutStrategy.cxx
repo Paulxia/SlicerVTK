@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkForceDirectedLayoutStrategy.cxx
+  Module:    $RCSfile: vtkForceDirectedLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkForceDirectedLayoutStrategy, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkForceDirectedLayoutStrategy);
 
 vtkForceDirectedLayoutStrategy::vtkForceDirectedLayoutStrategy()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDilateErode3D.cxx
+  Module:    $RCSfile: vtkImageDilateErode3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageDilateErode3D, "$Revision: 1.47 $");
 vtkStandardNewMacro(vtkImageDilateErode3D);
 
 //----------------------------------------------------------------------------

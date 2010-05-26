@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAssignAttribute.cxx
+  Module:    $RCSfile: vtkAssignAttribute.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPointData.h"
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkAssignAttribute, "$Revision: 1.24 $");
 vtkStandardNewMacro(vtkAssignAttribute);
 
 char vtkAssignAttribute::AttributeLocationNames[vtkAssignAttribute::NUM_ATTRIBUTE_LOCS][12] 

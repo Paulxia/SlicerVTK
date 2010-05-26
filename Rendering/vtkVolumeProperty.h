@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeProperty.h
+  Module:    $RCSfile: vtkVolumeProperty.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -51,7 +51,7 @@ class VTK_RENDERING_EXPORT vtkVolumeProperty : public vtkObject
 {
 public:
   static vtkVolumeProperty *New();
-  vtkTypeMacro(vtkVolumeProperty,vtkObject);
+  vtkTypeRevisionMacro(vtkVolumeProperty,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   void DeepCopy(vtkVolumeProperty *p);
 

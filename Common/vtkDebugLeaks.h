@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDebugLeaks.h
+  Module:    $RCSfile: vtkDebugLeaks.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ class VTK_COMMON_EXPORT vtkDebugLeaks : public vtkObject
 {
 public: 
   static vtkDebugLeaks *New();
-  vtkTypeMacro(vtkDebugLeaks,vtkObject);
+  vtkTypeRevisionMacro(vtkDebugLeaks,vtkObject);
 
   // Description:
   // Call this when creating a class of a given name.

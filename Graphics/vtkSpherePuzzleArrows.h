@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSpherePuzzleArrows.h
+  Module:    $RCSfile: vtkSpherePuzzleArrows.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class vtkSpherePuzzle;
 class VTK_GRAPHICS_EXPORT vtkSpherePuzzleArrows : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkSpherePuzzleArrows,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSpherePuzzleArrows,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkSpherePuzzleArrows *New();

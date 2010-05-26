@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTesting.cxx
+  Module:    $RCSfile: vtkTesting.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -42,6 +42,7 @@
 #include <sys/stat.h>
 
 vtkStandardNewMacro(vtkTesting);
+vtkCxxRevisionMacro(vtkTesting, "$Revision: 1.37 $");
 vtkCxxSetObjectMacro(vtkTesting, RenderWindow, vtkRenderWindow);
 
 using vtkstd::vector;

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatlabEngineFilter.h
+  Module:    $RCSfile: vtkMatlabEngineFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ public:
 
   static vtkMatlabEngineFilter *New();
 
-  vtkTypeMacro(vtkMatlabEngineFilter, vtkDataObjectAlgorithm );
+  vtkTypeRevisionMacro(vtkMatlabEngineFilter, vtkDataObjectAlgorithm );
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

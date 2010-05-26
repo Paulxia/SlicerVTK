@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtTreeView.cxx
+  Module:    $RCSfile: vtkQtTreeView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,6 +47,7 @@
 #include "vtkTree.h"
 #include "vtkViewTheme.h"
 
+vtkCxxRevisionMacro(vtkQtTreeView, "$Revision: 1.32 $");
 vtkStandardNewMacro(vtkQtTreeView);
 
 //----------------------------------------------------------------------------

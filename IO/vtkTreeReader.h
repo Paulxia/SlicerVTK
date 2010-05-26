@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeReader.h
+  Module:    $RCSfile: vtkTreeReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_IO_EXPORT vtkTreeReader : public vtkDataReader
 {
 public:
   static vtkTreeReader *New();
-  vtkTypeMacro(vtkTreeReader,vtkDataReader);
+  vtkTypeRevisionMacro(vtkTreeReader,vtkDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

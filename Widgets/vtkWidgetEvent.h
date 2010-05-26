@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWidgetEvent.h
+  Module:    $RCSfile: vtkWidgetEvent.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ public:
 
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkWidgetEvent,vtkObject);
+  vtkTypeRevisionMacro(vtkWidgetEvent,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

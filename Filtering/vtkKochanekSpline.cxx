@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkKochanekSpline.cxx
+  Module:    $RCSfile: vtkKochanekSpline.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPiecewiseFunction.h"
 
+vtkCxxRevisionMacro(vtkKochanekSpline, "$Revision: 1.28 $");
 vtkStandardNewMacro(vtkKochanekSpline);
 
 //----------------------------------------------------------------------------

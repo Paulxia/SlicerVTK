@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContinuousValueWidget.cxx
+  Module:    $RCSfile: vtkContinuousValueWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkWidgetEvent.h"
 #include "vtkWidgetEventTranslator.h"
 
+vtkCxxRevisionMacro(vtkContinuousValueWidget, "$Revision: 1.1 $");
 
 //------------------------------------------------------------
 vtkContinuousValueWidget::vtkContinuousValueWidget()

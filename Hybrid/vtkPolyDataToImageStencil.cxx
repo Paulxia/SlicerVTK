@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataToImageStencil.cxx
+  Module:    $RCSfile: vtkPolyDataToImageStencil.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -73,6 +73,7 @@ POSSIBILITY OF SUCH DAMAGES.
 #include <vtkstd/algorithm>
 
 
+vtkCxxRevisionMacro(vtkPolyDataToImageStencil, "$Revision: 1.32 $");
 vtkStandardNewMacro(vtkPolyDataToImageStencil);
 vtkCxxSetObjectMacro(vtkPolyDataToImageStencil, InformationInput,
                      vtkImageData);

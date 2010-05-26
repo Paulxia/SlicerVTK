@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPieceScalars.cxx
+  Module:    $RCSfile: vtkPieceScalars.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPointData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkPieceScalars, "$Revision: 1.17 $");
 vtkStandardNewMacro(vtkPieceScalars);
 
 //----------------------------------------------------------------------------

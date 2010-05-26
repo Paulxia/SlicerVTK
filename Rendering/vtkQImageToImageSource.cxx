@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQImageToImageSource.cxx
+  Module:    $RCSfile: vtkQImageToImageSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #define VTK_CREATE(type, name) \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkQImageToImageSource, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkQImageToImageSource);
 
 //----------------------------------------------------------------------------

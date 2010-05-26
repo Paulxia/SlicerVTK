@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplitField.cxx
+  Module:    $RCSfile: vtkSplitField.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPointData.h"
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkSplitField, "$Revision: 1.24 $");
 vtkStandardNewMacro(vtkSplitField);
 
 char vtkSplitField::FieldLocationNames[3][12] 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClustering2DLayoutStrategy.h
+  Module:    $RCSfile: vtkClustering2DLayoutStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class VTK_INFOVIS_EXPORT vtkClustering2DLayoutStrategy : public vtkGraphLayoutSt
 public:
   static vtkClustering2DLayoutStrategy *New();
 
-  vtkTypeMacro(vtkClustering2DLayoutStrategy, vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkClustering2DLayoutStrategy, vtkGraphLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

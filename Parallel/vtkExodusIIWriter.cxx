@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExodusIIWriter.cxx
+  Module:    $RCSfile: vtkExodusIIWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,6 +48,7 @@
 #include <time.h>
 #include <ctype.h>
 
+vtkCxxRevisionMacro (vtkExodusIIWriter, "$Revision: 1.44 $");
 vtkStandardNewMacro (vtkExodusIIWriter);
 vtkCxxSetObjectMacro (vtkExodusIIWriter, ModelMetadata, vtkModelMetadata);
 
@@ -1476,7 +1477,7 @@ int vtkExodusIIWriter::WriteInitializationParameters()
   int dim = em->GetDimension();
   int nnsets = em->GetNumberOfNodeSets();
   int nssets = em->GetNumberOfSideSets();
-  const char *title = em->GetTitle();
+  char *title = em->GetTitle();
   int numBlocks = em->GetNumberOfBlocks();
   int rc = ex_put_init(this->fid, title, dim, this->NumPoints, this->NumCells, 
                        numBlocks, nnsets, nssets);

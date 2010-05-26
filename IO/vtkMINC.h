@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMINC.h
+  Module:    $RCSfile: vtkMINC.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -87,7 +87,10 @@ POSSIBILITY OF SUCH DAMAGES.
                  MI acquisition variable
 @CREATED    : July 24, 1992. (Peter Neelin, Montreal Neurological Institute)
 @MODIFIED   : 
- * Log: vtkMINC.h
+ * $Log: vtkMINC.h,v $
+ * Revision 1.2  2006-09-03 21:42:30  dgobbi
+ * ENH: Add option to rescale real-valued data to VTK_FLOAT.  Change ImageOrientation method to DirectionCosines to be more MINC-like, since ImageOrientation is not VTK-standard.
+ *
  * Revision 1.1  2006/09/03 01:01:21  dgobbi
  * ENH: move the MINC attributes into a separate file to make it easy to copy from the reader to the writer
  *
@@ -200,7 +203,7 @@ POSSIBILITY OF SUCH DAMAGES.
               make no representations about the suitability of this
               software for any purpose.  It is provided "as is" without
               express or implied warranty.
-@RCSID      : Header MINC (MNI)
+@RCSID      : $Header: /cvsroot/VTK/VTK/IO/vtkMINC.h,v 1.2 2006-09-03 21:42:30 dgobbi Exp $ MINC (MNI)
 ---------------------------------------------------------------------------- */
 
 /* Some useful constants */

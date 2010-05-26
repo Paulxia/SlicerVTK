@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedLocations.cxx
+  Module:    $RCSfile: vtkExtractSelectedLocations.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkExtractSelectedLocations, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkExtractSelectedLocations);
 
 //----------------------------------------------------------------------------

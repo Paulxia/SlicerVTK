@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSLACReader.h
+  Module:    $RCSfile: vtkSLACReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,7 +45,7 @@ class vtkInformationObjectBaseKey;
 class VTK_IO_EXPORT vtkSLACReader : public vtkMultiBlockDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkSLACReader, vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkSLACReader, vtkMultiBlockDataSetAlgorithm);
   static vtkSLACReader *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

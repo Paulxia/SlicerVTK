@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSynchronizedTemplatesCutter3D.cxx
+  Module:    $RCSfile: vtkSynchronizedTemplatesCutter3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkSynchronizedTemplatesCutter3D, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkSynchronizedTemplatesCutter3D);
 vtkCxxSetObjectMacro(vtkSynchronizedTemplatesCutter3D,CutFunction,vtkImplicitFunction);
 

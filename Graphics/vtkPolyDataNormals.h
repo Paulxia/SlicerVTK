@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataNormals.h
+  Module:    $RCSfile: vtkPolyDataNormals.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ class vtkPolyData;
 class VTK_GRAPHICS_EXPORT vtkPolyDataNormals : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkPolyDataNormals,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPolyDataNormals,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

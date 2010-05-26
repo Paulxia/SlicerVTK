@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLConnectedComponents.cxx
+  Module:    $RCSfile: vtkPBGLConnectedComponents.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -56,6 +56,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkPBGLConnectedComponents, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPBGLConnectedComponents);
 
 // Constructor/Destructor

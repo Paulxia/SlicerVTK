@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeFieldAggregator.cxx
+  Module:    $RCSfile: vtkTreeFieldAggregator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkTreeFieldAggregator, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkTreeFieldAggregator);
 
 vtkTreeFieldAggregator::vtkTreeFieldAggregator()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXGPUInfoList.cxx
+  Module:    $RCSfile: vtkXGPUInfoList.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "NVCtrlLib.h" // needs NVCtrl.h (NV_CTRL_VIDEO_RAM, XNVCTRLQueryAttribute() )
 #endif
 
+vtkCxxRevisionMacro(vtkXGPUInfoList, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkXGPUInfoList);
 
 // ----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericCutter.cxx
+  Module:    $RCSfile: vtkGenericCutter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,6 +40,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkGenericCutter, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkGenericCutter);
 vtkCxxSetObjectMacro(vtkGenericCutter,CutFunction,vtkImplicitFunction);
 vtkCxxSetObjectMacro(vtkGenericCutter,Locator,vtkIncrementalPointLocator);

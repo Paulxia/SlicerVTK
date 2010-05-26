@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtChartRepresentation.h
+  Module:    $RCSfile: vtkQtChartRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class QVTK_EXPORT vtkQtChartRepresentation : public vtkQtTableRepresentation
 {
 public:
   static vtkQtChartRepresentation *New();
-  vtkTypeMacro(vtkQtChartRepresentation, vtkQtTableRepresentation);
+  vtkTypeRevisionMacro(vtkQtChartRepresentation, vtkQtTableRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   //BTX

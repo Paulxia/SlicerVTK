@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImagingFactory.cxx
+  Module:    $RCSfile: vtkImagingFactory.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,6 +59,7 @@
 static vtkSimpleCriticalSection vtkUseMesaClassesCriticalSection;
 int vtkImagingFactory::UseMesaClasses = 0;
 
+vtkCxxRevisionMacro(vtkImagingFactory, "$Revision: 1.31 $");
 vtkStandardNewMacro(vtkImagingFactory);
 
 const char *vtkImagingFactoryGetRenderLibrary()

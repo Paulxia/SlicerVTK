@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIVExporter.cxx
+  Module:    $RCSfile: vtkIVExporter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkTransform.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkIVExporter, "$Revision: 1.63 $");
 vtkStandardNewMacro(vtkIVExporter);
 
 vtkIVExporter::vtkIVExporter()

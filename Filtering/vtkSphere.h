@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSphere.h
+  Module:    $RCSfile: vtkSphere.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,7 +27,7 @@
 class VTK_FILTERING_EXPORT vtkSphere : public vtkImplicitFunction
 {
 public:
-  vtkTypeMacro(vtkSphere,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkSphere,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description
@@ -45,12 +45,12 @@ public:
   void EvaluateGradient(double x[3], double n[3]);
 
   // Description:
-  // Set / get the radius of the sphere. The default is 0.5.
+  // Set / get the radius of the sphere.
   vtkSetMacro(Radius,double);
   vtkGetMacro(Radius,double);
 
   // Description:
-  // Set / get the center of the sphere. The default is (0,0,0).
+  // Set / get the center of the sphere.
   vtkSetVector3Macro(Center,double);
   vtkGetVectorMacro(Center,double,3);
 

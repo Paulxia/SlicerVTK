@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeCollection.h
+  Module:    $RCSfile: vtkVolumeCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkVolumeCollection : public vtkPropCollection
 {
  public:
   static vtkVolumeCollection *New();
-  vtkTypeMacro(vtkVolumeCollection,vtkPropCollection);
+  vtkTypeRevisionMacro(vtkVolumeCollection,vtkPropCollection);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

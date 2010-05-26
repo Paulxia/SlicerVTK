@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageDataLIC2DExtentTranslator.cxx
+  Module:    $RCSfile: vtkImageDataLIC2DExtentTranslator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkImageDataLIC2D.h"
 
 vtkStandardNewMacro(vtkImageDataLIC2DExtentTranslator);
+vtkCxxRevisionMacro(vtkImageDataLIC2DExtentTranslator, "$Revision: 1.2 $");
 vtkCxxSetObjectMacro(vtkImageDataLIC2DExtentTranslator, InputExtentTranslator, vtkExtentTranslator);
 //----------------------------------------------------------------------------
 vtkImageDataLIC2DExtentTranslator::vtkImageDataLIC2DExtentTranslator()

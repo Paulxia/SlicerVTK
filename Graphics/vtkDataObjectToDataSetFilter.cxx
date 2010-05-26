@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataObjectToDataSetFilter.cxx
+  Module:    $RCSfile: vtkDataObjectToDataSetFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkDataObjectToDataSetFilter, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkDataObjectToDataSetFilter);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTerrainDataPointPlacer.cxx
+  Module:    $RCSfile: vtkTerrainDataPointPlacer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkAssemblyPath.h"
 #include "vtkAssemblyNode.h"
 
+vtkCxxRevisionMacro(vtkTerrainDataPointPlacer, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkTerrainDataPointPlacer);
 
 //----------------------------------------------------------------------

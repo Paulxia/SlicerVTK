@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextureMapToSphere.h
+  Module:    $RCSfile: vtkTextureMapToSphere.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@
 class VTK_GRAPHICS_EXPORT vtkTextureMapToSphere : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTextureMapToSphere,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTextureMapToSphere,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

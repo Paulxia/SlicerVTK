@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeZPass.h
+  Module:    $RCSfile: vtkCompositeZPass.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class VTK_PARALLEL_EXPORT vtkCompositeZPass : public vtkRenderPass
 {
 public:
   static vtkCompositeZPass *New();
-  vtkTypeMacro(vtkCompositeZPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkCompositeZPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

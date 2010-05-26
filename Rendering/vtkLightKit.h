@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLightKit.h
+  Module:    $RCSfile: vtkLightKit.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -99,7 +99,7 @@ class VTK_RENDERING_EXPORT vtkLightKit : public vtkObject
 {
 public:
   static vtkLightKit *New();
-  vtkTypeMacro(vtkLightKit, vtkObject);
+  vtkTypeRevisionMacro(vtkLightKit, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

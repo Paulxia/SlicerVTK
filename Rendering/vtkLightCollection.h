@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLightCollection.h
+  Module:    $RCSfile: vtkLightCollection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkLightCollection : public vtkCollection
 {
  public:
   static vtkLightCollection *New();
-  vtkTypeMacro(vtkLightCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkLightCollection,vtkCollection);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

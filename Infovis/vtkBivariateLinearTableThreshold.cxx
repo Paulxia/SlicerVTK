@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkBivariateLinearTableThreshold.cxx
+Module:    $RCSfile: vtkBivariateLinearTableThreshold.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -30,6 +30,7 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkBivariateLinearTableThreshold, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkBivariateLinearTableThreshold);
 
 class vtkBivariateLinearTableThreshold::Internals

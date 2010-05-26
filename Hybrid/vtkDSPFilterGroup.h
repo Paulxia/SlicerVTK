@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDSPFilterGroup.h
+  Module:    $RCSfile: vtkDSPFilterGroup.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,7 +41,7 @@ class VTK_HYBRID_EXPORT vtkDSPFilterGroup : public vtkObject
 {
 public:
   static vtkDSPFilterGroup *New();
-  vtkTypeMacro(vtkDSPFilterGroup,vtkObject);
+  vtkTypeRevisionMacro(vtkDSPFilterGroup,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataSilhouette.h
+  Module:    $RCSfile: vtkPolyDataSilhouette.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ public:
   // Instantiate object.
   static vtkPolyDataSilhouette *New();
 
-  vtkTypeMacro(vtkPolyDataSilhouette,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPolyDataSilhouette,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

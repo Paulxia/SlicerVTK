@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIncrementalPointLocator.h
+  Module:    $RCSfile: vtkIncrementalPointLocator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_FILTERING_EXPORT vtkIncrementalPointLocator : public vtkAbstractPointL
 {
 public:
 
-  vtkTypeMacro( vtkIncrementalPointLocator, vtkAbstractPointLocator );
+  vtkTypeRevisionMacro( vtkIncrementalPointLocator, vtkAbstractPointLocator );
   void PrintSelf( ostream & os, vtkIndent indent );
   
   // Description:

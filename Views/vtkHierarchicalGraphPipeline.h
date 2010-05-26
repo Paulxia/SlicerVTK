@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHierarchicalGraphPipeline.h
+  Module:    $RCSfile: vtkHierarchicalGraphPipeline.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_VIEWS_EXPORT vtkHierarchicalGraphPipeline : public vtkObject
 {
 public:
   static vtkHierarchicalGraphPipeline* New();
-  vtkTypeMacro(vtkHierarchicalGraphPipeline, vtkObject);
+  vtkTypeRevisionMacro(vtkHierarchicalGraphPipeline, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

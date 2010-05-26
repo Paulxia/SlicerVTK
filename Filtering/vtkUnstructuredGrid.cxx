@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGrid.cxx
+  Module:    $RCSfile: vtkUnstructuredGrid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,6 +58,7 @@
 #include "vtkBiQuadraticQuadraticHexahedron.h"
 #include "vtkBiQuadraticTriangle.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGrid, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkUnstructuredGrid);
 
 vtkUnstructuredGrid::vtkUnstructuredGrid ()

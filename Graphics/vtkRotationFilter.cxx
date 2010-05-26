@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRotationFilter.cxx
+  Module:    $RCSfile: vtkRotationFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkMath.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkRotationFilter, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkRotationFilter);
 
 //---------------------------------------------------------------------------

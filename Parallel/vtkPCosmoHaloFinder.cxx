@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPCosmoHaloFinder.cxx
+  Module:    $RCSfile: vtkPCosmoHaloFinder.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,7 +15,7 @@
 /*=========================================================================
 
   Program:   VTK/ParaView Los Alamos National Laboratory Modules (PVLANL)
-  Module:    vtkPCosmoHaloFinder.cxx
+  Module:    $RCSfile: vtkPCosmoHaloFinder.cxx,v $
 
 Copyright (c) 2007, 2009, Los Alamos National Security, LLC
 
@@ -81,6 +81,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "FOFHaloProperties.h"
 #include "Partition.h"
 
+vtkCxxRevisionMacro(vtkPCosmoHaloFinder, "$Revision: 1.2.4.2 $");
 vtkStandardNewMacro(vtkPCosmoHaloFinder);
 
 /****************************************************************************/
@@ -578,3 +579,4 @@ int vtkPCosmoHaloFinder::RequestData(
 
   return 1;
 }
+

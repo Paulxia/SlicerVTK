@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLFileReadTester.cxx
+  Module:    $RCSfile: vtkXMLFileReadTester.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkXMLFileReadTester.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkXMLFileReadTester, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkXMLFileReadTester);
 
 //----------------------------------------------------------------------------

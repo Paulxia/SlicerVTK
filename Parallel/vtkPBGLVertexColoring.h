@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPBGLVertexColoring.h
+  Module:    $RCSfile: vtkPBGLVertexColoring.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLVertexColoring : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLVertexColoring *New();
-  vtkTypeMacro(vtkPBGLVertexColoring, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLVertexColoring, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

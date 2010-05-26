@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPImageWriter.h
+  Module:    $RCSfile: vtkPImageWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_PARALLEL_EXPORT vtkPImageWriter : public vtkImageWriter
 {
 public:
   static vtkPImageWriter *New();
-  vtkTypeMacro(vtkPImageWriter,vtkImageWriter);
+  vtkTypeRevisionMacro(vtkPImageWriter,vtkImageWriter);
   void PrintSelf(ostream& os, vtkIndent indent);  
 
   // Description:

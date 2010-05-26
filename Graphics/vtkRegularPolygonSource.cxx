@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRegularPolygonSource.cxx
+  Module:    $RCSfile: vtkRegularPolygonSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkRegularPolygonSource, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkRegularPolygonSource);
 
 vtkRegularPolygonSource::vtkRegularPolygonSource()

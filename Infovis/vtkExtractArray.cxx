@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractArray.cxx
+  Module:    $RCSfile: vtkExtractArray.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -30,6 +30,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkExtractArray
 
+vtkCxxRevisionMacro(vtkExtractArray, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkExtractArray);
 
 vtkExtractArray::vtkExtractArray() :

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorObserver.cxx
+  Module:    $RCSfile: vtkInteractorObserver.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkRenderWindowInteractor.h"
 #include "vtkObserverMediator.h" 
 
+vtkCxxRevisionMacro(vtkInteractorObserver, "$Revision: 1.38 $");
 
 vtkCxxSetObjectMacro(vtkInteractorObserver,DefaultRenderer,vtkRenderer);
 

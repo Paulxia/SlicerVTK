@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestLogoWidgetAlphaBlending.cxx
+  Module:    $RCSfile: TestLogoWidgetAlphaBlending.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

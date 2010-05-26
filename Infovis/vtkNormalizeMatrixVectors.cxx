@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkNormalizeMatrixVectors.cxx
+  Module:    $RCSfile: vtkNormalizeMatrixVectors.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -31,6 +31,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkNormalizeMatrixVectors
 
+vtkCxxRevisionMacro(vtkNormalizeMatrixVectors, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkNormalizeMatrixVectors);
 
 vtkNormalizeMatrixVectors::vtkNormalizeMatrixVectors() :

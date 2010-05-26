@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeCutter.cxx
+  Module:    $RCSfile: vtkHyperOctreeCutter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@
 #include "vtkHyperOctreeClipCutPointsGrabber.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkHyperOctreeCutter, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkHyperOctreeCutter);
 vtkCxxSetObjectMacro(vtkHyperOctreeCutter,CutFunction,vtkImplicitFunction);
 

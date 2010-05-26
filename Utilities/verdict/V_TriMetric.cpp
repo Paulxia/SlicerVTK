@@ -1,6 +1,6 @@
 /*=========================================================================
 
-  Module:    V_TriMetric.cpp
+  Module:    $RCSfile: V_TriMetric.cpp,v $
 
   Copyright (c) 2007 Sandia Corporation.
   All rights reserved.
@@ -21,6 +21,8 @@
  *
  */
 
+
+#define VERDICT_EXPORTS
 
 #include "verdict.h"
 #include "verdict_defines.hpp"

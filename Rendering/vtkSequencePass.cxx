@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSequencePass.cxx
+  Module:    $RCSfile: vtkSequencePass.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include <assert.h>
 #include "vtkRenderPassCollection.h"
 
+vtkCxxRevisionMacro(vtkSequencePass, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkSequencePass);
 vtkCxxSetObjectMacro(vtkSequencePass,Passes,vtkRenderPassCollection);
 

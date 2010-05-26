@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChooserPainter.cxx
+  Module:    $RCSfile: vtkChooserPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,7 +20,6 @@
 #include "vtkInformation.h"
 #include "vtkLinesPainter.h"
 #include "vtkObjectFactory.h"
-#include "vtkPointData.h"
 #include "vtkPointsPainter.h"
 #include "vtkPolyData.h"
 #include "vtkPolygonsPainter.h"
@@ -29,6 +28,7 @@
 #include "vtkStandardPolyDataPainter.h"
 #include "vtkTStripsPainter.h"
 
+vtkCxxRevisionMacro(vtkChooserPainter, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkChooserPainter);
 
 vtkCxxSetObjectMacro(vtkChooserPainter, VertPainter, vtkPolyDataPainter);
@@ -338,9 +338,7 @@ void vtkChooserPainter::RenderInternal(vtkRenderer* renderer, vtkActor* actor,
     if (   this->UseLinesPainterForWireframes
         && (actor->GetProperty()->GetRepresentation() == VTK_WIREFRAME)
         && !actor->GetProperty()->GetBackfaceCulling()
-        && !actor->GetProperty()->GetFrontfaceCulling()
-        && !this->GetInputAsPolyData()->GetPointData()->GetAttribute(
-                                               vtkDataSetAttributes::EDGEFLAG) )
+        && !actor->GetProperty()->GetFrontfaceCulling() )
       {
       this->LinePainter->Render(renderer, actor, vtkPainter::POLYS,
         forceCompileOnly);

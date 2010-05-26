@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeLimiter.cxx
+  Module:    $RCSfile: vtkHyperOctreeLimiter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkCellType.h"
 #include "vtkDoubleArray.h"
 
+vtkCxxRevisionMacro(vtkHyperOctreeLimiter, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkHyperOctreeLimiter);
 
 //----------------------------------------------------------------------------

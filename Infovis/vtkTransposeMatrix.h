@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransposeMatrix.h
+  Module:    $RCSfile: vtkTransposeMatrix.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -33,7 +33,7 @@ class VTK_INFOVIS_EXPORT vtkTransposeMatrix : public vtkArrayDataAlgorithm
 {
 public:
   static vtkTransposeMatrix* New();
-  vtkTypeMacro(vtkTransposeMatrix, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTransposeMatrix, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

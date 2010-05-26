@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractDataSets.cxx
+  Module:    $RCSfile: vtkExtractDataSets.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,6 +47,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkExtractDataSets);
+vtkCxxRevisionMacro(vtkExtractDataSets, "$Revision: 1.1 $");
 //----------------------------------------------------------------------------
 vtkExtractDataSets::vtkExtractDataSets()
 {

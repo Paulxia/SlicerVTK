@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBiQuadraticQuad.cxx
+  Module:    $RCSfile: vtkBiQuadraticQuad.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkQuadraticEdge.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkBiQuadraticQuad, "$Revision: 1.10 $");
 vtkStandardNewMacro(vtkBiQuadraticQuad);
 
 //----------------------------------------------------------------------------

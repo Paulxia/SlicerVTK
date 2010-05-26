@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractGrid.cxx
+  Module:    $RCSfile: vtkExtractGrid.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkStructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkExtractGrid, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkExtractGrid);
 
 // Construct object to extract all of the input data.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractDataOverTime.cxx
+  Module:    $RCSfile: vtkExtractDataOverTime.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkDoubleArray.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkExtractDataOverTime, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkExtractDataOverTime);
 
 //----------------------------------------------------------------------------

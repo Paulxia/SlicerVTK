@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointDataToCellData.h
+  Module:    $RCSfile: vtkPointDataToCellData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class VTK_GRAPHICS_EXPORT vtkPointDataToCellData : public vtkDataSetAlgorithm
 {
 public:
   static vtkPointDataToCellData *New();
-  vtkTypeMacro(vtkPointDataToCellData,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkPointDataToCellData,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

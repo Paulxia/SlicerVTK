@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableExtentTranslator.h
+  Module:    $RCSfile: vtkTableExtentTranslator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@
 class VTK_COMMON_EXPORT vtkTableExtentTranslator : public vtkExtentTranslator
 {
 public:
-  vtkTypeMacro(vtkTableExtentTranslator,vtkExtentTranslator);
+  vtkTypeRevisionMacro(vtkTableExtentTranslator,vtkExtentTranslator);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   static vtkTableExtentTranslator* New();

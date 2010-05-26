@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMutableUndirectedGraph.h
+  Module:    $RCSfile: vtkMutableUndirectedGraph.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_FILTERING_EXPORT vtkMutableUndirectedGraph : public vtkUndirectedGraph
 {
 public:
   static vtkMutableUndirectedGraph *New();
-  vtkTypeMacro(vtkMutableUndirectedGraph, vtkUndirectedGraph);
+  vtkTypeRevisionMacro(vtkMutableUndirectedGraph, vtkUndirectedGraph);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

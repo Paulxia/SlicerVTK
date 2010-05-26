@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredPointsToUnstructuredGridFilter.cxx
+  Module:    $RCSfile: vtkStructuredPointsToUnstructuredGridFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkInformation.h"
 #include "vtkStructuredPoints.h"
 
+vtkCxxRevisionMacro(vtkStructuredPointsToUnstructuredGridFilter, "$Revision: 1.18 $");
 
 //----------------------------------------------------------------------------
 vtkStructuredPointsToUnstructuredGridFilter::vtkStructuredPointsToUnstructuredGridFilter()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkViewUpdater.cxx
+  Module:    $RCSfile: vtkViewUpdater.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 
 #include <vtksys/stl/vector>
 
+vtkCxxRevisionMacro(vtkViewUpdater, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkViewUpdater);
 
 class vtkViewUpdater::vtkViewUpdaterInternals : public vtkCommand

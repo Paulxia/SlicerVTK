@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestPushTokenValueFilter.cxx
+  Module:    $RCSfile: TestPushTokenValueFilter.cxx,v $
   
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -61,7 +61,7 @@
 class vtkStreamAwareFeatureDictionary : public vtkFeatureDictionary {
 public:
   static vtkStreamAwareFeatureDictionary* New();
-  vtkTypeMacro(vtkStreamAwareFeatureDictionary, vtkFeatureDictionary);
+  vtkTypeRevisionMacro(vtkStreamAwareFeatureDictionary, vtkFeatureDictionary);
   
 protected:
   vtkStreamAwareFeatureDictionary() {}
@@ -85,6 +85,7 @@ private:
   void operator=(const vtkStreamAwareFeatureDictionary&);   // Not implemented
 };
 
+vtkCxxRevisionMacro(vtkStreamAwareFeatureDictionary, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkStreamAwareFeatureDictionary);
 
 int TestPushTokenValueFilter(int vtkNotUsed(argc), char *vtkNotUsed(argv)[])

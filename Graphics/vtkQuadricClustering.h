@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadricClustering.h
+  Module:    $RCSfile: vtkQuadricClustering.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -93,7 +93,7 @@ class VTK_GRAPHICS_EXPORT vtkQuadricClustering : public vtkPolyDataAlgorithm
 public:
   // Description:
   // Standard instantition, type and print methods.
-  vtkTypeMacro(vtkQuadricClustering, vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkQuadricClustering, vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkQuadricClustering *New();
 

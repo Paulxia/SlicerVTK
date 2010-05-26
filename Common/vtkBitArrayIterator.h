@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBitArrayIterator.h
+  Module:    $RCSfile: vtkBitArrayIterator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_COMMON_EXPORT vtkBitArrayIterator : public vtkArrayIterator
 {
 public:
   static vtkBitArrayIterator* New();
-  vtkTypeMacro(vtkBitArrayIterator, vtkArrayIterator);
+  vtkTypeRevisionMacro(vtkBitArrayIterator, vtkArrayIterator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

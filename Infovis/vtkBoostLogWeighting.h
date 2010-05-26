@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostLogWeighting.h
+  Module:    $RCSfile: vtkBoostLogWeighting.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -37,7 +37,7 @@ class VTK_INFOVIS_EXPORT vtkBoostLogWeighting : public vtkArrayDataAlgorithm
 {
 public:
   static vtkBoostLogWeighting* New();
-  vtkTypeMacro(vtkBoostLogWeighting, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostLogWeighting, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

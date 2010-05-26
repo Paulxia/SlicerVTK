@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRAdapter.h
+  Module:    $RCSfile: vtkRAdapter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -63,7 +63,7 @@ class VTK_GRAPHICS_EXPORT vtkRAdapter : public vtkObject
 
 public:
 
-  vtkTypeMacro(vtkRAdapter, vtkObject);
+  vtkTypeRevisionMacro(vtkRAdapter, vtkObject);
 
   void PrintSelf(ostream& os, vtkIndent indent);
 

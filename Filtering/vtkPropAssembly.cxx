@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPropAssembly.cxx
+  Module:    $RCSfile: vtkPropAssembly.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPropCollection.h"
 #include "vtkViewport.h"
 
+vtkCxxRevisionMacro(vtkPropAssembly, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkPropAssembly);
 
 // Construct object with no children.

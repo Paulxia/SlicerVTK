@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericDataSetTessellator.h
+  Module:    $RCSfile: vtkGenericDataSetTessellator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,7 +44,7 @@ public:
   // Description:
   // Standard VTK methods.
   static vtkGenericDataSetTessellator *New();
-  vtkTypeMacro(vtkGenericDataSetTessellator,
+  vtkTypeRevisionMacro(vtkGenericDataSetTessellator,
                        vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 

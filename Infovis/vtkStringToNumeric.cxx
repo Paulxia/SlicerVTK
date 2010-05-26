@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStringToNumeric.cxx
+  Module:    $RCSfile: vtkStringToNumeric.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkUnicodeStringArray.h"
 #include "vtkVariant.h"
 
+vtkCxxRevisionMacro(vtkStringToNumeric, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkStringToNumeric);
 
 vtkStringToNumeric::vtkStringToNumeric()

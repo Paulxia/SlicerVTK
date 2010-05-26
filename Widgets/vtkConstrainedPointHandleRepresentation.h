@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConstrainedPointHandleRepresentation.h
+  Module:    $RCSfile: vtkConstrainedPointHandleRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -58,7 +58,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkConstrainedPointHandleRepresentation,vtkHandleRepresentation);
+  vtkTypeRevisionMacro(vtkConstrainedPointHandleRepresentation,vtkHandleRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

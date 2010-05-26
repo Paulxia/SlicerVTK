@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShader2Collection.h
+  Module:    $RCSfile: vtkShader2Collection.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkShader2Collection : public vtkCollection
 {
  public:
   static vtkShader2Collection *New();
-  vtkTypeMacro(vtkShader2Collection,vtkCollection);
+  vtkTypeRevisionMacro(vtkShader2Collection,vtkCollection);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGPUVolumeRayCastMapper_MinIPFourDependentNoCroppingFS.glsl
+  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_MinIPFourDependentNoCroppingFS.glsl,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

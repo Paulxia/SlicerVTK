@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeReader.cxx
+  Module:    $RCSfile: vtkVolumeReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkVolumeReader.h"
 
+vtkCxxRevisionMacro(vtkVolumeReader, "$Revision: 1.22 $");
 
 // Construct object with NULL file prefix; file pattern "%s.%d"; image range 
 // set to (1,1); 

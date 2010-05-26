@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedThresholds.h
+  Module:    $RCSfile: vtkExtractSelectedThresholds.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class vtkSelectionNode;
 class VTK_GRAPHICS_EXPORT vtkExtractSelectedThresholds : public vtkExtractSelectionBase
 {
 public:
-  vtkTypeMacro(vtkExtractSelectedThresholds, vtkExtractSelectionBase);
+  vtkTypeRevisionMacro(vtkExtractSelectedThresholds, vtkExtractSelectionBase);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

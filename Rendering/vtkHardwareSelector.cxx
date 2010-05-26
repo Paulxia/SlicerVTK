@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHardwareSelector.cxx
+  Module:    $RCSfile: vtkHardwareSelector.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,6 +48,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkHardwareSelector);
+vtkCxxRevisionMacro(vtkHardwareSelector, "$Revision: 1.8 $");
 vtkCxxSetObjectMacro(vtkHardwareSelector, Renderer, vtkRenderer);
 //----------------------------------------------------------------------------
 vtkHardwareSelector::vtkHardwareSelector()

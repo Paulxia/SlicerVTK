@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPieChartActor.cxx
+  Module:    $RCSfile: vtkPieChartActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 #include <vtkstd/string>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkPieChartActor, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkPieChartActor);
 
 vtkCxxSetObjectMacro(vtkPieChartActor,Input,vtkDataObject);

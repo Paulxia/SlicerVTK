@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoView2D.h
+  Module:    $RCSfile: vtkGeoView2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@ class VTK_GEOVIS_EXPORT vtkGeoView2D : public vtkRenderView
 {
 public:
   static vtkGeoView2D *New();
-  vtkTypeMacro(vtkGeoView2D,vtkRenderView);
+  vtkTypeRevisionMacro(vtkGeoView2D,vtkRenderView);
   virtual void PrintSelf( ostream& os, vtkIndent indent );
 
   vtkGeoView2D();

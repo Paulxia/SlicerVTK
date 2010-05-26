@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaScalarsToColorsPainter.cxx
+  Module:    $RCSfile: vtkMesaScalarsToColorsPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,4 +32,5 @@
 #include "vtkOpenGLScalarsToColorsPainter.cxx"
 #undef vtkOpenGLScalarsToColorsPainter
 
+vtkCxxRevisionMacro(vtkMesaScalarsToColorsPainter, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMesaScalarsToColorsPainter);

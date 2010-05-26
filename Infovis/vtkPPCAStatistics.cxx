@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPPCAStatistics.cxx
+  Module:    $RCSfile: vtkPPCAStatistics.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include <vtkstd/map>
 
 vtkStandardNewMacro(vtkPPCAStatistics);
+vtkCxxRevisionMacro(vtkPPCAStatistics, "$Revision: 1.5 $");
 vtkCxxSetObjectMacro(vtkPPCAStatistics, Controller, vtkMultiProcessController);
 //-----------------------------------------------------------------------------
 vtkPPCAStatistics::vtkPPCAStatistics()
@@ -52,9 +53,10 @@ void vtkPPCAStatistics::PrintSelf(ostream& os, vtkIndent indent)
 
 // ----------------------------------------------------------------------
 void vtkPPCAStatistics::Learn( vtkTable* inData,
-                               vtkTable* inParameters,
-                               vtkMultiBlockDataSet* outMeta )
+                                      vtkTable* inParameters,
+                                      vtkDataObject* outMetaDO )
 {
+  vtkMultiBlockDataSet* outMeta = vtkMultiBlockDataSet::SafeDownCast( outMetaDO );
   if ( ! outMeta )
     {
     return;

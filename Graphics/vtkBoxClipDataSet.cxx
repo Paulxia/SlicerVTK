@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoxClipDataSet.cxx
+  Module:    $RCSfile: vtkBoxClipDataSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -37,6 +37,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkBoxClipDataSet, "$Revision: 1.28 $");
 vtkStandardNewMacro(vtkBoxClipDataSet);
 
 vtkCxxSetObjectMacro(vtkBoxClipDataSet, Locator, vtkIncrementalPointLocator)

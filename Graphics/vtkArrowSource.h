@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkArrowSource.h
+  Module:    $RCSfile: vtkArrowSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ public:
   // Construct cone with angle of 45 degrees.
   static vtkArrowSource *New();
 
-  vtkTypeMacro(vtkArrowSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkArrowSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
     
   // Description:

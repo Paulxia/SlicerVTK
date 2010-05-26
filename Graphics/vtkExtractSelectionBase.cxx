@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectionBase.cxx
+  Module:    $RCSfile: vtkExtractSelectionBase.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkTable.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkExtractSelectionBase, "$Revision: 1.6 $");
 //----------------------------------------------------------------------------
 vtkExtractSelectionBase::vtkExtractSelectionBase()
 {

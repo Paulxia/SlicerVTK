@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorStyleRubberBand3D.cxx
+  Module:    $RCSfile: vtkInteractorStyleRubberBand3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkRenderWindowInteractor.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleRubberBand3D, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkInteractorStyleRubberBand3D);
 
 //--------------------------------------------------------------------------
@@ -293,6 +294,4 @@ void vtkInteractorStyleRubberBand3D::PrintSelf(ostream& os, vtkIndent indent)
   this->Superclass::PrintSelf(os, indent);
   os << indent << "Interaction: " << this->Interaction << endl;
   os << indent << "RenderOnMouseMove: " << this->RenderOnMouseMove << endl;
-  os << indent << "StartPosition: " << this->StartPosition[0] << "," << this->StartPosition[1] << endl;
-  os << indent << "EndPosition: " << this->EndPosition[0] << "," << this->EndPosition[1] << endl;
 }

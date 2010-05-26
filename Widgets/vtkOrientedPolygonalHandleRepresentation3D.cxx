@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOrientedPolygonalHandleRepresentation3D.cxx
+  Module:    $RCSfile: vtkOrientedPolygonalHandleRepresentation3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkTransformPolyDataFilter.h"
 #include "vtkFollower.h"
 
+vtkCxxRevisionMacro(vtkOrientedPolygonalHandleRepresentation3D, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkOrientedPolygonalHandleRepresentation3D);
 
 //----------------------------------------------------------------------

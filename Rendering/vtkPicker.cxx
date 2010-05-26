@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPicker.cxx
+  Module:    $RCSfile: vtkPicker.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkBox.h"
 #include "vtkImageActor.h"
 
+vtkCxxRevisionMacro(vtkPicker, "$Revision: 1.99 $");
 vtkStandardNewMacro(vtkPicker);
 
 // Construct object with initial tolerance of 1/40th of window. There are no

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOggTheoraWriter.h
+  Module:    $RCSfile: vtkOggTheoraWriter.h,v $
 
   Copyright (c) Michael Wild, Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,7 +35,7 @@ class VTK_IO_EXPORT vtkOggTheoraWriter : public vtkGenericMovieWriter
 {
 public:
   static vtkOggTheoraWriter *New();
-  vtkTypeMacro(vtkOggTheoraWriter,vtkGenericMovieWriter);
+  vtkTypeRevisionMacro(vtkOggTheoraWriter,vtkGenericMovieWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHandleRepresentation.cxx
+  Module:    $RCSfile: vtkHandleRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkRenderWindow.h"
 #include "vtkPointPlacer.h"
 
+vtkCxxRevisionMacro(vtkHandleRepresentation, "$Revision: 1.13 $");
 
 vtkCxxSetObjectMacro(vtkHandleRepresentation, PointPlacer, vtkPointPlacer );
 

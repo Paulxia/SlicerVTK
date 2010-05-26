@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHardwareSelector.h
+  Module:    $RCSfile: vtkHardwareSelector.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -68,7 +68,7 @@ class VTK_RENDERING_EXPORT vtkHardwareSelector : public vtkObject
 {
 public:
   static vtkHardwareSelector* New();
-  vtkTypeMacro(vtkHardwareSelector, vtkObject);
+  vtkTypeRevisionMacro(vtkHardwareSelector, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

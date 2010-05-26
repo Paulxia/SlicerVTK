@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMergeFields.h
+  Module:    $RCSfile: vtkMergeFields.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkFieldData;
 class VTK_GRAPHICS_EXPORT vtkMergeFields : public vtkDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkMergeFields,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMergeFields,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

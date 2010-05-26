@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoSphereTransform.cxx
+  Module:    $RCSfile: vtkGeoSphereTransform.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkPoints.h"
 
 vtkStandardNewMacro(vtkGeoSphereTransform);
+vtkCxxRevisionMacro(vtkGeoSphereTransform,"$Revision: 1.3 $");
 
 vtkGeoSphereTransform::vtkGeoSphereTransform()
 {

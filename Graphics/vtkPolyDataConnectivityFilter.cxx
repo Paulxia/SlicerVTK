@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataConnectivityFilter.cxx
+  Module:    $RCSfile: vtkPolyDataConnectivityFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkPolyDataConnectivityFilter, "$Revision: 1.43 $");
 vtkStandardNewMacro(vtkPolyDataConnectivityFilter);
 
 // Construct with default extraction mode to extract largest regions.

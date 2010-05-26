@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeReader.h
+  Module:    $RCSfile: vtkVolumeReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,7 +47,7 @@
 class VTK_IO_EXPORT vtkVolumeReader : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkVolumeReader,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkVolumeReader,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

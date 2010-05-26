@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    TestStructuredGridLIC2DZSlice.cxx
+  Module:    $RCSfile: TestStructuredGridLIC2DZSlice.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

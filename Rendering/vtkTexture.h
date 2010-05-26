@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTexture.h
+  Module:    $RCSfile: vtkTexture.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -60,7 +60,7 @@ class VTK_RENDERING_EXPORT vtkTexture : public vtkImageAlgorithm
 {
 public:
   static vtkTexture *New();
-  vtkTypeMacro(vtkTexture,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkTexture,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -192,14 +192,6 @@ public:
   vtkGetMacro(RestrictPowerOf2ImageSmaller,int);
   vtkSetMacro(RestrictPowerOf2ImageSmaller,int);
   vtkBooleanMacro(RestrictPowerOf2ImageSmaller,int);
-
-  // Description:
-  // Is this Texture Translucent?
-  // returns false (0) if the texture is either fully opaque or has
-  // only fully transparent pixels and fully opaque pixels and the
-  // Interpolate flag is turn off.
-  virtual int IsTranslucent();
-
 protected:
   vtkTexture();
   ~vtkTexture();
@@ -218,11 +210,6 @@ protected:
   // this is to duplicated the previous behavior of SelfCreatedLookUpTable
   int SelfAdjustingTableRange;
   bool PremultipliedAlpha;
-
-  // the result of HasTranslucentPolygonalGeometry is cached
-  vtkTimeStamp TranslucentComputationTime;
-  int TranslucentCachedResult;
-
 private:
   vtkTexture(const vtkTexture&);  // Not implemented.
   void operator=(const vtkTexture&);  // Not implemented.

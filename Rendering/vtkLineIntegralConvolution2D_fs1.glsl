@@ -1,7 +1,7 @@
 //=========================================================================
 //
 //  Program:   Visualization Toolkit
-//  Module:    vtkLineIntegralConvolution2D_fs1.glsl
+//  Module:    $RCSfile: vtkLineIntegralConvolution2D_fs1.glsl,v $
 //
 //  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 //  All rights reserved.

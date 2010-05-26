@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMaskBits.cxx
+  Module:    $RCSfile: vtkImageMaskBits.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageMaskBits, "$Revision: 1.18 $");
 vtkStandardNewMacro(vtkImageMaskBits);
 
 vtkImageMaskBits::vtkImageMaskBits()

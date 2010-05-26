@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkWin32OpenGLRenderWindow.cxx
+Module:    $RCSfile: vtkWin32OpenGLRenderWindow.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -32,6 +32,7 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include "vtkOpenGL.h"
 
+vtkCxxRevisionMacro(vtkWin32OpenGLRenderWindow, "$Revision: 1.163 $");
 vtkStandardNewMacro(vtkWin32OpenGLRenderWindow);
 
 #define VTK_MAX_LIGHTS 8

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEnSight6BinaryReader.cxx
+  Module:    $RCSfile: vtkEnSight6BinaryReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include <ctype.h>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkEnSight6BinaryReader, "$Revision: 1.60 $");
 vtkStandardNewMacro(vtkEnSight6BinaryReader);
 
 //----------------------------------------------------------------------------

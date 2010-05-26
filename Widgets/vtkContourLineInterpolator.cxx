@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContourLineInterpolator.cxx
+  Module:    $RCSfile: vtkContourLineInterpolator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkContourRepresentation.h"
 #include "vtkIntArray.h"
 
+vtkCxxRevisionMacro(vtkContourLineInterpolator, "$Revision: 1.6 $");
 
 //----------------------------------------------------------------------
 vtkContourLineInterpolator::vtkContourLineInterpolator()

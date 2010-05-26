@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkWindowLevelLookupTable.cxx
+  Module:    $RCSfile: vtkWindowLevelLookupTable.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkWindowLevelLookupTable, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkWindowLevelLookupTable);
 
 //----------------------------------------------------------------------------

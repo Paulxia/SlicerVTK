@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedFrustum.h
+  Module:    $RCSfile: vtkExtractSelectedFrustum.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -46,7 +46,7 @@ class VTK_GRAPHICS_EXPORT vtkExtractSelectedFrustum : public vtkExtractSelection
 {
 public:
   static vtkExtractSelectedFrustum *New();
-  vtkTypeMacro(vtkExtractSelectedFrustum, vtkExtractSelectionBase);
+  vtkTypeRevisionMacro(vtkExtractSelectedFrustum, vtkExtractSelectionBase);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

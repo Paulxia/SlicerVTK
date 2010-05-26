@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLStructuredGridWriter.h
+  Module:    $RCSfile: vtkXMLStructuredGridWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_IO_EXPORT vtkXMLStructuredGridWriter : public vtkXMLStructuredDataWrit
 {
 public:
   static vtkXMLStructuredGridWriter* New();
-  vtkTypeMacro(vtkXMLStructuredGridWriter,vtkXMLStructuredDataWriter);
+  vtkTypeRevisionMacro(vtkXMLStructuredGridWriter,vtkXMLStructuredDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   //BTX

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxUnixDevice.cxx
+  Module:    $RCSfile: vtkTDxUnixDevice.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@ extern "C" {
 #include "vtkRenderWindowInteractor.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkTDxUnixDevice,"$Revision: 1.5 $");
 vtkStandardNewMacro(vtkTDxUnixDevice);
 
 // ----------------------------------------------------------------------------

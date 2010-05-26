@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSplineWidget2.cxx
+  Module:    $RCSfile: vtkSplineWidget2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkWidgetEventTranslator.h"
 
 vtkStandardNewMacro(vtkSplineWidget2);
+vtkCxxRevisionMacro(vtkSplineWidget2, "$Revision: 1.1 $");
 //----------------------------------------------------------------------------
 vtkSplineWidget2::vtkSplineWidget2()
 {

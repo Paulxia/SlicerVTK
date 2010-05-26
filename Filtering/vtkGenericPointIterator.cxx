@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericPointIterator.cxx
+  Module:    $RCSfile: vtkGenericPointIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkGenericPointIterator.h"
 
+vtkCxxRevisionMacro(vtkGenericPointIterator, "$Revision: 1.1 $");
 
 //----------------------------------------------------------------------------
 vtkGenericPointIterator::vtkGenericPointIterator()

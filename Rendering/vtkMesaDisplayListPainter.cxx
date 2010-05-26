@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaDisplayListPainter.cxx
+  Module:    $RCSfile: vtkMesaDisplayListPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,4 +32,5 @@
 #include "vtkOpenGLDisplayListPainter.cxx"
 #undef vtkOpenGLDisplayListPainter
 
+vtkCxxRevisionMacro(vtkMesaDisplayListPainter, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMesaDisplayListPainter);

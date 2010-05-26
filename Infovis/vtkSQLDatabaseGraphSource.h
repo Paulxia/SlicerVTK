@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSQLDatabaseGraphSource.h
+  Module:    $RCSfile: vtkSQLDatabaseGraphSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkSQLDatabaseGraphSource : public vtkGraphAlgorithm
 {
 public:
   static vtkSQLDatabaseGraphSource* New();
-  vtkTypeMacro(vtkSQLDatabaseGraphSource, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkSQLDatabaseGraphSource, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkStdString GetURL();

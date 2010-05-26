@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageCacheFilter.cxx
+  Module:    $RCSfile: vtkImageCacheFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include "vtkPointData.h"
 #include "vtkCachedStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageCacheFilter, "$Revision: 1.26 $");
 vtkStandardNewMacro(vtkImageCacheFilter);
 
 //----------------------------------------------------------------------------

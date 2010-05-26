@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkKdTree.h
+  Module:    $RCSfile: vtkKdTree.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -71,7 +71,7 @@ class vtkDataSetCollection;
 class VTK_FILTERING_EXPORT vtkKdTree : public vtkLocator
 {
 public:
-  vtkTypeMacro(vtkKdTree, vtkLocator);
+  vtkTypeRevisionMacro(vtkKdTree, vtkLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkKdTree *New();

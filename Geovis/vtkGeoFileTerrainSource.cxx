@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGeoFileTerrainSource.cxx
+  Module:    $RCSfile: vtkGeoFileTerrainSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 #include <vtksys/stl/utility>
 
 vtkStandardNewMacro(vtkGeoFileTerrainSource);
+vtkCxxRevisionMacro(vtkGeoFileTerrainSource, "$Revision: 1.2 $");
 //----------------------------------------------------------------------------
 vtkGeoFileTerrainSource::vtkGeoFileTerrainSource()
 {

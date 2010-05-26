@@ -2,7 +2,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMPIImageReader.cxx
+  Module:    $RCSfile: vtkMPIImageReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -77,6 +77,7 @@
 #endif // VTK_USE_MPI_IO
 
 //=============================================================================
+vtkCxxRevisionMacro(vtkMPIImageReader, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkMPIImageReader);
 
 vtkCxxSetObjectMacro(vtkMPIImageReader, Controller, vtkMultiProcessController);

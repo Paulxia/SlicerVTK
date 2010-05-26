@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointDataToCellData.cxx
+  Module:    $RCSfile: vtkPointDataToCellData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkPointDataToCellData, "$Revision: 1.35 $");
 vtkStandardNewMacro(vtkPointDataToCellData);
 
 //----------------------------------------------------------------------------

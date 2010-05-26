@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFixedPointVolumeRayCastCompositeShadeHelper.cxx
+  Module:    $RCSfile: vtkFixedPointVolumeRayCastCompositeShadeHelper.cxx,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2007-11-08 16:51:06 $
+  Version:   $Revision: 1.9 $
 
   Copyright (c) 1993-2002 Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -29,6 +29,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkFixedPointVolumeRayCastCompositeShadeHelper, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkFixedPointVolumeRayCastCompositeShadeHelper);
 
 // Construct a new vtkFixedPointVolumeRayCastCompositeShadeHelper with default values

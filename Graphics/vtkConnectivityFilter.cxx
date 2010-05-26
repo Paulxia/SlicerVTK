@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkConnectivityFilter.cxx
+  Module:    $RCSfile: vtkConnectivityFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkIdTypeArray.h"
 
+vtkCxxRevisionMacro(vtkConnectivityFilter, "$Revision: 1.75 $");
 vtkStandardNewMacro(vtkConnectivityFilter);
 
 // Construct with default extraction mode to extract largest regions.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLabelPlacer.h
+  Module:    $RCSfile: vtkLabelPlacer.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ class VTK_RENDERING_EXPORT vtkLabelPlacer : public vtkPolyDataAlgorithm
 {
 public:
   static vtkLabelPlacer* New();
-  vtkTypeMacro(vtkLabelPlacer,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkLabelPlacer,vtkPolyDataAlgorithm);
   virtual void PrintSelf( ostream& os, vtkIndent indent );
 
   vtkGetObjectMacro(Renderer,vtkRenderer);

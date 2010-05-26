@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitHalo.h
+  Module:    $RCSfile: vtkImplicitHalo.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,7 +38,7 @@ public:
   // Center=(0.0,0.0,0.0), Radius=1.0, FadeOut=0.01
   static vtkImplicitHalo *New();
 
-  vtkTypeMacro(vtkImplicitHalo,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkImplicitHalo,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description

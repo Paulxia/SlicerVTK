@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPlainTextExtractionStrategy.h
+  Module:    $RCSfile: vtkPlainTextExtractionStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkPlainTextExtractionStrategy :
 {
 public:
   static vtkPlainTextExtractionStrategy* New();
-  vtkTypeMacro(vtkPlainTextExtractionStrategy, vtkTextExtractionStrategy);
+  vtkTypeRevisionMacro(vtkPlainTextExtractionStrategy, vtkTextExtractionStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual bool Extract(

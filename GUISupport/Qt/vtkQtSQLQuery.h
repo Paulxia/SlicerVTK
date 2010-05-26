@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtSQLQuery.h
+  Module:    $RCSfile: vtkQtSQLQuery.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class QVTK_EXPORT vtkQtSQLQuery : public vtkSQLQuery
 {
 public:
   static vtkQtSQLQuery* New();
-  vtkTypeMacro(vtkQtSQLQuery, vtkSQLQuery);
+  vtkTypeRevisionMacro(vtkQtSQLQuery, vtkSQLQuery);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

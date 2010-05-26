@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLRayCastImageDisplayHelper.h
+  Module:    $RCSfile: vtkOpenGLRayCastImageDisplayHelper.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkOpenGLRayCastImageDisplayHelper : public vtk
 {
 public:
   static vtkOpenGLRayCastImageDisplayHelper *New();
-  vtkTypeMacro(vtkOpenGLRayCastImageDisplayHelper,vtkRayCastImageDisplayHelper);
+  vtkTypeRevisionMacro(vtkOpenGLRayCastImageDisplayHelper,vtkRayCastImageDisplayHelper);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   void RenderTexture( vtkVolume *vol, vtkRenderer *ren,

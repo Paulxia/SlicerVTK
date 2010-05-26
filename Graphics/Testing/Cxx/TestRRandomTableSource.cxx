@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    TestRRandomTableSource.cxx
+Module:    $RCSfile: TestRRandomTableSource.cxx,v $
   
 -------------------------------------------------------------------------
 Copyright 2008 Sandia Corporation.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTDxInteractorStyleSettings.cxx
+  Module:    $RCSfile: vtkTDxInteractorStyleSettings.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkTDxInteractorStyleSettings.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkTDxInteractorStyleSettings, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkTDxInteractorStyleSettings);
 
 // ----------------------------------------------------------------------------

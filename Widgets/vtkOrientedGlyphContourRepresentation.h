@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOrientedGlyphContourRepresentation.h
+  Module:    $RCSfile: vtkOrientedGlyphContourRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkOrientedGlyphContourRepresentation,vtkContourRepresentation);
+  vtkTypeRevisionMacro(vtkOrientedGlyphContourRepresentation,vtkContourRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

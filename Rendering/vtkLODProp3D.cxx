@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLODProp3D.cxx
+  Module:    $RCSfile: vtkLODProp3D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkLODProp3D, "$Revision: 1.48 $");
 vtkStandardNewMacro(vtkLODProp3D);
 
 #define VTK_INDEX_NOT_IN_USE    -1

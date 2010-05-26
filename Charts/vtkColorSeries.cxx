@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkColorSeries.cxx
+  Module:    $RCSfile: vtkColorSeries.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@ public:
 };
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkColorSeries, "$Revision: 1.3 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkColorSeries);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLProperty.h
+  Module:    $RCSfile: vtkOpenGLProperty.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLProperty : public vtkProperty
 {
 public:
   static vtkOpenGLProperty *New();
-  vtkTypeMacro(vtkOpenGLProperty,vtkProperty);
+  vtkTypeRevisionMacro(vtkOpenGLProperty,vtkProperty);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGPUVolumeRayCastMapper_CompositeNoCroppingFS.glsl
+  Module:    $RCSfile: vtkGPUVolumeRayCastMapper_CompositeNoCroppingFS.glsl,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.

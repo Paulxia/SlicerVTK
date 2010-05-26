@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGraphWriter.h
+  Module:    $RCSfile: vtkGraphWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_IO_EXPORT vtkGraphWriter : public vtkDataWriter
 {
 public:
   static vtkGraphWriter *New();
-  vtkTypeMacro(vtkGraphWriter,vtkDataWriter);
+  vtkTypeRevisionMacro(vtkGraphWriter,vtkDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

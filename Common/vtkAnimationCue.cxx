@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnimationCue.cxx
+  Module:    $RCSfile: vtkAnimationCue.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkCommand.h"
 
+vtkCxxRevisionMacro(vtkAnimationCue, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkAnimationCue);
 
 //----------------------------------------------------------------------------

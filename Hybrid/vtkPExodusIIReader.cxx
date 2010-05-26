@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPExodusIIReader.cxx
+  Module:    $RCSfile: vtkPExodusIIReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -91,6 +91,7 @@ static const int objAttribTypes[] = {
 static const int numObjAttribTypes = sizeof(objAttribTypes)/sizeof(objAttribTypes[0]);
 
 
+vtkCxxRevisionMacro(vtkPExodusIIReader, "$Revision: 1.36 $");
 vtkStandardNewMacro(vtkPExodusIIReader);
 
 class vtkPExodusIIReaderUpdateProgress : public vtkCommand

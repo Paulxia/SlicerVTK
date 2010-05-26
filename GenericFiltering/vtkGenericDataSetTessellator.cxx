@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericDataSetTessellator.cxx
+  Module:    $RCSfile: vtkGenericDataSetTessellator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,6 +34,7 @@
 #include "vtkGenericCellTessellator.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkGenericDataSetTessellator, "$Revision: 1.16 $");
 vtkStandardNewMacro(vtkGenericDataSetTessellator);
 
 vtkCxxSetObjectMacro(vtkGenericDataSetTessellator,Locator,vtkIncrementalPointLocator);

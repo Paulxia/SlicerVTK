@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtStatisticalBoxChartView.cxx
+  Module:    $RCSfile: vtkQtStatisticalBoxChartView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtStatisticalBoxChartView, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkQtStatisticalBoxChartView);
 
 //-----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLandmarkTransform.h
+  Module:    $RCSfile: vtkLandmarkTransform.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class VTK_HYBRID_EXPORT vtkLandmarkTransform : public vtkLinearTransform
 public:
   static vtkLandmarkTransform *New();
 
-  vtkTypeMacro(vtkLandmarkTransform,vtkLinearTransform);
+  vtkTypeRevisionMacro(vtkLandmarkTransform,vtkLinearTransform);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

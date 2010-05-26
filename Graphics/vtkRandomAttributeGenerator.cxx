@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRandomAttributeGenerator.cxx
+  Module:    $RCSfile: vtkRandomAttributeGenerator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkDoubleArray.h"
 #include "vtkIdTypeArray.h"
 
+vtkCxxRevisionMacro(vtkRandomAttributeGenerator, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkRandomAttributeGenerator);
 
 // ----------------------------------------------------------------------------

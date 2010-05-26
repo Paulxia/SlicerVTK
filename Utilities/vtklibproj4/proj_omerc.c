@@ -4,7 +4,7 @@
 ** Copyright (c) 2003, 2006   Gerald I. Evenden
 */
 static const char
-LIBPROJ_ID[] = "Id";
+LIBPROJ_ID[] = "$Id: proj_omerc.c,v 1.3 2008-11-14 16:56:33 jeff Exp $";
 /*
 ** Permission is hereby granted, free of charge, to any person obtaining
 ** a copy of this software and associated documentation files (the
@@ -193,7 +193,10 @@ ENTRY0(omerc)
   P->fwd = e_forward;
 ENDENTRY(P)
 /*
-** Log: proj_omerc.c
+** $Log: proj_omerc.c,v $
+** Revision 1.3  2008-11-14 16:56:33  jeff
+** COMP: Fixing more libproj warnings.
+**
 ** Revision 1.2  2008-11-07 21:40:43  jeff
 ** ENH: Fixing some proj.4 warnings.
 **

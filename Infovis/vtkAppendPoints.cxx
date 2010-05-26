@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAppendPoints.cxx
+  Module:    $RCSfile: vtkAppendPoints.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include <vtkstd/set>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkAppendPoints, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkAppendPoints);
 
 //----------------------------------------------------------------------------

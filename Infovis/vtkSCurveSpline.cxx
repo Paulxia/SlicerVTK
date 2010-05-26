@@ -1,7 +1,7 @@
 /*=========================================================================
   
 Program:   Visualization Toolkit
-Module:    vtkSCurveSpline.cxx
+Module:    $RCSfile: vtkSCurveSpline.cxx,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -24,6 +24,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include <assert.h>
 #include <vtkstd/algorithm> // for vtkstd::min()/vtkstd::max()
 
+vtkCxxRevisionMacro(vtkSCurveSpline, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkSCurveSpline);
 
 //----------------------------------------------------------------------------

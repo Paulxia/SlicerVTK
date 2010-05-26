@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRandomLayoutStrategy.h
+  Module:    $RCSfile: vtkRandomLayoutStrategy.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkRandomLayoutStrategy : public vtkGraphLayoutStrategy
 public:
   static vtkRandomLayoutStrategy *New();
 
-  vtkTypeMacro(vtkRandomLayoutStrategy, vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkRandomLayoutStrategy, vtkGraphLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

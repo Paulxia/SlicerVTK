@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    ArrayInterpolationDense.cxx
+  Module:    $RCSfile: ArrayInterpolationDense.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

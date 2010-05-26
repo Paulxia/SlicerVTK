@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkZLibDataCompressor.cxx
+  Module:    $RCSfile: vtkZLibDataCompressor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtk_zlib.h"
 
+vtkCxxRevisionMacro(vtkZLibDataCompressor, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkZLibDataCompressor);
 
 //----------------------------------------------------------------------------

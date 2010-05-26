@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageCheckerboard.cxx
+  Module:    $RCSfile: vtkImageCheckerboard.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -17,6 +17,7 @@
 #include "vtkImageData.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImageCheckerboard, "$Revision: 1.15 $");
 vtkStandardNewMacro(vtkImageCheckerboard);
 
 //----------------------------------------------------------------------------

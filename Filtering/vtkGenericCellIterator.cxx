@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericCellIterator.cxx
+  Module:    $RCSfile: vtkGenericCellIterator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkGenericCellIterator.h"
 
+vtkCxxRevisionMacro(vtkGenericCellIterator, "$Revision: 1.1 $");
 
 //----------------------------------------------------------------------------
 vtkGenericCellIterator::vtkGenericCellIterator()

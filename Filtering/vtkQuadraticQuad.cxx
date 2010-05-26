@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticQuad.cxx
+  Module:    $RCSfile: vtkQuadraticQuad.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkQuadraticEdge.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkQuadraticQuad, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkQuadraticQuad);
 
 //----------------------------------------------------------------------------

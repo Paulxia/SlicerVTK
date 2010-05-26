@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataSetToStructuredGridFilter.h
+  Module:    $RCSfile: vtkDataSetToStructuredGridFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class vtkDataSet;
 class VTK_FILTERING_EXPORT vtkDataSetToStructuredGridFilter : public vtkStructuredGridSource
 {
 public:
-  vtkTypeMacro(vtkDataSetToStructuredGridFilter,vtkStructuredGridSource);
+  vtkTypeRevisionMacro(vtkDataSetToStructuredGridFilter,vtkStructuredGridSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

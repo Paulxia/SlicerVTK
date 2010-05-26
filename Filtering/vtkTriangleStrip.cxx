@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTriangleStrip.cxx
+  Module:    $RCSfile: vtkTriangleStrip.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkPoints.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkTriangleStrip, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTriangleStrip);
 
 //----------------------------------------------------------------------------

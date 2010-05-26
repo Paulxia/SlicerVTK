@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtLabelRenderStrategy.cxx
+  Module:    $RCSfile: vtkQtLabelRenderStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -45,6 +45,7 @@
 #include <QTextDocument>
 #include <QTextStream>
 
+vtkCxxRevisionMacro(vtkQtLabelRenderStrategy, "$Revision: 1.13 $");
 vtkStandardNewMacro(vtkQtLabelRenderStrategy);
 
 struct vtkQtLabelMapEntry

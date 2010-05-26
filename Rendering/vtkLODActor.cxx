@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLODActor.cxx
+  Module:    $RCSfile: vtkLODActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkLODActor, "$Revision: 1.68 $");
 vtkStandardNewMacro(vtkLODActor);
 vtkCxxSetObjectMacro(vtkLODActor, LowResFilter, vtkPolyDataAlgorithm);
 vtkCxxSetObjectMacro(vtkLODActor, MediumResFilter, vtkPolyDataAlgorithm);

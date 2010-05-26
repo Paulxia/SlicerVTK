@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLineRepresentation.cxx
+  Module:    $RCSfile: vtkLineRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,6 +36,7 @@
 #include "vtkCellPicker.h"
 #include "vtkPolyDataMapper.h"
 
+vtkCxxRevisionMacro(vtkLineRepresentation, "$Revision: 1.24.4.1 $");
 vtkStandardNewMacro(vtkLineRepresentation);
 
 vtkCxxSetObjectMacro(vtkLineRepresentation,HandleRepresentation,vtkPointHandleRepresentation3D);

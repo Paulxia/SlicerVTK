@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkContextDevice2D.h
+  Module:    $RCSfile: vtkContextDevice2D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,12 +32,12 @@ class vtkTextProperty;
 class vtkPoints2D;
 class vtkImageData;
 class vtkMatrix3x3;
-class vtkAbstractContextBufferId;
+class vtkContextBufferId;
 
 class VTK_CHARTS_EXPORT vtkContextDevice2D : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkContextDevice2D, vtkObject);
+  vtkTypeRevisionMacro(vtkContextDevice2D, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:
@@ -175,7 +175,7 @@ public:
   // \pre not_yet: !GetBufferIdMode()
   // \pre bufferId_exists: bufferId!=0
   // \post started: GetBufferIdMode()
-  virtual void BufferIdModeBegin(vtkAbstractContextBufferId *bufferId);
+  virtual void BufferIdModeBegin(vtkContextBufferId *bufferId);
 
   // Description:
   // Finalize BufferId creation Mode. It makes sure that the content of the
@@ -194,7 +194,7 @@ protected:
   // Store the width and height of the device in pixels.
   int Geometry[2];
 
-  vtkAbstractContextBufferId *BufferId;
+  vtkContextBufferId *BufferId;
 
 private:
   vtkContextDevice2D(const vtkContextDevice2D &); // Not implemented.

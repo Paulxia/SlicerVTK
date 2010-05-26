@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSTLWriter.cxx
+  Module:    $RCSfile: vtkSTLWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 # include <io.h> /* unlink */
 #endif
 
+vtkCxxRevisionMacro(vtkSTLWriter, "$Revision: 1.57 $");
 vtkStandardNewMacro(vtkSTLWriter);
 
 vtkSTLWriter::vtkSTLWriter()

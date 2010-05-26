@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAMRBox.cxx
+  Module:    $RCSfile: vtkAMRBox.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ void vtkAMRBox::Invalidate()
 
 //-----------------------------------------------------------------------------
 vtkAMRBox::vtkAMRBox(int dim)
-{
+{ 
   this->SetDimensionality(dim);
   this->Invalidate();
   this->X0[0]=this->X0[1]=this->X0[2]=0.0;
@@ -128,7 +128,7 @@ vtkAMRBox &vtkAMRBox::operator=(const vtkAMRBox &other)
 //-----------------------------------------------------------------------------
 void vtkAMRBox::SetDimensionality(int dim)
 {
-  if (dim<1 || dim>3)
+  if (dim<2 || dim>3)
     {
     vtkGenericWarningMacro(
       "Invalid spatial dimension, " << dim << ", given.");
@@ -162,9 +162,6 @@ void vtkAMRBox::SetDimensions(const int *lo, const int *hi)
 {
   switch (this->Dimension)
     {
-    case 1:
-      this->SetDimensions(lo[0],0,0,hi[0],0,0);
-      break;
     case 2:
       this->SetDimensions(lo[0],lo[1],0,hi[0],hi[1],0);
       break;
@@ -179,9 +176,6 @@ void vtkAMRBox::SetDimensions(const int *dims)
 {
   switch (this->Dimension)
     {
-    case 1:
-    this->SetDimensions(dims[0],0,0,dims[1],0,0);
-    break;
     case 2:
     this->SetDimensions(dims[0],dims[2],0,dims[1],dims[3],0);
     break;
@@ -281,9 +275,6 @@ void vtkAMRBox::SetDataSetOrigin(const double *x0)
 {
   switch (this->Dimension)
     {
-  case 1:
-    this->SetDataSetOrigin(x0[0],0.0,0.0);
-    break;
   case 2:
     this->SetDataSetOrigin(x0[0],x0[1],0.0);
     break;
@@ -305,10 +296,7 @@ void vtkAMRBox::SetDataSetOrigin(double x0, double y0, double z0)
 void vtkAMRBox::GetBoxOrigin(double *x0) const
 {
   x0[0]=this->X0[0]+this->DX[0]*this->LoCorner[0];
-  if (this->Dimension>=2)
-    {
-    x0[1]=this->X0[1]+this->DX[1]*this->LoCorner[1];
-    }
+  x0[1]=this->X0[1]+this->DX[1]*this->LoCorner[1];
   if (this->Dimension==3)
     {
     x0[2]=this->X0[2]+this->DX[2]*this->LoCorner[2];
@@ -476,14 +464,6 @@ bool vtkAMRBox::operator==(const vtkAMRBox &other)
 
   switch (this->Dimension)
     {
-    case 1:
-      if ((this->Empty() && other.Empty())
-          ||(this->LoCorner[0]==other.LoCorner[0]
-             && this->HiCorner[0]==other.HiCorner[0]))
-        {
-        return true;
-        }
-      break;
     case 2:
       if ((this->Empty() && other.Empty())
           ||(this->LoCorner[0]==other.LoCorner[0]
@@ -516,7 +496,7 @@ void vtkAMRBox::operator&=(const vtkAMRBox &other)
   if (this->Dimension!=other.Dimension)
     {
     vtkGenericWarningMacro(
-      "Can't operate on a " << this->Dimension
+      "Can't operate on a " << this->Dimension 
       << "D box with a " << other.Dimension << "D box.");
     return;
     }
@@ -524,7 +504,7 @@ void vtkAMRBox::operator&=(const vtkAMRBox &other)
     {
     return;
     }
-  if (other.Empty())
+  if (other.Empty()) 
     {
     this->Invalidate();
     return;
@@ -548,14 +528,6 @@ bool vtkAMRBox::Contains(int i,int j,int k) const
 {
   switch (this->Dimension)
     {
-    case 1:
-    if (!this->Empty()
-      && this->LoCorner[0]<=i
-      && this->HiCorner[0]>=i)
-      {
-      return true;
-      }
-    break;
     case 2:
     if (!this->Empty()
       && this->LoCorner[0]<=i
@@ -587,9 +559,6 @@ bool vtkAMRBox::Contains(const int *I) const
 {
   switch (this->Dimension)
     {
-    case 1:
-    return this->Contains(I[0],0,0);
-    break;
     case 2:
     return this->Contains(I[0],I[1],0);
     break;
@@ -606,7 +575,7 @@ bool vtkAMRBox::Contains(const vtkAMRBox &other) const
   if (this->Dimension!=other.Dimension)
     {
     vtkGenericWarningMacro(
-      "Can't operate on a " << this->Dimension
+      "Can't operate on a " << this->Dimension 
       << "D box with a " << other.Dimension << "D box.");
     return false;
     }
@@ -674,7 +643,7 @@ void vtkAMRBox::Coarsen(int r)
 
 //-----------------------------------------------------------------------------
 ostream &vtkAMRBox::Print(ostream &os) const
-{
+{ 
   os << "("  << this->LoCorner[0]
      << ","  << this->LoCorner[1]
      << ","  << this->LoCorner[2]

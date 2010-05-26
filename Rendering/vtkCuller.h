@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCuller.h
+  Module:    $RCSfile: vtkCuller.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,7 +33,7 @@ class vtkRenderer;
 class VTK_RENDERING_EXPORT vtkCuller : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkCuller,vtkObject);
+  vtkTypeRevisionMacro(vtkCuller,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

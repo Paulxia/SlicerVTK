@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkThreadedStreamingPipeline.h
+  Module:    $RCSfile: vtkThreadedStreamingPipeline.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,7 +49,7 @@ class VTK_FILTERING_EXPORT vtkThreadedStreamingPipeline : public vtkCompositeDat
 {
 public:
   static vtkThreadedStreamingPipeline* New();
-  vtkTypeMacro(vtkThreadedStreamingPipeline,vtkCompositeDataPipeline);
+  vtkTypeRevisionMacro(vtkThreadedStreamingPipeline,vtkCompositeDataPipeline);
   void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

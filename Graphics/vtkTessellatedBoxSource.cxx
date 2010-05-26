@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTessellatedBoxSource.cxx
+  Module:    $RCSfile: vtkTessellatedBoxSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkTessellatedBoxSource, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkTessellatedBoxSource);
 
 // ----------------------------------------------------------------------------

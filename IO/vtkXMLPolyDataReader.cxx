@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPolyDataReader.cxx
+  Module:    $RCSfile: vtkXMLPolyDataReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkXMLPolyDataReader, "$Revision: 1.12 $");
 vtkStandardNewMacro(vtkXMLPolyDataReader);
 
 //----------------------------------------------------------------------------

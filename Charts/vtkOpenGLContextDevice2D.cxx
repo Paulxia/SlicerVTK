@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLContextDevice2D.cxx
+  Module:    $RCSfile: vtkOpenGLContextDevice2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -41,12 +41,10 @@
 #include "vtkOpenGLRenderer.h"
 #include "vtkOpenGLRenderWindow.h"
 #include "vtkOpenGLExtensionManager.h"
-#include "vtkShaderProgram2.h"
 #include "vtkgl.h"
 
 #include "vtkObjectFactory.h"
 #include "vtkContextBufferId.h"
-#include "vtkOpenGLContextBufferId.h"
 
 //-----------------------------------------------------------------------------
 class vtkOpenGLContextDevice2D::Private
@@ -65,9 +63,6 @@ public:
                                this->SavedClearColor[2] =
                                this->SavedClearColor[3] = 0.0f;
     this->TextCounter = 0;
-    this->GLExtensionsLoaded = false;
-    this->OpenGL15 = false;
-    this->GLSL = false;
   }
 
   ~Private()
@@ -150,13 +145,11 @@ public:
 
   int TextCounter;
   vtkVector2i Dim;
-  vtkVector2i Offset;
-  bool GLExtensionsLoaded;
   bool OpenGL15;
-  bool GLSL;
 };
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkOpenGLContextDevice2D, "$Revision: 1.25 $");
 vtkStandardNewMacro(vtkOpenGLContextDevice2D);
 
 //-----------------------------------------------------------------------------
@@ -180,7 +173,6 @@ vtkOpenGLContextDevice2D::vtkOpenGLContextDevice2D()
   this->TextRenderer = vtkFreeTypeLabelRenderStrategy::New();
 #endif
   this->Storage = new vtkOpenGLContextDevice2D::Private;
-  this->RenderWindow = NULL;
 }
 
 //-----------------------------------------------------------------------------
@@ -198,9 +190,6 @@ void vtkOpenGLContextDevice2D::Begin(vtkViewport* viewport)
   // Need the actual pixel size of the viewport - ask OpenGL.
   GLint vp[4];
   glGetIntegerv(GL_VIEWPORT, vp);
-  this->Storage->Offset.Set(static_cast<int>(vp[0]),
-                         static_cast<int>(vp[1]));
-
   this->Storage->Dim.Set(static_cast<int>(vp[2]),
                          static_cast<int>(vp[3]));
 
@@ -208,9 +197,9 @@ void vtkOpenGLContextDevice2D::Begin(vtkViewport* viewport)
   glMatrixMode(GL_PROJECTION);
   glPushMatrix();
   glLoadIdentity();
-  glOrtho(0.5,vp[2]+0.5,
-    0.5, vp[3]+0.5,
-    -1,1 );
+  glOrtho( 0.5, vp[2]+0.5,
+           0.5, vp[3]+0.5,
+          -1, 1);
 
   glMatrixMode(GL_MODELVIEW);
   glPushMatrix();
@@ -220,7 +209,6 @@ void vtkOpenGLContextDevice2D::Begin(vtkViewport* viewport)
   this->Storage->SaveGLState();
   glDisable(GL_LIGHTING);
   glDisable(GL_DEPTH_TEST);
-  glEnable(GL_BLEND);
 
   this->Renderer = vtkRenderer::SafeDownCast(viewport);
   this->TextRenderer->SetRenderer(this->Renderer);
@@ -229,15 +217,11 @@ void vtkOpenGLContextDevice2D::Begin(vtkViewport* viewport)
   vtkOpenGLRenderer *gl = vtkOpenGLRenderer::SafeDownCast(viewport);
   if (gl)
     {
-    this->RenderWindow = vtkOpenGLRenderWindow::SafeDownCast(
+    vtkOpenGLRenderWindow *glWin = vtkOpenGLRenderWindow::SafeDownCast(
         gl->GetRenderWindow());
-    }
-
-  if (!this->Storage->GLExtensionsLoaded)
-    {
-    if (this->RenderWindow)
+    if (glWin)
       {
-      this->LoadExtensions(this->RenderWindow->GetExtensionManager());
+      this->LoadExtensions(glWin->GetExtensionManager());
       }
     }
 
@@ -285,16 +269,13 @@ void vtkOpenGLContextDevice2D::End()
   // Restore the GL state that we changed
   this->Storage->RestoreGLState();
 
-  this->RenderWindow = NULL;
-
   this->InRender = false;
 
   this->Modified();
 }
 
 // ----------------------------------------------------------------------------
-void vtkOpenGLContextDevice2D::BufferIdModeBegin(
-  vtkAbstractContextBufferId *bufferId)
+void vtkOpenGLContextDevice2D::BufferIdModeBegin(vtkContextBufferId *bufferId)
 {
   assert("pre: not_yet" && !this->GetBufferIdMode());
   assert("pre: bufferId_exists" && bufferId!=0);
@@ -338,11 +319,44 @@ void vtkOpenGLContextDevice2D::BufferIdModeEnd()
 {
   assert("pre: started" && this->GetBufferIdMode());
 
+  GLint savedReadBuffer;
+  glGetIntegerv(GL_READ_BUFFER,&savedReadBuffer);
+
+  glReadBuffer(GL_BACK_LEFT);
+
   // Assume the renderer has been set previously during rendering (sse Begin())
   int lowerLeft[2];
   int usize, vsize;
   this->Renderer->GetTiledSizeAndOrigin(&usize,&vsize,lowerLeft,lowerLeft+1);
-  this->BufferId->SetValues(lowerLeft[0],lowerLeft[1]);
+
+  // Expensive call here (memory allocation)
+  unsigned char *rgb=new unsigned char[usize*vsize*3];
+
+  glPixelStorei(GL_PACK_ALIGNMENT,1);
+
+  // Expensive call here (memory transfer, blocking)
+  glReadPixels(lowerLeft[0],lowerLeft[1],usize,vsize,GL_RGB,GL_UNSIGNED_BYTE,
+               rgb);
+  // vtkIntArray
+  // Interpret rgb into ids.
+  // We cannot just use reinterpret_cast for two reasons:
+  // 1. we don't know if the host system is little or big endian.
+  // 2. we have rgb, not rgba. if we try to grab rgba and there is not
+  // alpha comment, it would be set to 1.0 (255, 0xff). we don't want that.
+
+  // Expensive iteration.
+  vtkIdType i=0;
+  vtkIdType s=usize*vsize;
+  while(i<s)
+    {
+    vtkIdType j=i*3;
+    int value=(static_cast<int>(rgb[j])<<16)|(static_cast<int>(rgb[j+1])<<8)
+      |static_cast<int>(rgb[j+2]);
+    this->BufferId->SetValue(i,value);
+    ++i;
+    }
+
+  delete[] rgb;
 
   // Restore OpenGL state (only if it's different to avoid too much state
   // change).
@@ -352,6 +366,11 @@ void vtkOpenGLContextDevice2D::BufferIdModeEnd()
   glPopMatrix();
 
   this->TextRenderer->SetRenderer(0);
+
+  if(savedReadBuffer!=GL_BACK_LEFT)
+    {
+    glReadBuffer(savedReadBuffer);
+    }
 
   this->Storage->RestoreGLState(true);
 
@@ -395,18 +414,15 @@ void vtkOpenGLContextDevice2D::DrawPoints(float *f, int n)
 void vtkOpenGLContextDevice2D::DrawPointSprites(vtkImageData *sprite,
                                                 float *points, int n)
 {
-  if (points && n > 0)
+  if (sprite && points && n > 0)
     {
-    if (sprite)
+    if (!this->Storage->Texture)
       {
-      if (!this->Storage->Texture)
-        {
-        this->Storage->Texture = vtkTexture::New();
-        this->Storage->Texture->SetRepeat(false);
-        }
-      this->Storage->Texture->SetInput(sprite);
-      this->Storage->Texture->Render(this->Renderer);
+      this->Storage->Texture = vtkTexture::New();
+      this->Storage->Texture->SetRepeat(false);
       }
+    this->Storage->Texture->SetInput(sprite);
+    this->Storage->Texture->Render(this->Renderer);
     if (this->Storage->OpenGL15)
       {
       // We can actually use point sprites here
@@ -462,11 +478,8 @@ void vtkOpenGLContextDevice2D::DrawPointSprites(vtkImageData *sprite,
       glDisableClientState(GL_TEXTURE_COORD_ARRAY);
       glDisableClientState(GL_VERTEX_ARRAY);
       }
-    if (sprite)
-      {
-      this->Storage->Texture->PostRender(this->Renderer);
-      glDisable(GL_TEXTURE_2D);
-      }
+    this->Storage->Texture->PostRender(this->Renderer);
+    glDisable(GL_TEXTURE_2D);
     }
   else
     {
@@ -648,10 +661,6 @@ void vtkOpenGLContextDevice2D::DrawString(float *point, vtkTextProperty *prop,
 
   int p[] = { static_cast<int>(point[0]),
               static_cast<int>(point[1]) };
-
-  //TextRenderer draws in window, not viewport coords
-  p[0]+=this->Storage->Offset.GetX();
-  p[1]+=this->Storage->Offset.GetY();
   this->TextRenderer->RenderLabel(&p[0], prop, string);
 }
 
@@ -841,22 +850,20 @@ void vtkOpenGLContextDevice2D::PopMatrix()
 void vtkOpenGLContextDevice2D::SetClipping(int *dim)
 {
   // Check the bounds, and clamp if necessary
-  GLint vp[4] = { this->Storage->Offset.GetX(), this->Storage->Offset.GetY(),
-    this->Storage->Dim.GetX(),this->Storage->Dim.GetY()};
-
-  if (dim[0] > 0 && dim[0] < vp[2] )
+  int vp[4] = {0, 0, this->Storage->Dim.X(), this->Storage->Dim.Y()};
+  if (dim[0] > 0 && dim[0] < this->Storage->Dim.X())
     {
-    vp[0] += dim[0];
+    vp[0] = dim[0];
     }
-  if (dim[1] > 0 && dim[1] < vp[3])
+  if (dim[1] > 0 && dim[1] < this->Storage->Dim.Y())
     {
-    vp[1] += dim[1];
+    vp[1] = dim[1];
     }
-  if (dim[2] > 0 && dim[2] < vp[2])
+  if (dim[2] > 0 && dim[2] < this->Storage->Dim.X())
     {
     vp[2] = dim[2];
     }
-  if (dim[3] > 0 && dim[3] < vp[3])
+  if (dim[3] > 0 && dim[3] < this->Storage->Dim.Y())
     {
     vp[3] = dim[3];
     }
@@ -915,12 +922,6 @@ void vtkOpenGLContextDevice2D::ReleaseGraphicsResources(vtkWindow *window)
     }
 }
 
-//----------------------------------------------------------------------------
-bool vtkOpenGLContextDevice2D::HasGLSL()
-{
-  return this->Storage->GLSL;
-}
-
 //-----------------------------------------------------------------------------
 bool vtkOpenGLContextDevice2D::LoadExtensions(vtkOpenGLExtensionManager *m)
 {
@@ -928,23 +929,13 @@ bool vtkOpenGLContextDevice2D::LoadExtensions(vtkOpenGLExtensionManager *m)
     {
     m->LoadExtension("GL_VERSION_1_5");
     this->Storage->OpenGL15 = true;
+    return true;
     }
   else
     {
     this->Storage->OpenGL15 = false;
+    return false;
     }
-  if(vtkShaderProgram2::IsSupported(
-      static_cast<vtkOpenGLRenderWindow *>(m->GetRenderWindow())))
-    {
-    this->Storage->GLSL = true;
-    }
-  else
-    {
-    this->Storage->GLSL = false;
-    }
-
-  this->Storage->GLExtensionsLoaded = true;
-  return true;
 }
 
 //-----------------------------------------------------------------------------

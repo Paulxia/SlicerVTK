@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkProp3D.h
+  Module:    $RCSfile: vtkProp3D.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ class vtkLinearTransform;
 class VTK_RENDERING_EXPORT vtkProp3D : public vtkProp
 {
 public:
-  vtkTypeMacro(vtkProp3D,vtkProp);
+  vtkTypeRevisionMacro(vtkProp3D,vtkProp);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

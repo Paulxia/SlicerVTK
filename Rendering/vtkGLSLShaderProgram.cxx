@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGLSLShaderProgram.cxx
+  Module:    $RCSfile: vtkGLSLShaderProgram.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -65,6 +65,7 @@ int printOglError(char *vtkNotUsed(file), int vtkNotUsed(line))
 #endif
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkGLSLShaderProgram, "$Revision: 1.20 $");
 vtkStandardNewMacro(vtkGLSLShaderProgram);
 
 //-----------------------------------------------------------------------------

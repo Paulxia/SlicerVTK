@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLinkEdgels.cxx
+  Module:    $RCSfile: vtkLinkEdgels.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkLinkEdgels, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkLinkEdgels);
 
 // Construct instance of vtkLinkEdgels with GradientThreshold set to 

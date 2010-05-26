@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkChartLegend.cxx
+  Module:    $RCSfile: vtkChartLegend.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -47,6 +47,7 @@ public:
 };
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkChartLegend, "$Revision: 1.3 $");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkChartLegend);

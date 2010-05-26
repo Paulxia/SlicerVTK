@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaImageActor.cxx
+  Module:    $RCSfile: vtkMesaImageActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,4 +40,5 @@
 #undef vtkOpenGLImageActor
 #undef vtkOpenGLRenderWindow
 
+vtkCxxRevisionMacro(vtkMesaImageActor, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkMesaImageActor);

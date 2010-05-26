@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEncodedGradientEstimator.h
+  Module:    $RCSfile: vtkEncodedGradientEstimator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -40,7 +40,7 @@ class vtkMultiThreader;
 class VTK_VOLUMERENDERING_EXPORT vtkEncodedGradientEstimator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkEncodedGradientEstimator,vtkObject);
+  vtkTypeRevisionMacro(vtkEncodedGradientEstimator,vtkObject);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

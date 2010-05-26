@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTecplotReader.h
+  Module:    $RCSfile: vtkTecplotReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -93,7 +93,7 @@ class VTK_IO_EXPORT vtkTecplotReader : public vtkMultiBlockDataSetAlgorithm
 {
 public:
   static vtkTecplotReader * New();
-  vtkTypeMacro( vtkTecplotReader, vtkMultiBlockDataSetAlgorithm );
+  vtkTypeRevisionMacro( vtkTecplotReader, vtkMultiBlockDataSetAlgorithm );
   void  PrintSelf( ostream & os, vtkIndent indent );
   
   // Description:

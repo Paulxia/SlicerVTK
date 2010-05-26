@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLinesPainter.cxx
+  Module:    $RCSfile: vtkLinesPainter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 #include "vtkUnsignedCharArray.h"
 
 vtkStandardNewMacro(vtkLinesPainter);
+vtkCxxRevisionMacro(vtkLinesPainter, "$Revision: 1.6 $");
 //-----------------------------------------------------------------------------
 vtkLinesPainter::vtkLinesPainter()
 {
@@ -129,9 +130,6 @@ int vtkLinesPainter::RenderPrimitive(unsigned long idx, vtkDataArray* n,
   // since this painter does not deal with field colors specially,
   // we just ignore the flag.
   idx &= (~VTK_PDM_FIELD_COLORS);
-
-  // Also ignore edge flags.
-  idx &= (~VTK_PDM_EDGEFLAGS);
 
   // draw all the elements, use fast path if available
   switch (idx)

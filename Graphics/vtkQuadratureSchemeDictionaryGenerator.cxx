@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadratureSchemeDictionaryGenerator.cxx
+  Module:    $RCSfile: vtkQuadratureSchemeDictionaryGenerator.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -131,6 +131,7 @@ double W_QE_42_A[] = { 1.56250000000000e-01, -9.37500000000000e-02,
 }
 ;
 
+vtkCxxRevisionMacro(vtkQuadratureSchemeDictionaryGenerator, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkQuadratureSchemeDictionaryGenerator);
 
 //-----------------------------------------------------------------------------

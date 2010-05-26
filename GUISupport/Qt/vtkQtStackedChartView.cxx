@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQtStackedChartView.cxx
+  Module:    $RCSfile: vtkQtStackedChartView.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -32,6 +32,7 @@
 
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtStackedChartView, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkQtStackedChartView);
 
 //-----------------------------------------------------------------------------

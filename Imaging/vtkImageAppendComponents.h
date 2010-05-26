@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageAppendComponents.h
+  Module:    $RCSfile: vtkImageAppendComponents.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_IMAGING_EXPORT vtkImageAppendComponents : public vtkThreadedImageAlgor
 {
 public:
   static vtkImageAppendComponents *New();
-  vtkTypeMacro(vtkImageAppendComponents,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageAppendComponents,vtkThreadedImageAlgorithm);
 
   // Description:
   // Replace one of the input connections with a new input.  You can

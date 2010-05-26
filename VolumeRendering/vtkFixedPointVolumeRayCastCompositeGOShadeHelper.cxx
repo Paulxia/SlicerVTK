@@ -1,10 +1,10 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFixedPointVolumeRayCastCompositeGOShadeHelper.cxx
+  Module:    $RCSfile: vtkFixedPointVolumeRayCastCompositeGOShadeHelper.cxx,v $
   Language:  C++
-  Date:      $Date$
-  Version:   $Revision$
+  Date:      $Date: 2007-11-08 16:51:06 $
+  Version:   $Revision: 1.9 $
 
   Copyright (c) 1993-2002 Ken Martin, Will Schroeder, Bill Lorensen 
   All rights reserved.
@@ -29,6 +29,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkFixedPointVolumeRayCastCompositeGOShadeHelper, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkFixedPointVolumeRayCastCompositeGOShadeHelper);
 
 // Construct a new vtkFixedPointVolumeRayCastCompositeGOShadeHelper with default values

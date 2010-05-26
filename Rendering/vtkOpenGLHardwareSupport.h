@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLHardwareSupport.h
+  Module:    $RCSfile: vtkOpenGLHardwareSupport.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class vtkOpenGLExtensionManager;
 class VTK_RENDERING_EXPORT vtkOpenGLHardwareSupport : public vtkObject //: public vtkHardwareSupport
 {
 public:
-  vtkTypeMacro(vtkOpenGLHardwareSupport,vtkObject);
+  vtkTypeRevisionMacro(vtkOpenGLHardwareSupport,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkOpenGLHardwareSupport *New();

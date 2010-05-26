@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkHyperOctreeDualGridContourFilter.h
+  Module:    $RCSfile: vtkHyperOctreeDualGridContourFilter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -54,7 +54,7 @@ class vtkIncrementalPointLocator;
 class VTK_GRAPHICS_EXPORT vtkHyperOctreeDualGridContourFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkHyperOctreeDualGridContourFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkHyperOctreeDualGridContourFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

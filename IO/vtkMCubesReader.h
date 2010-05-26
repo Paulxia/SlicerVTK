@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMCubesReader.h
+  Module:    $RCSfile: vtkMCubesReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -57,7 +57,7 @@ class vtkIncrementalPointLocator;
 class VTK_IO_EXPORT vtkMCubesReader : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkMCubesReader,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkMCubesReader,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

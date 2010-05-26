@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLCoincidentTopologyResolutionPainter.h
+  Module:    $RCSfile: vtkOpenGLCoincidentTopologyResolutionPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLCoincidentTopologyResolutionPainter :
 {
 public:
   static vtkOpenGLCoincidentTopologyResolutionPainter* New();
-  vtkTypeMacro(vtkOpenGLCoincidentTopologyResolutionPainter,
+  vtkTypeRevisionMacro(vtkOpenGLCoincidentTopologyResolutionPainter,
     vtkCoincidentTopologyResolutionPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 

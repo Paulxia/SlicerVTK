@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInteractorEventRecorder.cxx
+  Module:    $RCSfile: vtkInteractorEventRecorder.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include <locale>
 #include <vtksys/SystemTools.hxx>
 
+vtkCxxRevisionMacro(vtkInteractorEventRecorder, "$Revision: 1.18 $");
 vtkStandardNewMacro(vtkInteractorEventRecorder);
 
 float vtkInteractorEventRecorder::StreamVersion = 1.0f;

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPStructuredGridWriter.cxx
+  Module:    $RCSfile: vtkXMLPStructuredGridWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkStructuredGrid.h"
 #include "vtkXMLStructuredGridWriter.h"
 
+vtkCxxRevisionMacro(vtkXMLPStructuredGridWriter, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkXMLPStructuredGridWriter);
 
 //----------------------------------------------------------------------------

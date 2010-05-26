@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBridgeCellIteratorOnCellBoundaries.cxx
+  Module:    $RCSfile: vtkBridgeCellIteratorOnCellBoundaries.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkVertex.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkBridgeCellIteratorOnCellBoundaries, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkBridgeCellIteratorOnCellBoundaries);
 
 //-----------------------------------------------------------------------------

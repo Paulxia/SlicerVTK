@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkSQLDatabaseTableSource.h
+  Module:    $RCSfile: vtkSQLDatabaseTableSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkSQLDatabaseTableSource : public vtkTableAlgorithm
 {
 public:
   static vtkSQLDatabaseTableSource* New();
-  vtkTypeMacro(vtkSQLDatabaseTableSource, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkSQLDatabaseTableSource, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkStdString GetURL();

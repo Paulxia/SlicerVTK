@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBoostLogWeighting.cxx
+  Module:    $RCSfile: vtkBoostLogWeighting.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -40,6 +40,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkBoostLogWeighting
 
+vtkCxxRevisionMacro(vtkBoostLogWeighting, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkBoostLogWeighting);
 
 vtkBoostLogWeighting::vtkBoostLogWeighting() :

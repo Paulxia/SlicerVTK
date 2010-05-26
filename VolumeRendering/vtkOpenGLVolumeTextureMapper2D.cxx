@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkOpenGLVolumeTextureMapper2D.cxx
+  Module:    $RCSfile: vtkOpenGLVolumeTextureMapper2D.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@
 
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLVolumeTextureMapper2D, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkOpenGLVolumeTextureMapper2D);
 #endif
 

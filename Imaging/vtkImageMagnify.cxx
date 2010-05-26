@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageMagnify.cxx
+  Module:    $RCSfile: vtkImageMagnify.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageMagnify, "$Revision: 1.51 $");
 vtkStandardNewMacro(vtkImageMagnify);
 
 //----------------------------------------------------------------------------

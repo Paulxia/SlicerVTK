@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAnnotatedCubeActor.cxx
+  Module:    $RCSfile: vtkAnnotatedCubeActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkTransformFilter.h"
 #include "vtkVectorText.h"
 
+vtkCxxRevisionMacro(vtkAnnotatedCubeActor, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkAnnotatedCubeActor);
 
 //-------------------------------------------------------------------------

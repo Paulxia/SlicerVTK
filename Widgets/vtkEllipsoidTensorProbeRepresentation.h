@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEllipsoidTensorProbeRepresentation.h
+  Module:    $RCSfile: vtkEllipsoidTensorProbeRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,7 +39,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkEllipsoidTensorProbeRepresentation,
+  vtkTypeRevisionMacro(vtkEllipsoidTensorProbeRepresentation,
                                 vtkTensorProbeRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 

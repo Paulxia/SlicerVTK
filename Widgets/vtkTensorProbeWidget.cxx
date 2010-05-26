@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTensorProbeWidget.cxx
+  Module:    $RCSfile: vtkTensorProbeWidget.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,6 +30,7 @@
 #include "vtkPolyData.h"
 #include "vtkCellArray.h"
 
+vtkCxxRevisionMacro(vtkTensorProbeWidget, "$Revision: 1.1 $");
 vtkStandardNewMacro(vtkTensorProbeWidget);
 
 //----------------------------------------------------------------------

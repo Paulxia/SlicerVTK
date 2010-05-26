@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCollapseVerticesByArray.h
+  Module:    $RCSfile: vtkCollapseVerticesByArray.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkCollapseVerticesByArray : public vtkGraphAlgorithm
 {
 public:
     static vtkCollapseVerticesByArray* New();
-    vtkTypeMacro(vtkCollapseVerticesByArray, vtkGraphAlgorithm);
+    vtkTypeRevisionMacro(vtkCollapseVerticesByArray, vtkGraphAlgorithm);
 
     void PrintSelf(ostream &os, vtkIndent indent);
 
@@ -61,31 +61,6 @@ public:
     vtkGetStringMacro(VertexArray);
     vtkSetStringMacro(VertexArray);
 
-
-    // Description:
-    // Set if count should be made of how many edges collapsed.
-    vtkGetMacro(CountEdgesCollapsed, bool);
-    vtkSetMacro(CountEdgesCollapsed, bool);
-    vtkBooleanMacro(CountEdgesCollapsed, bool);
-
-    // Description:
-    // Name of the array where the count of how many edges collapsed will
-    // be stored.By default the name of array is "EdgesCollapsedCountArray".
-    vtkGetStringMacro(EdgesCollapsedArray);
-    vtkSetStringMacro(EdgesCollapsedArray);
-
-
-    // Description:
-    // Get/Set if count should be made of how many vertices collapsed.
-    vtkGetMacro(CountVerticesCollapsed, bool);
-    vtkSetMacro(CountVerticesCollapsed, bool);
-    vtkBooleanMacro(CountVerticesCollapsed, bool);
-
-    // Description:
-    // Name of the array where the count of how many vertices collapsed will
-    // be stored. By default name of the array is "VerticesCollapsedCountArray".
-    vtkGetStringMacro(VerticesCollapsedArray);
-    vtkSetStringMacro(VerticesCollapsedArray);
 
 protected:
 
@@ -121,12 +96,6 @@ private:
 protected:
   bool            AllowSelfLoops;
   char*           VertexArray;
-
-  bool            CountEdgesCollapsed;
-  char*           EdgesCollapsedArray;
-
-  bool            CountVerticesCollapsed;
-  char*           VerticesCollapsedArray;
 
   vtkCollapseVerticesByArrayInternal* Internal;
 };

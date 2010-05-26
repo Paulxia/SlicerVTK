@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVariantCast.h
+  Module:    $RCSfile: vtkVariantCast.h,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaPainterDeviceAdapter.cxx
+  Module:    $RCSfile: vtkMesaPainterDeviceAdapter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,4 +33,5 @@
 #include "vtkOpenGLPainterDeviceAdapter.cxx"
 #undef vtkOpenGLPainterDeviceAdapter
 
+vtkCxxRevisionMacro(vtkMesaPainterDeviceAdapter, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkMesaPainterDeviceAdapter);

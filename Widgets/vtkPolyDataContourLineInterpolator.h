@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPolyDataContourLineInterpolator.h
+  Module:    $RCSfile: vtkPolyDataContourLineInterpolator.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -34,7 +34,7 @@ class VTK_WIDGETS_EXPORT vtkPolyDataContourLineInterpolator
 public:
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkPolyDataContourLineInterpolator,
+  vtkTypeRevisionMacro(vtkPolyDataContourLineInterpolator,
                               vtkContourLineInterpolator);
   void PrintSelf(ostream& os, vtkIndent indent);
 

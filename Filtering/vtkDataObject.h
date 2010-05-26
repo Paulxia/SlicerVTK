@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDataObject.h
+  Module:    $RCSfile: vtkDataObject.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -64,7 +64,7 @@ class VTK_FILTERING_EXPORT vtkDataObject : public vtkObject
 public:
   static vtkDataObject *New();
 
-  vtkTypeMacro(vtkDataObject,vtkObject);
+  vtkTypeRevisionMacro(vtkDataObject,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

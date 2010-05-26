@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkVolumeTextureMapper.cxx
+  Module:    $RCSfile: vtkVolumeTextureMapper.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -24,6 +24,7 @@
 #include "vtkVolume.h"
 #include "vtkVolumeProperty.h"
 
+vtkCxxRevisionMacro(vtkVolumeTextureMapper, "$Revision: 1.4 $");
 
 vtkVolumeTextureMapper::vtkVolumeTextureMapper()
 {

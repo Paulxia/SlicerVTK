@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFieldDataToAttributeDataFilter.cxx
+  Module:    $RCSfile: vtkFieldDataToAttributeDataFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkFieldDataToAttributeDataFilter, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkFieldDataToAttributeDataFilter);
 
 // Instantiate object with no input and no defined output.

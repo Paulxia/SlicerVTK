@@ -4,7 +4,7 @@
 # executable.
 #
 # Program:   Visualization Toolkit
-# Module:    CMakeLists.txt
+# Module:    $RCSfile: CMakeLists.txt,v $
 #
 # Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 # All rights reserved.

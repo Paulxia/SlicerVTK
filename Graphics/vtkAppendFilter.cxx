@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAppendFilter.cxx
+  Module:    $RCSfile: vtkAppendFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkIncrementalOctreePointLocator.h"
 
+vtkCxxRevisionMacro(vtkAppendFilter, "$Revision: 1.77 $");
 vtkStandardNewMacro(vtkAppendFilter);
 
 //----------------------------------------------------------------------------

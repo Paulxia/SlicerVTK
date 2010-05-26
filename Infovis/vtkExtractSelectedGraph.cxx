@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractSelectedGraph.cxx
+  Module:    $RCSfile: vtkExtractSelectedGraph.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,6 +50,7 @@
 #include <vtksys/stl/map>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkExtractSelectedGraph, "$Revision: 1.33 $");
 vtkStandardNewMacro(vtkExtractSelectedGraph);
 //----------------------------------------------------------------------------
 vtkExtractSelectedGraph::vtkExtractSelectedGraph()

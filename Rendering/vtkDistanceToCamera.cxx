@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDistanceToCamera.cxx
+  Module:    $RCSfile: vtkDistanceToCamera.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,6 +31,7 @@
 #include "vtkRenderer.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkDistanceToCamera, "$Revision: 1.2 $");
 vtkStandardNewMacro(vtkDistanceToCamera);
 
 vtkDistanceToCamera::vtkDistanceToCamera()

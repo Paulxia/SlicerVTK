@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMultiBlockPLOT3DReader.h
+  Module:    $RCSfile: vtkMultiBlockPLOT3DReader.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -85,7 +85,7 @@ class VTK_IO_EXPORT vtkMultiBlockPLOT3DReader : public vtkMultiBlockDataSetAlgor
 {
 public:
   static vtkMultiBlockPLOT3DReader *New();
-  vtkTypeMacro(vtkMultiBlockPLOT3DReader,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMultiBlockPLOT3DReader,vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

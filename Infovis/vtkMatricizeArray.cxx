@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMatricizeArray.cxx
+  Module:    $RCSfile: vtkMatricizeArray.cxx,v $
   
 -------------------------------------------------------------------------
   Copyright 2008 Sandia Corporation.
@@ -32,6 +32,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkMatricizeArray
 
+vtkCxxRevisionMacro(vtkMatricizeArray, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkMatricizeArray);
 
 vtkMatricizeArray::vtkMatricizeArray() :

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRendererDelegate.cxx
+  Module:    $RCSfile: vtkRendererDelegate.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 
 #include "vtkRendererDelegate.h"
 
+vtkCxxRevisionMacro(vtkRendererDelegate, "$Revision: 1.1 $");
 
 vtkRendererDelegate::vtkRendererDelegate()
 {

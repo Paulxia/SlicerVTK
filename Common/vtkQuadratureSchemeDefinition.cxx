@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadratureSchemeDefinition.cxx
+  Module:    $RCSfile: vtkQuadratureSchemeDefinition.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -27,6 +27,7 @@ using vtksys_ios::istringstream;
 using vtkstd::string;
 
 vtkStandardNewMacro(vtkQuadratureSchemeDefinition);
+vtkCxxRevisionMacro(vtkQuadratureSchemeDefinition, "$Revision: 1.7 $");
 
 //-----------------------------------------------------------------------------
 vtkInformationKeyMacro(

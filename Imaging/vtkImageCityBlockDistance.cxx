@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageCityBlockDistance.cxx
+  Module:    $RCSfile: vtkImageCityBlockDistance.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageCityBlockDistance, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkImageCityBlockDistance);
 
 //----------------------------------------------------------------------------

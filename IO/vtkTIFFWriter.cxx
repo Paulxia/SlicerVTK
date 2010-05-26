@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTIFFWriter.cxx
+  Module:    $RCSfile: vtkTIFFWriter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -20,6 +20,7 @@
 #include "vtkPointData.h"
 #include "vtk_tiff.h"
 
+vtkCxxRevisionMacro(vtkTIFFWriter, "$Revision: 1.44 $");
 vtkStandardNewMacro(vtkTIFFWriter);
 
 //----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageViewer2.cxx
+  Module:    $RCSfile: vtkImageViewer2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkRenderWindowInteractor.h"
 #include "vtkRenderer.h"
 
+vtkCxxRevisionMacro(vtkImageViewer2, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkImageViewer2);
 
 //----------------------------------------------------------------------------

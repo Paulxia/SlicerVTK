@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderedHierarchyRepresentation.cxx
+  Module:    $RCSfile: vtkRenderedHierarchyRepresentation.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -49,6 +49,7 @@ public:
   vtkstd::vector<vtkSmartPointer<vtkHierarchicalGraphPipeline> > Graphs;
 };
 
+vtkCxxRevisionMacro(vtkRenderedHierarchyRepresentation, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkRenderedHierarchyRepresentation);
 
 vtkRenderedHierarchyRepresentation::vtkRenderedHierarchyRepresentation()

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkInformationIntegerPointerKey.cxx
+  Module:    $RCSfile: vtkInformationIntegerPointerKey.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -19,6 +19,7 @@
 #include <vtkstd/algorithm>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkInformationIntegerPointerKey, "$Revision: 1.2 $");
 
 //----------------------------------------------------------------------------
 vtkInformationIntegerPointerKey

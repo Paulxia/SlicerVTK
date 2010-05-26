@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkXMLPHierarchicalBoxDataWriter.h
+  Module:    $RCSfile: vtkXMLPHierarchicalBoxDataWriter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -31,7 +31,7 @@ class VTK_PARALLEL_EXPORT vtkXMLPHierarchicalBoxDataWriter : public vtkXMLHierar
 {
 public:
   static vtkXMLPHierarchicalBoxDataWriter* New();
-  vtkTypeMacro(vtkXMLPHierarchicalBoxDataWriter, vtkXMLHierarchicalBoxDataWriter);
+  vtkTypeRevisionMacro(vtkXMLPHierarchicalBoxDataWriter, vtkXMLHierarchicalBoxDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCompositeDataPipeline.h
+  Module:    $RCSfile: vtkCompositeDataPipeline.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -55,7 +55,7 @@ class VTK_FILTERING_EXPORT vtkCompositeDataPipeline : public vtkStreamingDemandD
 {
 public:
   static vtkCompositeDataPipeline* New();
-  vtkTypeMacro(vtkCompositeDataPipeline,vtkStreamingDemandDrivenPipeline);
+  vtkTypeRevisionMacro(vtkCompositeDataPipeline,vtkStreamingDemandDrivenPipeline);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

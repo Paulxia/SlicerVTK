@@ -110142,7 +110142,7 @@ VTK_SQLITE_API int sqlite3_extension_init(
 **    May you share freely, never taking more than you give.
 **
 *************************************************************************
-** Id
+** $Id: vtk_sqlite3.c,v 1.35 2010-01-22 18:28:23 ndfabia Exp $
 **
 ** This file implements an integration between the ICU library 
 ** ("International Components for Unicode", an open-source library 
@@ -110643,7 +110643,7 @@ VTK_SQLITE_API int sqlite3_extension_init(
 *************************************************************************
 ** This file implements a tokenizer for fts3 based on the ICU library.
 ** 
-** Id
+** $Id: vtk_sqlite3.c,v 1.35 2010-01-22 18:28:23 ndfabia Exp $
 */
 
 #if !defined(VTK_SQLITE_CORE) || defined(VTK_SQLITE_ENABLE_FTS3)

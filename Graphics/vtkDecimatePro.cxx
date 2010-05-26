@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDecimatePro.cxx
+  Module:    $RCSfile: vtkDecimatePro.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkPointData.h"
 #include "vtkCellData.h"
 
+vtkCxxRevisionMacro(vtkDecimatePro, "$Revision: 1.82 $");
 vtkStandardNewMacro(vtkDecimatePro);
 
 #define VTK_TOLERANCE 1.0e-05

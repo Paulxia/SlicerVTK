@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBridgeDataSet.cxx
+  Module:    $RCSfile: vtkBridgeDataSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -38,6 +38,7 @@
 #include "vtkGenericEdgeTable.h"
 #include "vtkSimpleCellTessellator.h"
 
+vtkCxxRevisionMacro(vtkBridgeDataSet, "$Revision: 1.8 $");
 vtkStandardNewMacro(vtkBridgeDataSet);
 
 //----------------------------------------------------------------------------

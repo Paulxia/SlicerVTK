@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkStructuredGridOutlineFilter.cxx
+  Module:    $RCSfile: vtkStructuredGridOutlineFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkStructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkStructuredGridOutlineFilter, "$Revision: 1.49 $");
 vtkStandardNewMacro(vtkStructuredGridOutlineFilter);
 
 //----------------------------------------------------------------------------

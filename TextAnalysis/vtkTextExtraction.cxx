@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTextExtraction.cxx
+  Module:    $RCSfile: vtkTextExtraction.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -44,6 +44,7 @@ public:
 ////////////////////////////////////////////////////////////////
 // vtkTextExtraction
 
+vtkCxxRevisionMacro(vtkTextExtraction, "$Revision: 1.9 $");
 vtkStandardNewMacro(vtkTextExtraction);
 
 vtkTextExtraction::vtkTextExtraction() :

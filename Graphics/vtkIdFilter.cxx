@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkIdFilter.cxx
+  Module:    $RCSfile: vtkIdFilter.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -23,6 +23,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkIdFilter, "$Revision: 1.23 $");
 vtkStandardNewMacro(vtkIdFilter);
 
 // Construct object with PointIds and CellIds on; and ids being generated

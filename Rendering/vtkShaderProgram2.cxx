@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkShaderProgram2.cxx
+  Module:    $RCSfile: vtkShaderProgram2.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include "vtkStdString.h"
 
 vtkStandardNewMacro(vtkShaderProgram2);
+vtkCxxRevisionMacro(vtkShaderProgram2, "$Revision: 1.14 $");
 vtkCxxSetObjectMacro(vtkShaderProgram2,UniformVariables,vtkUniformVariables);
 
 //----------------------------------------------------------------------------
@@ -43,7 +44,7 @@ vtkShaderProgram2::vtkShaderProgram2()
   
   this->LastBuildStatus=VTK_SHADER_PROGRAM2_COMPILE_FAILED;
   
-  // 8 as an initial capacity is nice because the allocation is aligned on
+  // 8 as an initial capcity is nice because the allocation is aligned on
   // 32-bit or 64-bit architecture.
   
   this->LastLinkLogCapacity=8;
@@ -269,9 +270,6 @@ bool vtkShaderProgram2::HasFragmentShaders()
 // Tell if the program is the one currently used by OpenGL.
 bool vtkShaderProgram2::IsUsed()
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
-
   GLint value;
   glGetIntegerv(vtkgl::CURRENT_PROGRAM,&value);
   return static_cast<GLuint>(value)==static_cast<GLuint>(this->Id);
@@ -286,9 +284,6 @@ bool vtkShaderProgram2::IsUsed()
 // useful.
 bool vtkShaderProgram2::DisplayListUnderCreationInCompileMode()
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
-
   bool result=false;
   GLint value;
   glGetIntegerv(GL_LIST_INDEX,&value);
@@ -322,7 +317,7 @@ void vtkShaderProgram2::Use()
   assert("pre: context_is_set" && this->Context!=0);
   assert("pre: current_context_matches" && this->Context->IsCurrent());
   this->Build();
-
+  
   // We need to know if this call happens in a display list or not because
   // glGetIntegerv(vtkgl::CURRENT_PROGRAM,&value) is executed immediately
   // while vtkgl::UseProgram(id) is just compiled and its execution is
@@ -362,9 +357,6 @@ void vtkShaderProgram2::Use()
 // Restore the previous shader program (or fixed-pipeline).
 void vtkShaderProgram2::Restore()
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
-
   if(this->DisplayListUnderCreationInCompileMode())
     {
      vtkgl::UseProgram(0);
@@ -396,9 +388,6 @@ void vtkShaderProgram2::Restore()
 // creation.
 void vtkShaderProgram2::RestoreFixedPipeline()
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
-
   vtkgl::UseProgram(0);
   this->SavedId=0;
 }
@@ -406,9 +395,6 @@ void vtkShaderProgram2::RestoreFixedPipeline()
 // ----------------------------------------------------------------------------
 void vtkShaderProgram2::Build()
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
-
   if(this->Id==0 || this->LastLinkTime<this->MTime ||
      (this->Shaders!=0 && this->LastLinkTime<this->Shaders->GetMTime()))
     {
@@ -525,11 +511,6 @@ void vtkShaderProgram2::Build()
 // ----------------------------------------------------------------------------
 void vtkShaderProgram2::SendUniforms()
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
-  assert("pre: built" &&
-         this->GetLastBuildStatus()==VTK_SHADER_PROGRAM2_LINK_SUCCEEDED);
-
   bool needUpdate=this->LastSendUniformsTime<this->LastLinkTime;
   if(!needUpdate)
     {
@@ -616,11 +597,6 @@ void vtkShaderProgram2::PrintActiveUniformVariables(
   ostream &os,
   vtkIndent indent)
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
-  assert("pre: built" &&
-         this->GetLastBuildStatus()==VTK_SHADER_PROGRAM2_LINK_SUCCEEDED);
-
   GLint params;
   GLuint progId=static_cast<GLuint>(this->Id);
 
@@ -637,16 +613,12 @@ void vtkShaderProgram2::PrintActiveUniformVariables(
   GLenum type;
   bool isInt;
   int elementSize;
-  bool isSampler;
-  GLenum textureBinding;
   while(i<c)
     {
     vtkgl::GetActiveUniform(progId,i,buffSize,0,&size,&type,name);
     os << indent << i <<" ";
     os << indent;
     isInt=true;
-    isSampler=false;
-    textureBinding=GL_TEXTURE_BINDING_1D;
     elementSize=1;
     switch(type)
       {
@@ -746,43 +718,21 @@ void vtkShaderProgram2::PrintActiveUniformVariables(
         break;
       case vtkgl::SAMPLER_1D:
         os<<"sampler1D";
-        isSampler=true;
-        textureBinding=GL_TEXTURE_BINDING_1D;
         break;
       case vtkgl::SAMPLER_2D:
         os<<"sampler2D";
-        isSampler=true;
-        textureBinding=GL_TEXTURE_BINDING_2D;
         break;
       case vtkgl::SAMPLER_3D:
         os<<"sampler3D";
-        isSampler=true;
-        textureBinding=vtkgl::TEXTURE_BINDING_3D;
         break;
       case vtkgl::SAMPLER_CUBE:
         os<<"samplerCube";
-        isSampler=true;
-        textureBinding=vtkgl::TEXTURE_BINDING_CUBE_MAP;
         break;
       case vtkgl::SAMPLER_1D_SHADOW:
-        os<<"sampler1DShadow";
-        isSampler=true;
-        textureBinding=GL_TEXTURE_BINDING_1D;
+        os<<"sampler1Dshadow";
         break;
       case vtkgl::SAMPLER_2D_SHADOW:
-        os<<"sampler2DShadow";
-        isSampler=true;
-        textureBinding=GL_TEXTURE_BINDING_2D;
-        break;
-      case vtkgl::SAMPLER_2D_RECT_ARB:
-        os<<"sampler2DRect";
-        isSampler=true;
-        textureBinding=vtkgl::TEXTURE_BINDING_RECTANGLE_ARB;
-        break;
-      case vtkgl::SAMPLER_2D_RECT_SHADOW_ARB:
-        os<<"sampler2DRectShadow";
-        isSampler=true;
-        textureBinding=vtkgl::TEXTURE_BINDING_RECTANGLE_ARB;
+        os<<"sampler2Dshadow";
         break;
       }
     os<<" "<<name;
@@ -823,64 +773,32 @@ void vtkShaderProgram2::PrintActiveUniformVariables(
         {
         os << "{";
         }
-      if(loc==-1)
+      if(isInt)
         {
-        // this a built-in variable like:
-        // gl_DepthRange.near, gl_DepthRange.far, gl_DepthRange.diff,
-        // gl_ProjectionMatrixInverse, ...
-        // we cannot get the value through vtkgl::GetUniform*()
-        os << "<built-in value>";
+        vtkgl::GetUniformiv(progId,loc,ivalues);
+        int j=0;
+        while(j<elementSize)
+          {
+          os << ivalues[j];
+          if(j<(elementSize-1))
+            {
+            os << " ";
+            }
+          ++j;
+          }
         }
       else
         {
-        if(isInt)
+        vtkgl::GetUniformfv(progId,loc,fvalues);
+        int j=0;
+        while(j<elementSize)
           {
-          vtkgl::GetUniformiv(progId,loc,ivalues);
-          int j=0;
-          while(j<elementSize)
+          os << fvalues[j];
+          if(j<(elementSize-1))
             {
-            os << ivalues[j];
-            if(j<(elementSize-1))
-              {
-              os << " ";
-              }
-            ++j;
+            os << " ";
             }
-          if(isSampler)
-            {
-            os << " (Texture Unit)->";
-            GLint savedActiveTextureUnit;
-            glGetIntegerv(vtkgl::ACTIVE_TEXTURE,&savedActiveTextureUnit);
-            savedActiveTextureUnit=static_cast<GLint>(
-              static_cast<GLenum>(savedActiveTextureUnit)-vtkgl::TEXTURE0);
-            if(savedActiveTextureUnit!=ivalues[0])
-              {
-              vtkgl::ActiveTexture(vtkgl::TEXTURE0+
-                                   static_cast<GLenum>(ivalues[0]));
-              }
-            GLint textureObject;
-            glGetIntegerv(textureBinding,&textureObject);
-            if(savedActiveTextureUnit!=ivalues[0])
-              {
-              vtkgl::ActiveTexture(
-                vtkgl::TEXTURE0+static_cast<GLenum>(savedActiveTextureUnit));
-              }
-            os << textureObject << " (Texture Object)";
-            }
-          }
-        else
-          {
-          vtkgl::GetUniformfv(progId,loc,fvalues);
-          int j=0;
-          while(j<elementSize)
-            {
-            os << fvalues[j];
-            if(j<(elementSize-1))
-              {
-              os << " ";
-              }
-            ++j;
-            }
+          ++j;
           }
         }
       if(elementSize>1)
@@ -916,10 +834,6 @@ void vtkShaderProgram2::PrintActiveUniformVariables(
 // Call PrintActiveUniformVariables on cout. Useful for calling inside gdb.
 void vtkShaderProgram2::PrintActiveUniformVariablesOnCout()
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
-  assert("pre: built" &&
-         this->GetLastBuildStatus()==VTK_SHADER_PROGRAM2_LINK_SUCCEEDED);
   vtkIndent i;
   this->PrintActiveUniformVariables(cout,i);
 }
@@ -929,33 +843,13 @@ void vtkShaderProgram2::PrintActiveUniformVariablesOnCout()
 // Tell if the shader program is valid with the current OpenGL state.
 bool vtkShaderProgram2::IsValid()
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
-  assert("pre: built" &&
-         this->GetLastBuildStatus()==VTK_SHADER_PROGRAM2_LINK_SUCCEEDED);
-
   // this line change the program log.
   GLuint progId=static_cast<GLuint>(this->Id);
   vtkgl::ValidateProgram(progId);
   
   GLint value;
   vtkgl::GetProgramiv(progId,vtkgl::VALIDATE_STATUS,&value);
-
-  bool result=value==GL_TRUE;
-
-  vtkgl::GetProgramiv(progId,vtkgl::INFO_LOG_LENGTH,&value);
-  if(static_cast<size_t>(value)>this->LastValidateLogCapacity)
-    {
-    if(this->LastValidateLog!=0)
-      {
-      delete[] this->LastValidateLog;
-      }
-    this->LastValidateLogCapacity=static_cast<size_t>(value);
-    this->LastValidateLog=new char[this->LastValidateLogCapacity];
-    }
-  vtkgl::GetProgramInfoLog(progId,value,0,this->LastValidateLog);
-
-  return result;
+  return value==GL_TRUE;
 }
 
 //----------------------------------------------------------------------------
@@ -997,8 +891,6 @@ const char *vtkShaderProgram2::GetLastValidateLog()
 //----------------------------------------------------------------------------
 int vtkShaderProgram2::GetAttributeLocation(const char *name)
 {
-  assert("pre: context_is_set" && this->Context!=0);
-  assert("pre: current_context_matches" && this->Context->IsCurrent());
   assert("pre: name_exists" && name!=0);
   assert("pre: built" &&
          this->LastBuildStatus==VTK_SHADER_PROGRAM2_LINK_SUCCEEDED);
@@ -1009,7 +901,7 @@ int vtkShaderProgram2::GetAttributeLocation(const char *name)
 void vtkShaderProgram2::PrintSelf(ostream& os, vtkIndent indent)
 {
   this->Superclass::PrintSelf(os, indent);
-
+  
   os << indent << "Context: ";
   if(this->Context!=0)
     {
@@ -1019,37 +911,7 @@ void vtkShaderProgram2::PrintSelf(ostream& os, vtkIndent indent)
     {
     os << "none" << endl;
     }
-
-  os << indent << "PrintErrors: ";
-  if(this->PrintErrors)
-    {
-    os << "true" << endl;
-    }
-  else
-    {
-    os << "false" << endl;
-    }
-
-  os << indent << "LastBuildStatus: ";
-  switch(this->LastBuildStatus)
-    {
-    case VTK_SHADER_PROGRAM2_COMPILE_FAILED:
-      os << "Compile failed";
-      break;
-    case VTK_SHADER_PROGRAM2_LINK_FAILED:
-      os << "Link failed";
-      break;
-    case VTK_SHADER_PROGRAM2_LINK_SUCCEEDED:
-      os << "Link succeeded";
-      break;
-    default:
-      os << "ERROR unknown value!";
-      break;
-    }
-  os << endl;
-
-  os << indent << "OpenGL Id: " << this->Id << endl;
-
+  
   os << indent << "UniformVariables: ";
   if(this->UniformVariables!=0)
     {
@@ -1059,7 +921,7 @@ void vtkShaderProgram2::PrintSelf(ostream& os, vtkIndent indent)
     {
     os << "none" << endl;
     }
-
+  
   os << indent << "Shaders: ";
   if(this->Shaders!=0)
     {
@@ -1068,6 +930,16 @@ void vtkShaderProgram2::PrintSelf(ostream& os, vtkIndent indent)
   else
     {
     os << "none" <<  endl;
+    }
+  
+  os << indent << "PrintErrors: ";
+  if(this->PrintErrors)
+    {
+    os << "true" << endl;
+    }
+  else
+    {
+    os << "false" << endl;
     }
 }
 

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkAmoebaMinimizer.cxx
+  Module:    $RCSfile: vtkAmoebaMinimizer.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkAmoebaMinimizer.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkAmoebaMinimizer, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkAmoebaMinimizer);
 
 //----------------------------------------------------------------------------

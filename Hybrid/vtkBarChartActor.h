@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBarChartActor.h
+  Module:    $RCSfile: vtkBarChartActor.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -48,7 +48,7 @@ class VTK_HYBRID_EXPORT vtkBarChartActor : public vtkActor2D
 public:
   // Description:
   // Standard methods for type information and printing.
-  vtkTypeMacro(vtkBarChartActor,vtkActor2D);
+  vtkTypeRevisionMacro(vtkBarChartActor,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

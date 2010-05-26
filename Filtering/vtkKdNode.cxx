@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkKdNode.cxx
+  Module:    $RCSfile: vtkKdNode.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,6 +26,7 @@
 #include "vtkPlanesIntersection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkKdNode, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkKdNode);
 vtkCxxSetObjectMacro(vtkKdNode, Left, vtkKdNode);
 vtkCxxSetObjectMacro(vtkKdNode, Right, vtkKdNode);

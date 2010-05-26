@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBYUReader.cxx
+  Module:    $RCSfile: vtkBYUReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkBYUReader, "$Revision: 1.52 $");
 vtkStandardNewMacro(vtkBYUReader);
 
 vtkBYUReader::vtkBYUReader()

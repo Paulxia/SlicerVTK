@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkLightActor.cxx
+  Module:    $RCSfile: vtkLightActor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,6 +25,7 @@
 #include "vtkProperty.h"
 #include "vtkBoundingBox.h"
 
+vtkCxxRevisionMacro(vtkLightActor, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkLightActor);
 vtkCxxSetObjectMacro(vtkLightActor, Light, vtkLight);
 

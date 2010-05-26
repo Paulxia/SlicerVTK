@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkDICOMImageReader.cxx
+  Module:    $RCSfile: vtkDICOMImageReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "DICOMAppHelper.h"
 #include "DICOMParser.h"
 
+vtkCxxRevisionMacro(vtkDICOMImageReader, "$Revision: 1.40 $");
 vtkStandardNewMacro(vtkDICOMImageReader);
 
 class vtkDICOMImageReaderVector : public vtkstd::vector<vtkstd::string>

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkEmptyCell.h
+  Module:    $RCSfile: vtkEmptyCell.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -26,7 +26,7 @@ class VTK_FILTERING_EXPORT vtkEmptyCell : public vtkCell
 {
 public:
   static vtkEmptyCell *New();
-  vtkTypeMacro(vtkEmptyCell,vtkCell);
+  vtkTypeRevisionMacro(vtkEmptyCell,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

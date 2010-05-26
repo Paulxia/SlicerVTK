@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkISIReader.cxx
+  Module:    $RCSfile: vtkISIReader.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 #include <vtkstd/map>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkISIReader, "$Revision: 1.6 $");
 vtkStandardNewMacro(vtkISIReader);
 
 // Not all platforms support vtkstd::getline(istream&, vtkstd::string) so

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPipelineGraphSource.h
+  Module:    $RCSfile: vtkPipelineGraphSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,7 +28,7 @@ class VTK_VIEWS_EXPORT vtkPipelineGraphSource : public vtkDirectedGraphAlgorithm
 {
 public:
   static vtkPipelineGraphSource* New();
-  vtkTypeMacro(vtkPipelineGraphSource,vtkDirectedGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPipelineGraphSource,vtkDirectedGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   void AddSink(vtkObject* object);

@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTreeOrbitLayoutStrategy.cxx
+  Module:    $RCSfile: vtkTreeOrbitLayoutStrategy.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -35,6 +35,7 @@
 #include "vtkTree.h"
 #include "vtkTreeDFSIterator.h"
 
+vtkCxxRevisionMacro(vtkTreeOrbitLayoutStrategy, "$Revision: 1.4 $");
 vtkStandardNewMacro(vtkTreeOrbitLayoutStrategy);
 
 vtkTreeOrbitLayoutStrategy::vtkTreeOrbitLayoutStrategy()

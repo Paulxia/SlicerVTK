@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImplicitTextureCoords.cxx
+  Module:    $RCSfile: vtkImplicitTextureCoords.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkImplicitTextureCoords, "$Revision: 1.49 $");
 vtkStandardNewMacro(vtkImplicitTextureCoords);
 vtkCxxSetObjectMacro(vtkImplicitTextureCoords,SFunction,vtkImplicitFunction);
 vtkCxxSetObjectMacro(vtkImplicitTextureCoords,RFunction,vtkImplicitFunction);

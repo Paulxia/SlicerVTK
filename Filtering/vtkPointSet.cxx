@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkPointSet.cxx
+  Module:    $RCSfile: vtkPointSet.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 
 #include <vtkstd/set>
 
+vtkCxxRevisionMacro(vtkPointSet, "$Revision: 1.14 $");
 
 vtkCxxSetObjectMacro(vtkPointSet,Points,vtkPoints);
 

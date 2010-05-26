@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkGenericRenderWindowInteractor.cxx
+  Module:    $RCSfile: vtkGenericRenderWindowInteractor.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkCommand.h"
 
+vtkCxxRevisionMacro(vtkGenericRenderWindowInteractor, "$Revision: 1.11 $");
 vtkStandardNewMacro(vtkGenericRenderWindowInteractor);
 
 //------------------------------------------------------------------

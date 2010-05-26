@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRectilinearGridSource.cxx
+  Module:    $RCSfile: vtkRectilinearGridSource.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkRectilinearGrid.h"
 
+vtkCxxRevisionMacro(vtkRectilinearGridSource, "$Revision: 1.22 $");
 
 //----------------------------------------------------------------------------
 vtkRectilinearGridSource::vtkRectilinearGridSource()

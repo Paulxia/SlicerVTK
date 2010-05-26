@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkMesaLightingPainter.h
+  Module:    $RCSfile: vtkMesaLightingPainter.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkMesaLightingPainter : public vtkLightingPainter
 {
 public:
   static vtkMesaLightingPainter* New();
-  vtkTypeMacro(vtkMesaLightingPainter, vtkLightingPainter);
+  vtkTypeRevisionMacro(vtkMesaLightingPainter, vtkLightingPainter);
   void PrintSelf(ostream& os ,vtkIndent indent);
     
 protected:

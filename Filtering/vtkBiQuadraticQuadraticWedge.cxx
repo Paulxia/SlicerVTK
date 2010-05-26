@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkBiQuadraticQuadraticWedge.cxx
+  Module:    $RCSfile: vtkBiQuadraticQuadraticWedge.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro (vtkBiQuadraticQuadraticWedge, "$Revision: 1.12 $");
 vtkStandardNewMacro (vtkBiQuadraticQuadraticWedge);
 
 //----------------------------------------------------------------------------

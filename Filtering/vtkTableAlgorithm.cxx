@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTableAlgorithm.cxx
+  Module:    $RCSfile: vtkTableAlgorithm.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
+vtkCxxRevisionMacro(vtkTableAlgorithm, "$Revision: 1.3 $");
 vtkStandardNewMacro(vtkTableAlgorithm);
 
 //----------------------------------------------------------------------------

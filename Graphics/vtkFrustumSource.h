@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkFrustumSource.h
+  Module:    $RCSfile: vtkFrustumSource.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkFrustumSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkFrustumSource *New();
-  vtkTypeMacro(vtkFrustumSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkFrustumSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

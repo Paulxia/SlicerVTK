@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkImageExtractComponents.cxx
+  Module:    $RCSfile: vtkImageExtractComponents.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageExtractComponents, "$Revision: 1.37 $");
 vtkStandardNewMacro(vtkImageExtractComponents);
 
 //----------------------------------------------------------------------------

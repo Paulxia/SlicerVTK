@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkExtractTemporalFieldData.cxx
+  Module:    $RCSfile: vtkExtractTemporalFieldData.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -33,6 +33,7 @@
 
 
 
+vtkCxxRevisionMacro(vtkExtractTemporalFieldData, "$Revision: 1.7 $");
 vtkStandardNewMacro(vtkExtractTemporalFieldData);
 
 //----------------------------------------------------------------------------

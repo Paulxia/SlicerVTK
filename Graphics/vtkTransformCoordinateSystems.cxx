@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkTransformCoordinateSystems.cxx
+  Module:    $RCSfile: vtkTransformCoordinateSystems.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -21,6 +21,7 @@
 #include "vtkViewport.h"
 #include "vtkPointSet.h"
 
+vtkCxxRevisionMacro(vtkTransformCoordinateSystems, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkTransformCoordinateSystems);
 
 //------------------------------------------------------------------------

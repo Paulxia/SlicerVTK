@@ -1,7 +1,7 @@
 /*=========================================================================
 
 Program:   Visualization Toolkit
-Module:    vtkFacetWriter.h
+Module:    $RCSfile: vtkFacetWriter.h,v $
 
 Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
 All rights reserved.
@@ -44,7 +44,7 @@ class VTK_IO_EXPORT vtkFacetWriter : public vtkPolyDataAlgorithm
 {
 public:
   static vtkFacetWriter *New();
-  vtkTypeMacro(vtkFacetWriter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkFacetWriter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

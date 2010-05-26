@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkCellTypes.cxx
+  Module:    $RCSfile: vtkCellTypes.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -15,6 +15,7 @@
 #include "vtkCellTypes.h"
 #include "vtkObjectFactory.h"  
 
+vtkCxxRevisionMacro(vtkCellTypes, "$Revision: 1.5 $");
 vtkStandardNewMacro(vtkCellTypes);
 
 // This list should contain the cell class names in

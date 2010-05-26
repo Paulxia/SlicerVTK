@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkParallelCoordinatesRepresentation.h
+  Module:    $RCSfile: vtkParallelCoordinatesRepresentation.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -82,7 +82,7 @@ class VTK_VIEWS_EXPORT vtkParallelCoordinatesRepresentation : public vtkRendered
 {
 public:
   static vtkParallelCoordinatesRepresentation* New();
-  vtkTypeMacro(vtkParallelCoordinatesRepresentation, vtkRenderedRepresentation);
+  vtkTypeRevisionMacro(vtkParallelCoordinatesRepresentation, vtkRenderedRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

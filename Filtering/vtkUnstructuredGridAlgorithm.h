@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkUnstructuredGridAlgorithm.h
+  Module:    $RCSfile: vtkUnstructuredGridAlgorithm.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -43,7 +43,7 @@ class VTK_FILTERING_EXPORT vtkUnstructuredGridAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkUnstructuredGridAlgorithm *New();
-  vtkTypeMacro(vtkUnstructuredGridAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkUnstructuredGridAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

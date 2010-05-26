@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkQuadraticLinearWedge.cxx
+  Module:    $RCSfile: vtkQuadraticLinearWedge.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -28,6 +28,7 @@
 #include "vtkQuadraticTriangle.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro (vtkQuadraticLinearWedge, "$Revision: 1.12 $");
 vtkStandardNewMacro (vtkQuadraticLinearWedge);
 
 //----------------------------------------------------------------------------

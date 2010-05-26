@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkRenderLargeImage.cxx
+  Module:    $RCSfile: vtkRenderLargeImage.cxx,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -29,6 +29,7 @@
 
 #include <vtkstd/vector>
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkRenderLargeImage, "$Revision: 1.38 $");
 vtkStandardNewMacro(vtkRenderLargeImage);
 
 vtkCxxSetObjectMacro(vtkRenderLargeImage,Input,vtkRenderer);
