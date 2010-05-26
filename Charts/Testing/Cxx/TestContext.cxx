@@ -39,7 +39,7 @@ class ContextTest : public vtkContextItem
 {
 public:
   static ContextTest *New();
-  vtkTypeRevisionMacro(ContextTest, vtkContextItem);
+  vtkTypeMacro(ContextTest, vtkContextItem);
   // Paint event for the chart, called whenever the chart needs to be drawn
   virtual bool Paint(vtkContext2D *painter);
 };

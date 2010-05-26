@@ -61,7 +61,7 @@
 class vtkStreamAwareFeatureDictionary : public vtkFeatureDictionary {
 public:
   static vtkStreamAwareFeatureDictionary* New();
-  vtkTypeRevisionMacro(vtkStreamAwareFeatureDictionary, vtkFeatureDictionary);
+  vtkTypeMacro(vtkStreamAwareFeatureDictionary, vtkFeatureDictionary);
   
 protected:
   vtkStreamAwareFeatureDictionary() {}

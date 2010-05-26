@@ -57,7 +57,7 @@ class VTK_PARALLEL_EXPORT vtkWindBladeReader : public vtkStructuredGridAlgorithm
 {
 public:
   static vtkWindBladeReader *New();
-  vtkTypeRevisionMacro(vtkWindBladeReader,vtkStructuredGridAlgorithm);
+  vtkTypeMacro(vtkWindBladeReader,vtkStructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   vtkSetStringMacro(Filename);
@@ -111,9 +111,14 @@ protected:
   vtkStdString TopographyFile;  // Name of topography data file
   vtkPoints* Points;   // Structured grid geometry
   vtkPoints* BPoints;   // Unstructured grid geometry
-  int SetSpacing;   // Set spacing once
   float Compression;   // Stretching at Z surface [0,1]
   float Fit;    // Cubic or quadratic [0,1]
+
+  // Rectilinear coordinate spacing
+  vtkFloatArray* xSpacing;
+  vtkFloatArray* ySpacing;
+  vtkFloatArray* zSpacing;
+  float* zTopographicValues;
 
   // Variable information
   int NumberOfFileVariables;  // Number of variables in data file
@@ -156,8 +161,6 @@ protected:
   vtkStdString TurbineTowerName; // Name of tower file
   vtkStdString TurbineBladeName; // Base name of time series blade data
 
-  int RequestDataLoop;   // Hack to deal with two output ports
-
   // Selected field of interest
   vtkDataArraySelection* PointDataArraySelection;
 
@@ -177,6 +180,7 @@ protected:
   void LoadBladeData(int timeStep);
 
   // Calculate the coordinates
+  void FillCoordinates();
   void CreateCoordinates();
   void CreateZTopography(float* zdata);
   float GDeform(float sigma, float sigmaMax, int flag);
@@ -199,11 +203,6 @@ protected:
     vtkInformationVector* outputVector);
 
   virtual int RequestInformation(
-    vtkInformation* request,
-    vtkInformationVector** inputVector,
-    vtkInformationVector* outputVector);
-
-  virtual int RequestUpdateExtent(
     vtkInformation* request,
     vtkInformationVector** inputVector,
     vtkInformationVector* outputVector);

@@ -33,7 +33,7 @@ class GraphAnimate : public vtkCommand
 {
 public:
   static GraphAnimate *New() { return new GraphAnimate(); }
-  vtkTypeRevisionMacro(GraphAnimate, vtkCommand);
+  vtkTypeMacro(GraphAnimate, vtkCommand);
   virtual void Execute(vtkObject *, unsigned long, void *)
     {
     this->GraphItem->UpdatePositions();

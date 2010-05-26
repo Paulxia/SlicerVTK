@@ -58,7 +58,7 @@ class VTK_PARALLEL_EXPORT vtkMultiProcessControllerRMI : public vtkObject
 {
 public:
   static vtkMultiProcessControllerRMI *New(); 
-  vtkTypeRevisionMacro(vtkMultiProcessControllerRMI, vtkObject);
+  vtkTypeMacro(vtkMultiProcessControllerRMI, vtkObject);
   
   int Tag;
   vtkRMIFunctionType Function;

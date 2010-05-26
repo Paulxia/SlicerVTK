@@ -83,7 +83,7 @@ vtkLabelHierarchy* vtkLabelHierarchy::Implementation::Current;
 class vtkLabelHierarchyFrustumIterator : public vtkLabelHierarchyIterator
 {
 public:
-  vtkTypeRevisionMacro(vtkLabelHierarchyFrustumIterator,vtkLabelHierarchyIterator);
+  vtkTypeMacro(vtkLabelHierarchyFrustumIterator,vtkLabelHierarchyIterator);
   static vtkLabelHierarchyFrustumIterator* New();
   void Prepare( vtkLabelHierarchy* hier, vtkCamera* cam, double frustumPlanes[24] );
   virtual void Begin( vtkIdTypeArray* lastPlaced );
@@ -499,7 +499,7 @@ bool vtkLabelHierarchyFrustumIterator::IsCursorInFrustum()
 class vtkLabelHierarchyFullSortIterator : public vtkLabelHierarchyIterator
 {
 public:
-  vtkTypeRevisionMacro(vtkLabelHierarchyFullSortIterator,vtkLabelHierarchyIterator);
+  vtkTypeMacro(vtkLabelHierarchyFullSortIterator,vtkLabelHierarchyIterator);
   static vtkLabelHierarchyFullSortIterator* New();
 
   void Prepare( vtkLabelHierarchy* hier, vtkCamera* cam,
@@ -769,7 +769,7 @@ vtkLabelHierarchyFullSortIterator::~vtkLabelHierarchyFullSortIterator()
 class vtkLabelHierarchyQuadtreeIterator : public vtkLabelHierarchyIterator
 {
 public:
-  vtkTypeRevisionMacro(vtkLabelHierarchyQuadtreeIterator,vtkLabelHierarchyIterator);
+  vtkTypeMacro(vtkLabelHierarchyQuadtreeIterator,vtkLabelHierarchyIterator);
   static vtkLabelHierarchyQuadtreeIterator* New();
 
   typedef vtkLabelHierarchy::Implementation::HierarchyType2::octree_node_pointer NodePointer;
@@ -1092,7 +1092,7 @@ void vtkLabelHierarchyQuadtreeIterator::QueueChildren()
 class vtkLabelHierarchyOctreeQueueIterator : public vtkLabelHierarchyIterator
 {
 public:
-  vtkTypeRevisionMacro(vtkLabelHierarchyOctreeQueueIterator,vtkLabelHierarchyIterator);
+  vtkTypeMacro(vtkLabelHierarchyOctreeQueueIterator,vtkLabelHierarchyIterator);
   static vtkLabelHierarchyOctreeQueueIterator* New();
 
   typedef vtkLabelHierarchy::Implementation::HierarchyType3::octree_node_pointer NodePointer;
@@ -1471,7 +1471,7 @@ void vtkLabelHierarchyOctreeQueueIterator::QueueChildren()
 class vtkLabelHierarchy3DepthFirstIterator : public vtkLabelHierarchyIterator
 {
 public:
-  vtkTypeRevisionMacro(vtkLabelHierarchy3DepthFirstIterator,vtkLabelHierarchyIterator);
+  vtkTypeMacro(vtkLabelHierarchy3DepthFirstIterator,vtkLabelHierarchyIterator);
   static vtkLabelHierarchy3DepthFirstIterator* New();
 
   void Prepare( vtkLabelHierarchy* hier, vtkCamera* cam, double frustumPlanes[24], vtkRenderer* ren, float bucketSize[2] );

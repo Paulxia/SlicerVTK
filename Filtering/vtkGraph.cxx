@@ -54,7 +54,7 @@ class vtkGraphEdgePoints : public vtkObject
 {
 public:
   static vtkGraphEdgePoints *New();
-  vtkTypeRevisionMacro(vtkGraphEdgePoints, vtkObject);
+  vtkTypeMacro(vtkGraphEdgePoints, vtkObject);
   vtksys_stl::vector< vtksys_stl::vector<double> > Storage;
 
 protected:

@@ -63,7 +63,7 @@ class vtkUnstructuredGridBunykRayCastIterator
   : public vtkUnstructuredGridVolumeRayCastIterator
 {
 public:
-  vtkTypeRevisionMacro(vtkUnstructuredGridBunykRayCastIterator,
+  vtkTypeMacro(vtkUnstructuredGridBunykRayCastIterator,
                        vtkUnstructuredGridVolumeRayCastIterator);
   static vtkUnstructuredGridBunykRayCastIterator *New();
 

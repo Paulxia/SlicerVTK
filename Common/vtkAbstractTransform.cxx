@@ -365,7 +365,7 @@ void vtkAbstractTransform::UnRegister(vtkObjectBase *o)
 class vtkSimpleTransform : public vtkHomogeneousTransform
 {
 public:
-  vtkTypeRevisionMacro(vtkSimpleTransform,vtkHomogeneousTransform);
+  vtkTypeMacro(vtkSimpleTransform,vtkHomogeneousTransform);
   static vtkSimpleTransform *New() {
 #ifdef VTK_DEBUG_LEAKS
     vtkDebugLeaks::ConstructClass("vtkSimpleTransform");

@@ -83,7 +83,7 @@ class vtkVolumeProperty;
 class VTK_VOLUMERENDERING_EXPORT vtkVolumeTextureMapper3D : public vtkVolumeMapper
 {
 public:
-  vtkTypeRevisionMacro(vtkVolumeTextureMapper3D,vtkVolumeMapper);
+  vtkTypeMacro(vtkVolumeTextureMapper3D,vtkVolumeMapper);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkVolumeTextureMapper3D *New();
@@ -109,7 +109,9 @@ public:
   // render using 3D texture mapping. This indicates if 3D texture
   // mapping is supported by the hardware, and if the other extensions
   // necessary to support the specific properties are available.
-  virtual int IsRenderSupported( vtkVolumeProperty * ) {return 0;};
+  virtual int IsRenderSupported( vtkVolumeProperty *,
+                                 vtkRenderer *vtkNotUsed(r))
+    {return 0;}
 
   // Description:
   // Allow access to the number of polygons used for the

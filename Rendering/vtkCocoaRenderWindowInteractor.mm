@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkCocoaRenderWindowInteractor.mm,v $
+  Module:    vtkCocoaRenderWindowInteractor.mm
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -25,7 +25,6 @@
 #import <OpenGL/gl.h>
 
 //----------------------------------------------------------------------------
-vtkCxxRevisionMacro(vtkCocoaRenderWindowInteractor, "$Revision: 1.30 $");
 vtkStandardNewMacro(vtkCocoaRenderWindowInteractor);
 
 //----------------------------------------------------------------------------

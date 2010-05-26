@@ -151,7 +151,7 @@ class VTK_IO_EXPORT vtkOpenFOAMReaderPrivate : public vtkObject
 {
 public:
   static vtkOpenFOAMReaderPrivate *New();
-  vtkTypeRevisionMacro(vtkOpenFOAMReaderPrivate, vtkObject);
+  vtkTypeMacro(vtkOpenFOAMReaderPrivate, vtkObject);
 
   vtkDoubleArray *GetTimeValues()
     {return this->TimeValues;}

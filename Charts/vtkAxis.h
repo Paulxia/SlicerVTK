@@ -34,7 +34,7 @@ class vtkTextProperty;
 class VTK_CHARTS_EXPORT vtkAxis : public vtkContextItem
 {
 public:
-  vtkTypeRevisionMacro(vtkAxis, vtkContextItem);
+  vtkTypeMacro(vtkAxis, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
 //BTX

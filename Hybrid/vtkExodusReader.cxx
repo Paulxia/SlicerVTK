@@ -942,7 +942,7 @@ private:
   vtkstd::map<vtkStdString,int> apbIndents;
 
 public:
-  vtkTypeRevisionMacro(vtkExodusXMLParser,vtkXMLParser);
+  vtkTypeMacro(vtkExodusXMLParser,vtkXMLParser);
 
   static vtkExodusXMLParser* New();
 

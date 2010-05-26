@@ -79,7 +79,7 @@ class vtkHyperOctreeContourPointsGrabber : public vtkHyperOctreePointsGrabber
 public:
   static vtkHyperOctreeContourPointsGrabber *New();
   
-  vtkTypeRevisionMacro(vtkHyperOctreeContourPointsGrabber,vtkHyperOctreePointsGrabber);
+  vtkTypeMacro(vtkHyperOctreeContourPointsGrabber,vtkHyperOctreePointsGrabber);
   
   void PrintSelf(ostream& os, vtkIndent indent);
   

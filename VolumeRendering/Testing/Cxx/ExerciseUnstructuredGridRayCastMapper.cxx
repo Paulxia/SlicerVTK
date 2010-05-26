@@ -51,7 +51,7 @@
 class vtkClassifyVolume : public vtkDataSetAlgorithm
 {
 public:
-  vtkTypeRevisionMacro(vtkClassifyVolume, vtkDataSetAlgorithm);
+  vtkTypeMacro(vtkClassifyVolume, vtkDataSetAlgorithm);
   static vtkClassifyVolume *New();
 
   vtkGetObjectMacro(TransferFunction, vtkVolumeProperty);

@@ -107,14 +107,16 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include "vtkHAVSVolumeMapper.h"
 
+#include <vtkWeakPointer.h> // to cache the vtkRenderWindow
 class vtkRenderer;
+class vtkRenderWindow;
 
 
 class VTK_VOLUMERENDERING_EXPORT vtkOpenGLHAVSVolumeMapper : public vtkHAVSVolumeMapper
 {
 public:
   static vtkOpenGLHAVSVolumeMapper *New();
-  vtkTypeRevisionMacro(vtkOpenGLHAVSVolumeMapper,
+  vtkTypeMacro(vtkOpenGLHAVSVolumeMapper,
                        vtkHAVSVolumeMapper);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
   
@@ -137,7 +139,7 @@ public:
   // features include off-screen rendering, 32-bit fp textures, multiple
   // render targets, and framebuffer objects.
   // Subclasses must override this method to indicate if supported by Hardware.
-  virtual bool SupportedByHardware();
+  virtual bool SupportedByHardware(vtkRenderer *r);
 protected:
 
   vtkOpenGLHAVSVolumeMapper();
@@ -179,6 +181,8 @@ protected:
   // Lookup Tables
   unsigned int PsiTableTexture;
   unsigned int TransferFunctionTexture;
+
+  vtkWeakPointer<vtkRenderWindow> RenderWindow;
 //ETX
 
 private:

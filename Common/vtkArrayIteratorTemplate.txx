@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkArrayIteratorTemplate.txx,v $
+  Module:    vtkArrayIteratorTemplate.txx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -30,9 +30,6 @@ vtkArrayIteratorTemplate<T>* vtkArrayIteratorTemplate<T>::New()
     }
   return new vtkArrayIteratorTemplate<T>;
 }
-
-template <class T>
-vtkCxxRevisionMacro(vtkArrayIteratorTemplate<T>, "$Revision: 1.3 $");
 
 template <class T>
 vtkCxxSetObjectMacro(vtkArrayIteratorTemplate<T>, Array, vtkAbstractArray);

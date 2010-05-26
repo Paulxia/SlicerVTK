@@ -56,7 +56,7 @@ class VTK_RENDERING_EXPORT vtkCarbonRenderWindow : public vtkOpenGLRenderWindow
 {
 public:
   static vtkCarbonRenderWindow *New();
-  vtkTypeRevisionMacro(vtkCarbonRenderWindow,vtkOpenGLRenderWindow);
+  vtkTypeMacro(vtkCarbonRenderWindow,vtkOpenGLRenderWindow);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -210,6 +210,11 @@ public:
   // on the next render.
   void SetForceMakeCurrent();
 
+  // Description:
+  // Is this render window using hardware acceleration? 0-false, 1-true.
+  // Always true for Carbon.
+  virtual int IsDirect();
+  
   // Description:
   // Check to see if an event is pending for this window.
   // This is a useful check to abort a long render.

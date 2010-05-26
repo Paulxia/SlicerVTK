@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkPlotLine.cxx,v $
+  Module:    vtkPlotLine.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -39,6 +39,16 @@
 #include "vtkstd/algorithm"
 
 
+// PIMPL for STL vector...
+class vtkPlotLine::VectorPIMPL : public vtkstd::vector<vtkVector2f>
+{
+public:
+  VectorPIMPL(vtkVector2f* start, vtkVector2f* end)
+    : vtkstd::vector<vtkVector2f>::vector(start, end)
+  {
+  }
+};
+
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkPlotLine);
 
@@ -63,11 +73,7 @@ vtkPlotLine::~vtkPlotLine()
     this->Points->Delete();
     this->Points = NULL;
     }
-  if (this->Sorted)
-    {
-    this->Sorted->Delete();
-    this->Sorted = NULL;
-    }
+  delete this->Sorted;
   if (this->BadPoints)
     {
     this->BadPoints->Delete();
@@ -447,26 +453,18 @@ bool vtkPlotLine::GetNearestPoint(const vtkVector2f& point,
     return false;
     }
 
+  // Sort the data if it has not been done already...
   if (!this->Sorted)
     {
-    this->Sorted = vtkPoints2D::New();
-    }
-
-  // Sort the data if necessary
-  if (this->Sorted->GetNumberOfPoints() == 0)
-    {
-    this->Sorted->DeepCopy(this->Points);
     vtkVector2f* data =
-        static_cast<vtkVector2f*>(this->Sorted->GetVoidPointer(0));
-    vtkstd::vector<vtkVector2f> v(data, data+n);
-    vtkstd::sort(v.begin(), v.end(), compVector2fX);
+        static_cast<vtkVector2f*>(this->Points->GetVoidPointer(0));
+    this->Sorted = new VectorPIMPL(data, data+n);
+    vtkstd::sort(this->Sorted->begin(), this->Sorted->end(), compVector2fX);
     }
 
   // Set up our search array, use the STL lower_bound algorithm
-  vtkVector2f* data =
-      static_cast<vtkVector2f*>(this->Sorted->GetVoidPointer(0));
-  vtkstd::vector<vtkVector2f> v(data, data+n);
-  vtkstd::vector<vtkVector2f>::iterator low;
+  VectorPIMPL::iterator low;
+  VectorPIMPL &v = *this->Sorted;
 
   // Get the lowest point we might hit within the supplied tolerance
   vtkVector2f lowPoint(point.X()-tol.X(), 0.0f);
@@ -588,7 +586,8 @@ bool vtkPlotLine::UpdateTableCache(vtkTable *table)
   this->Points->Modified();
   if (this->Sorted)
     {
-    this->Sorted->SetNumberOfPoints(0);
+    delete this->Sorted;
+    this->Sorted = 0;
     }
   this->BuildTime.Modified();
   return true;

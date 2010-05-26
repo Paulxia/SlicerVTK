@@ -1304,7 +1304,7 @@ class vtkXMLDynaSummaryParser : public vtkXMLParser
 {
 public:
   static vtkXMLDynaSummaryParser* New();
-  vtkTypeRevisionMacro(vtkXMLDynaSummaryParser,vtkXMLParser);
+  vtkTypeMacro(vtkXMLDynaSummaryParser,vtkXMLParser);
 
   /// Must be set before calling Parse();
   vtkLSDynaReaderPrivate* P;

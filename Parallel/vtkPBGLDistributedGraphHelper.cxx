@@ -154,7 +154,7 @@ class vtkPBGLDistributedGraphHelperInternals : public vtkObject
 {
 public:
   static vtkPBGLDistributedGraphHelperInternals *New();
-  vtkTypeRevisionMacro(vtkPBGLDistributedGraphHelperInternals, vtkObject);
+  vtkTypeMacro(vtkPBGLDistributedGraphHelperInternals, vtkObject);
 
   // Description:
   // Handle a FIND_VERTEX_TAG message.

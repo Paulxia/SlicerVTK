@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    $RCSfile: vtkHyperOctree.cxx,v $
+  Module:    vtkHyperOctree.cxx
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -50,7 +50,7 @@ class vtkHyperOctreeInternal
   : public vtkObject
 {
 public:
-  vtkTypeRevisionMacro(vtkHyperOctreeInternal,vtkObject);
+  vtkTypeMacro(vtkHyperOctreeInternal,vtkObject);
   virtual void Initialize()=0;
   virtual vtkHyperOctreeCursor *NewCursor()=0;
   virtual vtkIdType GetNumberOfLeaves()=0;
@@ -138,7 +138,7 @@ public:
         }
     }
   
-  vtkTypeRevisionMacro(vtkCompactHyperOctreeCursor<D>,vtkHyperOctreeCursor);
+  vtkTypeMacro(vtkCompactHyperOctreeCursor<D>,vtkHyperOctreeCursor);
   
   //---------------------------------------------------------------------------
   // Initialization
@@ -516,15 +516,6 @@ private:
   void operator=(const vtkCompactHyperOctreeCursor<D> &);    // Not implemented.
 };
 
-template<unsigned int D>
-void vtkCompactHyperOctreeCursor<D>::CollectRevisions(ostream& sos)
-{
-  vtkOStreamWrapper os(sos);
-  this->Superclass::CollectRevisions(os);
-  os << "vtkCompactHyperOctreeCursor<" << D <<"> " << "$Revision: 1.23 $" << '\n';
-}
-  
-
 // D is the dimension of the space
 // D>=1 && D<=3
 // So its not really a generi class because the template argument
@@ -653,7 +644,6 @@ protected:
   int Children[1<<D]; // indices
 };
 
-
 template<unsigned int D> class vtkCompactHyperOctree
   : public vtkHyperOctreeInternal
 {
@@ -674,7 +664,7 @@ public:
         }
     }
   
-  vtkTypeRevisionMacro(vtkCompactHyperOctree<D>,vtkHyperOctreeInternal);
+  vtkTypeMacro(vtkCompactHyperOctree<D>,vtkHyperOctreeInternal);
   
   //---------------------------------------------------------------------------
   // Description:
@@ -956,15 +946,6 @@ private:
   vtkCompactHyperOctree(const vtkCompactHyperOctree<D> &);  // Not implemented.
   void operator=(const vtkCompactHyperOctree<D> &);    // Not implemented.
 };
-
-template<unsigned int D>
-void vtkCompactHyperOctree<D>::CollectRevisions(ostream& sos)
-{
-  vtkOStreamWrapper os(sos);
-  this->Superclass::CollectRevisions(os);
-  os << "vtkCompactHyperOctree<" << D <<"> " << "$Revision: 1.23 $" << '\n';
-}
-  
 
 // octree: vtkHyperOctreeInternal<3>
 // quadtree: vtkHyperOctreeInternal<2>

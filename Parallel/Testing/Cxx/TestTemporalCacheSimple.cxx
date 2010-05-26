@@ -48,7 +48,7 @@ class vtkTemporalSphereSource : public vtkSphereSource {
 
 public:
   static vtkTemporalSphereSource *New();
-  vtkTypeRevisionMacro(vtkTemporalSphereSource, vtkSphereSource);
+  vtkTypeMacro(vtkTemporalSphereSource, vtkSphereSource);
 
   // Description:
   // Set/Get the time value at which to get the value.
