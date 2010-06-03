@@ -55,6 +55,7 @@
 #include "vtkPointData.h"
 #include "vtkCellData.h"
 #include "vtkPoints.h"
+#include "vtkTriangle.h"
 #include "vtkUnsignedCharArray.h"
 #include "vtkUnsignedShortArray.h"
 #include "vtkUnsignedIntArray.h"
@@ -3748,17 +3749,19 @@ int vtkOpenGLGPUVolumeRayCastMapper::RenderClippedBoundingBox(
       points->GetPoint(pts[0], p1 );
       points->GetPoint(pts[1], p2 );
       points->GetPoint(pts[2], p3 );
+      
+      // v1[0] = p2[0] - p1[0];
+      // v1[1] = p2[1] - p1[1];
+      // v1[2] = p2[2] - p1[2];
 
-      v1[0] = p2[0] - p1[0];
-      v1[1] = p2[1] - p1[1];
-      v1[2] = p2[2] - p1[2];
+      // v2[0] = p2[0] - p3[0];
+      // v2[1] = p2[1] - p3[1];
+      // v2[2] = p2[2] - p3[2];
 
-      v2[0] = p2[0] - p3[0];
-      v2[1] = p2[1] - p3[1];
-      v2[2] = p2[2] - p3[2];
-
-      vtkMath::Cross( v1, v2, v3 );
-      vtkMath::Normalize(v3);
+      // vtkMath::Cross( v1, v2, v3 );
+      // vtkMath::Normalize(v3);
+      
+      vtkTriangle::ComputeNormal(p1, p2, p3, v3);
 
       v4[0] = p2[0] - center[0];
       v4[1] = p2[1] - center[1];
@@ -3767,7 +3770,7 @@ int vtkOpenGLGPUVolumeRayCastMapper::RenderClippedBoundingBox(
 
       double dot = vtkMath::Dot( v3, v4 );
 
-      if (( dot < 0) && this->PreserveOrientation)
+      if (( dot >= -0.000001) && this->PreserveOrientation)
         {
         start = 0;
         end = npts;
