@@ -4256,6 +4256,7 @@ void vtkOpenGLGPUVolumeRayCastMapper::PreRender(vtkRenderer *ren,
     glEnable (GL_CULL_FACE);
     glCullFace (GL_FRONT);
     glColorMask(GL_FALSE,GL_FALSE,GL_FALSE,GL_FALSE);
+    glDisable(GL_ALPHA_TEST);
     this->RenderClippedBoundingBox(0,0,1,ren->GetRenderWindow());
     glDisable (GL_CULL_FACE);
     glColorMask(GL_TRUE,GL_TRUE,GL_TRUE,GL_TRUE);
