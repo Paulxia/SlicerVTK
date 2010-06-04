@@ -3517,7 +3517,7 @@ void vtkOpenGLGPUVolumeRayCastMapper::ClipBoundingBox(vtkRenderer *ren,
   double camWorldPos[4];
   double camFocalWorldPoint[4];
   double camWorldDirection[4];
-  double range[2];
+  //double range[2];
   double camPos[4];
   //double focalPoint[4];
   //double direction[3];
@@ -3561,9 +3561,9 @@ void vtkOpenGLGPUVolumeRayCastMapper::ClipBoundingBox(vtkRenderer *ren,
   vtkMath::Normalize(camPlaneNormal);
  
   double camNearWorldPoint[4];
-  double camFarWorldPoint[4];
+  //double camFarWorldPoint[4];
   double camNearPoint[4];
-  double camFarPoint[4];
+  //double camFarPoint[4];
   cam->GetClippingRange(camWorldRange);
   camNearWorldPoint[0] = camWorldPos[0] + camWorldRange[0]*camWorldDirection[0];
   camNearWorldPoint[1] = camWorldPos[1] + camWorldRange[0]*camWorldDirection[1];
@@ -3613,7 +3613,7 @@ void vtkOpenGLGPUVolumeRayCastMapper::ClipBoundingBox(vtkRenderer *ren,
       {
       // Planes are in world coordinates, we need to 
       // convert them in local coordinates
-      double planeOrigin[4], planeNormal[4], planeP1[4];
+      double planeOrigin[4], planeNormal[4];//, planeP1[4];
       plane->GetOrigin(planeOrigin);
       planeOrigin[3] = 1.;
       plane->GetNormal(planeNormal);
@@ -3737,7 +3737,8 @@ int vtkOpenGLGPUVolumeRayCastMapper::RenderClippedBoundingBox(
       // negative?
 
       double p1[3], p2[3], p3[3];
-      double v1[3], v2[3], v3[3], v4[3];
+      //double v1[3], v2[3];
+      double v3[3], v4[3];
 
       points->GetPoint(pts[0], p1 );
       points->GetPoint(pts[1], p2 );
