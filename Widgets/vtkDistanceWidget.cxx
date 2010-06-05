@@ -25,6 +25,7 @@
 #include "vtkWidgetEvent.h"
 #include "vtkWidgetEventTranslator.h"
 
+vtkCxxRevisionMacro(vtkDistanceWidget, "1.10");
 vtkStandardNewMacro(vtkDistanceWidget);
 
 

@@ -32,6 +32,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkScaleDimension
 
+vtkCxxRevisionMacro(vtkScaleDimension, "1.2");
 vtkStandardNewMacro(vtkScaleDimension);
 
 vtkScaleDimension::vtkScaleDimension() :

@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkTDxMacDevice : public vtkTDxDevice
 {
 public:
   static vtkTDxMacDevice *New();
-  vtkTypeMacro(vtkTDxMacDevice,vtkTDxDevice);
+  vtkTypeRevisionMacro(vtkTDxMacDevice,vtkTDxDevice);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

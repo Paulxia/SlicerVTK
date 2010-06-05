@@ -96,7 +96,7 @@ public:
   // Instantiate the object.
   static vtkBoxWidget *New();
 
-  vtkTypeMacro(vtkBoxWidget,vtk3DWidget);
+  vtkTypeRevisionMacro(vtkBoxWidget,vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

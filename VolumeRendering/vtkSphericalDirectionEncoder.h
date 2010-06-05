@@ -28,7 +28,7 @@
 class VTK_VOLUMERENDERING_EXPORT vtkSphericalDirectionEncoder : public vtkDirectionEncoder
 {
 public:
-  vtkTypeMacro(vtkSphericalDirectionEncoder,vtkDirectionEncoder);
+  vtkTypeRevisionMacro(vtkSphericalDirectionEncoder,vtkDirectionEncoder);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

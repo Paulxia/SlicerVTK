@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointSet.h"
 
+vtkCxxRevisionMacro(vtkKdTreePointLocator, "1.1");
 vtkStandardNewMacro(vtkKdTreePointLocator);
 
 vtkKdTreePointLocator::vtkKdTreePointLocator()

@@ -33,7 +33,7 @@ class vtkImageData;
 class VTK_FILTERING_EXPORT vtkImageAlgorithm : public vtkAlgorithm
 {
 public:
-  vtkTypeMacro(vtkImageAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkImageAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

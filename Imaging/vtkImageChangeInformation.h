@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageChangeInformation : public vtkImageAlgorithm
 {
 public:
   static vtkImageChangeInformation *New();
-  vtkTypeMacro(vtkImageChangeInformation, vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageChangeInformation, vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

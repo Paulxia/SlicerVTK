@@ -86,6 +86,7 @@
 
 
 vtkStandardNewMacro(vtkGeoProjectionSource);
+vtkCxxRevisionMacro(vtkGeoProjectionSource, "1.12");
 vtkCxxSetObjectMacro(vtkGeoProjectionSource, Transform, vtkAbstractTransform);
 //----------------------------------------------------------------------------
 vtkGeoProjectionSource::vtkGeoProjectionSource()

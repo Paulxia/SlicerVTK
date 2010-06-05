@@ -30,7 +30,7 @@
 class VTK_GRAPHICS_EXPORT vtkTexturedSphereSource : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTexturedSphereSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTexturedSphereSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

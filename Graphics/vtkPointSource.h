@@ -32,7 +32,7 @@ class VTK_GRAPHICS_EXPORT vtkPointSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkPointSource *New();
-  vtkTypeMacro(vtkPointSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPointSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

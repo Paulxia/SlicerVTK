@@ -34,6 +34,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkPowerWeighting
 
+vtkCxxRevisionMacro(vtkPowerWeighting, "1.1");
 vtkStandardNewMacro(vtkPowerWeighting);
 
 vtkPowerWeighting::vtkPowerWeighting() :

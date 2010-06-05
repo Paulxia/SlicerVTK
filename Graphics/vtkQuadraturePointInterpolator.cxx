@@ -39,6 +39,7 @@ using vtksys_ios::ostringstream;
 
 #include "vtkQuadraturePointsUtilities.hxx"
 
+vtkCxxRevisionMacro(vtkQuadraturePointInterpolator, "1.10");
 vtkStandardNewMacro(vtkQuadraturePointInterpolator);
 
 //-----------------------------------------------------------------------------

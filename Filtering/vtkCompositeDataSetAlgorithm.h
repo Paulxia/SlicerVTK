@@ -30,7 +30,7 @@ class VTK_FILTERING_EXPORT vtkCompositeDataSetAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkCompositeDataSetAlgorithm *New();
-  vtkTypeMacro(vtkCompositeDataSetAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkCompositeDataSetAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

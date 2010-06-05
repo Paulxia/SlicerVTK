@@ -45,6 +45,7 @@
 #include <QTextDocument>
 #include <QTextStream>
 
+vtkCxxRevisionMacro(vtkQtLabelRenderStrategy, "1.13");
 vtkStandardNewMacro(vtkQtLabelRenderStrategy);
 
 struct vtkQtLabelMapEntry

@@ -57,7 +57,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLCollectGraph : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLCollectGraph *New();
-  vtkTypeMacro(vtkPBGLCollectGraph, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLCollectGraph, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

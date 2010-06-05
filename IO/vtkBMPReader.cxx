@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkBMPReader, "1.55");
 vtkStandardNewMacro(vtkBMPReader);
 
 #ifdef read

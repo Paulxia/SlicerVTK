@@ -40,7 +40,7 @@ class VTK_RENDERING_EXPORT vtkLabelHierarchyAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkLabelHierarchyAlgorithm *New();
-  vtkTypeMacro(vtkLabelHierarchyAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkLabelHierarchyAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

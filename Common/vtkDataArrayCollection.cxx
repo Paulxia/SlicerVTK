@@ -15,4 +15,5 @@
 #include "vtkDataArrayCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkDataArrayCollection, "1.2");
 vtkStandardNewMacro(vtkDataArrayCollection);

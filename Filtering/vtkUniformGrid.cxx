@@ -32,6 +32,7 @@
 #include "vtkVertex.h"
 #include "vtkVoxel.h"
 
+vtkCxxRevisionMacro(vtkUniformGrid, "1.20");
 vtkStandardNewMacro(vtkUniformGrid);
 
 vtkCxxSetObjectMacro(vtkUniformGrid, PointVisibility,

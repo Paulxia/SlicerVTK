@@ -67,7 +67,7 @@ class VTK_FILTERING_EXPORT vtkGenericDataSet : public vtkDataObject
 public:
   // Description:
   // Standard VTK type and print macros.
-  vtkTypeMacro(vtkGenericDataSet,vtkDataObject);
+  vtkTypeRevisionMacro(vtkGenericDataSet,vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

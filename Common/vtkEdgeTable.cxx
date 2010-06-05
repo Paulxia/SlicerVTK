@@ -18,6 +18,7 @@
 #include "vtkVoidArray.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkEdgeTable, "1.39");
 vtkStandardNewMacro(vtkEdgeTable);
 
 // Instantiate object based on maximum point id.

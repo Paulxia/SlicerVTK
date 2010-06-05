@@ -33,7 +33,7 @@ class VTK_FILTERING_EXPORT vtkPolyLine : public vtkCell
 {
 public:
   static vtkPolyLine *New();
-  vtkTypeMacro(vtkPolyLine,vtkCell);
+  vtkTypeRevisionMacro(vtkPolyLine,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

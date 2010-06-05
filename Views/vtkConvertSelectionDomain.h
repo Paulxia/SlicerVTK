@@ -46,7 +46,7 @@ class VTK_VIEWS_EXPORT vtkConvertSelectionDomain : public vtkPassInputTypeAlgori
 {
 public:
   static vtkConvertSelectionDomain *New();
-  vtkTypeMacro(vtkConvertSelectionDomain, vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkConvertSelectionDomain, vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

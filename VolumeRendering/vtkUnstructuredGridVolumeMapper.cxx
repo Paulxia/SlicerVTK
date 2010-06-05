@@ -19,6 +19,7 @@
 #include "vtkInformation.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridVolumeMapper, "1.1");
 
 // Construct a vtkUnstructuredGridVolumeMapper with empty scalar input and
 // clipping off.

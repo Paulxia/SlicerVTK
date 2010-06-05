@@ -22,6 +22,7 @@
 #include "vtkStructuredGrid.h"
 #include "vtkTrivialProducer.h"
 
+vtkCxxRevisionMacro(vtkStructuredGridAlgorithm, "1.3");
 vtkStandardNewMacro(vtkStructuredGridAlgorithm);
 
 //----------------------------------------------------------------------------

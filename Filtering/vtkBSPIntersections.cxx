@@ -28,6 +28,7 @@
 
 #include <vtkstd/set>
 
+vtkCxxRevisionMacro(vtkBSPIntersections, "1.2");
 
 vtkStandardNewMacro(vtkBSPIntersections);
 

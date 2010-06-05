@@ -27,7 +27,7 @@ class VTK_IMAGING_EXPORT vtkImageGaussianSource : public vtkImageAlgorithm
 {
 public:
   static vtkImageGaussianSource *New();
-  vtkTypeMacro(vtkImageGaussianSource,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageGaussianSource,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

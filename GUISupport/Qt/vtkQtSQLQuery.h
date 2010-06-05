@@ -40,7 +40,7 @@ class QVTK_EXPORT vtkQtSQLQuery : public vtkSQLQuery
 {
 public:
   static vtkQtSQLQuery* New();
-  vtkTypeMacro(vtkQtSQLQuery, vtkSQLQuery);
+  vtkTypeRevisionMacro(vtkQtSQLQuery, vtkSQLQuery);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

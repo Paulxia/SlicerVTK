@@ -16,6 +16,7 @@
 #include "vtkDataSet.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkAbstractMapper3D, "1.19");
 
 // Construct with initial range (0,1).
 vtkAbstractMapper3D::vtkAbstractMapper3D()

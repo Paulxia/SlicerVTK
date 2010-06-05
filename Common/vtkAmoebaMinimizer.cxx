@@ -15,6 +15,7 @@
 #include "vtkAmoebaMinimizer.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkAmoebaMinimizer, "1.7");
 vtkStandardNewMacro(vtkAmoebaMinimizer);
 
 //----------------------------------------------------------------------------

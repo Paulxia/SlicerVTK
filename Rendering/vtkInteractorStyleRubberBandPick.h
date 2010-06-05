@@ -37,7 +37,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleRubberBandPick : public vtkInteract
 {
 public:
   static vtkInteractorStyleRubberBandPick *New();
-  vtkTypeMacro(vtkInteractorStyleRubberBandPick, vtkInteractorStyleTrackballCamera);
+  vtkTypeRevisionMacro(vtkInteractorStyleRubberBandPick, vtkInteractorStyleTrackballCamera);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   void StartSelect();

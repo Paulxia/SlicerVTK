@@ -30,6 +30,7 @@
 #include "vtkPointData.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkTreeMapToPolyData, "1.10");
 vtkStandardNewMacro(vtkTreeMapToPolyData);
 
 vtkTreeMapToPolyData::vtkTreeMapToPolyData()

@@ -31,6 +31,7 @@
 #include "vtkSelection.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkAnnotation, "1.8");
 vtkStandardNewMacro(vtkAnnotation);
 
 vtkCxxSetObjectMacro(vtkAnnotation, Selection, vtkSelection);

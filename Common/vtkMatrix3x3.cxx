@@ -19,6 +19,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkMatrix3x3, "1.3");
 vtkStandardNewMacro(vtkMatrix3x3);
 
 // Useful for viewing a double[9] as a double[3][3]

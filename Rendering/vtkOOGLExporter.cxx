@@ -33,6 +33,7 @@
 #include "vtkTexture.h"
 #include "vtkMatrix4x4.h"
 
+vtkCxxRevisionMacro(vtkOOGLExporter, "1.35");
 vtkStandardNewMacro(vtkOOGLExporter);
 
 vtkOOGLExporter::vtkOOGLExporter()

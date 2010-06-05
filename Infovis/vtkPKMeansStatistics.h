@@ -33,7 +33,7 @@ class VTK_INFOVIS_EXPORT vtkPKMeansStatistics : public vtkKMeansStatistics
 {
 public:
   static vtkPKMeansStatistics* New();
-  vtkTypeMacro(vtkPKMeansStatistics, vtkKMeansStatistics);
+  vtkTypeRevisionMacro(vtkPKMeansStatistics, vtkKMeansStatistics);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

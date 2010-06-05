@@ -35,6 +35,7 @@
 
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkStreamGraph, "1.2");
 vtkStandardNewMacro(vtkStreamGraph);
 //---------------------------------------------------------------------------
 vtkStreamGraph::vtkStreamGraph()

@@ -27,7 +27,7 @@ class VTK_IMAGING_EXPORT vtkRTAnalyticSource : public vtkImageAlgorithm
 {
 public:
   static vtkRTAnalyticSource *New();
-  vtkTypeMacro(vtkRTAnalyticSource,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkRTAnalyticSource,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

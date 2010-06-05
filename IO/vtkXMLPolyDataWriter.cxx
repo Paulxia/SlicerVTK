@@ -27,6 +27,7 @@
 #include "vtkOffsetsManagerArray.h"
 #undef  vtkOffsetsManager_DoNotInclude
 
+vtkCxxRevisionMacro(vtkXMLPolyDataWriter, "1.11");
 vtkStandardNewMacro(vtkXMLPolyDataWriter);
 
 //----------------------------------------------------------------------------

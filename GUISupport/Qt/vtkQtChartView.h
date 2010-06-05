@@ -48,7 +48,7 @@ class QVTK_EXPORT vtkQtChartView : public vtkQtView
 Q_OBJECT
 
 public:
-  vtkTypeMacro(vtkQtChartView, vtkQtView);
+  vtkTypeRevisionMacro(vtkQtChartView, vtkQtView);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

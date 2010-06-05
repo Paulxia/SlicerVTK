@@ -36,6 +36,7 @@ PURPOSE.  See the above copyright notice for more information.
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkHAVSVolumeMapper, "1.8");
 // Needed when we don't use the vtkStandardNewMacro.
 vtkInstantiatorNewMacro(vtkHAVSVolumeMapper);
 

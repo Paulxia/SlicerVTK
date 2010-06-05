@@ -43,7 +43,7 @@ class VTK_FILTERING_EXPORT vtkAnnotationLayersAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkAnnotationLayersAlgorithm *New();
-  vtkTypeMacro(vtkAnnotationLayersAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkAnnotationLayersAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

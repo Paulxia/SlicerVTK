@@ -35,7 +35,7 @@
 class VTK_GRAPHICS_EXPORT vtkDensifyPolyData : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkDensifyPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDensifyPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkDensifyPolyData *New();
 

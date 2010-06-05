@@ -30,7 +30,7 @@ class VTK_FILTERING_EXPORT vtkCachedStreamingDemandDrivenPipeline :
 {
 public:
   static vtkCachedStreamingDemandDrivenPipeline* New();
-  vtkTypeMacro(vtkCachedStreamingDemandDrivenPipeline,
+  vtkTypeRevisionMacro(vtkCachedStreamingDemandDrivenPipeline,
                        vtkStreamingDemandDrivenPipeline);
   void PrintSelf(ostream& os, vtkIndent indent);
 

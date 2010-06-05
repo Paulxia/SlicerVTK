@@ -29,7 +29,7 @@ class VTK_IO_EXPORT vtkBYUReader : public vtkPolyDataAlgorithm
 public:
   static vtkBYUReader *New();
 
-  vtkTypeMacro(vtkBYUReader,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkBYUReader,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

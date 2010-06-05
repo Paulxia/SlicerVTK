@@ -27,6 +27,7 @@
 
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkGenerateIndexArray, "1.4");
 vtkStandardNewMacro(vtkGenerateIndexArray);
 
 vtkGenerateIndexArray::vtkGenerateIndexArray() :

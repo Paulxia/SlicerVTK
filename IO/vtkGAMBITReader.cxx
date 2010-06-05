@@ -29,6 +29,7 @@
 #include "vtkIntArray.h"
 #include "vtkCellArray.h"
 
+vtkCxxRevisionMacro(vtkGAMBITReader, "1.6");
 vtkStandardNewMacro(vtkGAMBITReader);
 
 //----------------------------------------------------------------------------

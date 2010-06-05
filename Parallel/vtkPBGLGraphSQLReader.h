@@ -44,7 +44,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLGraphSQLReader : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLGraphSQLReader* New();
-  vtkTypeMacro(vtkPBGLGraphSQLReader,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLGraphSQLReader,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

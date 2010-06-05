@@ -37,6 +37,7 @@
 
 #include <boost/graph/use_mpi.hpp>   // must precede all pbgl includes
 
+vtkCxxRevisionMacro(vtkPBGLCollapseGraph, "1.5");
 vtkStandardNewMacro(vtkPBGLCollapseGraph);
 
 vtkPBGLCollapseGraph::vtkPBGLCollapseGraph()

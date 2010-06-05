@@ -65,7 +65,7 @@ class vtkCamera;
 class VTK_HYBRID_EXPORT vtkCubeAxesActor : public vtkActor
 {
 public:
-  vtkTypeMacro(vtkCubeAxesActor,vtkActor);
+  vtkTypeRevisionMacro(vtkCubeAxesActor,vtkActor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

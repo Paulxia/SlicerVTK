@@ -30,7 +30,7 @@ class VTK_IMAGING_EXPORT vtkImageDivergence : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageDivergence *New();
-  vtkTypeMacro(vtkImageDivergence,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageDivergence,vtkThreadedImageAlgorithm);
 
 protected:
   vtkImageDivergence();

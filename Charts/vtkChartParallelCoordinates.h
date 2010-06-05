@@ -28,7 +28,7 @@ class vtkIdTypeArray;
 class VTK_CHARTS_EXPORT vtkChartParallelCoordinates : public vtkChart
 {
 public:
-  vtkTypeMacro(vtkChartParallelCoordinates, vtkChart);
+  vtkTypeRevisionMacro(vtkChartParallelCoordinates, vtkChart);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

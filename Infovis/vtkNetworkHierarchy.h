@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkNetworkHierarchy : public vtkTreeAlgorithm
 {
 public:
   static vtkNetworkHierarchy* New();
-  vtkTypeMacro(vtkNetworkHierarchy,vtkTreeAlgorithm);
+  vtkTypeRevisionMacro(vtkNetworkHierarchy,vtkTreeAlgorithm);
   
   // Description:
   // Used to store the ip array name

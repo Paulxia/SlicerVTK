@@ -12,6 +12,7 @@
 #include "vtkDataSetAttributes.h"
 #include "vtkMatrix4x4.h"
 
+vtkCxxRevisionMacro(vtkEdgeSubdivisionCriterion,"1.1");
 
 void vtkEdgeSubdivisionCriterion::PrintSelf( ostream& os, vtkIndent indent )
 {

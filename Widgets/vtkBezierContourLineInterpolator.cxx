@@ -20,6 +20,7 @@
 #include "vtkRenderer.h"
 #include "vtkIntArray.h"
 
+vtkCxxRevisionMacro(vtkBezierContourLineInterpolator, "1.6");
 vtkStandardNewMacro(vtkBezierContourLineInterpolator);
 
 //----------------------------------------------------------------------

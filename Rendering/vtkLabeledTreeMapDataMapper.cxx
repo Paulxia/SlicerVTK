@@ -38,6 +38,7 @@
 #include "vtkViewport.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkLabeledTreeMapDataMapper, "1.4");
 vtkStandardNewMacro(vtkLabeledTreeMapDataMapper);
 
 vtkLabeledTreeMapDataMapper::vtkLabeledTreeMapDataMapper()

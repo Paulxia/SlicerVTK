@@ -35,6 +35,7 @@
 // -------------------------------------------------------------------------
 
 vtkStandardNewMacro(vtkSortDataArray);
+vtkCxxRevisionMacro(vtkSortDataArray,"1.4");
 
 vtkSortDataArray::vtkSortDataArray()
 {

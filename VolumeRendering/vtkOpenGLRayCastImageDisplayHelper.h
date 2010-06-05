@@ -34,7 +34,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkOpenGLRayCastImageDisplayHelper : public vtk
 {
 public:
   static vtkOpenGLRayCastImageDisplayHelper *New();
-  vtkTypeMacro(vtkOpenGLRayCastImageDisplayHelper,vtkRayCastImageDisplayHelper);
+  vtkTypeRevisionMacro(vtkOpenGLRayCastImageDisplayHelper,vtkRayCastImageDisplayHelper);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   void RenderTexture( vtkVolume *vol, vtkRenderer *ren,

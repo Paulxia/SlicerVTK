@@ -79,7 +79,7 @@ class vtkGenericDataSet;
 class VTK_GENERIC_FILTERING_EXPORT vtkGenericStreamTracer : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkGenericStreamTracer,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGenericStreamTracer,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

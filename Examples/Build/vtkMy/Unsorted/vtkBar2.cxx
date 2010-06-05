@@ -17,4 +17,5 @@
 
 //----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkBar2, "1.4");
 vtkStandardNewMacro(vtkBar2);

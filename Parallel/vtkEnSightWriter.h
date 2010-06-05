@@ -39,7 +39,7 @@ class VTK_PARALLEL_EXPORT vtkEnSightWriter : public vtkWriter
 {
 
 public:
-  vtkTypeMacro(vtkEnSightWriter,vtkWriter);
+  vtkTypeRevisionMacro(vtkEnSightWriter,vtkWriter);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

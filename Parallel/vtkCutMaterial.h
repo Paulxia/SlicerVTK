@@ -31,7 +31,7 @@ class VTK_PARALLEL_EXPORT vtkCutMaterial : public vtkPolyDataAlgorithm
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkCutMaterial,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCutMaterial,vtkPolyDataAlgorithm);
   static vtkCutMaterial *New();
 
   // Description:

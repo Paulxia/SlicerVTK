@@ -42,7 +42,7 @@ class vtkImplicitFunction;
 class VTK_GRAPHICS_EXPORT vtkExtractGeometry : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkExtractGeometry,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractGeometry,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

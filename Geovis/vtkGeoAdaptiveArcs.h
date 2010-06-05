@@ -37,7 +37,7 @@ class VTK_GEOVIS_EXPORT vtkGeoAdaptiveArcs : public vtkPolyDataAlgorithm
 public:
   static vtkGeoAdaptiveArcs *New();
 
-  vtkTypeMacro(vtkGeoAdaptiveArcs,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGeoAdaptiveArcs,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -15,6 +15,7 @@
 #include "vtkFileOutputWindow.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkFileOutputWindow, "1.9");
 vtkStandardNewMacro(vtkFileOutputWindow);
 
 vtkFileOutputWindow::vtkFileOutputWindow()

@@ -21,6 +21,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageRange3D, "1.33");
 vtkStandardNewMacro(vtkImageRange3D);
 
 //----------------------------------------------------------------------------

@@ -66,6 +66,7 @@ static void CopyStructuredData(vtkDataSetAttributes* out, int outExtent[6],
 
 
 vtkStandardNewMacro(vtkPTableToStructuredGrid);
+vtkCxxRevisionMacro(vtkPTableToStructuredGrid, "1.2");
 vtkCxxSetObjectMacro(vtkPTableToStructuredGrid, Controller,
   vtkMultiProcessController);
 //----------------------------------------------------------------------------

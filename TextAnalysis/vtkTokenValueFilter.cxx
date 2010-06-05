@@ -34,6 +34,7 @@
 #include <sstream>
 #include <stdexcept>
 
+vtkCxxRevisionMacro(vtkTokenValueFilter, "1.2");
 vtkStandardNewMacro(vtkTokenValueFilter);
 
 class vtkTokenValueFilter::Internals

@@ -18,6 +18,7 @@
 #include "vtkMatrix4x4.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkHomogeneousTransform, "1.12");
 
 //----------------------------------------------------------------------------
 vtkHomogeneousTransform::vtkHomogeneousTransform()

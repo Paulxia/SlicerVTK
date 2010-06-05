@@ -60,7 +60,7 @@ class vtkGraph;
 class VTK_GRAPHICS_EXPORT vtkTemporalStatistics : public vtkPassInputTypeAlgorithm
 {
 public:
-  vtkTypeMacro(vtkTemporalStatistics, vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkTemporalStatistics, vtkPassInputTypeAlgorithm);
   static vtkTemporalStatistics *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

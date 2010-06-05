@@ -36,6 +36,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkSynchronizedTemplates2D, "1.8");
 vtkStandardNewMacro(vtkSynchronizedTemplates2D);
 
 //----------------------------------------------------------------------------

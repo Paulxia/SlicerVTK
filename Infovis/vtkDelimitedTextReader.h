@@ -57,7 +57,7 @@ class VTK_INFOVIS_EXPORT vtkDelimitedTextReader : public vtkTableAlgorithm
 {
 public:
   static vtkDelimitedTextReader* New();
-  vtkTypeMacro(vtkDelimitedTextReader, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkDelimitedTextReader, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Descriptin:

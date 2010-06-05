@@ -54,7 +54,7 @@ class vtkGraphEdgePoints : public vtkObject
 {
 public:
   static vtkGraphEdgePoints *New();
-  vtkTypeMacro(vtkGraphEdgePoints, vtkObject);
+  vtkTypeRevisionMacro(vtkGraphEdgePoints, vtkObject);
   vtksys_stl::vector< vtksys_stl::vector<double> > Storage;
 
 protected:
@@ -66,6 +66,7 @@ private:
   void operator=(const vtkGraphEdgePoints&);  // Not implemented.
 };
 vtkStandardNewMacro(vtkGraphEdgePoints);
+vtkCxxRevisionMacro(vtkGraphEdgePoints, "1.39");
 
 //----------------------------------------------------------------------------
 // class vtkGraph
@@ -74,6 +75,7 @@ vtkCxxSetObjectMacro(vtkGraph, Points, vtkPoints);
 vtkCxxSetObjectMacro(vtkGraph, Internals, vtkGraphInternals);
 vtkCxxSetObjectMacro(vtkGraph, EdgePoints, vtkGraphEdgePoints);
 vtkCxxSetObjectMacro(vtkGraph, EdgeList, vtkIdTypeArray);
+vtkCxxRevisionMacro(vtkGraph, "1.39");
 //----------------------------------------------------------------------------
 vtkGraph::vtkGraph()
 {

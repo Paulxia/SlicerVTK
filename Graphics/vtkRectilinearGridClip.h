@@ -33,7 +33,7 @@ class VTK_GRAPHICS_EXPORT vtkRectilinearGridClip : public vtkRectilinearGridAlgo
 {
 public:
   static vtkRectilinearGridClip *New();
-  vtkTypeMacro(vtkRectilinearGridClip,vtkRectilinearGridAlgorithm);
+  vtkTypeRevisionMacro(vtkRectilinearGridClip,vtkRectilinearGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

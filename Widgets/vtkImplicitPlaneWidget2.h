@@ -100,7 +100,7 @@ public:
 
   // Description:
   // Standard vtkObject methods
-  vtkTypeMacro(vtkImplicitPlaneWidget2,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkImplicitPlaneWidget2,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -22,6 +22,7 @@
 #include "vtkDoubleArray.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkBiQuadraticTriangle, "1.2");
 vtkStandardNewMacro(vtkBiQuadraticTriangle);
 
 //----------------------------------------------------------------------------

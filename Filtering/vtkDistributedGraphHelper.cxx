@@ -39,6 +39,7 @@ vtkInformationKeyMacro(vtkDistributedGraphHelper, DISTRIBUTEDEDGEIDS, Integer);
 //----------------------------------------------------------------------------
 // class vtkDistributedGraphHelper
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkDistributedGraphHelper, "1.7");
 
 //----------------------------------------------------------------------------
 void vtkDistributedGraphHelper::PrintSelf(ostream& os, vtkIndent indent)

@@ -23,6 +23,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridReader, "1.71");
 vtkStandardNewMacro(vtkUnstructuredGridReader);
 
 #ifdef read

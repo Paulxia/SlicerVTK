@@ -32,6 +32,7 @@
 #include "vtkCellData.h"
 #include "vtkCoordinate.h"
 
+vtkCxxRevisionMacro(vtkLegendScaleActor, "1.3");
 vtkStandardNewMacro(vtkLegendScaleActor);
 
 

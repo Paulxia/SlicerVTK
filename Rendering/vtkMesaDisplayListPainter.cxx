@@ -32,4 +32,5 @@
 #include "vtkOpenGLDisplayListPainter.cxx"
 #undef vtkOpenGLDisplayListPainter
 
+vtkCxxRevisionMacro(vtkMesaDisplayListPainter, "1.2");
 vtkStandardNewMacro(vtkMesaDisplayListPainter);

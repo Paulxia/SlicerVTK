@@ -22,6 +22,7 @@
 #include <vtkstd/vector>
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkGenericAttributeCollection,"1.10");
 vtkStandardNewMacro(vtkGenericAttributeCollection);
 
 class vtkGenericAttributeInternalVector

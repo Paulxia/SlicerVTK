@@ -22,6 +22,7 @@
 #include "vtkPointData.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkMapper, "1.127");
 
 // Initialize static member that controls global immediate mode rendering
 static int vtkMapperGlobalImmediateModeRendering = 0;

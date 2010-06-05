@@ -25,6 +25,7 @@
 #include "vtkWidgetEvent.h"
 #include "vtkTimerLog.h"
 
+vtkCxxRevisionMacro(vtkCenteredSliderWidget, "1.3");
 vtkStandardNewMacro(vtkCenteredSliderWidget);
 
 //------------------------------------------------------------

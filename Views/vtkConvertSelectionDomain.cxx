@@ -41,6 +41,7 @@
 
 #include <vtksys/stl/set>
 
+vtkCxxRevisionMacro(vtkConvertSelectionDomain, "1.7");
 vtkStandardNewMacro(vtkConvertSelectionDomain);
 //----------------------------------------------------------------------------
 vtkConvertSelectionDomain::vtkConvertSelectionDomain()

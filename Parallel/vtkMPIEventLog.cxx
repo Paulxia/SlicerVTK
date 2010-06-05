@@ -21,6 +21,7 @@
 
 int vtkMPIEventLog::LastEventId = 0;
 
+vtkCxxRevisionMacro(vtkMPIEventLog, "1.7.96.1");
 vtkStandardNewMacro(vtkMPIEventLog);
 
 void vtkMPIEventLog::PrintSelf(ostream& os, vtkIndent indent)

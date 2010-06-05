@@ -38,7 +38,7 @@ class vtkPlanesIntersection;
 class VTK_FILTERING_EXPORT vtkKdNode : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkKdNode, vtkObject);
+  vtkTypeRevisionMacro(vtkKdNode, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkKdNode *New();

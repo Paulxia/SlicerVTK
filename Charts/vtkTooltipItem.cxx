@@ -27,6 +27,7 @@
 #include "vtkObjectFactory.h"
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkTooltipItem, "1.1");
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkTooltipItem);

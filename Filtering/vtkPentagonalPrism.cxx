@@ -30,6 +30,7 @@
 #include "vtkMath.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkPentagonalPrism, "1.12");
 vtkStandardNewMacro(vtkPentagonalPrism);
 
 static const double VTK_DIVERGED = 1.e6;

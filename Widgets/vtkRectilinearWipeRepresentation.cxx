@@ -31,6 +31,7 @@
 #include "vtkObjectFactory.h"
 
 
+vtkCxxRevisionMacro(vtkRectilinearWipeRepresentation, "1.5");
 vtkStandardNewMacro(vtkRectilinearWipeRepresentation);
 
 vtkCxxSetObjectMacro(vtkRectilinearWipeRepresentation,RectilinearWipe,vtkImageRectilinearWipe);

@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkAddMembershipArray : public vtkPassInputTypeAlgorith
 {
 public:
   static vtkAddMembershipArray* New();
-  vtkTypeMacro(vtkAddMembershipArray,vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkAddMembershipArray,vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

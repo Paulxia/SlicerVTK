@@ -30,7 +30,7 @@ class VTK_GRAPHICS_EXPORT vtkSelectionSource : public vtkSelectionAlgorithm
 {
 public:
   static vtkSelectionSource *New();
-  vtkTypeMacro(vtkSelectionSource,vtkSelectionAlgorithm);
+  vtkTypeRevisionMacro(vtkSelectionSource,vtkSelectionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

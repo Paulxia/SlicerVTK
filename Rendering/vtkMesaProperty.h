@@ -28,7 +28,7 @@ class VTK_RENDERING_EXPORT vtkMesaProperty : public vtkProperty
 {
 public:
   static vtkMesaProperty *New();
-  vtkTypeMacro(vtkMesaProperty,vtkProperty);
+  vtkTypeRevisionMacro(vtkMesaProperty,vtkProperty);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

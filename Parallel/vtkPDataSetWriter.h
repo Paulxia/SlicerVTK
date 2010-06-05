@@ -31,7 +31,7 @@ class VTK_PARALLEL_EXPORT vtkPDataSetWriter : public vtkDataSetWriter
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkPDataSetWriter,vtkDataSetWriter);
+  vtkTypeRevisionMacro(vtkPDataSetWriter,vtkDataSetWriter);
   static vtkPDataSetWriter *New();
 
   // Description:

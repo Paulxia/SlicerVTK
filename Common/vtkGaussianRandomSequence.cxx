@@ -13,6 +13,7 @@
 =========================================================================*/
 #include "vtkGaussianRandomSequence.h"
 
+vtkCxxRevisionMacro(vtkGaussianRandomSequence, "1.1");
 
 // ----------------------------------------------------------------------------
 vtkGaussianRandomSequence::vtkGaussianRandomSequence()

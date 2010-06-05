@@ -33,6 +33,7 @@ public:
   MapOfStringToInt AttributeIndicesCache;
 };
 
+vtkCxxRevisionMacro(vtkGLSLShaderDeviceAdapter, "1.5");
 vtkStandardNewMacro(vtkGLSLShaderDeviceAdapter);
 
 #define GLSL_SHADER_DEVICE_ADAPTER(msg) \

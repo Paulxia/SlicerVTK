@@ -77,7 +77,7 @@ class VTK_GRAPHICS_EXPORT vtkDataObjectToDataSetFilter : public vtkDataSetAlgori
 {
 public:
   static vtkDataObjectToDataSetFilter *New();
-  vtkTypeMacro(vtkDataObjectToDataSetFilter,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkDataObjectToDataSetFilter,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

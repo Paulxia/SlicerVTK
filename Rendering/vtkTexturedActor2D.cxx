@@ -18,6 +18,7 @@
 #include "vtkRenderer.h"
 #include "vtkTexture.h"
 
+vtkCxxRevisionMacro(vtkTexturedActor2D, "1.1");
 vtkStandardNewMacro(vtkTexturedActor2D);
 
 vtkCxxSetObjectMacro(vtkTexturedActor2D, Texture, vtkTexture);

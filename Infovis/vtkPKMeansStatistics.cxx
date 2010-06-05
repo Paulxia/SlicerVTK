@@ -28,6 +28,7 @@
 
 
 vtkStandardNewMacro(vtkPKMeansStatistics);
+vtkCxxRevisionMacro(vtkPKMeansStatistics, "1.4");
 vtkCxxSetObjectMacro(vtkPKMeansStatistics, Controller, vtkMultiProcessController);
 //-----------------------------------------------------------------------------
 vtkPKMeansStatistics::vtkPKMeansStatistics()

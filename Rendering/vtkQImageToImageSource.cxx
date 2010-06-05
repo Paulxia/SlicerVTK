@@ -30,6 +30,7 @@
 #define VTK_CREATE(type, name) \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkQImageToImageSource, "1.5");
 vtkStandardNewMacro(vtkQImageToImageSource);
 
 //----------------------------------------------------------------------------

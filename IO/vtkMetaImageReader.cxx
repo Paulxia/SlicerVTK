@@ -38,6 +38,7 @@
 #include <sys/stat.h>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkMetaImageReader, "1.31");
 vtkStandardNewMacro(vtkMetaImageReader);
 
 //----------------------------------------------------------------------------

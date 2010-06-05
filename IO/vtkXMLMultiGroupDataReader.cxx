@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkXMLMultiGroupDataReader);
+vtkCxxRevisionMacro(vtkXMLMultiGroupDataReader, "1.5");
 //----------------------------------------------------------------------------
 vtkXMLMultiGroupDataReader::vtkXMLMultiGroupDataReader()
 {

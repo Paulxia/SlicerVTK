@@ -18,6 +18,7 @@
 #include "vtkInteractorObserver.h"
 
 
+vtkCxxRevisionMacro(vtkWidgetRepresentation, "1.9");
 
 
 //----------------------------------------------------------------------

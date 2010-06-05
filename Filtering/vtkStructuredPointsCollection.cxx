@@ -15,6 +15,7 @@
 #include "vtkStructuredPointsCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkStructuredPointsCollection, "1.8");
 vtkStandardNewMacro(vtkStructuredPointsCollection);
 
 //----------------------------------------------------------------------------

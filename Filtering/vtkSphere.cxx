@@ -16,6 +16,7 @@
 #include "vtkMath.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkSphere, "1.32");
 vtkStandardNewMacro(vtkSphere);
 
 //----------------------------------------------------------------------------

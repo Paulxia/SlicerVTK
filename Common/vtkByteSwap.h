@@ -26,7 +26,7 @@ class VTK_COMMON_EXPORT vtkByteSwap : public vtkObject
 {
 public:
   static vtkByteSwap *New();
-  vtkTypeMacro(vtkByteSwap,vtkObject);
+  vtkTypeRevisionMacro(vtkByteSwap,vtkObject);
 
   //BTX
   // Description:

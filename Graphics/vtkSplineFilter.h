@@ -54,7 +54,7 @@ class vtkSpline;
 class VTK_GRAPHICS_EXPORT vtkSplineFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkSplineFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSplineFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

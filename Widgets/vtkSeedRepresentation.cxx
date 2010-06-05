@@ -27,6 +27,7 @@
 #include <vtkstd/iterator>
 #include <vtkstd/list>
 
+vtkCxxRevisionMacro(vtkSeedRepresentation, "1.15");
 vtkStandardNewMacro(vtkSeedRepresentation);
 
 vtkCxxSetObjectMacro(vtkSeedRepresentation,HandleRepresentation,vtkHandleRepresentation);
@@ -130,16 +131,23 @@ int vtkSeedRepresentation::GetNumberOfSeeds()
 }
 
 //----------------------------------------------------------------------
-int vtkSeedRepresentation::ComputeInteractionState(int vtkNotUsed(X), int vtkNotUsed(Y), int vtkNotUsed(modify))
+int vtkSeedRepresentation::ComputeInteractionState(int X, int Y, int vtkNotUsed(modify))
 {
   // Loop over all the seeds to see if the point is close to any of them.
+  double xyz[3], pos[3];
+  double tol2 = this->Tolerance*this->Tolerance;
+  xyz[0] = static_cast<double>(X);
+  xyz[1] = static_cast<double>(Y);
+  xyz[2] = 0.0;
+
   int i;
   vtkHandleListIterator iter;
   for ( i = 0, iter = this->Handles->begin(); iter != this->Handles->end(); ++iter, ++i )
     {
     if ( *iter != NULL )
       {
-      if ((*iter)->GetInteractionState() == vtkHandleRepresentation::Nearby)
+      (*iter)->GetDisplayPosition(pos);
+      if ( vtkMath::Distance2BetweenPoints(xyz,pos) <= tol2 )
         {
         this->InteractionState = vtkSeedRepresentation::NearSeed;
         this->ActiveHandle = i;

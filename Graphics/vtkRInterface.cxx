@@ -31,6 +31,7 @@
 #include "vtkDataArray.h"
 #include "vtkRAdapter.h"
 
+vtkCxxRevisionMacro(vtkRInterface, "1.6");
 vtkStandardNewMacro(vtkRInterface);
 
 #include "R.h"

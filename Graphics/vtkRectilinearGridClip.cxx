@@ -23,6 +23,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkRectilinearGridClip, "1.1");
 vtkStandardNewMacro(vtkRectilinearGridClip);
 
 //----------------------------------------------------------------------------

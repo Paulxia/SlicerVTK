@@ -38,7 +38,7 @@ class VTK_GRAPHICS_EXPORT vtkGraphLayoutFilter : public vtkPolyDataAlgorithm
 public:
   static vtkGraphLayoutFilter *New();
 
-  vtkTypeMacro(vtkGraphLayoutFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGraphLayoutFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

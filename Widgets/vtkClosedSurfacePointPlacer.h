@@ -41,7 +41,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkClosedSurfacePointPlacer,vtkPointPlacer);
+  vtkTypeRevisionMacro(vtkClosedSurfacePointPlacer,vtkPointPlacer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

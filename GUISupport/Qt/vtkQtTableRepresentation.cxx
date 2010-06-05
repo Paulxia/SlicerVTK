@@ -35,6 +35,7 @@
 #include <assert.h>
 
 // ----------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtTableRepresentation, "1.10");
 
 // ----------------------------------------------------------------------
 vtkCxxSetObjectMacro(vtkQtTableRepresentation, ColorTable, vtkLookupTable);

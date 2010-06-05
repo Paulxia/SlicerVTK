@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkXMLHierarchicalDataReader);
+vtkCxxRevisionMacro(vtkXMLHierarchicalDataReader, "1.6");
 //----------------------------------------------------------------------------
 vtkXMLHierarchicalDataReader::vtkXMLHierarchicalDataReader()
 {

@@ -37,6 +37,7 @@
 #include <assert.h>
 
 vtkStandardNewMacro(vtkPostgreSQLDatabase);
+vtkCxxRevisionMacro(vtkPostgreSQLDatabase, "1.34");
 
 // ----------------------------------------------------------------------
 vtkPostgreSQLDatabase::vtkPostgreSQLDatabase()

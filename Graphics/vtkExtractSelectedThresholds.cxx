@@ -31,6 +31,7 @@
 #include "vtkDoubleArray.h"
 #include "vtkSignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkExtractSelectedThresholds, "1.18");
 vtkStandardNewMacro(vtkExtractSelectedThresholds);
 
 //----------------------------------------------------------------------------

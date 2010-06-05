@@ -33,7 +33,7 @@ class vtkMultiThreader;
 class VTK_FILTERING_EXPORT vtkThreadedImageAlgorithm : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkThreadedImageAlgorithm,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkThreadedImageAlgorithm,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

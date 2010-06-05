@@ -31,7 +31,7 @@
 class VTK_FILTERING_EXPORT vtkImageInPlaceFilter : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkImageInPlaceFilter,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageInPlaceFilter,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

@@ -25,3 +25,5 @@
 #define vtkOpenGLRenderWindow vtkMesaRenderWindow
 #include "vtkOpenGLRenderWindow.cxx"
 #undef vtkOpenGLRenderWindow
+
+vtkCxxRevisionMacro(vtkMesaRenderWindow, "1.31");

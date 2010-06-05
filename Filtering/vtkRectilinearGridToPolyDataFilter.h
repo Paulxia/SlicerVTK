@@ -30,7 +30,7 @@ class vtkRectilinearGrid;
 class VTK_FILTERING_EXPORT vtkRectilinearGridToPolyDataFilter : public vtkPolyDataSource
 {
 public:
-  vtkTypeMacro(vtkRectilinearGridToPolyDataFilter,vtkPolyDataSource);
+  vtkTypeRevisionMacro(vtkRectilinearGridToPolyDataFilter,vtkPolyDataSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

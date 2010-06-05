@@ -22,6 +22,7 @@
 #include <vtkstd/iterator>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkColorTransferFunction, "1.81");
 vtkStandardNewMacro(vtkColorTransferFunction);
 
 #define MY_MAX(x, y) ((x) > (y) ? (x) : (y))

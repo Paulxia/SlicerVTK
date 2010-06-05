@@ -45,6 +45,7 @@
 # endif
 #endif
 
+vtkCxxRevisionMacro(vtkAbstractArray, "1.17");
 
 //----------------------------------------------------------------------------
 // Construct object with sane defaults.

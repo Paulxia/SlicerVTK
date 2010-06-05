@@ -29,7 +29,7 @@ class vtkShortArray;
 class VTK_IO_EXPORT vtkUGFacetReader : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkUGFacetReader,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkUGFacetReader,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

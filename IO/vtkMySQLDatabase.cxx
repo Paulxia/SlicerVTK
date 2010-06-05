@@ -33,6 +33,7 @@
 
 #define VTK_MYSQL_DEFAULT_PORT 3306
  
+vtkCxxRevisionMacro(vtkMySQLDatabase, "1.37");
 vtkStandardNewMacro(vtkMySQLDatabase);
 
 

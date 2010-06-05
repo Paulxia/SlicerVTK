@@ -28,6 +28,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkEncodedGradientShader, "1.4");
 vtkStandardNewMacro(vtkEncodedGradientShader);
 
 vtkEncodedGradientShader::vtkEncodedGradientShader()

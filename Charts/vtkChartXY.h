@@ -35,7 +35,7 @@ class vtkChartXYPrivate; // Private class to keep my STL vector in...
 class VTK_CHARTS_EXPORT vtkChartXY : public vtkChart
 {
 public:
-  vtkTypeMacro(vtkChartXY, vtkChart);
+  vtkTypeRevisionMacro(vtkChartXY, vtkChart);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

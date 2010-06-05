@@ -35,7 +35,7 @@ class vtkVector2f;
 class VTK_CHARTS_EXPORT vtkPlot : public vtkContextItem
 {
 public:
-  vtkTypeMacro(vtkPlot, vtkContextItem);
+  vtkTypeRevisionMacro(vtkPlot, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

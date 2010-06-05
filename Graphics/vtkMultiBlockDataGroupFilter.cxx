@@ -23,6 +23,7 @@
 #include "vtkOnePieceExtentTranslator.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkMultiBlockDataGroupFilter, "1.4");
 vtkStandardNewMacro(vtkMultiBlockDataGroupFilter);
 //-----------------------------------------------------------------------------
 vtkMultiBlockDataGroupFilter::vtkMultiBlockDataGroupFilter()

@@ -15,6 +15,7 @@
 #include "vtkRIBProperty.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkRIBProperty, "1.17");
 vtkStandardNewMacro(vtkRIBProperty);
 
 vtkRIBProperty::vtkRIBProperty ()

@@ -27,7 +27,7 @@
 class VTK_GRAPHICS_EXPORT vtkHierarchicalDataLevelFilter : public vtkLevelIdScalars 
 {
 public:
-  vtkTypeMacro(vtkHierarchicalDataLevelFilter,vtkLevelIdScalars);
+  vtkTypeRevisionMacro(vtkHierarchicalDataLevelFilter,vtkLevelIdScalars);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

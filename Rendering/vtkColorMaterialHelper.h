@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkColorMaterialHelper : public vtkObject
 {
 public:
   static vtkColorMaterialHelper* New();
-  vtkTypeMacro(vtkColorMaterialHelper, vtkObject);
+  vtkTypeRevisionMacro(vtkColorMaterialHelper, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

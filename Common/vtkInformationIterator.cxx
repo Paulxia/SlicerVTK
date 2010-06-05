@@ -19,6 +19,7 @@
 #include "vtkInformationKey.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkInformationIterator, "1.3");
 vtkStandardNewMacro(vtkInformationIterator);
 
 vtkCxxSetObjectMacro(vtkInformationIterator, Information, vtkInformation);

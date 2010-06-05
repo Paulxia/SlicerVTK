@@ -85,6 +85,7 @@ private:
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkDotProductSimilarity, "1.5");
 vtkStandardNewMacro(vtkDotProductSimilarity);
 
 // ----------------------------------------------------------------------

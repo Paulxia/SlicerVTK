@@ -61,7 +61,7 @@ class vtkPoints;
 class VTK_GRAPHICS_EXPORT vtkBoxClipDataSet : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkBoxClipDataSet,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkBoxClipDataSet,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

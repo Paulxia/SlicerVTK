@@ -20,6 +20,7 @@
 #include "vtkScalarsToColorsPainter.h"
 
 vtkStandardNewMacro(vtkSurfaceLICDefaultPainter);
+vtkCxxRevisionMacro(vtkSurfaceLICDefaultPainter, "1.1");
 vtkCxxSetObjectMacro(vtkSurfaceLICDefaultPainter, SurfaceLICPainter, vtkSurfaceLICPainter);
 //----------------------------------------------------------------------------
 vtkSurfaceLICDefaultPainter::vtkSurfaceLICDefaultPainter()

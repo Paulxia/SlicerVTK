@@ -68,7 +68,7 @@ class VTK_INFOVIS_EXPORT vtkSpanTreeLayoutStrategy : public vtkGraphLayoutStrate
 public:
   static vtkSpanTreeLayoutStrategy *New();
 
-  vtkTypeMacro(vtkSpanTreeLayoutStrategy, vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkSpanTreeLayoutStrategy, vtkGraphLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

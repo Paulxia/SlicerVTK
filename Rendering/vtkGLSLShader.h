@@ -82,7 +82,7 @@ class VTK_RENDERING_EXPORT vtkGLSLShader : public vtkShader
 {
 public:
   static vtkGLSLShader *New();
-  vtkTypeMacro(vtkGLSLShader, vtkShader);
+  vtkTypeRevisionMacro(vtkGLSLShader, vtkShader);
   void PrintSelf(ostream &os, vtkIndent indent);
   
   // Description:

@@ -46,6 +46,7 @@
 #include <vtkstd/exception>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkFixedPointVolumeRayCastMapper, "1.49.4.2");
 vtkStandardNewMacro(vtkFixedPointVolumeRayCastMapper); 
 vtkCxxSetObjectMacro(vtkFixedPointVolumeRayCastMapper, RayCastImage, vtkFixedPointRayCastImage);
 

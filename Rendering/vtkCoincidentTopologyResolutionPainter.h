@@ -34,8 +34,8 @@ class VTK_RENDERING_EXPORT vtkCoincidentTopologyResolutionPainter :
 {
 public:
   static vtkCoincidentTopologyResolutionPainter* New();
-  vtkTypeMacro(vtkCoincidentTopologyResolutionPainter,
-               vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkCoincidentTopologyResolutionPainter, 
+    vtkPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

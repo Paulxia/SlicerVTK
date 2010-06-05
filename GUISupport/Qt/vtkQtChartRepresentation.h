@@ -36,7 +36,7 @@ class QVTK_EXPORT vtkQtChartRepresentation : public vtkQtTableRepresentation
 {
 public:
   static vtkQtChartRepresentation *New();
-  vtkTypeMacro(vtkQtChartRepresentation, vtkQtTableRepresentation);
+  vtkTypeRevisionMacro(vtkQtChartRepresentation, vtkQtTableRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   //BTX

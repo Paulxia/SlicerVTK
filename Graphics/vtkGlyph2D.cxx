@@ -25,6 +25,7 @@
 #include "vtkTransform.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkGlyph2D, "1.27");
 vtkStandardNewMacro(vtkGlyph2D);
 
 int vtkGlyph2D::RequestData(

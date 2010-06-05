@@ -38,7 +38,7 @@ class VTK_GRAPHICS_EXPORT vtkProjectedTexture : public vtkDataSetAlgorithm
 {
 public:
   static vtkProjectedTexture *New();
-  vtkTypeMacro(vtkProjectedTexture,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkProjectedTexture,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

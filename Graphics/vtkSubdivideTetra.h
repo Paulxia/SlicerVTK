@@ -26,7 +26,7 @@ class VTK_GRAPHICS_EXPORT vtkSubdivideTetra : public vtkUnstructuredGridAlgorith
 {
 public:
   static vtkSubdivideTetra *New();
-  vtkTypeMacro(vtkSubdivideTetra,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkSubdivideTetra,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 

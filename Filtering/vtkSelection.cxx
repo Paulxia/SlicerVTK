@@ -38,6 +38,7 @@ struct vtkSelectionInternals
 };
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkSelection, "1.30");
 vtkStandardNewMacro(vtkSelection);
 
 //----------------------------------------------------------------------------

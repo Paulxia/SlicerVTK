@@ -20,6 +20,7 @@
 #include "vtkImageActor.h"
 #include "vtkImageData.h"
 
+vtkCxxRevisionMacro(vtkImageActorPointPlacer, "1.5");
 vtkStandardNewMacro(vtkImageActorPointPlacer);
 
 vtkCxxSetObjectMacro(vtkImageActorPointPlacer, ImageActor, vtkImageActor);

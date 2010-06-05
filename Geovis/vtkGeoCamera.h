@@ -80,7 +80,7 @@ class VTK_GEOVIS_EXPORT vtkGeoCamera : public vtkObject
 {
 public:
   static vtkGeoCamera *New();
-  vtkTypeMacro(vtkGeoCamera, vtkObject);
+  vtkTypeRevisionMacro(vtkGeoCamera, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

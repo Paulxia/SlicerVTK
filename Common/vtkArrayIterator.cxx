@@ -16,6 +16,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkArrayIterator, "1.1");
 //-----------------------------------------------------------------------------
 vtkArrayIterator::vtkArrayIterator()
 {

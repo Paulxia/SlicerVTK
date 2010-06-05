@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 
 #include <math.h>
+vtkCxxRevisionMacro(vtkLineSource, "1.48");
 vtkStandardNewMacro(vtkLineSource);
 
 vtkLineSource::vtkLineSource(int res)

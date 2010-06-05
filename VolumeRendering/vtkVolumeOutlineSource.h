@@ -35,7 +35,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkVolumeOutlineSource : public vtkPolyDataAlgo
 {
 public:
   static vtkVolumeOutlineSource *New();
-  vtkTypeMacro(vtkVolumeOutlineSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkVolumeOutlineSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

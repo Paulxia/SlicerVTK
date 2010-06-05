@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 #include "vtkVoxel.h"
 
+vtkCxxRevisionMacro(vtkRecursiveDividingCubes, "1.43");
 vtkStandardNewMacro(vtkRecursiveDividingCubes);
 
 vtkRecursiveDividingCubes::vtkRecursiveDividingCubes()

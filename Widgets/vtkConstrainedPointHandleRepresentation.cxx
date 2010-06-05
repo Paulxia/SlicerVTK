@@ -41,6 +41,7 @@
 #include "vtkTransform.h"
 #include "vtkCamera.h"
 
+vtkCxxRevisionMacro(vtkConstrainedPointHandleRepresentation, "1.8");
 vtkStandardNewMacro(vtkConstrainedPointHandleRepresentation);
 
 vtkCxxSetObjectMacro(vtkConstrainedPointHandleRepresentation, ObliquePlane, vtkPlane);

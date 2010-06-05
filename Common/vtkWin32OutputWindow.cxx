@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkWindows.h"
 
+vtkCxxRevisionMacro(vtkWin32OutputWindow, "1.25");
 vtkStandardNewMacro(vtkWin32OutputWindow);
 
 HWND vtkWin32OutputWindowOutputWindow = 0;

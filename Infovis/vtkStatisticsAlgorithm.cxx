@@ -29,6 +29,7 @@
 #include "vtkStringArray.h"
 #include "vtkTable.h"
 
+vtkCxxRevisionMacro(vtkStatisticsAlgorithm, "1.45");
 vtkCxxSetObjectMacro(vtkStatisticsAlgorithm,AssessParameters,vtkStringArray);
 vtkCxxSetObjectMacro(vtkStatisticsAlgorithm,AssessNames,vtkStringArray);
 

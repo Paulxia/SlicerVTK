@@ -19,6 +19,7 @@
 #include "vtkProp3D.h"
 
 
+vtkCxxRevisionMacro(vtkPolyDataSourceWidget, "1.1");
 
 vtkPolyDataSourceWidget::vtkPolyDataSourceWidget() : vtk3DWidget()
 {

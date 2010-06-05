@@ -19,6 +19,7 @@
 #include "vtkMultiThreader.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImageMultipleInputFilter, "1.67");
 
 //----------------------------------------------------------------------------
 vtkImageMultipleInputFilter::vtkImageMultipleInputFilter()

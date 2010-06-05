@@ -50,7 +50,7 @@ public:
   
   static vtkRCalculatorFilter *New();
 
-  vtkTypeMacro(vtkRCalculatorFilter, vtkDataObjectAlgorithm );
+  vtkTypeRevisionMacro(vtkRCalculatorFilter, vtkDataObjectAlgorithm );
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

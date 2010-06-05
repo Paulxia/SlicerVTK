@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkReflectionFilter : public vtkDataObjectAlgorithm
 public:
   static vtkReflectionFilter *New();
   
-  vtkTypeMacro(vtkReflectionFilter, vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkReflectionFilter, vtkDataObjectAlgorithm);
   void PrintSelf(ostream &os, vtkIndent indent);
   
 //BTX

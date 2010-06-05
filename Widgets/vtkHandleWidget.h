@@ -73,7 +73,7 @@ public:
 
   // Description:
   // Standard VTK class macros.
-  vtkTypeMacro(vtkHandleWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkHandleWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

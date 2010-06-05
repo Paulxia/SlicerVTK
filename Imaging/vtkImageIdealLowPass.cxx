@@ -21,6 +21,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageIdealLowPass, "1.23");
 vtkStandardNewMacro(vtkImageIdealLowPass);
 
 //----------------------------------------------------------------------------

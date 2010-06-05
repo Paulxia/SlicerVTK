@@ -60,7 +60,7 @@ class vtkFieldData;
 class VTK_GRAPHICS_EXPORT vtkSplitField : public vtkDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkSplitField,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkSplitField,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

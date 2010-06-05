@@ -47,7 +47,7 @@ public:
   // Construct object so that light follows camera motion.
   static vtkCarbonRenderWindowInteractor *New();
 
-  vtkTypeMacro(vtkCarbonRenderWindowInteractor,vtkRenderWindowInteractor);
+  vtkTypeRevisionMacro(vtkCarbonRenderWindowInteractor,vtkRenderWindowInteractor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

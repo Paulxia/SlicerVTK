@@ -17,6 +17,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkQuadric, "1.6");
 vtkStandardNewMacro(vtkQuadric);
 
 // Construct quadric with all coefficients = 1.

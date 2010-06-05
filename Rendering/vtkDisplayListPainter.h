@@ -26,7 +26,7 @@ class VTK_RENDERING_EXPORT vtkDisplayListPainter : public vtkPainter
 {
 public:
   static vtkDisplayListPainter* New();
-  vtkTypeMacro(vtkDisplayListPainter, vtkPainter);
+  vtkTypeRevisionMacro(vtkDisplayListPainter, vtkPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

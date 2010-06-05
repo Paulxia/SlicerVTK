@@ -24,6 +24,7 @@
 
 #include <vtkstd/algorithm>
 
+vtkCxxRevisionMacro(vtkPolyLine, "1.9");
 vtkStandardNewMacro(vtkPolyLine);
 
 //----------------------------------------------------------------------------

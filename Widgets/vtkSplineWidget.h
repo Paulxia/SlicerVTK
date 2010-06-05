@@ -109,7 +109,7 @@ public:
   // Instantiate the object.
   static vtkSplineWidget *New();
 
-  vtkTypeMacro(vtkSplineWidget,vtk3DWidget);
+  vtkTypeRevisionMacro(vtkSplineWidget,vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

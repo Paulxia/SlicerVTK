@@ -27,6 +27,7 @@ using vtksys_ios::istringstream;
 using vtkstd::string;
 
 vtkStandardNewMacro(vtkQuadratureSchemeDefinition);
+vtkCxxRevisionMacro(vtkQuadratureSchemeDefinition, "1.7");
 
 //-----------------------------------------------------------------------------
 vtkInformationKeyMacro(

@@ -272,7 +272,7 @@ struct vtkEdgeType : vtkEdgeBase
 class VTK_FILTERING_EXPORT vtkGraph : public vtkDataObject
 {
 public:
-  vtkTypeMacro(vtkGraph, vtkDataObject);
+  vtkTypeRevisionMacro(vtkGraph, vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

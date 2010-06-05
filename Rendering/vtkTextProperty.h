@@ -29,7 +29,7 @@
 class VTK_RENDERING_EXPORT vtkTextProperty : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkTextProperty,vtkObject);
+  vtkTypeRevisionMacro(vtkTextProperty,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

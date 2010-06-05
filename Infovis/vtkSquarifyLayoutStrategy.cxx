@@ -26,6 +26,7 @@
 #include "vtkPoints.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkSquarifyLayoutStrategy, "1.9");
 vtkStandardNewMacro(vtkSquarifyLayoutStrategy);
 
 vtkSquarifyLayoutStrategy::vtkSquarifyLayoutStrategy()

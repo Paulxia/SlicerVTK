@@ -36,7 +36,7 @@ public:
   // Create handle to any type of cell; by default a vtkEmptyCell.
   static vtkGenericCell *New();
 
-  vtkTypeMacro(vtkGenericCell,vtkCell);
+  vtkTypeRevisionMacro(vtkGenericCell,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

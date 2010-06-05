@@ -23,6 +23,7 @@
 #include "vtkPropCollection.h"
 #include "vtkViewport.h"
 
+vtkCxxRevisionMacro(vtkPropAssembly, "1.7");
 vtkStandardNewMacro(vtkPropAssembly);
 
 // Construct object with no children.

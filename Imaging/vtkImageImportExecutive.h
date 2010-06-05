@@ -26,7 +26,7 @@ class VTK_IMAGING_EXPORT vtkImageImportExecutive :
 {
 public:
   static vtkImageImportExecutive* New();
-  vtkTypeMacro(vtkImageImportExecutive,
+  vtkTypeRevisionMacro(vtkImageImportExecutive,
                        vtkStreamingDemandDrivenPipeline);
 
   // Description:

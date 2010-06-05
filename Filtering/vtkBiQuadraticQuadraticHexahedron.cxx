@@ -30,6 +30,7 @@
 #include "vtkPoints.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkBiQuadraticQuadraticHexahedron, "1.13");
 vtkStandardNewMacro(vtkBiQuadraticQuadraticHexahedron);
 
 //----------------------------------------------------------------------------

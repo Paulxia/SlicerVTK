@@ -17,6 +17,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkWindowLevelLookupTable, "1.26");
 vtkStandardNewMacro(vtkWindowLevelLookupTable);
 
 //----------------------------------------------------------------------------

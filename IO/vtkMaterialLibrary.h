@@ -27,7 +27,7 @@ class VTK_IO_EXPORT vtkMaterialLibrary : public vtkObject
 {
 public:
   static vtkMaterialLibrary* New();
-  vtkTypeMacro(vtkMaterialLibrary, vtkObject);
+  vtkTypeRevisionMacro(vtkMaterialLibrary, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

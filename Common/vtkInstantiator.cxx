@@ -15,6 +15,7 @@
 #include "vtkInstantiator.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkInstantiator, "1.6");
 vtkStandardNewMacro(vtkInstantiator);
 
 // Node in hash table.

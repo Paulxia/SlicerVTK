@@ -22,6 +22,7 @@
 #include "vtkMath.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkGenericSubdivisionErrorMetric,"1.5");
 
 //-----------------------------------------------------------------------------
 vtkGenericSubdivisionErrorMetric::vtkGenericSubdivisionErrorMetric()

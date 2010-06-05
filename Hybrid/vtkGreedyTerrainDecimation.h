@@ -84,7 +84,7 @@ class vtkGreedyTerrainDecimationPointInfoType;
 class VTK_HYBRID_EXPORT vtkGreedyTerrainDecimation : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkGreedyTerrainDecimation,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGreedyTerrainDecimation,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

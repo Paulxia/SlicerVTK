@@ -62,6 +62,7 @@ const char *BufferObjectUsageAsString[9]=
 #endif
 
 vtkStandardNewMacro(vtkPixelBufferObject);
+vtkCxxRevisionMacro(vtkPixelBufferObject, "1.10");
 //----------------------------------------------------------------------------
 vtkPixelBufferObject::vtkPixelBufferObject()
 {

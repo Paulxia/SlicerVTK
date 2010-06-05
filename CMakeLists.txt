@@ -248,6 +248,9 @@ OPTION(VTK_LEGACY_SILENT "Silence all legacy code messages." OFF)
 MARK_AS_ADVANCED(VTK_LEGACY_REMOVE VTK_LEGACY_SILENT)
 
 #-----------------------------------------------------------------------------
+OPTION(VTK_USE_OPENFOAM "Build openfoam reader" ON)
+MARK_AS_ADVANCED(VTK_USE_OPENFOAM)
+
 OPTION(VTK_USE_METAIO "Build metaio" ON)
 MARK_AS_ADVANCED(VTK_USE_METAIO)
 
@@ -306,8 +309,8 @@ IF(VTK_USE_QT)
   IF(NOT QT4_FOUND)
     MESSAGE(SEND_ERROR "Qt ${QT_MIN_VERSION} or greater not found.  Please check the QT_QMAKE_EXECUTABLE variable.")
   ELSE(NOT QT4 FOUND)
-    # enforce Carbon or Cocoa in VTK for Qt/Mac if we are not building with X11 explicitly turned on
-    IF(Q_WS_MAC AND NOT VTK_USE_X)
+    # enforce Carbon or Cocoa in VTK for Qt/Mac
+    IF(Q_WS_MAC)
       IF(QT_MAC_USE_COCOA)
         SET(VTK_USE_CARBON OFF CACHE BOOL "Build VTK with Carbon" FORCE)
         SET(VTK_USE_COCOA ON CACHE BOOL "Build VTK with Cocoa" FORCE)
@@ -315,7 +318,7 @@ IF(VTK_USE_QT)
         SET(VTK_USE_CARBON ON CACHE BOOL "Build VTK with Carbon" FORCE)
         SET(VTK_USE_COCOA OFF CACHE BOOL "Build VTK with Cocoa" FORCE)
       ENDIF(QT_MAC_USE_COCOA)
-    ENDIF(Q_WS_MAC AND NOT VTK_USE_X)
+    ENDIF(Q_WS_MAC)
   ENDIF(NOT QT4_FOUND)
 ENDIF(VTK_USE_QT)
 

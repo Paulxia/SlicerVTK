@@ -61,7 +61,7 @@ class VTK_PARALLEL_EXPORT vtkTreeCompositer : public vtkCompositer
 {
 public:
   static vtkTreeCompositer *New();
-  vtkTypeMacro(vtkTreeCompositer,vtkCompositer);
+  vtkTypeRevisionMacro(vtkTreeCompositer,vtkCompositer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual void CompositeBuffer(vtkDataArray *pBuf, vtkFloatArray *zBuf,

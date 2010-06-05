@@ -36,7 +36,7 @@ extern "C"
 class VTK_IO_EXPORT vtkXMLParser : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkXMLParser,vtkObject);
+  vtkTypeRevisionMacro(vtkXMLParser,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkXMLParser* New();

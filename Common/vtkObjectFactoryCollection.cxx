@@ -16,6 +16,7 @@
 
 #include "vtkDebugLeaks.h"
 
+vtkCxxRevisionMacro(vtkObjectFactoryCollection, "1.5");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

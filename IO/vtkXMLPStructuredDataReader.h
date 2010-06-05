@@ -34,7 +34,7 @@ class vtkXMLStructuredDataReader;
 class VTK_IO_EXPORT vtkXMLPStructuredDataReader : public vtkXMLPDataReader
 {
 public:
-  vtkTypeMacro(vtkXMLPStructuredDataReader,vtkXMLPDataReader);
+  vtkTypeRevisionMacro(vtkXMLPStructuredDataReader,vtkXMLPDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

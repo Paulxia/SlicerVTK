@@ -47,7 +47,7 @@ class vtkCell;
 
 class VTK_FILTERING_EXPORT vtkPlanesIntersection : public vtkPlanes
 {
-  vtkTypeMacro(vtkPlanesIntersection, vtkPlanes);
+  vtkTypeRevisionMacro(vtkPlanesIntersection, vtkPlanes);
 
 public:
   void PrintSelf(ostream& os, vtkIndent indent);

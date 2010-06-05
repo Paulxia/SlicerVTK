@@ -40,7 +40,7 @@ class VTK_GRAPHICS_EXPORT vtkTransformFilter : public vtkPointSetAlgorithm
 {
 public:
   static vtkTransformFilter *New();
-  vtkTypeMacro(vtkTransformFilter,vtkPointSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTransformFilter,vtkPointSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

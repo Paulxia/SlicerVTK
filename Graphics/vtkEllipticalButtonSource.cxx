@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkEllipticalButtonSource, "1.5");
 vtkStandardNewMacro(vtkEllipticalButtonSource);
 
 //----------------------------------------------------------------------------

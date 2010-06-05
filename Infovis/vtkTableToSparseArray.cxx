@@ -43,6 +43,7 @@ public:
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkTableToSparseArray, "1.6");
 vtkStandardNewMacro(vtkTableToSparseArray);
 
 // ----------------------------------------------------------------------

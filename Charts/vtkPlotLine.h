@@ -33,7 +33,7 @@ class vtkImageData;
 class VTK_CHARTS_EXPORT vtkPlotLine : public vtkPlot
 {
 public:
-  vtkTypeMacro(vtkPlotLine, vtkPlot);
+  vtkTypeRevisionMacro(vtkPlotLine, vtkPlot);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:
@@ -122,8 +122,7 @@ protected:
 
   // Description:
   // Sorted points, used when searching for the nearest point.
-  class VectorPIMPL;
-  VectorPIMPL* Sorted;
+  vtkPoints2D* Sorted;
 
   // Description:
   // An array containing the indices of all the "bad points", meaning any x, y

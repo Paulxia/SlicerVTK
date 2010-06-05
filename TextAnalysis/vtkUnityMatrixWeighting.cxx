@@ -32,6 +32,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkUnityMatrixWeighting
 
+vtkCxxRevisionMacro(vtkUnityMatrixWeighting, "1.2");
 vtkStandardNewMacro(vtkUnityMatrixWeighting);
 
 vtkUnityMatrixWeighting::vtkUnityMatrixWeighting() :

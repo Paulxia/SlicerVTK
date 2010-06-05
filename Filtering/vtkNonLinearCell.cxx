@@ -15,6 +15,7 @@
 #include "vtkNonLinearCell.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkNonLinearCell, "1.2");
 
 //----------------------------------------------------------------------------
 vtkNonLinearCell::vtkNonLinearCell()

@@ -26,7 +26,7 @@ class VTK_IMAGING_EXPORT vtkImageLuminance : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageLuminance *New();
-  vtkTypeMacro(vtkImageLuminance,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageLuminance,vtkThreadedImageAlgorithm);
 
 protected:
   vtkImageLuminance();

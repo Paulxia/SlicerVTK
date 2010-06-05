@@ -40,7 +40,7 @@ class vtkMultiThreader;
 class VTK_VOLUMERENDERING_EXPORT vtkEncodedGradientEstimator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkEncodedGradientEstimator,vtkObject);
+  vtkTypeRevisionMacro(vtkEncodedGradientEstimator,vtkObject);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

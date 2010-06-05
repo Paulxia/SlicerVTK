@@ -15,6 +15,7 @@
 #include "vtkDataCompressor.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkDataCompressor, "1.2");
 
 //----------------------------------------------------------------------------
 vtkDataCompressor::vtkDataCompressor()

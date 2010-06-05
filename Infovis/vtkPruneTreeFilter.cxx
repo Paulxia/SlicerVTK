@@ -34,6 +34,7 @@
 #include <vtksys/stl/utility>
 #include <vtksys/stl/vector>
 
+vtkCxxRevisionMacro(vtkPruneTreeFilter, "1.7");
 vtkStandardNewMacro(vtkPruneTreeFilter);
 
 

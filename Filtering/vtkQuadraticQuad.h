@@ -41,7 +41,7 @@ class VTK_FILTERING_EXPORT vtkQuadraticQuad : public vtkNonLinearCell
 {
 public:
   static vtkQuadraticQuad *New();
-  vtkTypeMacro(vtkQuadraticQuad,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkQuadraticQuad,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

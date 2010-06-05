@@ -50,7 +50,7 @@ class VTK_COMMON_EXPORT vtkStringArray : public vtkAbstractArray
 {
 public:
   static vtkStringArray* New();
-  vtkTypeMacro(vtkStringArray,vtkAbstractArray);
+  vtkTypeRevisionMacro(vtkStringArray,vtkAbstractArray);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //

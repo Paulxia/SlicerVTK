@@ -43,7 +43,7 @@ class VTK_FILTERING_EXPORT vtkPointSetAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkPointSetAlgorithm *New();
-  vtkTypeMacro(vtkPointSetAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkPointSetAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -31,6 +31,7 @@
 #include "vtkTimerLog.h"
 
 vtkStandardNewMacro(vtkTStripsPainter);
+vtkCxxRevisionMacro(vtkTStripsPainter, "1.5");
 //-----------------------------------------------------------------------------
 vtkTStripsPainter::vtkTStripsPainter()
 {

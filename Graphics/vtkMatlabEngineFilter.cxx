@@ -46,6 +46,7 @@
 
 #define BUFFER_SIZE 32768 
 
+vtkCxxRevisionMacro(vtkMatlabEngineFilter, "1.2");
 vtkStandardNewMacro(vtkMatlabEngineFilter);
 
 class ArrNames

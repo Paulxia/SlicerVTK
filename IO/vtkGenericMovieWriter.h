@@ -32,7 +32,7 @@ class vtkImageData;
 class VTK_IO_EXPORT vtkGenericMovieWriter : public vtkProcessObject
 {
 public:
-  vtkTypeMacro(vtkGenericMovieWriter,vtkProcessObject);
+  vtkTypeRevisionMacro(vtkGenericMovieWriter,vtkProcessObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

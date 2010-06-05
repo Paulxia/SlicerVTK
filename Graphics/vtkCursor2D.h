@@ -33,7 +33,7 @@
 class VTK_GRAPHICS_EXPORT vtkCursor2D : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkCursor2D,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCursor2D,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

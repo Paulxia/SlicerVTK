@@ -18,6 +18,7 @@
 #include "vtkRenderer.h"
 #include "vtkCoordinate.h"
 
+vtkCxxRevisionMacro(vtkPointPlacer, "$Revision 1.3");
 vtkStandardNewMacro(vtkPointPlacer);
 
 //----------------------------------------------------------------------

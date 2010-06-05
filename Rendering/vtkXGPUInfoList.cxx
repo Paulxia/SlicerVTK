@@ -26,6 +26,7 @@
 #include "NVCtrlLib.h" // needs NVCtrl.h (NV_CTRL_VIDEO_RAM, XNVCTRLQueryAttribute() )
 #endif
 
+vtkCxxRevisionMacro(vtkXGPUInfoList, "1.3");
 vtkStandardNewMacro(vtkXGPUInfoList);
 
 // ----------------------------------------------------------------------------

@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkLinesPainter : public vtkPrimitivePainter
 {
 public:
   static vtkLinesPainter* New();
-  vtkTypeMacro(vtkLinesPainter, vtkPrimitivePainter);
+  vtkTypeRevisionMacro(vtkLinesPainter, vtkPrimitivePainter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
 protected:

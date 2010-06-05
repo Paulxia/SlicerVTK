@@ -18,6 +18,7 @@
 #include "vtkInformation.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkDataObjectSource, "1.18");
 
 vtkDataObjectSource::vtkDataObjectSource()
 {

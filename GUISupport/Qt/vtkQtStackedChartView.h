@@ -34,7 +34,7 @@ Q_OBJECT
 
 public:
   static vtkQtStackedChartView *New();
-  vtkTypeMacro(vtkQtStackedChartView, vtkQtChartView);
+  vtkTypeRevisionMacro(vtkQtStackedChartView, vtkQtChartView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

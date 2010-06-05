@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkType@VTK_TYPE_NAME@Array, "1.1");
 vtkStandardNewMacro(vtkType@VTK_TYPE_NAME@Array);
 
 //----------------------------------------------------------------------------

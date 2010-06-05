@@ -17,6 +17,7 @@
 #include "vtkPoints.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro( vtkNonMergingPointLocator, "1.1" );
 vtkStandardNewMacro( vtkNonMergingPointLocator );
 
 //----------------------------------------------------------------------------

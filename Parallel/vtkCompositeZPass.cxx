@@ -51,6 +51,7 @@
 #include <sys/types.h> // Linux specific gettid()
 #endif
 
+vtkCxxRevisionMacro(vtkCompositeZPass, "1.7");
 vtkStandardNewMacro(vtkCompositeZPass);
 vtkCxxSetObjectMacro(vtkCompositeZPass,Controller,vtkMultiProcessController);
 

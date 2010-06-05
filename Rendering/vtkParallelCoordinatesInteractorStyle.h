@@ -51,7 +51,7 @@ class VTK_RENDERING_EXPORT vtkParallelCoordinatesInteractorStyle : public vtkInt
 {
 public:
   static vtkParallelCoordinatesInteractorStyle *New();
-  vtkTypeMacro(vtkParallelCoordinatesInteractorStyle, vtkInteractorStyleTrackballCamera);
+  vtkTypeRevisionMacro(vtkParallelCoordinatesInteractorStyle, vtkInteractorStyleTrackballCamera);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

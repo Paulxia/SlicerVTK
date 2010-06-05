@@ -75,7 +75,7 @@ class VTK_HYBRID_EXPORT vtkProjectedTerrainPath : public vtkPolyDataAlgorithm
 public:
   // Description:
   // Standard methids for printing and determining type information.
-  vtkTypeMacro(vtkProjectedTerrainPath,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkProjectedTerrainPath,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

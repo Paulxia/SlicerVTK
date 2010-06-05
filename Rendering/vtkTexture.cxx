@@ -23,6 +23,7 @@
 #include "vtkRenderWindow.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkTexture, "1.62");
 vtkCxxSetObjectMacro(vtkTexture, LookupTable, vtkScalarsToColors);
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

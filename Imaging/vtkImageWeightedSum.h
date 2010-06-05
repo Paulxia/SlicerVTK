@@ -33,7 +33,7 @@ class VTK_IMAGING_EXPORT vtkImageWeightedSum : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageWeightedSum *New();
-  vtkTypeMacro(vtkImageWeightedSum,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageWeightedSum,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkProp.h"
 
+vtkCxxRevisionMacro(vtkAssemblyPath, "1.9");
 vtkStandardNewMacro(vtkAssemblyPath);
 
 vtkAssemblyPath::vtkAssemblyPath()

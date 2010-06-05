@@ -29,6 +29,7 @@
 #include "vtkImageData.h"
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkBalloonWidget, "1.5");
 vtkStandardNewMacro(vtkBalloonWidget);
 
 //-- Define the PIMPLd array of vtkProp and vtkString --

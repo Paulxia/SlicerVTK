@@ -33,7 +33,7 @@
 class VTK_IMAGING_EXPORT vtkTriangularTexture : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkTriangularTexture,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkTriangularTexture,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -33,7 +33,7 @@ class VTK_INFOVIS_EXPORT vtkGeoEdgeStrategy : public vtkEdgeLayoutStrategy
 {
 public:
   static vtkGeoEdgeStrategy *New();
-  vtkTypeMacro(vtkGeoEdgeStrategy,vtkEdgeLayoutStrategy);
+  vtkTypeRevisionMacro(vtkGeoEdgeStrategy,vtkEdgeLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

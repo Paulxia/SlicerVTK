@@ -62,7 +62,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkAffineRepresentation2D,vtkAffineRepresentation);
+  vtkTypeRevisionMacro(vtkAffineRepresentation2D,vtkAffineRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

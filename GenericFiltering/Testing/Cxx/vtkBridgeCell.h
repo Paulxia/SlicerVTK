@@ -33,7 +33,7 @@ class VTK_BRIDGE_EXPORT vtkBridgeCell : public vtkGenericAdaptorCell
 {
 public:
   static vtkBridgeCell *New();
-  vtkTypeMacro(vtkBridgeCell,vtkGenericAdaptorCell);
+  vtkTypeRevisionMacro(vtkBridgeCell,vtkGenericAdaptorCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

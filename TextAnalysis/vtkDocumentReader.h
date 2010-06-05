@@ -55,7 +55,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkDocumentReader :
 {
 public:
   static vtkDocumentReader* New();
-  vtkTypeMacro(vtkDocumentReader, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkDocumentReader, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

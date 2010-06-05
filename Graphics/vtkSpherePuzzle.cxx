@@ -29,6 +29,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkSpherePuzzle, "1.20");
 vtkStandardNewMacro(vtkSpherePuzzle);
 
 //----------------------------------------------------------------------------

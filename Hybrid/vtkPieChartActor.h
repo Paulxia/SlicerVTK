@@ -48,7 +48,7 @@ class VTK_HYBRID_EXPORT vtkPieChartActor : public vtkActor2D
 public:
   // Description:
   // Standard methods for type information and printing.
-  vtkTypeMacro(vtkPieChartActor,vtkActor2D);
+  vtkTypeRevisionMacro(vtkPieChartActor,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

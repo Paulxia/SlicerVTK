@@ -45,7 +45,7 @@ class VTK_INFOVIS_EXPORT vtkBoostBiconnectedComponents : public vtkUndirectedGra
 {
 public:
   static vtkBoostBiconnectedComponents *New();
-  vtkTypeMacro(vtkBoostBiconnectedComponents, vtkUndirectedGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostBiconnectedComponents, vtkUndirectedGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

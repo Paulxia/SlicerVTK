@@ -42,7 +42,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleTrackballActor : public vtkInteract
 {
 public:
   static vtkInteractorStyleTrackballActor *New();
-  vtkTypeMacro(vtkInteractorStyleTrackballActor,vtkInteractorStyle);
+  vtkTypeRevisionMacro(vtkInteractorStyleTrackballActor,vtkInteractorStyle);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

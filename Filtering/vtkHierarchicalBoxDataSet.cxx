@@ -30,6 +30,7 @@
 #include <vtkstd/vector>
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkHierarchicalBoxDataSet, "1.27");
 vtkStandardNewMacro(vtkHierarchicalBoxDataSet);
 
 vtkInformationKeyMacro(vtkHierarchicalBoxDataSet,BOX,IntegerVector);

@@ -33,7 +33,7 @@ class VTK_HYBRID_EXPORT vtkTransformToGrid : public vtkAlgorithm
 {
 public:
   static vtkTransformToGrid *New();
-  vtkTypeMacro(vtkTransformToGrid,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkTransformToGrid,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

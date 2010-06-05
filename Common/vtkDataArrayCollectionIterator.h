@@ -29,7 +29,7 @@ class vtkDataArrayCollection;
 class VTK_COMMON_EXPORT vtkDataArrayCollectionIterator : public vtkCollectionIterator
 {
 public:
-  vtkTypeMacro(vtkDataArrayCollectionIterator,vtkCollectionIterator);
+  vtkTypeRevisionMacro(vtkDataArrayCollectionIterator,vtkCollectionIterator);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkDataArrayCollectionIterator* New();  
   

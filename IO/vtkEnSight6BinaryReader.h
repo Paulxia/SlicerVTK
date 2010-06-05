@@ -45,7 +45,7 @@ class VTK_IO_EXPORT vtkEnSight6BinaryReader : public vtkEnSightReader
 {
 public:
   static vtkEnSight6BinaryReader *New();
-  vtkTypeMacro(vtkEnSight6BinaryReader, vtkEnSightReader);
+  vtkTypeRevisionMacro(vtkEnSight6BinaryReader, vtkEnSightReader);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
   
 protected:

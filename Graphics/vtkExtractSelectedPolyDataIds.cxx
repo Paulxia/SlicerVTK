@@ -26,6 +26,7 @@
 #include "vtkSelection.h"
 #include "vtkSelectionNode.h"
 
+vtkCxxRevisionMacro(vtkExtractSelectedPolyDataIds, "1.7");
 vtkStandardNewMacro(vtkExtractSelectedPolyDataIds);
 
 //----------------------------------------------------------------------------

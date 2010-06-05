@@ -273,6 +273,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkCompositeDataIterator);
+vtkCxxRevisionMacro(vtkCompositeDataIterator, "1.9");
 //----------------------------------------------------------------------------
 vtkCompositeDataIterator::vtkCompositeDataIterator()
 {

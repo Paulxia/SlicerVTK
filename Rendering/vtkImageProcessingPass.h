@@ -37,7 +37,7 @@ class vtkTextureObject;
 class VTK_RENDERING_EXPORT vtkImageProcessingPass : public vtkRenderPass
 {
 public:
-  vtkTypeMacro(vtkImageProcessingPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkImageProcessingPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

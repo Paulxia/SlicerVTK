@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLImageActor : public vtkImageActor
 {
 public:
   static vtkOpenGLImageActor *New();
-  vtkTypeMacro(vtkOpenGLImageActor,vtkImageActor);
+  vtkTypeRevisionMacro(vtkOpenGLImageActor,vtkImageActor);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

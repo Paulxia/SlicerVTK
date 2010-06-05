@@ -41,6 +41,7 @@ public:
   stack<vtkTreeDFSIteratorPosition> Stack;
 };
 
+vtkCxxRevisionMacro(vtkTreeDFSIterator, "1.8");
 vtkStandardNewMacro(vtkTreeDFSIterator);
 
 vtkTreeDFSIterator::vtkTreeDFSIterator()

@@ -66,7 +66,7 @@ class VTK_GRAPHICS_EXPORT vtkCleanPolyData : public vtkPolyDataAlgorithm
 public:
   static vtkCleanPolyData *New();
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkCleanPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCleanPolyData,vtkPolyDataAlgorithm);
 
   // Description:
   // By default ToleranceIsAbsolute is false and Tolerance is

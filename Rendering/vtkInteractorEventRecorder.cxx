@@ -21,6 +21,7 @@
 #include <locale>
 #include <vtksys/SystemTools.hxx>
 
+vtkCxxRevisionMacro(vtkInteractorEventRecorder, "1.18");
 vtkStandardNewMacro(vtkInteractorEventRecorder);
 
 float vtkInteractorEventRecorder::StreamVersion = 1.0f;

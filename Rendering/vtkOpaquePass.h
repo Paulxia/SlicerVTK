@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkOpaquePass : public vtkDefaultPass
 {
 public:
   static vtkOpaquePass *New();
-  vtkTypeMacro(vtkOpaquePass,vtkDefaultPass);
+  vtkTypeRevisionMacro(vtkOpaquePass,vtkDefaultPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

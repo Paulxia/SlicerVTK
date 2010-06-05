@@ -42,7 +42,7 @@ class VTK_INFOVIS_EXPORT vtkBoostBreadthFirstSearch : public vtkGraphAlgorithm
 {
 public:
   static vtkBoostBreadthFirstSearch *New();
-  vtkTypeMacro(vtkBoostBreadthFirstSearch, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostBreadthFirstSearch, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

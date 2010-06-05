@@ -37,7 +37,7 @@ class VTK_RENDERING_EXPORT vtkMesaPainterDeviceAdapter :
   public vtkPainterDeviceAdapter
 {
 public:
-  vtkTypeMacro(vtkMesaPainterDeviceAdapter, vtkPainterDeviceAdapter);
+  vtkTypeRevisionMacro(vtkMesaPainterDeviceAdapter, vtkPainterDeviceAdapter);
   static vtkMesaPainterDeviceAdapter *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

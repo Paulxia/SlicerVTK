@@ -61,7 +61,7 @@ class vtkTransformList;
 class VTK_RENDERING_EXPORT vtkTransformInterpolator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkTransformInterpolator, vtkObject);
+  vtkTypeRevisionMacro(vtkTransformInterpolator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

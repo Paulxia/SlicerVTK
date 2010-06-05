@@ -25,7 +25,7 @@ class VTK_FILTERING_EXPORT vtkHierarchicalBoxDataIterator : public vtkCompositeD
 {
 public:
   static vtkHierarchicalBoxDataIterator* New();
-  vtkTypeMacro(vtkHierarchicalBoxDataIterator, vtkCompositeDataIterator);
+  vtkTypeRevisionMacro(vtkHierarchicalBoxDataIterator, vtkCompositeDataIterator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

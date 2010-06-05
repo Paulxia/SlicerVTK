@@ -43,7 +43,7 @@ class VTK_COMMON_EXPORT vtkQuadratureSchemeDefinition : public vtkObject
 {
 public:
   // vtk stuff
-  vtkTypeMacro(vtkQuadratureSchemeDefinition,vtkObject);
+  vtkTypeRevisionMacro(vtkQuadratureSchemeDefinition,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkInformationQuadratureSchemeDefinitionVectorKey* DICTIONARY();
   static vtkInformationStringKey* QUADRATURE_OFFSET_ARRAY_NAME();

@@ -41,6 +41,7 @@
 #include <math.h>
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLPolyDataMapper, "1.110");
 vtkStandardNewMacro(vtkOpenGLPolyDataMapper);
 #endif
 

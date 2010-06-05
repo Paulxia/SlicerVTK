@@ -35,6 +35,7 @@
 
 // ----------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkAdjacencyMatrixToEdgeTable, "1.6");
 vtkStandardNewMacro(vtkAdjacencyMatrixToEdgeTable);
 
 // ----------------------------------------------------------------------

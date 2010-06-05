@@ -44,6 +44,7 @@
 #include "vtkHyperOctreeClipCutPointsGrabber.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkHyperOctreeCutter, "1.8");
 vtkStandardNewMacro(vtkHyperOctreeCutter);
 vtkCxxSetObjectMacro(vtkHyperOctreeCutter,CutFunction,vtkImplicitFunction);
 

@@ -37,6 +37,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkMarchingCubes, "1.7");
 vtkStandardNewMacro(vtkMarchingCubes);
 
 // Description:

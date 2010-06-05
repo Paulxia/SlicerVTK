@@ -16,6 +16,7 @@
 #include "vtkMergePoints.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkQuantizePolyDataPoints, "1.9");
 vtkStandardNewMacro(vtkQuantizePolyDataPoints);
 
 //--------------------------------------------------------------------------

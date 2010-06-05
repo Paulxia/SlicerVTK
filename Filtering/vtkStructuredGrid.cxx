@@ -29,6 +29,7 @@
 #include "vtkQuad.h"
 #include "vtkVertex.h"
 
+vtkCxxRevisionMacro(vtkStructuredGrid, "1.11");
 vtkStandardNewMacro(vtkStructuredGrid);
 
 vtkCxxSetObjectMacro(vtkStructuredGrid,

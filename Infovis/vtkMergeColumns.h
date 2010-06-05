@@ -45,7 +45,7 @@ class VTK_INFOVIS_EXPORT vtkMergeColumns : public vtkTableAlgorithm
 {
 public:
   static vtkMergeColumns* New();
-  vtkTypeMacro(vtkMergeColumns,vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkMergeColumns,vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

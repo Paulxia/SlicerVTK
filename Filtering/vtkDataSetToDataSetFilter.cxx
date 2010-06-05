@@ -23,6 +23,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkRectilinearGrid.h"
 
+vtkCxxRevisionMacro(vtkDataSetToDataSetFilter, "1.71");
 
 // Construct object.
 vtkDataSetToDataSetFilter::vtkDataSetToDataSetFilter()

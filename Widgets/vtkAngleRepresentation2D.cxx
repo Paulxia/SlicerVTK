@@ -22,6 +22,7 @@
 #include "vtkMath.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkAngleRepresentation2D, "1.14");
 vtkStandardNewMacro(vtkAngleRepresentation2D);
 
 

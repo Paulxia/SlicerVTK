@@ -38,4 +38,5 @@
 #include "vtkOpenGLVolumeTextureMapper2D.cxx"
 #undef vtkOpenGLVolumeTextureMapper2D
 
+vtkCxxRevisionMacro(vtkMesaVolumeTextureMapper2D, "1.1");
 vtkStandardNewMacro(vtkMesaVolumeTextureMapper2D);

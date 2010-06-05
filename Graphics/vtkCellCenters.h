@@ -37,7 +37,7 @@
 class VTK_GRAPHICS_EXPORT vtkCellCenters : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkCellCenters,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCellCenters,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

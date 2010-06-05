@@ -43,7 +43,7 @@ class VTK_INFOVIS_EXPORT vtkExtractSelectedGraph : public vtkGraphAlgorithm
 {
 public:
   static vtkExtractSelectedGraph* New();
-  vtkTypeMacro(vtkExtractSelectedGraph,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractSelectedGraph,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

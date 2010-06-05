@@ -40,7 +40,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkEntropyMatrixWeighting :
 {
 public:
   static vtkEntropyMatrixWeighting* New();
-  vtkTypeMacro(vtkEntropyMatrixWeighting, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkEntropyMatrixWeighting, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

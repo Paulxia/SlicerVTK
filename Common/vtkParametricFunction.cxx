@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkParametricFunction.h"
 
+vtkCxxRevisionMacro(vtkParametricFunction, "1.2");
 
 //----------------------------------------------------------------------------
 vtkParametricFunction::vtkParametricFunction() :

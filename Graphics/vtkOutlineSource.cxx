@@ -21,6 +21,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkOutlineSource, "1.36");
 vtkStandardNewMacro(vtkOutlineSource);
 
 //----------------------------------------------------------------------------

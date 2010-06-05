@@ -22,6 +22,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkHierarchicalBoxDataSetAlgorithm);
+vtkCxxRevisionMacro(vtkHierarchicalBoxDataSetAlgorithm, "1.1");
 //----------------------------------------------------------------------------
 vtkHierarchicalBoxDataSetAlgorithm::vtkHierarchicalBoxDataSetAlgorithm()
 {

@@ -35,7 +35,7 @@ class VTK_PARALLEL_EXPORT vtkPieceScalars : public vtkDataSetAlgorithm
 public:
   static vtkPieceScalars *New();
 
-  vtkTypeMacro(vtkPieceScalars,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkPieceScalars,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

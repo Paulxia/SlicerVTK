@@ -31,7 +31,7 @@ class VTK_BRIDGE_EXPORT vtkBridgePointIteratorOnDataSet : public vtkGenericPoint
 {
 public:
   static vtkBridgePointIteratorOnDataSet *New();
-  vtkTypeMacro(vtkBridgePointIteratorOnDataSet,vtkGenericPointIterator);
+  vtkTypeRevisionMacro(vtkBridgePointIteratorOnDataSet,vtkGenericPointIterator);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

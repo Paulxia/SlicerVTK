@@ -54,7 +54,7 @@ class vtkDoubleArray;
 class VTK_GRAPHICS_EXPORT vtkBandedPolyDataContourFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkBandedPolyDataContourFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkBandedPolyDataContourFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -33,7 +33,7 @@ class VTK_IMAGING_EXPORT vtkImageLaplacian : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageLaplacian *New();
-  vtkTypeMacro(vtkImageLaplacian,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageLaplacian,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

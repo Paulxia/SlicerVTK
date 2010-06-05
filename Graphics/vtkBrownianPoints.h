@@ -30,7 +30,7 @@ public:
   // Create instance with minimum speed 0.0, maximum speed 1.0.
   static vtkBrownianPoints *New();
 
-  vtkTypeMacro(vtkBrownianPoints,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkBrownianPoints,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

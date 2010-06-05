@@ -50,7 +50,7 @@ class VTK_IO_EXPORT vtkMFIXReader : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkMFIXReader *New();
-  vtkTypeMacro(vtkMFIXReader,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkMFIXReader,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

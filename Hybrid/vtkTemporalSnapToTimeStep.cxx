@@ -21,6 +21,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkTemporalSnapToTimeStep, "1.4");
 vtkStandardNewMacro(vtkTemporalSnapToTimeStep);
 
 //----------------------------------------------------------------------------

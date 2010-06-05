@@ -28,7 +28,7 @@ class vtkMultiBlockDataSet;
 class VTK_IO_EXPORT vtkEnSightReader : public vtkGenericEnSightReader
 {
 public:
-  vtkTypeMacro(vtkEnSightReader, vtkGenericEnSightReader);
+  vtkTypeRevisionMacro(vtkEnSightReader, vtkGenericEnSightReader);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   //BTX

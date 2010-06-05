@@ -26,6 +26,7 @@
 # define _MAX_PATH 4096
 #endif
 
+vtkCxxRevisionMacro(vtkWin32ProcessOutputWindow, "1.7");
 vtkStandardNewMacro(vtkWin32ProcessOutputWindow);
 
 extern "C" int vtkEncodedArrayWin32OutputWindowProcessWrite(const char* fname);

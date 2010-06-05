@@ -23,6 +23,7 @@ PURPOSE.  See the above copyright notice for more information.
 
 #import <vtksys/ios/sstream>
 
+vtkCxxRevisionMacro(vtkCocoaRenderWindow, "1.72");
 vtkStandardNewMacro(vtkCocoaRenderWindow);
 
 
@@ -307,7 +308,16 @@ int vtkCocoaRenderWindow::IsDirect()
     {
     return 0;
     }
-  return 1;
+
+  NSOpenGLContext* context = (NSOpenGLContext*)this->GetContextId();
+  GLint currentScreen = [context currentVirtualScreen];
+
+  NSOpenGLPixelFormat* pixelFormat = (NSOpenGLPixelFormat*)this->GetPixelFormat();
+  GLint pfd;
+  [pixelFormat getValues: &pfd forAttribute: NSOpenGLPFAFullScreen forVirtualScreen: currentScreen];
+
+  int isDirect = (pfd == 0) ? 0 : 1;
+  return isDirect;
 }
 
 //----------------------------------------------------------------------------

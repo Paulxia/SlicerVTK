@@ -33,6 +33,7 @@
 #include <ctype.h>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkEnSight6Reader, "1.68");
 vtkStandardNewMacro(vtkEnSight6Reader);
 
 //----------------------------------------------------------------------------

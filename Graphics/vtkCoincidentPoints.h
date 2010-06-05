@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkCoincidentPoints : public vtkObject
 {
 public:
   static vtkCoincidentPoints* New();
-  vtkTypeMacro(vtkCoincidentPoints,vtkObject);
+  vtkTypeRevisionMacro(vtkCoincidentPoints,vtkObject);
   virtual void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

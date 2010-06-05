@@ -27,6 +27,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkEdgeCenters, "1.3");
 vtkStandardNewMacro(vtkEdgeCenters);
 
 // Construct object with vertex cell generation turned off.

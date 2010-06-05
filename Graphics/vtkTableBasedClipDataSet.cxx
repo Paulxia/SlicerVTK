@@ -59,6 +59,7 @@
 
 #include "vtkTableBasedClipCases.h"
 
+vtkCxxRevisionMacro( vtkTableBasedClipDataSet, "1.10" );
 vtkStandardNewMacro( vtkTableBasedClipDataSet );
 vtkCxxSetObjectMacro( vtkTableBasedClipDataSet, ClipFunction, vtkImplicitFunction );
 

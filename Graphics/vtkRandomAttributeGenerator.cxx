@@ -36,6 +36,7 @@
 #include "vtkDoubleArray.h"
 #include "vtkIdTypeArray.h"
 
+vtkCxxRevisionMacro(vtkRandomAttributeGenerator, "1.3");
 vtkStandardNewMacro(vtkRandomAttributeGenerator);
 
 // ----------------------------------------------------------------------------

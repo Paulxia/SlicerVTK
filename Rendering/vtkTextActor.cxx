@@ -32,6 +32,7 @@
 #include "vtkTexture.h"
 #include "vtkRenderer.h"
 
+vtkCxxRevisionMacro(vtkTextActor, "1.48");
 vtkStandardNewMacro(vtkTextActor);
 vtkCxxSetObjectMacro(vtkTextActor,Texture,vtkTexture);
 

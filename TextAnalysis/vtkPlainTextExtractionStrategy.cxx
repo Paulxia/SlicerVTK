@@ -25,6 +25,7 @@
 #include <vtkStringArray.h>
 #include <vtkUnicodeStringArray.h>
 
+vtkCxxRevisionMacro(vtkPlainTextExtractionStrategy, "1.5");
 vtkStandardNewMacro(vtkPlainTextExtractionStrategy);
 
 vtkPlainTextExtractionStrategy::vtkPlainTextExtractionStrategy()

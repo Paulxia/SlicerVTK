@@ -35,7 +35,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkVolumeRayCastCompositeFunction : public vtkV
 {
 public:
   static vtkVolumeRayCastCompositeFunction *New();
-  vtkTypeMacro(vtkVolumeRayCastCompositeFunction,vtkVolumeRayCastFunction);
+  vtkTypeRevisionMacro(vtkVolumeRayCastCompositeFunction,vtkVolumeRayCastFunction);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

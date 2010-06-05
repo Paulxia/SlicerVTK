@@ -15,6 +15,7 @@
 #include "vtkTextProperty.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkTextProperty, "1.14");
 vtkStandardNewMacro(vtkTextProperty);
 
 //----------------------------------------------------------------------------

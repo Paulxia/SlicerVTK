@@ -26,6 +26,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkIncrementalOctreePointLocator.h"
 
+vtkCxxRevisionMacro(vtkAppendFilter, "1.77");
 vtkStandardNewMacro(vtkAppendFilter);
 
 //----------------------------------------------------------------------------

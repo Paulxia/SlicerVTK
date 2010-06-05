@@ -47,7 +47,7 @@ class VTK_FILTERING_EXPORT vtkEdgeListIterator : public vtkObject
 {
 public:
   static vtkEdgeListIterator *New();
-  vtkTypeMacro(vtkEdgeListIterator, vtkObject);
+  vtkTypeRevisionMacro(vtkEdgeListIterator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkGetObjectMacro(Graph, vtkGraph);

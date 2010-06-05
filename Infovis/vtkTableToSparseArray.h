@@ -45,7 +45,7 @@ class VTK_INFOVIS_EXPORT vtkTableToSparseArray : public vtkArrayDataAlgorithm
 {
 public:
   static vtkTableToSparseArray* New();
-  vtkTypeMacro(vtkTableToSparseArray, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTableToSparseArray, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

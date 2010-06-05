@@ -40,7 +40,7 @@ public:
   
   // Description:
   // Standard VTK type and error macros.
-  vtkTypeMacro(vtkAttributesErrorMetric,vtkGenericSubdivisionErrorMetric);
+  vtkTypeRevisionMacro(vtkAttributesErrorMetric,vtkGenericSubdivisionErrorMetric);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkAbstractParticleWriter.h"
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkAbstractParticleWriter, "1.3");
 //----------------------------------------------------------------------------
 // Construct with no start and end write methods or arguments.
 vtkAbstractParticleWriter::vtkAbstractParticleWriter()

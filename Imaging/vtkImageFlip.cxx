@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkDataSetAttributes.h"
 
+vtkCxxRevisionMacro(vtkImageFlip, "1.40");
 vtkStandardNewMacro(vtkImageFlip);
 
 //----------------------------------------------------------------------------

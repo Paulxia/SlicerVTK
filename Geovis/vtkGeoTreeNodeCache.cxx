@@ -25,6 +25,7 @@
 #include "vtkSmartPointer.h"
 
 vtkStandardNewMacro(vtkGeoTreeNodeCache);
+vtkCxxRevisionMacro(vtkGeoTreeNodeCache, "1.4");
 //----------------------------------------------------------------------------
 vtkGeoTreeNodeCache::vtkGeoTreeNodeCache()
 {

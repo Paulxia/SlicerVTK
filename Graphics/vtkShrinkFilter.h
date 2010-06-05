@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkShrinkFilter : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkShrinkFilter *New();
-  vtkTypeMacro(vtkShrinkFilter,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkShrinkFilter,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

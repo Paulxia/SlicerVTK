@@ -48,7 +48,7 @@
 class VTK_GRAPHICS_EXPORT vtkTextureMapToCylinder : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTextureMapToCylinder,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTextureMapToCylinder,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -27,7 +27,7 @@ class VTK_GRAPHICS_EXPORT vtkBlockIdScalars : public vtkMultiBlockDataSetAlgorit
 {
 public:
   static vtkBlockIdScalars* New();
-  vtkTypeMacro(vtkBlockIdScalars, vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkBlockIdScalars, vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

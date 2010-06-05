@@ -30,7 +30,7 @@ class vtkStructuredPoints;
 class VTK_FILTERING_EXPORT vtkStructuredPointsSource : public vtkSource
 {
 public:
-  vtkTypeMacro(vtkStructuredPointsSource,vtkSource);
+  vtkTypeRevisionMacro(vtkStructuredPointsSource,vtkSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -27,6 +27,7 @@
 #include "assert.h"
 
 vtkStandardNewMacro(vtkXMLHierarchicalBoxDataWriter);
+vtkCxxRevisionMacro(vtkXMLHierarchicalBoxDataWriter, "1.8");
 //----------------------------------------------------------------------------
 vtkXMLHierarchicalBoxDataWriter::vtkXMLHierarchicalBoxDataWriter()
 {

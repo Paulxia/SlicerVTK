@@ -43,7 +43,7 @@ class VTK_GEOVIS_EXPORT vtkGeoRandomGraphSource : public vtkRandomGraphSource
 {
 public:
   static vtkGeoRandomGraphSource* New();
-  vtkTypeMacro(vtkGeoRandomGraphSource,vtkRandomGraphSource);
+  vtkTypeRevisionMacro(vtkGeoRandomGraphSource,vtkRandomGraphSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

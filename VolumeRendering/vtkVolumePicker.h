@@ -36,7 +36,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkVolumePicker : public vtkCellPicker
 {
 public:
   static vtkVolumePicker *New();
-  vtkTypeMacro(vtkVolumePicker, vtkCellPicker);
+  vtkTypeRevisionMacro(vtkVolumePicker, vtkCellPicker);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

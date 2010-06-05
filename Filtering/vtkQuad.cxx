@@ -25,6 +25,7 @@
 #include "vtkIncrementalPointLocator.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkQuad, "1.6");
 vtkStandardNewMacro(vtkQuad);
 
 static const double VTK_DIVERGED = 1.e6;

@@ -42,7 +42,7 @@ class VTK_GRAPHICS_EXPORT vtkTransformPolyDataFilter : public vtkPolyDataAlgorit
 {
 public:
   static vtkTransformPolyDataFilter *New();
-  vtkTypeMacro(vtkTransformPolyDataFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTransformPolyDataFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

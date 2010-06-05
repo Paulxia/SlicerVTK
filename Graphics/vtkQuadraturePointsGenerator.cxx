@@ -42,6 +42,7 @@ using vtksys_ios::ostringstream;
 
 
 
+vtkCxxRevisionMacro(vtkQuadraturePointsGenerator, "1.15");
 vtkStandardNewMacro(vtkQuadraturePointsGenerator);
 
 //-----------------------------------------------------------------------------

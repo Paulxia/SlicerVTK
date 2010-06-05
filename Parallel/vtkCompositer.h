@@ -38,7 +38,7 @@ class VTK_PARALLEL_EXPORT vtkCompositer : public vtkObject
 {
 public:
   static vtkCompositer *New();
-  vtkTypeMacro(vtkCompositer,vtkObject);
+  vtkTypeRevisionMacro(vtkCompositer,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

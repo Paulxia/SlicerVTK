@@ -15,6 +15,7 @@
 #include "vtkAssemblyPaths.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkAssemblyPaths, "1.6");
 vtkStandardNewMacro(vtkAssemblyPaths);
 
 unsigned long vtkAssemblyPaths::GetMTime()

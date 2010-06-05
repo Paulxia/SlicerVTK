@@ -55,7 +55,7 @@ class vtkPoints;
 class VTK_GRAPHICS_EXPORT vtkLinkEdgels : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkLinkEdgels,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkLinkEdgels,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -26,7 +26,7 @@
 class VTK_GRAPHICS_EXPORT vtkExtractSelectionBase : public vtkDataObjectAlgorithm
 {
 public:
-  vtkTypeMacro(vtkExtractSelectionBase, vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractSelectionBase, vtkDataObjectAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

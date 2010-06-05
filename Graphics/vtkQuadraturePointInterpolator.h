@@ -39,7 +39,7 @@ class VTK_GRAPHICS_EXPORT vtkQuadraturePointInterpolator : public vtkDataSetAlgo
 {
 public:
   static vtkQuadraturePointInterpolator *New();
-  vtkTypeMacro(vtkQuadraturePointInterpolator,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkQuadraturePointInterpolator,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

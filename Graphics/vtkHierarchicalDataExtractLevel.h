@@ -24,7 +24,7 @@
 class VTK_GRAPHICS_EXPORT vtkHierarchicalDataExtractLevel : public vtkExtractLevel 
 {
 public:
-  vtkTypeMacro(vtkHierarchicalDataExtractLevel,vtkExtractLevel);
+  vtkTypeRevisionMacro(vtkHierarchicalDataExtractLevel,vtkExtractLevel);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkHierarchicalDataExtractLevel *New();

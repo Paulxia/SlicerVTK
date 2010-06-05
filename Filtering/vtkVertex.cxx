@@ -22,6 +22,7 @@
 #include "vtkIncrementalPointLocator.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkVertex, "1.3");
 vtkStandardNewMacro(vtkVertex);
 
 //----------------------------------------------------------------------------

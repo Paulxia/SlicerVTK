@@ -36,7 +36,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLImageMapper : public vtkImageMapper
 {
 public:
   static vtkOpenGLImageMapper *New();
-  vtkTypeMacro(vtkOpenGLImageMapper,vtkImageMapper);
+  vtkTypeRevisionMacro(vtkOpenGLImageMapper,vtkImageMapper);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -23,6 +23,7 @@
 #include "vtkPropAssembly.h"
 #include "vtkVolume.h"
 
+vtkCxxRevisionMacro(vtkAbstractPropPicker, "1.12");
 
 vtkCxxSetObjectMacro(vtkAbstractPropPicker,Path,vtkAssemblyPath);
 

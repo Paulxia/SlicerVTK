@@ -160,6 +160,7 @@ private:
 };
 
 //=============================================================================
+vtkCxxRevisionMacro(vtkSLACParticleReader, "1.3");
 vtkStandardNewMacro(vtkSLACParticleReader);
 
 //-----------------------------------------------------------------------------

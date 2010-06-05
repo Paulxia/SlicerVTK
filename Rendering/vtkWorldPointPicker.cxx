@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkRenderer.h"
 
+vtkCxxRevisionMacro(vtkWorldPointPicker, "1.22");
 vtkStandardNewMacro(vtkWorldPointPicker);
 
 vtkWorldPointPicker::vtkWorldPointPicker()

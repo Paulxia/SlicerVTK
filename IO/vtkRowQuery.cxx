@@ -26,6 +26,7 @@
 
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkRowQuery, "1.7");
 
 vtkRowQuery::vtkRowQuery()
 {

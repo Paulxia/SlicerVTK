@@ -28,6 +28,7 @@ public:
   StorageT Storage;
 };
 
+vtkCxxRevisionMacro(vtkUnicodeStringArray, "1.12");
 vtkStandardNewMacro(vtkUnicodeStringArray);
 
 vtkUnicodeStringArray::vtkUnicodeStringArray(vtkIdType)

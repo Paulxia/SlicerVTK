@@ -32,7 +32,7 @@ class VTK_INFOVIS_EXPORT vtkCircularLayoutStrategy : public vtkGraphLayoutStrate
 public:
   static vtkCircularLayoutStrategy *New();
 
-  vtkTypeMacro(vtkCircularLayoutStrategy, vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkCircularLayoutStrategy, vtkGraphLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

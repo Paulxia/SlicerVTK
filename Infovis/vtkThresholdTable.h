@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkThresholdTable : public vtkTableAlgorithm
 {
 public:
   static vtkThresholdTable* New();
-  vtkTypeMacro(vtkThresholdTable, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkThresholdTable, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

@@ -35,7 +35,7 @@ class VTK_COMMON_EXPORT vtkStructuredVisibilityConstraint : public vtkObject
 public:
   static vtkStructuredVisibilityConstraint *New();
 
-  vtkTypeMacro(vtkStructuredVisibilityConstraint,vtkObject);
+  vtkTypeRevisionMacro(vtkStructuredVisibilityConstraint,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

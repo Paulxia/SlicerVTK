@@ -22,6 +22,7 @@
 
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkAreaLayoutStrategy, "1.1");
 
 vtkAreaLayoutStrategy::vtkAreaLayoutStrategy()
 {

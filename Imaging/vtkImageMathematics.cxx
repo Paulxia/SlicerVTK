@@ -22,6 +22,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageMathematics, "1.56");
 vtkStandardNewMacro(vtkImageMathematics);
 
 //----------------------------------------------------------------------------

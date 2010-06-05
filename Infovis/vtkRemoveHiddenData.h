@@ -42,7 +42,7 @@ class VTK_INFOVIS_EXPORT vtkRemoveHiddenData : public vtkPassInputTypeAlgorithm
 {
 public:
   static vtkRemoveHiddenData *New();
-  vtkTypeMacro(vtkRemoveHiddenData, vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkRemoveHiddenData, vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

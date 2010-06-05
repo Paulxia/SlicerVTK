@@ -42,7 +42,7 @@ public:
   // Description:
   // Default open value is 0, and default close value is 255.
   static vtkImageOpenClose3D *New();
-  vtkTypeMacro(vtkImageOpenClose3D,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageOpenClose3D,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

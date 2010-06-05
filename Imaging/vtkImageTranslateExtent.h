@@ -26,7 +26,7 @@ class VTK_IMAGING_EXPORT vtkImageTranslateExtent : public vtkImageAlgorithm
 {
 public:
   static vtkImageTranslateExtent *New();
-  vtkTypeMacro(vtkImageTranslateExtent,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageTranslateExtent,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

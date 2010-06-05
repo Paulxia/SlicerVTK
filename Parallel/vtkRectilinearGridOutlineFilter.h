@@ -28,7 +28,7 @@ class VTK_PARALLEL_EXPORT vtkRectilinearGridOutlineFilter : public vtkPolyDataAl
 {
 public:
   static vtkRectilinearGridOutlineFilter *New();
-  vtkTypeMacro(vtkRectilinearGridOutlineFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkRectilinearGridOutlineFilter,vtkPolyDataAlgorithm);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

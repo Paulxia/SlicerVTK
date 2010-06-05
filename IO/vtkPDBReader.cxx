@@ -19,6 +19,7 @@
 #include "vtkPoints.h"
 #include "vtkIdTypeArray.h"
 
+vtkCxxRevisionMacro(vtkPDBReader, "1.5");
 vtkStandardNewMacro(vtkPDBReader);
 
 vtkPDBReader::vtkPDBReader()

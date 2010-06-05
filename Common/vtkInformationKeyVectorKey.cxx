@@ -18,6 +18,7 @@
 #include <vtkstd/vector>
 #include <vtkstd/algorithm> // find()
 
+vtkCxxRevisionMacro(vtkInformationKeyVectorKey, "1.9");
 
 //----------------------------------------------------------------------------
 vtkInformationKeyVectorKey::vtkInformationKeyVectorKey(const char* name, const char* location):

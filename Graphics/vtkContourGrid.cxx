@@ -33,6 +33,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkContourGrid, "1.35");
 vtkStandardNewMacro(vtkContourGrid);
 
 // Construct object with initial range (0,1) and single contour value

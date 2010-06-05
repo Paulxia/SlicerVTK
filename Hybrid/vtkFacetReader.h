@@ -42,7 +42,7 @@ class VTK_HYBRID_EXPORT vtkFacetReader : public vtkPolyDataAlgorithm
 {
 public:
   static vtkFacetReader *New();
-  vtkTypeMacro(vtkFacetReader,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkFacetReader,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

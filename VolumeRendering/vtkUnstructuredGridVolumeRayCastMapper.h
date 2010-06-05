@@ -40,7 +40,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkUnstructuredGridVolumeRayCastMapper : public
 {
 public:
   static vtkUnstructuredGridVolumeRayCastMapper *New();
-  vtkTypeMacro(vtkUnstructuredGridVolumeRayCastMapper,vtkUnstructuredGridVolumeMapper);
+  vtkTypeRevisionMacro(vtkUnstructuredGridVolumeRayCastMapper,vtkUnstructuredGridVolumeMapper);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

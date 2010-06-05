@@ -28,7 +28,7 @@ class VTK_RENDERING_EXPORT vtkCompositePolyDataMapper2 : public vtkPainterPolyDa
 {
 public:
   static vtkCompositePolyDataMapper2* New();
-  vtkTypeMacro(vtkCompositePolyDataMapper2, vtkPainterPolyDataMapper);
+  vtkTypeRevisionMacro(vtkCompositePolyDataMapper2, vtkPainterPolyDataMapper);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

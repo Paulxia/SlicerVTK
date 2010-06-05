@@ -16,6 +16,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkHierarchicalDataSetGeometryFilter, "1.6");
 vtkStandardNewMacro(vtkHierarchicalDataSetGeometryFilter);
 //-----------------------------------------------------------------------------
 vtkHierarchicalDataSetGeometryFilter::vtkHierarchicalDataSetGeometryFilter()

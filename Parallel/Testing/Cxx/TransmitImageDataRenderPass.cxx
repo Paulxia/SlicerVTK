@@ -59,7 +59,7 @@ class MyProcess : public vtkProcess
 {
 public:
   static MyProcess *New();
-  vtkTypeMacro(MyProcess, vtkProcess);
+  vtkTypeRevisionMacro(MyProcess, vtkProcess);
   
   virtual void Execute();
 
@@ -73,6 +73,7 @@ protected:
   char **Argv;
 };
 
+vtkCxxRevisionMacro(MyProcess, "1.1");
 vtkStandardNewMacro(MyProcess);
 
 MyProcess::MyProcess()

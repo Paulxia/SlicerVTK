@@ -50,7 +50,7 @@ public:
 
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkAngleRepresentation3D,vtkAngleRepresentation);
+  vtkTypeRevisionMacro(vtkAngleRepresentation3D,vtkAngleRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

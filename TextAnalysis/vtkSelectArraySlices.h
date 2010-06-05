@@ -41,7 +41,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkSelectArraySlices :
 {
 public:
   static vtkSelectArraySlices* New();
-  vtkTypeMacro(vtkSelectArraySlices, vtkSelectionAlgorithm);
+  vtkTypeRevisionMacro(vtkSelectArraySlices, vtkSelectionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

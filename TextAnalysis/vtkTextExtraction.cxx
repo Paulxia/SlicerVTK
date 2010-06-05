@@ -44,6 +44,7 @@ public:
 ////////////////////////////////////////////////////////////////
 // vtkTextExtraction
 
+vtkCxxRevisionMacro(vtkTextExtraction, "1.9");
 vtkStandardNewMacro(vtkTextExtraction);
 
 vtkTextExtraction::vtkTextExtraction() :

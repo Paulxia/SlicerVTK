@@ -25,6 +25,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkGenericDataSet, "1.8");
 vtkCxxSetObjectMacro(vtkGenericDataSet,Tessellator,vtkGenericCellTessellator);
 
 //----------------------------------------------------------------------------

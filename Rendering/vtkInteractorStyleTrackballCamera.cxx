@@ -22,6 +22,7 @@
 #include "vtkRenderWindowInteractor.h"
 #include "vtkRenderer.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleTrackballCamera, "1.37");
 vtkStandardNewMacro(vtkInteractorStyleTrackballCamera);
 
 //----------------------------------------------------------------------------

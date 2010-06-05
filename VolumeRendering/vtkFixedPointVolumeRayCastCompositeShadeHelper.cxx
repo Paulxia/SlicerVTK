@@ -29,6 +29,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkFixedPointVolumeRayCastCompositeShadeHelper, "1.9");
 vtkStandardNewMacro(vtkFixedPointVolumeRayCastCompositeShadeHelper);
 
 // Construct a new vtkFixedPointVolumeRayCastCompositeShadeHelper with default values

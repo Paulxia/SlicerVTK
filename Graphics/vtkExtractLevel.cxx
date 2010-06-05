@@ -28,6 +28,7 @@ class vtkExtractLevel::vtkSet : public vtkstd::set<unsigned int>
 };
 
 vtkStandardNewMacro(vtkExtractLevel);
+vtkCxxRevisionMacro(vtkExtractLevel, "1.1");
 //----------------------------------------------------------------------------
 vtkExtractLevel::vtkExtractLevel()
 {

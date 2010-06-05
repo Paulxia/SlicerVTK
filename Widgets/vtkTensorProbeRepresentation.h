@@ -38,7 +38,7 @@ class VTK_WIDGETS_EXPORT vtkTensorProbeRepresentation :
 public:
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkTensorProbeRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkTensorProbeRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

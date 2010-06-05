@@ -33,6 +33,7 @@
 #include "vtkBridgeCellIteratorOnCellBoundaries.h"
 #include "vtkBridgeCellIteratorOnCellList.h"
 
+vtkCxxRevisionMacro(vtkBridgeCellIterator, "1.2");
 vtkStandardNewMacro(vtkBridgeCellIterator);
 
 //-----------------------------------------------------------------------------

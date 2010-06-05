@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkBoxLayoutStrategy : public vtkTreeMapLayoutStrategy
 public:
   static vtkBoxLayoutStrategy *New();
 
-  vtkTypeMacro(vtkBoxLayoutStrategy,vtkTreeMapLayoutStrategy);
+  vtkTypeRevisionMacro(vtkBoxLayoutStrategy,vtkTreeMapLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

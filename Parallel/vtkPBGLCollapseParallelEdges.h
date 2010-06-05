@@ -32,7 +32,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLCollapseParallelEdges : public vtkGraphAlgorith
 {
 public:
   static vtkPBGLCollapseParallelEdges* New();
-  vtkTypeMacro(vtkPBGLCollapseParallelEdges,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLCollapseParallelEdges,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkHyperOctreeToUniformGridFilter : public vtkImageAlg
 {
 public:
   static vtkHyperOctreeToUniformGridFilter *New();
-  vtkTypeMacro(vtkHyperOctreeToUniformGridFilter,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkHyperOctreeToUniformGridFilter,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
 protected:

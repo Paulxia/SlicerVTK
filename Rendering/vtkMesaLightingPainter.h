@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkMesaLightingPainter : public vtkLightingPainter
 {
 public:
   static vtkMesaLightingPainter* New();
-  vtkTypeMacro(vtkMesaLightingPainter, vtkLightingPainter);
+  vtkTypeRevisionMacro(vtkMesaLightingPainter, vtkLightingPainter);
   void PrintSelf(ostream& os ,vtkIndent indent);
     
 protected:

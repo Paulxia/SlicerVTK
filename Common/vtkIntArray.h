@@ -36,7 +36,7 @@ class VTK_COMMON_EXPORT vtkIntArray : public vtkDataArray
 {
 public:
   static vtkIntArray* New();
-  vtkTypeMacro(vtkIntArray,vtkDataArray);
+  vtkTypeRevisionMacro(vtkIntArray,vtkDataArray);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

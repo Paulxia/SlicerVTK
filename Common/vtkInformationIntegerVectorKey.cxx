@@ -19,6 +19,7 @@
 #include <vtkstd/algorithm>
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkInformationIntegerVectorKey, "1.9");
 
 //----------------------------------------------------------------------------
 vtkInformationIntegerVectorKey

@@ -28,7 +28,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLCamera : public vtkCamera
 {
 public:
   static vtkOpenGLCamera *New();
-  vtkTypeMacro(vtkOpenGLCamera,vtkCamera);
+  vtkTypeRevisionMacro(vtkOpenGLCamera,vtkCamera);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

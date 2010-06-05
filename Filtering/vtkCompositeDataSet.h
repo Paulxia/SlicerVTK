@@ -40,7 +40,7 @@ class vtkInformationStringKey;
 class VTK_FILTERING_EXPORT vtkCompositeDataSet : public vtkDataObject
 {
 public:
-  vtkTypeMacro(vtkCompositeDataSet, vtkDataObject);
+  vtkTypeRevisionMacro(vtkCompositeDataSet, vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -33,6 +33,7 @@
 #include <vtkstd/vector>
 
 
+vtkCxxRevisionMacro(vtkSpiderPlotActor, "1.4");
 vtkStandardNewMacro(vtkSpiderPlotActor);
 
 vtkCxxSetObjectMacro(vtkSpiderPlotActor,Input,vtkDataObject);

@@ -44,6 +44,7 @@
 #include <math.h>
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkClipHyperOctree, "1.9");
 vtkStandardNewMacro(vtkClipHyperOctree);
 vtkCxxSetObjectMacro(vtkClipHyperOctree,ClipFunction,vtkImplicitFunction);
 

@@ -40,6 +40,7 @@
 #include "vtkInteractorObserver.h"
 #include "vtkBox.h"
 
+vtkCxxRevisionMacro(vtkImplicitPlaneRepresentation, "1.16");
 vtkStandardNewMacro(vtkImplicitPlaneRepresentation);
 
 //----------------------------------------------------------------------------

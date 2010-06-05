@@ -49,7 +49,7 @@ class VTK_FILTERING_EXPORT vtkQuadraticLinearWedge : public vtkNonLinearCell
 {
 public:
   static vtkQuadraticLinearWedge *New ();
-  vtkTypeMacro (vtkQuadraticLinearWedge, vtkNonLinearCell);
+  vtkTypeRevisionMacro (vtkQuadraticLinearWedge, vtkNonLinearCell);
   void PrintSelf (ostream & os, vtkIndent indent);
 
   // Description:

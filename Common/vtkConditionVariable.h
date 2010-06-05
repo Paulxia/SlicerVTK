@@ -141,7 +141,7 @@ class VTK_COMMON_EXPORT vtkConditionVariable : public vtkObject
 {
 public:
   static vtkConditionVariable* New();
-  vtkTypeMacro(vtkConditionVariable,vtkObject);
+  vtkTypeRevisionMacro(vtkConditionVariable,vtkObject);
   void PrintSelf( ostream& os, vtkIndent indent );
   
   // Description:

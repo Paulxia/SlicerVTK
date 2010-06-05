@@ -17,6 +17,7 @@
 #include "vtkShader2.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkShader2Collection, "1.4");
 vtkStandardNewMacro(vtkShader2Collection);
 
 // ----------------------------------------------------------------------------

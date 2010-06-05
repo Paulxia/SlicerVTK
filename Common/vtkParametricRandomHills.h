@@ -35,7 +35,7 @@ class VTK_COMMON_EXPORT vtkParametricRandomHills : public vtkParametricFunction
 {
 
 public:
-  vtkTypeMacro(vtkParametricRandomHills,vtkParametricFunction);
+  vtkTypeRevisionMacro(vtkParametricRandomHills,vtkParametricFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description

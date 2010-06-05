@@ -34,7 +34,7 @@ class vtkOpenGLRenderWindow;
 class VTK_RENDERING_EXPORT vtkTextureUnitManager : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkTextureUnitManager,vtkObject);
+  vtkTypeRevisionMacro(vtkTextureUnitManager,vtkObject);
 
   void PrintSelf(ostream& os, vtkIndent indent);
   

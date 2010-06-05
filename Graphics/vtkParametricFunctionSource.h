@@ -48,7 +48,7 @@ class vtkParametricFunction;
 class VTK_GRAPHICS_EXPORT vtkParametricFunctionSource : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkParametricFunctionSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkParametricFunctionSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

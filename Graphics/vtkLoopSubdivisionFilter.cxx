@@ -25,6 +25,7 @@
 #include "vtkPolyData.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkLoopSubdivisionFilter, "1.22");
 vtkStandardNewMacro(vtkLoopSubdivisionFilter);
 
 static double LoopWeights[4] =

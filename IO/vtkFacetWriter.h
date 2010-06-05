@@ -44,7 +44,7 @@ class VTK_IO_EXPORT vtkFacetWriter : public vtkPolyDataAlgorithm
 {
 public:
   static vtkFacetWriter *New();
-  vtkTypeMacro(vtkFacetWriter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkFacetWriter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

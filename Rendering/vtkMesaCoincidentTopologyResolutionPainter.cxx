@@ -34,4 +34,5 @@
 #include "vtkOpenGLCoincidentTopologyResolutionPainter.cxx"
 #undef vtkOpenGLCoincidentTopologyResolutionPainter
 
+vtkCxxRevisionMacro(vtkMesaCoincidentTopologyResolutionPainter, "1.2");
 vtkStandardNewMacro(vtkMesaCoincidentTopologyResolutionPainter);

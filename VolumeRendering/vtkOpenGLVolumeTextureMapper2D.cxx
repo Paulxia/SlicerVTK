@@ -27,6 +27,7 @@
 
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLVolumeTextureMapper2D, "1.2");
 vtkStandardNewMacro(vtkOpenGLVolumeTextureMapper2D);
 #endif
 

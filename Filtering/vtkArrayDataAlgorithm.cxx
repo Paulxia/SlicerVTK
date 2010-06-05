@@ -28,6 +28,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
+vtkCxxRevisionMacro(vtkArrayDataAlgorithm, "1.1");
 vtkStandardNewMacro(vtkArrayDataAlgorithm);
 
 //----------------------------------------------------------------------------

@@ -35,7 +35,7 @@ class VTK_IO_EXPORT vtkImageReader : public vtkImageReader2
 {
 public:
   static vtkImageReader *New();
-  vtkTypeMacro(vtkImageReader,vtkImageReader2);
+  vtkTypeRevisionMacro(vtkImageReader,vtkImageReader2);
   void PrintSelf(ostream& os, vtkIndent indent);   
 
   // Description:

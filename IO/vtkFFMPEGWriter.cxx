@@ -176,8 +176,6 @@ int vtkFFMPEGWriterInternal::Start()
       break;
     }
 
-  c->bit_rate_tolerance = c->bit_rate/this->FrameRate;
-
   //apply the chosen parameters
   if (av_set_parameters(this->avFormatContext, NULL) < 0) 
     {
@@ -406,6 +404,7 @@ void vtkFFMPEGWriterInternal::End()
 
 //---------------------------------------------------------------------------
 vtkStandardNewMacro(vtkFFMPEGWriter);
+vtkCxxRevisionMacro(vtkFFMPEGWriter, "1.11");
 
 //---------------------------------------------------------------------------
 vtkFFMPEGWriter::vtkFFMPEGWriter()

@@ -24,6 +24,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageSpatialAlgorithm, "1.3");
 vtkStandardNewMacro(vtkImageSpatialAlgorithm);
 
 //----------------------------------------------------------------------------

@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkDummyGPUInfoList, "1.2");
 vtkStandardNewMacro(vtkDummyGPUInfoList);
 
 // ----------------------------------------------------------------------------

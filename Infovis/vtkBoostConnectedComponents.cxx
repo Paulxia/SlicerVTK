@@ -36,6 +36,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkBoostConnectedComponents, "1.8");
 vtkStandardNewMacro(vtkBoostConnectedComponents);
 
 vtkBoostConnectedComponents::vtkBoostConnectedComponents()

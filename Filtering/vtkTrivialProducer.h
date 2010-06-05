@@ -31,7 +31,7 @@ class VTK_FILTERING_EXPORT vtkTrivialProducer : public vtkAlgorithm
 {
 public:
   static vtkTrivialProducer *New();
-  vtkTypeMacro(vtkTrivialProducer,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkTrivialProducer,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

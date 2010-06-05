@@ -29,6 +29,7 @@
 #include <math.h>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkParametricFunctionSource, "1.16");
 vtkStandardNewMacro(vtkParametricFunctionSource);
 vtkCxxSetObjectMacro(vtkParametricFunctionSource,ParametricFunction,vtkParametricFunction);
 

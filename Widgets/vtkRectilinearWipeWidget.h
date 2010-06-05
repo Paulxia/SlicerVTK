@@ -89,7 +89,7 @@ public:
 
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkRectilinearWipeWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkRectilinearWipeWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

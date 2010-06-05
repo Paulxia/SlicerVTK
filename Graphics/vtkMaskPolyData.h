@@ -30,7 +30,7 @@ class VTK_GRAPHICS_EXPORT vtkMaskPolyData : public vtkPolyDataAlgorithm
 {
 public:
   static vtkMaskPolyData *New();
-  vtkTypeMacro(vtkMaskPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkMaskPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

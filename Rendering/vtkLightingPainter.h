@@ -24,7 +24,7 @@ class VTK_RENDERING_EXPORT vtkLightingPainter : public vtkPolyDataPainter
 {
 public:
   static vtkLightingPainter* New();
-  vtkTypeMacro(vtkLightingPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkLightingPainter, vtkPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

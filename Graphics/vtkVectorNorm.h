@@ -36,7 +36,7 @@
 class VTK_GRAPHICS_EXPORT vtkVectorNorm : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkVectorNorm,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkVectorNorm,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

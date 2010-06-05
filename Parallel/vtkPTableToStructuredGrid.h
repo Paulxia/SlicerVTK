@@ -31,7 +31,7 @@ class VTK_PARALLEL_EXPORT vtkPTableToStructuredGrid : public vtkTableToStructure
 {
 public:
   static vtkPTableToStructuredGrid* New();
-  vtkTypeMacro(vtkPTableToStructuredGrid, vtkTableToStructuredGrid);
+  vtkTypeRevisionMacro(vtkPTableToStructuredGrid, vtkTableToStructuredGrid);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

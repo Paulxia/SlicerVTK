@@ -27,7 +27,7 @@ class VTK_RENDERING_EXPORT vtkRepresentationPainter : public vtkPolyDataPainter
 {
 public:
   static vtkRepresentationPainter* New();
-  vtkTypeMacro(vtkRepresentationPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkRepresentationPainter, vtkPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

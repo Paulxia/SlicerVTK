@@ -41,7 +41,7 @@ class QVTK_EXPORT vtkQtSQLDatabase : public vtkSQLDatabase
 {
 public:
   static vtkQtSQLDatabase* New();
-  vtkTypeMacro(vtkQtSQLDatabase, vtkSQLDatabase);
+  vtkTypeRevisionMacro(vtkQtSQLDatabase, vtkSQLDatabase);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

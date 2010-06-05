@@ -43,7 +43,7 @@ class VTK_IO_EXPORT vtkRowQueryToTable : public vtkTableAlgorithm
 {
 public:
   static vtkRowQueryToTable* New();
-  vtkTypeMacro(vtkRowQueryToTable, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkRowQueryToTable, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

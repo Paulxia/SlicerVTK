@@ -67,7 +67,7 @@ class vtkHyperOctreeClipCutPointsGrabber;
 class VTK_GRAPHICS_EXPORT vtkHyperOctreeCutter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkHyperOctreeCutter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkHyperOctreeCutter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

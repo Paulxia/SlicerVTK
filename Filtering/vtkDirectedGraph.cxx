@@ -32,6 +32,7 @@
 //----------------------------------------------------------------------------
 // class vtkDirectedGraph
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkDirectedGraph, "1.2");
 vtkStandardNewMacro(vtkDirectedGraph);
 //----------------------------------------------------------------------------
 vtkDirectedGraph::vtkDirectedGraph()

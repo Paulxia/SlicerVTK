@@ -33,6 +33,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkMarchingContourFilter, "1.3");
 vtkStandardNewMacro(vtkMarchingContourFilter);
 
 // Construct object with initial range (0,1) and single contour value

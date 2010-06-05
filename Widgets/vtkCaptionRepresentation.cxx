@@ -26,6 +26,7 @@
 #include "vtkTextMapper.h"
 #include "vtkFreeTypeUtilities.h"
 
+vtkCxxRevisionMacro(vtkCaptionRepresentation, "1.8");
 vtkStandardNewMacro(vtkCaptionRepresentation);
 
 //-------------------------------------------------------------------------

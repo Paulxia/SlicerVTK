@@ -45,6 +45,7 @@
 #include "vtkGLSLShaderProgram.h"
 #endif
 
+vtkCxxRevisionMacro(vtkShaderProgram, "1.10");
 vtkCxxSetObjectMacro(vtkShaderProgram, Material, vtkXMLMaterial);
 //-----------------------------------------------------------------------------
 vtkShaderProgram::vtkShaderProgram()

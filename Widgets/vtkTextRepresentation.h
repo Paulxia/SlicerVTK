@@ -41,7 +41,7 @@ public:
 
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkTextRepresentation,vtkBorderRepresentation);
+  vtkTypeRevisionMacro(vtkTextRepresentation,vtkBorderRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

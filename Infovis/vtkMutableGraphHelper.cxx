@@ -25,6 +25,7 @@
 #include "vtkObjectFactory.h"
 
 vtkCxxSetObjectMacro(vtkMutableGraphHelper, InternalGraph, vtkGraph);
+vtkCxxRevisionMacro(vtkMutableGraphHelper, "1.2");
 vtkStandardNewMacro(vtkMutableGraphHelper);
 //----------------------------------------------------------------------------
 vtkMutableGraphHelper::vtkMutableGraphHelper()

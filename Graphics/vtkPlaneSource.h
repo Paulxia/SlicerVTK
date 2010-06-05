@@ -51,7 +51,7 @@ class VTK_GRAPHICS_EXPORT vtkPlaneSource : public vtkPolyDataAlgorithm
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkPlaneSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPlaneSource,vtkPolyDataAlgorithm);
 
   // Description:
   // Construct plane perpendicular to z-axis, resolution 1x1, width

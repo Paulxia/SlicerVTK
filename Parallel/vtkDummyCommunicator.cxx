@@ -16,6 +16,7 @@
 #include "vtkDummyCommunicator.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkDummyCommunicator, "1.1");
 vtkStandardNewMacro(vtkDummyCommunicator);
 
 //-----------------------------------------------------------------------------

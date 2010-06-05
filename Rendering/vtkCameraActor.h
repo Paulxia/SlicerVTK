@@ -35,7 +35,7 @@ class VTK_RENDERING_EXPORT vtkCameraActor : public vtkProp3D
 {
 public:
   static vtkCameraActor *New();
-  vtkTypeMacro(vtkCameraActor,vtkProp3D);
+  vtkTypeRevisionMacro(vtkCameraActor,vtkProp3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

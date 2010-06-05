@@ -32,7 +32,7 @@ protected:
 
 public:
   static vtkOpenGLRenderer *New();
-  vtkTypeMacro(vtkOpenGLRenderer,vtkRenderer);
+  vtkTypeRevisionMacro(vtkOpenGLRenderer,vtkRenderer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -26,6 +26,7 @@
 #include "vtkImplicitFunction.h"
 #include "vtkGarbageCollector.h"
 
+vtkCxxRevisionMacro(vtkHyperOctreeSampleFunction, "1.3");
 vtkStandardNewMacro(vtkHyperOctreeSampleFunction);
 vtkCxxSetObjectMacro(vtkHyperOctreeSampleFunction,ImplicitFunction,
                      vtkImplicitFunction);

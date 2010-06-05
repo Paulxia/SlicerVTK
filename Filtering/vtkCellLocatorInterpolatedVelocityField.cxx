@@ -24,6 +24,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkModifiedBSPTree.h"
 
+vtkCxxRevisionMacro ( vtkCellLocatorInterpolatedVelocityField, "1.7" );
 vtkStandardNewMacro ( vtkCellLocatorInterpolatedVelocityField ); 
 vtkCxxSetObjectMacro( vtkCellLocatorInterpolatedVelocityField, CellLocatorPrototype, vtkAbstractCellLocator );
 

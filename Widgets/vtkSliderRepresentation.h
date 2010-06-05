@@ -35,7 +35,7 @@ class VTK_WIDGETS_EXPORT vtkSliderRepresentation : public vtkWidgetRepresentatio
 public:
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkSliderRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkSliderRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

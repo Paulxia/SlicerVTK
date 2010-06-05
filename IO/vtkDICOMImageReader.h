@@ -48,7 +48,7 @@ class VTK_IO_EXPORT vtkDICOMImageReader : public vtkImageReader2
   // Description:
   // Static method for construction.
   static vtkDICOMImageReader *New();
-  vtkTypeMacro(vtkDICOMImageReader,vtkImageReader2);
+  vtkTypeRevisionMacro(vtkDICOMImageReader,vtkImageReader2);
 
   // Description:
   // Prints the ivars.

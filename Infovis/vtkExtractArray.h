@@ -35,7 +35,7 @@ class VTK_INFOVIS_EXPORT vtkExtractArray : public vtkArrayDataAlgorithm
 {
 public:
   static vtkExtractArray* New();
-  vtkTypeMacro(vtkExtractArray, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractArray, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

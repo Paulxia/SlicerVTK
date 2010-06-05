@@ -26,6 +26,7 @@
 #include "vtkPointLocator.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkSurfaceReconstructionFilter, "1.37");
 vtkStandardNewMacro(vtkSurfaceReconstructionFilter);
 
 vtkSurfaceReconstructionFilter::vtkSurfaceReconstructionFilter()

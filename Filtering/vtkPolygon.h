@@ -36,7 +36,7 @@ class VTK_FILTERING_EXPORT vtkPolygon : public vtkCell
 {
 public:
   static vtkPolygon *New();
-  vtkTypeMacro(vtkPolygon,vtkCell);
+  vtkTypeRevisionMacro(vtkPolygon,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

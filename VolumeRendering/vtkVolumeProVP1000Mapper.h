@@ -68,7 +68,7 @@
 class VTK_VOLUMERENDERING_EXPORT vtkVolumeProVP1000Mapper : public vtkVolumeProMapper
 {
 public:
-  vtkTypeMacro(vtkVolumeProVP1000Mapper,vtkVolumeProMapper);
+  vtkTypeRevisionMacro(vtkVolumeProVP1000Mapper,vtkVolumeProMapper);
   static vtkVolumeProVP1000Mapper *New();
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 

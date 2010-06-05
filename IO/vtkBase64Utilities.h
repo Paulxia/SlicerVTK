@@ -25,7 +25,7 @@ class VTK_IO_EXPORT vtkBase64Utilities : public vtkObject
 {
 public:
   static vtkBase64Utilities *New();
-  vtkTypeMacro(vtkBase64Utilities,vtkObject);
+  vtkTypeRevisionMacro(vtkBase64Utilities,vtkObject);
 
   // Description:  
   // Encode 3 bytes into 4 bytes

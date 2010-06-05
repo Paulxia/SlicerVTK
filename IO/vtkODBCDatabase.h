@@ -80,7 +80,7 @@ class VTK_IO_EXPORT vtkODBCDatabase : public vtkSQLDatabase
 //ETX
 
 public:
-  vtkTypeMacro(vtkODBCDatabase, vtkSQLDatabase);
+  vtkTypeRevisionMacro(vtkODBCDatabase, vtkSQLDatabase);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkODBCDatabase *New();
 

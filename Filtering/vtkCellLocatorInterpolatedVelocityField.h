@@ -54,8 +54,8 @@ class vtkCellLocatorInterpolatedVelocityFieldCellLocatorsType;
 class VTK_FILTERING_EXPORT vtkCellLocatorInterpolatedVelocityField : public vtkAbstractInterpolatedVelocityField
 {
 public:
-  vtkTypeMacro( vtkCellLocatorInterpolatedVelocityField,
-                vtkAbstractInterpolatedVelocityField );
+  vtkTypeRevisionMacro( vtkCellLocatorInterpolatedVelocityField, 
+                        vtkAbstractInterpolatedVelocityField );
   void PrintSelf( ostream & os, vtkIndent indent );
 
   // Description:

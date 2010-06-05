@@ -44,7 +44,7 @@ class VTK_GRAPHICS_EXPORT vtkWarpScalar : public vtkPointSetAlgorithm
 {
 public:
   static vtkWarpScalar *New();
-  vtkTypeMacro(vtkWarpScalar,vtkPointSetAlgorithm);
+  vtkTypeRevisionMacro(vtkWarpScalar,vtkPointSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

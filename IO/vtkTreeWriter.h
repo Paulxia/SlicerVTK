@@ -30,7 +30,7 @@ class VTK_IO_EXPORT vtkTreeWriter : public vtkDataWriter
 {
 public:
   static vtkTreeWriter *New();
-  vtkTypeMacro(vtkTreeWriter,vtkDataWriter);
+  vtkTypeRevisionMacro(vtkTreeWriter,vtkDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -27,7 +27,7 @@ class VTK_GRAPHICS_EXPORT vtkCubeSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkCubeSource *New();
-  vtkTypeMacro(vtkCubeSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCubeSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

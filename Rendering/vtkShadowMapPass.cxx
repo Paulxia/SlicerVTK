@@ -66,6 +66,7 @@
 #include "vtkOpenGLState.h"
 #include "vtkTimerLog.h"
 
+vtkCxxRevisionMacro(vtkShadowMapPass, "1.8");
 vtkStandardNewMacro(vtkShadowMapPass);
 vtkCxxSetObjectMacro(vtkShadowMapPass,OpaquePass,vtkRenderPass);
 vtkCxxSetObjectMacro(vtkShadowMapPass,CompositeZPass,vtkRenderPass);

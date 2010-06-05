@@ -31,6 +31,7 @@
 #include "vtkstd/vector"
 #include "vtkstd/set"
 
+vtkCxxRevisionMacro(vtkSelectionSource, "1.27");
 vtkStandardNewMacro(vtkSelectionSource);
 
 class vtkSelectionSourceInternals

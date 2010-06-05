@@ -47,7 +47,7 @@ class vtkScalarBarActor;
 class VTK_WIDGETS_EXPORT vtkScalarBarRepresentation : public vtkBorderRepresentation
 {
 public:
-  vtkTypeMacro(vtkScalarBarRepresentation, vtkBorderRepresentation);
+  vtkTypeRevisionMacro(vtkScalarBarRepresentation, vtkBorderRepresentation);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
   static vtkScalarBarRepresentation *New();
 

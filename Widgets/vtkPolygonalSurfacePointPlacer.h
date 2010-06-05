@@ -62,7 +62,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkPolygonalSurfacePointPlacer,vtkPolyDataPointPlacer);
+  vtkTypeRevisionMacro(vtkPolygonalSurfacePointPlacer,vtkPolyDataPointPlacer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Descuription:

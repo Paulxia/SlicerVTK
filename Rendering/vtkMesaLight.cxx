@@ -39,4 +39,5 @@
 #include "vtkOpenGLLight.cxx"
 #undef vtkOpenGLLight
 
+vtkCxxRevisionMacro(vtkMesaLight, "1.13");
 vtkStandardNewMacro(vtkMesaLight);

@@ -51,7 +51,7 @@ class VTK_GRAPHICS_EXPORT vtkButtonSource : public vtkPolyDataAlgorithm
 {
 public:
   void PrintSelf(ostream& os, vtkIndent indent);
-  vtkTypeMacro(vtkButtonSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkButtonSource,vtkPolyDataAlgorithm);
 
   // Description:
   // Specify a point defining the origin (center) of the button.

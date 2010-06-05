@@ -50,6 +50,7 @@ static void CopyValues(vtkArray* const source, vtkArray* const target, const vtk
 ///////////////////////////////////////////////////////////////////////////////
 // vtkConcatenateArray
 
+vtkCxxRevisionMacro(vtkConcatenateArray, "1.2");
 vtkStandardNewMacro(vtkConcatenateArray);
 
 vtkConcatenateArray::vtkConcatenateArray() :

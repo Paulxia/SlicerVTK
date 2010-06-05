@@ -29,7 +29,7 @@ class VTK_RENDERING_EXPORT vtkMesaClipPlanesPainter : public vtkClipPlanesPainte
 {
 public:
   static vtkMesaClipPlanesPainter* New();
-  vtkTypeMacro(vtkMesaClipPlanesPainter, vtkClipPlanesPainter);
+  vtkTypeRevisionMacro(vtkMesaClipPlanesPainter, vtkClipPlanesPainter);
   void PrintSelf(ostream& os ,vtkIndent indent);
 
 protected:

@@ -17,6 +17,7 @@
 #include "vtkDataSet.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkDicer, "1.34");
 
 // Instantiate object.
 vtkDicer::vtkDicer()

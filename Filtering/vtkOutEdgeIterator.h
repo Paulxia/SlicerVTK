@@ -42,7 +42,7 @@ class VTK_FILTERING_EXPORT vtkOutEdgeIterator : public vtkObject
 {
 public:
   static vtkOutEdgeIterator *New();
-  vtkTypeMacro(vtkOutEdgeIterator, vtkObject);
+  vtkTypeRevisionMacro(vtkOutEdgeIterator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

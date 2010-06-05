@@ -26,7 +26,7 @@ class VTK_COMMON_EXPORT vtkBitArrayIterator : public vtkArrayIterator
 {
 public:
   static vtkBitArrayIterator* New();
-  vtkTypeMacro(vtkBitArrayIterator, vtkArrayIterator);
+  vtkTypeRevisionMacro(vtkBitArrayIterator, vtkArrayIterator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

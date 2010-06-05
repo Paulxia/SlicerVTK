@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkIncrementalOctreeNode.h"
 
+vtkCxxRevisionMacro( vtkIncrementalOctreeNode, "1.7" );
 vtkStandardNewMacro( vtkIncrementalOctreeNode );
 
 vtkCxxSetObjectMacro( vtkIncrementalOctreeNode, PointIdSet, vtkIdList );

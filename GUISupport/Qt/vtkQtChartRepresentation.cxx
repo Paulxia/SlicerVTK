@@ -49,6 +49,7 @@ public:
 };
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtChartRepresentation, "1.8");
 vtkStandardNewMacro(vtkQtChartRepresentation);
 
 //----------------------------------------------------------------------------

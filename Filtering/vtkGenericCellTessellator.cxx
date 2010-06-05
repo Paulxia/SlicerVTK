@@ -33,6 +33,7 @@
 
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkGenericCellTessellator, "1.15");
 vtkCxxSetObjectMacro(vtkGenericCellTessellator, ErrorMetrics, vtkCollection);
 
 //-----------------------------------------------------------------------------

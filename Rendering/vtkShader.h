@@ -57,7 +57,7 @@ class vtkXMLShader;
 class VTK_RENDERING_EXPORT vtkShader : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkShader, vtkObject);
+  vtkTypeRevisionMacro(vtkShader, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

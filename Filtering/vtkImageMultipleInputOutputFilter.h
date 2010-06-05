@@ -32,7 +32,7 @@
 class VTK_FILTERING_EXPORT vtkImageMultipleInputOutputFilter : public vtkImageMultipleInputFilter
 {
 public:
-  vtkTypeMacro(vtkImageMultipleInputOutputFilter,vtkImageMultipleInputFilter);
+  vtkTypeRevisionMacro(vtkImageMultipleInputOutputFilter,vtkImageMultipleInputFilter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

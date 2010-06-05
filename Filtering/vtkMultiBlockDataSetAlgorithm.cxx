@@ -23,6 +23,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkMultiBlockDataSetAlgorithm, "1.9");
 vtkStandardNewMacro(vtkMultiBlockDataSetAlgorithm);
 
 //----------------------------------------------------------------------------

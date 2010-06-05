@@ -17,6 +17,7 @@
 #include "vtkInformationVector.h"
 #include "vtkInformation.h"
 
+vtkCxxRevisionMacro(vtkInformationInformationVectorKey, "1.7");
 
 //----------------------------------------------------------------------------
 vtkInformationInformationVectorKey::vtkInformationInformationVectorKey(const char* name, const char* location):

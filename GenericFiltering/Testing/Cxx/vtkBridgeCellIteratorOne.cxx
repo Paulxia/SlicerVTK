@@ -32,6 +32,7 @@
 #include "vtkVertex.h"
 #include "vtkPolyVertex.h"
 
+vtkCxxRevisionMacro(vtkBridgeCellIteratorOne, "1.1");
 vtkStandardNewMacro(vtkBridgeCellIteratorOne);
 
 //-----------------------------------------------------------------------------

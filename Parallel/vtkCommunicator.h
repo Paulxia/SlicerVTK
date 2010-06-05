@@ -46,7 +46,7 @@ class VTK_PARALLEL_EXPORT vtkCommunicator : public vtkObject
 
 public:
 
-  vtkTypeMacro(vtkCommunicator, vtkObject);
+  vtkTypeRevisionMacro(vtkCommunicator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

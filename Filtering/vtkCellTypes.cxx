@@ -15,6 +15,7 @@
 #include "vtkCellTypes.h"
 #include "vtkObjectFactory.h"  
 
+vtkCxxRevisionMacro(vtkCellTypes, "1.5");
 vtkStandardNewMacro(vtkCellTypes);
 
 // This list should contain the cell class names in

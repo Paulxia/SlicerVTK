@@ -38,6 +38,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkSelectArraySlices
 
+vtkCxxRevisionMacro(vtkSelectArraySlices, "1.2");
 vtkStandardNewMacro(vtkSelectArraySlices);
 
 vtkSelectArraySlices::vtkSelectArraySlices() :

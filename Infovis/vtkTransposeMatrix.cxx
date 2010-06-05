@@ -31,6 +31,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkTransposeMatrix
 
+vtkCxxRevisionMacro(vtkTransposeMatrix, "1.5");
 vtkStandardNewMacro(vtkTransposeMatrix);
 
 vtkTransposeMatrix::vtkTransposeMatrix()

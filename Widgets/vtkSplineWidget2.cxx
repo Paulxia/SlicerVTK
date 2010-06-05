@@ -27,6 +27,7 @@
 #include "vtkWidgetEventTranslator.h"
 
 vtkStandardNewMacro(vtkSplineWidget2);
+vtkCxxRevisionMacro(vtkSplineWidget2, "1.1");
 //----------------------------------------------------------------------------
 vtkSplineWidget2::vtkSplineWidget2()
 {

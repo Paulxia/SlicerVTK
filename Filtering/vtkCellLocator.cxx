@@ -23,6 +23,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkCellLocator, "1.90");
 vtkStandardNewMacro(vtkCellLocator);
 
 #define VTK_CELL_OUTSIDE 0

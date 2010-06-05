@@ -56,6 +56,7 @@
 #include "R_ext/Parse.h"
 #include "R_ext/Rdynload.h"
 
+vtkCxxRevisionMacro(vtkRAdapter, "1.8");
 
 vtkStandardNewMacro(vtkRAdapter);
 

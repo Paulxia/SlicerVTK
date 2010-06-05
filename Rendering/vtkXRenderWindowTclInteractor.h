@@ -34,7 +34,7 @@ class VTK_RENDERING_EXPORT vtkXRenderWindowTclInteractor : public vtkXRenderWind
 {
 public:
   static vtkXRenderWindowTclInteractor *New();
-  vtkTypeMacro(vtkXRenderWindowTclInteractor,vtkXRenderWindowInteractor);
+  vtkTypeRevisionMacro(vtkXRenderWindowTclInteractor,vtkXRenderWindowInteractor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

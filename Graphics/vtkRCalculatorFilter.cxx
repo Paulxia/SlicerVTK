@@ -47,6 +47,7 @@
 
 #define BUFFER_SIZE 32768 
 
+vtkCxxRevisionMacro(vtkRCalculatorFilter, "1.3");
 vtkStandardNewMacro(vtkRCalculatorFilter);
 
 class ArrNames

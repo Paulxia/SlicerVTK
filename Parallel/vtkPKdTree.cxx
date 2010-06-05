@@ -79,6 +79,7 @@ static char * makeEntry(const char *s)
 
 // Timing data ---------------------------------------------
 
+vtkCxxRevisionMacro(vtkPKdTree, "1.43");
 vtkStandardNewMacro(vtkPKdTree);
 
 const int vtkPKdTree::NoRegionAssignment = 0;   // default

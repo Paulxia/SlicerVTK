@@ -53,7 +53,7 @@ public:
 
   // Description:
   // Standard methods for instances of this class.
-  vtkTypeMacro(vtkParallelopipedRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkParallelopipedRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

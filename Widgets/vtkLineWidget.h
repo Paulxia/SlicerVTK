@@ -92,7 +92,7 @@ public:
   // Instantiate the object.
   static vtkLineWidget *New();
 
-  vtkTypeMacro(vtkLineWidget,vtk3DWidget);
+  vtkTypeRevisionMacro(vtkLineWidget,vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -30,6 +30,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkUniformVariables.h"
 #include "vtkTextureUnitManager.h"
 
+vtkCxxRevisionMacro(vtkDepthPeelingPass, "1.8");
 vtkStandardNewMacro(vtkDepthPeelingPass);
 vtkCxxSetObjectMacro(vtkDepthPeelingPass,TranslucentPass,vtkRenderPass);
 

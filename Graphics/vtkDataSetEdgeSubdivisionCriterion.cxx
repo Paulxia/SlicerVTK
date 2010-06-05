@@ -23,6 +23,7 @@
 # pragma warning (disable: 4996) /* 'vtkstd::_Copy_opt' was declared deprecated */
 #endif
 
+vtkCxxRevisionMacro(vtkDataSetEdgeSubdivisionCriterion,"1.1");
 vtkStandardNewMacro(vtkDataSetEdgeSubdivisionCriterion);
 
 vtkDataSetEdgeSubdivisionCriterion::vtkDataSetEdgeSubdivisionCriterion()

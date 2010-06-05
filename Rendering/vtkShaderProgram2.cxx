@@ -29,6 +29,7 @@
 #include "vtkStdString.h"
 
 vtkStandardNewMacro(vtkShaderProgram2);
+vtkCxxRevisionMacro(vtkShaderProgram2, "1.14");
 vtkCxxSetObjectMacro(vtkShaderProgram2,UniformVariables,vtkUniformVariables);
 
 //----------------------------------------------------------------------------

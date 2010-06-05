@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkHierarchicalBoxDataIterator);
+vtkCxxRevisionMacro(vtkHierarchicalBoxDataIterator, "1.1");
 //----------------------------------------------------------------------------
 vtkHierarchicalBoxDataIterator::vtkHierarchicalBoxDataIterator()
 {

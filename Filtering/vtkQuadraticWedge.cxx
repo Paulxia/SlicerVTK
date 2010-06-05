@@ -25,6 +25,7 @@
 #include "vtkQuadraticTriangle.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkQuadraticWedge, "1.15");
 vtkStandardNewMacro(vtkQuadraticWedge);
 
 //----------------------------------------------------------------------------

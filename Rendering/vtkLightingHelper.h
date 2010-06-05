@@ -35,7 +35,7 @@ class VTK_RENDERING_EXPORT vtkLightingHelper : public vtkObject
 {
 public:
   static vtkLightingHelper* New();
-  vtkTypeMacro(vtkLightingHelper, vtkObject);
+  vtkTypeRevisionMacro(vtkLightingHelper, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

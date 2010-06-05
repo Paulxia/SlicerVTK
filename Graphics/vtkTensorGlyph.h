@@ -81,7 +81,7 @@
 class VTK_GRAPHICS_EXPORT vtkTensorGlyph : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkTensorGlyph,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTensorGlyph,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

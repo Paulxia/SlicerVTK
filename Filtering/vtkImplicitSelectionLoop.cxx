@@ -22,6 +22,7 @@
 #include "vtkPoints.h"
 #include "vtkPolygon.h"
 
+vtkCxxRevisionMacro(vtkImplicitSelectionLoop, "1.21");
 vtkStandardNewMacro(vtkImplicitSelectionLoop);
 vtkCxxSetObjectMacro(vtkImplicitSelectionLoop, Loop,vtkPoints);
 

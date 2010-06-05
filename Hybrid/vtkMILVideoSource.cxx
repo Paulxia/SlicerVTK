@@ -21,6 +21,7 @@
 #include <ctype.h>
 #include <string.h>
 
+vtkCxxRevisionMacro(vtkMILVideoSource, "1.24");
 vtkStandardNewMacro(vtkMILVideoSource);
 
 //----------------------------------------------------------------------------

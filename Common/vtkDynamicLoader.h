@@ -35,7 +35,7 @@ class VTK_COMMON_EXPORT vtkDynamicLoader : public vtkObject
 {
 public:
   static vtkDynamicLoader* New();
-  vtkTypeMacro(vtkDynamicLoader,vtkObject);
+  vtkTypeRevisionMacro(vtkDynamicLoader,vtkObject);
 
   //BTX
   // Description:

@@ -32,7 +32,7 @@
 class VTK_PARALLEL_EXPORT vtkImageRenderManager : public vtkParallelRenderManager
 {
 public:
-  vtkTypeMacro(vtkImageRenderManager, vtkParallelRenderManager);
+  vtkTypeRevisionMacro(vtkImageRenderManager, vtkParallelRenderManager);
   static vtkImageRenderManager *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

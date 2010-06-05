@@ -28,7 +28,7 @@
 class VTK_PARALLEL_EXPORT vtkPCellDataToPointData : public vtkCellDataToPointData
 {
 public:
-  vtkTypeMacro(vtkPCellDataToPointData,vtkCellDataToPointData);
+  vtkTypeRevisionMacro(vtkPCellDataToPointData,vtkCellDataToPointData);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkPCellDataToPointData *New();

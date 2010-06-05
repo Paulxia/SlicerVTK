@@ -32,7 +32,7 @@ class VTK_COMMON_EXPORT vtkWin32OutputWindow : public vtkOutputWindow
 {
 public:
 // Methods from vtkObject
-  vtkTypeMacro(vtkWin32OutputWindow,vtkOutputWindow);
+  vtkTypeRevisionMacro(vtkWin32OutputWindow,vtkOutputWindow);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

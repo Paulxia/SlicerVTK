@@ -24,6 +24,7 @@
 #include <math.h>
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLActor, "1.31");
 vtkStandardNewMacro(vtkOpenGLActor);
 #endif
 

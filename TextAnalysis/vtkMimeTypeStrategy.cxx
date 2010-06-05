@@ -20,6 +20,7 @@
 
 #include <vtkMimeTypeStrategy.h>
 
+vtkCxxRevisionMacro(vtkMimeTypeStrategy, "1.2");
 
 vtkMimeTypeStrategy::vtkMimeTypeStrategy()
 {

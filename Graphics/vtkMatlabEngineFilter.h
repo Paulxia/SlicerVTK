@@ -49,7 +49,7 @@ public:
 
   static vtkMatlabEngineFilter *New();
 
-  vtkTypeMacro(vtkMatlabEngineFilter, vtkDataObjectAlgorithm );
+  vtkTypeRevisionMacro(vtkMatlabEngineFilter, vtkDataObjectAlgorithm );
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

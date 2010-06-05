@@ -26,7 +26,7 @@ class VTK_FILTERING_EXPORT vtkLine : public vtkCell
 {
 public:
   static vtkLine *New();
-  vtkTypeMacro(vtkLine,vtkCell);
+  vtkTypeRevisionMacro(vtkLine,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

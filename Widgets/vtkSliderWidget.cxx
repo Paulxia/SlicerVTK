@@ -24,6 +24,7 @@
 #include "vtkEvent.h"
 #include "vtkWidgetEvent.h"
 
+vtkCxxRevisionMacro(vtkSliderWidget, "1.7");
 vtkStandardNewMacro(vtkSliderWidget);
 
 //----------------------------------------------------------------------------------

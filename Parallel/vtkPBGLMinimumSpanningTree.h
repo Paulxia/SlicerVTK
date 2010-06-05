@@ -42,7 +42,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLMinimumSpanningTree : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLMinimumSpanningTree *New();
-  vtkTypeMacro(vtkPBGLMinimumSpanningTree, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLMinimumSpanningTree, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

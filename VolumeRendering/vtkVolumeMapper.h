@@ -42,7 +42,7 @@ class vtkWindow;
 class VTK_VOLUMERENDERING_EXPORT vtkVolumeMapper : public vtkAbstractVolumeMapper
 {
 public:
-  vtkTypeMacro(vtkVolumeMapper,vtkAbstractVolumeMapper);
+  vtkTypeRevisionMacro(vtkVolumeMapper,vtkAbstractVolumeMapper);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

@@ -44,7 +44,7 @@ class VTK_FILTERING_EXPORT vtkPiecewiseFunctionAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkPiecewiseFunctionAlgorithm *New();
-  vtkTypeMacro(vtkPiecewiseFunctionAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkPiecewiseFunctionAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -76,7 +76,7 @@ class VTK_COMMON_EXPORT vtkFastNumericConversion : public vtkObject
 {
 public:
   static vtkFastNumericConversion *New();
-  vtkTypeMacro(vtkFastNumericConversion, vtkObject);
+  vtkTypeRevisionMacro(vtkFastNumericConversion, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

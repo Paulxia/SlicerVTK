@@ -49,6 +49,7 @@ public:
 // VFW compressed formats are listed at http://www.webartz.com/fourcc/
 #define VTK_BI_UYVY 0x59565955
 
+vtkCxxRevisionMacro(vtkWin32VideoSource, "1.31");
 vtkStandardNewMacro(vtkWin32VideoSource);
 
 //----------------------------------------------------------------------------

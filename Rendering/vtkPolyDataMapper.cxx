@@ -21,6 +21,7 @@
 #include "vtkPolyData.h"
 #include "vtkRenderWindow.h"
 
+vtkCxxRevisionMacro(vtkPolyDataMapper, "1.50");
 
 //----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

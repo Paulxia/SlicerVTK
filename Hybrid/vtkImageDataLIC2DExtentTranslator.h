@@ -27,7 +27,7 @@ class VTK_HYBRID_EXPORT vtkImageDataLIC2DExtentTranslator : public vtkExtentTran
 {
 public:
   static vtkImageDataLIC2DExtentTranslator* New();
-  vtkTypeMacro(vtkImageDataLIC2DExtentTranslator, vtkExtentTranslator);
+  vtkTypeRevisionMacro(vtkImageDataLIC2DExtentTranslator, vtkExtentTranslator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

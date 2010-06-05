@@ -21,6 +21,7 @@
 #include <vtkstd/string>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkEnSightMasterServerReader, "1.12");
 vtkStandardNewMacro(vtkEnSightMasterServerReader);
 
 static int vtkEnSightMasterServerReaderStartsWith(const char* str1, const char* str2)

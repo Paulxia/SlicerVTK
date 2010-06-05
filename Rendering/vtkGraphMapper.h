@@ -56,7 +56,7 @@ class VTK_RENDERING_EXPORT vtkGraphMapper : public vtkMapper
 {
 public:
   static vtkGraphMapper *New();
-  vtkTypeMacro(vtkGraphMapper,vtkMapper);
+  vtkTypeRevisionMacro(vtkGraphMapper,vtkMapper);
   void PrintSelf(ostream& os, vtkIndent indent);
   void Render(vtkRenderer *ren, vtkActor *act);
   

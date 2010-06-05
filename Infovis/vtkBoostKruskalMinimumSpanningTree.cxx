@@ -44,6 +44,7 @@ PURPOSE.  See the above copyright notice for more information.
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkBoostKruskalMinimumSpanningTree, "1.5");
 vtkStandardNewMacro(vtkBoostKruskalMinimumSpanningTree);
 
 // Constructor/Destructor

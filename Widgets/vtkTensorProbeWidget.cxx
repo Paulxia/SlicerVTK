@@ -30,6 +30,7 @@
 #include "vtkPolyData.h"
 #include "vtkCellArray.h"
 
+vtkCxxRevisionMacro(vtkTensorProbeWidget, "1.1");
 vtkStandardNewMacro(vtkTensorProbeWidget);
 
 //----------------------------------------------------------------------

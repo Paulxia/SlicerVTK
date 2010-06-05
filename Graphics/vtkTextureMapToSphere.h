@@ -46,7 +46,7 @@
 class VTK_GRAPHICS_EXPORT vtkTextureMapToSphere : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTextureMapToSphere,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTextureMapToSphere,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

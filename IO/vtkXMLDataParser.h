@@ -35,7 +35,7 @@ class vtkDataCompressor;
 class VTK_IO_EXPORT vtkXMLDataParser : public vtkXMLParser
 {
 public:
-  vtkTypeMacro(vtkXMLDataParser,vtkXMLParser);
+  vtkTypeRevisionMacro(vtkXMLDataParser,vtkXMLParser);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkXMLDataParser* New();
 

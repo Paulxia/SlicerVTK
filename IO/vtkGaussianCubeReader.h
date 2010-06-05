@@ -33,7 +33,7 @@ class VTK_IO_EXPORT vtkGaussianCubeReader : public vtkMoleculeReaderBase
 {
 public:
   static vtkGaussianCubeReader *New();
-  vtkTypeMacro(vtkGaussianCubeReader,vtkMoleculeReaderBase);
+  vtkTypeRevisionMacro(vtkGaussianCubeReader,vtkMoleculeReaderBase);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkGetObjectMacro(Transform,vtkTransform);

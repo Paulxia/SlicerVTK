@@ -38,6 +38,7 @@
 
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkPolyDataSilhouette, "1.2");
 vtkStandardNewMacro(vtkPolyDataSilhouette);
 
 vtkCxxSetObjectMacro(vtkPolyDataSilhouette,Camera,vtkCamera);

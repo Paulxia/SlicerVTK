@@ -42,7 +42,7 @@ public:
   //ETX
 
   static vtkCellLinks *New();
-  vtkTypeMacro(vtkCellLinks,vtkObject);
+  vtkTypeRevisionMacro(vtkCellLinks,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

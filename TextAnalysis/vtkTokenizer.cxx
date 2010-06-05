@@ -63,6 +63,7 @@ public:
   DelimiterRanges KeptDelimiters;
 };
 
+vtkCxxRevisionMacro(vtkTokenizer, "1.6");
 vtkStandardNewMacro(vtkTokenizer);
 
 vtkTokenizer::vtkTokenizer() :

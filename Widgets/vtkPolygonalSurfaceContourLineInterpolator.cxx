@@ -26,6 +26,8 @@
 #include "vtkPolygonalSurfacePointPlacer.h"
 #include "vtkDijkstraGraphGeodesicPath.h"
 
+vtkCxxRevisionMacro(vtkPolygonalSurfaceContourLineInterpolator,
+                                            "1.6");
 vtkStandardNewMacro(vtkPolygonalSurfaceContourLineInterpolator);
 
 //----------------------------------------------------------------------

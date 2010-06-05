@@ -27,6 +27,7 @@
 #include "vtkTextProperty.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkDistanceRepresentation2D, "1.8");
 vtkStandardNewMacro(vtkDistanceRepresentation2D);
 
 //----------------------------------------------------------------------

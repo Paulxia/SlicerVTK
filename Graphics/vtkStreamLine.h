@@ -49,7 +49,7 @@
 class VTK_GRAPHICS_EXPORT vtkStreamLine : public vtkStreamer
 {
 public:
-  vtkTypeMacro(vtkStreamLine,vtkStreamer);
+  vtkTypeRevisionMacro(vtkStreamLine,vtkStreamer);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

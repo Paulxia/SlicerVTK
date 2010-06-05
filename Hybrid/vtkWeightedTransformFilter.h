@@ -75,7 +75,7 @@ class VTK_HYBRID_EXPORT vtkWeightedTransformFilter : public vtkPointSetAlgorithm
 {
 public:
   static vtkWeightedTransformFilter *New();
-  vtkTypeMacro(vtkWeightedTransformFilter,vtkPointSetAlgorithm);
+  vtkTypeRevisionMacro(vtkWeightedTransformFilter,vtkPointSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

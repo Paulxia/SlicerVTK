@@ -42,7 +42,7 @@ class vtkFloatArray;
 class VTK_VOLUMERENDERING_EXPORT vtkMesaProjectedTetrahedraMapper : public vtkProjectedTetrahedraMapper
 {
 public:
-  vtkTypeMacro(vtkMesaProjectedTetrahedraMapper,
+  vtkTypeRevisionMacro(vtkMesaProjectedTetrahedraMapper,
                        vtkProjectedTetrahedraMapper);
   static vtkMesaProjectedTetrahedraMapper *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);

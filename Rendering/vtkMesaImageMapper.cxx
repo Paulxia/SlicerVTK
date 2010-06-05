@@ -39,4 +39,5 @@
 #include "vtkOpenGLImageMapper.cxx"
 #undef vtkOpenGLImageMapper
 
+vtkCxxRevisionMacro(vtkMesaImageMapper, "1.14");
 vtkStandardNewMacro(vtkMesaImageMapper);

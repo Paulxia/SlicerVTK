@@ -24,6 +24,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkGenericInterpolatedVelocityField, "1.2");
 vtkStandardNewMacro(vtkGenericInterpolatedVelocityField);
 
 typedef vtkstd::vector< vtkGenericDataSet* > DataSetsTypeBase;

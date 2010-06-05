@@ -44,7 +44,7 @@ public:
   // Description:
   // Standard VTK methods.
   static vtkGenericDataSetTessellator *New();
-  vtkTypeMacro(vtkGenericDataSetTessellator,
+  vtkTypeRevisionMacro(vtkGenericDataSetTessellator,
                        vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 

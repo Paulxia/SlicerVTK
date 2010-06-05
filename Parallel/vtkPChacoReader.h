@@ -36,7 +36,7 @@ class VTK_PARALLEL_EXPORT vtkPChacoReader : public vtkChacoReader
 {
 public:
   static vtkPChacoReader *New();
-  vtkTypeMacro(vtkPChacoReader,vtkChacoReader);
+  vtkTypeRevisionMacro(vtkPChacoReader,vtkChacoReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -33,7 +33,7 @@ class vtkExtentSplitterInternals;
 class VTK_COMMON_EXPORT vtkExtentSplitter : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkExtentSplitter,vtkObject);
+  vtkTypeRevisionMacro(vtkExtentSplitter,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);  
   static vtkExtentSplitter *New();
   

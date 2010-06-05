@@ -36,7 +36,7 @@ class VTK_GEOVIS_EXPORT vtkGeoSampleArcs : public vtkPolyDataAlgorithm
 public:
   static vtkGeoSampleArcs *New();
 
-  vtkTypeMacro(vtkGeoSampleArcs,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGeoSampleArcs,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

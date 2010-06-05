@@ -32,7 +32,7 @@ class vtkStdString;
 class VTK_CHARTS_EXPORT vtkPlotParallelCoordinates : public vtkPlot
 {
 public:
-  vtkTypeMacro(vtkPlotParallelCoordinates, vtkPlot);
+  vtkTypeRevisionMacro(vtkPlotParallelCoordinates, vtkPlot);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

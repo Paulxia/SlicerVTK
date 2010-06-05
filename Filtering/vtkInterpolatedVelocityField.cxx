@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro( vtkInterpolatedVelocityField, "1.13" );
 vtkStandardNewMacro( vtkInterpolatedVelocityField ); 
 
 //----------------------------------------------------------------------------

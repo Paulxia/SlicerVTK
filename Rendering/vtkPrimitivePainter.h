@@ -35,7 +35,7 @@ class vtkUnsignedCharArray;
 class VTK_RENDERING_EXPORT vtkPrimitivePainter : public vtkPolyDataPainter
 {
 public:
-  vtkTypeMacro(vtkPrimitivePainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkPrimitivePainter, vtkPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

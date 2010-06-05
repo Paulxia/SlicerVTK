@@ -23,6 +23,7 @@
 #include "vtkTransform.h"
 #include "vtkUnsignedShortArray.h"
 
+vtkCxxRevisionMacro(vtkVolume16Reader, "1.57");
 vtkStandardNewMacro(vtkVolume16Reader);
 
 vtkCxxSetObjectMacro(vtkVolume16Reader,Transform,vtkTransform);

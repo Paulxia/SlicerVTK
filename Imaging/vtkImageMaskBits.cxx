@@ -20,6 +20,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageMaskBits, "1.18");
 vtkStandardNewMacro(vtkImageMaskBits);
 
 vtkImageMaskBits::vtkImageMaskBits()

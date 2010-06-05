@@ -48,7 +48,7 @@ class VTK_FILTERING_EXPORT vtkPassInputTypeAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkPassInputTypeAlgorithm *New();
-  vtkTypeMacro(vtkPassInputTypeAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkPassInputTypeAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

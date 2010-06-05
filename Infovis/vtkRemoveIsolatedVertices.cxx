@@ -34,6 +34,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkRemoveIsolatedVertices, "1.1");
 vtkStandardNewMacro(vtkRemoveIsolatedVertices);
 //----------------------------------------------------------------------------
 vtkRemoveIsolatedVertices::vtkRemoveIsolatedVertices()

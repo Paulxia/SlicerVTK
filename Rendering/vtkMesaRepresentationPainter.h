@@ -28,7 +28,7 @@ class VTK_RENDERING_EXPORT vtkMesaRepresentationPainter :
 {
 public:
   static vtkMesaRepresentationPainter* New();
-  vtkTypeMacro(vtkMesaRepresentationPainter, vtkRepresentationPainter);
+  vtkTypeRevisionMacro(vtkMesaRepresentationPainter, vtkRepresentationPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

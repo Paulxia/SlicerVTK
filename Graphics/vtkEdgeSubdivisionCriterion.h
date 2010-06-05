@@ -40,7 +40,7 @@ class vtkStreamingTessellator;
 class VTK_GRAPHICS_EXPORT vtkEdgeSubdivisionCriterion : public vtkObject
 {
   public:
-    vtkTypeMacro(vtkEdgeSubdivisionCriterion,vtkObject);
+    vtkTypeRevisionMacro(vtkEdgeSubdivisionCriterion,vtkObject);
     virtual void PrintSelf( ostream& os, vtkIndent indent );
 
     // Description:

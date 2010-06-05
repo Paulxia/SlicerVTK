@@ -31,6 +31,7 @@
 
 //-----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkVisibilitySort, "1.3");
 vtkCxxSetObjectMacro(vtkVisibilitySort, Camera, vtkCamera);
 vtkCxxSetObjectMacro(vtkVisibilitySort, Input, vtkDataSet);
 

@@ -39,7 +39,7 @@ class vtkInformationVector;
 class VTK_GRAPHICS_EXPORT vtkQuadraturePointsGenerator : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkQuadraturePointsGenerator,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkQuadraturePointsGenerator,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkQuadraturePointsGenerator *New();
 

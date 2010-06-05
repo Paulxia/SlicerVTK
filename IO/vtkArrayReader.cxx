@@ -31,6 +31,7 @@
 #include <vtkstd/stdexcept>
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkArrayReader, "1.4");
 vtkStandardNewMacro(vtkArrayReader);
 
 namespace {

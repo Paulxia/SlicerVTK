@@ -119,6 +119,7 @@ int vtkGraphicsFactory::OffScreenOnlyMode = 1;
 int vtkGraphicsFactory::OffScreenOnlyMode = 0;
 #endif
 
+vtkCxxRevisionMacro(vtkGraphicsFactory, "1.43");
 vtkStandardNewMacro(vtkGraphicsFactory);
 
 const char *vtkGraphicsFactory::GetRenderLibrary()
@@ -230,7 +231,7 @@ vtkObject* vtkGraphicsFactory::CreateInstance(const char* vtkclassname )
     }
   if(strcmp(vtkclassname, "vtkRenderWindowInteractor") == 0)
     {
-    return 0; // there is no interactor with OSMesa
+    return vtkRenderWindowInteractor::New();
     }
 #endif
 

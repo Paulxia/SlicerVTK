@@ -40,7 +40,7 @@ class VTK_RENDERING_EXPORT vtkRendererSource : public vtkAlgorithm
 {
 public:
   static vtkRendererSource *New();
-  vtkTypeMacro(vtkRendererSource,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkRendererSource,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

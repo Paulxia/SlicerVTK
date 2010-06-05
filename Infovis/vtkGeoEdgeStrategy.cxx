@@ -37,6 +37,7 @@
 #include <vtksys/stl/vector>
 #include <vtksys/stl/map>
 
+vtkCxxRevisionMacro(vtkGeoEdgeStrategy, "1.2");
 vtkStandardNewMacro(vtkGeoEdgeStrategy);
 
 vtkGeoEdgeStrategy::vtkGeoEdgeStrategy()

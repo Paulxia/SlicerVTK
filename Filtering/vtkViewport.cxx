@@ -20,6 +20,7 @@
 #include "vtkPropCollection.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkViewport, "1.14");
 
 //----------------------------------------------------------------------------
 // Create a vtkViewport with a black background, a white ambient light,

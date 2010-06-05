@@ -20,6 +20,7 @@
 #include "vtkCommand.h"
 
 
+vtkCxxRevisionMacro(vtkInteractorStyleUser, "1.35");
 vtkStandardNewMacro(vtkInteractorStyleUser);
 
 //----------------------------------------------------------------------------

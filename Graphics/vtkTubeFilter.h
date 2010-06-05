@@ -72,7 +72,7 @@ class vtkPoints;
 class VTK_GRAPHICS_EXPORT vtkTubeFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkTubeFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTubeFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

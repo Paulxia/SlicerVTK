@@ -27,6 +27,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkDijkstraImageContourLineInterpolator,"1.5");
 vtkStandardNewMacro(vtkDijkstraImageContourLineInterpolator);
 
 //----------------------------------------------------------------------

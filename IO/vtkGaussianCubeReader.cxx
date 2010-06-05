@@ -27,6 +27,7 @@
 
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkGaussianCubeReader, "1.16");
 vtkStandardNewMacro(vtkGaussianCubeReader);
 
 //----------------------------------------------------------------------------

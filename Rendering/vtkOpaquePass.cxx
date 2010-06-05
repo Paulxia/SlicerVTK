@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkOpaquePass, "1.1");
 vtkStandardNewMacro(vtkOpaquePass);
 
 // ----------------------------------------------------------------------------

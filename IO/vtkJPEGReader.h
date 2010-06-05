@@ -29,7 +29,7 @@ class VTK_IO_EXPORT vtkJPEGReader : public vtkImageReader2
 {
 public:
   static vtkJPEGReader *New();
-  vtkTypeMacro(vtkJPEGReader,vtkImageReader2);
+  vtkTypeRevisionMacro(vtkJPEGReader,vtkImageReader2);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

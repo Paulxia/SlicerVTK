@@ -16,6 +16,7 @@
 #include "vtkGPUInfo.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkGPUInfo, "1.1");
 vtkStandardNewMacro(vtkGPUInfo);
 
 // ----------------------------------------------------------------------------

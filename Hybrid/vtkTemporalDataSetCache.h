@@ -36,7 +36,7 @@ class VTK_HYBRID_EXPORT vtkTemporalDataSetCache : public vtkTemporalDataSetAlgor
 {
 public:
   static vtkTemporalDataSetCache *New();
-  vtkTypeMacro(vtkTemporalDataSetCache, vtkTemporalDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTemporalDataSetCache, vtkTemporalDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

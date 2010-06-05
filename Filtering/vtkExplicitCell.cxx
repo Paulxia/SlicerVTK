@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkDataSet.h"
 
+vtkCxxRevisionMacro(vtkExplicitCell, "1.2");
 vtkCxxSetObjectMacro(vtkExplicitCell,DataSet,vtkDataSet);
 
 //----------------------------------------------------------------------------

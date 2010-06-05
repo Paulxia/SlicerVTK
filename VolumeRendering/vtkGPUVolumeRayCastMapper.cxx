@@ -33,6 +33,7 @@
 #include "vtkGPUInfoList.h"
 #include "vtkGPUInfo.h"
 
+vtkCxxRevisionMacro(vtkGPUVolumeRayCastMapper, "1.7");
 vtkInstantiatorNewMacro(vtkGPUVolumeRayCastMapper);
 vtkCxxSetObjectMacro(vtkGPUVolumeRayCastMapper, MaskInput, vtkImageData);
 vtkCxxSetObjectMacro(vtkGPUVolumeRayCastMapper, TransformedInput, vtkImageData);

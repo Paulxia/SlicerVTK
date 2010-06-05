@@ -38,7 +38,7 @@ class VTK_GRAPHICS_EXPORT vtkDashedStreamLine : public vtkStreamLine
 {
 public:
   static vtkDashedStreamLine *New();
-  vtkTypeMacro(vtkDashedStreamLine,vtkStreamLine);
+  vtkTypeRevisionMacro(vtkDashedStreamLine,vtkStreamLine);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

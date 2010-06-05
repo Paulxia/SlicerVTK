@@ -39,6 +39,7 @@
 #include <vtksys/stl/map>
 using vtksys_stl::map;
 
+vtkCxxRevisionMacro(vtkGeoSampleArcs, "1.9");
 vtkStandardNewMacro(vtkGeoSampleArcs);
 
 vtkGeoSampleArcs::vtkGeoSampleArcs()

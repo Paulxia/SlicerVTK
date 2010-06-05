@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkCuller.h"
 
+vtkCxxRevisionMacro(vtkCuller, "1.4");
 
 vtkCuller::vtkCuller()
 {

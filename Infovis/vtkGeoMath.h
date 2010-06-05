@@ -31,7 +31,7 @@ class VTK_INFOVIS_EXPORT vtkGeoMath : public vtkObject
 {
 public:
   static vtkGeoMath *New();
-  vtkTypeMacro(vtkGeoMath, vtkObject);
+  vtkTypeRevisionMacro(vtkGeoMath, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

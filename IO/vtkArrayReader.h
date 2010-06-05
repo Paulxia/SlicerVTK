@@ -43,7 +43,7 @@ class VTK_IO_EXPORT vtkArrayReader :
 {
 public:
   static vtkArrayReader* New();
-  vtkTypeMacro(vtkArrayReader, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkArrayReader, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

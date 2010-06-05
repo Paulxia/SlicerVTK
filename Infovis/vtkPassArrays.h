@@ -63,7 +63,7 @@ class VTK_INFOVIS_EXPORT vtkPassArrays : public vtkDataObjectAlgorithm
 {
 public:
   static vtkPassArrays* New();
-  vtkTypeMacro(vtkPassArrays,vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkPassArrays,vtkDataObjectAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

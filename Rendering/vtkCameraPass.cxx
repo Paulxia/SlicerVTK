@@ -25,6 +25,7 @@
 #include "vtkCamera.h"
 #include "vtkFrameBufferObject.h"
 
+vtkCxxRevisionMacro(vtkCameraPass, "1.5");
 vtkStandardNewMacro(vtkCameraPass);
 vtkCxxSetObjectMacro(vtkCameraPass,DelegatePass,vtkRenderPass);
 

@@ -39,6 +39,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkBoostBrandesCentrality, "1.7");
 vtkStandardNewMacro(vtkBoostBrandesCentrality);
 
 // Constructor/Destructor

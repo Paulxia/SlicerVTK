@@ -31,7 +31,7 @@ class VTK_INFOVIS_EXPORT vtkTreeOrbitLayoutStrategy : public vtkGraphLayoutStrat
 public:
   static vtkTreeOrbitLayoutStrategy *New();
 
-  vtkTypeMacro(vtkTreeOrbitLayoutStrategy, vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkTreeOrbitLayoutStrategy, vtkGraphLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

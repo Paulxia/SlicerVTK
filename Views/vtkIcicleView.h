@@ -34,7 +34,7 @@ class VTK_VIEWS_EXPORT vtkIcicleView : public vtkTreeAreaView
 {
 public:
   static vtkIcicleView *New();
-  vtkTypeMacro(vtkIcicleView, vtkTreeAreaView);
+  vtkTypeRevisionMacro(vtkIcicleView, vtkTreeAreaView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

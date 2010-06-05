@@ -58,7 +58,7 @@ public:
 
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkCompassRepresentation,
+  vtkTypeRevisionMacro(vtkCompassRepresentation,
                        vtkContinuousValueWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
   

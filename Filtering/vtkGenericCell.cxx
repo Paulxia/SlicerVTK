@@ -51,6 +51,7 @@
 #include "vtkBiQuadraticQuadraticHexahedron.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkGenericCell, "1.8");
 vtkStandardNewMacro(vtkGenericCell);
 
 //----------------------------------------------------------------------------

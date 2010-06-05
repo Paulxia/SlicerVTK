@@ -32,6 +32,7 @@
 
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkQtStatisticalBoxChartView, "1.3");
 vtkStandardNewMacro(vtkQtStatisticalBoxChartView);
 
 //-----------------------------------------------------------------------------

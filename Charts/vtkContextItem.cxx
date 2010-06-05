@@ -26,6 +26,7 @@
 #include "vtkObjectFactory.h"
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkContextItem, "1.8");
 vtkCxxSetObjectMacro(vtkContextItem, Transform, vtkTransform2D);
 
 //-----------------------------------------------------------------------------

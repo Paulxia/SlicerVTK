@@ -45,7 +45,7 @@ class vtkVariant;
 class VTK_INFOVIS_EXPORT vtkContingencyStatistics : public vtkBivariateStatisticsAlgorithm
 {
 public:
-  vtkTypeMacro(vtkContingencyStatistics, vtkBivariateStatisticsAlgorithm);
+  vtkTypeRevisionMacro(vtkContingencyStatistics, vtkBivariateStatisticsAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkContingencyStatistics* New();
 

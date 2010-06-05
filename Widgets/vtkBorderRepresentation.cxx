@@ -26,6 +26,7 @@
 #include "vtkObjectFactory.h"
 
 
+vtkCxxRevisionMacro(vtkBorderRepresentation, "1.8");
 vtkStandardNewMacro(vtkBorderRepresentation);
 
 

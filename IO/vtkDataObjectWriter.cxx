@@ -18,6 +18,7 @@
 #include "vtkInformation.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkDataObjectWriter, "1.16");
 vtkStandardNewMacro(vtkDataObjectWriter);
 
 vtkDataObjectWriter::vtkDataObjectWriter()

@@ -82,7 +82,7 @@ class VTK_VIEWS_EXPORT vtkParallelCoordinatesRepresentation : public vtkRendered
 {
 public:
   static vtkParallelCoordinatesRepresentation* New();
-  vtkTypeMacro(vtkParallelCoordinatesRepresentation, vtkRenderedRepresentation);
+  vtkTypeRevisionMacro(vtkParallelCoordinatesRepresentation, vtkRenderedRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -30,7 +30,7 @@ class vtkStructuredGrid;
 class VTK_FILTERING_EXPORT vtkStructuredGridToPolyDataFilter : public vtkPolyDataSource
 {
 public:
-  vtkTypeMacro(vtkStructuredGridToPolyDataFilter,vtkPolyDataSource);
+  vtkTypeRevisionMacro(vtkStructuredGridToPolyDataFilter,vtkPolyDataSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

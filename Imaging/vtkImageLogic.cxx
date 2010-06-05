@@ -23,6 +23,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageLogic, "1.36");
 vtkStandardNewMacro(vtkImageLogic);
 
 //----------------------------------------------------------------------------

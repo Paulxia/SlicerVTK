@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageNormalize : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageNormalize *New();
-  vtkTypeMacro(vtkImageNormalize,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageNormalize,vtkThreadedImageAlgorithm);
 
 protected:
   vtkImageNormalize();

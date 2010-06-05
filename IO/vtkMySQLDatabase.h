@@ -47,7 +47,7 @@ class VTK_IO_EXPORT vtkMySQLDatabase : public vtkSQLDatabase
 //ETX
 
 public:
-  vtkTypeMacro(vtkMySQLDatabase, vtkSQLDatabase);
+  vtkTypeRevisionMacro(vtkMySQLDatabase, vtkSQLDatabase);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkMySQLDatabase *New();
 

@@ -33,6 +33,7 @@
 #include "vtkPoints.h"
 #include "vtkTree.h"
 
+vtkCxxRevisionMacro(vtkAssignCoordinatesLayoutStrategy, "1.1");
 vtkStandardNewMacro(vtkAssignCoordinatesLayoutStrategy);
 
 vtkAssignCoordinatesLayoutStrategy::vtkAssignCoordinatesLayoutStrategy()

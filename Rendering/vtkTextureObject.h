@@ -94,7 +94,7 @@ public:
   //ETX
   
   static vtkTextureObject* New();
-  vtkTypeMacro(vtkTextureObject, vtkObject);
+  vtkTypeRevisionMacro(vtkTextureObject, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

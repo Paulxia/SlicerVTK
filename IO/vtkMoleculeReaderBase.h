@@ -35,7 +35,7 @@ class vtkPoints;
 class VTK_IO_EXPORT vtkMoleculeReaderBase : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkMoleculeReaderBase,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkMoleculeReaderBase,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkSetStringMacro(FileName);

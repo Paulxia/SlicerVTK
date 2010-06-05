@@ -18,6 +18,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkRectilinearGrid.h"
 
+vtkCxxRevisionMacro(vtkRectilinearGridSource, "1.22");
 
 //----------------------------------------------------------------------------
 vtkRectilinearGridSource::vtkRectilinearGridSource()

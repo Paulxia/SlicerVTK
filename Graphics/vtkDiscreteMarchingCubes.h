@@ -59,7 +59,7 @@ class VTK_GRAPHICS_EXPORT vtkDiscreteMarchingCubes : public vtkMarchingCubes
 {
 public:
   static vtkDiscreteMarchingCubes *New();
-  vtkTypeMacro(vtkDiscreteMarchingCubes,vtkMarchingCubes);
+  vtkTypeRevisionMacro(vtkDiscreteMarchingCubes,vtkMarchingCubes);
 
 protected:
   vtkDiscreteMarchingCubes();

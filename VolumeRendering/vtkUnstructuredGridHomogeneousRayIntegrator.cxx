@@ -37,6 +37,7 @@
 
 //-----------------------------------------------------------------------------
 
+vtkCxxRevisionMacro(vtkUnstructuredGridHomogeneousRayIntegrator, "1.2");
 vtkStandardNewMacro(vtkUnstructuredGridHomogeneousRayIntegrator);
 
 //-----------------------------------------------------------------------------

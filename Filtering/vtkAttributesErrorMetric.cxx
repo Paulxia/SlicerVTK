@@ -21,6 +21,7 @@
 #include "vtkGenericDataSet.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkAttributesErrorMetric,"1.9");
 vtkStandardNewMacro(vtkAttributesErrorMetric);
 
 //-----------------------------------------------------------------------------

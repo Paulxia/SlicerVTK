@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtk_zlib.h"
 
+vtkCxxRevisionMacro(vtkZLibDataCompressor, "1.6");
 vtkStandardNewMacro(vtkZLibDataCompressor);
 
 //----------------------------------------------------------------------------

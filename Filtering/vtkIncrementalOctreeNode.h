@@ -64,7 +64,7 @@ class vtkIdList;
 class VTK_FILTERING_EXPORT vtkIncrementalOctreeNode : public vtkObject
 {
 public:
-  vtkTypeMacro( vtkIncrementalOctreeNode, vtkObject );
+  vtkTypeRevisionMacro( vtkIncrementalOctreeNode, vtkObject );
   void PrintSelf( ostream & os, vtkIndent indent );
 
   static vtkIncrementalOctreeNode * New();

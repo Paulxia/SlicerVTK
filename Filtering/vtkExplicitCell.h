@@ -31,7 +31,7 @@ class vtkDataSet;
 class VTK_FILTERING_EXPORT vtkExplicitCell : public vtkNonLinearCell
 {
 public:
-  vtkTypeMacro(vtkExplicitCell,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkExplicitCell,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -49,7 +49,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkNGramExtraction :
 {
 public:
   static vtkNGramExtraction* New();
-  vtkTypeMacro(vtkNGramExtraction, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkNGramExtraction, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

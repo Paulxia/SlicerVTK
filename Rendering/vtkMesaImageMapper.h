@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkMesaImageMapper : public vtkImageMapper
 {
 public:
   static vtkMesaImageMapper *New();
-  vtkTypeMacro(vtkMesaImageMapper,vtkImageMapper);
+  vtkTypeRevisionMacro(vtkMesaImageMapper,vtkImageMapper);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

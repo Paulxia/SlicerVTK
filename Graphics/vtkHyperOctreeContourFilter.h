@@ -65,7 +65,7 @@ class vtkBitArray;
 class VTK_GRAPHICS_EXPORT vtkHyperOctreeContourFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkHyperOctreeContourFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkHyperOctreeContourFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

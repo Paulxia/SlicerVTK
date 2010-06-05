@@ -24,7 +24,7 @@ class VTK_VOLUMERENDERING_EXPORT vtkVolumeRenderingFactory : public vtkObject
 {
 public:
   static vtkVolumeRenderingFactory *New();
-  vtkTypeMacro(vtkVolumeRenderingFactory,vtkObject);
+  vtkTypeRevisionMacro(vtkVolumeRenderingFactory,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

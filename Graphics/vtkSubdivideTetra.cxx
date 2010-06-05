@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkSubdivideTetra, "1.29");
 vtkStandardNewMacro(vtkSubdivideTetra);
 
 //----------------------------------------------------------------------------

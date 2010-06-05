@@ -29,7 +29,7 @@ public:
   // Description:
   // Construct an instance of vtkImageConvolve filter.
   static vtkImageConvolve *New();
-  vtkTypeMacro(vtkImageConvolve,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageConvolve,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

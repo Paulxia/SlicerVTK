@@ -15,6 +15,7 @@
 #include "vtkMapperCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkMapperCollection, "1.8");
 vtkStandardNewMacro(vtkMapperCollection);
 
 void vtkMapperCollection::PrintSelf(ostream& os, vtkIndent indent)

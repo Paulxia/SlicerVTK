@@ -37,7 +37,7 @@ public:
   // Construct cone with angle of 45 degrees.
   static vtkCone *New();
 
-  vtkTypeMacro(vtkCone,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkCone,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description

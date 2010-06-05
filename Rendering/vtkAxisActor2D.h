@@ -66,7 +66,7 @@ class vtkTextProperty;
 class VTK_RENDERING_EXPORT vtkAxisActor2D : public vtkActor2D
 {
 public:
-  vtkTypeMacro(vtkAxisActor2D,vtkActor2D);
+  vtkTypeRevisionMacro(vtkAxisActor2D,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -57,7 +57,7 @@ class vtkUnsignedShortArray;
 class VTK_IO_EXPORT vtkVolume16Reader : public vtkVolumeReader
 {
 public:
-  vtkTypeMacro(vtkVolume16Reader,vtkVolumeReader);
+  vtkTypeRevisionMacro(vtkVolume16Reader,vtkVolumeReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

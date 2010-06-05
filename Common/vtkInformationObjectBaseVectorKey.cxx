@@ -33,6 +33,7 @@ private:
 
 
 //============================================================================
+vtkCxxRevisionMacro(vtkInformationObjectBaseVectorKey, "1.4");
 
 //----------------------------------------------------------------------------
 vtkInformationObjectBaseVectorKey::vtkInformationObjectBaseVectorKey(

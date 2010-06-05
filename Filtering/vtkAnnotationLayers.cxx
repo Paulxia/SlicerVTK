@@ -41,6 +41,7 @@
    affect other headers.  */
 #include <vtkstd/algorithm>
 
+vtkCxxRevisionMacro(vtkAnnotationLayers, "1.12");
 vtkStandardNewMacro(vtkAnnotationLayers);
 vtkCxxSetObjectMacro(vtkAnnotationLayers, CurrentAnnotation, vtkAnnotation);
 

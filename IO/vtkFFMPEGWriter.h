@@ -38,7 +38,7 @@ class VTK_IO_EXPORT vtkFFMPEGWriter : public vtkGenericMovieWriter
 {
 public:
   static vtkFFMPEGWriter *New();
-  vtkTypeMacro(vtkFFMPEGWriter,vtkGenericMovieWriter);
+  vtkTypeRevisionMacro(vtkFFMPEGWriter,vtkGenericMovieWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

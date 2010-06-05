@@ -32,6 +32,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkFiniteDifferenceGradientEstimator, "1.3");
 vtkStandardNewMacro(vtkFiniteDifferenceGradientEstimator);
 
 // This is the templated function that actually computes the EncodedNormal

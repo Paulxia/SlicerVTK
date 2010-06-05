@@ -30,7 +30,7 @@ class VTK_GRAPHICS_EXPORT vtkDiskSource : public vtkPolyDataAlgorithm
 {
 public:
   static vtkDiskSource *New();
-  vtkTypeMacro(vtkDiskSource,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDiskSource,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

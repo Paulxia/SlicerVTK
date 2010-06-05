@@ -67,7 +67,7 @@ class vtkPointData;
 class VTK_GRAPHICS_EXPORT vtkProgrammableGlyphFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkProgrammableGlyphFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkProgrammableGlyphFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

@@ -37,6 +37,7 @@
 #include "R.h"
 #include "Rmath.h"
 
+vtkCxxRevisionMacro(vtkRRandomTableSource, "1.3");
 vtkStandardNewMacro(vtkRRandomTableSource);
 
 class ColumnStatsInfo

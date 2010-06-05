@@ -33,7 +33,7 @@ class VTK_IMAGING_EXPORT vtkImageHybridMedian2D : public vtkImageSpatialAlgorith
 {
 public:
   static vtkImageHybridMedian2D *New();
-  vtkTypeMacro(vtkImageHybridMedian2D,vtkImageSpatialAlgorithm);
+  vtkTypeRevisionMacro(vtkImageHybridMedian2D,vtkImageSpatialAlgorithm);
 
 protected:
   vtkImageHybridMedian2D();

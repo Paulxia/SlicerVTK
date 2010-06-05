@@ -24,6 +24,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkSource.h"
 
+vtkCxxRevisionMacro(vtkProcessObject, "1.7");
 
 //----------------------------------------------------------------------------
 vtkProcessObject::vtkProcessObject()

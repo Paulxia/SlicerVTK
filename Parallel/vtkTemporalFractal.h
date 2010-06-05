@@ -38,7 +38,7 @@ class VTK_PARALLEL_EXPORT vtkTemporalFractal : public vtkTemporalDataSetAlgorith
 {
 public:
   static vtkTemporalFractal *New();
-  vtkTypeMacro(vtkTemporalFractal,vtkTemporalDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTemporalFractal,vtkTemporalDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

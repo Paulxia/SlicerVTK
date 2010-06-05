@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkMapperCollection : public vtkCollection
 {
  public:
   static vtkMapperCollection *New();
-  vtkTypeMacro(vtkMapperCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkMapperCollection,vtkCollection);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

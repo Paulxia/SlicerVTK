@@ -21,6 +21,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkTemporalDataSet, "1.3");
 vtkStandardNewMacro(vtkTemporalDataSet);
 
 //----------------------------------------------------------------------------

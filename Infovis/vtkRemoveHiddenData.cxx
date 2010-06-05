@@ -41,6 +41,7 @@
 #include "vtkSelectionNode.h"
 
 
+vtkCxxRevisionMacro(vtkRemoveHiddenData, "1.2");
 vtkStandardNewMacro(vtkRemoveHiddenData);
 
 vtkRemoveHiddenData::vtkRemoveHiddenData()

@@ -90,6 +90,7 @@ vtkOpenGLFreeTypeTextMapper_GetGL2PSFontName(vtkTextProperty *tprop,
 
 //----------------------------------------------------------------------------
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLFreeTypeTextMapper, "1.51");
 vtkStandardNewMacro(vtkOpenGLFreeTypeTextMapper);
 #endif
 

@@ -44,7 +44,7 @@ class VTK_INFOVIS_EXPORT vtkStackedTreeLayoutStrategy :
 {
 public:
   static vtkStackedTreeLayoutStrategy* New();
-  vtkTypeMacro(vtkStackedTreeLayoutStrategy,vtkAreaLayoutStrategy);
+  vtkTypeRevisionMacro(vtkStackedTreeLayoutStrategy,vtkAreaLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

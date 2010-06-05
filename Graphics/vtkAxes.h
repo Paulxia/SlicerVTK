@@ -29,7 +29,7 @@ class VTK_GRAPHICS_EXPORT vtkAxes : public vtkPolyDataAlgorithm
 public:
   static vtkAxes *New();
 
-  vtkTypeMacro(vtkAxes,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkAxes,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

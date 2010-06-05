@@ -28,7 +28,7 @@ class vtkFieldData;
 class VTK_PARALLEL_EXPORT vtkPassThroughFilter : public vtkDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkPassThroughFilter,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkPassThroughFilter,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

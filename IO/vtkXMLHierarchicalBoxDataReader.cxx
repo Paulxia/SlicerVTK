@@ -26,6 +26,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkXMLHierarchicalBoxDataReader, "1.11");
 vtkStandardNewMacro(vtkXMLHierarchicalBoxDataReader);
 
 //----------------------------------------------------------------------------

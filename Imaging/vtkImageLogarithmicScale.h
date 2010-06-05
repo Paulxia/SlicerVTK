@@ -30,7 +30,7 @@ class VTK_IMAGING_EXPORT vtkImageLogarithmicScale : public vtkThreadedImageAlgor
 {
 public:
   static vtkImageLogarithmicScale *New();
-  vtkTypeMacro(vtkImageLogarithmicScale,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageLogarithmicScale,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

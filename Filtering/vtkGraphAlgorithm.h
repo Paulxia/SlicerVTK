@@ -52,7 +52,7 @@ class VTK_FILTERING_EXPORT vtkGraphAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkGraphAlgorithm *New();
-  vtkTypeMacro(vtkGraphAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkGraphAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

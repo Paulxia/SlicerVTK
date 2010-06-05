@@ -42,7 +42,7 @@ public:
 
   // Description:
   // Standard VTK class macros.
-  vtkTypeMacro(vtkTensorProbeWidget, vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkTensorProbeWidget, vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

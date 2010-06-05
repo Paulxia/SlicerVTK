@@ -46,7 +46,7 @@ class VTK_FILTERING_EXPORT vtkArrayData : public vtkDataObject
 {
 public:
   static vtkArrayData* New();
-  vtkTypeMacro(vtkArrayData, vtkDataObject);
+  vtkTypeRevisionMacro(vtkArrayData, vtkDataObject);
   void PrintSelf(ostream &os, vtkIndent indent);
 
   static vtkArrayData* GetData(vtkInformation* info);

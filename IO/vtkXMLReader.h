@@ -36,7 +36,7 @@ class vtkInformation;
 class VTK_IO_EXPORT vtkXMLReader : public vtkAlgorithm
 {
 public:
-  vtkTypeMacro(vtkXMLReader,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkXMLReader,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

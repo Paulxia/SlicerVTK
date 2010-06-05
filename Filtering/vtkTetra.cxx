@@ -24,6 +24,7 @@
 #include "vtkTriangle.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkTetra, "1.9");
 vtkStandardNewMacro(vtkTetra);
 
 //----------------------------------------------------------------------------

@@ -33,7 +33,7 @@ class vtkCollectionElement;
 class VTK_COMMON_EXPORT vtkCollectionIterator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkCollectionIterator,vtkObject);
+  vtkTypeRevisionMacro(vtkCollectionIterator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkCollectionIterator* New();
   

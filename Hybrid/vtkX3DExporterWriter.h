@@ -31,7 +31,7 @@ class vtkCellArray;
 class VTK_HYBRID_EXPORT vtkX3DExporterWriter : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkX3DExporterWriter, vtkObject);
+  vtkTypeRevisionMacro(vtkX3DExporterWriter, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

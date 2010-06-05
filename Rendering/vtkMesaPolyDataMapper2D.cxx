@@ -38,4 +38,5 @@
 #include "vtkOpenGLPolyDataMapper2D.cxx"
 #undef vtkOpenGLPolyDataMapper2D
 
+vtkCxxRevisionMacro(vtkMesaPolyDataMapper2D, "1.13");
 vtkStandardNewMacro(vtkMesaPolyDataMapper2D);

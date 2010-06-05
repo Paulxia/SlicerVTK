@@ -20,6 +20,7 @@
 
 // Needed when we don't use the vtkStandardNewMacro.
 vtkInstantiatorNewMacro(vtkLightingPainter);
+vtkCxxRevisionMacro(vtkLightingPainter, "1.3");
 //-----------------------------------------------------------------------------
 vtkLightingPainter::vtkLightingPainter()
 {

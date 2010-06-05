@@ -25,6 +25,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkRegularPolygonSource, "1.2");
 vtkStandardNewMacro(vtkRegularPolygonSource);
 
 vtkRegularPolygonSource::vtkRegularPolygonSource()

@@ -117,6 +117,7 @@ vtkXOpenGLRenderWindowInternal::vtkXOpenGLRenderWindowInternal(
 
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkXOpenGLRenderWindow, "1.104");
 vtkStandardNewMacro(vtkXOpenGLRenderWindow);
 #endif
 

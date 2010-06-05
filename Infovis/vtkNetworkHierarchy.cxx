@@ -40,6 +40,7 @@
 #include <vtksys/ios/sstream>
 #include <vtkstd/algorithm>
 
+vtkCxxRevisionMacro(vtkNetworkHierarchy, "1.5");
 vtkStandardNewMacro(vtkNetworkHierarchy);
 
 // This is just a macro wrapping for smart pointers

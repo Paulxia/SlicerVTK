@@ -28,6 +28,7 @@
 #include "vtkPointData.h"
 #include "vtkCellData.h"
 
+vtkCxxRevisionMacro(vtkDecimatePro, "1.82");
 vtkStandardNewMacro(vtkDecimatePro);
 
 #define VTK_TOLERANCE 1.0e-05

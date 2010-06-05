@@ -46,7 +46,7 @@ public:
 
   // Description
   static vtkIconGlyphFilter *New();
-  vtkTypeMacro(vtkIconGlyphFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkIconGlyphFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

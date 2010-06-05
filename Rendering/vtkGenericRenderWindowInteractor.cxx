@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkCommand.h"
 
+vtkCxxRevisionMacro(vtkGenericRenderWindowInteractor, "1.11");
 vtkStandardNewMacro(vtkGenericRenderWindowInteractor);
 
 //------------------------------------------------------------------

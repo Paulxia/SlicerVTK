@@ -37,7 +37,7 @@ class VTK_GEOVIS_EXPORT vtkGeoTreeNodeCache : public vtkObject
 {
 public:
   static vtkGeoTreeNodeCache *New();
-  vtkTypeMacro(vtkGeoTreeNodeCache,vtkObject);
+  vtkTypeRevisionMacro(vtkGeoTreeNodeCache,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -59,7 +59,7 @@ class vtkDataObject;
 class VTK_FILTERING_EXPORT vtkDataObjectSource : public vtkSource
 {
 public:
-  vtkTypeMacro(vtkDataObjectSource,vtkSource);
+  vtkTypeRevisionMacro(vtkDataObjectSource,vtkSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

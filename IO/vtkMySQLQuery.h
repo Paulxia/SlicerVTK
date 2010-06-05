@@ -47,7 +47,7 @@ class VTK_IO_EXPORT vtkMySQLQuery : public vtkSQLQuery
 //ETX
 
 public:
-  vtkTypeMacro(vtkMySQLQuery, vtkSQLQuery);
+  vtkTypeRevisionMacro(vtkMySQLQuery, vtkSQLQuery);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkMySQLQuery *New();
 

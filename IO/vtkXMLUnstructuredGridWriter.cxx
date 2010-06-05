@@ -28,6 +28,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkXMLUnstructuredGridWriter, "1.14");
 vtkStandardNewMacro(vtkXMLUnstructuredGridWriter);
 
 //----------------------------------------------------------------------------

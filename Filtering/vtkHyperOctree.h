@@ -144,7 +144,7 @@ public:
   static vtkInformationDoubleVectorKey* SIZES();
   static vtkHyperOctree *New();
   
-  vtkTypeMacro(vtkHyperOctree,vtkDataSet);
+  vtkTypeRevisionMacro(vtkHyperOctree,vtkDataSet);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

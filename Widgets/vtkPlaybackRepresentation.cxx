@@ -30,6 +30,7 @@
 #include "vtkTransformPolyDataFilter.h"
 
 
+vtkCxxRevisionMacro(vtkPlaybackRepresentation, "1.2");
 vtkStandardNewMacro(vtkPlaybackRepresentation);
 
 vtkPlaybackRepresentation::vtkPlaybackRepresentation()

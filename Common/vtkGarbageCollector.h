@@ -92,7 +92,7 @@ class vtkObjectBaseToGarbageCollectorFriendship;
 class VTK_COMMON_EXPORT vtkGarbageCollector : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkGarbageCollector,vtkObject);
+  vtkTypeRevisionMacro(vtkGarbageCollector,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkGarbageCollector* New();
 

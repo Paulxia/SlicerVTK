@@ -34,6 +34,7 @@
 #include "vtkInformationVector.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkExtractCells, "1.10");
 vtkStandardNewMacro(vtkExtractCells);
 
 #include <vtkstd/set>

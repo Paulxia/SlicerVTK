@@ -34,6 +34,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkBridgeAttribute, "1.7");
 vtkStandardNewMacro(vtkBridgeAttribute);
 
 void vtkBridgeAttribute::PrintSelf(ostream& os, vtkIndent indent)

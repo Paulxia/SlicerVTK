@@ -33,6 +33,7 @@
 #include <stdexcept>
 #include <cmath>
 //---------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkTemporalPathLineFilter, "1.11");
 vtkStandardNewMacro(vtkTemporalPathLineFilter);
 //----------------------------------------------------------------------------
 //

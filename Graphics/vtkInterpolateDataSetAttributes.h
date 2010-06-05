@@ -38,7 +38,7 @@ class VTK_GRAPHICS_EXPORT vtkInterpolateDataSetAttributes : public vtkDataSetAlg
 {
 public:
   static vtkInterpolateDataSetAttributes *New();
-  vtkTypeMacro(vtkInterpolateDataSetAttributes,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkInterpolateDataSetAttributes,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

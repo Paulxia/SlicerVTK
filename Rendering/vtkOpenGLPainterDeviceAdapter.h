@@ -53,7 +53,7 @@ class VTK_RENDERING_EXPORT vtkOpenGLPainterDeviceAdapter :
   public vtkPainterDeviceAdapter
 {
 public:
-  vtkTypeMacro(vtkOpenGLPainterDeviceAdapter, vtkPainterDeviceAdapter);
+  vtkTypeRevisionMacro(vtkOpenGLPainterDeviceAdapter, vtkPainterDeviceAdapter);
   static vtkOpenGLPainterDeviceAdapter *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

@@ -33,7 +33,7 @@ class vtkUnstructuredGrid;
 class VTK_IO_EXPORT vtkXMLPUnstructuredGridReader : public vtkXMLPUnstructuredDataReader
 {
 public:
-  vtkTypeMacro(vtkXMLPUnstructuredGridReader,vtkXMLPUnstructuredDataReader);
+  vtkTypeRevisionMacro(vtkXMLPUnstructuredGridReader,vtkXMLPUnstructuredDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);  
   static vtkXMLPUnstructuredGridReader *New();
   

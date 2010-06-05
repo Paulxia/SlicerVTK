@@ -22,6 +22,7 @@
 #include "vtkMath.h"
 #include "vtkFloatArray.h"
 
+vtkCxxRevisionMacro(vtkPCAAnalysisFilter, "1.15");
 vtkStandardNewMacro(vtkPCAAnalysisFilter);
 
 //------------------------------------------------------------------------

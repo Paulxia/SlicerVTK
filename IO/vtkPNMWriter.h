@@ -27,7 +27,7 @@ class VTK_IO_EXPORT vtkPNMWriter : public vtkImageWriter
 {
 public:
   static vtkPNMWriter *New();
-  vtkTypeMacro(vtkPNMWriter,vtkImageWriter);
+  vtkTypeRevisionMacro(vtkPNMWriter,vtkImageWriter);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

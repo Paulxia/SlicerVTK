@@ -28,7 +28,7 @@
 class VTK_GRAPHICS_EXPORT vtkVectorDot : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkVectorDot,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkVectorDot,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

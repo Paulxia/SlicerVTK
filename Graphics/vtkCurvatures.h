@@ -71,7 +71,7 @@
 class VTK_GRAPHICS_EXPORT vtkCurvatures : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkCurvatures,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCurvatures,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

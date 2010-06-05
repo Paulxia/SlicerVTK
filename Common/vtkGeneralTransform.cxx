@@ -16,6 +16,7 @@
 #include "vtkMath.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkGeneralTransform, "1.40");
 vtkStandardNewMacro(vtkGeneralTransform);
 
 //----------------------------------------------------------------------------

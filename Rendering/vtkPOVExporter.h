@@ -88,7 +88,7 @@ class VTK_RENDERING_EXPORT vtkPOVExporter : public vtkExporter
 {
 public:
     static vtkPOVExporter *New();
-    vtkTypeMacro(vtkPOVExporter, vtkExporter);
+    vtkTypeRevisionMacro(vtkPOVExporter, vtkExporter);
     void PrintSelf(ostream& os, vtkIndent indent);
 
     //Description:

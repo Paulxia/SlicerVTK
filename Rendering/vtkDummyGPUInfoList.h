@@ -29,7 +29,7 @@ class VTK_RENDERING_EXPORT vtkDummyGPUInfoList : public vtkGPUInfoList
 {
 public:
   static vtkDummyGPUInfoList* New();
-  vtkTypeMacro(vtkDummyGPUInfoList, vtkGPUInfoList);
+  vtkTypeRevisionMacro(vtkDummyGPUInfoList, vtkGPUInfoList);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

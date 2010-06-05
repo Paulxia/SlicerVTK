@@ -19,7 +19,7 @@
 
 =========================================================================*/
 
-// .NAME vtkTypeTemplate - Provides the equivalent of vtkTypeMacro
+// .NAME vtkTypeTemplate - Provides the equivalent of vtkTypeRevisionMacro
 // for use with template classes
 //
 // .SECTION Thanks

@@ -35,6 +35,7 @@
 #include "vtkPoints.h"
 #include "vtkExtractSelectedFrustum.h"
 
+vtkCxxRevisionMacro(vtkAreaPicker, "1.19");
 vtkStandardNewMacro(vtkAreaPicker);
 
 //--------------------------------------------------------------------------

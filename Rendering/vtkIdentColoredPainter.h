@@ -52,7 +52,7 @@ class vtkProp;
 class VTK_RENDERING_EXPORT vtkIdentColoredPainter : public vtkPolyDataPainter
 {
 public:
-  vtkTypeMacro(vtkIdentColoredPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkIdentColoredPainter, vtkPolyDataPainter);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
   static vtkIdentColoredPainter *New();
 

@@ -23,6 +23,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkXMLDataElement.h"
 
+vtkCxxRevisionMacro(vtkXMLMultiBlockDataReader, "1.6");
 vtkStandardNewMacro(vtkXMLMultiBlockDataReader);
 
 //----------------------------------------------------------------------------

@@ -21,6 +21,7 @@
 #include "vtkRenderWindowInteractor.h"
 #include "vtkObserverMediator.h" 
 
+vtkCxxRevisionMacro(vtkInteractorObserver, "1.38");
 
 vtkCxxSetObjectMacro(vtkInteractorObserver,DefaultRenderer,vtkRenderer);
 

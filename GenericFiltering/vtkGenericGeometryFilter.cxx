@@ -40,6 +40,7 @@
 #include "vtkGenericCellTessellator.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkGenericGeometryFilter, "1.16");
 vtkStandardNewMacro(vtkGenericGeometryFilter);
 
 vtkCxxSetObjectMacro(vtkGenericGeometryFilter,Locator,vtkIncrementalPointLocator);

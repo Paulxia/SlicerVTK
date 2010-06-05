@@ -42,7 +42,7 @@ class VTK_PARALLEL_EXPORT vtkVPICReader : public vtkImageAlgorithm
 {
 public:
   static vtkVPICReader *New();
-  vtkTypeMacro(vtkVPICReader,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkVPICReader,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

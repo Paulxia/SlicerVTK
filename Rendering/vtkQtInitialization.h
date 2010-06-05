@@ -39,7 +39,7 @@ class VTK_RENDERING_EXPORT vtkQtInitialization : public vtkObject
 {
 public:
   static vtkQtInitialization* New();
-  vtkTypeMacro(vtkQtInitialization, vtkObject);
+  vtkTypeRevisionMacro(vtkQtInitialization, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

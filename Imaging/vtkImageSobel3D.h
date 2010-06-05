@@ -32,7 +32,7 @@ class VTK_IMAGING_EXPORT vtkImageSobel3D : public vtkImageSpatialAlgorithm
 {
 public:
   static vtkImageSobel3D *New();
-  vtkTypeMacro(vtkImageSobel3D,vtkImageSpatialAlgorithm);
+  vtkTypeRevisionMacro(vtkImageSobel3D,vtkImageSpatialAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

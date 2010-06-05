@@ -16,6 +16,7 @@
 
 #include "vtkInformation.h"
 
+vtkCxxRevisionMacro(vtkInformationUnsignedLongKey, "1.4");
 
 //----------------------------------------------------------------------------
 vtkInformationUnsignedLongKey::vtkInformationUnsignedLongKey(const char* name, const char* location):

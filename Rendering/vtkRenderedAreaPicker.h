@@ -36,7 +36,7 @@ class VTK_RENDERING_EXPORT vtkRenderedAreaPicker : public vtkAreaPicker
 {
 public:
   static vtkRenderedAreaPicker *New();
-  vtkTypeMacro(vtkRenderedAreaPicker,vtkAreaPicker);
+  vtkTypeRevisionMacro(vtkRenderedAreaPicker,vtkAreaPicker);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

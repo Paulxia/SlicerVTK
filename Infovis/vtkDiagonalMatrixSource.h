@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkDiagonalMatrixSource : public vtkArrayDataAlgorithm
 {
 public:
   static vtkDiagonalMatrixSource* New();
-  vtkTypeMacro(vtkDiagonalMatrixSource, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDiagonalMatrixSource, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

@@ -37,7 +37,7 @@ class VTK_RENDERING_EXPORT vtkDistanceToCamera : public vtkPolyDataAlgorithm
 {
 public:
   static vtkDistanceToCamera *New();
-  vtkTypeMacro(vtkDistanceToCamera,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkDistanceToCamera,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

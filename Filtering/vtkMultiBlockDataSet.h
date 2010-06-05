@@ -42,7 +42,7 @@ class VTK_FILTERING_EXPORT vtkMultiBlockDataSet : public vtkCompositeDataSet
 {
 public:
   static vtkMultiBlockDataSet* New();
-  vtkTypeMacro(vtkMultiBlockDataSet, vtkCompositeDataSet);
+  vtkTypeRevisionMacro(vtkMultiBlockDataSet, vtkCompositeDataSet);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

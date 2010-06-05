@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkRenderPass.h"
 
+vtkCxxRevisionMacro(vtkRenderPassCollection, "1.2");
 vtkStandardNewMacro(vtkRenderPassCollection);
 
 // ----------------------------------------------------------------------------

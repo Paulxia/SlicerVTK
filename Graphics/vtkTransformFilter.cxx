@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkPointSet.h"
 
+vtkCxxRevisionMacro(vtkTransformFilter, "1.47");
 vtkStandardNewMacro(vtkTransformFilter);
 vtkCxxSetObjectMacro(vtkTransformFilter,Transform,vtkAbstractTransform);
 

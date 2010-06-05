@@ -18,6 +18,7 @@
 
 #include <stdlib.h>
 
+vtkCxxRevisionMacro(vtkRendererCollection, "1.33");
 vtkStandardNewMacro(vtkRendererCollection);
 
 // Forward the Render() method to each renderer in the list.

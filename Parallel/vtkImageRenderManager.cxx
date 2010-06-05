@@ -22,6 +22,7 @@
 #include "vtkTimerLog.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkImageRenderManager, "1.1");
 vtkStandardNewMacro(vtkImageRenderManager);
 
 //----------------------------------------------------------------------------

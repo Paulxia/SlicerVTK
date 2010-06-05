@@ -27,7 +27,7 @@
 class VTK_COMMON_EXPORT vtkInformationDoubleKey : public vtkInformationKey
 {
 public:
-  vtkTypeMacro(vtkInformationDoubleKey,vtkInformationKey);
+  vtkTypeRevisionMacro(vtkInformationDoubleKey,vtkInformationKey);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkInformationDoubleKey(const char* name, const char* location);

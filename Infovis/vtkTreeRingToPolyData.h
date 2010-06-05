@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkTreeRingToPolyData : public vtkPolyDataAlgorithm
 public:
   static vtkTreeRingToPolyData *New();
   
-  vtkTypeMacro(vtkTreeRingToPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTreeRingToPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

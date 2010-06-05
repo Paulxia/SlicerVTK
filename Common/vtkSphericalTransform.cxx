@@ -18,6 +18,7 @@
 #include <math.h>
 #include <stdlib.h>
 
+vtkCxxRevisionMacro(vtkSphericalTransform, "1.6");
 vtkStandardNewMacro(vtkSphericalTransform);
 
 //----------------------------------------------------------------------------

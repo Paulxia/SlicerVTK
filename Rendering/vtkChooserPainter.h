@@ -32,7 +32,7 @@ class VTK_RENDERING_EXPORT vtkChooserPainter : public vtkPolyDataPainter
 {
 public:
   static vtkChooserPainter *New();
-  vtkTypeMacro(vtkChooserPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkChooserPainter, vtkPolyDataPainter);
   void PrintSelf(ostream &os, vtkIndent indent);
 
   void SetVertPainter(vtkPolyDataPainter*);

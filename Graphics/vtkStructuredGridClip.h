@@ -33,7 +33,7 @@ class VTK_GRAPHICS_EXPORT vtkStructuredGridClip : public vtkStructuredGridAlgori
 {
 public:
   static vtkStructuredGridClip *New();
-  vtkTypeMacro(vtkStructuredGridClip,vtkStructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkStructuredGridClip,vtkStructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

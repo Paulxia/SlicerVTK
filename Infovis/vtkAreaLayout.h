@@ -43,7 +43,7 @@ class VTK_INFOVIS_EXPORT vtkAreaLayout : public vtkTreeAlgorithm
 {
 public:
   static vtkAreaLayout *New();
-  vtkTypeMacro(vtkAreaLayout,vtkTreeAlgorithm);
+  vtkTypeRevisionMacro(vtkAreaLayout,vtkTreeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

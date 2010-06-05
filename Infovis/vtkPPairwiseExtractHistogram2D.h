@@ -49,7 +49,7 @@ class VTK_INFOVIS_EXPORT vtkPPairwiseExtractHistogram2D : public vtkPairwiseExtr
 {
 public:
   static vtkPPairwiseExtractHistogram2D* New();
-  vtkTypeMacro(vtkPPairwiseExtractHistogram2D, vtkPairwiseExtractHistogram2D);
+  vtkTypeRevisionMacro(vtkPPairwiseExtractHistogram2D, vtkPairwiseExtractHistogram2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   virtual void SetController(vtkMultiProcessController*);

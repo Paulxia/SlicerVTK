@@ -29,6 +29,8 @@
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
 vtkStandardNewMacro(vtkOpenGLCoincidentTopologyResolutionPainter);
+vtkCxxRevisionMacro(vtkOpenGLCoincidentTopologyResolutionPainter, 
+  "1.9");
 #endif
 //-----------------------------------------------------------------------------
 vtkOpenGLCoincidentTopologyResolutionPainter::

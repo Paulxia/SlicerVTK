@@ -85,7 +85,7 @@ class VTK_IO_EXPORT vtkMultiBlockPLOT3DReader : public vtkMultiBlockDataSetAlgor
 {
 public:
   static vtkMultiBlockPLOT3DReader *New();
-  vtkTypeMacro(vtkMultiBlockPLOT3DReader,vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMultiBlockPLOT3DReader,vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

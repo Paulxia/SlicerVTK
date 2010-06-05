@@ -18,6 +18,7 @@
 
 #include <vtkstd/string>
 
+vtkCxxRevisionMacro(vtkInformationStringKey, "1.9");
 
 //----------------------------------------------------------------------------
 vtkInformationStringKey::vtkInformationStringKey(const char* name, const char* location):

@@ -64,7 +64,7 @@ class vtkVariantArray;
 class VTK_IO_EXPORT vtkSQLQuery : public vtkRowQuery
 {
 public:
-  vtkTypeMacro(vtkSQLQuery, vtkRowQuery);
+  vtkTypeRevisionMacro(vtkSQLQuery, vtkRowQuery);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

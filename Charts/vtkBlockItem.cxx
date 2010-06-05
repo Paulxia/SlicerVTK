@@ -27,6 +27,7 @@
 #include "vtkObjectFactory.h"
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkBlockItem, "1.6");
 vtkStandardNewMacro(vtkBlockItem);
 
 //-----------------------------------------------------------------------------

@@ -30,7 +30,7 @@ class vtkRectilinearGrid;
 class VTK_FILTERING_EXPORT vtkRectilinearGridSource : public vtkSource
 {
 public:
-  vtkTypeMacro(vtkRectilinearGridSource,vtkSource);
+  vtkTypeRevisionMacro(vtkRectilinearGridSource,vtkSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

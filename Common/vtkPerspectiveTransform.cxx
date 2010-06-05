@@ -18,6 +18,7 @@
 
 #include <stdlib.h>
 
+vtkCxxRevisionMacro(vtkPerspectiveTransform, "1.33");
 vtkStandardNewMacro(vtkPerspectiveTransform);
 
 //----------------------------------------------------------------------------

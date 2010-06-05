@@ -37,6 +37,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkBoxClipDataSet, "1.28");
 vtkStandardNewMacro(vtkBoxClipDataSet);
 
 vtkCxxSetObjectMacro(vtkBoxClipDataSet, Locator, vtkIncrementalPointLocator)

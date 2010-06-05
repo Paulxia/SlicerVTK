@@ -311,6 +311,7 @@ bool WriteDenseArrayAscii(const vtkStdString& type_name, vtkArray* array, ostrea
 
 } // End anonymous namespace
 
+vtkCxxRevisionMacro(vtkArrayWriter, "1.4");
 vtkStandardNewMacro(vtkArrayWriter);
 
 vtkArrayWriter::vtkArrayWriter()

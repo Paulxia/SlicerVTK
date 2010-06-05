@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkDirectionEncoder.h"
 
+vtkCxxRevisionMacro(vtkDirectionEncoder, "1.1");
 
 //----------------------------------------------------------------------------
 void vtkDirectionEncoder::PrintSelf(ostream& os, vtkIndent indent)

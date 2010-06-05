@@ -47,7 +47,7 @@ class VTK_GRAPHICS_EXPORT vtkImageMarchingCubes : public vtkPolyDataAlgorithm
 {
 public:
   static vtkImageMarchingCubes *New();
-  vtkTypeMacro(vtkImageMarchingCubes,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkImageMarchingCubes,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

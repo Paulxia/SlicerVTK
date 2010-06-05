@@ -50,7 +50,7 @@ public:
 
   // Description:
   // Standard VTK class methods.
-  vtkTypeMacro(vtkCameraRepresentation,vtkBorderRepresentation);
+  vtkTypeRevisionMacro(vtkCameraRepresentation,vtkBorderRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

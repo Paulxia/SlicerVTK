@@ -22,6 +22,7 @@
 #include "vtkEdgeTable.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkPolyDataPointSampler, "1.1");
 vtkStandardNewMacro(vtkPolyDataPointSampler);
 
 //------------------------------------------------------------------------

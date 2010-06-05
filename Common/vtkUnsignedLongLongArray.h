@@ -36,7 +36,7 @@ class VTK_COMMON_EXPORT vtkUnsignedLongLongArray : public vtkDataArray
 {
 public:
   static vtkUnsignedLongLongArray* New();
-  vtkTypeMacro(vtkUnsignedLongLongArray,vtkDataArray);
+  vtkTypeRevisionMacro(vtkUnsignedLongLongArray,vtkDataArray);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

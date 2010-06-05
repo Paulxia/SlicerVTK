@@ -50,7 +50,7 @@ class vtkCellData;
 class VTK_GENERIC_FILTERING_EXPORT vtkGenericContourFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkGenericContourFilter,
+  vtkTypeRevisionMacro(vtkGenericContourFilter,
                        vtkPolyDataAlgorithm);
   
   void PrintSelf(ostream& os, vtkIndent indent);

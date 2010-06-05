@@ -62,7 +62,7 @@ class IVFCacheList : public vtkstd::vector< IVFDataSetInfo > {};
 class VTK_PARALLEL_EXPORT vtkCachingInterpolatedVelocityField : public vtkFunctionSet
 {
 public:
-  vtkTypeMacro(vtkCachingInterpolatedVelocityField,vtkFunctionSet);
+  vtkTypeRevisionMacro(vtkCachingInterpolatedVelocityField,vtkFunctionSet);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

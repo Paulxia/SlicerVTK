@@ -31,6 +31,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkVolume, "1.89");
 vtkStandardNewMacro(vtkVolume);
 
 // Creates a Volume with the following defaults: origin(0,0,0) 

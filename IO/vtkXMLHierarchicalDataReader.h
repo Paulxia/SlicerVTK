@@ -34,7 +34,7 @@ class VTK_IO_EXPORT vtkXMLHierarchicalDataReader : public vtkXMLMultiGroupDataRe
 {
 public:
   static vtkXMLHierarchicalDataReader* New();
-  vtkTypeMacro(vtkXMLHierarchicalDataReader,vtkXMLMultiGroupDataReader);
+  vtkTypeRevisionMacro(vtkXMLHierarchicalDataReader,vtkXMLMultiGroupDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

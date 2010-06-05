@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkImageConvolve, "1.19");
 vtkStandardNewMacro(vtkImageConvolve);
 
 //----------------------------------------------------------------------------

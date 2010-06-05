@@ -37,7 +37,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkPointwiseMutualInformation : public vtkArrayDa
 {
 public:
   static vtkPointwiseMutualInformation* New();
-  vtkTypeMacro(vtkPointwiseMutualInformation, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkPointwiseMutualInformation, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

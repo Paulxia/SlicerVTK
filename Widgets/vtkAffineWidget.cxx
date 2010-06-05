@@ -25,6 +25,7 @@
 #include "vtkEvent.h"
 #include "vtkWidgetEvent.h"
 
+vtkCxxRevisionMacro(vtkAffineWidget, "1.7");
 vtkStandardNewMacro(vtkAffineWidget);
 
 //----------------------------------------------------------------------------------

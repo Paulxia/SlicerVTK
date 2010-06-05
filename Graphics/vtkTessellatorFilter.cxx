@@ -37,6 +37,7 @@
 #include "vtkTessellatorFilter.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkTessellatorFilter, "1.4");
 vtkStandardNewMacro(vtkTessellatorFilter);
 
 // ========================================

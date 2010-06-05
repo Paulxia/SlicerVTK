@@ -32,7 +32,7 @@ class VTK_GRAPHICS_EXPORT vtkRotationFilter : public vtkUnstructuredGridAlgorith
 {
 public:
   static vtkRotationFilter *New(); 
-  vtkTypeMacro(vtkRotationFilter, vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkRotationFilter, vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream &os, vtkIndent indent);
   
 //BTX

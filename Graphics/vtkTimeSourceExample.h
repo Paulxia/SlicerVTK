@@ -31,7 +31,7 @@ class VTK_GRAPHICS_EXPORT vtkTimeSourceExample : public vtkUnstructuredGridAlgor
 {
 public:
   static vtkTimeSourceExample *New();
-  vtkTypeMacro(vtkTimeSourceExample,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkTimeSourceExample,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //Description:

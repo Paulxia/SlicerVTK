@@ -16,6 +16,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkImageDecomposeFilter, "1.20");
 
 //----------------------------------------------------------------------------
 // Construct an instance of vtkImageDecomposeFilter fitler.

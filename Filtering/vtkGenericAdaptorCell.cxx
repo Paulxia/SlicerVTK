@@ -37,6 +37,7 @@
 #include "vtkWedge.h"
 #include "vtkPyramid.h"
 
+vtkCxxRevisionMacro(vtkGenericAdaptorCell, "1.26");
 
 vtkGenericAdaptorCell::vtkGenericAdaptorCell()
 {

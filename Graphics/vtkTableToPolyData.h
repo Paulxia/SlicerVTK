@@ -27,7 +27,7 @@ class VTK_GRAPHICS_EXPORT vtkTableToPolyData : public vtkPolyDataAlgorithm
 {
 public:
   static vtkTableToPolyData* New();
-  vtkTypeMacro(vtkTableToPolyData, vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkTableToPolyData, vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

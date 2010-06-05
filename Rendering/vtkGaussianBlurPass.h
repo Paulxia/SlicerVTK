@@ -59,7 +59,7 @@ class VTK_RENDERING_EXPORT vtkGaussianBlurPass : public vtkImageProcessingPass
 {
 public:
   static vtkGaussianBlurPass *New();
-  vtkTypeMacro(vtkGaussianBlurPass,vtkImageProcessingPass);
+  vtkTypeRevisionMacro(vtkGaussianBlurPass,vtkImageProcessingPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

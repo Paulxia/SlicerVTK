@@ -37,6 +37,7 @@
 #include "vtkGLSLShaderDeviceAdapter2.h"
 #include "vtkOpenGLProperty.h"
 
+vtkCxxRevisionMacro(vtkPrimitivePainter, "1.11");
 //---------------------------------------------------------------------------
 vtkPrimitivePainter::vtkPrimitivePainter()
 {

@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkShaderProgram.h"
 
+vtkCxxRevisionMacro(vtkShaderDeviceAdapter, "Revision: 1.0$");
 
 //---------------------------------------------------------------------------
 vtkShaderDeviceAdapter::vtkShaderDeviceAdapter()

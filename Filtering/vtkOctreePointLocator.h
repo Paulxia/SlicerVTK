@@ -45,7 +45,7 @@ class vtkPolyData;
 class VTK_FILTERING_EXPORT vtkOctreePointLocator : public vtkAbstractPointLocator
 {
 public:
-  vtkTypeMacro(vtkOctreePointLocator, vtkAbstractPointLocator);
+  vtkTypeRevisionMacro(vtkOctreePointLocator, vtkAbstractPointLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkOctreePointLocator *New();

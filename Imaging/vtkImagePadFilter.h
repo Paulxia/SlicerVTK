@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImagePadFilter : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImagePadFilter *New();
-  vtkTypeMacro(vtkImagePadFilter,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImagePadFilter,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -55,7 +55,7 @@ class VTK_INFOVIS_EXPORT vtkMergeGraphs : public vtkGraphAlgorithm
 {
 public:
   static vtkMergeGraphs* New();
-  vtkTypeMacro(vtkMergeGraphs,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkMergeGraphs,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

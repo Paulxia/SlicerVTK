@@ -25,6 +25,7 @@ VTK_ARRAY_ITERATOR_TEMPLATE_INSTANTIATE(float);
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkFloatArray, "1.59");
 vtkStandardNewMacro(vtkFloatArray);
 
 //----------------------------------------------------------------------------

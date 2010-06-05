@@ -25,6 +25,7 @@
 #include "vtkTextProperty.h"
 #include "vtkWindow.h"
 
+vtkCxxRevisionMacro(vtkAngleRepresentation, "1.7");
 
 vtkCxxSetObjectMacro(vtkAngleRepresentation,HandleRepresentation,vtkHandleRepresentation);
 

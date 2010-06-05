@@ -69,7 +69,7 @@ class VTK_WIDGETS_EXPORT vtkContinuousValueWidget : public vtkAbstractWidget
 public:
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkContinuousValueWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkContinuousValueWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -33,6 +33,7 @@
 #include "vtkTexture.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkVRMLExporter, "1.84");
 vtkStandardNewMacro(vtkVRMLExporter);
 
 vtkVRMLExporter::vtkVRMLExporter()

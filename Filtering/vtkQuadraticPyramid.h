@@ -49,7 +49,7 @@ class VTK_FILTERING_EXPORT vtkQuadraticPyramid : public vtkNonLinearCell
 {
 public:
   static vtkQuadraticPyramid *New();
-  vtkTypeMacro(vtkQuadraticPyramid,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkQuadraticPyramid,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

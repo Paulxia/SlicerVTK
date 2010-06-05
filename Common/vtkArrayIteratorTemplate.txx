@@ -32,6 +32,9 @@ vtkArrayIteratorTemplate<T>* vtkArrayIteratorTemplate<T>::New()
 }
 
 template <class T>
+vtkCxxRevisionMacro(vtkArrayIteratorTemplate<T>, "1.3");
+
+template <class T>
 vtkCxxSetObjectMacro(vtkArrayIteratorTemplate<T>, Array, vtkAbstractArray);
 //-----------------------------------------------------------------------------
 template <class T>

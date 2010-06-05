@@ -28,7 +28,7 @@ class VTK_IO_EXPORT vtkSLCReader : public vtkImageReader2
 {
 public:
   static vtkSLCReader *New();
-  vtkTypeMacro(vtkSLCReader,vtkImageReader2);
+  vtkTypeRevisionMacro(vtkSLCReader,vtkImageReader2);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

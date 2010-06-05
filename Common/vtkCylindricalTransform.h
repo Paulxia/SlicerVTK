@@ -34,7 +34,7 @@ class VTK_COMMON_EXPORT vtkCylindricalTransform : public vtkWarpTransform
 {
 public:
   static vtkCylindricalTransform *New();
-  vtkTypeMacro(vtkCylindricalTransform,vtkWarpTransform);
+  vtkTypeRevisionMacro(vtkCylindricalTransform,vtkWarpTransform);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

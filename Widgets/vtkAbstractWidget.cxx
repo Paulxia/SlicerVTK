@@ -23,6 +23,7 @@
 #include "vtkEvent.h"
 #include "vtkWidgetEvent.h"
 
+vtkCxxRevisionMacro(vtkAbstractWidget, "1.8");
 
 
 //----------------------------------------------------------------------

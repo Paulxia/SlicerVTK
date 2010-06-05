@@ -155,7 +155,7 @@ class VTK_FILTERING_EXPORT vtkModifiedBSPTree : public vtkAbstractCellLocator {
   public:
   // Description:
   // Standard Type-Macro
-  vtkTypeMacro(vtkModifiedBSPTree,vtkAbstractCellLocator);
+  vtkTypeRevisionMacro(vtkModifiedBSPTree,vtkAbstractCellLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

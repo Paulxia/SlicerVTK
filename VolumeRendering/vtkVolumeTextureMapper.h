@@ -35,7 +35,7 @@ class vtkVolume;
 class VTK_VOLUMERENDERING_EXPORT vtkVolumeTextureMapper : public vtkVolumeMapper
 {
 public:
-  vtkTypeMacro(vtkVolumeTextureMapper,vtkVolumeMapper);
+  vtkTypeRevisionMacro(vtkVolumeTextureMapper,vtkVolumeMapper);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

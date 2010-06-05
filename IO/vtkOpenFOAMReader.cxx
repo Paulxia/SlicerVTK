@@ -108,6 +108,7 @@ uLong ZEXPORT crc32(uLong, const Bytef *, uInt)
 { return 0; }
 #endif
 
+vtkCxxRevisionMacro(vtkOpenFOAMReader, "1.22");
 vtkStandardNewMacro(vtkOpenFOAMReader);
 
 // forward declarations
@@ -151,7 +152,7 @@ class VTK_IO_EXPORT vtkOpenFOAMReaderPrivate : public vtkObject
 {
 public:
   static vtkOpenFOAMReaderPrivate *New();
-  vtkTypeMacro(vtkOpenFOAMReaderPrivate, vtkObject);
+  vtkTypeRevisionMacro(vtkOpenFOAMReaderPrivate, vtkObject);
 
   vtkDoubleArray *GetTimeValues()
     {return this->TimeValues;}
@@ -339,6 +340,7 @@ private:
       const vtkFoamIntVectorVector *, vtkPoints *);
 };
 
+vtkCxxRevisionMacro(vtkOpenFOAMReaderPrivate, "1.22");
 vtkStandardNewMacro(vtkOpenFOAMReaderPrivate);
 
 //-----------------------------------------------------------------------------

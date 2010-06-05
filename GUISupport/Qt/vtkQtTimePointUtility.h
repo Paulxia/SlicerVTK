@@ -32,7 +32,7 @@
 class QVTK_EXPORT vtkQtTimePointUtility : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkQtTimePointUtility,vtkObject);
+  vtkTypeRevisionMacro(vtkQtTimePointUtility,vtkObject);
 
   static QDateTime TimePointToQDateTime(vtkTypeUInt64 time);
   static vtkTypeUInt64 QDateTimeToTimePoint(QDateTime time);  

@@ -30,7 +30,7 @@ class vtkStructuredGrid;
 class VTK_FILTERING_EXPORT vtkStructuredGridSource : public vtkSource
 {
 public:
-  vtkTypeMacro(vtkStructuredGridSource,vtkSource);
+  vtkTypeRevisionMacro(vtkStructuredGridSource,vtkSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

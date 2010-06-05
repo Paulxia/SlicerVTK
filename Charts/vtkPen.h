@@ -32,7 +32,7 @@
 class VTK_CHARTS_EXPORT vtkPen : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkPen, vtkObject);
+  vtkTypeRevisionMacro(vtkPen, vtkObject);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   static vtkPen *New();

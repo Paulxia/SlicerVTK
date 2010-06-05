@@ -29,7 +29,7 @@ class vtkCallbackCommand;
 class VTK_IO_EXPORT vtkXMLPDataWriter : public vtkXMLWriter
 {
 public:
-  vtkTypeMacro(vtkXMLPDataWriter,vtkXMLWriter);
+  vtkTypeRevisionMacro(vtkXMLPDataWriter,vtkXMLWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

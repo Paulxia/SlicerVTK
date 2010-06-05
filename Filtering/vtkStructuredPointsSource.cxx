@@ -20,6 +20,7 @@
 #include "vtkPointData.h"
 #include "vtkStructuredPoints.h"
 
+vtkCxxRevisionMacro(vtkStructuredPointsSource, "1.40");
 
 //----------------------------------------------------------------------------
 vtkStructuredPointsSource::vtkStructuredPointsSource()

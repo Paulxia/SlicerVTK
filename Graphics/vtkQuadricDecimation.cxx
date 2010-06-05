@@ -55,6 +55,7 @@
 #include "vtkPriorityQueue.h"
 #include "vtkTriangle.h"
 
+vtkCxxRevisionMacro(vtkQuadricDecimation, "1.41");
 vtkStandardNewMacro(vtkQuadricDecimation);
 
 

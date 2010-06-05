@@ -25,7 +25,7 @@
 class VTK_IO_EXPORT vtkZLibDataCompressor : public vtkDataCompressor
 {
 public:
-  vtkTypeMacro(vtkZLibDataCompressor,vtkDataCompressor);
+  vtkTypeRevisionMacro(vtkZLibDataCompressor,vtkDataCompressor);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkZLibDataCompressor* New();  
   

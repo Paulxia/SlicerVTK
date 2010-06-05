@@ -32,7 +32,7 @@ class VTK_IMAGING_EXPORT vtkImageSpatialAlgorithm : public vtkThreadedImageAlgor
 {
 public:
   static vtkImageSpatialAlgorithm *New();
-  vtkTypeMacro(vtkImageSpatialAlgorithm,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageSpatialAlgorithm,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

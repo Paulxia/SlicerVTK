@@ -30,6 +30,7 @@
 #include "vtkGenericAttributeCollection.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkGenericProbeFilter, "1.7");
 vtkStandardNewMacro(vtkGenericProbeFilter);
 
 //----------------------------------------------------------------------------

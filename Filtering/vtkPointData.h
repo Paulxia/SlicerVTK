@@ -29,7 +29,7 @@ class VTK_FILTERING_EXPORT vtkPointData : public vtkDataSetAttributes
 public:
   static vtkPointData *New();
 
-  vtkTypeMacro(vtkPointData,vtkDataSetAttributes);
+  vtkTypeRevisionMacro(vtkPointData,vtkDataSetAttributes);
   void PrintSelf(ostream& os, vtkIndent indent);
   void NullPoint(vtkIdType ptId);
 

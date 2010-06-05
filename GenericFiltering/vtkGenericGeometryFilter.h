@@ -53,7 +53,7 @@ class VTK_GENERIC_FILTERING_EXPORT vtkGenericGeometryFilter : public vtkPolyData
 {
 public:
   static vtkGenericGeometryFilter *New();
-  vtkTypeMacro(vtkGenericGeometryFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkGenericGeometryFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

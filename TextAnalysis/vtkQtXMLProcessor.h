@@ -114,7 +114,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkQtXMLProcessor:
 {
 public:
   static vtkQtXMLProcessor* New();
-  vtkTypeMacro(vtkQtXMLProcessor,vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkQtXMLProcessor,vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
 //BTX

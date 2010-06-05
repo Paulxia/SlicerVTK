@@ -53,7 +53,7 @@ class vtkImplicitFunction;
 class VTK_GRAPHICS_EXPORT vtkImplicitTextureCoords : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkImplicitTextureCoords,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkImplicitTextureCoords,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

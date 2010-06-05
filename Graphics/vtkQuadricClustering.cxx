@@ -28,6 +28,7 @@
 #include "vtkTriangle.h"
 #include <vtksys/hash_set.hxx> // keep track of inserted triangles
 
+vtkCxxRevisionMacro(vtkQuadricClustering, "1.90");
 vtkStandardNewMacro(vtkQuadricClustering);
 
 //----------------------------------------------------------------------------

@@ -25,6 +25,7 @@
 
 #include "vtksys/SystemTools.hxx"
 
+vtkCxxRevisionMacro(vtkSQLQuery, "1.11");
 
 vtkSQLQuery::vtkSQLQuery()
 {

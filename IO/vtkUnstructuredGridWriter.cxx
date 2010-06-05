@@ -26,6 +26,7 @@
 # include <io.h> /* unlink */
 #endif
 
+vtkCxxRevisionMacro(vtkUnstructuredGridWriter, "1.43");
 vtkStandardNewMacro(vtkUnstructuredGridWriter);
 
 void vtkUnstructuredGridWriter::WriteData()

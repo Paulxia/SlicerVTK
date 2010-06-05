@@ -55,6 +55,7 @@ vtkShaderCodeLibrary::vtkInternalCleanup::~vtkInternalCleanup()
 
 
 vtkStandardNewMacro(vtkShaderCodeLibrary);
+vtkCxxRevisionMacro(vtkShaderCodeLibrary, "1.4");
 //-----------------------------------------------------------------------------
 vtkShaderCodeLibrary::vtkShaderCodeLibrary()
 {

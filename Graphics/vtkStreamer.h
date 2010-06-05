@@ -62,7 +62,7 @@ class vtkMultiThreader;
 class VTK_GRAPHICS_EXPORT vtkStreamer : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkStreamer,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkStreamer,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

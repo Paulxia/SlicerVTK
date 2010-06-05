@@ -37,7 +37,7 @@ class VTK_GRAPHICS_EXPORT vtkSynchronizedTemplates2D : public vtkPolyDataAlgorit
 {
 public:
   static vtkSynchronizedTemplates2D *New();
-  vtkTypeMacro(vtkSynchronizedTemplates2D,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSynchronizedTemplates2D,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

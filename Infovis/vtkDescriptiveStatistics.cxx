@@ -42,6 +42,7 @@
 #include <vtksys/ios/sstream> 
 #include <vtkstd/limits>
 
+vtkCxxRevisionMacro(vtkDescriptiveStatistics, "1.98");
 vtkStandardNewMacro(vtkDescriptiveStatistics);
 
 // ----------------------------------------------------------------------

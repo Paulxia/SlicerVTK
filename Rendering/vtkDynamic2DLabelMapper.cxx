@@ -55,6 +55,7 @@ using vtksys_ios::ofstream;
 # define SNPRINTF snprintf
 #endif
 
+vtkCxxRevisionMacro(vtkDynamic2DLabelMapper, "1.17");
 vtkStandardNewMacro(vtkDynamic2DLabelMapper);
 
 //----------------------------------------------------------------------------

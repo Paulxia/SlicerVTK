@@ -32,7 +32,7 @@ class VTK_GRAPHICS_EXPORT vtkHierarchicalDataExtractDataSets :
   public vtkExtractDataSets 
 {
 public:
-  vtkTypeMacro(vtkHierarchicalDataExtractDataSets,vtkExtractDataSets);
+  vtkTypeRevisionMacro(vtkHierarchicalDataExtractDataSets,vtkExtractDataSets);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkHierarchicalDataExtractDataSets *New();
 

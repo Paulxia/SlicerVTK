@@ -15,6 +15,7 @@
 #include "vtkProp3DCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkProp3DCollection, "1.7");
 vtkStandardNewMacro(vtkProp3DCollection);
 
 //----------------------------------------------------------------------------

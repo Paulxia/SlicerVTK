@@ -28,6 +28,7 @@
 #include <limits.h>
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLImageMapper, "1.66");
 vtkStandardNewMacro(vtkOpenGLImageMapper);
 #endif
 

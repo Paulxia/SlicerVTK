@@ -17,6 +17,7 @@
 #include "vtkDataSet.h"
 #include "vtkIdList.h"
 
+vtkCxxRevisionMacro(vtkAbstractPointLocator, "1.1");
 
 vtkAbstractPointLocator::vtkAbstractPointLocator()
 {

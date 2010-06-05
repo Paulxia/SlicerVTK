@@ -36,7 +36,7 @@ class vtkTable;
 class VTK_CHARTS_EXPORT vtkChart : public vtkContextItem
 {
 public:
-  vtkTypeMacro(vtkChart, vtkContextItem);
+  vtkTypeRevisionMacro(vtkChart, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
 //BTX

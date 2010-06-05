@@ -104,7 +104,7 @@ public:
   // Instantiate the object.
   static vtkPlaneWidget *New();
 
-  vtkTypeMacro(vtkPlaneWidget,vtkPolyDataSourceWidget);
+  vtkTypeRevisionMacro(vtkPlaneWidget,vtkPolyDataSourceWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

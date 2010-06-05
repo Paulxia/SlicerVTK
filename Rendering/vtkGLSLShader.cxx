@@ -170,6 +170,7 @@ static void printAttributeInfo(GLuint program,
 
 //-----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkGLSLShader);
+vtkCxxRevisionMacro(vtkGLSLShader, "1.13");
 
 //-----------------------------------------------------------------------------
 vtkGLSLShader::vtkGLSLShader()

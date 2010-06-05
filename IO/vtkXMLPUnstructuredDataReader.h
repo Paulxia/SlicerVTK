@@ -32,7 +32,7 @@ class vtkXMLUnstructuredDataReader;
 class VTK_IO_EXPORT vtkXMLPUnstructuredDataReader : public vtkXMLPDataReader
 {
 public:
-  vtkTypeMacro(vtkXMLPUnstructuredDataReader,vtkXMLPDataReader);
+  vtkTypeRevisionMacro(vtkXMLPUnstructuredDataReader,vtkXMLPDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // For the specified port, copy the information this reader sets up in

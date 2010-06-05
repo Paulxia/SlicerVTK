@@ -35,7 +35,7 @@ class VTK_RENDERING_EXPORT vtkCameraPass : public vtkRenderPass
 {
 public:
   static vtkCameraPass *New();
-  vtkTypeMacro(vtkCameraPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkCameraPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

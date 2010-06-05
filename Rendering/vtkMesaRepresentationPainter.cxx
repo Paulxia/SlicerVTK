@@ -32,4 +32,5 @@
 #include "vtkOpenGLRepresentationPainter.cxx"
 #undef vtkOpenGLRepresentationPainter
 
+vtkCxxRevisionMacro(vtkMesaRepresentationPainter, "1.2");
 vtkStandardNewMacro(vtkMesaRepresentationPainter);

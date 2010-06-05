@@ -24,6 +24,7 @@
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkMaskPoints, "1.51");
 vtkStandardNewMacro(vtkMaskPoints);
 
 //----------------------------------------------------------------------------

@@ -15,4 +15,5 @@
 #include "vtkImplicitFunctionCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImplicitFunctionCollection, "1.7");
 vtkStandardNewMacro(vtkImplicitFunctionCollection);

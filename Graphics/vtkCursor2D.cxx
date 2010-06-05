@@ -20,6 +20,7 @@
 #include "vtkPolyData.h"
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkCursor2D, "1.3");
 vtkStandardNewMacro(vtkCursor2D);
 
 //---------------------------------------------------------------------------

@@ -32,7 +32,7 @@ class VTK_IO_EXPORT vtkXMLHierarchicalBoxDataReader : public vtkXMLCompositeData
 {
 public:
   static vtkXMLHierarchicalBoxDataReader* New();
-  vtkTypeMacro(vtkXMLHierarchicalBoxDataReader,vtkXMLCompositeDataReader);
+  vtkTypeRevisionMacro(vtkXMLHierarchicalBoxDataReader,vtkXMLCompositeDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

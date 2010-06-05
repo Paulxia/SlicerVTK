@@ -44,7 +44,7 @@ class VTK_INFOVIS_EXPORT vtkPContingencyStatistics : public vtkContingencyStatis
 {
 public:
   static vtkPContingencyStatistics* New();
-  vtkTypeMacro(vtkPContingencyStatistics, vtkContingencyStatistics);
+  vtkTypeRevisionMacro(vtkPContingencyStatistics, vtkContingencyStatistics);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

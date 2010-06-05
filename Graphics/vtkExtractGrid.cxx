@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkStructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkExtractGrid, "1.48");
 vtkStandardNewMacro(vtkExtractGrid);
 
 // Construct object to extract all of the input data.

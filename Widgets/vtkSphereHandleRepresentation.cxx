@@ -27,6 +27,7 @@
 #include "vtkCoordinate.h"
 #include "vtkRenderWindow.h"
 
+vtkCxxRevisionMacro(vtkSphereHandleRepresentation, "1.5");
 vtkStandardNewMacro(vtkSphereHandleRepresentation);
 vtkCxxSetObjectMacro(vtkSphereHandleRepresentation,SelectedProperty,vtkProperty);
 

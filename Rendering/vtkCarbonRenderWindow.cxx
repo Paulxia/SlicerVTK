@@ -29,6 +29,7 @@ PURPOSE.  See the above copyright notice for more information.
 #include <math.h>
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkCarbonRenderWindow, "1.79");
 vtkStandardNewMacro(vtkCarbonRenderWindow);
 
 //----------------------------------------------------------------------------
@@ -427,12 +428,6 @@ bool vtkCarbonRenderWindow::IsCurrent()
 void vtkCarbonRenderWindow::SetForceMakeCurrent()
 {
   this->ForceMakeCurrent = 1;
-}
-
-// --------------------------------------------------------------------------
-int vtkCarbonRenderWindow::IsDirect()
-{
-  return 1;
 }
 
 // --------------------------------------------------------------------------

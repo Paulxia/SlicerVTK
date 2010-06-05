@@ -40,7 +40,7 @@ class VTK_PARALLEL_EXPORT vtkPBGLConnectedComponents : public vtkGraphAlgorithm
 {
 public:
   static vtkPBGLConnectedComponents *New();
-  vtkTypeMacro(vtkPBGLConnectedComponents, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkPBGLConnectedComponents, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

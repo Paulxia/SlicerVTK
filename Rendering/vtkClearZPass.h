@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkClearZPass : public vtkRenderPass
 {
 public:
   static vtkClearZPass *New();
-  vtkTypeMacro(vtkClearZPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkClearZPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

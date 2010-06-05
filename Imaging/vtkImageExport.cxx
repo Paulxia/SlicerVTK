@@ -21,6 +21,7 @@
 #include <ctype.h>
 #include <string.h>
 
+vtkCxxRevisionMacro(vtkImageExport, "1.34");
 vtkStandardNewMacro(vtkImageExport);
 
 //----------------------------------------------------------------------------

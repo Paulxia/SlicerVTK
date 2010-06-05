@@ -59,7 +59,7 @@ signals:
 
 public:
   static vtkQtTreeView *New();
-  vtkTypeMacro(vtkQtTreeView, vtkQtView);
+  vtkTypeRevisionMacro(vtkQtTreeView, vtkQtView);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

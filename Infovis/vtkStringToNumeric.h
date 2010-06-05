@@ -32,7 +32,7 @@ class VTK_INFOVIS_EXPORT vtkStringToNumeric : public vtkDataObjectAlgorithm
 {
 public:
   static vtkStringToNumeric* New();
-  vtkTypeMacro(vtkStringToNumeric,vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkStringToNumeric,vtkDataObjectAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

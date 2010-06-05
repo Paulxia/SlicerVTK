@@ -50,7 +50,7 @@ class vtkGLSLShaderDeviceAdapter2;
 class VTK_RENDERING_EXPORT vtkStandardPolyDataPainter : public vtkPolyDataPainter
 {
 public:
-  vtkTypeMacro(vtkStandardPolyDataPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkStandardPolyDataPainter, vtkPolyDataPainter);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
   static vtkStandardPolyDataPainter *New();
 

@@ -37,7 +37,7 @@
 class VTK_INFOVIS_EXPORT vtkEdgeCenters : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkEdgeCenters,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkEdgeCenters,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -20,6 +20,7 @@
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkMCubesWriter, "1.36");
 vtkStandardNewMacro(vtkMCubesWriter);
 
 // Create object.

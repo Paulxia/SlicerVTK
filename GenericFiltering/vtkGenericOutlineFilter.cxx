@@ -21,6 +21,7 @@
 #include "vtkOutlineSource.h"
 #include "vtkPolyData.h"
 
+vtkCxxRevisionMacro(vtkGenericOutlineFilter, "1.3");
 vtkStandardNewMacro(vtkGenericOutlineFilter);
 
 //-----------------------------------------------------------------------------

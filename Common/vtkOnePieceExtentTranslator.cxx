@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 
 vtkStandardNewMacro(vtkOnePieceExtentTranslator);
+vtkCxxRevisionMacro(vtkOnePieceExtentTranslator, "1.1");
 //-----------------------------------------------------------------------------
 vtkOnePieceExtentTranslator::vtkOnePieceExtentTranslator()
 {

@@ -29,6 +29,7 @@
 #include "vtkTriangle.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkDelaunay2D, "1.76");
 vtkStandardNewMacro(vtkDelaunay2D);
 vtkCxxSetObjectMacro(vtkDelaunay2D,Transform,vtkAbstractTransform);
 

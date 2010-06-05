@@ -40,7 +40,7 @@ class VTK_IMAGING_EXPORT vtkImageDifference : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageDifference *New();
-  vtkTypeMacro(vtkImageDifference,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageDifference,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

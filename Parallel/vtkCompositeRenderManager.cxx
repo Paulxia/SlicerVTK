@@ -23,6 +23,7 @@
 #include "vtkTimerLog.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkCompositeRenderManager, "1.11");
 vtkStandardNewMacro(vtkCompositeRenderManager);
 
 vtkCxxSetObjectMacro(vtkCompositeRenderManager, Compositer, vtkCompositer);
@@ -65,7 +66,6 @@ void vtkCompositeRenderManager::PrintSelf(ostream &os, vtkIndent indent)
 //----------------------------------------------------------------------------
 void vtkCompositeRenderManager::PreRenderProcessing()
 {
-  vtkTimerLog::MarkStartEvent("Compositing");
   // Turn swap buffers off before the render so the end render method has a
   // chance to add to the back buffer.
   if (this->UseBackBuffer)
@@ -84,7 +84,6 @@ void vtkCompositeRenderManager::PostRenderProcessing()
 
   if (!this->UseCompositing || this->CheckForAbortComposite())
     {
-    vtkTimerLog::MarkEndEvent("Compositing");
     return;
     }
 
@@ -123,8 +122,6 @@ void vtkCompositeRenderManager::PostRenderProcessing()
     this->RenderWindow->SwapBuffersOn();
     }
   this->RenderWindow->Frame();
-
-  vtkTimerLog::MarkEndEvent("Compositing");
 }
 
 

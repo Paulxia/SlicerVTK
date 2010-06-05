@@ -24,6 +24,7 @@
 #include "vtkInformationVector.h"
 #include "vtkImageImport.h"
 
+vtkCxxRevisionMacro(vtkImageImportExecutive, "1.3");
 vtkStandardNewMacro(vtkImageImportExecutive);
 
 //----------------------------------------------------------------------------

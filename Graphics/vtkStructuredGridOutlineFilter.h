@@ -27,7 +27,7 @@ class VTK_GRAPHICS_EXPORT vtkStructuredGridOutlineFilter : public vtkPolyDataAlg
 {
 public:
   static vtkStructuredGridOutlineFilter *New();
-  vtkTypeMacro(vtkStructuredGridOutlineFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkStructuredGridOutlineFilter,vtkPolyDataAlgorithm);
 
 protected:
   vtkStructuredGridOutlineFilter() {};

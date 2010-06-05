@@ -56,7 +56,7 @@ public:
   // Description:
   // Construct object with NumberOfSubdivisions set to 1.
   static vtkLoopSubdivisionFilter *New();
-  vtkTypeMacro(vtkLoopSubdivisionFilter,vtkApproximatingSubdivisionFilter);
+  vtkTypeRevisionMacro(vtkLoopSubdivisionFilter,vtkApproximatingSubdivisionFilter);
 
 protected:
   vtkLoopSubdivisionFilter () {};

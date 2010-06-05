@@ -44,7 +44,7 @@ class VTK_FILTERING_EXPORT vtkRectilinearGridAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkRectilinearGridAlgorithm *New();
-  vtkTypeMacro(vtkRectilinearGridAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkRectilinearGridAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

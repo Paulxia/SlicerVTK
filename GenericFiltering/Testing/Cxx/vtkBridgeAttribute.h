@@ -34,7 +34,7 @@ class VTK_BRIDGE_EXPORT vtkBridgeAttribute : public vtkGenericAttribute
 {
  public:
   static vtkBridgeAttribute *New();
-  vtkTypeMacro(vtkBridgeAttribute,vtkGenericAttribute);
+  vtkTypeRevisionMacro(vtkBridgeAttribute,vtkGenericAttribute);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

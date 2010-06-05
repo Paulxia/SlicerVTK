@@ -23,6 +23,7 @@
 #include "vtkPoints.h"
 #include "vtkVertex.h"
 
+vtkCxxRevisionMacro(vtkPolyVertex, "1.3");
 vtkStandardNewMacro(vtkPolyVertex);
 
 //----------------------------------------------------------------------------

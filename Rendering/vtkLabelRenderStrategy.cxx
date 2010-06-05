@@ -17,6 +17,7 @@
 #include "vtkRenderer.h"
 #include "vtkTextProperty.h"
 
+vtkCxxRevisionMacro(vtkLabelRenderStrategy, "1.1");
 vtkCxxSetObjectMacro(vtkLabelRenderStrategy, Renderer, vtkRenderer);
 vtkCxxSetObjectMacro(vtkLabelRenderStrategy, DefaultTextProperty, vtkTextProperty);
 

@@ -33,7 +33,7 @@
 class VTK_FILTERING_EXPORT vtkCylinder : public vtkImplicitFunction
 {
 public:
-  vtkTypeMacro(vtkCylinder,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkCylinder,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description

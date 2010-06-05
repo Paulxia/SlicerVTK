@@ -39,7 +39,7 @@ class VTK_FILTERING_EXPORT vtkActor2DCollection : public vtkPropCollection
   // objects from the collection.
   static vtkActor2DCollection *New();
 
-  vtkTypeMacro(vtkActor2DCollection,vtkPropCollection);
+  vtkTypeRevisionMacro(vtkActor2DCollection,vtkPropCollection);
 
   // Description:
   // Sorts the vtkActor2DCollection by layer number.  Smaller layer

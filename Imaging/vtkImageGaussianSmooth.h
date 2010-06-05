@@ -26,7 +26,7 @@
 class VTK_IMAGING_EXPORT vtkImageGaussianSmooth : public vtkThreadedImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkImageGaussianSmooth,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageGaussianSmooth,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -40,6 +40,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkRectilinearSynchronizedTemplates, "1.5");
 vtkStandardNewMacro(vtkRectilinearSynchronizedTemplates);
 
 //----------------------------------------------------------------------------

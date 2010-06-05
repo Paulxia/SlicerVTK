@@ -44,7 +44,7 @@ class VTK_FILTERING_EXPORT vtkDataObjectAlgorithm : public vtkAlgorithm
 {
 public:
   static vtkDataObjectAlgorithm *New();
-  vtkTypeMacro(vtkDataObjectAlgorithm,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkDataObjectAlgorithm,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

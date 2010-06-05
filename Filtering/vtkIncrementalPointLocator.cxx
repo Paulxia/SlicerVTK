@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro( vtkIncrementalPointLocator, "1.1" );
 
 vtkIncrementalPointLocator::vtkIncrementalPointLocator()
 {

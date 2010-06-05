@@ -80,7 +80,7 @@ class VTK_PARALLEL_EXPORT vtkExodusIIWriter : public vtkWriter
 {
 public:
   static vtkExodusIIWriter *New ();
-  vtkTypeMacro (vtkExodusIIWriter, vtkWriter);
+  vtkTypeRevisionMacro (vtkExodusIIWriter, vtkWriter);
   void PrintSelf (ostream& os, vtkIndent indent);
 
   // Description:

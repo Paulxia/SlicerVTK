@@ -15,6 +15,7 @@
 #include "vtkImagePermute.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImagePermute, "1.32");
 vtkStandardNewMacro(vtkImagePermute);
 
 vtkImagePermute::vtkImagePermute()

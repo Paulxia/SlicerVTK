@@ -28,7 +28,7 @@ class vtkRTXMLPolyDataReaderInternals;
 class VTK_IO_EXPORT vtkRTXMLPolyDataReader : public vtkXMLPolyDataReader
 {
 public:
-  vtkTypeMacro(vtkRTXMLPolyDataReader,vtkXMLPolyDataReader);
+  vtkTypeRevisionMacro(vtkRTXMLPolyDataReader,vtkXMLPolyDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);  
   static vtkRTXMLPolyDataReader* New();
 

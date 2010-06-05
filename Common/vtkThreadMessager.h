@@ -31,7 +31,7 @@ class VTK_COMMON_EXPORT vtkThreadMessager : public vtkObject
 public:
   static vtkThreadMessager *New();
 
-  vtkTypeMacro(vtkThreadMessager,vtkObject);
+  vtkTypeRevisionMacro(vtkThreadMessager,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

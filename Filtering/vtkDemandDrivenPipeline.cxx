@@ -37,6 +37,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkDemandDrivenPipeline, "1.61");
 vtkStandardNewMacro(vtkDemandDrivenPipeline);
 
 vtkInformationKeyMacro(vtkDemandDrivenPipeline, DATA_NOT_GENERATED, Integer);

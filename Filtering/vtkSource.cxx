@@ -26,6 +26,7 @@
 
 #include "vtkImageData.h"
 
+vtkCxxRevisionMacro(vtkSource, "1.18");
 
 class vtkSourceToDataSetFriendship
 {

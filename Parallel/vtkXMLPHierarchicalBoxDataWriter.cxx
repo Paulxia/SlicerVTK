@@ -20,6 +20,7 @@
 
 //----------------------------------------------------------------------------
 vtkStandardNewMacro(vtkXMLPHierarchicalBoxDataWriter);
+vtkCxxRevisionMacro(vtkXMLPHierarchicalBoxDataWriter, "1.5");
 
 vtkCxxSetObjectMacro(vtkXMLPHierarchicalBoxDataWriter, 
                      Controller,

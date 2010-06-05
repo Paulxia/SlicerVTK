@@ -46,7 +46,7 @@ public:
 
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkCheckerboardRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkCheckerboardRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -21,6 +21,7 @@
 
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkSLCReader, "1.54");
 vtkStandardNewMacro(vtkSLCReader);
 
 // Constructor for a vtkSLCReader.

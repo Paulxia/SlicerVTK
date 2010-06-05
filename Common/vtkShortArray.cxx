@@ -24,6 +24,7 @@ VTK_ARRAY_ITERATOR_TEMPLATE_INSTANTIATE(short);
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkShortArray, "1.55");
 vtkStandardNewMacro(vtkShortArray);
 
 //----------------------------------------------------------------------------

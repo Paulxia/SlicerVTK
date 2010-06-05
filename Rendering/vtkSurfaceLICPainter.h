@@ -36,7 +36,7 @@ class VTK_RENDERING_EXPORT vtkSurfaceLICPainter : public vtkPolyDataPainter
 {
 public:
   static vtkSurfaceLICPainter* New();
-  vtkTypeMacro(vtkSurfaceLICPainter, vtkPolyDataPainter);
+  vtkTypeRevisionMacro(vtkSurfaceLICPainter, vtkPolyDataPainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

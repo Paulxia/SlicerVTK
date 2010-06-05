@@ -62,7 +62,7 @@ class VTK_VIEWS_EXPORT vtkRenderedGraphRepresentation : public vtkRenderedRepres
 {
 public:
   static vtkRenderedGraphRepresentation* New();
-  vtkTypeMacro(vtkRenderedGraphRepresentation, vtkRenderedRepresentation);
+  vtkTypeRevisionMacro(vtkRenderedGraphRepresentation, vtkRenderedRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // ------------------------------------------------------------------------

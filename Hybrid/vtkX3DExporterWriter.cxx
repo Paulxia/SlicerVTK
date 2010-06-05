@@ -16,6 +16,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkX3DExporterWriter, "1.1");
 //----------------------------------------------------------------------------
 vtkX3DExporterWriter::vtkX3DExporterWriter()
 {

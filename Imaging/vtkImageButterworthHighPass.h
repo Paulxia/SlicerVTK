@@ -35,7 +35,7 @@ class VTK_IMAGING_EXPORT vtkImageButterworthHighPass : public vtkThreadedImageAl
 {
 public:
   static vtkImageButterworthHighPass *New();
-  vtkTypeMacro(vtkImageButterworthHighPass,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageButterworthHighPass,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

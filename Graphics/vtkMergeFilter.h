@@ -30,7 +30,7 @@ class VTK_GRAPHICS_EXPORT vtkMergeFilter : public vtkDataSetAlgorithm
 {
 public:
   static vtkMergeFilter *New();
-  vtkTypeMacro(vtkMergeFilter,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMergeFilter,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

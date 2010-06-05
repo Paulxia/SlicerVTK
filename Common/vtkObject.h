@@ -48,7 +48,7 @@ class vtkCommand;
 class VTK_COMMON_EXPORT vtkObject : public vtkObjectBase
 {
 public:
-  vtkTypeMacro(vtkObject,vtkObjectBase);
+  vtkTypeRevisionMacro(vtkObject,vtkObjectBase);
 
   // Description:
   // Create an object with Debug turned off, modified time initialized 

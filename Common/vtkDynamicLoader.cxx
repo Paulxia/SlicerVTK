@@ -16,6 +16,7 @@
 
 #include "vtkDebugLeaks.h"
 
+vtkCxxRevisionMacro(vtkDynamicLoader, "1.25");
 
 //-----------------------------------------------------------------------------
 // Needed when we don't use the vtkStandardNewMacro.

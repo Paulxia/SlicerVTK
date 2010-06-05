@@ -34,7 +34,7 @@ class VTK_GRAPHICS_EXPORT vtkSynchronizedTemplatesCutter3D : public vtkSynchroni
 public:
   static vtkSynchronizedTemplatesCutter3D *New();
 
-  vtkTypeMacro(vtkSynchronizedTemplatesCutter3D,vtkSynchronizedTemplates3D);
+  vtkTypeRevisionMacro(vtkSynchronizedTemplatesCutter3D,vtkSynchronizedTemplates3D);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -32,7 +32,7 @@ class VTK_PARALLEL_EXPORT vtkTransmitStructuredGridPiece : public vtkStructuredG
 {
 public:
   static vtkTransmitStructuredGridPiece *New();
-  vtkTypeMacro(vtkTransmitStructuredGridPiece, vtkStructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkTransmitStructuredGridPiece, vtkStructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

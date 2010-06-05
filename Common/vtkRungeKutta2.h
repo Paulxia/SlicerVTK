@@ -31,7 +31,7 @@
 class VTK_COMMON_EXPORT vtkRungeKutta2 : public vtkInitialValueProblemSolver
 {
 public:
-  vtkTypeMacro(vtkRungeKutta2,vtkInitialValueProblemSolver);
+  vtkTypeRevisionMacro(vtkRungeKutta2,vtkInitialValueProblemSolver);
 
   // Description:
   // Construct a vtkRungeKutta2 with no initial FunctionSet.

@@ -26,7 +26,7 @@ class VTK_RENDERING_EXPORT vtkPolygonsPainter : public vtkPrimitivePainter
 {
 public:
   static vtkPolygonsPainter* New();
-  vtkTypeMacro(vtkPolygonsPainter, vtkPrimitivePainter);
+  vtkTypeRevisionMacro(vtkPolygonsPainter, vtkPrimitivePainter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

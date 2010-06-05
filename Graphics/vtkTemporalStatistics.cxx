@@ -44,6 +44,7 @@
 #include <vtkstd/algorithm>
 
 //=============================================================================
+vtkCxxRevisionMacro(vtkTemporalStatistics, "1.6");
 vtkStandardNewMacro(vtkTemporalStatistics);
 
 //=============================================================================

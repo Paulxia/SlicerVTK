@@ -15,4 +15,5 @@
 #include "vtkImageMapToRGBA.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkImageMapToRGBA, "1.17");
 vtkStandardNewMacro(vtkImageMapToRGBA);

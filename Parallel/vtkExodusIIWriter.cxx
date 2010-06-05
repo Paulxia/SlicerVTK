@@ -48,6 +48,7 @@
 #include <time.h>
 #include <ctype.h>
 
+vtkCxxRevisionMacro (vtkExodusIIWriter, "1.44");
 vtkStandardNewMacro (vtkExodusIIWriter);
 vtkCxxSetObjectMacro (vtkExodusIIWriter, ModelMetadata, vtkModelMetadata);
 

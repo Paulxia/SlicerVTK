@@ -35,7 +35,7 @@ class vtkIntArray;
 class VTK_IO_EXPORT vtkXMLHyperOctreeReader : public vtkXMLDataReader
 {
 public:
-  vtkTypeMacro(vtkXMLHyperOctreeReader,vtkXMLDataReader);
+  vtkTypeRevisionMacro(vtkXMLHyperOctreeReader,vtkXMLDataReader);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkXMLHyperOctreeReader *New();
   

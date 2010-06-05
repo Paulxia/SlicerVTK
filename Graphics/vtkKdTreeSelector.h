@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkKdTreeSelector : public vtkSelectionAlgorithm
 {
 public:
   static vtkKdTreeSelector* New();
-  vtkTypeMacro(vtkKdTreeSelector, vtkSelectionAlgorithm);
+  vtkTypeRevisionMacro(vtkKdTreeSelector, vtkSelectionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

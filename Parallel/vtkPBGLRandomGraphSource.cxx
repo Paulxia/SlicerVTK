@@ -42,6 +42,7 @@
 #include <boost/mpi/communicator.hpp>
 #include <boost/mpi/collectives/scan.hpp>
 
+vtkCxxRevisionMacro(vtkPBGLRandomGraphSource, "1.1");
 vtkStandardNewMacro(vtkPBGLRandomGraphSource);
 
 // ----------------------------------------------------------------------

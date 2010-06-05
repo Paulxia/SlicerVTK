@@ -17,6 +17,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkImageReader2.h"
 
+vtkCxxRevisionMacro(vtkImageReader2Collection, "1.8");
 vtkStandardNewMacro(vtkImageReader2Collection);
 
 void vtkImageReader2Collection::AddItem(vtkImageReader2 *f) 

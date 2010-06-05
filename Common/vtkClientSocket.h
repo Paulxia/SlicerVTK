@@ -24,7 +24,7 @@ class VTK_COMMON_EXPORT vtkClientSocket : public vtkSocket
 {
 public:
   static vtkClientSocket* New();
-  vtkTypeMacro(vtkClientSocket, vtkSocket);
+  vtkTypeRevisionMacro(vtkClientSocket, vtkSocket);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

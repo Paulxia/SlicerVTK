@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageThreshold : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageThreshold *New();
-  vtkTypeMacro(vtkImageThreshold,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageThreshold,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

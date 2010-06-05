@@ -28,6 +28,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+vtkCxxRevisionMacro(vtkMCubesReader, "1.67");
 vtkStandardNewMacro(vtkMCubesReader);
 
 // Construct object with FlipNormals turned off and Normals set to true.

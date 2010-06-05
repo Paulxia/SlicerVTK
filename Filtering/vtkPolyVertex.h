@@ -29,7 +29,7 @@ class VTK_FILTERING_EXPORT vtkPolyVertex : public vtkCell
 {
 public:
   static vtkPolyVertex *New();
-  vtkTypeMacro(vtkPolyVertex,vtkCell);
+  vtkTypeRevisionMacro(vtkPolyVertex,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

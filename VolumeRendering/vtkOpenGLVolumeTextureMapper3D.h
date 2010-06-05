@@ -37,7 +37,7 @@ class vtkVolumeProperty;
 class VTK_VOLUMERENDERING_EXPORT vtkOpenGLVolumeTextureMapper3D : public vtkVolumeTextureMapper3D
 {
 public:
-  vtkTypeMacro(vtkOpenGLVolumeTextureMapper3D,vtkVolumeTextureMapper3D);
+  vtkTypeRevisionMacro(vtkOpenGLVolumeTextureMapper3D,vtkVolumeTextureMapper3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkOpenGLVolumeTextureMapper3D *New();
@@ -46,8 +46,7 @@ public:
   // Is hardware rendering supported? No if the input data is
   // more than one independent component, or if the hardware does
   // not support the required extensions
-  int IsRenderSupported(vtkVolumeProperty *,
-                        vtkRenderer *ren);
+  int IsRenderSupported(vtkVolumeProperty *);
   
 //BTX
 
@@ -104,7 +103,7 @@ protected:
   int InternalRGB; // GLint
   int InternalRGBA; // GLint
   
-  void Initialize(vtkRenderer *r);
+  void Initialize();
 
   virtual void RenderNV(vtkRenderer *ren, vtkVolume *vol);
   virtual void RenderFP(vtkRenderer *ren, vtkVolume *vol);

@@ -37,6 +37,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkTemporalFractal, "1.10");
 vtkStandardNewMacro(vtkTemporalFractal);
 
 //----------------------------------------------------------------------------

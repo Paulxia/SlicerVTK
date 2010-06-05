@@ -33,7 +33,7 @@ class VTK_IMAGING_EXPORT vtkImageClip : public vtkImageAlgorithm
 {
 public:
   static vtkImageClip *New();
-  vtkTypeMacro(vtkImageClip,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageClip,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

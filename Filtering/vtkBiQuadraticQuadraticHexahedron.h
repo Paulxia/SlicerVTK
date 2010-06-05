@@ -78,7 +78,7 @@ class VTK_FILTERING_EXPORT vtkBiQuadraticQuadraticHexahedron : public vtkNonLine
 {
 public:
   static vtkBiQuadraticQuadraticHexahedron *New();
-  vtkTypeMacro(vtkBiQuadraticQuadraticHexahedron,vtkNonLinearCell);
+  vtkTypeRevisionMacro(vtkBiQuadraticQuadraticHexahedron,vtkNonLinearCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

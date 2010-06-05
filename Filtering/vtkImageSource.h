@@ -32,7 +32,7 @@ class vtkImageData;
 class VTK_FILTERING_EXPORT vtkImageSource : public vtkSource
 {
 public:
-  vtkTypeMacro(vtkImageSource,vtkSource);
+  vtkTypeRevisionMacro(vtkImageSource,vtkSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

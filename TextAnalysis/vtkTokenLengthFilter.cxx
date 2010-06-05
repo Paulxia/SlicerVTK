@@ -31,6 +31,7 @@
 
 #include <stdexcept>
 
+vtkCxxRevisionMacro(vtkTokenLengthFilter, "1.3");
 vtkStandardNewMacro(vtkTokenLengthFilter);
 
 vtkTokenLengthFilter::vtkTokenLengthFilter() :

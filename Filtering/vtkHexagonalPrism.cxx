@@ -29,6 +29,7 @@
 #include "vtkMath.h"
 #include "vtkPoints.h"
 
+vtkCxxRevisionMacro(vtkHexagonalPrism, "1.7");
 vtkStandardNewMacro(vtkHexagonalPrism);
 
 static const double VTK_DIVERGED = 1.e6;

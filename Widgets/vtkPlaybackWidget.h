@@ -40,7 +40,7 @@ public:
 
   // Description:
   // Standar VTK class methods.
-  vtkTypeMacro(vtkPlaybackWidget,vtkBorderWidget);
+  vtkTypeRevisionMacro(vtkPlaybackWidget,vtkBorderWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

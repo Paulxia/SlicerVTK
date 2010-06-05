@@ -32,7 +32,7 @@ class VTK_FILTERING_EXPORT vtkTriangle : public vtkCell
 {
 public:
   static vtkTriangle *New();
-  vtkTypeMacro(vtkTriangle,vtkCell);
+  vtkTypeRevisionMacro(vtkTriangle,vtkCell);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

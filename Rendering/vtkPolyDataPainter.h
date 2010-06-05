@@ -50,7 +50,7 @@ class vtkPolyData;
 class VTK_RENDERING_EXPORT vtkPolyDataPainter : public vtkPainter
 {
 public:
-  vtkTypeMacro(vtkPolyDataPainter, vtkPainter);
+  vtkTypeRevisionMacro(vtkPolyDataPainter, vtkPainter);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

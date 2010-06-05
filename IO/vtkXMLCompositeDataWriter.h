@@ -34,7 +34,7 @@ class vtkXMLCompositeDataWriterInternals;
 class VTK_IO_EXPORT vtkXMLCompositeDataWriter : public vtkXMLWriter
 {
 public:
-  vtkTypeMacro(vtkXMLCompositeDataWriter,vtkXMLWriter);
+  vtkTypeRevisionMacro(vtkXMLCompositeDataWriter,vtkXMLWriter);
   void PrintSelf(ostream& os, vtkIndent indent);  
   
   // Description:

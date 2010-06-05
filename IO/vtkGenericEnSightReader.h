@@ -34,7 +34,7 @@ class VTK_IO_EXPORT vtkGenericEnSightReader : public vtkMultiBlockDataSetAlgorit
 {
 public:
   static vtkGenericEnSightReader *New();
-  vtkTypeMacro(vtkGenericEnSightReader, vtkMultiBlockDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkGenericEnSightReader, vtkMultiBlockDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

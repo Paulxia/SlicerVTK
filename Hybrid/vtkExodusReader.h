@@ -56,7 +56,7 @@ class VTK_HYBRID_EXPORT vtkExodusReader : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkExodusReader *New();
-  vtkTypeMacro(vtkExodusReader,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkExodusReader,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

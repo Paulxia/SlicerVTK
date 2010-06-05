@@ -50,7 +50,7 @@ class VTK_INFOVIS_EXPORT vtkGenerateIndexArray : public vtkDataObjectAlgorithm
 public:
   static vtkGenerateIndexArray *New();
 
-  vtkTypeMacro(vtkGenerateIndexArray, vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkGenerateIndexArray, vtkDataObjectAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

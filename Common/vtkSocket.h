@@ -26,7 +26,7 @@ class vtkSocketCollection;
 class VTK_COMMON_EXPORT vtkSocket : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkSocket, vtkObject);
+  vtkTypeRevisionMacro(vtkSocket, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // ----- Status API ----

@@ -30,6 +30,7 @@
 #include "vtkRendererCollection.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkOBJExporter, "1.59");
 vtkStandardNewMacro(vtkOBJExporter);
 
 vtkOBJExporter::vtkOBJExporter()

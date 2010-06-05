@@ -88,7 +88,7 @@ class vtkTimerLog;
 class VTK_VOLUME_PRO_MAPPER_EXPORT vtkVolumeProMapper : public vtkVolumeMapper
 {
 public:
-  vtkTypeMacro(vtkVolumeProMapper,vtkVolumeMapper);
+  vtkTypeRevisionMacro(vtkVolumeProMapper,vtkVolumeMapper);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkRandomLayoutStrategy : public vtkGraphLayoutStrategy
 public:
   static vtkRandomLayoutStrategy *New();
 
-  vtkTypeMacro(vtkRandomLayoutStrategy, vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkRandomLayoutStrategy, vtkGraphLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

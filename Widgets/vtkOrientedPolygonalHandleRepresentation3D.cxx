@@ -23,6 +23,7 @@
 #include "vtkTransformPolyDataFilter.h"
 #include "vtkFollower.h"
 
+vtkCxxRevisionMacro(vtkOrientedPolygonalHandleRepresentation3D, "1.1");
 vtkStandardNewMacro(vtkOrientedPolygonalHandleRepresentation3D);
 
 //----------------------------------------------------------------------

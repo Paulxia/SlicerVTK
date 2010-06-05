@@ -65,7 +65,7 @@ class VTK_RENDERING_EXPORT vtkAssembly : public vtkProp3D
 public:
   static vtkAssembly *New();
 
-  vtkTypeMacro(vtkAssembly,vtkProp3D);
+  vtkTypeRevisionMacro(vtkAssembly,vtkProp3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

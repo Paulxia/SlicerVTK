@@ -86,7 +86,7 @@ class VTK_PARALLEL_EXPORT vtkPCosmoReader : public vtkUnstructuredGridAlgorithm
 {
 public:
   static vtkPCosmoReader *New();
-  vtkTypeMacro(vtkPCosmoReader, vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkPCosmoReader, vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

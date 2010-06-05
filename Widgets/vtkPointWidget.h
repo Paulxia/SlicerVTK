@@ -80,7 +80,7 @@ public:
   // Instantiate this widget
   static vtkPointWidget *New();
 
-  vtkTypeMacro(vtkPointWidget,vtk3DWidget);
+  vtkTypeRevisionMacro(vtkPointWidget,vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

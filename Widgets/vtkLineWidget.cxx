@@ -35,6 +35,7 @@
 #include "vtkRenderer.h"
 #include "vtkSphereSource.h"
 
+vtkCxxRevisionMacro(vtkLineWidget, "1.4");
 vtkStandardNewMacro(vtkLineWidget);
 
 //----------------------------------------------------------------------------

@@ -31,7 +31,7 @@ class vtkUnstructuredGrid;
 class VTK_FILTERING_EXPORT vtkUnstructuredGridToPolyDataFilter : public vtkPolyDataSource
 {
 public:
-  vtkTypeMacro(vtkUnstructuredGridToPolyDataFilter,vtkPolyDataSource);
+  vtkTypeRevisionMacro(vtkUnstructuredGridToPolyDataFilter,vtkPolyDataSource);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -47,6 +47,7 @@ public:
 };
 
 
+vtkCxxRevisionMacro(vtkQtSQLQuery, "1.3");
 vtkStandardNewMacro(vtkQtSQLQuery);
 
 vtkQtSQLQuery::vtkQtSQLQuery()

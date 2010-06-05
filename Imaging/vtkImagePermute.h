@@ -30,7 +30,7 @@ class VTK_IMAGING_EXPORT vtkImagePermute : public vtkImageReslice
 {
 public:
   static vtkImagePermute *New();
-  vtkTypeMacro(vtkImagePermute,vtkImageReslice);
+  vtkTypeRevisionMacro(vtkImagePermute,vtkImageReslice);
 
   void PrintSelf(ostream& os, vtkIndent indent);
 

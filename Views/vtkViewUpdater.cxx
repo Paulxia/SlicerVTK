@@ -28,6 +28,7 @@
 
 #include <vtksys/stl/vector>
 
+vtkCxxRevisionMacro(vtkViewUpdater, "1.3");
 vtkStandardNewMacro(vtkViewUpdater);
 
 class vtkViewUpdater::vtkViewUpdaterInternals : public vtkCommand

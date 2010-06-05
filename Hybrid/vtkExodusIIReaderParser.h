@@ -37,7 +37,7 @@ class VTK_HYBRID_EXPORT vtkExodusIIReaderParser : public vtkXMLParser
 {
 public:
   static vtkExodusIIReaderParser* New();
-  vtkTypeMacro(vtkExodusIIReaderParser, vtkXMLParser);
+  vtkTypeRevisionMacro(vtkExodusIIReaderParser, vtkXMLParser);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -28,6 +28,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkLabelSizeCalculator);
+vtkCxxRevisionMacro(vtkLabelSizeCalculator,"1.6");
 vtkCxxSetObjectMacro(vtkLabelSizeCalculator,FontUtil,vtkFreeTypeUtilities);
 
 vtkLabelSizeCalculator::vtkLabelSizeCalculator()

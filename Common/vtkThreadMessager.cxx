@@ -20,6 +20,7 @@
 # include "vtkWindows.h"
 #endif
 
+vtkCxxRevisionMacro(vtkThreadMessager, "1.4");
 vtkStandardNewMacro(vtkThreadMessager);
 
 vtkThreadMessager::vtkThreadMessager()

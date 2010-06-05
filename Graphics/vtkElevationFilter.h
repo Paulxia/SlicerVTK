@@ -29,7 +29,7 @@ class VTK_GRAPHICS_EXPORT vtkElevationFilter : public vtkDataSetAlgorithm
 {
 public:
   static vtkElevationFilter* New();
-  vtkTypeMacro(vtkElevationFilter, vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkElevationFilter, vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

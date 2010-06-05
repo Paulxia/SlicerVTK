@@ -24,6 +24,7 @@
 #include "vtkTable.h"
 
 vtkStandardNewMacro(vtkTableToStructuredGrid);
+vtkCxxRevisionMacro(vtkTableToStructuredGrid, "1.2");
 //----------------------------------------------------------------------------
 vtkTableToStructuredGrid::vtkTableToStructuredGrid()
 {

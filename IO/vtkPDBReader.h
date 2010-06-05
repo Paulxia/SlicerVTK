@@ -29,7 +29,7 @@
 class VTK_IO_EXPORT vtkPDBReader : public vtkMoleculeReaderBase
 {
 public:
-  vtkTypeMacro(vtkPDBReader,vtkMoleculeReaderBase);
+  vtkTypeRevisionMacro(vtkPDBReader,vtkMoleculeReaderBase);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkPDBReader *New();

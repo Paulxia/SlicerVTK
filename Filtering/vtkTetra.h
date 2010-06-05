@@ -38,7 +38,7 @@ class VTK_FILTERING_EXPORT vtkTetra : public vtkCell3D
 {
 public:
   static vtkTetra *New();
-  vtkTypeMacro(vtkTetra,vtkCell3D);
+  vtkTypeRevisionMacro(vtkTetra,vtkCell3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

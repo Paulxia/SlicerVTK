@@ -33,6 +33,7 @@
 
 #include "vtkCompositeDataPipeline.h"
 
+vtkCxxRevisionMacro(vtkExecutive, "1.33");
 vtkInformationKeyMacro(vtkExecutive, ALGORITHM_AFTER_FORWARD, Integer);
 vtkInformationKeyMacro(vtkExecutive, ALGORITHM_BEFORE_FORWARD, Integer);
 vtkInformationKeyMacro(vtkExecutive, ALGORITHM_DIRECTION, Integer);

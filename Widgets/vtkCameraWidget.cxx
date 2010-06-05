@@ -18,6 +18,7 @@
 #include "vtkCallbackCommand.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCameraWidget, "1.3");
 vtkStandardNewMacro(vtkCameraWidget);
 
 //-------------------------------------------------------------------------

@@ -58,7 +58,7 @@ class VTK_IMAGING_EXPORT vtkImageRectilinearWipe : public vtkThreadedImageAlgori
 {
 public:
   static vtkImageRectilinearWipe *New();
-  vtkTypeMacro(vtkImageRectilinearWipe,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageRectilinearWipe,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

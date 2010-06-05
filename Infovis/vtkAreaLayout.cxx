@@ -36,6 +36,7 @@
 #include "vtkTreeFieldAggregator.h"
 #include "vtkTreeDFSIterator.h"
 
+vtkCxxRevisionMacro(vtkAreaLayout, "1.3");
 vtkStandardNewMacro(vtkAreaLayout);
 vtkCxxSetObjectMacro(vtkAreaLayout, LayoutStrategy, vtkAreaLayoutStrategy);
 

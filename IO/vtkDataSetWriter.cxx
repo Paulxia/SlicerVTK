@@ -29,6 +29,7 @@
 #include "vtkUnstructuredGrid.h"
 #include "vtkUnstructuredGridWriter.h"
 
+vtkCxxRevisionMacro(vtkDataSetWriter, "1.42");
 vtkStandardNewMacro(vtkDataSetWriter);
 
 void vtkDataSetWriter::WriteData()

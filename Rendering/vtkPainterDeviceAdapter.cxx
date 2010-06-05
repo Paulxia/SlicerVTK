@@ -28,6 +28,7 @@
 
 // Needed when we don't use the vtkStandardNewMacro.
 vtkInstantiatorNewMacro(vtkPainterDeviceAdapter);
+vtkCxxRevisionMacro(vtkPainterDeviceAdapter, "1.5");
 
 //-----------------------------------------------------------------------------
 vtkPainterDeviceAdapter::vtkPainterDeviceAdapter()

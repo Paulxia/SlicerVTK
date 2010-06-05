@@ -43,7 +43,7 @@ class VTK_FILTERING_EXPORT vtkHexagonalPrism : public vtkCell3D
 {
 public:
   static vtkHexagonalPrism *New();
-  vtkTypeMacro(vtkHexagonalPrism,vtkCell3D);
+  vtkTypeRevisionMacro(vtkHexagonalPrism,vtkCell3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

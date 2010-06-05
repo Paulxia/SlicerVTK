@@ -94,7 +94,7 @@ public:
 
   // Description:
   // Standard vtkObject methods
-  vtkTypeMacro(vtkLineWidget2,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkLineWidget2,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

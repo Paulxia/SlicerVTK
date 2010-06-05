@@ -15,6 +15,7 @@
 #include "vtkCullerCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCullerCollection, "1.8");
 vtkStandardNewMacro(vtkCullerCollection);
 
 //----------------------------------------------------------------------------

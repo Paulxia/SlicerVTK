@@ -76,7 +76,7 @@ public:
 class VTK_GRAPHICS_EXPORT vtkOBBTree : public vtkAbstractCellLocator
 {
 public:
-  vtkTypeMacro(vtkOBBTree,vtkAbstractCellLocator);
+  vtkTypeRevisionMacro(vtkOBBTree,vtkAbstractCellLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

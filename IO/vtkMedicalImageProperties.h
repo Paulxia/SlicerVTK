@@ -32,7 +32,7 @@ class VTK_IO_EXPORT vtkMedicalImageProperties : public vtkObject
 {
 public:
   static vtkMedicalImageProperties *New();
-  vtkTypeMacro(vtkMedicalImageProperties,vtkObject);
+  vtkTypeRevisionMacro(vtkMedicalImageProperties,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

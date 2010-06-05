@@ -49,7 +49,7 @@ class vtkDataObject;
 class VTK_FILTERING_EXPORT vtkProcessObject : public vtkAlgorithm
 {
 public:
-  vtkTypeMacro(vtkProcessObject,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkProcessObject,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

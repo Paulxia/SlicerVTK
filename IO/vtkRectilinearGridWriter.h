@@ -31,7 +31,7 @@ class VTK_IO_EXPORT vtkRectilinearGridWriter : public vtkDataWriter
 {
 public:
   static vtkRectilinearGridWriter *New();
-  vtkTypeMacro(vtkRectilinearGridWriter,vtkDataWriter);
+  vtkTypeRevisionMacro(vtkRectilinearGridWriter,vtkDataWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
                                
   // Description:

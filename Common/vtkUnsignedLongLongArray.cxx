@@ -25,6 +25,7 @@ VTK_ARRAY_ITERATOR_TEMPLATE_INSTANTIATE(unsigned long long);
 #include "vtkObjectFactory.h"
 
 //----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkUnsignedLongLongArray, "1.2");
 vtkStandardNewMacro(vtkUnsignedLongLongArray);
 
 //----------------------------------------------------------------------------

@@ -40,7 +40,7 @@ class vtkMultiProcessController;
 class VTK_PARALLEL_EXPORT vtkPSLACReader : public vtkSLACReader
 {
 public:
-  vtkTypeMacro(vtkPSLACReader, vtkSLACReader);
+  vtkTypeRevisionMacro(vtkPSLACReader, vtkSLACReader);
   static vtkPSLACReader *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 

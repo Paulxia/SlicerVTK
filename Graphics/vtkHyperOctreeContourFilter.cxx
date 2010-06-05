@@ -79,7 +79,7 @@ class vtkHyperOctreeContourPointsGrabber : public vtkHyperOctreePointsGrabber
 public:
   static vtkHyperOctreeContourPointsGrabber *New();
   
-  vtkTypeMacro(vtkHyperOctreeContourPointsGrabber,vtkHyperOctreePointsGrabber);
+  vtkTypeRevisionMacro(vtkHyperOctreeContourPointsGrabber,vtkHyperOctreePointsGrabber);
   
   void PrintSelf(ostream& os, vtkIndent indent);
   
@@ -154,6 +154,7 @@ private:
   void operator=(const vtkHyperOctreeContourPointsGrabber&);    // Not implemented.
 };
   
+vtkCxxRevisionMacro(vtkHyperOctreeContourFilter, "1.6");
 vtkStandardNewMacro(vtkHyperOctreeContourFilter);
 
 //----------------------------------------------------------------------------
@@ -1287,6 +1288,7 @@ int vtkHyperOctreeContourFilter::FillInputPortInformation(int,
 }
 
 
+vtkCxxRevisionMacro(vtkHyperOctreeContourPointsGrabber, "1.6");
 vtkStandardNewMacro(vtkHyperOctreeContourPointsGrabber);
 
 //-----------------------------------------------------------------------------

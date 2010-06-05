@@ -11,6 +11,7 @@
 #include <vtksys/ios/sstream>
 
 vtkStandardNewMacro(vtkKMeansDistanceFunctorCalculator);
+vtkCxxRevisionMacro(vtkKMeansDistanceFunctorCalculator,"1.1");
 vtkCxxSetObjectMacro(vtkKMeansDistanceFunctorCalculator,FunctionParser,vtkFunctionParser);
 
 // ----------------------------------------------------------------------

@@ -32,7 +32,7 @@ class VTK_GRAPHICS_EXPORT vtkExtractRectilinearGrid : public vtkRectilinearGridA
 {
 public:
   static vtkExtractRectilinearGrid *New();
-  vtkTypeMacro(vtkExtractRectilinearGrid,vtkRectilinearGridAlgorithm);
+  vtkTypeRevisionMacro(vtkExtractRectilinearGrid,vtkRectilinearGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

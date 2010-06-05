@@ -75,7 +75,7 @@ class VTK_RENDERING_EXPORT vtkLabelHierarchy : public vtkPointSet
 {
 public:
   static vtkLabelHierarchy* New();
-  vtkTypeMacro(vtkLabelHierarchy,vtkPointSet);
+  vtkTypeRevisionMacro(vtkLabelHierarchy,vtkPointSet);
   virtual void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

@@ -24,6 +24,7 @@
 #include "vtkTransform.h"
 #include "vtkTransformFilter.h"
 
+vtkCxxRevisionMacro(vtkArrowSource, "1.8");
 vtkStandardNewMacro(vtkArrowSource);
 
 vtkArrowSource::vtkArrowSource()

@@ -6,6 +6,7 @@ wishing to create their own VTK classes locally.
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkLocalExample, "1.2");
 vtkStandardNewMacro(vtkLocalExample);
 
 //----------------------------------------------------------------------------

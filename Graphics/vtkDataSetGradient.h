@@ -35,7 +35,7 @@ class VTK_GRAPHICS_EXPORT vtkDataSetGradient : public vtkDataSetAlgorithm
 {
  public:
   static vtkDataSetGradient* New();
-  vtkTypeMacro(vtkDataSetGradient,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkDataSetGradient,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

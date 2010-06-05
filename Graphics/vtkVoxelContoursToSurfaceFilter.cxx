@@ -24,6 +24,7 @@
 #include "vtkPolyData.h"
 #include "vtkStructuredPoints.h"
 
+vtkCxxRevisionMacro(vtkVoxelContoursToSurfaceFilter, "1.28");
 vtkStandardNewMacro(vtkVoxelContoursToSurfaceFilter);
 
 vtkVoxelContoursToSurfaceFilter::vtkVoxelContoursToSurfaceFilter()

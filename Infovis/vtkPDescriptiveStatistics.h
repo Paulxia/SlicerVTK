@@ -32,7 +32,7 @@ class VTK_INFOVIS_EXPORT vtkPDescriptiveStatistics : public vtkDescriptiveStatis
 {
 public:
   static vtkPDescriptiveStatistics* New();
-  vtkTypeMacro(vtkPDescriptiveStatistics, vtkDescriptiveStatistics);
+  vtkTypeRevisionMacro(vtkPDescriptiveStatistics, vtkDescriptiveStatistics);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

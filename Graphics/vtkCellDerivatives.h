@@ -54,7 +54,7 @@
 class VTK_GRAPHICS_EXPORT vtkCellDerivatives : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkCellDerivatives,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkCellDerivatives,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

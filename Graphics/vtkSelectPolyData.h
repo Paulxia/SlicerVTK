@@ -93,7 +93,7 @@ public:
   // is not generated, and the inside mode is the smallest region.
   static vtkSelectPolyData *New();
 
-  vtkTypeMacro(vtkSelectPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSelectPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

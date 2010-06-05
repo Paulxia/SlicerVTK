@@ -24,6 +24,7 @@
 #include "vtkUnsignedCharArray.h"
 
 vtkStandardNewMacro(vtkBlockIdScalars);
+vtkCxxRevisionMacro(vtkBlockIdScalars, "1.1");
 //----------------------------------------------------------------------------
 vtkBlockIdScalars::vtkBlockIdScalars()
 {

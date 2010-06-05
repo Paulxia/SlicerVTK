@@ -25,6 +25,7 @@
 
 #include <vtksys/SystemTools.hxx>
 
+vtkCxxRevisionMacro(vtkImageWriter, "1.61");
 vtkStandardNewMacro(vtkImageWriter);
 
 //----------------------------------------------------------------------------

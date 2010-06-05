@@ -24,6 +24,7 @@
 #include "vtkPointData.h"
 #include "vtkSmartPointer.h"
 
+vtkCxxRevisionMacro(vtkElevationFilter, "1.58");
 vtkStandardNewMacro(vtkElevationFilter);
 
 //----------------------------------------------------------------------------

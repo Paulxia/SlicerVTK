@@ -37,7 +37,7 @@
 class VTK_GRAPHICS_EXPORT vtkTransformTextureCoords : public vtkDataSetAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkTransformTextureCoords,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTransformTextureCoords,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

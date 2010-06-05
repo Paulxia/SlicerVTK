@@ -27,6 +27,7 @@
 #include "vtkThreshold.h"
 #include "vtkUnstructuredGrid.h"
 
+vtkCxxRevisionMacro(vtkCutMaterial, "1.19");
 vtkStandardNewMacro(vtkCutMaterial);
 
 // Instantiate object with no input and no defined output.

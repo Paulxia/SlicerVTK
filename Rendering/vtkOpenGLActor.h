@@ -30,7 +30,7 @@ protected:
   
 public:
   static vtkOpenGLActor *New();
-  vtkTypeMacro(vtkOpenGLActor,vtkActor);
+  vtkTypeRevisionMacro(vtkOpenGLActor,vtkActor);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -122,6 +122,7 @@ private:
 };
 
 //--------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkMINCImageAttributes, "1.10");
 vtkStandardNewMacro(vtkMINCImageAttributes);
 
 vtkCxxSetObjectMacro(vtkMINCImageAttributes,ImageMin,vtkDoubleArray);

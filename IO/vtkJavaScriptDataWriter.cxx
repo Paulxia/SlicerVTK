@@ -35,6 +35,7 @@
 #include <vtksys/ios/sstream>
 
 vtkStandardNewMacro(vtkJavaScriptDataWriter);
+vtkCxxRevisionMacro(vtkJavaScriptDataWriter, "1.5");
 //-----------------------------------------------------------------------------
 vtkJavaScriptDataWriter::vtkJavaScriptDataWriter()
 {

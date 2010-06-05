@@ -73,7 +73,7 @@ class vtkActor2D;
 class VTK_RENDERING_EXPORT vtkAbstractPropPicker : public vtkAbstractPicker
 {
 public:
-  vtkTypeMacro(vtkAbstractPropPicker,vtkAbstractPicker);
+  vtkTypeRevisionMacro(vtkAbstractPropPicker,vtkAbstractPicker);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

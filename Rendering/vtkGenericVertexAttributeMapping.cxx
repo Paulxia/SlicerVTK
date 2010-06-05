@@ -37,6 +37,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkGenericVertexAttributeMapping);
+vtkCxxRevisionMacro(vtkGenericVertexAttributeMapping, "1.3");
 //----------------------------------------------------------------------------
 vtkGenericVertexAttributeMapping::vtkGenericVertexAttributeMapping()
 {

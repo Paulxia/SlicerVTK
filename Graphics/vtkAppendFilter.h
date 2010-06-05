@@ -36,7 +36,7 @@ class VTK_GRAPHICS_EXPORT vtkAppendFilter : public vtkUnstructuredGridAlgorithm
 public:
   static vtkAppendFilter *New();
 
-  vtkTypeMacro(vtkAppendFilter,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkAppendFilter,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

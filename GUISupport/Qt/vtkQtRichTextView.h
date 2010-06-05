@@ -43,7 +43,7 @@ Q_OBJECT
 
 public:
   static vtkQtRichTextView *New();
-  vtkTypeMacro(vtkQtRichTextView, vtkQtView);
+  vtkTypeRevisionMacro(vtkQtRichTextView, vtkQtView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

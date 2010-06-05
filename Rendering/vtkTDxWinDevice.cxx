@@ -36,6 +36,7 @@
 
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkTDxWinDevice,"1.11");
 vtkStandardNewMacro(vtkTDxWinDevice);
 
 #include <atlbase.h> // for CComPtr<> (a smart pointer)

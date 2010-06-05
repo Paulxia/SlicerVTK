@@ -69,6 +69,7 @@ public:
   vtkstd::vector<vtkIdType> ID;
 };
 
+vtkCxxRevisionMacro(vtkDocumentReader, "1.7");
 vtkStandardNewMacro(vtkDocumentReader);
 
 vtkDocumentReader::vtkDocumentReader() :

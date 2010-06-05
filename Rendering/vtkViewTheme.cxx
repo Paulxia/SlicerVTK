@@ -24,6 +24,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkTextProperty.h"
 
+vtkCxxRevisionMacro(vtkViewTheme, "1.8");
 vtkStandardNewMacro(vtkViewTheme);
 vtkCxxSetObjectMacro(vtkViewTheme, PointLookupTable, vtkScalarsToColors);
 vtkCxxSetObjectMacro(vtkViewTheme, CellLookupTable, vtkScalarsToColors);

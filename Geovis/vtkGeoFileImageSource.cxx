@@ -37,6 +37,7 @@
 #include <vtksys/stl/utility>
 
 vtkStandardNewMacro(vtkGeoFileImageSource);
+vtkCxxRevisionMacro(vtkGeoFileImageSource, "1.3");
 //----------------------------------------------------------------------------
 vtkGeoFileImageSource::vtkGeoFileImageSource()
 {

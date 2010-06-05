@@ -42,7 +42,7 @@ class vtkPoints;
 class VTK_IO_EXPORT vtkSTLReader : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkSTLReader,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSTLReader,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

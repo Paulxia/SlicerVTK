@@ -33,7 +33,7 @@ class VTK_IMAGING_EXPORT vtkImageWrapPad : public vtkImagePadFilter
 {
 public:
   static vtkImageWrapPad *New();
-  vtkTypeMacro(vtkImageWrapPad,vtkImagePadFilter);
+  vtkTypeRevisionMacro(vtkImageWrapPad,vtkImagePadFilter);
 
 protected:
   vtkImageWrapPad() {};

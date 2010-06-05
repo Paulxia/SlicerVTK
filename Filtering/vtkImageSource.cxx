@@ -20,6 +20,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkPointData.h"
 
+vtkCxxRevisionMacro(vtkImageSource, "1.64");
 
 //----------------------------------------------------------------------------
 vtkImageSource::vtkImageSource()

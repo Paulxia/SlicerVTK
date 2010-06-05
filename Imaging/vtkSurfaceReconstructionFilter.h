@@ -30,7 +30,7 @@
 class VTK_IMAGING_EXPORT vtkSurfaceReconstructionFilter : public vtkImageAlgorithm
 {
 public:
-  vtkTypeMacro(vtkSurfaceReconstructionFilter,vtkImageAlgorithm);
+  vtkTypeRevisionMacro(vtkSurfaceReconstructionFilter,vtkImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -33,7 +33,7 @@
 class VTK_COMMON_EXPORT vtkParametricConicSpiral : public vtkParametricFunction
 {
 public:
-  vtkTypeMacro(vtkParametricConicSpiral,vtkParametricFunction);
+  vtkTypeRevisionMacro(vtkParametricConicSpiral,vtkParametricFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

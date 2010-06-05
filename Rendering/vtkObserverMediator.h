@@ -45,7 +45,7 @@ public:
 
   // Description:
   // Standard macros.
-  vtkTypeMacro(vtkObserverMediator,vtkObject);
+  vtkTypeRevisionMacro(vtkObserverMediator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -43,6 +43,7 @@
 #include "vtkTextProperty.h"
 #include "vtkViewTheme.h"
 
+vtkCxxRevisionMacro(vtkHierarchicalGraphPipeline, "1.16");
 vtkStandardNewMacro(vtkHierarchicalGraphPipeline);
 
 vtkHierarchicalGraphPipeline::vtkHierarchicalGraphPipeline()

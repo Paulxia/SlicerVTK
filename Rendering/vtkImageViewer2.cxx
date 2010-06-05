@@ -26,6 +26,7 @@
 #include "vtkRenderWindowInteractor.h"
 #include "vtkRenderer.h"
 
+vtkCxxRevisionMacro(vtkImageViewer2, "1.40");
 vtkStandardNewMacro(vtkImageViewer2);
 
 //----------------------------------------------------------------------------

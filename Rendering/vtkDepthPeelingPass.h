@@ -47,7 +47,7 @@ class VTK_RENDERING_EXPORT vtkDepthPeelingPass : public vtkRenderPass
 {
 public:
   static vtkDepthPeelingPass *New();
-  vtkTypeMacro(vtkDepthPeelingPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkDepthPeelingPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   //BTX

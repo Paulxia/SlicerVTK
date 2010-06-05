@@ -22,6 +22,7 @@
 #include "vtkRectilinearGrid.h"
 #include "vtkErrorCode.h"
 
+vtkCxxRevisionMacro(vtkPDataSetWriter, "1.16");
 vtkStandardNewMacro(vtkPDataSetWriter);
 
 //----------------------------------------------------------------------------

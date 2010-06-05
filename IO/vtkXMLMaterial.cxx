@@ -44,6 +44,7 @@ public:
 };
 
 vtkStandardNewMacro(vtkXMLMaterial);
+vtkCxxRevisionMacro(vtkXMLMaterial, "1.8");
 //-----------------------------------------------------------------------------
 vtkXMLMaterial::vtkXMLMaterial()
 {

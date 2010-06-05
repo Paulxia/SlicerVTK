@@ -50,7 +50,7 @@ class vtkSourceToDataSetFriendship;
 class VTK_FILTERING_EXPORT vtkDataSet : public vtkDataObject
 {
 public:
-  vtkTypeMacro(vtkDataSet,vtkDataObject);
+  vtkTypeRevisionMacro(vtkDataSet,vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

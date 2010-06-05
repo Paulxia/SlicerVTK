@@ -40,6 +40,7 @@
 #include "vtkCamera.h"
 #include "vtkAbstractCellLocator.h"
 
+vtkCxxRevisionMacro(vtkCellPicker, "1.49.4.1");
 vtkStandardNewMacro(vtkCellPicker);
 
 //----------------------------------------------------------------------------

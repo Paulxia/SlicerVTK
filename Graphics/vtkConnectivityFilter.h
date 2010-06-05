@@ -65,7 +65,7 @@ class vtkIntArray;
 class VTK_GRAPHICS_EXPORT vtkConnectivityFilter : public vtkUnstructuredGridAlgorithm
 {
 public:
-  vtkTypeMacro(vtkConnectivityFilter,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkConnectivityFilter,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -29,7 +29,7 @@ class VTK_IMAGING_EXPORT vtkImageGradient : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageGradient *New();
-  vtkTypeMacro(vtkImageGradient,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageGradient,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

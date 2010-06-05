@@ -32,7 +32,7 @@ class VTK_IO_EXPORT vtkDelimitedTextWriter : public vtkWriter
 {
 public:
   static vtkDelimitedTextWriter* New();
-  vtkTypeMacro(vtkDelimitedTextWriter, vtkWriter);
+  vtkTypeRevisionMacro(vtkDelimitedTextWriter, vtkWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

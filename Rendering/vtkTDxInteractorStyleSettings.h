@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkTDxInteractorStyleSettings : public vtkObject
 {
 public:
   static vtkTDxInteractorStyleSettings *New();
-  vtkTypeMacro(vtkTDxInteractorStyleSettings,vtkObject);
+  vtkTypeRevisionMacro(vtkTDxInteractorStyleSettings,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -34,6 +34,7 @@
 #include "vtkVectorText.h"
 #include "vtkFollower.h"
 
+vtkCxxRevisionMacro(vtkAbstractPolygonalHandleRepresentation3D, "1.6.4.1");
 vtkCxxSetObjectMacro(vtkAbstractPolygonalHandleRepresentation3D,Property,vtkProperty);
 vtkCxxSetObjectMacro(vtkAbstractPolygonalHandleRepresentation3D,SelectedProperty,vtkProperty);
 
@@ -588,9 +589,9 @@ void vtkAbstractPolygonalHandleRepresentation3D::UpdateLabel()
                          (bounds[3] - bounds[2]) * (bounds[3] - bounds[2]) +
                          (bounds[5] - bounds[4]) * (bounds[5] - bounds[4]) );
     this->GetWorldPosition(labelPosition);
-    labelPosition[0] += width/2.0 * xAxis[0];
-    labelPosition[1] += width/2.0 * xAxis[1];
-    labelPosition[2] += width/2.0 * xAxis[2];
+    labelPosition[0] += width * xAxis[0];
+    labelPosition[1] += width * xAxis[1];
+    labelPosition[2] += width * xAxis[2];
     
     this->LabelTextActor->SetPosition(labelPosition);
 

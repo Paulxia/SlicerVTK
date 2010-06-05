@@ -59,7 +59,7 @@
 class VTK_GRAPHICS_EXPORT vtkRotationalExtrusionFilter : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkRotationalExtrusionFilter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkRotationalExtrusionFilter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

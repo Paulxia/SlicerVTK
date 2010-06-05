@@ -31,6 +31,7 @@
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
 vtkStandardNewMacro(vtkOpenGLDisplayListPainter);
+vtkCxxRevisionMacro(vtkOpenGLDisplayListPainter, "1.13");
 #endif
 
 class vtkOpenGLDisplayListPainter::vtkInternals

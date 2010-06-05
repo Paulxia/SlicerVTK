@@ -33,7 +33,7 @@ class VTK_FILTERING_EXPORT vtkAlgorithmOutput : public vtkObject
 {
 public:
   static vtkAlgorithmOutput *New();
-  vtkTypeMacro(vtkAlgorithmOutput,vtkObject);
+  vtkTypeRevisionMacro(vtkAlgorithmOutput,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   void SetIndex(int index);

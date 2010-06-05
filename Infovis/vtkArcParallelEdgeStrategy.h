@@ -33,7 +33,7 @@ class VTK_INFOVIS_EXPORT vtkArcParallelEdgeStrategy : public vtkEdgeLayoutStrate
 {
 public:
   static vtkArcParallelEdgeStrategy* New();
-  vtkTypeMacro(vtkArcParallelEdgeStrategy,vtkEdgeLayoutStrategy);
+  vtkTypeRevisionMacro(vtkArcParallelEdgeStrategy,vtkEdgeLayoutStrategy);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

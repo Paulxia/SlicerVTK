@@ -44,7 +44,7 @@ class VTK_INFOVIS_EXPORT vtkExpandSelectedGraph : public vtkSelectionAlgorithm
 {
 public:
   static vtkExpandSelectedGraph* New();
-  vtkTypeMacro(vtkExpandSelectedGraph,vtkSelectionAlgorithm);
+  vtkTypeRevisionMacro(vtkExpandSelectedGraph,vtkSelectionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

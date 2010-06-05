@@ -34,6 +34,7 @@
 #include VTKLIBXML2_HEADER(parser.h)
 #include VTKLIBXML2_HEADER(tree.h)
 
+vtkCxxRevisionMacro(vtkXMLTreeReader, "1.10");
 vtkStandardNewMacro(vtkXMLTreeReader);
 
 const char * vtkXMLTreeReader::TagNameField = ".tagname";

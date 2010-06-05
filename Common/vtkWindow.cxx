@@ -16,6 +16,7 @@
 
 #include "vtkToolkits.h"
 
+vtkCxxRevisionMacro(vtkWindow, "1.30");
 
 //-----------------------------------------------------------------------------
 // Construct an instance of  vtkRenderWindow with its screen size 

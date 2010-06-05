@@ -33,6 +33,7 @@ the U.S. Government retains certain rights in this software.
 #define VTK_CREATE(type, name)                                  \
   vtkSmartPointer<type> name = vtkSmartPointer<type>::New()
 
+vtkCxxRevisionMacro(vtkConeLayoutStrategy, "1.3");
 vtkStandardNewMacro(vtkConeLayoutStrategy);
 
 vtkConeLayoutStrategy::vtkConeLayoutStrategy()

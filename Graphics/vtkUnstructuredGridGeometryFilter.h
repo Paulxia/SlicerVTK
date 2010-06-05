@@ -47,7 +47,7 @@ class VTK_GRAPHICS_EXPORT vtkUnstructuredGridGeometryFilter : public vtkUnstruct
 {
 public:
   static vtkUnstructuredGridGeometryFilter *New();
-  vtkTypeMacro(vtkUnstructuredGridGeometryFilter,vtkUnstructuredGridAlgorithm);
+  vtkTypeRevisionMacro(vtkUnstructuredGridGeometryFilter,vtkUnstructuredGridAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

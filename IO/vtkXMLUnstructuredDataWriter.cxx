@@ -35,6 +35,7 @@
 
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkXMLUnstructuredDataWriter, "1.24");
 
 //----------------------------------------------------------------------------
 vtkXMLUnstructuredDataWriter::vtkXMLUnstructuredDataWriter()

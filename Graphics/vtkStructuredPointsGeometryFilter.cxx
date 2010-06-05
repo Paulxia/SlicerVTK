@@ -15,6 +15,7 @@
 #include "vtkStructuredPointsGeometryFilter.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkStructuredPointsGeometryFilter, "1.40");
 vtkStandardNewMacro(vtkStructuredPointsGeometryFilter);
 
 vtkStructuredPointsGeometryFilter::vtkStructuredPointsGeometryFilter()

@@ -38,7 +38,7 @@ class VTK_WIDGETS_EXPORT vtkXYPlotWidget : public vtkInteractorObserver
 {
 public:
   static vtkXYPlotWidget *New();
-  vtkTypeMacro(vtkXYPlotWidget,vtkInteractorObserver);
+  vtkTypeRevisionMacro(vtkXYPlotWidget,vtkInteractorObserver);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

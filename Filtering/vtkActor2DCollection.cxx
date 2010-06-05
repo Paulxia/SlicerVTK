@@ -16,6 +16,7 @@
 #include "vtkActor2DCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkActor2DCollection, "1.2");
 vtkStandardNewMacro(vtkActor2DCollection);
 
 // protected function to delete an element. Internal use only.

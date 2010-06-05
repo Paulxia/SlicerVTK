@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkSQLDatabaseTableSource : public vtkTableAlgorithm
 {
 public:
   static vtkSQLDatabaseTableSource* New();
-  vtkTypeMacro(vtkSQLDatabaseTableSource, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkSQLDatabaseTableSource, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkStdString GetURL();

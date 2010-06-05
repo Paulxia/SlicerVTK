@@ -19,6 +19,7 @@
 # include "vtkWindows.h"
 #endif
 
+vtkCxxRevisionMacro(vtkMutexLock, "1.23");
 vtkStandardNewMacro(vtkMutexLock);
 
 // New for the SimpleMutex

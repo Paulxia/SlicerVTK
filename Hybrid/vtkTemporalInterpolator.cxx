@@ -31,6 +31,7 @@
 #include "vtkstd/algorithm"
 #include "vtkstd/vector"
 
+vtkCxxRevisionMacro(vtkTemporalInterpolator, "1.16");
 vtkStandardNewMacro(vtkTemporalInterpolator);
 
 //----------------------------------------------------------------------------

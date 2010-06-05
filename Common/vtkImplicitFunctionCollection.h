@@ -29,7 +29,7 @@
 class VTK_COMMON_EXPORT vtkImplicitFunctionCollection : public vtkCollection
 {
 public:
-  vtkTypeMacro(vtkImplicitFunctionCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkImplicitFunctionCollection,vtkCollection);
   static vtkImplicitFunctionCollection *New();
 
   // Description:

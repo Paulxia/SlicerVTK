@@ -31,7 +31,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleTrackball : public vtkInteractorSty
 {
 public:
   static vtkInteractorStyleTrackball *New();
-  vtkTypeMacro(vtkInteractorStyleTrackball,vtkInteractorStyleSwitch);
+  vtkTypeRevisionMacro(vtkInteractorStyleTrackball,vtkInteractorStyleSwitch);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

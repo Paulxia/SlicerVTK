@@ -34,6 +34,7 @@
 #include "vtkPoints.h"
 
 vtkCxxSetObjectMacro(vtkGeoAssignCoordinates, Transform, vtkAbstractTransform);
+vtkCxxRevisionMacro(vtkGeoAssignCoordinates, "1.4");
 vtkStandardNewMacro(vtkGeoAssignCoordinates);
 
 vtkGeoAssignCoordinates::vtkGeoAssignCoordinates()

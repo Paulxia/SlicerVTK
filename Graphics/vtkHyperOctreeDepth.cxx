@@ -24,6 +24,7 @@
 #include "vtkCellData.h"
 #include "vtkIntArray.h"
 
+vtkCxxRevisionMacro(vtkHyperOctreeDepth, "1.3");
 vtkStandardNewMacro(vtkHyperOctreeDepth);
 
 //----------------------------------------------------------------------------

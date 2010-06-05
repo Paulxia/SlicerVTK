@@ -24,6 +24,7 @@
 #include "vtkCell.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkPlanesIntersection, "1.2");
 vtkStandardNewMacro(vtkPlanesIntersection);
 
 // Experiment shows that we get plane equation values on the

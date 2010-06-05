@@ -34,7 +34,7 @@ class vtkAxis;
 class VTK_CHARTS_EXPORT vtkPlotGrid : public vtkContextItem
 {
 public:
-  vtkTypeMacro(vtkPlotGrid, vtkContextItem);
+  vtkTypeRevisionMacro(vtkPlotGrid, vtkContextItem);
   virtual void PrintSelf(ostream &os, vtkIndent indent);
 
   // Description:

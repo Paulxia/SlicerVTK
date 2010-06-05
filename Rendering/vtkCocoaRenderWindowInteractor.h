@@ -39,7 +39,7 @@ public:
   // Construct object so that light follows camera motion.
   static vtkCocoaRenderWindowInteractor *New();
 
-  vtkTypeMacro(vtkCocoaRenderWindowInteractor,vtkRenderWindowInteractor);
+  vtkTypeRevisionMacro(vtkCocoaRenderWindowInteractor,vtkRenderWindowInteractor);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

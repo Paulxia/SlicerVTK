@@ -30,7 +30,7 @@ class VTK_GRAPHICS_EXPORT vtkThresholdPoints : public vtkPolyDataAlgorithm
 {
 public:
   static vtkThresholdPoints *New();
-  vtkTypeMacro(vtkThresholdPoints,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkThresholdPoints,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

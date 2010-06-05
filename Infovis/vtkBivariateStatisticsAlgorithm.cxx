@@ -33,6 +33,7 @@
 
 #define VTK_STATISTICS_NUMBER_OF_VARIABLES 2
 
+vtkCxxRevisionMacro(vtkBivariateStatisticsAlgorithm, "1.20");
 
 // ----------------------------------------------------------------------
 vtkBivariateStatisticsAlgorithm::vtkBivariateStatisticsAlgorithm()

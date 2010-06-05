@@ -18,6 +18,7 @@
 #include "vtkPoints.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkParametricSpline, "1.8");
 vtkStandardNewMacro(vtkParametricSpline);
 
 //----------------------------------------------------------------------------

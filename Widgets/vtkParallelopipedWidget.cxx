@@ -32,6 +32,7 @@
 #include "vtkWidgetSet.h"
 #include "vtkGarbageCollector.h"
 
+vtkCxxRevisionMacro(vtkParallelopipedWidget, "1.4");
 vtkStandardNewMacro(vtkParallelopipedWidget);
 
 //----------------------------------------------------------------------

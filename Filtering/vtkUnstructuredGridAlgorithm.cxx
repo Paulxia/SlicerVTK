@@ -21,6 +21,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
+vtkCxxRevisionMacro(vtkUnstructuredGridAlgorithm, "1.6");
 vtkStandardNewMacro(vtkUnstructuredGridAlgorithm);
 
 //----------------------------------------------------------------------------

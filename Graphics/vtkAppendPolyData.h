@@ -40,7 +40,7 @@ class VTK_GRAPHICS_EXPORT vtkAppendPolyData : public vtkPolyDataAlgorithm
 public:
   static vtkAppendPolyData *New();
 
-  vtkTypeMacro(vtkAppendPolyData,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkAppendPolyData,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

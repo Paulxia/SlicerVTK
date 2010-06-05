@@ -59,6 +59,7 @@
 
 using namespace boost;
 
+vtkCxxRevisionMacro(vtkPBGLBreadthFirstSearch, "1.5");
 vtkStandardNewMacro(vtkPBGLBreadthFirstSearch);
 
 // Redefine the bfs visitor, the only visitor we

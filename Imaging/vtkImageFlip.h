@@ -28,7 +28,7 @@ class VTK_IMAGING_EXPORT vtkImageFlip : public vtkImageReslice
 public:
   static vtkImageFlip *New();
 
-  vtkTypeMacro(vtkImageFlip,vtkImageReslice);
+  vtkTypeRevisionMacro(vtkImageFlip,vtkImageReslice);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

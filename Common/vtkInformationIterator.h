@@ -34,7 +34,7 @@ class VTK_COMMON_EXPORT vtkInformationIterator : public vtkObject
 {
 public:
   static vtkInformationIterator *New();
-  vtkTypeMacro(vtkInformationIterator,vtkObject);
+  vtkTypeRevisionMacro(vtkInformationIterator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

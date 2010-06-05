@@ -44,6 +44,7 @@
 #include "vtkVariant.h"
 #include "vtkVariantArray.h"
 
+vtkCxxRevisionMacro(vtkAddMembershipArray, "1.7");
 vtkStandardNewMacro(vtkAddMembershipArray);
 vtkCxxSetObjectMacro(vtkAddMembershipArray,InputValues,vtkAbstractArray);
 

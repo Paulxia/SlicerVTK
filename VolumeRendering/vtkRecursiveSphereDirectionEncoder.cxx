@@ -17,6 +17,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkRecursiveSphereDirectionEncoder, "1.1");
 vtkStandardNewMacro(vtkRecursiveSphereDirectionEncoder);
 
 // Construct the object. Initialize the index table which will be

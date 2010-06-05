@@ -30,6 +30,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vtkExtractArray
 
+vtkCxxRevisionMacro(vtkExtractArray, "1.1");
 vtkStandardNewMacro(vtkExtractArray);
 
 vtkExtractArray::vtkExtractArray() :

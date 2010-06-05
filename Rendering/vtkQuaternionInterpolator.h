@@ -58,7 +58,7 @@ class vtkQuaternionList;
 class VTK_RENDERING_EXPORT vtkQuaternionInterpolator : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkQuaternionInterpolator, vtkObject);
+  vtkTypeRevisionMacro(vtkQuaternionInterpolator, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

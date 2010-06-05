@@ -26,6 +26,7 @@
 #include "vtkImageData.h"
 #include "vtkStreamingDemandDrivenPipeline.h" // WHOLE_EXTENT() key
 
+vtkCxxRevisionMacro(vtkHyperOctreeToUniformGridFilter, "1.5");
 vtkStandardNewMacro(vtkHyperOctreeToUniformGridFilter);
 
 // merging: locator

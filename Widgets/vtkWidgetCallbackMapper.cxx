@@ -19,6 +19,7 @@
 #include "vtkObjectFactory.h"
 #include <vtkstd/map>
 
+vtkCxxRevisionMacro(vtkWidgetCallbackMapper, "1.3");
 vtkStandardNewMacro(vtkWidgetCallbackMapper);
 
 

@@ -30,7 +30,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleRubberBandZoom : public vtkInteract
 {
 public:
   static vtkInteractorStyleRubberBandZoom *New();
-  vtkTypeMacro(vtkInteractorStyleRubberBandZoom, vtkInteractorStyle);
+  vtkTypeRevisionMacro(vtkInteractorStyleRubberBandZoom, vtkInteractorStyle);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

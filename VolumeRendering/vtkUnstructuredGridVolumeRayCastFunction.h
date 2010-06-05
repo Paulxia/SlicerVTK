@@ -34,7 +34,7 @@ class vtkUnstructuredGridVolumeRayCastIterator;
 class VTK_VOLUMERENDERING_EXPORT vtkUnstructuredGridVolumeRayCastFunction : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkUnstructuredGridVolumeRayCastFunction,vtkObject);
+  vtkTypeRevisionMacro(vtkUnstructuredGridVolumeRayCastFunction,vtkObject);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

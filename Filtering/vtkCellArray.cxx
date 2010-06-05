@@ -15,6 +15,7 @@
 #include "vtkCellArray.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkCellArray, "1.3");
 vtkStandardNewMacro(vtkCellArray);
 
 //----------------------------------------------------------------------------

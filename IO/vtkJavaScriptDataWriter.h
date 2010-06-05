@@ -32,7 +32,7 @@ class VTK_IO_EXPORT vtkJavaScriptDataWriter : public vtkWriter
 {
 public:
   static vtkJavaScriptDataWriter* New();
-  vtkTypeMacro(vtkJavaScriptDataWriter, vtkWriter);
+  vtkTypeRevisionMacro(vtkJavaScriptDataWriter, vtkWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

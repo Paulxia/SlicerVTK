@@ -36,7 +36,7 @@ class vtkDataSet;
 class VTK_GRAPHICS_EXPORT vtkMaskFields : public vtkDataSetAlgorithm
 {
 public:
-  vtkTypeMacro(vtkMaskFields,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkMaskFields,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

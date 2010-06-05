@@ -37,6 +37,7 @@
 #include "vtkRenderWindow.h"
 #include "vtkTimerLog.h"
 
+vtkCxxRevisionMacro(vtkPainter, "1.7");
 vtkCxxSetObjectMacro(vtkPainter, Input, vtkDataObject);
 vtkCxxSetObjectMacro(vtkPainter, Information, vtkInformation);
 vtkInformationKeyMacro(vtkPainter, STATIC_DATA, Integer);

@@ -47,7 +47,7 @@ class VTK_GRAPHICS_EXPORT vtkAppendCompositeDataLeaves : public vtkCompositeData
 public:
   static vtkAppendCompositeDataLeaves* New();
 
-  vtkTypeMacro(vtkAppendCompositeDataLeaves,vtkCompositeDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkAppendCompositeDataLeaves,vtkCompositeDataSetAlgorithm);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

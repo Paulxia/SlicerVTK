@@ -38,6 +38,7 @@
 #include "vtkSphereSource.h"
 #include "vtkTransform.h"
 
+vtkCxxRevisionMacro(vtkPlaneWidget, "1.6");
 vtkStandardNewMacro(vtkPlaneWidget);
 
 vtkCxxSetObjectMacro(vtkPlaneWidget,PlaneProperty,vtkProperty);

@@ -34,7 +34,7 @@ class VTK_IO_EXPORT vtkXMLMaterial : public vtkObject
 {
 public:
   static vtkXMLMaterial* New();
-  vtkTypeMacro(vtkXMLMaterial, vtkObject);
+  vtkTypeRevisionMacro(vtkXMLMaterial, vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

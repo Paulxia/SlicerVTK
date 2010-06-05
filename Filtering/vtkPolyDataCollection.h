@@ -31,7 +31,7 @@ class VTK_FILTERING_EXPORT vtkPolyDataCollection : public vtkCollection
 {
 public:
   static vtkPolyDataCollection *New();
-  vtkTypeMacro(vtkPolyDataCollection,vtkCollection);
+  vtkTypeRevisionMacro(vtkPolyDataCollection,vtkCollection);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -44,7 +44,7 @@ class VTK_GRAPHICS_EXPORT vtkConvertSelection : public vtkSelectionAlgorithm
 {
 public:
   static vtkConvertSelection *New();
-  vtkTypeMacro(vtkConvertSelection, vtkSelectionAlgorithm);
+  vtkTypeRevisionMacro(vtkConvertSelection, vtkSelectionAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

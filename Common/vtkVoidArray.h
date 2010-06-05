@@ -30,7 +30,7 @@ public:
   // Initialize with empty array.
   static vtkVoidArray *New();
 
-  vtkTypeMacro(vtkVoidArray,vtkObject);
+  vtkTypeRevisionMacro(vtkVoidArray,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

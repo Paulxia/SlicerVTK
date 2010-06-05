@@ -33,7 +33,7 @@ class VTK_FILTERING_EXPORT vtkImplicitSum : public vtkImplicitFunction
 public:
   static vtkImplicitSum *New();
 
-  vtkTypeMacro(vtkImplicitSum,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkImplicitSum,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

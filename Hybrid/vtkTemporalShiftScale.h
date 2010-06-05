@@ -36,7 +36,7 @@ class VTK_HYBRID_EXPORT vtkTemporalShiftScale : public vtkTemporalDataSetAlgorit
 {
 public:
   static vtkTemporalShiftScale *New();
-  vtkTypeMacro(vtkTemporalShiftScale, vtkTemporalDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkTemporalShiftScale, vtkTemporalDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

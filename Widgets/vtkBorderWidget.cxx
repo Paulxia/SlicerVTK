@@ -26,6 +26,7 @@
 #include "vtkWidgetEvent.h"
 
 
+vtkCxxRevisionMacro(vtkBorderWidget, "1.9");
 vtkStandardNewMacro(vtkBorderWidget);
 
 

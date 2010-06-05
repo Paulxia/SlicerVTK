@@ -38,14 +38,11 @@
 // in). This, in a way, removes the need for the route and script mechanism
 // (not completely though).
 //
-// .SECTION Thanks
-//  Thanks to Russ Coucher of Areva for numerous bug fixes and a new test.
-//
 // .SECTION See Also
 // vtkImporter
 
 /* ======================================================================
-
+ 
    Importer based on BNF Yacc and Lex parser definition from:
 
         **************************************************
@@ -87,7 +84,7 @@ class VTK_HYBRID_EXPORT vtkVRMLImporter : public vtkImporter
 public:
   static vtkVRMLImporter *New();
 
-  vtkTypeMacro(vtkVRMLImporter,vtkImporter);
+  vtkTypeRevisionMacro(vtkVRMLImporter,vtkImporter);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
@@ -146,7 +143,6 @@ private:
   vtkAlgorithm         *CurrentSource;
   vtkPoints            *CurrentPoints;
   vtkFloatArray        *CurrentNormals;
-  vtkCellArray         *CurrentNormalCells;
   vtkFloatArray        *CurrentTCoords;
   vtkCellArray         *CurrentTCoordCells;
   vtkLookupTable       *CurrentLut;

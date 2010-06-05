@@ -82,6 +82,7 @@ private:
   };
 
 vtkStandardNewMacro(vtkSimple3DCirclesStrategy);
+vtkCxxRevisionMacro(vtkSimple3DCirclesStrategy, "1.6" );
 
 void vtkSimple3DCirclesStrategy::PrintSelf( ostream &os, vtkIndent indent )
   {

@@ -32,7 +32,7 @@ class VTK_HYBRID_EXPORT vtkRenderLargeImage : public vtkAlgorithm
 {
 public:
   static vtkRenderLargeImage *New();
-  vtkTypeMacro(vtkRenderLargeImage,vtkAlgorithm);
+  vtkTypeRevisionMacro(vtkRenderLargeImage,vtkAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);   
 
   // Description:

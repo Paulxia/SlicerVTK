@@ -42,6 +42,7 @@ public:
 
 //---------------------------------------------------------------------------
 vtkStandardNewMacro(vtkAVIWriter);
+vtkCxxRevisionMacro(vtkAVIWriter, "1.10");
 
 //---------------------------------------------------------------------------
 vtkAVIWriter::vtkAVIWriter()

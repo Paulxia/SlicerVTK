@@ -28,7 +28,7 @@ class VTK_MY_IMAGING_EXPORT vtkImageFoo : public vtkThreadedImageAlgorithm
 {
 public:
   static vtkImageFoo *New();
-  vtkTypeMacro(vtkImageFoo,vtkThreadedImageAlgorithm);
+  vtkTypeRevisionMacro(vtkImageFoo,vtkThreadedImageAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

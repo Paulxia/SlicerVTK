@@ -28,7 +28,7 @@ class vtkTransform;
 class VTK_GRAPHICS_EXPORT vtkSpherePuzzle : public vtkPolyDataAlgorithm 
 {
 public:
-  vtkTypeMacro(vtkSpherePuzzle,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkSpherePuzzle,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   static vtkSpherePuzzle *New();

@@ -22,6 +22,7 @@
 #include "vtkStreamingDemandDrivenPipeline.h"
 #include "vtkTrivialProducer.h"
 
+vtkCxxRevisionMacro(vtkAnnotationLayersAlgorithm, "1.2");
 vtkStandardNewMacro(vtkAnnotationLayersAlgorithm);
 
 //----------------------------------------------------------------------------

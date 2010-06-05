@@ -35,7 +35,7 @@ class VTK_RENDERING_EXPORT vtkOSOpenGLRenderWindow : public vtkOpenGLRenderWindo
 {
 public:
   static vtkOSOpenGLRenderWindow *New();
-  vtkTypeMacro(vtkOSOpenGLRenderWindow,vtkOpenGLRenderWindow);
+  vtkTypeRevisionMacro(vtkOSOpenGLRenderWindow,vtkOpenGLRenderWindow);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

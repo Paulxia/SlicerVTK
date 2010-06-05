@@ -22,6 +22,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkDataObject.h"
 
+vtkCxxRevisionMacro(vtkTrivialProducer, "1.14");
 vtkStandardNewMacro(vtkTrivialProducer);
 
 // This compile-time switch determines whether the update extent is

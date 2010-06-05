@@ -25,6 +25,7 @@
 #include "vtkSmartPointer.h"
 #include "vtkStreamingDemandDrivenPipeline.h"
 
+vtkCxxRevisionMacro(vtkTreeReader, "1.3");
 vtkStandardNewMacro(vtkTreeReader);
 
 #ifdef read

@@ -25,6 +25,7 @@
 #include <float.h>
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkPointSource, "1.45");
 vtkStandardNewMacro(vtkPointSource);
 
 //----------------------------------------------------------------------------

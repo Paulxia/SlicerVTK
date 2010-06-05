@@ -26,7 +26,6 @@ PURPOSE.  See the above copyright notice for more information.
 #include "vtkImageImport.h"
 #include "vtkPNGWriter.h"
 #include "vtkOpenGLTexture.h"
-#include "vtkTimerLog.h"
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
 # include "vtkOpenGL.h"
@@ -47,6 +46,7 @@ public:
 };
 
 #ifndef VTK_IMPLEMENT_MESA_CXX
+vtkCxxRevisionMacro(vtkOpenGLRenderer, "1.97");
 vtkStandardNewMacro(vtkOpenGLRenderer);
 #endif
 
@@ -226,8 +226,6 @@ int vtkOpenGLRenderer::GetDepthPeelingHigherLayer()
 // Concrete open gl render method.
 void vtkOpenGLRenderer::DeviceRender(void)
 {
-  vtkTimerLog::MarkStartEvent("OpenGL Dev Render");
-
   // Do not remove this MakeCurrent! Due to Start / End methods on
   // some objects which get executed during a pipeline update,
   // other windows might get rendered since the last time
@@ -249,8 +247,6 @@ void vtkOpenGLRenderer::DeviceRender(void)
   // clean up the model view matrix set up by the camera
   glMatrixMode(GL_MODELVIEW);
   glPopMatrix();
-
-  vtkTimerLog::MarkEndEvent("OpenGL Dev Render");
 }
 
 // ----------------------------------------------------------------------------

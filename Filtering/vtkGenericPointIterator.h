@@ -38,7 +38,7 @@ class VTK_FILTERING_EXPORT vtkGenericPointIterator : public vtkObject
 public:
   // Description:
   // Standard VTK construction and type macros.
-  vtkTypeMacro(vtkGenericPointIterator,vtkObject);
+  vtkTypeRevisionMacro(vtkGenericPointIterator,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

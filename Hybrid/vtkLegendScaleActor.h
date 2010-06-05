@@ -55,7 +55,7 @@ public:
 
   // Description:
   // Standard methods for the class.
-  vtkTypeMacro(vtkLegendScaleActor,vtkProp);
+  vtkTypeRevisionMacro(vtkLegendScaleActor,vtkProp);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

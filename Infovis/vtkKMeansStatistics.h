@@ -102,7 +102,7 @@ class vtkKMeansDistanceFunctor;
 class VTK_INFOVIS_EXPORT vtkKMeansStatistics : public vtkStatisticsAlgorithm
 {
 public:
-  vtkTypeMacro(vtkKMeansStatistics, vtkStatisticsAlgorithm);
+  vtkTypeRevisionMacro(vtkKMeansStatistics, vtkStatisticsAlgorithm);
   virtual void PrintSelf( ostream& os, vtkIndent indent );
   static vtkKMeansStatistics* New();
  

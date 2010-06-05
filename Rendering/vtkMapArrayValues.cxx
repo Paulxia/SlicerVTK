@@ -34,6 +34,7 @@
 #include <vtkstd/map>
 #include <vtkstd/utility>
 
+vtkCxxRevisionMacro(vtkMapArrayValues, "1.2");
 vtkStandardNewMacro(vtkMapArrayValues);
 
 typedef vtkstd::map< vtkVariant, vtkVariant, vtkVariantLessThan > MapBase;

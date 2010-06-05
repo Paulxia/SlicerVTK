@@ -23,6 +23,7 @@
 #include "vtkPointData.h"
 #include "vtkUnsignedCharArray.h"
 
+vtkCxxRevisionMacro(vtkTriangularTexture, "1.31");
 vtkStandardNewMacro(vtkTriangularTexture);
 
 // Instantiate object with XSize and YSize = 64; the texture pattern =1

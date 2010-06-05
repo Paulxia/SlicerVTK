@@ -48,7 +48,7 @@ class VTK_HYBRID_EXPORT vtkPExodusIIReader : public vtkExodusIIReader
 {
 public:
   static vtkPExodusIIReader* New();
-  vtkTypeMacro(vtkPExodusIIReader,vtkExodusIIReader);
+  vtkTypeRevisionMacro(vtkPExodusIIReader,vtkExodusIIReader);
   void PrintSelf( ostream& os, vtkIndent indent );
 
   // Description:

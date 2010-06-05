@@ -50,7 +50,7 @@ class vtkVolumeProperty;
 class VTK_VOLUMERENDERING_EXPORT vtkProjectedTetrahedraMapper : public vtkUnstructuredGridVolumeMapper
 {
 public:
-  vtkTypeMacro(vtkProjectedTetrahedraMapper,
+  vtkTypeRevisionMacro(vtkProjectedTetrahedraMapper,
                        vtkUnstructuredGridVolumeMapper);
   static vtkProjectedTetrahedraMapper *New();
   virtual void PrintSelf(ostream &os, vtkIndent indent);

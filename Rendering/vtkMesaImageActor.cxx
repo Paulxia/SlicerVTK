@@ -40,4 +40,5 @@
 #undef vtkOpenGLImageActor
 #undef vtkOpenGLRenderWindow
 
+vtkCxxRevisionMacro(vtkMesaImageActor, "1.11");
 vtkStandardNewMacro(vtkMesaImageActor);

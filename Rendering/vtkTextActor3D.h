@@ -43,7 +43,7 @@ class VTK_RENDERING_EXPORT vtkTextActor3D : public vtkProp3D
 {
 public:
   static vtkTextActor3D *New();
-  vtkTypeMacro(vtkTextActor3D,vtkProp3D);
+  vtkTypeRevisionMacro(vtkTextActor3D,vtkProp3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

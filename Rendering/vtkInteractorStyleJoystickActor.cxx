@@ -25,6 +25,7 @@
 #include "vtkTransform.h"
 #include "vtkMatrix4x4.h"
 
+vtkCxxRevisionMacro(vtkInteractorStyleJoystickActor, "1.35");
 vtkStandardNewMacro(vtkInteractorStyleJoystickActor);
 
 //----------------------------------------------------------------------------

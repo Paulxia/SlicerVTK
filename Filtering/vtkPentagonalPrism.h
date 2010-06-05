@@ -43,7 +43,7 @@ class VTK_FILTERING_EXPORT vtkPentagonalPrism : public vtkCell3D
 {
 public:
   static vtkPentagonalPrism *New();
-  vtkTypeMacro(vtkPentagonalPrism,vtkCell3D);
+  vtkTypeRevisionMacro(vtkPentagonalPrism,vtkCell3D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

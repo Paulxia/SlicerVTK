@@ -57,8 +57,8 @@ class VTK_FILTERING_EXPORT vtkInterpolatedVelocityField
   : public vtkAbstractInterpolatedVelocityField
 {
 public:
-  vtkTypeMacro( vtkInterpolatedVelocityField,
-                vtkAbstractInterpolatedVelocityField );
+  vtkTypeRevisionMacro( vtkInterpolatedVelocityField, 
+                        vtkAbstractInterpolatedVelocityField );
   void PrintSelf( ostream & os, vtkIndent indent );
 
   // Description:

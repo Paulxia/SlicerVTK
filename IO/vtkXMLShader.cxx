@@ -23,6 +23,7 @@
 #include <assert.h>
 
 vtkStandardNewMacro(vtkXMLShader);
+vtkCxxRevisionMacro(vtkXMLShader, "1.10");
 vtkCxxSetObjectMacro(vtkXMLShader, SourceLibraryElement, vtkXMLDataElement);
 //-----------------------------------------------------------------------------
 vtkXMLShader::vtkXMLShader()

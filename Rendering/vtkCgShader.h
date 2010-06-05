@@ -98,7 +98,7 @@ class VTK_RENDERING_EXPORT vtkCgShader : public vtkShader
 {
 public:
   static vtkCgShader *New();
-  vtkTypeMacro(vtkCgShader, vtkShader);
+  vtkTypeRevisionMacro(vtkCgShader, vtkShader);
   void PrintSelf(ostream &os, vtkIndent indent);
  
   // Called to compile the shader code.

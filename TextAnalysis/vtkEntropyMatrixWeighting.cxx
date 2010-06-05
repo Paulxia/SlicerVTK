@@ -41,6 +41,7 @@ static inline double log2(double n)
 ///////////////////////////////////////////////////////////////////////////////
 // vtkEntropyMatrixWeighting
 
+vtkCxxRevisionMacro(vtkEntropyMatrixWeighting, "1.2");
 vtkStandardNewMacro(vtkEntropyMatrixWeighting);
 
 vtkEntropyMatrixWeighting::vtkEntropyMatrixWeighting() :

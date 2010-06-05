@@ -45,7 +45,7 @@ class vtkLookupTable;
 class VTK_COMMON_EXPORT vtkDataArray : public vtkAbstractArray
 {
 public:
-  vtkTypeMacro(vtkDataArray,vtkAbstractArray);
+  vtkTypeRevisionMacro(vtkDataArray,vtkAbstractArray);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

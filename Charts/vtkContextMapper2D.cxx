@@ -21,6 +21,7 @@
 
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkContextMapper2D, "1.1");
 vtkStandardNewMacro(vtkContextMapper2D);
 //-----------------------------------------------------------------------------
 vtkContextMapper2D::vtkContextMapper2D()

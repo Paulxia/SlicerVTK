@@ -78,6 +78,7 @@ public:
   vtkTableToGraph* TableToGraph;
 };
 
+vtkCxxRevisionMacro(vtkSQLDatabaseGraphSource, "1.2");
 vtkStandardNewMacro(vtkSQLDatabaseGraphSource);
 
 //---------------------------------------------------------------------------

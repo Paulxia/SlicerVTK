@@ -18,6 +18,7 @@
 #include "vtkGenericAttribute.h"
 #include <assert.h>
 
+vtkCxxRevisionMacro(vtkGenericAttribute, "1.1");
 
 //---------------------------------------------------------------------------
 vtkGenericAttribute::vtkGenericAttribute()

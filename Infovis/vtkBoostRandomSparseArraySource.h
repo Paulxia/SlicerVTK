@@ -34,7 +34,7 @@ class VTK_INFOVIS_EXPORT vtkBoostRandomSparseArraySource : public vtkArrayDataAl
 {
 public:
   static vtkBoostRandomSparseArraySource* New();
-  vtkTypeMacro(vtkBoostRandomSparseArraySource, vtkArrayDataAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostRandomSparseArraySource, vtkArrayDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

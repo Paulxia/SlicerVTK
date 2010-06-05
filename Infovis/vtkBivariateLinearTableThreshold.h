@@ -49,7 +49,7 @@ class VTK_INFOVIS_EXPORT vtkBivariateLinearTableThreshold : public vtkTableAlgor
 {
 public:
   static vtkBivariateLinearTableThreshold* New();
-  vtkTypeMacro(vtkBivariateLinearTableThreshold, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkBivariateLinearTableThreshold, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

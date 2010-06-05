@@ -19,6 +19,7 @@
 #include "vtkPropCollection.h"
 #include "vtkObjectFactory.h"
 
+vtkCxxRevisionMacro(vtkActor2D, "1.8");
 vtkStandardNewMacro(vtkActor2D);
 
 vtkCxxSetObjectMacro(vtkActor2D,Property, vtkProperty2D);

@@ -14,6 +14,7 @@
 =========================================================================*/
 #include "vtkVolumeReader.h"
 
+vtkCxxRevisionMacro(vtkVolumeReader, "1.22");
 
 // Construct object with NULL file prefix; file pattern "%s.%d"; image range 
 // set to (1,1); 

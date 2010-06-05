@@ -42,7 +42,7 @@ class vtkNeighborCells;
 class VTK_FILTERING_EXPORT vtkCellLocator : public vtkAbstractCellLocator
 {
 public:
-  vtkTypeMacro(vtkCellLocator,vtkAbstractCellLocator);
+  vtkTypeRevisionMacro(vtkCellLocator,vtkAbstractCellLocator);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

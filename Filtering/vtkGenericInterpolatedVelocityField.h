@@ -50,7 +50,7 @@ class vtkGenericInterpolatedVelocityFieldDataSetsType;
 class VTK_FILTERING_EXPORT vtkGenericInterpolatedVelocityField : public vtkFunctionSet
 {
 public:
-  vtkTypeMacro(vtkGenericInterpolatedVelocityField,vtkFunctionSet);
+  vtkTypeRevisionMacro(vtkGenericInterpolatedVelocityField,vtkFunctionSet);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

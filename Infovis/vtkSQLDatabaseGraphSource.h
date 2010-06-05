@@ -36,7 +36,7 @@ class VTK_INFOVIS_EXPORT vtkSQLDatabaseGraphSource : public vtkGraphAlgorithm
 {
 public:
   static vtkSQLDatabaseGraphSource* New();
-  vtkTypeMacro(vtkSQLDatabaseGraphSource, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkSQLDatabaseGraphSource, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   vtkStdString GetURL();

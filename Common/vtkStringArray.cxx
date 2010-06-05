@@ -73,6 +73,7 @@ public:
   bool Rebuild;
 };
 
+vtkCxxRevisionMacro(vtkStringArray, "1.18");
 vtkStandardNewMacro(vtkStringArray);
 
 //-----------------------------------------------------------------------------

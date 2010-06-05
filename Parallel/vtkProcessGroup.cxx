@@ -28,6 +28,7 @@
 #include <vtkstd/algorithm>
 
 //-----------------------------------------------------------------------------
+vtkCxxRevisionMacro(vtkProcessGroup, "1.2");
 vtkStandardNewMacro(vtkProcessGroup);
 
 //-----------------------------------------------------------------------------

@@ -43,6 +43,7 @@
 
 #include <math.h>
 
+vtkCxxRevisionMacro(vtkCutter, "1.94");
 vtkStandardNewMacro(vtkCutter);
 vtkCxxSetObjectMacro(vtkCutter,CutFunction,vtkImplicitFunction);
 vtkCxxSetObjectMacro(vtkCutter,Locator,vtkIncrementalPointLocator)

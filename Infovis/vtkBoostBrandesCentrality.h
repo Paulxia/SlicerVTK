@@ -40,7 +40,7 @@ class VTK_INFOVIS_EXPORT vtkBoostBrandesCentrality : public vtkGraphAlgorithm
 {
 public:
   static vtkBoostBrandesCentrality *New();
-  vtkTypeMacro(vtkBoostBrandesCentrality, vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkBoostBrandesCentrality, vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 protected:

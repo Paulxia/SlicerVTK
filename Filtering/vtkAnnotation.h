@@ -44,7 +44,7 @@ class vtkSelection;
 class VTK_FILTERING_EXPORT vtkAnnotation : public vtkDataObject
 {
 public:
-  vtkTypeMacro(vtkAnnotation, vtkDataObject);
+  vtkTypeRevisionMacro(vtkAnnotation, vtkDataObject);
   void PrintSelf(ostream& os, vtkIndent indent);
   static vtkAnnotation* New();
 

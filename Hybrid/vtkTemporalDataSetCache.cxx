@@ -22,6 +22,7 @@
 
 #include <vtkstd/vector>
 
+vtkCxxRevisionMacro(vtkTemporalDataSetCache, "1.8");
 //---------------------------------------------------------------------------
 vtkStandardNewMacro(vtkTemporalDataSetCache);
 

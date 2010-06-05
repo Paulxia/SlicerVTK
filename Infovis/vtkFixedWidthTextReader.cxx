@@ -35,6 +35,7 @@
 
 #include <ctype.h>
 
+vtkCxxRevisionMacro(vtkFixedWidthTextReader, "1.8");
 vtkStandardNewMacro(vtkFixedWidthTextReader);
 
 // Function body at bottom of file

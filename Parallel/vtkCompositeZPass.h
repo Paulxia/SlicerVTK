@@ -41,7 +41,7 @@ class VTK_PARALLEL_EXPORT vtkCompositeZPass : public vtkRenderPass
 {
 public:
   static vtkCompositeZPass *New();
-  vtkTypeMacro(vtkCompositeZPass,vtkRenderPass);
+  vtkTypeRevisionMacro(vtkCompositeZPass,vtkRenderPass);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -56,7 +56,7 @@ class VTK_GEOVIS_EXPORT vtkGeoView : public vtkRenderView
 {
 public:
   static vtkGeoView *New();
-  vtkTypeMacro(vtkGeoView, vtkRenderView);
+  vtkTypeRevisionMacro(vtkGeoView, vtkRenderView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

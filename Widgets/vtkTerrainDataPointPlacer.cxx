@@ -22,6 +22,7 @@
 #include "vtkAssemblyPath.h"
 #include "vtkAssemblyNode.h"
 
+vtkCxxRevisionMacro(vtkTerrainDataPointPlacer, "1.1");
 vtkStandardNewMacro(vtkTerrainDataPointPlacer);
 
 //----------------------------------------------------------------------

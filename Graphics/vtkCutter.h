@@ -59,7 +59,7 @@ class vtkRectilinearSynchronizedTemplates;
 class VTK_GRAPHICS_EXPORT vtkCutter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(vtkCutter,vtkPolyDataAlgorithm);
+  vtkTypeRevisionMacro(vtkCutter,vtkPolyDataAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

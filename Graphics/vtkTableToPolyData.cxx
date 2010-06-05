@@ -24,6 +24,7 @@
 #include "vtkInformation.h"
 
 vtkStandardNewMacro(vtkTableToPolyData);
+vtkCxxRevisionMacro(vtkTableToPolyData, "1.5");
 //----------------------------------------------------------------------------
 vtkTableToPolyData::vtkTableToPolyData()
 {

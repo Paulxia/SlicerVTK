@@ -21,6 +21,7 @@
 #include "vtkViewport.h"
 #include "vtkPointSet.h"
 
+vtkCxxRevisionMacro(vtkTransformCoordinateSystems, "1.5");
 vtkStandardNewMacro(vtkTransformCoordinateSystems);
 
 //------------------------------------------------------------------------

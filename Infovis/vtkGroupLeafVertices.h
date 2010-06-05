@@ -32,7 +32,7 @@ class VTK_INFOVIS_EXPORT vtkGroupLeafVertices : public vtkTreeAlgorithm
 {
 public:
   static vtkGroupLeafVertices* New();
-  vtkTypeMacro(vtkGroupLeafVertices,vtkTreeAlgorithm);
+  vtkTypeRevisionMacro(vtkGroupLeafVertices,vtkTreeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

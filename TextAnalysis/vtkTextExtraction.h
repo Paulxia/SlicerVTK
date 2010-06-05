@@ -74,7 +74,7 @@ class VTK_TEXT_ANALYSIS_EXPORT vtkTextExtraction :
 {
 public:
   static vtkTextExtraction* New();
-  vtkTypeMacro(vtkTextExtraction, vtkTableAlgorithm);
+  vtkTypeRevisionMacro(vtkTextExtraction, vtkTableAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

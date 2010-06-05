@@ -29,6 +29,7 @@
 #include <assert.h>
 
 vtkStandardNewMacro(vtkPExtractArraysOverTime);
+vtkCxxRevisionMacro(vtkPExtractArraysOverTime, "1.12");
 vtkCxxSetObjectMacro(vtkPExtractArraysOverTime, Controller, vtkMultiProcessController);
 //----------------------------------------------------------------------------
 vtkPExtractArraysOverTime::vtkPExtractArraysOverTime()

@@ -50,7 +50,7 @@ class VTK_VIEWS_EXPORT vtkTreeAreaView : public vtkRenderView
 {
 public:
   static vtkTreeAreaView *New();
-  vtkTypeMacro(vtkTreeAreaView, vtkRenderView);
+  vtkTypeRevisionMacro(vtkTreeAreaView, vtkRenderView);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

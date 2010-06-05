@@ -42,7 +42,7 @@ class VTK_FILTERING_EXPORT vtkMutableDirectedGraph : public vtkDirectedGraph
 {
 public:
   static vtkMutableDirectedGraph *New();
-  vtkTypeMacro(vtkMutableDirectedGraph, vtkDirectedGraph);
+  vtkTypeRevisionMacro(vtkMutableDirectedGraph, vtkDirectedGraph);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

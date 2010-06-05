@@ -20,6 +20,7 @@
 
 #include "vtkGraph.h"
 
+vtkCxxRevisionMacro(vtkEdgeLayoutStrategy, "1.1");
 
 void vtkEdgeLayoutStrategy::SetGraph(vtkGraph *graph)
 {

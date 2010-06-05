@@ -25,6 +25,7 @@
 #include "vtkUnsignedCharArray.h"
 #include "vtkDataArrayCollection.h"
 
+vtkCxxRevisionMacro(vtkPLOT3DReader, "1.89");
 vtkStandardNewMacro(vtkPLOT3DReader);
 
 #define VTK_RHOINF 1.0

@@ -49,7 +49,7 @@ class VTK_RENDERING_EXPORT vtkInteractorStyleImage : public vtkInteractorStyleTr
 {
 public:
   static vtkInteractorStyleImage *New();
-  vtkTypeMacro(vtkInteractorStyleImage, vtkInteractorStyleTrackballCamera);
+  vtkTypeRevisionMacro(vtkInteractorStyleImage, vtkInteractorStyleTrackballCamera);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

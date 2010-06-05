@@ -57,7 +57,7 @@ class vtkTextProperty;
 class VTK_HYBRID_EXPORT vtkCubeAxesActor2D : public vtkActor2D
 {
 public:
-  vtkTypeMacro(vtkCubeAxesActor2D,vtkActor2D);
+  vtkTypeRevisionMacro(vtkCubeAxesActor2D,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

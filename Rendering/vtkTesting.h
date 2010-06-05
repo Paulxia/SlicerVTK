@@ -73,7 +73,7 @@ class VTK_RENDERING_EXPORT vtkTesting : public vtkObject
 {
 public:
   static vtkTesting *New();
-  vtkTypeMacro(vtkTesting,vtkObject);
+  vtkTypeRevisionMacro(vtkTesting,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
 //BTX

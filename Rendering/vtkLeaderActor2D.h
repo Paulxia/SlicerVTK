@@ -52,7 +52,7 @@ class vtkTextProperty;
 class VTK_RENDERING_EXPORT vtkLeaderActor2D : public vtkActor2D
 {
 public:
-  vtkTypeMacro(vtkLeaderActor2D,vtkActor2D);
+  vtkTypeRevisionMacro(vtkLeaderActor2D,vtkActor2D);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

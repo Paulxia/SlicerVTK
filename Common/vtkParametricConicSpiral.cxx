@@ -16,6 +16,7 @@
 #include "vtkObjectFactory.h"
 #include "vtkMath.h"
 
+vtkCxxRevisionMacro(vtkParametricConicSpiral, "1.3");
 vtkStandardNewMacro(vtkParametricConicSpiral);
 
 //----------------------------------------------------------------------------

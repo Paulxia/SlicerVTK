@@ -31,7 +31,7 @@ class VTK_IO_EXPORT vtkAVIWriter : public vtkGenericMovieWriter
 {
 public:
   static vtkAVIWriter *New();
-  vtkTypeMacro(vtkAVIWriter,vtkGenericMovieWriter);
+  vtkTypeRevisionMacro(vtkAVIWriter,vtkGenericMovieWriter);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

@@ -39,7 +39,7 @@ class VTK_IO_EXPORT vtkPNMReader : public vtkImageReader
 {
 public:
   static vtkPNMReader *New();
-  vtkTypeMacro(vtkPNMReader,vtkImageReader);
+  vtkTypeRevisionMacro(vtkPNMReader,vtkImageReader);
   virtual void PrintSelf(ostream& os, vtkIndent indent);
 
   int CanReadFile(const char* fname); 

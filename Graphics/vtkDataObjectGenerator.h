@@ -43,7 +43,7 @@ class VTK_GRAPHICS_EXPORT vtkDataObjectGenerator
 {
  public:
   static vtkDataObjectGenerator *New();
-  vtkTypeMacro(vtkDataObjectGenerator,vtkDataObjectAlgorithm);
+  vtkTypeRevisionMacro(vtkDataObjectGenerator,vtkDataObjectAlgorithm);
   void PrintSelf(ostream &os, vtkIndent indent);
   
   // Description:

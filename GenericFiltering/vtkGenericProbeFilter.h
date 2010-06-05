@@ -49,7 +49,7 @@ class VTK_GENERIC_FILTERING_EXPORT vtkGenericProbeFilter : public vtkDataSetAlgo
 {
 public:
   static vtkGenericProbeFilter *New();
-  vtkTypeMacro(vtkGenericProbeFilter,vtkDataSetAlgorithm);
+  vtkTypeRevisionMacro(vtkGenericProbeFilter,vtkDataSetAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

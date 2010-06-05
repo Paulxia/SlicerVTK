@@ -83,7 +83,7 @@ public:
 
   // Description:
   // Standard methods for a VTK class.
-  vtkTypeMacro(vtkAngleWidget,vtkAbstractWidget);
+  vtkTypeRevisionMacro(vtkAngleWidget,vtkAbstractWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

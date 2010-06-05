@@ -39,7 +39,7 @@ class VTK_INFOVIS_EXPORT vtkCosmicTreeLayoutStrategy : public vtkGraphLayoutStra
 public:
   static vtkCosmicTreeLayoutStrategy* New();
   virtual void PrintSelf( ostream& os, vtkIndent indent );
-  vtkTypeMacro(vtkCosmicTreeLayoutStrategy,vtkGraphLayoutStrategy);
+  vtkTypeRevisionMacro(vtkCosmicTreeLayoutStrategy,vtkGraphLayoutStrategy);
 
   // Description:
   // Perform the layout.

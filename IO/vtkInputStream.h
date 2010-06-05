@@ -29,7 +29,7 @@
 class VTK_IO_EXPORT vtkInputStream : public vtkObject
 {
 public:
-  vtkTypeMacro(vtkInputStream,vtkObject);
+  vtkTypeRevisionMacro(vtkInputStream,vtkObject);
   static vtkInputStream *New();
   void PrintSelf(ostream& os, vtkIndent indent);
   

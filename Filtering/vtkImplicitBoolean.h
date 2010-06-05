@@ -44,7 +44,7 @@ class vtkImplicitFunctionCollection;
 class VTK_FILTERING_EXPORT vtkImplicitBoolean : public vtkImplicitFunction
 {
 public:
-  vtkTypeMacro(vtkImplicitBoolean,vtkImplicitFunction);
+  vtkTypeRevisionMacro(vtkImplicitBoolean,vtkImplicitFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

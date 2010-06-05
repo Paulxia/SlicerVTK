@@ -41,7 +41,7 @@
 class VTK_COMMON_EXPORT vtkParametricKlein : public vtkParametricFunction
 {
 public:
-  vtkTypeMacro(vtkParametricKlein,vtkParametricFunction);
+  vtkTypeRevisionMacro(vtkParametricKlein,vtkParametricFunction);
   void PrintSelf(ostream& os, vtkIndent indent);
   
   // Description:

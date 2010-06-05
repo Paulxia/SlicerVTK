@@ -51,7 +51,7 @@ public:
 
   // Description:
   // Standard methids for printing and determining type information.
-  vtkTypeMacro(vtkDijkstraGraphGeodesicPath,vtkGraphGeodesicPath);
+  vtkTypeRevisionMacro(vtkDijkstraGraphGeodesicPath,vtkGraphGeodesicPath);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

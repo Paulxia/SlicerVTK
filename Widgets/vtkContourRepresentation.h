@@ -107,7 +107,7 @@ class VTK_WIDGETS_EXPORT vtkContourRepresentation : public vtkWidgetRepresentati
 public:
   // Description:
   // Standard VTK methods.
-  vtkTypeMacro(vtkContourRepresentation,vtkWidgetRepresentation);
+  vtkTypeRevisionMacro(vtkContourRepresentation,vtkWidgetRepresentation);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

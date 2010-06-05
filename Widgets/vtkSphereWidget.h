@@ -78,7 +78,7 @@ public:
   // Instantiate the object.
   static vtkSphereWidget *New();
 
-  vtkTypeMacro(vtkSphereWidget,vtk3DWidget);
+  vtkTypeRevisionMacro(vtkSphereWidget,vtk3DWidget);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

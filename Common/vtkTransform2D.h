@@ -38,7 +38,7 @@ class VTK_COMMON_EXPORT vtkTransform2D : public vtkObject
 {
  public:
   static vtkTransform2D *New();
-  vtkTypeMacro(vtkTransform2D,vtkObject);
+  vtkTypeRevisionMacro(vtkTransform2D,vtkObject);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

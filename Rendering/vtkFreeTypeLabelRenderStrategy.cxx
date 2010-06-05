@@ -23,6 +23,7 @@
 #include "vtkTextProperty.h"
 #include "vtkTimerLog.h"
 
+vtkCxxRevisionMacro(vtkFreeTypeLabelRenderStrategy, "1.3");
 vtkStandardNewMacro(vtkFreeTypeLabelRenderStrategy);
 
 //----------------------------------------------------------------------------

@@ -35,7 +35,7 @@ class VTK_INFOVIS_EXPORT vtkAssignCoordinates : public vtkPassInputTypeAlgorithm
 public:
   static vtkAssignCoordinates *New();
 
-  vtkTypeMacro(vtkAssignCoordinates, vtkPassInputTypeAlgorithm);
+  vtkTypeRevisionMacro(vtkAssignCoordinates, vtkPassInputTypeAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:

@@ -46,6 +46,7 @@
 #include "vtkUnsignedCharArray.h"
 #include "vtkMultiProcessController.h"
 
+vtkCxxRevisionMacro(vtkTreeCompositer, "1.6");
 vtkStandardNewMacro(vtkTreeCompositer);
 
 #ifdef VTK_USE_MPI

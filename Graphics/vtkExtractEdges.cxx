@@ -27,6 +27,7 @@
 #include "vtkPolyData.h"
 #include "vtkIncrementalPointLocator.h"
 
+vtkCxxRevisionMacro(vtkExtractEdges, "1.56");
 vtkStandardNewMacro(vtkExtractEdges);
 
 // Construct object.

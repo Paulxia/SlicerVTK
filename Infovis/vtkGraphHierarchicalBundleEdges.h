@@ -59,7 +59,7 @@ class VTK_INFOVIS_EXPORT vtkGraphHierarchicalBundleEdges : public vtkGraphAlgori
 public:
   static vtkGraphHierarchicalBundleEdges *New();
 
-  vtkTypeMacro(vtkGraphHierarchicalBundleEdges,vtkGraphAlgorithm);
+  vtkTypeRevisionMacro(vtkGraphHierarchicalBundleEdges,vtkGraphAlgorithm);
   void PrintSelf(ostream& os, vtkIndent indent);
 
   // Description:
