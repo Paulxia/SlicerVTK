@@ -1,7 +1,7 @@
 /*=========================================================================
 
   Program:   Visualization Toolkit
-  Module:    vtkClipConvexPolyData.h
+  Module:    $RCSfile: vtkClipConvexPolyData.h,v $
 
   Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
   All rights reserved.
@@ -59,10 +59,6 @@ protected:
   // tolerance ?
   void ClipWithPlane(vtkPlane *p,
                      double tolerance);
-  
-  // Description:
-  // Tells if clipping the input by plane `p' creates some degeneracies.
-  bool HasDegeneracies(vtkPlane *p);
 
   // Description:
   // Delete calculation data.
