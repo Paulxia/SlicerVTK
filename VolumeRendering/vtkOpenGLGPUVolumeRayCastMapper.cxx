@@ -3599,7 +3599,7 @@ int vtkOpenGLGPUVolumeRayCastMapper::RenderClippedBoundingBox(
   double polyCount=static_cast<double>(polys->GetNumberOfCells());
   polys->InitTraversal();
   int abort=0;
-  int ii = 0;
+  //int ii = 0;
   while ( !abort && polys->GetNextCell(npts, pts) )
     {
     vtkIdType start, end, inc;
@@ -3694,7 +3694,6 @@ int vtkOpenGLGPUVolumeRayCastMapper::RenderClippedBoundingBox(
       //  std::cout << "v3 ["<< v3[0] <<"," << v3[1] << "," << v3[2] << "]\n";
       //  std::cout << "v4 ["<< v4[0] <<"," << v4[1] << "," << v4[2] << "]\n" ;
       //  std::cout << start << " " << end << " " << inc << std::endl;
-      
       glBegin( GL_TRIANGLE_FAN ); // GL_POLYGON -> GL_TRIANGLE_FAN
 
       double vert[3];
