@@ -3659,6 +3659,7 @@ void vtkOpenGLGPUVolumeRayCastMapper::ClipBoundingBox(vtkRenderer *ren,
     }
   this->Densify->Update();
   this->ClippedBoundingBox = this->Densify->GetOutput();
+  //this->ClippedBoundingBox = this->Clip->GetOutput();
 }
 
 //-----------------------------------------------------------------------------
@@ -3731,6 +3732,7 @@ int vtkOpenGLGPUVolumeRayCastMapper::RenderClippedBoundingBox(
   double polyCount=static_cast<double>(polys->GetNumberOfCells());
   polys->InitTraversal();
   int abort=0;
+  int ii = 0;
   while ( !abort && polys->GetNextCell(npts, pts) )
     {
     vtkIdType start, end, inc;
@@ -3763,13 +3765,43 @@ int vtkOpenGLGPUVolumeRayCastMapper::RenderClippedBoundingBox(
       // vtkMath::Normalize(v3);
       
       vtkTriangle::ComputeNormal(p1, p2, p3, v3);
-
+      
+      // double faceCenter[3] = {0.,0.,0.};
+      // for (int kkk =0; kkk < npts; ++kkk)
+      //   {
+      //   double p[3];
+      //   points->GetPoint(pts[kkk], p );
+      //   faceCenter[0] += p[0];
+      //   faceCenter[1] += p[1];
+      //   faceCenter[2] += p[2];
+      //   }
+      // faceCenter[0] /=npts;
+      // faceCenter[1] /=npts;
+      // faceCenter[2] /=npts;
+      
       v4[0] = p2[0] - center[0];
       v4[1] = p2[1] - center[1];
       v4[2] = p2[2] - center[2];
       vtkMath::Normalize(v4);
 
       double dot = vtkMath::Dot( v3, v4 );
+
+      //GLfloat m[16];
+      //glGetFloatv(GL_MODELVIEW_MATRIX,m);
+      
+      //std::cout << m[0] << "," << m[1] << "," << m[2] << "," << m[3] << "\n"
+      //          << m[4] << "," << m[5] << "," << m[6] << "," << m[7] << "\n"
+      //          << m[8] << "," << m[9] << "," << m[10] << "," << m[11] << "\n"
+      //          << m[12] << "," << m[13] << "," << m[14] << "," << m[15] << std::endl;
+      
+      //GLfloat p[16];
+      //glGetFloatv(GL_PROJECTION_MATRIX,p);
+      
+      //std::cout << p[0] << "," << p[1] << "," << p[2] << "," << p[3] << "\n"
+      //          << p[4] << "," << p[5] << "," << p[6] << "," << p[7] << "\n"
+      //          << p[8] << "," << p[9] << "," << p[10] << "," << p[11] << "\n"
+      //          << p[12] << "," << p[13] << "," << p[14] << "," << p[15] << std::endl;
+      
 
       if ( this->PreserveOrientation ? ( dot >= -0.000001):(dot <= 0.000001))
         {
@@ -3783,7 +3815,19 @@ int vtkOpenGLGPUVolumeRayCastMapper::RenderClippedBoundingBox(
         end = -1;
         inc = -1;
         }
-
+        
+      // std::cout << "poly " << ii++ << std::endl;
+      //  for (int kk = 0; kk < npts; ++kk)
+      //    {
+      //    double p[3];
+      //    points->GetPoint(pts[kk], p);
+      //    std::cout << " ["<< p[0] <<"," << p[1] << "," << p[2] << "]" ;
+      //    }
+      //  std::cout << std::endl;
+      //  std::cout << "v3 ["<< v3[0] <<"," << v3[1] << "," << v3[2] << "]\n";
+      //  std::cout << "v4 ["<< v4[0] <<"," << v4[1] << "," << v4[2] << "]\n" ;
+      //  std::cout << start << " " << end << " " << inc << std::endl;
+      
       glBegin( GL_TRIANGLE_FAN ); // GL_POLYGON -> GL_TRIANGLE_FAN
 
       double vert[3];
