@@ -3561,19 +3561,19 @@ void vtkOpenGLGPUVolumeRayCastMapper::ClipBoundingBox(vtkRenderer *ren,
   vtkMath::Normalize(camPlaneNormal);
  
   double camNearWorldPoint[4];
-  //double camFarWorldPoint[4];
+  double camFarWorldPoint[4];
   double camNearPoint[4];
-  //double camFarPoint[4];
+  double camFarPoint[4];
   cam->GetClippingRange(camWorldRange);
   camNearWorldPoint[0] = camWorldPos[0] + camWorldRange[0]*camWorldDirection[0];
   camNearWorldPoint[1] = camWorldPos[1] + camWorldRange[0]*camWorldDirection[1];
   camNearWorldPoint[2] = camWorldPos[2] + camWorldRange[0]*camWorldDirection[2];
   camNearWorldPoint[3] = 1.;
 
-  // camFarWorldPoint[0] = camWorldPos[0] + camWorldRange[1]*camWorldDirection[0];
-  // camFarWorldPoint[1] = camWorldPos[1] + camWorldRange[1]*camWorldDirection[1];
-  // camFarWorldPoint[2] = camWorldPos[2] + camWorldRange[1]*camWorldDirection[2];
-  // camFarWorldPoint[3] = 1.;
+   camFarWorldPoint[0] = camWorldPos[0] + camWorldRange[1]*camWorldDirection[0];
+   camFarWorldPoint[1] = camWorldPos[1] + camWorldRange[1]*camWorldDirection[1];
+   camFarWorldPoint[2] = camWorldPos[2] + camWorldRange[1]*camWorldDirection[2];
+   camFarWorldPoint[3] = 1.;
 
   this->InvVolumeMatrix->MultiplyPoint( camNearWorldPoint, camNearPoint );
   if (camNearPoint[3])
@@ -3582,15 +3582,22 @@ void vtkOpenGLGPUVolumeRayCastMapper::ClipBoundingBox(vtkRenderer *ren,
     camNearPoint[1] /= camNearPoint[3];
     camNearPoint[2] /= camNearPoint[3];
     }
-  // this->InvVolumeMatrix->MultiplyPoint( camFarWorldPoint, camFarPoint );
-  // if (camFarPoint[3])
-  //   {
-  //   camFarPoint[0] /= camFarPoint[3];
-  //   camFarPoint[1] /= camFarPoint[3];
-  //   camFarPoint[2] /= camFarPoint[3];
-  //   }
-
-  //range[0] = sqrt(vtkMath::Distance2BetweenPoints(camNearPoint, camPos));
+  this->InvVolumeMatrix->MultiplyPoint( camFarWorldPoint, camFarPoint );
+   if (camFarPoint[3])
+     {
+     camFarPoint[0] /= camFarPoint[3];
+     camFarPoint[1] /= camFarPoint[3];
+     camFarPoint[2] /= camFarPoint[3];
+     }
+   double direction[3];
+   direction[0] = camFarPoint[0] - camNearPoint[0];
+   direction[1] = camFarPoint[1] - camNearPoint[1];
+   direction[2] = camFarPoint[2] - camNearPoint[2];
+   vtkMath::Normalize(direction);
+   camNearPoint[0] += direction[0]*.00001;
+   camNearPoint[1] += direction[1]*.00001;
+   camNearPoint[2] += direction[2]*.00001;
+   //range[0] = sqrt(vtkMath::Distance2BetweenPoints(camNearPoint, camPos));
   //range[1] = sqrt(vtkMath::Distance2BetweenPoints(camFarPoint, camPos));
 
   //double dist = range[1] - range[0];
