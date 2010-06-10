@@ -3771,7 +3771,7 @@ int vtkOpenGLGPUVolumeRayCastMapper::RenderClippedBoundingBox(
 
       double dot = vtkMath::Dot( v3, v4 );
 
-      if (( dot >= -0.000001) && this->PreserveOrientation)
+      if ( this->PreserveOrientation ? ( dot >= -0.000001):(dot <= 0.000001))
         {
         start = 0;
         end = npts;
