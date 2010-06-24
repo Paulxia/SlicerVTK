@@ -2919,7 +2919,7 @@ namespace vtkYoungsMaterialInterfaceCellCutInternals
 
     REAL volume = 0;
 
-    // construction de la fonction cubique par morceau du volume tronqué
+    // construction de la fonction cubique par morceau du volume tronque
     for(int i=0;i<nt;i++)
       {
       // calcul de la surface de l'intersection plan/tetra aux point P1 et P2
