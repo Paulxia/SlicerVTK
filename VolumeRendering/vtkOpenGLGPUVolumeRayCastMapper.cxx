@@ -4805,7 +4805,7 @@ void vtkOpenGLGPUVolumeRayCastMapper::RenderBlock(vtkRenderer *ren,
 {
   vtkImageData *input = this->GetInput();
 
-  if(!this->AutoAdjustSampleDistances)
+  if(!this->AutoAdjustSampleDistances || this->ReductionFactor >= 1.0)
     {
     this->ActualSampleDistance=this->SampleDistance;
     }
