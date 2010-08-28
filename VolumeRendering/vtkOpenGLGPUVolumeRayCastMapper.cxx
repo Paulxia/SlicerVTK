@@ -3444,14 +3444,14 @@ void vtkOpenGLGPUVolumeRayCastMapper::ClipBoundingBox(vtkRenderer *ren,
    camFarWorldPoint[3] = 1.;
 
   this->InvVolumeMatrix->MultiplyPoint( camNearWorldPoint, camNearPoint );
-  if (camNearPoint[3])
+  if (camNearPoint[3]!=0.0)
     {
     camNearPoint[0] /= camNearPoint[3];
     camNearPoint[1] /= camNearPoint[3];
     camNearPoint[2] /= camNearPoint[3];
     }
   this->InvVolumeMatrix->MultiplyPoint( camFarWorldPoint, camFarPoint );
-   if (camFarPoint[3])
+   if (camFarPoint[3]!=0.0)
      {
      camFarPoint[0] /= camFarPoint[3];
      camFarPoint[1] /= camFarPoint[3];
@@ -3465,13 +3465,28 @@ void vtkOpenGLGPUVolumeRayCastMapper::ClipBoundingBox(vtkRenderer *ren,
    camNearPoint[0] += direction[0]*.00001;
    camNearPoint[1] += direction[1]*.00001;
    camNearPoint[2] += direction[2]*.00001;
+  // We add an offset to the near plane to avoid hardware clipping of the
+  // near plane due to floating-point precision.
+  // camPlaneNormal is a unit vector, if the offset is larger than the
+  // distance between near and far point, it will not work, in this case we
+  // pick a fraction of the near-far distance.
+  double distNearFar=
+    sqrt(vtkMath::Distance2BetweenPoints(camNearPoint,camFarPoint));
+  double offset=0.001; // some arbitrary small value.
+  if(offset>=distNearFar)
+    {
+    offset=distNearFar/1000.0;
+    }
+  camNearPoint[0]+=camPlaneNormal[0]*offset;
+  camNearPoint[1]+=camPlaneNormal[1]*offset;
+  camNearPoint[2]+=camPlaneNormal[2]*offset;
    //range[0] = sqrt(vtkMath::Distance2BetweenPoints(camNearPoint, camPos));
   //range[1] = sqrt(vtkMath::Distance2BetweenPoints(camFarPoint, camPos));
 
   //double dist = range[1] - range[0];
   //range[0] += dist / (2<<16);
   //range[1] -= dist / (2<<16);
-  
+
   if(this->NearPlane==0)
     {
     this->NearPlane= vtkPlane::New();
